@@ -1,0 +1,17 @@
+iPhone
+	Safari
+		Es kommt die Meldung: eTuneBook cannot import BoxPlayer_V01.abc due to: Error: QUOTA_EXCEEDED_ERR:DOM Exception 22
+		Aber BoxPlayer_V01.abc kann trotzdem geladen werden. 
+		Colorizer an richtiger Stelle (vergleiche Delphin). Move-Button eine Zeile runtergerutscht.
+		Played button drücken: es kommt 'a few second ago', aber der Button bleibt blau. Auch beim wegclicken des Info-Editors: Button bleibt blau.
+		Info Editor: Label sind nicht links sondern oben am Feld. -> Site 2,3 und YouTube 2,3 sind nur mit 2,3 gelabeled -> sieht nicht gut aus, wenn oben am Feld.
+		Ansonsten: sehr gut (Noten werden angzeigt, filter funktioniert...)
+	Delphin
+		kann BoxPlayer_V01.abc laden, aber Anzeige: Colorizer rutscht eine Zeile nach unten
+		
+		
+
+Allmemein
+	Nach Abc-Editierung verschwindet die Anzeige der ersten Takte
+	Zweimal hintereinander Open geht nicht
+	martin07.jpg hinter eTuneBook-Projekt-Name entfernen.
