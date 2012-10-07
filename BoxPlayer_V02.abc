@@ -212,47 +212,45 @@ X:15
 %%etbk:site1 http://www.thesession.org/tunes/display/2805
 T: Lane To The Glen
 T: Road To The Glen, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: Reel
 K: Dmin
-|: FdcB AGFD | G2 dG eGdG | FEFG Acde | fedc A=BcA |
-d3 e f2 ag | fedc AFDE |1 F3 G AGFG | Addc d2 (3CDE :|2 F3 G AFDE | FDEC D2 de||
-f2 ag fedf | ecgc acgc | f2 ag fede | fdec Adde |
-f3 g (3agf (3gfe | fedc AFDE | F3 G AGFG |1 Addc d2 de :|2 Addc d2 (3CDE ||
+!1!F|: !1!F!5!d!4!c!3!B !2!A!1!G!1!F!2!A | !1!G2 !5!dG !2!AG!5!d!1!G | !1!F3!2!G !3!A!4!c!3!d!4!e | !5!fed!2!c !1!A=B!3!c!5!e |
+!4!!1!d3 e !3!fga!4!g | !5!fed!2!c !1!A!3!F!1!DE | !3!FEF!4!G !3!AGFG |1 !3!A!5!dd!4!c !5!d3!1!F :|2 !3!A!5!d!3!d!2!c !3!d2 !1!de||
+!3!f2 ag fedf | !2!e!1!c!2!cc !1!G!2!c!4!e!2!c | !3!f2 ag fdde | !3!fd!4!ec !1!A!3!d!1!de 
+|1!3!f2fg !5!af!4!ge | !5!fedc !1!A!3!FDE | !3!FEFG !3!AGFG | !3!A!5!d!3!d!2!c !3!d2 !1!de :|
+|2!3!f2!1!d!3!f dfdf | !2!ee!1!c!2!e cece | !5!af!4!ge !5!fedc | !1!ABc!5!e !4!d4   ||
 
 X:16
 %%etbk:tnset id:6,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/200
 T: Splendid Isolation
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: Reel
 K: Gdor
-|:FGGF GdcA|G2AG FGAc|dAcA GABc|dggf ~g3a|
-bgag fd~d2|f2eg fdcA|G2AG FGAc|dAcA ~G3z:|
-|:g2ag fd~d2|gfdc Acdc|AG~G2 Acdc|AG~G2 F4|
-FGGF GdcA|G2AG FGAc|dg~g2 fgag|fdcA G4:|
+|:!1!F!2!GGF !2!G!5!d!4!c!3!A|!2!G2AG !1!FGA!4!c | !5!d!3!A!4!c!3!A !1!GAB!4!c | !1!d!3!ggf ggga|
+!5!bgag !2!f!1!ddd | !2!f2!1!e!3!g !2!f!1!d!2!c!1!A | !2!G2AG !1!FGA!4!c|!5!d!3!AcA !2!G4:|
+|:!3!g2!4!ag !2!f!1!d !3!(3d!2!d!1!d | !3!gf!1!d!2!c !1!A!2!cdc | !1!A2!2!GG !3!A!4!cdc | !3!A!2!GGG !1!F4|
+!1!FGGF GdcA | !2!G2AG !1!FGA!4!c | !3!d2 !5!g!3!g !2!fgag | !2!f!1!d!2!c!1!A !2!G4:|
 
 X:17
 %%etbk:tnset id:6,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1131
 T: Richard Dwyer's
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: Reel
 K: Ador
-A2eA (3B^cd ec|dGBG AFGF|EA=cA (3B^cd gf|eaag a3g|
-~e3d =cA~A2|Bgd=c BdcB|AE=cE dEcd|1 e=cBG EAAG:|2 e=cBG EA~A2||
-|:a2ea =c'afa|g2dg bgdg|aged (3B^cd ed|(3=cBA BG EA~A2|
-a3b =c'afa|~g3a agdg|aged (3B^cd ed|1 (3=cBA BG EA~A2:|2 (3=cBA BG EAAG||
-"version 2"
-A2EA cdec|d2BG AFGF|EAcA Bdgf|eaae ~a3g|
-~e3d cAaf|gedc BdcB|AEcE d2cd|ecBG EAAG|
-A3B c2ec|dGBG AFGF|EAcA Bdgf|eaae ~a3g|
-~e3d cAaf|gedc BdcB|AEcE d2cd|ecBG EA~A2||
-|:a2ea baeb|g2dg bgdg|aged c2ed|cABG EA~A2|
-a2eb eaeb|gedc BcdB|ABcd e2ae|1 gedB cA~A2:|2 gedB cAAG||
+!2!AA!1!EA !3!cd!5!ec | !4!d2!2!B!1!G !4!A!2!F!3!G!2!F | !1!E!2!A!4!c!2!A !1!B!2!d!5!g!4!f | !2!e!5!aag !5!a3g |
+!2!eged !3!c!1!A !3!(3A!2!A!1!A | !5!ged!1!c !3!BA!1!G!3!B | !2!A!1!E!3!cE !4!dE!3!c!4!d|1 !5!e!3!c!4!dB !3!c!1!A!2!B!1!G:|2 !5!ec!3!d!2!B B!1!AA2||
+|:!5!a2!2!ea agef | !4!g!3!e!2!d!4!g !1!B!4!g!2!d!4!g | !5!a!4!g!3!e!2!d !1!B!4!d !5!ed | !3!cA!2!B!1!G !1!G!2!A!1!A2|
+!5!a2ea agef | !4!ged!1!c !3!BA!1!G!3!B | !1!ABc!4!d !2!e!5!aag | !2!ee!1!d!2!B B!1!AA2:||
+
 
 X:18
 %%etbk:tnset id:7,pos:1,rep:3
@@ -1138,29 +1136,30 @@ X:83
 %%etbk:tnset id:29,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/539
 T: Farewell To Milltown
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: reel
 K: Gdor
-|:DGGF G3A|BcAF GFDE|F2CF DFCF|DF3 FDCF|
-DGGF G3A|BcAF GFDE|F2cF dFcF|AdcA G4:|
-|:dggf g3a|bgaf gfde|f3g fede|fgaf gfdc|
-dggf g3a|bgaf gfde|f3d edcB|AdcA G4:|
+|:!1!D!3!GG!2!F !3!G!2!G!3!GA|!5!B!3!GGF GF!1!D!2!E|!3!F2!1!C!3!F !2!D!3!F!1!C!2!D|!3!FGAF !4!G!3!F!1!D!2!C|
+!1!D!3!GGF G3A|BGGF GF!1!D!2!E|!1!F2!4!cF !5!dF!4!cF|!2!AdcA !1!G4:|
+|:!2!d!4!g!3!g!2!f !3!ggga|bggf gfde|!3!fffg fede|fgaf gf!1!d!2!c|
+!1!d!3!ggf g3a|bggf gfde|!3!f3!1!d !5!d!4!c!2!A!1!G|!1!F!5!d!4!c!2!A !1!G4:|
 
 X:84
 %%etbk:tnset id:29,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/263
 T: Porthole Of The Kelp
 T: Bobby Casey's
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: reel
 K: Ddor
-DE||F2DE F2DE|FEFG ECCE|F2DE FGAG|FDEC A,D DE|!
-F2DE FGAB|cAGF EDCE|DEFG AddB|cAGE EDD2:|!
-d2 Ad dcAG|F2DF ECC2|d3(d d)cAG|ABcA d3e|!
-fded cAAG|EGcG EDCE|DEFG AddB|cAGE EDD2:|]!
-
+||!3!F2!1!DE F2DE|FEFG !2!E!1!CCE|!3!F2DE FGAG|!3!F!1!D!4!E!2!C !1!A,!3!D !1!D!2!E|
+!3!F2DE F!4!G!2!AB|!4!c!2!A!1!G!3!F !2!E!1!D!2!C!4!E|!1!DEF!4!G !2!A!5!dd!4!c|!2!AA!1!G!2!E E!1!DD2:|
+!5!d2 Ad dcA!1!G|!3!F2!1!D!3!F !2!E!1!CC2|!5!d3(d d)cAG|!2!ABcA !5!!3!d3!4!e|
+!5!f!3!d!4!e!3!d !4!c!2!AA!1!G|!2!E3E E!1!D!2!C!4!E|!1!DEF!4!G !2!Addc|!2!AA!1!G!2!E E!1!DD2:|
 
 X:85
 %%etbk:tnset id:30,pos:1,rep:3
@@ -1620,44 +1619,42 @@ X:118
 %%etbk:tnset id:42,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/901
 T: Speed The Plough
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: reel
 K: Dmaj
-d3A BAFB|AF~F2 EFDE|F2AF ~G3B|
-ABdg fgfe|d3A BAFB|AF~F2 EFDE|
-F2AF GABG|1ABdg fedc:|2ABde fdde||
-|:f2ab afdf|g2fg ed (3Bcd|a2ab afdB|
-ABde fe~e2|f2ab afdf|g2fg edBA|
-[1F2AF GABG|ABdg fddg:|2F2AF ~G3B|ABdg fgfe||
+!4!d3!1!A !2!B!1!A!2!F!5!B |!4!A!2!FFF !1!E!2!F!1!D!2!E | !3!F2!5!A!3!F !1!G2!3!B!1!G | !1!A!2!B!3!d!4!e !3!fgfe|
+!1!!4!d3!1!A BAFB | !4!AFFF EFDE | !3!F2AF !1!G2BG|1 !1!A!2!B!3!d!4!e !5!f!3!dd2:|2 !1!ABd!4!e !5!f!3!d!1!d2||
+|:!3!f2!5!af afdf | !4!ge!3!fd !2!e!1!d!2!B!1!d | !3!f2af afdf | !1!ABd!4!e !3!f!2!ee2 | 
+!3!f2af afdf | !4!gefd !2!e!1!d!2!B!1!A | !3!F2AF !1!G2BG | [1 !1!ABd!4!e !3!fdd2:|2 !1!ABd!4!e !5!f!3!dd2||
 
 X:119
 %%etbk:tnset id:42,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3636
 T: Blacksmith's, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: reel
 K: Gmaj
-dB B2 dBGB | dB B2 ABcA | dB B2 dBGB | cABG ABcA :|
-G2 BG DGBG | G2 BG ABcA | G2 BG DGBG | cABG ABcA :|
-
+|:!4!d!2!B!1!B!2!B !4!d!2!B!1!G!2!B | dBBB !1!AB!3!c!5!e | !4!dBBB dBGB |1 !3!ccBc !1!ABc!5!e :|2 !3!ccBc !1!AcB!1!A ||
+|:!2!GG!4!B!2!G !1!D!2!G!4!B!2!G | !2!GGBG !3!ABcA | !2!GGBG !1!DGBG |1 !3!ccBc !1!AcB!1!A:|2 !3!ccBc !1!ABc!5!e||
 
 
 X:120
 %%etbk:tnset id:42,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/514
 T: Down The Broom
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 4/4
 L: 1/8
 R: reel
 K: Ador
-|: EAAG ~A2Ad | eg~g2 (3efg ed | BGGF {A}G2GE |
-DEGA BA~A2 | EAAG {B}A2Bd | eg~g2 eg~g2 |
-eggf gaba |1 gedB BAAG :|2 gedB BAeg||
-|: a2eg ageg | agbg agef | ~g2eg dgeg |
-gbaf gedg | a2eg ageg | agbg aged |
-eg~g2 gaba |1 gedB BAeg :|2 gedB BAFA||
+|: !2!A2GA !2!A2!3!B!4!d | !2!e2 !4!gg !2!e!4!g!1!d!3!c | !2!B!1!GG!2!F !3!G2G!2!E | !1!D2!2!B,!1!D !3!G!4!A!5!B!3!G|
+!1!E!2!AAG A2Bd | !2!e2 !4!gg eg!1!d!4!g | !1!e!3!g!2!g!3!g !3!gaba | !3!g!2!e!1!d!2!B B!1!AA2 :||
+|: !5!a2!2!e!5!a !3!a!2!g!1!e!2!g | !3!agbg ag!1!e!3!f | !4!g2!2!d!4!g !1!B!4!g!2!d!4!g | !4!geaf gede |
+!5!a2e!5!a !3!ageg | !3!agbg ag!1!e!2!g | !1!d!3!g!2!g!3!g !3!gaba | ge!1!d!2!B B!1!AA2 :||
 
 
 X:121
@@ -3111,91 +3108,92 @@ X:1018
 %%etbk:tnset id:73,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/775
 T: Banks Of Lough Gowna, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Bmin
-BcB BAF|FEF DFA|BcB BAF|
-d2e fed|BcB BAF|FEF DFA|
-def geg|1 fdB Bdc:|2 fdB ~B3||
-|:def ~a3|afb afe|dFA def|
-geg fdB|def ~a3|afb afe|
-def geg|1 fdB ~B3:|2 fdB Bdc||
+!2!BBB B!1!A!2!F|!2!F!1!EF !1!D!2!F!3!A|!2!B2B BAB|
+!3!d2e !5!fe!3!d|!2!BBB B!1!A!2!F|FEF !1!D!2!F!3!A|
+!5!d!2!ef !4!geg|1 !3!f!1!d!2!B !2!B2A:|2 fdB !2!B2B||
+|:!1!d!2!e!3!f !4!a!3!a!4!a|!4!a!3!f!5!b afe|!1!d!2!d!1!d def|
+!4!geg !3!f!1!d!2!B|!1!def !4!aaa|afb afe|
+!1!def !4!geg|1 f!1!d!2!B B2B:|2 f!1!d!2!B B2A||
 
 X:1019
 %%etbk:tnset id:73,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1880
 T: Junior Crehan's
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:d|BAF AFE|D3 EDB,|A,B,D ~E3|FEE E2d|
-BAF AFE|D3 EDB,|A,B,D ~E3|FDD D2:|
-|:E|DFA ~d3|ede fdB|def edB|ABd e2f|
-edB AFE|D3 EDB,|A,B,D ~E3|FDD D2:|
+|:!4!d|!2!B!1!A!3!F !5!AFE|!1!DDD !2!E!1!D!2!B,|!1!A,!2!B,!1!D !2!EDE|!3!F!1!EE E2!4!d|
+!2!B!1!A!3!F !5!AFE|!1!D2D EDB,|!1!A,B,D EDE|!3!F!1!DD D2:|
+|:!1!D!2!F!3!A !5!!3!d2!3!d|!4!ede !5!f!3!d!2!B|!3!def e!3!d!2!B|!1!ABd !4!e2!5!f|
+!4!e!3!d!2!B !1!A!3!FE|!1!D !4!(3G!2!E!1!D E!1!D!2!B,|!1!A,B,!1!D !2!EDE|!3!F!1!DD D2:|
 
 X:1020
 %%etbk:tnset id:73,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/261
 T: Ships In Full Sail
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-DGG BGG|dGG BGG | efg dBG | ABA AGE |
-DGG BGG|dGG BGG | efg dBG | ABF G3 :||
-dgg bgg |aga bge |dgg bgg |a3 age |
-dgg bgg |aga bge | efg dBG | ABF G3 :||
-d^cd dBd | e3 efg | ded gdB | A3 ABc |
-d^cd dBd | e3 efg | efg dBG | ABF G3 :||
+!1!D!3!G!1!G !3!B!1!GG|!5!d!1!GG !3!B!1!GG | !2!efg !1!d!3!B!1!G | !2!ABA A!1!G!2!E |
+!1!D!3!G!1!G BGG|dGG BGG | !2!efg !1!d!3!B!1!G | !2!ABA !1!G3 :||
+!2!d!4!g!3!g !5!b!3!gg |!4!aga !5!b!3!g!2!e |!1!d!3!gg !5!b!3!gg |!4!aaa age |
+!1!dgg bgg |!4!aga bge | !2!efg !1!d!3!B!1!G | !2!ABA !1!G3 :||
 
 X:1021
 %%etbk:tnset id:74,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/948
 T: Kitty Lie Over
 T: Frost is All Over, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|: B |\
-AFD DFA | ded B2 A | ABA F2 D | GFG E2 B |
-AFD DF/G/A | df/e/d B2 A | ABA F2 E | EDD D2 :|
-|: e |\
-fdd e^de | fdd d2 e | f2 f def | g2 f e2 g |
-fed B2 d | A2 d F2 G | ABA F2 E | EDD D2 :|
-
+|: A |\
+!4!A!2!F!1!D !1!D!2!F!1!A | !1!A!4!dd !2!B2 A | !1!ABA !2!F!2!F!2!F | !3!G!2!G!3!G !1!EFG |
+!4!AFD !1!D !3!(3D!2!D!1!D | !4!ded !2!B2!1!A | !4!ABA !3!F2 E | !2!E!1!DD D2 :|
+|: !4!e |\
+!3!f!1!dd ede | fdd d2 e | fdf def | ggg efg |
+!5!a!3!f!1!d !2!B2A | !1!A2 !2!F !3!G2 G | !4!ABA !3!F2 E | !2!E!1!DD D2 :|
 
 X:1022
 %%etbk:tnset id:74,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/5199
 T: The Frost Is All Over
 T: Lisdoonvarna, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-A| d2 f edc | dAFGFE | DFA DFA | Bcd ecA |
-d2 f edc | dAFGFE | DFA DFA |1 Bec d2 :|2 Bec d2 || g |
-fdf agf| gfg bag | fdf agf | gfg e2 g |
-|1 fdf agf | gfg bag | fga efg | fdd d2 :|2
-fga efg | fdB AFA | Bcd efg | faf gfe ||3:|
-
+|:!3!d2 !5!f !4!e!3!d!2!B | !1!A!3!F!1!D !2!EE!1!D | !2!F2!4!A A!2!F!1!A | !2!B!4!ee !4!e!3!d!2!B |
+!3!def edB | AFD EED | F2A AF!1!A  |1 !2!B!3!dd d2 :|2 !2!B!3!dd !3!d2!4!e ||
+|:!3!fff afd| !3!ggg !5!b!4!a!3!g | !3!fef afd | !4!gfg !2!e2 e |
+!3!fdf afd | !3!gdg ba!3!g | !3!faf ede | fdd d2 :||
 
 X:1023
 %%etbk:tnset id:74,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/510
 T: Father Hanley's
 T: Rambler, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Amaj
-|: EFE E2 A|FEC E2 e|fec ABc|dcd BAF|
-|EFE E2 A|FEC E2 e|fec ABc|1 BcB A2 F :|2 BcB Acd||
-|: ecB Ace|aff faf|ece fec|cBA Bcd|
-|ecB Ace|aff faf|ece fec|1 BcB Aee:|2 BcB (3ABA F||
+|: !1!E !3!(3E!2!E!1!E E2 !4!A|!2!F!1!EE E2 !4!e|!5!f!4!e!3!c !1!ABc|!2!BBB B!1!A!2!F|
+|!1!E!2!C!1!E E2 !4!A|!2!F!1!EE E2 !4!e|!5!fec ABc|1 BBA !1!A2 !2!F :|2 BBA !1!A2!5!e||
+|: !5!e!3!c!1!A !1!A!2!c!3!e|!5!a!3!ff fa!3!f|!1!e!3!c!1!A !5!e!4!d!3!c|!2!BBB Bcd|
+|!5!ecA !1!A!2!c!3!e|!5!aff faf|!1!e!3!c!1!A !2!BAB|1 cAA A2c:|2 cAA A2 F||
 
 X:1024
 %%etbk:tnset id:75,pos:1,rep:3
@@ -3462,32 +3460,34 @@ X:1043
 %%etbk:site1 http://www.thesession.org/tunes/display/5405
 T: Tommy McCarthy's
 T: Chapel Bell, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 6/8
 L: 1/8
 R: jig
 K:Ddor
-ADD DEG|Add c2e|dcA AGE|c2A GED|
-ADD DEG|Add c2e|dcA AGE|GED DEG:|
-|:Add ded|cde e2d|dcA AGE|c2e dcA|Add ded|
-[1cde e2d|dcA AGE|GED DEG:|
-[2cde a2g|edc AGE|GED DEG||
+!1!D !3!(3D!2!D!1!D !1!D!2!E!4!G|!2!A2!4!d !3!cc!5!e|!4!d!3!c!2!A !2!A!1!G!2!E|!4!G!1!C!5!A !4!G!2!E!1!C|
+!1!D!2!D!1!D !1!DEG|A2d cce|dcA AGE|GED DEG|
+[A3D] DEG|A2d cce|dcA AGE|GCA GEC|
+D (3DDD DEG|A2d cce|dcA AGE|GED DEG|
+|:!2!A2!4!d !4!d!3!c!2!A|!3!c!4!d!5!e !5!e!1!G!4!d|!3!c!2!A!2!A !2!A!1!G!2!A|!3!c2e dcA|!2!A2d dcA|
+|cde eGd|!3!c!2!AA !2!A!1!G!2!E|!4!GED DEG:||
 
 X:1044
 %%etbk:tnset id:81,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11901
 T: Humours of Ballinamult, The
-B: "O’Farrell's Pocket Companion, vol. 1", 1805, page 54
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
+B: "O'Farrell's Pocket Companion, vol. 1", 1805, page 54
 M: 6/8
 L: 1/8
 R: jig
 K: Edor
-A |:\
-B3 EFE | BAG FED | B3 EFE | BAB dAF |
-B3 EFE | BAG FED | A2 D FDF | A3 AGF :|
-|: EFE E2 F | DED D2 F | EFE E2 d | B3 BAF |
-EFE E2 F | DED DFG | A2 D FDF | A3 AGF :|
-|: B2 c d2 e | fdB AGF | B2 c d2 e | f2 e fdB |
-B2 c d2 e | fdB AGF | DED FDF | A3 AGF :|
+ |:!5!B3 !1!E !3!(3E!2!E!1!E | !5!B!4!A!3!G !2!F!1!E!1!D | !5![B3E] !1!E !3!(3E!2!E!1!E | !2!B!2!B!2!B dBA |
+B3 !1!E !3!(3E!2!E!1!E | BAG FED | A2 D !2!F!2!F!2!F |1 A2A AGA :|2 A2A AGF ||
+|: !1!E !3!(3E!2!E!1!E !2!E2 !3!F | !1!D !3!(3D!2!D!1!D !1!D2 !3!F | !1!E !3!(3E!2!E!1!E E2 !2!B | B2B !2!B!1!A!2!F |
+!1!E !3!(3E!2!E!1!E E2 F | !1!D !3!(3D!2!D!1!D !1!D!2!F!3!G | !4!A2 D !2!FFF |1 !4!A2A AGF :|2 A2A AGA ||
+|: !5!B2 !2!c !3!d2 !4!e | !5!f!3!d!2!B !1!A!3!G!2!F | !5!B2 !2!c !3!d2 !4!e | !5!f2 !4!e !5!f!3!d!2!B |
+!1!B2 !2!c !3!d2 !4!e | !5!fdB AGF | !1!D !3!(3D!2!D!1!D !2!F!2!F!2!F | !4!A2A AGA :|
 
 X:1045
 %%etbk:tnset id:82,pos:1,rep:3
@@ -4765,38 +4765,39 @@ E2 A A^GA c2 d e2 ^c | d2 c A2 ^G A3 A2 |]
 X:3001
 %%etbk:tnset id:107,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/204
-T: Humours Of Whiskey, The (I took a run)
+T: Humours Of Whiskey No. 1, The 
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 9/8
 L: 1/8
 R: slip jig
 K: Dmaj
-G2A Bee Bee|GFG BGB AFD|G2A Bee Bee|dcd A2G FED:|
-|:d2e fdf ecA|dcd fdf gfe|1 d2e fdf ecA|Bcd A2G FED:|2 d2e fga ecA|Bcd A2G FED||
+|:!3!G2!4!A !2!B!5!ee Bee|!1!G!2!G!1!G !5!B!3!G!5!B !4!A!2!F!1!D|!3!G2!4!A !2!B!5!ee Bee|!4!dcd !2!AA!1!G !3!FED:|
+|:!3!d2e !5!fdf !4!e!2!c!1!A|!3!d2!4!e !3!fdf !4!gfe|!1!d2!4!e !5!fdf !4!ecA|!2!Bcd !2!AAG FED:||
 
 X:3002
 %%etbk:tnset id:107,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2743
 T: Fairy Jig, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 9/8
 L: 1/8
 R: slip jig
 K: Dmix
-|: A2 G Add Add | A2G Add f3 | A2 G Add Add | cAG A2G FED :||
-| a2f add add | a2f add baf | a2f add add | cAG A2G FED|
-| a2f add add | a2f add baf | a3 bag a2g | fed cAG FED ||
+|: !2!A2 G !2!A!5!dd Add | !2!ABG !2!A!5!d!3!d !5!fef | !2!A2 G A!5!dd Add |1 !4!cAG !2!AA!1!G !3!FED :|2 !4!cAG !2!AAG !2!A!5!d!1!d ||
+| !4!a2g !4!a!1!dd add | !4!abg add bag | !4!a2g add add | !5!bag !4!a2!3!g !2!f!1!e!1!d|
+| !4!a2g add add | !4!abg add bag | !4!a2a !5!ba!2!f !4!g2g | !3!f!2!e!1!d !3!c!2!A!1!G !3!FED ||
 
 X:3003
 %%etbk:tnset id:107,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/46
-T: Humours Of Whiskey, The
+T: Humours Of Whiskey No. 2, The
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 9/8
 L: 1/8
 R: slip jig
 K: Bmin
-|:"G"gfe "Bm"fBB fBB|"G"gfe "Bm"fBB "A"fga|"G"gfe "Bm"fBB "G"efg| "A"agf efd cBA:|
-K:Dmaj
-|:"D"d2e fdf "A"ecA|"D"d2e fed "G"gfe|"D"d2e fdf "G"efg| "A"agf efd cBA:|
-
+|:"f#m"!4!gfe "bm"!3!f!1!BB !3!fBB|!4!gfe !3!f!1!BB !3!fga|!4!gfe !3!f!1!BB fBB| "f#m"!5!agf !2!ef!1!d !3!cBA:|
+|:"D"!3!d2e !5!fdf "A"!4!ecA|"D"!3!d2!4!e !3!fed "A"!4!gfe|"D"!1!d2e !3!fdf "A"!2!efg|!5!agf efd cBA:|
 
 X:3004
 %%etbk:tnset id:108,pos:1,rep:3
@@ -5147,40 +5148,46 @@ X:4024
 %%etbk:site1 http://www.thesession.org/tunes/display/6923
 %%etbk:tube1 http://www.youtube.com/embed/Egxa2Hn_rcA
 T: John Walsh's
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 2/4
 L: 1/8
 R: polka
 K: Gmaj
-G>A BA|GE ED|B,D ED|B,D ED|
-G>A BA|GE ED|B,D ED|G2 G2:|
-g2 gf/g/|ag ge|dB BA|GA Bd|
-g2 gf/g/|ag ge|dB BA|G2 G2:|
-
+!3!G>A !5!BA|!3!G!2!E E!1!D|!2!B,!1!D !2!E!1!D|!2!B,!1!D !2!E!1!D|
+!3!G>A BA|GE ED|!2!B,!1!D ED|!3!G2 G2:|
+!4!g2 gf/g/|!5!a!4!g g!3!e|!2!d!1!B !3!BA|!1!G!2!A !3!B!1!d|
+!4!g2 gf/g/|!5!ag ge|d!1!B !3!BA|!1!G2 G2:|
 
 
 X:4025
 %%etbk:tnset id:121,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4824
-T: Pádraig O'Keeffe's
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
+T: O'Keeffe's
 M: 2/4
 L: 1/8
 R: polka
 K: Gmaj
-|: D |\
-GA Bd | ef g2 | ed Bd | e/f/e/d/ B/c/B/A/ |
-G>A Bd | ef g2 | ed BA |[1 G2 G :|[2 G2 G2 ||
-gf ed | ef g2 | ed Bd | e/f/e/d/ Bd |
-gf ed | ef gf/g/ | ed B/c/B/A/ |[1 G2 G2 :|[2 G2 G |]
-
+|: !1!G>!2!A !3!B!4!d | !3!e!4!f !5!g2 | !3!e!2!d !1!B!2!d | !3!e/f/e/d/ !1!B!2!d |
+!1!G>A B!4!d | !3!ef !5!g2 | !3!ed !1!B!2!A | !1!G4 :||
+!5!g>f ed | !3!ef g2 | !3!ed !1!Bd | !3!e/f/e/d/ !1!Bd |
+!5!g>f ed | !3!ef g2 | !3!ed !1!B!2!A |!1!G4 :||
 
 
 X:4026
 %%etbk:tnset id:121,pos:3,rep:3
 T:Gan Ainm
+Z: Adapted for Piano Accordion by Martin Fleischmann (www.etunebook.ch, www.boxplayer.ch)
 M: 2/4
 L: 1/8
 R: polka
 K: Gmaj
+|:!1!G!3!B B>A|!1!G!3!B B2|!1!AB cd |!5!e!4!d !3!B!2!A |
+!1!G!3!B B>A |GB B2 | !2!AB !4!cA | !1!G!2!F !1!G2:||
+|:!3!d!5!g g>!4!e|!3!d!2!B B2|!1!AB cd |!5!e!4!d !1!B!2!c |
+!3!d!5!g g>!4!e |!3!d!2!B B2 | !2!AB !4!cA | !1!G!2!F !1!G2:||
+|:!3!d!5!g !3!g>!4!a|!5!b!3!g !4!g2|!2!(3efg e!1!d |!3!d!1!B !1!B>!2!c |
+!3!d!5!g !3!g>!4!a|!5!b!3!g !4!g2|!2!(3efg e!1!d |1!4!g2 g>e:|2 g4 ||
 
 X:4027
 %%etbk:tnset id:122,pos:1,rep:3
