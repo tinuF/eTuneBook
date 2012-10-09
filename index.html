@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="eTuneBook" >
+<html lang="en" ng-app="eTuneBook" manifest="eTuneBook.appcache">
 <head>
 	<title>eTuneBook</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Martin Fleischmann | eTuneBook">
 	<meta name="keywords" content="eTuneBook, Abc Tunes">
-	<meta name="description" content="eTuneBook, an application for managing Abc Tunes.">
+	<meta name="description" content="eTuneBook, an application for managing abc tunes.">
 	<meta name="audience" content="all">
 	<meta name="robots" content="index,follow">
 	<meta name="revisit-after" content="7 days">
 	<meta name="page-topic" content="music, notation, repertoire">
-	<meta http-equiv="expires" content="0">
+	<!--<meta http-equiv="expires" content="0">-->
 	
 	<link rel="SHORTCUT ICON" type="image/ico" href="app/img/eTuneBook10.ico">
-	
 	<link href="assets/css/bootstrapDropdownCollapseFix.css" rel="stylesheet"><!--see http://jsfiddle.net/nczJF/1/ and https://github.com/twitter/bootstrap/issues/3184-->
 	<!--<link href="assets/css/bootstrap-2.1.1.css" rel="stylesheet">-->
     <!--<link href="assets/css/bootstrap-responsive-2.1.1.css" rel="stylesheet">-->
@@ -36,9 +35,7 @@
 	<!-- Angular -->
 	<!-- Für ngCloak muss Angular.js im Header gelesen werden. Damit angular nicht jQuery-light lädt und dann der colorPicker umfällt: Zuerst jQuery laden und colorPicker-->
 	<!--<script src="assets/js/angular-1.0.1.js"></script>--> <!--Developer Version-->
-	<script src="assets/js/angular-1.0.1.min.js"></script> <!--Production Version-->
-	
-	<link rel="SHORTCUT ICON" type="image/ico" href="img/martin07Logo.jpg"> 
+	<script src="assets/js/angular-1.0.1.min.js"></script> <!--Production Version--> 
 </head>
  
 <body id="TuneBookEditor" ng-controller="tbkCtrl" ng-cloak class="ng-cloak">
@@ -51,9 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <!--<img src="img/martin07Logo.jpg" class="full" />-->
-		  <a class="brand" href="img/martin07.jpg">eTuneBook</a>
-		  
+		  <a class="brand" href="app/img/martin08.jpg">eTuneBook</a>
           <div class="nav-collapse">
             <ul class="nav ">
 					<li class="dropdown">
@@ -457,7 +452,7 @@
 					<br>
 					<p>eTuneBook wouldn't have been possible without the fantastic work of the following guys. Many thanks to:</p>
 					<ul>
-						<li>Paul Rosen for his <a href="http://code.google.com/p/abcjs/" target="_blank">Abc-Editor</a>. Please have a look at his <a href="http://drawthedots.com/" target="_blank">Tune Editor</a> and at his band <a href="http://itsfloorplay.com/" target="_blank">Floorplay</a>.</li>
+						<li>Paul Rosen and Gregory Dyke for <a href="http://code.google.com/p/abcjs/" target="_blank">abcjs</a>. Please have a look at Paul's <a href="http://drawthedots.com/" target="_blank">Tune Editor</a> and at his band <a href="http://itsfloorplay.com/" target="_blank">Floorplay</a>.</li>
 						<li>Google for <a href="http://angularjs.org/" target="_blank">angular</a>.</li>
 						<li>Twitter for <a href="http://twitter.github.com/bootstrap/" target="_blank">bootstrap</a>.</li>
 						<li><a href="http://www.thesession.org/" target="_blank">Session.org</a> for their huge foundation of session tunes.</li>
