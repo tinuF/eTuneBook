@@ -1,22 +1,21 @@
 CACHE MANIFEST
-# eTuneBook 1.0.0 - 1121009-22-34
+# eTuneBook 1.0.0 - 1121010-20-15
 
 CACHE:
-index.html
-app/img/eTuneBook10.ico
-assets/css/bootstrapDropdownCollapseFix.css
 assets/img/glyphicons-halflings.png
 assets/img/glyphicons-halflings-white.png
+assets/css/bootstrapDropdownCollapseFix.css
 assets/css/docs.css
 assets/css/colorPicker.css
-app/css/etunebook.css
 assets/js/jquery-1.7.2.min.js
 assets/js/jquery.colorPicker.min.js
 assets/js/angular-1.0.1.min.js
-app/img/martin08.jpg
 assets/js/bootstrap.js
 assets/js/abcjs_editor_1.3-min.js
 assets/js/moment.js
+app/img/martin08.jpg
+app/img/eTuneBook10.ico
+app/css/etunebook.css
 app/js/eTuneBook.js
 app/js/controllers/tbkCtrl.js
 app/js/services/tbkStorage.js
@@ -34,4 +33,4 @@ app/js/filters/tbkNoDefaultDate.js
 app/js/filters/tbkAddSkillDescription.js
 
 NETWORK:
-*
+* 

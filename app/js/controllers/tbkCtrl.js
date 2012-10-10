@@ -7,6 +7,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	// Test for first-time navigation to the welcome-page
 	//localStorage.clear();
 	
+	// Test whether changes in eTuneBook.appcache are detected by the browser 
+	askForRefreshFromServer();
+		
 	// Get tuneBook from localStorage 
 	var tuneBook =  eTBk.TuneBook.getTuneBookFromStore();
   
@@ -29,6 +32,17 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.currentPage = page.number -1;	
 	};
 
+	
+	function askForRefreshFromServer() {
+		if (window.applicationCache) {
+			applicationCache.addEventListener('updateready', function() {
+				if (confirm('An eTuneBook update is available. Reload now?')) {
+					window.location.reload();
+				}
+			});
+		}
+	}
+	
 	function setPages() {
 		$timeout(function(){
 			var tuneSetCount = 0;
@@ -61,6 +75,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	
 	
 	function initView(view){
+		// Set current example
+		$scope.exampleFileName = eTBk.EXAMPLE_FILENAME;
+		
 		// Init TuneSet-View-Detail-Panels
 		initTuneSetViewDetailPanels();
 		
@@ -474,7 +491,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			//var fingerPattern = /!\d!/g;		//matches !<number>! globally (every occurence)
 			var tuneAbc = tune.pure;
 			
-			if ($scope.fingeringAbc) {
+			if (!$scope.fingeringAbcIncl) {
 				tuneAbc = tuneAbc.replace(eTBk.PATTERN_FINGER, '');
 			}
 			ABCJS.renderAbc(showHere, tuneAbc);
