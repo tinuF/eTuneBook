@@ -480,6 +480,15 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		}
 	};
 	
+	$scope.showSampleDots = function( tuneSetPosition ) { 
+		$timeout(function() {
+			var showHere = 'sampleDotsViewerFor'+tuneSetPosition.tune.title;
+			var tuneAbc = eTBk.TuneBook.getSampleAbc(tuneSetPosition);
+			tuneAbc = skipFingering(tuneAbc);
+			ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:0.6, paddingtop:0, paddingbottom:0, staffwidth:960}, {});	
+		}, 0, false);
+	};
+	
 	function renderAbc(tune) {
 		//Render Abc
 		//Important: Has to be timed-out, otherwise fingerings won't show up
@@ -488,17 +497,19 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	
 		$timeout(function() {
 			var showHere = 'renderTheDotsFor'+tune.title;
-			//var fingerPattern = /!\d!/g;		//matches !<number>! globally (every occurence)
-			var tuneAbc = tune.pure;
-			
-			if (!$scope.fingeringAbcIncl) {
-				tuneAbc = tuneAbc.replace(eTBk.PATTERN_FINGER, '');
-			}
+			var tuneAbc = skipFingering(tune.pure);
 			ABCJS.renderAbc(showHere, tuneAbc);
-			//new ABCJS.Editor(tune.title, { canvas_id: showHere });
 		}, 0, false);
 	}
-		
+
+	function skipFingering(tuneAbc) {	
+		if (!$scope.fingeringAbcIncl) {
+			tuneAbc = tuneAbc.replace(eTBk.PATTERN_FINGER, '');
+		}
+		return tuneAbc
+	}
+
+	
 	
 	$scope.toggleFingeringAbc = function() { 
 		$scope.fingeringAbcIncl = !$scope.fingeringAbcIncl;
@@ -508,7 +519,26 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			
 		} else if ($scope.dotsViewerTune != null) {
 			renderAbc($scope.dotsViewerTune);
-		} 
+		
+		} else if ($scope.editedTune == null && $scope.infoEditedTuneSetPosition == null && $scope.movedTuneSetPosition == null && $scope.dotsViewerTune == null  && $scope.youTubeTune == null) {  
+			$timeout(function() {
+				if ($scope.tuneSetsDisplayed && $scope.tuneSetsDisplayed.length > 0) {
+					for (var i = 0; i < $scope.tuneSetsDisplayed.length; i++) {
+						for (var z = 0; z < $scope.tuneSetsDisplayed[i].tuneSetPositions.length; z++) {
+							$scope.showSampleDots($scope.tuneSetsDisplayed[i].tuneSetPositions[z]);
+							
+							/*
+							var tuneSetPosition = $scope.tuneSetsDisplayed[i].tuneSetPositions[z];
+							var showHere = 'sampleDotsViewerFor'+tuneSetPosition.tune.title;
+							var tuneAbc = eTBk.TuneBook.getSampleAbc(tuneSetPosition);
+							tuneAbc = skipFingering(tuneAbc);
+							ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:0.6, paddingtop:0, paddingbottom:0, staffwidth:960}, {});
+							*/
+						}
+					}
+				}
+			}, 1000, false);
+		}
 	};
 	
 	$scope.toggleTuneSetAbc = function() { 
