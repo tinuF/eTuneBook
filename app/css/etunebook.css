@@ -431,6 +431,12 @@ div.colorPicker-picker {
 }
 
 .moveEditor.showMoveEditor {
+	/*Hinweis: Für Chrome könnte für alle Detailpanels gesetzt werden:
+	display: inline-block
+	-> margin-top weglassen
+	-> Detailpanel ist schön bündig mit Oberkante Tune
+	ABER: Firefox macht da nicht mit!
+	*/
 	display: block;
 	overflow: true;
 	position: absolute;

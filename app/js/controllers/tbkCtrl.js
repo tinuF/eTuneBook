@@ -8,6 +8,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	//localStorage.clear();
 	
 	// Test whether changes in eTuneBook.appcache are detected by the browser 
+	// Todo: Chrome reagiert hier mit Confirm-Panel, Firefox macht zwar den zweiten Reload, aber ohne das Confirm-Panel anzuzeigen!
 	askForRefreshFromServer();
 		
 	// Get tuneBook from localStorage 
@@ -88,7 +89,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		
 		// Init TuneSet Sorter
 		$scope.tuneSetSortField = "tuneSetId";
-		$scope.tuneSetSortReverse = true;
+		$scope.tuneSetSortReverse = false;
 		
 		// Init TuneSet Filter
 		$scope.tuneSetColorToFilter = "All Colors";

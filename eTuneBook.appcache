@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# eTuneBook 1.0.0 - 1121011-23-53
+# eTuneBook 1.0.0 - 1121011-22-50
 
 CACHE:
 assets/img/glyphicons-halflings.png
@@ -12,6 +12,22 @@ assets/js/jquery.colorPicker.min.js
 assets/js/angular-1.0.1.min.js
 assets/js/bootstrap.js
 assets/js/abcjs_editor_1.3-min.js
+#assets/js/abcjs/api/abc_tunebook.js
+#assets/js/abcjs/data/abc_tune.js
+#assets/js/abcjs/edit/abc_editor.js
+#assets/js/abcjs/midi/abc_midiwriter.js
+#assets/js/abcjs/parse/abc_common.js
+#assets/js/abcjs/parse/abc_parse.js
+#assets/js/abcjs/parse/abc_parse_directive.js
+#assets/js/abcjs/parse/abc_parse_header.js
+#assets/js/abcjs/parse/abc_parse_key_voice.js
+#assets/js/abcjs/parse/abc_tokenizer.js
+#assets/js/abcjs/write/abc_glyphs.js
+#assets/js/abcjs/write/abc_graphelements.js
+#assets/js/abcjs/write/abc_layout.js
+#assets/js/abcjs/write/abc_write.js
+#assets/js/abcjs/write/raphael.js
+#assets/js/abcjs/write/sprintf.js
 assets/js/moment.js
 app/img/martin08.jpg
 app/img/eTuneBook10.ico

@@ -532,6 +532,7 @@
 								</div>
 									
 							</div>
+							
 							<form>
 								<textarea id={{tuneSetPosition.tune.title}} class="input-xlarge edit"   ng-model="tuneSetPosition.tune.pure" tbk-tune-blur="doneEditing(tuneSetPosition)" tbk-tune-focus="tuneSetPosition.tune == editedTune"></textarea>
 							</form>
@@ -627,21 +628,14 @@
 								<div id="renderTheDotsFor{{tuneSetPosition.tune.title}}"></div>
 							</div>
 							
-							<!--<div id="sampleDotsViewerFor{{tuneSetPosition.tune.title}}" class="sampleDotsViewer" ng-show="showSampleDots">-->
-							<!--<div id="sampleDotsViewerFor{{tuneSetPosition.tune.title}}" class="sampleDotsViewer" ng-show="tuneSetPosition.tune != editedTune && tuneSetPosition != infoEditedTuneSetPosition && tuneSetPosition != movedTuneSetPosition && tuneSetPosition.tune != dotsViewerTune">-->
-							<div id="sampleDotsViewerFor{{tuneSetPosition.tune.title}}" class="sampleDotsViewer" ng-show="editedTune == null && infoEditedTuneSetPosition == null && movedTuneSetPosition == null && dotsViewerTune == null  && youTubeTune == null">
-								<!--<div id="renderSampleDotsFor{{tuneSetPosition.tune.title}}"></div>-->
-							</div>
+							<div id="sampleDotsViewerFor{{tuneSetPosition.tune.title}}" class="sampleDotsViewer" ng-show="editedTune == null && infoEditedTuneSetPosition == null && movedTuneSetPosition == null && dotsViewerTune == null  && youTubeTune == null"></div>
 							
 							<div id="showYouTubeVideoFor{{tuneSetPosition.tune.title}}" class="showTheVideo" style="background-color:{{tuneSetPosition.tune.color}}">
-								<iframe ng-class="{showVideo: tuneSetPosition.tune == youTubeTune}" class="youtube-player" type="text/html" width="640" height="385" src={{youTubeUrl}} frameborder="0">
-								</iframe>
+								<iframe ng-class="{showVideo: tuneSetPosition.tune == youTubeTune}" class="youtube-player" type="text/html" width="640" height="385" src={{youTubeUrl}} frameborder="0"></iframe>
 							</div>
 						</li>
 					</ul>	
 				</div> <!-- /tuneSet -->
-				<div id="tunebook" ></div>
-				<div id="popover_content_wrapper" hidden = 'true'></div>
 				<input class="input-file" id="fileInput" type="file" tbk-file-select>
 			</div>
 			<div class="span8 dotsAndExportArea"></div>
@@ -654,8 +648,26 @@
 	<!--<script src="assets/js/bootstrap-2.1.1.js"></script>--> <!--neue Versionen von Bootstrap: Schrift geändert, Problem mit Untermenü in Nav-Collapse nicht gelöst -->
 	
 	<!-- Abc-Editor.js -->
-	<!--<script src="assets/js/abcjs_editor_1.3-deminified.js"></script> --> <!--Developer Version-->
-	<script src="assets/js/abcjs_editor_1.3-min.js"></script> <!--Production Version-->
+	<script src="assets/js/abcjs_editor_1.3-min.js"></script><!--Production Version-->
+	<!--Developer Version 
+	<script src="assets/js/abcjs/api/abc_tunebook.js"></script>
+	<script src="assets/js/abcjs/data/abc_tune.js"></script>
+	<script src="assets/js/abcjs/edit/abc_editor.js"></script>
+	<script src="assets/js/abcjs/midi/abc_midiwriter.js"></script>
+	<script src="assets/js/abcjs/parse/abc_common.js"></script>
+	<script src="assets/js/abcjs/parse/abc_parse.js"></script>
+	<script src="assets/js/abcjs/parse/abc_parse_directive.js"></script>
+	<script src="assets/js/abcjs/parse/abc_parse_header.js"></script>
+	<script src="assets/js/abcjs/parse/abc_parse_key_voice.js"></script>
+	<script src="assets/js/abcjs/parse/abc_tokenizer.js"></script>
+	<script src="assets/js/abcjs/write/abc_glyphs.js"></script>
+	<script src="assets/js/abcjs/write/abc_graphelements.js"></script>
+	<script src="assets/js/abcjs/write/abc_layout.js"></script>
+	<script src="assets/js/abcjs/write/abc_write.js"></script>
+	<script src="assets/js/abcjs/write/raphael.js"></script>
+	<script src="assets/js/abcjs/write/sprintf.js"></script>
+	-->
+	
 	
 	<!-- Moment.js (Datum-Utility) -->
 	<script src="assets/js/moment.js"></script>
