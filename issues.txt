@@ -31,4 +31,5 @@ Allmemein
 		ev. MIDI einbauen
 		Vergrösserungsfunktion für Sampledots? Angabe wieviele Takte angezeigt werden sollen? Ev. im Zusammenhang mit Show only sampledots? (Session-Modus auf iPhone). Oder beim wegklicken von den button-lines die Grösse anpassen?
 		Dots drucken
+		Eher als Vergrösserung für Sampledots: Settings speichern (hide info-  und edit panel -> mit Browser vergrössern -> Gute Anzeige.
 		

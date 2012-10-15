@@ -4,8 +4,9 @@
  * Services that persists and retrieves a TuneBook from localStorage.
  */
 eTuneBook.factory( 'tbkStorage', function() {
-  var STORAGE_ID = 'etbk-tuneBook';
-  var eTBK_VERSION = '1.0.0';
+  var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
+  var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
+  var eTBK_VERSION = '1.0.1';
   var ABC_VERSION = '2.1';
   //var eTBK_DEFAULT_COLOR = "#E0F0F0";
   var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -13,7 +14,7 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_DEFAULT_PLAYDATE_STRING_FORMATTED = "1966-04-05 22:00";
   var eTBK_DEFAULT_PLAYDATE_DATE = moment(eTBK_DEFAULT_PLAYDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
-  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V05.abc';
+  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V06.abc';
   
 
   if (!window.eTBk) {
@@ -1106,15 +1107,21 @@ eTuneBook.factory( 'tbkStorage', function() {
 		
 		eTBk.TuneBook.storeAbc = function (tuneBook) {
 			// Generate eTuneBook Abc from the tuneBook-Model and store it in localStorage
-			localStorage.setItem(STORAGE_ID, JSON.stringify(getAbc(tuneBook.tuneSets, tuneBook.name, true, true, true, true, true, true, true, true)));
+			localStorage.setItem(eTBK_STORAGE_ID_TUNEBOOK, JSON.stringify(getAbc(tuneBook.tuneSets, tuneBook.name, true, true, true, true, true, true, true, true)));
 		}
+		
+		eTBk.TuneBook.storeSettings = function (settings) {
+			// Store settings in localStorage
+			localStorage.setItem(eTBK_STORAGE_ID_SETTINGS, JSON.stringify(settings));
+		}
+
 		
 		eTBk.TuneBook.getTuneBookFromStore = function () {
 			var tuneBook = new Array();
 			var abc = "";
 			
 			// Retrieve eTuneBook Abc from localStorage
-			abc = JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
+			abc = JSON.parse(localStorage.getItem(eTBK_STORAGE_ID_TUNEBOOK) || '[]');
 			
 			if (abc == undefined || abc == "") {
 			
@@ -1125,6 +1132,16 @@ eTuneBook.factory( 'tbkStorage', function() {
 			
 			return	tuneBook;
 		}
+		
+		eTBk.TuneBook.getSettingsFromStore = function () {
+			var settings = new Array();
+			
+			// Retrieve Settings from localStorage
+			settings = JSON.parse(localStorage.getItem(eTBK_STORAGE_ID_SETTINGS) || '[]');
+		
+			return	settings;
+		}
+
 		
 	})();
   
