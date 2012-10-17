@@ -945,7 +945,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 			return tuneAbc;
 		}
 		
-		
+		/*
 		function getSampleAbc(tuneSetPosition) {
 			var tuneSplits = new Array();
 			var dotsLineSplits = new Array();
@@ -1013,13 +1013,6 @@ eTuneBook.factory( 'tbkStorage', function() {
 				}
 
 				if (needed) {
-					/*
-					if (beginOfLine == "T:"){
-						newAbc = newAbc + beginOfLine; 
-					} else {
-						newAbc = newAbc + tuneSplits[i];
-					}
-					*/
 					if (appendNextLine) {
 						dotsLineSplits = tuneSplits[i].split("\n");
 						dotsLineSplits = dotsLineSplits[0].replace(/^\s+|\s+$/g, '');
@@ -1037,6 +1030,150 @@ eTuneBook.factory( 'tbkStorage', function() {
 		return newAbc;
 			
 		}
+		*/
+		
+		function getSampleAbc(tuneSetPosition, startFromBar, numberOfBars) {
+			var tuneSplits = new Array();
+			var barSplits = new Array();
+			var barSplit = "";
+			var barLength = 0;
+			var dotsLineSplits = new Array();
+			var newAbc = "";
+			var beginOfLine = "";
+			var barPattern = /\|/g;		//matches | globally (every occurence)
+			var barMatches = new Array();
+			var titleCount = 0;
+			var totBarCount = 0;
+			var isHeaderLine = false;
+			var isNeeded = false;
+			var isBar = false;
+			var isLastBar = false;
+			var isInFocus = true;
+			var simulateTitle = false;
+			tuneSplits = tuneSetPosition.tune.pure.split("\n");
+			
+			for (var i = 0; i < tuneSplits.length; i++) {	
+				isHeaderLine = false;
+				isBar = false;
+				isNeeded = false;
+				simulateTitle = false;				
+			
+				if (isInFocus) {				
+					// Abc-Standard
+					beginOfLine = tuneSplits[i].substring(0,2);
+					
+					if (beginOfLine == "X:"){
+						isHeaderLine = true;
+						isNeeded = true;
+					} else if (beginOfLine == "M:"){
+						isHeaderLine = true;
+						isNeeded = true;
+					} else if (beginOfLine == "L:"){
+						isHeaderLine = true;
+						isNeeded = true;
+					} else if (beginOfLine == "K:"){
+						isHeaderLine = true;
+						isNeeded = true;
+					} else if (beginOfLine == "T:"){
+						isHeaderLine = true;
+					
+						// TODO: titles have to be included -> talk to Paul for options
+						if (titleCount == 0) {
+							// Only print first title
+							simulateTitle = true;
+							isNeeded = true;
+						}
+						titleCount = titleCount + 1;
+						
+					} else {
+						
+						barSplits = tuneSplits[i].split("\n");
+						barSplits = barSplits[0].split("|");
+						
+						// Annahmen: 
+						//-Es gibt keine Takte, die über zwei Zeilen verteilt sind.
+						
+						// Es braucht im Minimum einen Takt-Strich als Hinweise dafür,
+						// dass es sich um eine Dots-Line handelt 
+						// Erster Takt-Strich am Beginn der Line gibt ein String mit 0 Zeichen
+						
+						if (barSplits.length <= 1) {
+							isHeaderLine = true;
+							isNeeded = false;
+						
+						} else {
+							
+							for (var z = 0; z < barSplits.length; z++) {
+								barSplit = barSplits[z].replace(/^\s+|\s+$/g, '');
+								
+								if (isInFocus) {
+									isBar = false;
+									isNeeded = false;
+									barLength = barSplit.length;
+									
+									if (barLength == 0) {
+										// -Takt-Strich am Beginn der Linie (es hat vorher keine anderen Zeichen), oder
+										// -Takt-Strich am Ende der Linie
+										// -Doppel-Taktstrich (kein Zeichen zwischen den Takt-Strichen)
+										// Hinweise: 
+										// -Ein Takt-Strich am Schluss der Line hätte barLength == 1, wenn der 
+										// Zeilenumbruch nicht rausgenommen würde.
+										// -Es gibt aber auch nach dem Rausnehmen des Zeilenumgruchs noch letzte Takt-Striche
+										// mit barLength == 1. Dort sind versteckte Zeichen drin, die auch zu einem Zeilenumbruch führen. 
+										// Mit obiger replace-Funktion werden diese entfernt.
+										// 
+									} else 	if (barLength < 4) {
+										// Auftakt (Annahme: Maximum 3 Zeichen)
+										// TODO: Auftakte mit Fingering, oder Triolen zählen noch als Takte, weil barLength >= 4!
+										isNeeded = true;
+									} else {
+										// Minimum 4 Zeichen
+										isBar = true;
+										totBarCount = totBarCount + 1;
+									}
+									
+									if (isBar) { 
+										if (startFromBar <= totBarCount && totBarCount < startFromBar + numberOfBars) {									 
+											isNeeded = true;
+											
+											if (totBarCount == startFromBar + numberOfBars -1) {
+												isLastBar = true;
+											}
+										} else {
+											// Erster Takt, der nicht mehr im Anzeige-Bereich ist.
+											isInFocus = false;	
+										}
+									} 
+								
+									if (isNeeded) {
+										newAbc = newAbc + barSplit;
+										newAbc = newAbc + "|";
+										
+										if (isLastBar) {
+											// Nächster Takt nicht mehr in Fokus
+											isInFocus = false;
+										}
+									} 
+								}
+							}							
+						}	
+					}
+
+					if (isHeaderLine && isNeeded) {
+						if (simulateTitle) {
+							newAbc = newAbc + "T: ";
+							newAbc = newAbc + "\n";
+						} else {
+							newAbc = newAbc + tuneSplits[i];
+							newAbc = newAbc + "\n";
+						}
+					}		
+				}
+			}
+		
+		return newAbc;
+			
+		}
 		
 		
 		// Static Methods for Calling from Outside
@@ -1045,7 +1182,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 		}
 		
 		eTBk.TuneBook.getSampleAbc = function (tuneSetPosition) {
-			return getSampleAbc(tuneSetPosition);
+			return getSampleAbc(tuneSetPosition, 1, 4);
 		}
 		
 		eTBk.TuneBook.initializeTuneSet = function (tuneSets) {

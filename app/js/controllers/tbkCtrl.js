@@ -111,7 +111,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		
 			// Init Pagination
 			$scope.currentPage = 0;
-			$scope.pageSize = 10;
+			$scope.pageSize = 5;
 			$scope.showPageButtons = true;
 					
 			// Override Default by Settings from localStorage			
