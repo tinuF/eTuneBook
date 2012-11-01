@@ -25,7 +25,7 @@ Allmemein
 		Nach Fingering-Anpassung vom 11.10: ABC-Button -> Tune Select -> Texteditor geht auf mit noten rechts, sampledots der anderen tunes verschwinden aber nicht. zweites mal auf abc-button -> verschwunden. Initialisierungs-Problem.
 		Zweimal hintereinander Open geht nicht
 		Springen des Bildschirms nach oben, nachdem man bei längeren tunes nach unten navigiert hat, um gleichzeitig die noten zu sehen. Editierung mühsam. 
-		
+		Zweimal hintereinander ramdom sort geht nicht.
 	Neue Features:	
 		Hide chords
 		ev. MIDI einbauen

@@ -126,20 +126,6 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret black-caret"></b></a>
 						<ul class="dropdown-menu">
-							<!--
-							<li ng-class="{tuneSecondLineShown: showTuneSecondLine}"><a ng-click="toggleTuneSecondLine()">Rehearse Buttons <i ng-show="showTuneSets && showTuneSecondLine" class="icon-ok"></i></a></li>
-							<li ng-class="{tuneThirdLineShown: showTuneThirdLine}"><a ng-click="toggleTuneThirdLine()">Info Buttons <i ng-show="showTuneSets && showTuneThirdLine" class="icon-ok"></i></a></li>
-							<li ng-class="{tuneForthLineShown: showTuneForthLine}"><a ng-click="toggleTuneForthLine()">Edit Buttons <i ng-show="showTuneSets && showTuneForthLine" class="icon-ok"></i></a></li>
-							<li class="divider"></li>
-							<li ng-class="{tuneSetAbcShown: tuneSetAbcIncl}"><a ng-click="toggleTuneSetAbc()">Export TuneSets<i ng-show="tuneSetAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{playDateAbcShown: playDateAbcIncl}"><a ng-click="togglePlayDateAbc()">Export Playdates<i ng-show="playDateAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{skillAbcShown: skillAbcIncl}"><a ng-click="toggleSkillAbc()">Export Skills<i ng-show="skillAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{colorAbcShown: colorAbcIncl}"><a ng-click="toggleColorAbc()">Export Colors<i ng-show="colorAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{annotationAbcShown: annotationAbcIncl}"><a ng-click="toggleAnnotationAbc()">Export Comments<i ng-show="annotationAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{siteAbcShown: siteAbcIncl}"><a ng-click="toggleSiteAbc()">Export Sites<i ng-show="siteAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{tubeAbcShown: tubeAbcIncl}"><a ng-click="toggleTubeAbc()">Export Videos<i ng-show="tubeAbcIncl" class="icon-ok"></i></a></li>
-							<li ng-class="{fingeringAbcShown: fingeringAbcIncl}"><a ng-click="toggleFingeringAbc()">Show/Export Fingering<i ng-show="fingeringAbcIncl" class="icon-ok"></i></a></li>
-							-->
 							<li><a ng-click="toggleTuneSecondLine()">Show Rehearse Buttons <i ng-show="showTuneSets && showTuneSecondLine" class="icon-ok"></i></a></li>
 							<li><a ng-click="toggleTuneThirdLine()">Show Info Buttons <i ng-show="showTuneSets && showTuneThirdLine" class="icon-ok"></i></a></li>
 							<li><a ng-click="toggleTuneForthLine()">Show Edit Buttons <i ng-show="showTuneSets && showTuneForthLine" class="icon-ok"></i></a></li>
@@ -177,35 +163,7 @@
 					<button class="btn btn-mini pageBtn" ng-repeat="page in pages" ng-disabled="currentPage==page.number - 1" ng-class="{isActivControl: currentPage==page.number - 1}" ng-click="setCurrentPage(page)">{{page.number}}</button>
 				</div>
 			</div>
-			<div class="span8">
-					<!--
-					<div class="statistics ">
-						<div class="statisticsLine ">
-							<div class="statisticsValueGroup ">
-								<div class="statisticsValue ">sets: {{tuneBook.tuneSets.length}}</div>
-								<div class="statisticsValue ">selected: {{tuneSetsFiltered.length}}</div>
-							</div>
-						</div>
-						<div class="statisticsLine ">
-							<div class="statisticsValueGroup ">
-								<div class="statisticsValue" ng-repeat="tuneSetTypeForFilter in tuneSetTypesForFilter" ng-show="tuneSetTypeForFilter.type != 'All Types'">{{tuneSetTypeForFilter.type}}: {{tuneSetTypeForFilter.count}} </div>
-							</div>
-						</div>
-					</div>
-					-->
-					<!--
-				    <dl class="dl-horizontal">
-						<dt>total</dt>
-						<dd>{{tuneBook.tuneSets.length}}</dd>
-						<dt>filtered</dt>
-						<dd>{{tuneSetsFiltered.length}}</dd>
-						<dt>displayed</dt>
-						<dd>{{tuneSetsDisplayed.length}}</dd>
-					</dl>
-					-->
-						
-			</div>
-							
+			<div class="span8"></div>
 		</div>
 		
 		<div class="showIntroduction" ng-show="showIntroduction">
@@ -433,6 +391,7 @@
 						<li>15.10.12: Updated Boxplayer.abc from V05 to V06.</li>
 						<li>16.10.12: Reduced page size from 10 sets to 5.</li>
 						<li>17.10.12: Reduced sample dots to 4 bars.</li>
+						<li>01.11.12: Updated Boxplayer.abc from V06 to V07.</li>
 					</ul>
 					<br>
 					<p>Release 1.0.0 (05.10.2012)</p>
