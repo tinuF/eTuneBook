@@ -80,7 +80,7 @@
 					
 					<li>
 						<form class="navbar-form">
-							<select class="input-small" ng-change="filterForTuneSetKey(tuneSetKeyForFilter)" ng-model="tuneSetKeyForFilter" ng-options="tuneSetKeyForFilter.key + ' (' + tuneSetKeyForFilter.setCount + 'sets/' + tuneSetKeyForFilter.tuneCount + ' tunes)' for tuneSetKeyForFilter in tuneSetKeysForFilter | orderBy:'sort'">	</select>
+							<select class="input-small" ng-change="filterForTuneSetKey(tuneSetKeyForFilter)" ng-model="tuneSetKeyForFilter" ng-options="tuneSetKeyForFilter.key + ' (' + tuneSetKeyForFilter.setCount + ' sets/' + tuneSetKeyForFilter.tuneCount + ' tunes)' for tuneSetKeyForFilter in tuneSetKeysForFilter | orderBy:'sort'">	</select>
 						</form>
 					</li>
 					
@@ -387,6 +387,8 @@
 					<p>Release 1.0.1 (15.10.2012)</p>
 					<ul>
 						<li>Current Release</li>
+						<li>28.11.12: Total tune set count fixed in key-selector.</li>
+						<li>28.11.12: Updated Boxplayer.abc from V085 to V09.</li>
 						<li>21.11.12: Updated Boxplayer.abc from V08 to V085.</li>
 						<li>01.11.12: Updated Boxplayer.abc from V07 to V08.</li>
 						<li>15.10.12: The following settings are now remembered (stored in local storage): Which buttons to show, filter and sort algorithm, selected page.</li>

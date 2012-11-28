@@ -1094,18 +1094,22 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		var selectedTuneSetKeyForFilter = new Array ();
 		
 		if ($scope.hasOwnProperty("tuneBook")) {
+			
+			tuneSetCount = $scope.tuneBook.tuneSets.length;
+			
 			for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {
 				tuneSetKeysCounted = new Array();
 				
 				for (var c = 0; c < $scope.tuneBook.tuneSets[i].tuneSetPositions.length; c++) {
 					addToKeyFilter = true;
+					
+					tuneCount = tuneCount + 1;
 				
 					for (var z = 0; z < tuneSetKeysForFilter.length; z++) {	
 						if (tuneSetKeysForFilter[z].key == $scope.tuneBook.tuneSets[i].tuneSetPositions[c].tune.key) {
 							addToKeyFilter = false;
 							
 							tuneSetKeysForFilter[z].tuneCount = tuneSetKeysForFilter[z].tuneCount + 1;
-							tuneCount = tuneCount + 1;
 							addToTuneSetCount = true;
 							
 							for (var y = 0; y < tuneSetKeysCounted.length; y++) {
@@ -1117,7 +1121,6 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 							if (addToTuneSetCount) {
 								// Pro Key ein Set nur einmal zählen
 								tuneSetKeysForFilter[z].setCount = tuneSetKeysForFilter[z].setCount + 1;
-								tuneSetCount = tuneSetCount + 1;
 								tuneSetKeysCounted.push($scope.tuneBook.tuneSets[i].tuneSetPositions[c].tune.key);
 							}
 						}
@@ -1129,8 +1132,6 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 						tuneSetKeyForFilter.sort = tuneSetKeyForFilter.key;
 						tuneSetKeyForFilter.setCount = 1;
 						tuneSetKeyForFilter.tuneCount = 1;
-						tuneCount = tuneCount + 1;
-						tuneSetCount = tuneSetCount + 1;
 						tuneSetKeysCounted.push($scope.tuneBook.tuneSets[i].tuneSetPositions[c].tune.key);
 						tuneSetKeysForFilter.push(tuneSetKeyForFilter);
 						
