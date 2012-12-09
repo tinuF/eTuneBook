@@ -37,6 +37,12 @@ li.sortable-placeholder {
 	width: 380px; 
 	border-radius: 6px;	
 }
+
+
+.sortable.showSessionModus { 
+	width: 640px;	
+}
+
 	
 .sortable li {
 	list-style: none;
@@ -52,6 +58,12 @@ li.sortable-placeholder {
 	border-radius: 6px;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25)	
 }
+
+
+.sortable li.showSessionModus {
+	width: 620px; 
+}
+
 		
 .popover-inner {
 	width: 480px;
@@ -205,6 +217,10 @@ audio.showAudio {
 	/*border-bottom: 1px solid #999;*/
 }
 
+#tuneSetPositionList li .tuneSecondLine.showSessionModus {
+	visibility:hidden; 
+}
+
 #tuneSetPositionList li .tuneThirdLine {
 	margin-top: 5px; /*Abstand zur zweiten Linie*/
 	display: block;
@@ -222,6 +238,11 @@ audio.showAudio {
 	/*border-top: 1px solid #999;*/
 	/*border-bottom: 1px solid #999;*/
 }
+
+#tuneSetPositionList li .tuneForthLine.showSessionModus {
+	visibility:hidden; 
+}
+
 
 
 #tuneSetPositionList li .tuneType {
@@ -402,6 +423,10 @@ div.colorPicker-picker {
 	max-width: 250px;
 }
 
+.tuneForeignInfoButtonGroup.showSessionModus{
+	display: none;
+}
+
 .tuneSetInfo {
 	width: 380px; 
 	float: left;
@@ -495,7 +520,31 @@ div.colorPicker-picker {
 	margin: 10px;
 	padding: 10px;
 	margin-top: -125px; /*Auf Höhe des Tunes setzen*/
-	left: 450px; /* So weit nach rechts, so dass keine Überlappung mit Popover mehr möglich*/
+	left: 450px; 
+	/*padding: 16px 16px 16px 60px;*/
+	/*border: none;*/
+	/*background: rgba(0, 0, 0, 0.02);*/
+	/*z-index: 2;*/
+	/*box-shadow: none;*/
+	
+	border: 1px solid #CCC;
+	background: #eee; 
+	background: #99EDEA;
+	
+	padding-bottom: 0px;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.25)
+}
+
+
+.dotsViewer.showDotsViewer.showSessionModus {
+	display: block;
+	overflow: true;
+	position: absolute;
+	margin: 10px;
+	padding: 10px;
+	margin-top: -125px; /*Auf Höhe des Tunes setzen*/
+	left: 60px; 
 	/*padding: 16px 16px 16px 60px;*/
 	/*border: none;*/
 	/*background: rgba(0, 0, 0, 0.02);*/
@@ -535,6 +584,14 @@ div.colorPicker-picker {
 	border-radius: 6px;
 	box-shadow: 0 1px 3px rgba(0,0,0,.25)
 	*/
+}
+
+
+.sampleDotsViewer.showSessionModus {
+	display: block;
+	position: absolute;
+	margin-top: -80px; /*Auf Höhe des Tunes setzen*/
+	left: 60px; 
 }
 
 .btn-mini {

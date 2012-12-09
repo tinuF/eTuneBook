@@ -130,7 +130,11 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			
 			if (settings.hasOwnProperty("showTuneForthLine")){
 				$scope.showTuneForthLine = settings.showTuneForthLine;
-			} 
+			}
+
+			if (settings.hasOwnProperty("sessionModus")){
+				$scope.sessionModus = settings.sessionModus;
+			}			
 			
 			if (settings.hasOwnProperty("tuneSetSortField")){
 				$scope.tuneSetSortField = settings.tuneSetSortField;
@@ -195,9 +199,10 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			showTuneSecondLine: $scope.showTuneSecondLine,			// TuneSet-View 	// General Settings			
 			showTuneThirdLine: $scope.showTuneThirdLine, 
 			showTuneForthLine: $scope.showTuneForthLine,
+			sessionModus: $scope.sessionModus,						// Session Modus
 			tuneSetSortField: $scope.tuneSetSortField, 				// TuneSet-Sort
 			tuneSetSortReverse: $scope.tuneSetSortReverse,			 
-			//tuneSetAbcIncl: $scope.tuneSetAbcIncl,					// Abc-Export
+			//tuneSetAbcIncl: $scope.tuneSetAbcIncl,				// Abc-Export
 			//playDateAbcIncl: $scope.playDateAbcIncl,
 			//skillAbcIncl: $scope.skillAbcIncl,
 			//colorAbcIncl: $scope.colorAbcIncl,
@@ -504,19 +509,56 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	};
 
 	$scope.toggleTuneSecondLine = function() {
-		$scope.showTuneSecondLine = !$scope.showTuneSecondLine;
+		if ($scope.sessionModus) {
+			$scope.sessionModus = false;
+			$scope.showTuneSecondLine = true;
+		
+		} else {
+			$scope.showTuneSecondLine = !$scope.showTuneSecondLine;
+		}
+		
 		// Put Settings to localStorage
 		eTBk.TuneBook.storeSettings(getSettings());
 	};
 	
 	$scope.toggleTuneThirdLine = function() {
-		$scope.showTuneThirdLine = !$scope.showTuneThirdLine;
+		if ($scope.sessionModus) {
+			$scope.sessionModus = false;
+			$scope.showTuneThirdLine = true;
+		
+		} else {
+			$scope.showTuneThirdLine = !$scope.showTuneThirdLine;
+		}
+		
 		// Put Settings to localStorage
 		eTBk.TuneBook.storeSettings(getSettings());
 	};
 	
 	$scope.toggleTuneForthLine = function() {
-		$scope.showTuneForthLine = !$scope.showTuneForthLine;
+		if ($scope.sessionModus) {
+			$scope.sessionModus = false;
+			$scope.showTuneForthLine = true;
+		
+		} else {
+			$scope.showTuneForthLine = !$scope.showTuneForthLine;
+		}
+		
+		// Put Settings to localStorage
+		eTBk.TuneBook.storeSettings(getSettings());
+	};
+	
+	$scope.toggleSessionModus = function() {
+		$scope.sessionModus = !$scope.sessionModus;
+		
+		if ($scope.sessionModus) {
+			// Session-Modus: Button-Linien: visibility = hidden 
+			// -> Buttons sind zwar unsichtbar, aber der Platz der Button-Linien wird dem sample-dots zur Verfügung gestellt.
+			// (mit z.B. showTuneSecondLine = false: display = none -> Second Line würde verschinden -> sample-dots würde in die erste Line rein rutschen).
+			$scope.showTuneSecondLine = true;
+			$scope.showTuneThirdLine = true;
+			$scope.showTuneForthLine = true;
+		}
+		
 		// Put Settings to localStorage
 		eTBk.TuneBook.storeSettings(getSettings());
 	};
@@ -625,16 +667,12 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			tuneAbc = skipFingering(tuneAbc);
 			
 			var sampleDotsScale = 0.6;
-			/*
-			if ($scope.showTuneSecondLine && $scope.showTuneThirdLine && $scope.showTuneForthLine) {
-				// TODO: Mit dem Scale alleine ist's nicht getan. Wesentlich ist auch top-margin im css. Diese ist jedoch momentan auf scale 0.6 eingestellt.
-				sampleDotsScale = 0.8;
-			} else {
-				sampleDotsScale = 0.6;
+			var sampleDotsStaffWidth = 960;
+			if ($scope.sessionModus) {
+				sampleDotsStaffWidth = 840;
 			}
-			*/
 			
-			ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:sampleDotsScale, paddingtop:0, paddingbottom:0, staffwidth:960}, {});	
+			ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:sampleDotsScale, paddingtop:0, paddingbottom:0, staffwidth:sampleDotsStaffWidth}, {});	
 		}, 0, false);
 	};
 	
@@ -647,7 +685,11 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$timeout(function() {
 			var showHere = 'renderTheDotsFor'+tune.title;
 			var tuneAbc = skipFingering(tune.pure);
-			ABCJS.renderAbc(showHere, tuneAbc);
+			var dotsScale = 1.0;
+			if ($scope.sessionModus) {
+				dotsScale = 0.6;
+			}
+			ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:dotsScale}, {});
 		}, 0, false);
 	}
 

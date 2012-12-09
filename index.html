@@ -126,9 +126,11 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret black-caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a ng-click="toggleTuneSecondLine()">Show Rehearse Buttons <i ng-show="showTuneSets && showTuneSecondLine" class="icon-ok"></i></a></li>
-							<li><a ng-click="toggleTuneThirdLine()">Show Info Buttons <i ng-show="showTuneSets && showTuneThirdLine" class="icon-ok"></i></a></li>
-							<li><a ng-click="toggleTuneForthLine()">Show Edit Buttons <i ng-show="showTuneSets && showTuneForthLine" class="icon-ok"></i></a></li>
+							<li><a ng-click="toggleTuneSecondLine()">Show Rehearse Buttons <i ng-show="showTuneSets && showTuneSecondLine && !(sessionModus)" class="icon-ok"></i></a></li>
+							<li><a ng-click="toggleTuneThirdLine()">Show Info Buttons <i ng-show="showTuneSets && showTuneThirdLine && !(sessionModus)" class="icon-ok"></i></a></li>
+							<li><a ng-click="toggleTuneForthLine()">Show Edit Buttons <i ng-show="showTuneSets && showTuneForthLine && !(sessionModus)" class="icon-ok"></i></a></li>
+							<li class="divider"></li>
+							<li><a ng-click="toggleSessionModus()">Session Modus<i ng-show="showTuneSets && sessionModus" class="icon-ok"></i></a></li>
 							<li class="divider"></li>
 							<li><a ng-click="toggleTuneSetAbc()">Export TuneSets<i ng-show="tuneSetAbcIncl" class="icon-ok"></i></a></li>
 							<li><a ng-click="togglePlayDateAbc()">Export Playdates<i ng-show="playDateAbcIncl" class="icon-ok"></i></a></li>
@@ -358,6 +360,7 @@
 								<li><p><strong>Info Buttons</strong><br>Show/Hide the second line of tune-buttons (Dots-Button, Site-Buttons, YouTube-Buttons).</p></li>
 								<li><p><strong>Edit Buttons</strong><br>Show/Hide the third line of tune-buttons (Abc-Button, Info-Button, Move-Button).</p></li>								
 							</ul>
+							<p>You can choose between the normal TuneSet-View and a more compact session modus (less scrolling on smaller screens).</p>
 							<p>You can choose to export eTuneBook-specific fields:</p>
 							<ul>
 								<li><p><strong>TuneSets</strong></p></li>
@@ -383,6 +386,13 @@
 				<div class="span2">	</div>
 				<div class="span8 well">			
 					<h2>Release Notes</h2>
+					<br>
+					<p>Release 1.0.2 (09.12.2012)</p>
+					<ul>
+						<li>Current Release</li>
+						<li>09.12.12: Introduced more compact session modus for smaller screens (beta).</li>
+						<li>09.12.12: Updated Boxplayer.abc from V09 to V091.</li>
+					</ul>
 					<br>
 					<p>Release 1.0.1 (15.10.2012)</p>
 					<ul>
@@ -465,8 +475,8 @@
 						<!--<div class="tuneSetNr">TuneSet-Nr.: {{tuneSet.tuneSetId}} /  Frequency: {{tuneSet.frequencyPlayed}} /  Last Played: {{tuneSet.lastPlayed | fromNow}}</div>-->
 						<div class="tuneSetNr">Set {{tuneSet.tuneSetId}} </div> 		
 					</div>
-					<ul id="tuneSetPositionList" class='sortable' ><!--TODO: connected und sortable ersetzen (siehe vorallem css)-->
-						<li ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy:'position'" ng-class="{editing: tuneSetPosition.tune == editedTune}" style="background-color:{{tuneSetPosition.tune.color}}" tbk-show-sample-abc="tuneSetPosition.tune == editedTune">
+					<ul id="tuneSetPositionList" class='sortable' ng-class="{showSessionModus: sessionModus}"><!--TODO: connected und sortable ersetzen (siehe vorallem css)-->
+						<li ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy:'position'" ng-class="{editing: tuneSetPosition.tune == editedTune, showSessionModus: sessionModus}" style="background-color:{{tuneSetPosition.tune.color}}" tbk-show-sample-abc="tuneSetPosition.tune == editedTune">
 						<!--<li ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy:'position'" ng-class="{editing: tuneSetPosition.tune == editedTune, sleeping: editedTune != null && tuneSetPosition.tune != editedTune}" style="background-color:{{tuneSetPosition.tune.color}}">-->	
 							<div class="view">
 								<div class="tuneFirstLine">
@@ -475,7 +485,7 @@
 									<div class="tuneType">{{tuneSetPosition.tune.key}}</div>
 									<div class="tuneSetPositionRepeat">{{tuneSetPosition.repeat}}x</div>
 								</div>
-								<div class="tuneSecondLine" ng-show="showTuneSecondLine">
+								<div class="tuneSecondLine" ng-show="showTuneSecondLine" ng-class="{showSessionModus: sessionModus}">
 									<a class='btn btn-mini btn-info justPlayedTheTune' ng-click="justPlayedTheTune(tuneSetPosition)">Played</a>
 									<div class="tunePlayDateInfo">
 										<div class="tuneLastPlayed">{{tuneSetPosition.tune.lastPlayed | fromNow}}</div>
@@ -494,7 +504,7 @@
 										<!--<a class='btn btn-mini btn-info' tbk-popover><i class='icon-music'></i></a>-->
 										<a class='btn btn-mini btn-info dotsViewerBtn' ng-click="dotsViewer(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition.tune == dotsViewerTune}" ><i class='icon-music'></i></a>
 									</div>
-									<div class="tuneForeignInfoButtonGroup">
+									<div class="tuneForeignInfoButtonGroup" ng-class="{showSessionModus: sessionModus}">
 										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site1" href={{tuneSetPosition.tune.site1}} target="_blank">s 1</a>
 										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site2" href={{tuneSetPosition.tune.site2}} target="_blank">s 2</a>
 										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site3" href={{tuneSetPosition.tune.site3}} target="_blank">s 3</a>
@@ -503,7 +513,7 @@
 										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube3" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube3)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune && tuneSetPosition.tune.youTube3 == youTubeUrl}" >v 3</a>	
 									</div>
 								</div>
-								<div class="tuneForthLine" ng-show="showTuneForthLine">
+								<div class="tuneForthLine" ng-show="showTuneForthLine" ng-class="{showSessionModus: sessionModus}">
 									<a class='btn btn-mini btn-info editTuneBtn' ng-click="editTune(tuneSetPosition)" >Abc</a>
 									<a class='btn btn-mini btn-info editTuneInfoBtn' ng-click="editTuneInfo(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition == infoEditedTuneSetPosition}" >Info</a>
 									<a class='btn btn-mini btn-info moveTuneBtn' ng-click="moveTune(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition == movedTuneSetPosition}" >Move</a>
@@ -601,12 +611,12 @@
 								
 							<div id="showTheDotsFor{{tuneSetPosition.tune.title}}" class="edit showTheDots" style="background-color:{{tuneSetPosition.tune.color}}"></div>
 							
-							<div id="dotsViewerFor{{tuneSetPosition.tune.title}}" class="dotsViewer" ng-class="{showDotsViewer: tuneSetPosition.tune == dotsViewerTune}" style="background-color:{{tuneSetPosition.tune.color}}">
+							<div id="dotsViewerFor{{tuneSetPosition.tune.title}}" class="dotsViewer" ng-class="{showDotsViewer: tuneSetPosition.tune == dotsViewerTune, showSessionModus: sessionModus}" style="background-color:{{tuneSetPosition.tune.color}}">
 								<!--<a class='btn btn-mini btn-info' ng-click="toggleFingering(tuneSetPosition)" ng-class="{isActivControl: fingeringShown}" >finger</a>-->
 								<div id="renderTheDotsFor{{tuneSetPosition.tune.title}}"></div>
 							</div>
 							
-							<div id="sampleDotsViewerFor{{tuneSetPosition.tune.title}}" class="sampleDotsViewer" ng-show="editedTune == null && infoEditedTuneSetPosition == null && movedTuneSetPosition == null && dotsViewerTune == null  && youTubeTune == null"></div>
+							<div id="sampleDotsViewerFor{{tuneSetPosition.tune.title}}" class="sampleDotsViewer" ng-class="{showSessionModus: sessionModus}"  ng-show="editedTune == null && infoEditedTuneSetPosition == null && movedTuneSetPosition == null && dotsViewerTune == null  && youTubeTune == null"></div>
 							
 							<div id="showYouTubeVideoFor{{tuneSetPosition.tune.title}}" class="showTheVideo" style="background-color:{{tuneSetPosition.tune.color}}">
 								<iframe ng-class="{showVideo: tuneSetPosition.tune == youTubeTune}" class="youtube-player" type="text/html" width="640" height="385" src={{youTubeUrl}} frameborder="0"></iframe>
