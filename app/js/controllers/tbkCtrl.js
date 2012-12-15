@@ -662,7 +662,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	
 	$scope.showSampleDots = function( tuneSetPosition ) { 
 		$timeout(function() {
-			var showHere = 'sampleDotsViewerFor'+tuneSetPosition.tune.title;
+			var showHere = 'sampleDotsViewerFor'+tuneSetPosition.tune.id;
 			var tuneAbc = eTBk.TuneBook.getSampleAbc(tuneSetPosition);
 			tuneAbc = skipFingering(tuneAbc);
 			
@@ -683,7 +683,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		//Compare with tbkPopover: ABCJS.renderAbc is not timed-out -> fingerings dont' show (timeout in popover -> no popover is shown) 
 	
 		$timeout(function() {
-			var showHere = 'renderTheDotsFor'+tune.title;
+			var showHere = 'renderTheDotsFor'+tune.id;
 			var tuneAbc = skipFingering(tune.pure);
 			var dotsScale = 1.0;
 			if ($scope.sessionModus) {
@@ -700,8 +700,6 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		return tuneAbc
 	}
 
-	
-	
 	$scope.toggleFingeringAbc = function() { 
 		$scope.fingeringAbcIncl = !$scope.fingeringAbcIncl;
 	
@@ -717,14 +715,6 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 					for (var i = 0; i < $scope.tuneSetsDisplayed.length; i++) {
 						for (var z = 0; z < $scope.tuneSetsDisplayed[i].tuneSetPositions.length; z++) {
 							$scope.showSampleDots($scope.tuneSetsDisplayed[i].tuneSetPositions[z]);
-							
-							/*
-							var tuneSetPosition = $scope.tuneSetsDisplayed[i].tuneSetPositions[z];
-							var showHere = 'sampleDotsViewerFor'+tuneSetPosition.tune.title;
-							var tuneAbc = eTBk.TuneBook.getSampleAbc(tuneSetPosition);
-							tuneAbc = skipFingering(tuneAbc);
-							ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:0.6, paddingtop:0, paddingbottom:0, staffwidth:960}, {});
-							*/
 						}
 					}
 				}
