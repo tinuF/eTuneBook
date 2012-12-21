@@ -646,6 +646,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	$scope.dotsViewer = function( tuneSetPosition ) { 
 		if ($scope.dotsViewerTune == tuneSetPosition.tune) {
 			$scope.dotsViewerTune = null;
+			
+			// Sync Sample Dots (needed after transposition)
+			$scope.showSampleDots(tuneSetPosition);
 		
 		} else {
 			selectTuneSet(tuneSetPosition);
@@ -658,6 +661,24 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			
 			renderAbc($scope.dotsViewerTune);
 		}
+	};
+	
+	$scope.tuneUp = function( tuneSetPosition) {
+		// Transpose up and store on tunesetPosition
+		var tune = eTBk.TuneBook.tuneUp(tuneSetPosition);
+		// Sync Tune-Key
+		tuneSetPosition.tune.key = eTBk.TuneBook.getTuneKey(tuneSetPosition.tune);
+		// Show Transposition
+		renderAbc(tune);
+	};
+	
+	$scope.tuneDown = function( tuneSetPosition) {
+		// Transpose down and store on tunesetPosition
+		var tune = eTBk.TuneBook.tuneDown(tuneSetPosition);
+		// Sync Tune-Key
+		tuneSetPosition.tune.key = eTBk.TuneBook.getTuneKey(tuneSetPosition.tune);
+		// Show Transposition
+		renderAbc(tune);
 	};
 	
 	$scope.showSampleDots = function( tuneSetPosition ) { 
