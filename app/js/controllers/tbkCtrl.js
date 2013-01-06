@@ -628,6 +628,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	$scope.editTuneInfo = function( tuneSetPosition ) { 
 		if ($scope.infoEditedTuneSetPosition == tuneSetPosition) {
 			$scope.infoEditedTuneSetPosition = null;
+			//todo: bei 'unselect' springt wird top of page angezeigt, auch wenn das tune weiter unten lag
+			//-> müsste vor Einführung gelöst werden
+			//unselectTuneSet(tuneSetPosition);
 		
 		} else {
 			selectTuneSet(tuneSetPosition);
@@ -649,6 +652,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			
 			// Sync Sample Dots (needed after transposition)
 			$scope.showSampleDots(tuneSetPosition);
+			//todo: bei 'unselect' springt wird top of page angezeigt, auch wenn das tune weiter unten lag
+			//-> müsste vor Einführung gelöst werden
+			//unselectTuneSet(tuneSetPosition);
 		
 		} else {
 			selectTuneSet(tuneSetPosition);
@@ -804,11 +810,28 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	function selectTuneSet(tuneSetPosition){
 		// Setzen tune im Auswahl-Filter
 		setSelectedTuneSetPositionFilter(tuneSetPosition);
+		// Merken aktuelles Tune im Filter für späteren 'unselect'
+		$scope.tuneSetIdToFilterPrev = $scope.tuneSetIdToFilter;
 		//Setzen tune für Filter
 		$scope.tuneSetIdToFilter = tuneSetPosition.tuneSetId;
-		
+	
+		// Merken aktuelle Seite für späteren 'unselect'
+		$scope.currentPagePrev = $scope.currentPage;
 		// Set page 1 as current page
 		$scope.currentPage = 0;
+		// Put Settings to localStorage
+		eTBk.TuneBook.storeSettings(getSettings());
+		setPages($scope.currentPage);
+	}
+	
+	function unselectTuneSet(tuneSetPosition){
+		// Setzen vorherige Selektion im Tune-Auswahl-Filter
+		$scope.tuneSetPositionForFilter = $scope.tuneSetPositionForFilterPrev;
+		//Setzen vorheriges tune für Filter
+		$scope.tuneSetIdToFilter = $scope.tuneSetIdToFilterPrev;
+		
+		// Setzen vorherige Seite als aktuelle Seite
+		$scope.currentPage = $scope.currentPagePrev;
 		// Put Settings to localStorage
 		eTBk.TuneBook.storeSettings(getSettings());
 		setPages($scope.currentPage);
@@ -832,6 +855,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	function setSelectedTuneSetPositionFilter(tuneSetPosition) {
 		for (var i = 0; i < $scope.tuneSetPositionsForFilter.length; i++) {	
 			if ($scope.tuneSetPositionsForFilter[i].tuneSetId == tuneSetPosition.tuneSetId  && $scope.tuneSetPositionsForFilter[i].intTuneId == tuneSetPosition.intTuneId){
+				// Merken aktueller Filter für späteren 'unselect'
+				$scope.tuneSetPositionForFilterPrev = $scope.tuneSetPositionForFilter
+				// Setzen neuer Filter
 				$scope.tuneSetPositionForFilter = $scope.tuneSetPositionsForFilter[i];
 			}
 		}
@@ -1398,6 +1424,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		if ($scope.youTubeTune == tuneSetPosition.tune && $scope.youTubeUrl == youTubeUrl) {
 			$scope.youTubeUrl = null;
 			$scope.youTubeTune = null;
+			//todo: bei 'unselect' springt wird top of page angezeigt, auch wenn das tune weiter unten lag
+			//-> müsste vor Einführung gelöst werden 
+			//unselectTuneSet(tuneSetPosition);
 		
 		} else {
 			selectTuneSet(tuneSetPosition);

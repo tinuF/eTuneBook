@@ -14,7 +14,7 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_DEFAULT_PLAYDATE_STRING_FORMATTED = "1966-04-05 22:00";
   var eTBK_DEFAULT_PLAYDATE_DATE = moment(eTBK_DEFAULT_PLAYDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
-  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V095.abc';
+  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V096.abc';
   
 
   if (!window.eTBk) {
