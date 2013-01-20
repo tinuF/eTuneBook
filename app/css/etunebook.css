@@ -156,6 +156,9 @@ iframe.showVideo {
 	display: block;
 }
 
+iframe.fbLikeBox {
+	display: block;
+}
 
 video {
 	display: none;

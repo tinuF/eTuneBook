@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="eTuneBook" manifest="eTuneBook.appcache">
+<html lang="en" ng-app="eTuneBook" manifest="eTuneBook.appcache" >
 <head>
 	<title>eTuneBook</title>
 	<meta charset="UTF-8">
@@ -38,7 +38,7 @@
 </head>
  
 <body id="TuneBookEditor" ng-controller="tbkCtrl" ng-cloak class="ng-cloak">
-	<noscript>If you want to see eTuneBook in action you have to active JavaScript first!</noscript> 
+	<noscript>If you want to see eTuneBook in action you have to active JavaScript first!</noscript>	
 	<div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
@@ -141,13 +141,12 @@
 							<li><a ng-click="toggleTubeAbc()">Export Videos<i ng-show="tubeAbcIncl" class="icon-ok"></i></a></li>
 							<li><a ng-click="toggleFingeringAbc()">Show/Export Fingering<i ng-show="fingeringAbcIncl" class="icon-ok"></i></a></li>
 						</ul>
-					</li>
+					</li>		
 				</ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-	
 	<div class="container-fluid">	
 		
 		<header class="jumbotron subhead" id="overview" >	
@@ -156,7 +155,7 @@
 				<!--<p class="lead" ng-show="showProgress">Loading {{tuneBook.name}} ... please wait!-->
 				<p class="lead" ng-show="showProgress">Loading... please wait!				
 				<br><br><progress ng-show="showProgress" value="{{progress}}" max="100"></progress></p>
-			</div>
+			</div>	
 		</header>
 		
 		<div class="row-fluid" ng-show="showTuneSets">
@@ -165,7 +164,8 @@
 					<button class="btn btn-mini pageBtn" ng-repeat="page in pages" ng-disabled="currentPage==page.number - 1" ng-class="{isActivControl: currentPage==page.number - 1}" ng-click="setCurrentPage(page)">{{page.number}}</button>
 				</div>
 			</div>
-			<div class="span8"></div>
+			<div class="span8">
+			</div>
 		</div>
 		
 		<div class="showIntroduction" ng-show="showIntroduction">
@@ -181,6 +181,7 @@
 						<li>Have a quick look at the first bars of a tune (e.g. on your smart phone during a session).</li>
 						<li>Remember when you last played a tune and how good you were.</li>
 						<li>Label tunes with a color or add a comment.</li>
+						<li>Transpose tunes.</li>
 						<li>Store links to other sites holding tune informations and jump to those sites by clicking the site buttons.</li>
 						<li>Store links to YouTube videos and view them in eTuneBook by clicking the video buttons.</li>
 						<li>Easily identify those tunes you should rehearse. Just sort by last play dates, rehearse frequency or skill.</li>
@@ -390,6 +391,7 @@
 					<br>
 					<p>Release 1.0.3 (22.12.2012)</p>
 					<ul>
+						<li>20.01.13: FaceBook LikeBox</li>
 						<li>09.01.13: Updated Boxplayer.abc from V096 to V097.</li>
 						<li>06.01.13: Updated Boxplayer.abc from V095 to V096.</li>
 						<li>02.01.13: Updated Boxplayer.abc from V094 to V095.</li>
@@ -642,7 +644,17 @@
 			<div class="span8 dotsAndExportArea"></div>
 		</div> <!-- /row with tuneSets -->
 		<pre id="tuneBookExported" ng-show="showExport">{{exportedTuneBook}}</pre>
+		<div class="row-fluid">
+			<div class="span8" >
+				<iframe class="fbLikeBox" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fe-TuneBook%2F577631982265183&amp;width=292&amp;height=427&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:427px;" allowTransparency="true"></iframe>
+			</div>
+			<div class="span4" >
+				
+			</div>
+		</div>
     </div> <!-- /container -->
+	
+		
 	
 	<!-- Bootstrap.js -->
 	<script src="assets/js/bootstrap.js"></script> <!--Developer Version-->
