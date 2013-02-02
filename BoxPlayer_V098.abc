@@ -1,5 +1,5 @@
 %abc
-%%abc-alias BoxPlayer TuneBook Version 0.95 - Irish Tunes adapted for Piano Accordion by Martin Fleischmann(boxplayer.ch, etunebook.ch)
+%%abc-alias BoxPlayer TuneBook Version 0.98 - Irish Tunes adapted for Piano Accordion by Martin Fleischmann(boxplayer.ch, etunebook.ch)
 %%abc-creator eTuneBook (etbk) 1.0.3 (www.etunebook.ch)
 
 X: 1
@@ -12,10 +12,8 @@ M: 4/4
 L: 1/8
 R: Reel
 K: Emin
-|!2!B3 A BB AB|!4!d!2!B!1!A!3!F !1!D!2!E!3!F!4!A|!2!B2 BA BB AB|!4!d!2!B!1!A!2!F !1!E3 z|
-B3 A BB AB|dBAF DEFA|B2 BA BB AB|dBAF E3 z|
-!2!B!5!e!2!ef !4!g2 fe|!1!d2 !2!B!4!d !1!AA!2!F!1!A|Be ef g2 fe|!1!d!2!B!1!A!2!F !1!E3 z|
-Be ef g2 fe|d2 Bd AA FA|!2!B!5!e!5!e!4!d !2!B!4!d!1!A!3!F| !1!D!2!EED !2!E4|
+|: "em"!2!B3A B{d}BAB | "bm"!4!d!2!B!1!A!3!F !1!D!2!E!3!F!4!A | "em"!5!B2!2!BA B{d}BAB | "bm"!4!d!2!B!1!A!2!F "em"!1!E4 :|
+|: "em"!2!B!5!e!2!ef !4!g2 fe | "D"!1!d2 !2!B!4!d !1!AA!2!F!1!A |1 "em"!2!B!5!e!2!ef !4!g{a}gfe | "bm"!1!d!2!B!1!A!2!F "em"!1!E4 :|2 "em"!2!B!5!e!5!e!4!d !2!B!4!d!1!A!3!F| "bm"!1!D!2!E{G}ED "em"!2!E4||
 
 X: 2
 %%etbk:tnset id:1,pos:2,rep:3
@@ -27,10 +25,10 @@ M: 4/4
 L: 1/8
 R: Reel
 K: Edor
-!5!B3!1!E !2!F!1!E!2!F!4!A|!2!B2!5!e!3!c !4!d!2!B!1!A!2!F|!4!A3!3!G !2!F!1!D!2!F!3!A|!5!d!3!f!2!e!1!d !2!B!1!A!2!F!4!A|
-!5!B3E FEF!4!A|!2!Bdc!5!e dB!1!A!2!F|!1!A!2!B!3!d!4!e !5!f!1!A!3!d!4!e|!4!e!3!d!2!B!1!A !2!B!1!E~E2:|
-|:!3!~e3d !1!B!2!A!1!B!2!d|!3!e!5!g!4!f!2!d ed!1!B!2!c|!3!~d3!2!B !1!AA!2!F!1!A|!3!d!5!fed !2!B!1!A (3!2!B!3!c!4!d|
-!5!e2!3!ed BABd|egfd edBc|!3!~d3c d2!5!fe|!3!d!2!B!1!A!2!F !5!B!1!EE2:|
+|: "em"!5!B3!1!E {A}!2!F!1!E!2!F!4!A | !2!B2!5!e!3!c !4!d!2!B!1!A!2!F | "D"!4!A3!3!G !2!F!1!D!2!F!3!A | !5!d!3!f!2!e!1!d !2!B!1!A!2!F!4!A |
+"em"!5!B2BE FEF!4!A | !2!Bdc!5!e dB!1!A!2!F | "D"!1!A!2!B!3!d!4!e !5!f!1!A!3!d!4!e | !4!e!3!d!2!B!1!A "em"!2!B!1!E !3!(3E!2!E!1!E:|
+|: "em"!5!e2!3!ed !1!B!2!A!1!B!2!d | !3!e!5!g!4!f!2!d ed!1!B!2!c | "D"!3!d{e}dd!2!B !1!AA!2!F!1!A | !3!d!5!fed !2!B!1!A (3!2!B!3!c!4!d |
+"em"!5!e2!3!ed !1!B!2!A!1!B!2!d | !3!e!5!g!4!f!2!d ed!1!B!2!c | "D"!3!d{e}ddc d2!5!fe|!3!d!2!B!1!A!2!F "em"!5!B!1!EE2:|
 
 X: 3
 %%etbk:tnset id:1,pos:3,rep:3
@@ -41,25 +39,9 @@ M: 4/4
 L: 1/8
 R: Reel
 K: Edor
-!2!F!1!EE!2!D !1!E3!5!B|!2!F!1!E~E2 !2!F2!4!A!5!B|FEED E2!5!B!4!A|1 !2!F!1!DD2 !4!B!5!d!3!A!4!B:|2 !2!F!1!DD2 !2!B!4!d!1!A!4!d||
-!2!B!1!A!2!B!4!d !2!egfe|!1!d2!4!a!5!b !4!a!3!f!2!e!1!d|!2!B!1!d !4!g!2!e !3!~f3e|!1!d!2!B!1!A!2!F F!1!EE2|
-BABd egfe|d2ab afef|!5!b!3!f!2!f!2!f !4!a!3!f!2!f!3!f|!5!b!3!f!4!a!3!f !2!e!1!d!2!B!1!A||
-
-X:4
-%%etbk:tnset id:2,pos:1,rep:3
-%%etbk:tube1 http://www.youtube.com/embed/pe__q4zIrAY
-T: Lucy Farr's Highland Fling
-%%etbk:site1 http://www.thesession.org/tunes/display/4188
-N: http://www.thesession.org/discussions/display/28476/
-Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
-M: 4/4
-L: 1/8
-R: Fling
-K:Fmaj
-|:!3!A2 AG A!5!ccA | !2!G3 F GA!4!BG | !3!A3 G AccA | !2!GFGA F4 :|
-!3!A!4!c !3!c!4!c !5!d2 !4!c!3!A | !1!F!3!A!5!cA !2!GAFG| Ac cc d2 !4!c!3!A | GFGA F4  |
-!3!A2 !5!c!5!c A2 cc | !3!A2 !5!c!3!A !4!B!2!G !3!A!1!F | !2!G3 F GA BG | cAGA F4 |
-
+|: "em"!2!F!1!EE!2!D !1!E3!5!B | !2!F!1!E!2!E!1!E !2!F2!4!A!5!B | !2!F!1!EE!2!D !1!E2!5!B!4!A |1 "D"!2!F!1!D-DD !4!B!5!d!3!A!4!B:|2 "D"!2!F!1!D-DD !2!B!4!d!1!A!4!d||
+"em"!2!B!1!A!2!B!4!d !2!e!4!gfe | "D"!1!d2!4!a!5!b !4!a!3!f!2!e!1!d | "em"!2!B!1!d !4!g!2!e "bm"!3!f{g}ffe | !1!d!2!B!1!A!2!F "em"{A}F!1!EE2 |
+"em"!2!B!1!A!2!B!4!d !2!e!4!gfe | "D"!1!d2!4!a!5!b !4!a!3!f!2!ef | !5!b!3!f!2!f!2!f !4!a!3!f!2!f!3!f|!5!b!3!f!4!a!3!f !2!e!1!d!2!B!1!A||
 
 X:5
 %%etbk:tnset id:2,pos:2,rep:3
@@ -74,10 +56,10 @@ Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
 L: 1/8
 R: Reel
-K:Cmix
-|: !2!G3 F !2!G!5!cc!3!A | !4!B!5!d!4!B!2!F !1!D!2!E!3!F!1!D | !2!G3 F GccA | !4!B!3!G!2!F!1!D !2!E!1!CC2 :|
-|: !2!G!4!cc!3!=B !4!c2!1!G!2!A | !3!B!4!c!3!d!4!e !5!f!3!d!2!c!1!=B | !1!G!3!cc!2!=B !3!c2!1!GA | !3!B!1!G!3!F!1!D !2!E!1!CC2 |
-Gcc=B c2GA | B!4!c!3!d!4!e !3!f2!4!g!3!f | !2!e!1!c!2!d!1!c !4!c2!5!d!4!c | !3!B!1!G!3!F!1!D !2!E!1!CC2 :|
+K: Cmix
+|: "C"!2!G3 F !2!G!5!cc!3!A | "Bb"!4!B!5!d!4!B!2!F !1!D!2!E!3!F!1!D | "C"!2!G3 F GccA | "Bb"!4!B!3!G!2!F!1!D "C"{G}!2!E!1!CC2 :|
+|: "C"!2!G!4!cc!3!=B !4!c2!1!G!2!A | "Bb"!3!B!4!c!3!d!4!e !5!f!3!d!2!c!1!=B | "C"!1!G!3!cc!2!=B !3!c2!1!GA | "Bb"!3!B!1!G!3!F!1!D "C"!2!E!1!CC2 |
+"C"!2!G!4!cc!3!=B !4!c2!1!G!2!A | "Bb"!3!B!4!c!3!d!4!e !3!f2!4!g!3!f | "C"!2!e!1!c{f}!2!d!1!c !4!c2!5!d!4!c | "Bb"!3!B!1!G!3!F!1!D "C"!2!E!1!CC2 :|
 
 X:6
 %%etbk:tnset id:3,pos:1,rep:3
@@ -125,6 +107,7 @@ X:9
 %%etbk:tnset id:4,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/528
 %%etbk:tube1 http://www.youtube.com/embed/dtpzDOZKMHk
+%%etbk:tube2 http://www.youtube.com/embed/xc39PEh3C-s
 T: Windy Gap, The
 T: Tuttle's
 S: http://www.youtube.com/watch?v=dtpzDOZKMHk
@@ -252,7 +235,6 @@ K: Ador
 |:!5!a2!2!ea agef | !4!g!3!e!2!d!4!g !1!B!4!g!2!d!4!g | !5!a!4!g!3!e!2!d !1!B!4!d !5!ed | !3!cA!2!B!1!G !1!G!2!A!1!A2|
 !5!a2ea agef | !4!ged!1!c !3!BA!1!G!3!B | !1!ABc!4!d !2!e!5!aag | !2!ee!1!d!2!B B!1!AA2:||
 
-
 X:18
 %%etbk:tnset id:7,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2660
@@ -263,10 +245,10 @@ M: 4/4
 L: 1/8
 R: Reel
 K: Dmaj
-!3!d|:!5!f!4!e!3!d!2!B !1!A3!2!F|!2!F!1!E!1!D!2!F !3!A3!5!d|!3!f!2!e!1!d!2!B !1!A3!2!F|!2!F!1!E!1!D!2!F !2!F!1!EE!3!d|
-!5!fedB A3F|FEDF !3!A3!4!B|!2!dd!3!f!2!d !5!a2a!3!f|1 !2!e!1!d!2!B!1!A !2!F!1!EE!3!d:|2 edBA FEE2||
-|:!2!d2!3!f!2!d !5!a!2!d!3!f!2!d|!4!a!3!a!4!a!5!b !4!a!3!f!2!e!3!f|!2!d2fd !1!Adf2|!1!A!2!B!3!d!4!e !3!f!2!eef|
-!2!d2fd Adfd|!5!a2!4!ab aafa |bafd egfe|dBAF FEE2:|
+!3!d|: "D"!5!f!4!e!3!d!2!B !1!A3!2!F | !2!F!1!E!1!D!2!F !3!A3!5!d | !3!f!2!e!1!d!2!B !1!A3!2!F | !2!F!1!E!1!D!2!F "A"{A}!2!F!1!EE!3!d |
+ "D"!5!fedB A3F | FEDF !3!A3!5!d | !2!dd!3!f!2!d !5!a2a!3!f|1 "A"!2!e!1!d!2!B!1!A !2!F!1!EE!3!d:|2 "A"edBA FEE2||
+|: "D"!2!d2!3!f!2!d !5!a!2!d!3!f!2!d | !4!a!3!a!4!a!5!b !4!a!3!f!2!e!3!f | !2!dd!3!f!2!d !5!a!2!d!3!f!2!d | "A"!1!A!2!B!3!d!4!e !3!f!2!eef |
+"D"!2!d{f}d!3!f!2!d !5!a!2!d!3!f!2!d | !4!a!3!a!4!a!5!b !4!a!3!f!2!e!3!f | !5!b!4!a!3!f!1!d !2!egfe | "A" !1!d!2!B!1!A!2!F {A}F!1!EE2:|
 
 X:19
 %%etbk:tnset id:7,pos:2,rep:3
@@ -298,6 +280,7 @@ ae ee agef|gB BB g2 fg|!5!af!4!ge !3!f!1!d!2!e!1!d|!2!BB GA BAA2|
 X:21
 %%etbk:tnset id:8,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11093
+%%etbk:tube1 http://www.youtube.com/embed/4j_YnxkcRcI
 T: Feabhra
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -310,6 +293,7 @@ K: Ddor
 Addd edcA|dcAG ED!1!C2|!5!A!4!G!2!E!1!D !2!C!1!D!2!E!4!G|AEGE !1!D!3!A!5!c!4!B|
 !3!A!1!DDD !2!EGEG|!5!A!1!DDD !2!E!1!D!1!C2|!5!ADDD EGEG|AEGE DAcB|
 ADDD EGEG|ADDD EDC2|AGED CDEG|AEGE D4||
+
 
 X:22
 %%etbk:tnset id:8,pos:2,rep:3
@@ -696,7 +680,6 @@ K: Edor
 |: !2!B2!4!ee !5!f!4!e!3!d!2!B | !4!e2fe !3!d!2!B!1!A!2!F | !1!A3 !2!B !3!d2 !5!fd | !4!edef !3!dd!2!B!1!A | 
 !2!B2!4!ee !5!fed!2!B | !4!e2fe !3!d!2!B!1!A!3!F | !1!DEF!4!A ABA!3!F | !2!EGFD !2!E4 :|
 
-
 X:50
 %%etbk:tnset id:17,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/7862
@@ -708,9 +691,8 @@ L: 1/8
 R: reel
 K: Edor
 !3!F!1!E!2!E!1!E !3!F!2!E!1!D!2!E | !3!F!1!E !3!(3E!2!E!1!E !2!F!4!ABA | !2!F!1!E !3!(3E!2!E!1!E !4!F!3!E!2!D!1!B,|1 !3!D2!1!DE !3!F!4!ABA:|2 !3!D2!1!DE !3!F!5!A!1!A2 |
-!2!B2!4!ee !5!feed | !2!B2!4!ee !3!d!2!B!1!A!3!d | !2!B!4!e!2!ee !3!fee!1!d | !2!BABc !4!dBA!4!d |
-!2!B!4!e!2!ee !3!feed | !2!e!4!gfe !1!d4 | !5!f2!4!e!3!c !4!d!2!B!3!c!1!A | !2!BBBc !4!dcBA||
-
+!2!B2!4!ee !5!feed | !2!B2!4!ee !3!d!2!B!1!A!3!d | !1!B2!2!ee !3!fee!1!d | !2!BABc !4!dBA!4!d |
+!1!B2!2!ee !3!feed | !2!e!4!gfe !1!d4 | !5!f2!4!e!3!c !4!d!2!B!3!c!1!A | !2!BBBc !4!dcBA||
 
 X:51
 %%etbk:tnset id:17,pos:3,rep:3
@@ -740,8 +722,9 @@ K: Ador
 !3!A!2!GGG !3!A!2!GGG | !4!GEDE !4!G!2!E!1!D2 | !3!A2!3!A!2!G !1!ABc!4!d | !5!e!2!B!4!d!2!B {c}!2!BA!4!d!2!B|
 !1!A2!3!AB !5!c3!3!A | !2!G!1!E!2!E!1!E !4!G!2!E!1!D2 | !3!A2!3!A!2!G !1!ABc!4!d | !3!e!2!d!5!gd !1!B!2!dd!1!B |
 !3!A!2!GGG !3!A!2!GGG | !4!GEDE !4!G!2!E!1!D2 | !3!A2AG !1!ABc!4!d | !5!eBd!2!B {c}B!1!AA2||
-|: !2!e2!4!gg !2!e!5!(aa)a | !4!g!3!e!2!d!1!B !2!c!1!AA2| !2!e!4!g!2!gg !1!e!3!aaa | !3!a!2!g!1!e!2!c !3!d2!2!c!3!d |
-!2!e2!4!gg !2!e!5!(aa)a | !4!g!3!e!2!d!3!B !2!c!1!AA!2!c | !1!c2!4!gc !5!ac!4!gc |1 !2!eage !1!d2 !2!c!1!d:|2 !2!eage !1!d4||
+|: !2!e!4!g!3!g!4!g !2!e!5!a!4!a!5!a | !4!g!3!e!2!d!1!B !2!c!1!AA2| !2!e!4!g!3!g!4!g !2!e!5!a!4!a!5!a | !5!a!4!g!3!e!1!c !1!d2!2!c!1!d |
+!2!e!4!g!3!g!4!g !2!e!5!a!4!a!5!a | !4!g!3!e!2!d!1!B !2!c!1!AA!2!B | !1!c2!4!gc !5!ac!4!gc |1 !2!eage !1!d2 !2!c!1!d:|2 !2!eage !1!d4||
+
 
 X:53
 %%etbk:tnset id:18,pos:2,rep:3
@@ -1351,6 +1334,7 @@ S:Martin Hayes
 
 X:96
 %%etbk:tnset id:33,pos:3,rep:3
+%%etbk:tube1 http://www.youtube.com/embed/-j3pF5KCOBo
 T: Bunch Of Keys, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -1605,10 +1589,10 @@ M: 4/4
 L: 1/8
 R: reel
 K: Dmaj
-|:!2!BB!1!A!4!d !2!B!4!d!1!A!2!F | !1!D2!2!D!1!D !4!A!1!D!2!F!4!A | !2!BBAd Bd!1!A!2!F | !1!DFAF !2!F!1!EE2 |
-!2!BBAd Bd!1!A!2!F | !1!D2DD ADF!4!A | !4!GG!2!EG !3!FE!1!D!2!B, |1 !1!A,!2!B,!1!DE !3!F!1!EE2|2 A,B,DE !3!F!2!EE!3!F|
-|:!1!GABc !5!d!1!G!3!B!1!G | !5!d2!3!Bd !1!A!2!F!1!D!2!F | !1!GABc !5!d!1!GBG | !4!A!2!FD!2!F F!1!EE!2!F |
-!1!GABc !5!d!1!GGG | !5!d2Bd !1!A!2!F!1!D!2!F | !4!G2EG !3!FE!1!D!2!B, |1 !1!A,!2!B,!1!DE !3!F!2!EE!3!F:|2 A,B,DE !3!F!1!EE2||
+|: "D"!4!B2!3!A!5!d !4!B!5!d!3!A!2!F | !1!D3D !3!A!1!D!2!F!3!A | !4!BBAd Bd!3!A!2!F | !1!D!2!F!3!AF "A"{A}!2!F!1!EE2 |
+"D"!4!BDAd Bd!3!A!2!F | !1!D2DD !5!ADF!1!D | "G"!5!GG!3!EG "D"!4!FE!2!D!1!B, |1 "A"!1!A,!1!B,!2!DE !4!F!3!E!1!E2 :|2  "A"!1!A,!1!B,!2!D!3!E !4!F!3!EE!4!F||
+|: "G"!1!GABc !5!d!1!G!3!B!1!G | "D"!5!dd!4!Bd !3!A!2!F!1!D!2!F | "G"!1!GABc !5!d2!3!BB | "D"!1!A!2!FD!2!F "A"{A}F!1!EE!2!F |
+"G"!1!GABc !5!d!1!GGG | "D"!5!d2!4!Bd !3!A!2!F!1!D!2!F | "G"!5!G3E "D"!4!FE!2!D!1!B, |1 "A"!1!A,!1!B,!2!DE !4!F!3!EE!4!F:|2 "A"!1!A,!1!B,!2!DE !4!F!1!!3!E!1!E2||
 
 X:114
 %%etbk:tnset id:40,pos:2,rep:3
@@ -1673,10 +1657,10 @@ M: 4/4
 L: 1/8
 R: reel
 K: Dmaj
-!4!d3!1!A !2!B!1!A!2!F!5!B |!4!A!2!FFF !1!E!2!F!1!D!2!E | !3!F2!5!A!3!F !1!G2!3!B!1!G | !1!A!2!B!3!d!4!e !3!fgfe|
-!1!!4!d3!1!A BAFB | !4!AFFF EFDE | !3!F2AF !1!G2BG|1 !1!A!2!B!3!d!4!e !5!f!3!dd2:|2 !1!ABd!4!e !5!f!3!d!1!d2||
-|:!3!f2!5!af afdf | !4!ge!3!fd !2!e!1!d!2!B!1!d | !3!f2af afdf | !1!ABd!4!e !3!f!2!ee2 | 
-!3!f2af afdf | !4!gefd !2!e!1!d!2!B!1!A | !3!F2AF !1!G2BG | [1 !1!ABd!4!e !3!fdd2:|2 !1!ABd!4!e !5!f!3!dd2||
+|: "D"!4!d3!1!A {d}!2!B!1!A!2!F!5!B |!4!A!2!FF{A}F !1!E!2!F!1!D!2!E | !3!F2!5!A!3!F "G"!1!G2!2!B!1!G | "A"!1!A!2!B!3!d!4!e !3!fgfe|
+"D"!1!!4!d3!1!A {d}!2!B!1!A!2!F!5!B |!4!A!2!FF{A}F !1!E!2!F!1!D!2!E | !3!F2!5!A!3!F "G"!1!G2!2!B!1!G |1 "A"!1!A!2!B!3!d!4!e "D"!3!f!1!dd2:|2 "A"!1!ABd!4!e "D"!3!f!1!dd2||
+|: "D"!3!f2!5!af afdf | "A"!4!ge!3!fd !2!e!1!d!2!B!1!d | "D"!3!f2af af!1!d!2!B | "A"!1!ABd!4!e !3!f!2!ee2 | 
+"D"!3!f2af afdf | "A"!4!gefd {g}!2!e!1!d!2!B!1!A | !2!F2!3!A!2!F "G"!1!G2!2!B!1!G | [1 "A"!1!ABd!4!e "D"!3!fdd2:|2 "A"!1!ABd!4!e "D"!3!f!1!dd2||
 
 X:119
 %%etbk:tnset id:42,pos:2,rep:3
@@ -1687,9 +1671,8 @@ M: 4/4
 L: 1/8
 R: reel
 K: Gmaj
-|:!4!d!2!B!1!B!2!B !4!d!2!B!1!G!2!B | dBBB !1!AB!3!c!5!e | !4!dBBB dBGB |1 !3!ccBc !1!ABc!5!e :|2 !3!ccBc !1!AcB!1!A ||
-|:!2!GG!4!B!2!G !1!D!2!G!4!B!2!G | !2!GGBG !3!ABcA | !2!GGBG !1!DGBG |1 !3!ccBc !1!AcB!1!A:|2 !3!ccBc !1!ABc!5!e||
-
+|: "G"!4!d!2!B!1!B!2!B !4!d!2!B!1!G!2!B | dBBB "D"!1!AB!3!c!5!e | "G"!4!dBBB dBGB |1 "D"!3!ccBc !1!ABc!5!e :|2 "D"!3!ccBc !1!AcB!1!A ||
+|: "G"!2!GG!4!B!2!G !1!D!2!G!4!B!2!G | !2!GGBG "D"!3!ABcA | "G"!2!GGBG !1!DGBG |1 "D"!3!ccBc !1!AcB!1!A:|2 "D"!3!ccBc !1!ABc!5!e||
 
 X:120
 %%etbk:tnset id:42,pos:3,rep:3
@@ -1700,10 +1683,10 @@ M: 4/4
 L: 1/8
 R: reel
 K: Ador
-|: !2!A2GA !2!A2!3!B!4!d | !2!e2 !4!gg !2!e!4!g!1!d!3!c | !2!B!1!GG!2!F !3!G2G!2!E | !1!D2!2!B,!1!D !3!G!4!A!5!B!3!G|
-!1!E!2!AAG A2Bd | !2!e2 !4!gg eg!1!d!4!g | !1!e!3!g!2!g!3!g !3!gaba | !3!g!2!e!1!d!2!B B!1!AA2 :||
-|: !5!a2!2!e!5!a !3!a!2!g!1!e!2!g | !3!agbg ag!1!e!3!f | !4!g2!2!d!4!g !1!B!4!g!2!d!4!g | !4!geaf gede |
-!5!a2e!5!a !3!ageg | !3!agbg ag!1!e!2!g | !1!d!3!g!2!g!3!g !3!gaba | ge!1!d!2!B B!1!AA2 :||
+|: "am"!2!A2GA !2!A2!3!B!4!d | !2!e2 !4!gg !2!e!4!g!1!d!3!c | "G"!2!B!1!GG!2!F !3!G2G!2!E | !1!D2!2!B,!1!D !3!G!4!A!5!B!3!G|
+"am"!1!E!2!A{c}AG A2Bd | !2!e2 !4!gg eg!1!d!4!g | "em"!1!e!3!g!2!g!3!g !3!gaba | !3!g!2!e!1!d!2!B "am"{d}B!1!AA2 :||
+|: "am"!5!a2!2!e!5!a !3!a!2!g!1!e!2!g | !3!agbg ag!1!e!3!f | "G"!4!g2!2!d!4!g !1!B!4!g!2!d!4!g | !4!geaf gede |
+"am"!5!a2!1!e!3!a {b}!3!ageg | !3!agbg ag!1!e!2!g | "em"!1!d!3!g!2!g!3!g !3!gaba | ge!1!d!2!B "am"{d}B!1!AA2 :||
 
 
 X:121
@@ -1785,6 +1768,7 @@ K: Dmaj
 X:126
 %%etbk:tnset id:45,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2601
+%%etbk:tube1 http://www.youtube.com/embed/YJfnvIYaQjk
 T: First House In Connaught, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -1795,6 +1779,7 @@ K: Gmaj
 "G"!1!D2!2!GG !3!A!1!G!2!G!1!G | !3!BGdB !3!BGA!5!d | "D"!1!defg !5!ag!3!f!1!d | !3!c!1!A!2!F!4!A "G"!3!G4 :|
 |:"G"!3!ggga !3!gf!1!d!2!f | !3!g2!5!bg !4!a!2!f!1!d!2!e | "D"!3!f2de !3!f2!1!d!1!e | !2!fgaf !5!bg!4!a!2!f |
 "G"!3!ggga !3!gfdf | !3!g2bg !4!agf!1!e | "D"!1!defg !5!ag!3!f!1!d | !3!c!1!A!2!F!4!A "G"!3!G4 :|
+
 
 X:127
 %%etbk:tnset id:45,pos:2,rep:3
@@ -1860,8 +1845,8 @@ M: 4/4
 L: 1/8
 R: reel
 K: Ador
-|: "am"!1!A2 !5!ed !2!B!5!e!4!d!2!B | "G"!1!A!2!GGG !3!AG!1!E!2!G | "am"!1!A2!5!ed !2!B!1!def  | "em"!4!ggga !4!ged!4!g | 
-"am"!2!e!1!A!2!A!1!A !2!B!5!e!4!d!2!B | "G"!1!A!2!G!1!E!2!F !3!G3 !4!A| "am"!1!E2!3!A!3!A !1!G!1!A!2!B!3!d| "em"!5!g!4!e!3!d!2!B "am"!1!A4:||
+|: "am"!2!A2 !5!ed !3!B!5!e!4!d!3!B | "G"!2!A!1!GGG !3!A!2!G!1!E!2!G | "am"!1!A2!5!ed !2!B!1!d!2!ef  | "em"!4!ggga !4!ged!4!g | 
+"am"!2!e!1!A!2!A!1!A !3!B!5!e!4!d!3!B | "G"!2!A!1!G!2!E!3!F !4!G3 !5!A| "am"!1!E2!2!A!2!A !3!B!1!A!2!B!1!d| "em"!4!g!2!e!1!d!2!B "am"!1!A4:||
 |: "am"!2!efge !5!agfg | !2!e2!5!ag !2!e!1!d!2!B!1!d | !2!egfa !4!g3e | "G"!1!d2!4!g!2!e !1!d!2!B!1!G!2!B |
 "am"!3!c3!1!A "G"!3!d3!1!B | "am"!2!efge !5!a2 !3!ga | "em"!5!b!3!g!2!g!3!g !4!agab | !3!g!2!e!1!d!2!B "am"!1!A4:|
 
@@ -2071,6 +2056,7 @@ K: Gmaj
 X:147
 %%etbk:tnset id:52,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/50
+%%etbk:color #ffffcc
 T: Jackie Coleman's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2085,6 +2071,7 @@ K: Dmaj
 X:148
 %%etbk:tnset id:52,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/336
+%%etbk:color #ffffcc
 T: Piper's Despair, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2099,6 +2086,7 @@ K: Edor
 X:149
 %%etbk:tnset id:52,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/410
+%%etbk:color #ffffcc
 T: Old Copperplate, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2113,6 +2101,7 @@ K: Ador
 X:150
 %%etbk:tnset id:52,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/408
+%%etbk:color #ffffcc
 T: Dick Gossip's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2127,6 +2116,7 @@ K: Dmaj
 X:151
 %%etbk:tnset id:52,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/20
+%%etbk:color #ffffcc
 T: Cup Of Tea, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2144,6 +2134,7 @@ K: Edor
 X:152
 %%etbk:tnset id:52,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/7671
+%%etbk:color #ffffcc
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 T: Derry, The
 M: 4/4
@@ -2159,6 +2150,7 @@ K: Amaj
 X:153
 %%etbk:tnset id:53,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/636
+%%etbk:color #ffffcc
 T: Otter's Holt, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2173,6 +2165,7 @@ K: Bmin
 X:154
 %%etbk:tnset id:53,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/114
+%%etbk:color #ffffcc
 T: Teetotaler's, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2187,6 +2180,7 @@ K: Gmaj
 X:155
 %%etbk:tnset id:53,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/415
+%%etbk:color #ffffcc
 T: Humours Of Tulla, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2199,6 +2193,7 @@ K: Dmaj
 X:156
 %%etbk:tnset id:53,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/560
+%%etbk:color #ffffcc
 T: Tarbolton, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2213,6 +2208,7 @@ K: Edor
 X:157
 %%etbk:tnset id:53,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/195
+%%etbk:color #ffffcc
 T: Flogging, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2228,6 +2224,7 @@ K: Gmaj
 X:158
 %%etbk:tnset id:53,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/24
+%%etbk:color #ffffcc
 T: Dinkey's
 M: 4/4
 L: 1/8
@@ -2242,6 +2239,7 @@ K: Amix
 X:159
 %%etbk:tnset id:54,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/938
+%%etbk:color #ffffcc
 T: Lady On The Island, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2255,6 +2253,7 @@ K: Dmaj
 X:160
 %%etbk:tnset id:54,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3259
+%%etbk:color #ffffcc
 T: Moving In Decency
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2269,6 +2268,7 @@ K: Edor
 X:161
 %%etbk:tnset id:54,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/921
+%%etbk:color #ffffcc
 T: Knotted Cord, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2283,6 +2283,7 @@ K: Ador
 X:162
 %%etbk:tnset id:54,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2536
+%%etbk:color #ffffcc
 T: Jim Donoghue's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2297,6 +2298,7 @@ K: Dmaj
 X:163
 %%etbk:tnset id:54,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/42
+%%etbk:color #ffffcc
 T: Gravel Walks, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2314,6 +2316,7 @@ K:Cmaj
 X:164
 %%etbk:tnset id:54,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11
+%%etbk:color #ffffcc
 T: Boys Of Malin, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2328,6 +2331,7 @@ K: Amaj
 X:165
 %%etbk:tnset id:55,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/59
+%%etbk:color #ffffcc
 T: Lady Anne Montgomery
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2342,6 +2346,7 @@ K: Dmaj
 X:166
 %%etbk:tnset id:55,pos:2,rep:3
 %%etkb:site1 http://www.thesession.org/tunes/display/44
+%%etbk:color #ffffcc
 T: High Reel, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2356,6 +2361,7 @@ K: Amix
 X:167
 %%etbk:tnset id:55,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/113
+%%etbk:color #ffffcc
 T: Toss The Feathers 1
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2369,6 +2375,7 @@ K: Edor
 X:168
 %%etbk:tnset id:55,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/756
+%%etbk:color #ffffcc
 T: Jennie's Chickens
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2381,6 +2388,7 @@ K: Bmin
 
 X:169
 %%etbk:tnset id:55,pos:5,rep:3
+%%etbk:color #ffffcc
 T:Hat for Hannah
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2395,6 +2403,7 @@ K: Amaj
 X:170
 %%etbk:tnset id:56,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/87
+%%etbk:color #ffffcc
 T: Rolling In The Ryegrass
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2407,6 +2416,7 @@ K: Dmaj
 X:171
 %%etbk:tnset id:56,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/8
+%%etbk:color #ffffcc
 T: Banshee, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2421,6 +2431,7 @@ K: Gmaj
 X:172
 %%etbk:tnset id:56,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/18
+%%etbk:color #ffffcc
 T: Concertina, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2435,6 +2446,7 @@ K: Dmaj
 X:173
 %%etbk:tnset id:56,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/222
+%%etbk:color #ffffcc
 T: Man Of The House, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2448,6 +2460,7 @@ K: Edor
 X:174
 %%etbk:tnset id:56,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/68
+%%etbk:color #ffffcc
 T: Mountain Road, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2461,6 +2474,7 @@ K: Dmaj
 X:175
 %%etbk:tnset id:56,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/69
+%%etbk:color #ffffcc
 T: Morning Dew, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2475,6 +2489,7 @@ K: Edor
 X:176
 %%etbk:tnset id:56,pos:7,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/472
+%%etbk:color #ffffcc
 T: Hunter's House, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2489,6 +2504,7 @@ K: Gmaj
 X:177
 %%etbk:tnset id:57,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/27
+%%etbk:color #ffffcc
 T: Drowsy Maggie
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2502,6 +2518,7 @@ K: Edor
 X:178
 %%etbk:tnset id:57,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1343
+%%etbk:color #ffffcc
 T: Peeler's Jacket, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2516,6 +2533,7 @@ K: Gmaj
 X:179
 %%etbk:tnset id:57,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/182
+%%etbk:color #ffffcc
 T: Silver Spear, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2530,6 +2548,7 @@ K: Dmaj
 X:180
 %%etbk:tnset id:57,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/219
+%%etbk:color #ffffcc
 T: Fermoy Lasses, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2544,6 +2563,7 @@ K: Emin
 X:181
 %%etbk:tnset id:57,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/33
+%%etbk:color #ffffcc
 T: Farewell To Erin
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2562,6 +2582,7 @@ K: Ador
 X:182
 %%etbk:tnset id:58,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/252
+%%etbk:color #ffffcc
 T: Kilfenora, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2576,6 +2597,7 @@ K: Dmaj
 X:183
 %%etbk:tnset id:58,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/399
+%%etbk:color #ffffcc
 T: Sligo Maid, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2590,6 +2612,7 @@ K: Ador
 X:184
 %%etbk:tnset id:58,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1723
+%%etbk:color #ffffcc
 T: Killavil, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2604,6 +2627,7 @@ K: Dmaj
 X:185
 %%etbk:tnset id:58,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/75
+%%etbk:color #ffffcc
 T: Miss McLeod's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2618,6 +2642,7 @@ K: Gmaj
 X:186
 %%etbk:tnset id:58,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/591
+%%etbk:color #ffffcc
 T: Pinch Of Snuff, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2641,6 +2666,7 @@ K: Dmaj
 X:187
 %%etbk:tnset id:59,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/423
+%%etbk:color #ffffcc
 T: Mouth Of The Tobique, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2657,6 +2683,7 @@ K: Gmaj
 X:188
 %%etbk:tnset id:59,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/322
+%%etbk:color #ffffcc
 T: Kerry Reel, The
 T: Green Fields Of Rosbeigh, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -2672,6 +2699,7 @@ K: Edor
 X:189
 %%etbk:tnset id:59,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/474
+%%etbk:color #ffffcc
 T: Come West Along The Road
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2685,6 +2713,7 @@ K: Gmaj
 X:190
 %%etbk:tnset id:59,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/188
+%%etbk:color #ffffcc
 T: Glass Of Beer, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2697,6 +2726,7 @@ K: Bmin
 X:191
 %%etbk:tnset id:59,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/74
+%%etbk:color #ffffcc
 T: Mason's Apron, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2711,6 +2741,7 @@ K: Amaj
 X:192
 %%etbk:tnset id:59,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1
+%%etbk:color #ffffcc
 T: Cooley's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2725,6 +2756,7 @@ K: Edor
 X:193
 %%etbk:tnset id:59,pos:7,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/511
+%%etbk:color #ffffcc
 T: Foxhunter, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2740,6 +2772,7 @@ K:Amaj
 X:194
 %%etbk:tnset id:60,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/359
+%%etbk:color #ffffcc
 T: Martin Wynne's No. 2
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2755,6 +2788,7 @@ X:195
 %%etbk:tnset id:60,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2980
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
+%%etbk:color #ffffcc
 T: Matt Peoples' No. 2
 M: 4/4
 L: 1/8
@@ -2767,6 +2801,7 @@ K: Dmaj
 X:196
 %%etbk:tnset id:60,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/221
+%%etbk:color #ffffcc
 T: Earl's Chair, The
 M: 4/4
 L: 1/8
@@ -2780,6 +2815,7 @@ K: Dmaj
 
 X:197
 %%etbk:tnset id:61,pos:1,rep:3
+%%etbk:color #ffffcc
 T: Coridinio
 S: Trad. Arr. S. Shannon
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -2797,6 +2833,7 @@ K: Gmaj
 X:198
 %%etbk:tnset id:61,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/483
+%%etbk:color #ffffcc
 T: Reel Beatrice
 S: Trad. Arr. S. Shannon
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -2814,6 +2851,7 @@ K: Amin
 X:199
 %%etbk:tnset id:62,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/118
+%%etbk:color #ffffcc
 T: Wise Maid, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2828,6 +2866,7 @@ K: Dmaj
 X:200
 %%etbk:tnset id:63,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/64
+%%etbk:color #ffffcc
 T: Maid Behind The Bar, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2842,6 +2881,7 @@ K: Dmaj
 X:201
 %%etbk:tnset id:64,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/72
+%%etbk:color #ffffcc
 T: Merry Blacksmith, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2856,6 +2896,7 @@ K: Dmaj
 X:202
 %%etbk:tnset id:65,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/115
+%%etbk:color #ffffcc
 T: Over The Moor To Maggie
 M: 4/4
 L: 1/8
@@ -2871,6 +2912,7 @@ K: Gmaj
 X:203
 %%etbk:tnset id:66,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3178
+%%etbk:color #ffffcc
 T: Sailing in
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -2885,6 +2927,7 @@ K: Emaj
 X:204
 %%etbk:tnset id:136,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/581
+%%etbk:color #ffffcc
 T: Graf Spee, The
 M: 4/4
 L: 1/8
@@ -2899,6 +2942,36 @@ K: Cmaj
 | !2!(3ef!4!g !1!c!4!g !2!(3efg !1!c!4!g | !3!(3fg!5!a !1!d!5!a !3!(3fga !1!d!5!a | !2!(3efg cg (3efg !1!c!4!g | !1!AB!3!c!1!d !4!ge!1!d!4!g |
 !2!e2!5!a!2!e !4!g!2!e!3!f!1!d | !5!e!3!c!4!d!2!B !3!c!2!A!1!G!2!E | !1!GA!3!cd !5!e!3!c!4!dc | !2!A!1!G!3!c!1!G !2!E!1!DD2||
 
+X:205
+%%etbk:tnset id:148,pos:1,rep:3
+%%etbk:site1 http://thesession.org/tunes/234
+%%etbk:color #ffffcc
+T: Farrel O'Gara's
+R: reel
+M: 4/4
+L: 1/8
+K: Dmaj
+|: "D"!1!A,!2!D!2!D{F}D !1!A,!2!D!3!F!4!A | !5!B!3!F!4!A!3!F "A"!1!E2!2!A!3!c | "G"!4!d!2!B{d}B!1!A !2!B!4!d!1!A!3!F | "A"!4!GEFD !2!E{G}E!1!D!2!B, |
+"D"!1!A,2 !2!DD !1!A,!2!D!3!F!4!A | !5!B!3!F!4!A!3!F "A"!1!E2!2!A!3!c | "G"!4!d!2!B{d}B!1!A !2!B!4!d!1!A!3!F | "A"!4!GFEG "D"!3!F!1!DD2 :|
+"D"!5!f2!3!d!1!d !3!f!1!d!4!g!2!e | !3!fdgf !2!e!1!d!2!B!3!c | "G"!4!d!2!B{d}B!1!A !2!B!3!c!1!d!2!e | "D"!3!f!1!d (3ddd "A"!2!e!4!g!3!g!4!g |
+"D"!3!f!1!d !3!(3d!2!d!1!d !3!f!1!d!4!g!2!e | !3!fdgf !2!e!1!d!2!B!3!c | "G"!4!d!2!B{d}B!1!A !2!B!4!d!1!A!3!F | "A"!4!GFEG "D"!3!F!1!DD2 |
+"D"!5!f2!3!d!1!d !3!f!1!d!4!g!2!e | !3!fdgf !2!e!1!d!2!B!3!c | "G"!4!d!2!B{d}B!1!A !2!B!3!c!1!d!2!e | "D"!3!f2af "A"!4!gfeg |
+"D"!3!f2!5!af !2!e!1!d!2!B!3!c | "G"!4!d2!5!f!4!d !2!B!1!A!2!F!4!A | "D"!1!A,2 !2!DD !1!A,!2!D!3!F!4!A | "A"!5!B!3!F!4!A!3!F "D"!1!D4 ||
+|"var Part B bar 2" fd (3ddd edBc |"var Part B bar 3" fagf e3d  |
+
+X: 206
+%%etbk:tnset id:148,pos:2,rep:3
+%%etbk:site1 http://thesession.org/tunes/281
+%%etbk:color #ffffcc
+T: Master Crowley's
+R: reel
+M: 4/4
+L: 1/8
+K: Emin
+|: "em"!1!B,!3!E!2!E!2!E !1!B,!3!E!5!GE | "bm"!4!F!2!D!1!A,D !4!F!2!D!1!A,!2!D | "em"!1!B,!3!E!5!G!3!E !1!C!3!E!5!G!1!E | "bm"!2!F!3!A!5!dA "em"!2!F!1!E!3!E!2!D | 
+"em"!1!B,2!3!E{F}E !1!B,!3!E!5!GE | "bm"!4!F!2!D!1!A,D !4!F!2!D!1!A,!2!D | "em"!1!B,!3!E!5!G!3!E !1!C!3!E!5!G!1!E  |1 "bm"!2!F!3!A!5!dA "em"!2!F!1!E!3!E!2!D :|2 "bm"!2!F!3!A!5!dA "em"!2!F!1!EE!5!e :|
+|: "em"!1!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"!1!e!5!b!4!^ab !2!f!3!g!1!e!3!g  | "bm"!1!d!2!B!1!A!3!c "em"!2!B!5!ee2 |
+"em"!1!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"{g}!2!e!1!d!2!B!1!A !2!B2!4!dB |2 "bm"!1!A!2!F!1!D!2!F "em"!2!F!1!EE!5!e:|2 "bm"!1!A!2!F!1!D!2!F "em"!2!F!1!E!3!E!2!D||
 
 X:1001
 %%etbk:tnset id:67,pos:1,rep:3
@@ -2995,7 +3068,6 @@ K: Gmaj
 
 X:1007
 %%etbk:tnset id:69,pos:1,rep:3
-%%etbk:tube1 http://www.youtube.com/embed/xOdUUGD9H2M
 T: Dorrus Mill
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
@@ -3578,7 +3650,7 @@ K: Bmin
 !5!ba!3!f !4!afa | !5!ba!3!f !2!e!1!d!2!B | !1!d2!3!f !5!afe |1 "bm"!1!d!2!BA !2!B2!4!d:|2 "bm"!1!d!2!BA !2!B2!1!A||
 
 X:1046
-%%etbk:tnset id:82,pos:2,rep:3
+%%etbk:tnset id:89,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2483
 T: When The Cock Crows It Is Day
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -3593,7 +3665,7 @@ K: Gmaj
 |"var bar 2" !5!d!1!Dd !5!d!4!B!3!A |
 
 X:1047
-%%etbk:tnset id:82,pos:3,rep:3
+%%etbk:tnset id:82,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/60
 T: Lilting Banshee, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -3826,7 +3898,7 @@ K: Dmaj
 | "D"!1!AB!4!d !2!ede | !3!f!1!d!2!B {d}B!1!A!2!F | !4!A!2!F!1!E EF!4!A | "G"!2!B3 !4!d3:|
 
 X:1062
-%%etbk:tnset id:87,pos:2,rep:3
+%%etbk:tnset id:87,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1447
 T: Whelan's Fancy
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -3840,7 +3912,7 @@ K: Edor
 "em"!2!BAB !5!e2!2!e | !3!fed !2!e2f | "bm"!4!g!2!ee !5!a!1!dd | !3!(3fe!1!d !2!B !1!A!2!F!1!A:|
 
 X:1063
-%%etbk:tnset id:87,pos:3,rep:3
+%%etbk:tnset id:87,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/451
 T: Brendan Tonra's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -3848,9 +3920,9 @@ M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-E|: "D"!3!F!2!F!3!F !5!AFE | {G}!2!E!1!D!2!B, !1!A,!2!B,!1!D | !2!FEF !3!GFG | "A"!4!AB!2!F !4!A!3!F!2!E |
-"D"!3!F!2!F!3!F !5!AFE | {G}!2!E!1!D!2!B, !1!A,!2!B,!1!D  | !2!FEF "A"!3!GFG | "D"!4!A!2!F!1!D D3:|
-!4!e |: "D"!5!f2!3!d {e}dcd | !4!ed!2!c !1!Bc!3!d | !5!f2d {e}!3!dcd | "A"!1!ABA !1!A!3!de |
+E|: "D"!3!F!2!F!3!F !5!A!3!F!1!E | !3!E!2!D!1!B, !1!A,!1!B,!2!D | !4!F!1!E!2!F !3!GFG | "A"!4!AB!2!F !4!A!3!F!2!E |
+"D"!3!F!2!F!3!F !5!A!3!F!1!E | !3!E!2!D!1!B, !1!A,!1!B,!2!D | !4!F!1!E!2!F "A"!3!GFG | "D"!4!A!2!F!1!D D3:|
+!4!e |: "D"!5!f2!3!d {e}dcd | "A"!4!ed!2!c !1!Bc!3!d | "D" !5!f2d {e}!3!dcd | "A"!1!ABA !1!A!3!de |
 "D"!5!f2!3!d {e}dcd | !4!ed!2!c !1!B!2!c!1!d | !3!f!5!af "A"!4!g!1!e!2!c | "D"!3!d!5!fe !3!d3:|
 
 X:1064
@@ -3896,7 +3968,7 @@ K: Ador
 "am"!2!e!4!aa aga | "G"!5!b!1!d!5!b !4!ag!2!e | !2!e!4!ge !1!d!2!B!1!G | "am"!1!ABA A3:||
 
 X:1067
-%%etbk:tnset id:89,pos:1,rep:3
+%%etbk:tnset id:89,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/134
 T: Strayaway Child, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -3937,7 +4009,7 @@ c|: "em"!3!B!1!GG !4!A!2!FF | !3!G!1!EE E2!4!c | !3!B!1!GG !5!d!2!A!1!G | "D"!2!
 "em"!3!B!1!GG !2!A!1!G!2!F | !3!G!1!EE !5!gfg | "bm"!3!e!2!d!1!B {d}!2!B!1!A!2!F | "em"!3!G!1!EE E3:|
 f|: "em"!3!gbg !2!faf | !3!g!1!ee e2f | !3!gbg !2!fag | "D"!2!f!1!dd d2!2!f |
 "em"!3!gbg !2!faf | !1!e!5!gf !5!gfg | "bm"!3!e!2!d!1!B {d}!2!B!1!A!2!F | "em"!3!G!1!EE E3:|
-f|: "em"!5!g!2!d!1!c !2!Bc!1!A | !3!G!1!EE E2!4!f | !5!g!3!d!2!B !3!d!1!A!3!G | "D"!2!F!1!DD DE!3!F |
+f|: "em"!5!g!2!d!1!c !2!Bc!1!A | !2!G!1!EE E2!4!f | !5!g!3!d!2!B !3!d!1!A!3!G | "D"!2!F!1!DD DE!3!F |
 "em"!1!G2G {c}!2!AG!2!A | !1!B!2!B!1!B !5!gfg | "bm"!3!e!2!d!1!B {d}!2!B!1!A!2!F | "em"!3!G!1!EE E3:|
 
 X:1069
@@ -4115,268 +4187,309 @@ K: Gmaj
 X:1081
 %%etbk:tnset id:95,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/5
+%%etbk:color #ffffcc
 T: Blarney Pilgrim, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmix
-|:DED DEG| A2A ABc| BAG AGE| GEA GED|
-DED DEG|A2A ABc|BAG AGE| GED D3:|
-ded dBG|AGA BGE| ded dBG|AGA GAB|
-g2e dBG|AGA BGE|B2G AGE| GAG G3:|
-A2D B2D| A2D ABc|BAG AGE|GEA GED|
-ADD BDD|ADD ABc|BAG AGE|GED D3:|
+|: "G"!1!D!2!D!1!D !1!DE!4!G | "D"!2!A2A ABc | "G"!3!BAG A!1!G!2!E | !4!G2A GED |
+"G"!1!D !3!(3D!2!D!1!D !1!DE!4!G | "D"!2!A{c}AA ABc | "G"!3!BAG {c}A!1!G!2!E | !4!GED !1!D3:|
+|: "G"!5!dDd d!3!B!1!G | "D"!2!AGA "G"!3!B!1!G!2!E | !5!dGd dBG | "D"!2!ABA "G"!1!G !2!(3B!3!c!1!d |
+"G"!4!g2!2!e !1!d!3!B!1!G | !2!AGA B!1!G!2!E | !3!B2G AGA | !3!B!1!G!2!E !1!G3:|
+|: "D"!2!A!1!DD !3!B!1!DD | !2!A!1!DD !2!ABc | "G"!3!BAG {c}A!1!G!2!E | !4!G2A GED |
+"D"!2!A!1!DD !3!B!1!DD | !2!A!1!DD !2!ABc | "G"!3!BAG {c}A!1!G!2!E | !4!GED !1!D3:|
 
 X:1082
 %%etbk:tnset id:95,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/544
+%%etbk:color #ffffcc
 T:Garrett Barry's
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 L:1/8
 R:jig
 M:6/8
-K:Dmix
-|:DEF ~G3|AGA c2(3A/B/c/|dcA d2e|=fed cAG|
-FEF GFG|AGA cde|dcA GEA|[1 DED A,B,^C:|[2DED D2d||
-|:dcA d2e|=fag efd|dcA c2d|(3efg c edc|
-[1dcA d2e|=fag efd|dcA GEA|DED D2d:|
-[2dcA _Beg|=fdA G_Be|dcA GEA|DED A,B,^C|]
+K: Dmix
+|: "D"!1!DE!3!F !1!G!2!G!1!G | !2!AGA !4!c2!1!A | {e}!3!dcA d2e | !5!fed !2!c!1!A!3!G |
+!1!E!2!FF !3!G!2!F!3!G | !1!A!2!A!1!A !2!cde | "A"!3!d!2!c!1!A !3!G!1!E!4!A | "D"!1!D !3!(3D!2!D!1!D !1!D3:|
+|: "D"!3!dcA d2e | !5!fed !4!e!5!ge | !3!dcA "A"!2!c2d | !4!e!5!f!3!d !4!e!2!c!1!A |
+"D"!3!dcA !3!d2e | !5!fed !4!e!5!ge | "A"!3!d!2!c!1!A !3!G!1!E!4!A | "D"!1!D !3!(3D!2!D!1!D !1!D3 :|
 
 X:1083
 %%etbk:tnset id:95,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/55
+%%etbk:color #ffffcc
 T: Kesh, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-|:G3 GAB| A3 ABd|edd gdd|edB dBA|
-GAG GAB|ABA ABd|edd gdd|BAF G3:|
-B2B d2d|ege dBA|B2B dBG|ABA AGA|
-BAB d^cd|ege dBd|gfg aga| bgg g3:|
+|:  "G"!1!G!2!G!1!G !1!GA!3!B | "D"!1!A!2!A!1!A !1!A!2!B!4!d | "G"!2!e!1!dd !4!g!1!dd | {g}!2!e!1!d!3!B !5!dBA |
+"G"!1!GAG GA!3!B | "D"!1!A2A !1!A!2!B!4!d | "G"!2!e!1!dd !4!g!1!d!3!B | "D"!2!A!1!G!2!F "G"!1!G3:|
+|: "G"!1!B!2!B!1!B !2!dBd | !3!e!5!ge !2!d!1!B!2!G | !3!B!1!G!3!B B!5!dB | "D"!2!A2A {c}AG!2!A |
+"G"!1!B!2!B!1!B !2!dBd | !3!e!5!ge !2!dB!2!d | !3!g!1!dg "D"!4!a!1!da | "G"!5!bgf !3!g3:|
 
 X:1084
 %%etbk:tnset id:95,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/62
+%%etbk:color #ffffcc
 T: Lark In The Morning, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:AFA AFA|BGB BdB|AFA AFA|fed BdB|
-AFA AFA|BGB BdB|def afe|dBB BdB:|
-|:def afe| bff afe|def afe|dBB BdB|
-def afe|bff afe|g2e f2d|edB BdB:|
-|:dff fef|fef fef|dff fef|edB BdB|
-dff fef|fef def|g2e f2d|edB BdB:|
-|:Add fdd|edd fdd|Add fdd|edB BdB|
-Add fdd|edB def| g2e f2d|edB BdB:|
+|: "D"!1!A!2!F!1!A !1!A!2!F!1!A | "G"!2!B!1!GB !2!B!4!dB | "D"!1!A!2!F!1!A !1!A!2!F!1!A | "A"!3!fe!1!d !2!B!4!dB |
+"D"!1!A!2!F!1!A !1!A!2!F!1!A | "G"!2!B!1!GB !2!B!1!A!2!B | "A"!1!def !5!afe |1 !1!d!2!BB !2!B!4!dB :|12!1!d!2!BB {d}!2!BAB||
+|: "D"!1!def !4!a!3!a!4!a | !5!b!4!a!3!f !4!a!3!f!2!e | !1!def !5!afe | "A"!1!d!2!BB {d}BAB |
+"D"!1!def !4!a!3!a!4!a | !5!b!4!a!3!f !4!a2!3!f | "G"!4!g!3!g!4!g !3!faf | "A"!2!e!1!d!2!B {d}BAB :|
+|: "D"!1!d2!3!f {g}fef | !3!fef fef | !1!d2!3!f {g}fef | "A"!2!e!1!d!2!B {d}BA!2!B |
+"D"!1!d2!3!f {g}fef | !3!fef fef | "G"!4!g!3!g!4!g !3!faf | "A"!2!e!1!d!2!B {d}BAB:|
+|: "D"!1!A!3!d!1!d !3!f!1!dd | {g}!2!ede !3!f!1!d!2!B | !1!A!3!d!1!d !3!f!1!dd | "A"!2!e2e {g}!2!e!1!d!2!B |
+"D"!1!A!3!d!1!d !3!f!1!dd | {g}!2!ede !3!f2f | "G"!4!g2g !3!faf | "A"!2!e!1!d!2!B {d}BAB:|
 
 X:1085
 %%etbk:tnset id:96,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/89
+%%etbk:color #ffffcc
 T: Rambling Pitchfork, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-F2F AFF|dFF AFF|G2G ABc|ded cAG|
-FEF AFF|dFF AFF|GFG BAG|FDD D3:|
-d2e fed|ecA ABc|dcd fed|faf gfe|
-d2e fed|ecA BAF|GFG BAG|FDD D3:|
+|: "D"!2!F{A}FF !4!A!2!FF | !5!d!2!FF !4!A!2!F!1!D | "G"!3!GF!3!G !1!ABc | "A"!4!ded !3!c!1!A!3!G |
+"D"!2!F!1!F!2!F !4!A!2!FF | !5!d!2!FF !4!A!2!F!1!D | "G"!3!G!2!G!3!G !5!BAG | "D"!4!A!2!F!1!D D3:|
+|: "D"!3!d2e !5!fed | "A"!4!e!2!c!1!A !1!A!2!F!1!A | "D"!3!d!2!c!1!d !2!efg | !3!faf "A"!4!gfe |
+"D"!1!d2e !3!fe!1!d | "A"!4!e!2!c!1!A !4!A!2!F!1!D | "G"!3!G{A}GG !5!BAG | "D"!4!A!2!F!1!D D3:|
 
 X:1086
 %%etbk:tnset id:96,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/29
+%%etbk:color #ffffcc
 T: Dusty Windowsills, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Ador
-|:A2B cBA|eAB cBA|GAG FGG|EGG EFG|A2B cBA|e2d efg|
-age dBG|ABA A3:|a3 age|dBd g3|gag gfe|dBA GAG|
-EGG DGG|EFG ABc|Bee dBG|ABA A3:|A2A gAf|A2A gAf|
-G2G eGd|G2G edB|A2A gAf|A2d efg|age dBG|ABA A3:|
+|: "am"!1!A2B !3!cBA | !5!eAB !3!cB!1!A | "G"!2!G{B}GG !1!E!2!GG | !1!D!2!GG !1!E!2!G!2!G | 
+"am"!1!A2B !3!cBA | !2!e{g}ed efg | "em"!5!age !1!d!2!B!1!G | "am"!1!ABA A3:|
+|: "am"!5!a2a age | "G"!1!d!2!B!1!d !4!g2g | !4!gag gfe | !1!d!3!B!2!A !1!G!2!F!3!G |
+!1!E!3!GG !1!D!3!GG | "am"!1!EF!3!G !1!AB!3!c | "em" !2!Bed !2!B!1!A!2!G | "am"!1!ABA A3:|
+|: "am"!1!A2A !5!gA!4!f | !1!A2A !5!e!4!d!2!B | "G"!1!G!2!G!1!G !5!eG!4!d | !1!G2G !5!e!4!d!2!B |
+"am"!1!A!2!A!1!A !5!gA!4!f | !1!A2A !2!efg | "em"!5!age !1!d!2!B!1!G | "am"!1!ABA A3:|
 
 X:1087
 %%etbk:tnset id:96,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/9
+%%etbk:color #ffffcc
 T: Banish Misfortune
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmix
-fed cAG| A2d cAG| F2D DED| FEF GFG| AGA cAG| AGA cde|
-fed cAG| Ad^c d3:|f2d d^cd| f2g agf| e2c cBc|e2f gfe|
-f2g agf| e2f gfe|fed cAG|Ad^c d3:|f2g e2f| d2e c2d|
-ABA GAG| F2F GED| c3 cAG| AGA cde| fed cAG| Ad^c d3:|
+|: "D"!5!fed !2!c!1!A!2!G | !1!A2!5!d !4!c!2!A!1!G | !3!F2!1!D !1!D !3!(3D!2!D!1!D | !2!F!1!E!2!F !3!G!2!F!3!G | 
+!1!A!2!A!1!A !2!c!1!A!2!G | !1!A!2!G!1!A !2!cde | "A"!5!fed !2!c!1!A!2!G | "D"!1!A!3!d^c d3 :| 
+|: "D"!3!f2!1!d !1!d^!2!c!1!d | !3!f2g agf | "C"!2!e2!1!c !1!c!2!B!1!c | !2!e2f gfe |
+"D"!3!f2g !5!agf | "C"!2!e2f !4!gfe | "D"!5!fe!1!d !2!c!1!A!2!G | !1!A!3!d!2!^c !3!d3 :|
+|: "D"!3!f2g e2f | !1!de!1!d !2!c2!3!d | !1!A!2!A!1!A !3!GAG | !2!F2F !3!G!2!F!1!D |
+ "C"!3!c2!2!c !2!c!1!A!2!G | !1!A!2!G!1!A !2!cde | "D"!5!fed !2!c!1!A!2!G | !1!A!3!d^c d3 :|
 
 X:1088
 %%etbk:tnset id:96,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/70
+%%etbk:color #ffffcc
 T: Merrily Kissed The Quaker
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 12/8
 L: 1/8
 R: slide
 K: Gmaj
-|:D|GAB G2B c2A BGE|GAB DEG A2A AGE|GAB GAB cBA BGE|GAB AGF G3 G2:|
-|:A|BGG AGG BGG AGG|GAB DEG A2A AGA|BGG AGG BGG AGG|GAB AGF G3 G2:|
-|:d|g2g a2a bag edB|g2g gab a2a agf|g2g f2f ege dBA|GAB AGF G3 G2:|
+!1!D |: "G"!3!GA!5!B !1!D2!4!B !5!c2!3!A !4!B!2!G!1!E | !3!GA!5!B !1!D!2!E!3!G "D"!4!AAA AGA | 
+"G"!3!GA!5!B !1!D2!4!B !5!c2!3!A !4!B!2!G!1!E | !3!GA!5!B "D"!1!D2E "G"!3!G3 G3:|
+!4!A |: "G"!5!B!3!GG !4!A!3!GG BGG !4!A!3!G!2!E | !3!GA!5!B !1!D!2!E!3!G "D"!4!A2A AGA | 
+"G"!5!B!3!GG !4!A!3!GG BGG !4!A!3!G!2!E | !3!GA!5!B "D"!1!D2E "G"!3!G3 G3:|
+!2!f |: "G"!3!g!2!g!3!g !4!aga !5!b!3!g!2!e !1!d!2!B!1!d | !3!g!1!d!3!g !3!ga!5!b "D"!4!a2a agf | 
+"G"!3!g!5!bg !2!f!4!a!2!f !2!e!4!ge !1!d!3!B!2!A | !1!GA!3!B "D"!1!D2E "G"!3!G3 G3:|
 
 X:1089
 %%etbk:tnset id:96,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/71
+%%etbk:color #ffffcc
 T: Morrison's
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Edor
-|:E3 B3|EBE AFD|EDE B3|dcB AFD|
-E3 B3|EBE AFD|G3 FGA|dAG FED:|
-Bee fee|aee fee|Bee fee|a2g fed|
-Bee fee|aee fee|gfe d2A|BAG FGA|
-Bee fee|aee fee|Bee fee|faf def|
-g3 gfe|def g2d|edc d2A|BAG FED|
+|: "em"!1!E!2!E!1!E !5!B2B | !1!E !3!(3E!2!E!1!E !4!A!2!F!1!D | !1!E3 !2![B2E]c | "D" !4!dcB !1!A!3!F!1!D |
+"em"!1!E!2!E!1!E !5!B2B | !1!E !3!(3E!2!E!1!E "D"!4!A!2!F!1!D | "G"!3!G{A}GG !2!F!1!GA | "D"!5!d!2!A!1!G !3!FE!1!D :|
+"em"!2!B!5!e!2!e !3!f!2!ee | !5!a!2!ee !3!f!2!ee | !1!B!2!ee !3!f!2!ee | "D"!3!fag fe!1!d |
+"em"!1!B!2!ee !3!f!2!ee | !5!a!2!ee !3!f!2!e!2!e | "bm"!5!gfe !2!d2!1!A | !2!B!1!A!3!G !2!F!3!G!4!A |
+"em"!2!B!5!e!2!e !3!f!2!ee | !5!a!2!ee !3!f!2!ee | !1!B!2!ee !3!f!2!ee | "D"!3!f!5!af def |
+"G"!4!g!3!g!2!g gfe | !1!d!3!e!4!f !5!g2!3!d | !4!edc "D"!3!d2!1!A | !3!BA!1!G !3!FE!1!D |
 
 X:1090
 %%etbk:tnset id:97,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1076
+%%etbk:color #ffffcc
 T: Black Rogue, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-| cAA BGG | cAA ABd | cAA BAG | AFD D2 B|
-cAA BGG | cAA AFD | G2 A (B/c/d)B |1 AFD D2 B :|2 AFD D3 ||
-|: ~f3 ~g3 | afd cBA| ~f3 gfg | afd dfg |
-agf gfe | fed e/f/ed | cBA BAG | AFD D3 :||
+!4!d |: "A"!3!c!1!AA !3!BA!1!G | !3!c!1!AA A2!4!d | !3!c!1!AA !3!BA!1!G | "D"!4!A!2!F!1!D D2!4!d |
+"A"!3!c!1!AA !3!BA!1!G | !3!c!1!A!4!A !4!A!2!F!1!D | "G"!3!G!2!G!3!G !5!BAG | "D"!4!A!2!F!1!D D3 :|
+!4!e |:"D"!3!f!2!f!3!f !4!gfg | !5!a!3!f!1!d !3!cBA| !3!fff !4!gfg | !5!a!3!f!1!d !1!df!4!g |
+!5!agf !4!gfe | !3!fed !2!ef!1!d | "A"!3!c!1!AA !3!BA!1!G | "D"!4!A!2!F!1!D !1!D3 :||
 
 X:1091
 %%etbk:tnset id:97,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/108
+%%etbk:color #ffffcc
 T: Out On The Ocean
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
-K:Amaj
-|:AF|E2c cBA|cec B2c|AFE A2B|c2c BAF|
-E2c cBA|cec B2c|AFE A2B|cAF A:|
-ce|f2f fec|faf fec|e2c efg|agf ecB|
-A2B c2e|faf e2c|BAF A2B|cAF A:|
+K: Amaj
+|: "A"!1!E2!3!c {d}!3!cBA | !3!cec !2!BBc | !1!A!2!F!1!E !3!A2B | !5!c2c !4!B!3!A!2!F |
+!1!E2!3!c {d}!3!cBA | !3!cec !2!BBc | !1!A!2!F!1!E !3!A2B |1 !5!c!3!A!2!G !3!A3:|2 !5!c!3!A!2!G !1!A!3!c!5!e:|
+ "D"!3!f2f {g}!3!f!1!e!2!c | !3!faf !3!f!1!e!2!c | "A"!5!e2e !5!e!3!c!2!B | !5!e2e !5!e!3!c!2!B |
+"A"!1!A2B !3!c2!5!e | !3!faf !1!e!3!c!2!B | !1!A!2!F!1!E !3!A2B | !5!c!3!A!2!G !1!A!3!c!5!e |
+ "D"!3!f2f {g}!3!f!1!e!2!c | !3!faf !3!f!1!e!2!c | "A"!1!e2e !1!e!3!f!4!g | !5!a!4!g!3!f !1!e!3!c!2!B |
+"A"!1!A2B !3!c2!5!e | !3!faf !1!e!3!c!2!B | !1!A!2!F!1!E !3!A2B | !5!c!3!A!2!G !3!A3 |
 
 X:1092
 %%etbk:tnset id:97,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/447
+%%etbk:color #ffffcc
 T: Rose In The Heather, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-D2F EDB,|DFA BAF|ABd ede|fdB AFE|
-~F3 EFE|DFA Bcd|edB AFE|FDD D3:|
-|:fdB ABd|faa afd|~g3 fed|Bee ede|fdB ABd|
-faa afa|baf gfe|1 fdd d2e:|2 fdB AFE||
-"Variations:"
-~F3 EFE|DFA BAF|ABd ede|fdB AFE|
-D2F EDB,|DFA BAF|AdB AFE|1 FDD D3:|2 FDD D2e||
-|:fdB AFA|dfa afd|~g3 fed|Bee ede|
-fdB AFA|dfa afa|baf gfe|1 fdd d2e:|2 fdB AFE||
+|: "D"!3!FAF !2!EFE | !1!D!2!F!3!A !4!B!3!A!2!F | !1!A!2!B!3!d !4!ede | "A"!5!f!3!d!2!B !1!A!3!F!2!E |
+"D"!3!F!2!F!3!F !2!EFE | !1!D!2!F!3!A !4!B!3!A!2!F | "A"!1!A!4!dB !1!A!3!F!2!E | "D"!3!F!1!D!2!C !1!D3:|
+|: "D"!5!f!3!d!2!B !1!A!2!B!1!d | !3!f!5!aa !5!afd | "G"!4!g!3!g!4!g !3!fe!1!d | "A"!2!B!5!e!2!e !2!efg | 
+"D"!3!f!1!d!2!B !1!A!2!B!1!d | !3!f!5!aa !5!afd | "G"!5!b!4!a!2!f "A"!4!gfe | "D"!3!f!1!d!2!c !1!d3:|
 
 X:1093
 %%etbk:tnset id:97,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/467
+%%etbk:color #ffffcc
 T: Leitrim Fancy, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Edor
-GBG FAF|E2B BAB|GBG FAF|D2A AFD|
-GBG FAF|E2B BAB|G2B dBG|ABG FED:|
-G2B dBd|edB dBA|G2B dBG|ABG FED|
-G2B dBd|edB def|gfe dBG|ABG FED:|
+|: "em"!3!G!2!G!3!G !2!FGF | !1!E2!5!B !5!BAB | !3!G!5!BG !2!F!4!AF | "D"!1!D!2!F!4!A !4!A!2!F!1!D |
+"em"!3!G{A}!3!G!3!G !2!FGF | !1!E2!3!B !3!BAB  | "G"!1!GA!3!B !5!dBG | "D"!2!AA!1!G !3!FE!1!D :|
+|: "G"!1!GA!3!B !4!d!3!d!4!d | !5!e!4!d!3!B !4!d!3!B!2!A | !1!GA!3!B !5!dBG | "D"!2!AA!1!G !3!FE!1!D |
+"G"!1!GA!3!B !4!d2d | !5!e!4!d!3!B !1!def | !4!gfe !1!d!3!BG | "D"!2!AA!1!G !3!FE!1!D :|
 
 X:1094
 %%etbk:tnset id:97,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/19
+%%etbk:color #ffffcc
 T: Connaughtman's Rambles, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:FAA dAA|BAA dAG|FAA dfe|dBB BAG|
-FAA dAA|BAA def|gfe dfe|1dBB BAG:|2 dBB B3|
-K:Bmin
-|:fbb faf|fed ede|fbb faf|fed e3|
-fbb faf|fed def|gfe dfe|1 dBB B3:|2 dBB BAG|
+|: "D"!2!F!1!AA !4!d!1!AA | {d}!2!BAB !4!d!1!A!3!G | !2!F!1!AA !3!d!5!fe | "A"!3!d!2!BB {d}!2!B!1!A!3!G |
+"D"!2!F!1!AA !4!d!1!AA | {d}!2!BA!2!B !1!def | "A"!4!gfe !1!dfe |1 "bm"!1!d!2!BB !2!B2!1!A :|2 "bm"!1!d!2!BB !1!B3 ||
+|: "bm"!2!f!5!bb !2!f!4!aa | !3!fed !1!de!3!f | !2!f!5!bb !2!f!4!aa | "f#m"!3!fed !2!e2!1!e |
+"bm"!2!f!5!bb !2!f!4!aa | !3!fed !1!def | "f#m"!4!gfe !1!dfe |1 "bm"!1!d!2!BB !1!B3:|2 "bm"!1!d!2!BB !2!B2!1!A||
 
 X:1095
 %%etbk:tnset id:98,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/582
+%%etbk:color #ffffcc
 T: Haste To The Wedding
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:AFA Agf|ede fdB|AFA dAF|EFE EFG|
-AFA Agf|ede fdB|A2g faf|ded d3:|
-|:afa afa|bgb bgb|afa agf|ede efg|
-a3 f3|ede fdB|A2g faf|ded d3:|
+|: "D"!1!A!2!F!1!A !1!A!4!gf | !2!ede !3!f!1!d!2!B | !1!A!2!F!4!A !4!AGF | "A"!3!G!2!G!3!G !1!EFG |
+"D"!4!A!2!F!1!A !1!A!4!gf | !2!ede !3!f!1!d!2!B | !1!A!2!F!1!A "A"!3!faf | "D"!1!ded d3:|
+|: "D"!4!a!2!fa afa | "G"!5!b!3!gb bgb | "D" !4!a!2!fa af!4!a | "A"!4!gfg !2!efg |
+"D"!5!a3 !3!f3 | !2!ede !3!f!1!d!2!B | !1!A!2!F!1!A "A"!3!faf | "D"!1!ded d3:|
 
 X:1096
 %%etbk:tnset id:98,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/702
+%%etbk:color #ffffcc
 T: Blackthorn Stick, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-|:d|gfg ege|dBG AGE|DGG FGA|BGB A2 d|
-gfg age|dBG AGE|DGG FGA|BGG G2:|
-|:d|edd gdd|edd gdd|e2 e gfg|edB A2 d|
-gfg age|dBG AGE|DGG FGA|BGG G2:|
+|: "G"!4!gGg !2!ege | !1!d!3!B!1!G {c}!2!A!1!G!2!E | !1!D!3!GG !2!F!1!GA | !3!B!1!G!3!B "D"!1!A2!2!d |
+"G"!4!g!3!g!4!g !5!age | !1!d!3!B!1!G {c}!2!A!1!G!2!E | !1!D!3!GG !2!F!1!G!2!A | !3!B!1!GG G3 :|
+!1!d |: "G"{g}!2!e!1!dd !4!g!1!dd | !2!e!1!dd !4!g!1!dd | !2!ede !4!gfg | !2!e!1!d!2!B "D"!1!A2!2!d |
+"G"!4!g!3!g!4!g !5!age | !1!d!3!B!1!G {c}!2!A!1!G!2!E | !1!D!3!GG !2!F!1!G!2!A | !3!B!1!GG G3:|
 
 X:1097
 %%etbk:tnset id:98,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/111
+%%etbk:color #ffffcc
 T: Tripping Up The Stairs
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:FAA GBB|FAd fed|cBc ABc|dfe dAG|
-FAA GBB|FAd fed|c2c ABc|dfe d2A:|
-dBB fBB|dBB fed|cAA eAA|efe edc|
-dBB fBB|fgf fed|cBc ABc|dfe d3:|
+|: "D"!2!F!3!AA !1!G!4!B!3!A | !2!F!1!A!3!d !5!fed | "A"!2!c!4!e!2!c !1!AB!3!c | "D"!1!d!3!fe !1!d!2!B!1!A |
+"D"!2!F2!3!A !1!G!4!B!3!A | !2!F!1!A!3!d !5!fed | "A"!2!c{e}cc !1!ABc | "D"!1!dfe d3 :|
+|: "bm"!2!d!1!BB !3!f!1!BB | !3!fgf fe!1!d | "f#m"{e}!2!c!1!AA !2!e!1!AA | !2!efe e!1!d!2!c |
+"bm"!3!d!1!BB !3!f!1!BB | !3!fgf fe!1!d | "A"!2!c!4!e!2!c !1!AB!3!c | "D"!1!dfe d3 :|
 
 X:1098
 %%etbk:tnset id:98,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/532
+%%etbk:color #ffffcc
 T: Paddy Fahy's
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-F|:DGA ~B3|cBc d2 g|gdB Bcd|cAG FDC|
-|DGA B2 d| cBc d2 g|gdB Bcd|1 cAF G2 F:|2 cAF GBd||
-|:g2 d fga|gfd Bcd|cAc fef|agf def|
-|g2 a bag|fdg fdc|ABG Adc|1 AGF GBd:|2 AGF G2 F||
+|: "G"!1!D!3!G!4!A !2!B{d}B!1!G | !3!cB!3!c !1!d2!4!g | !4!g!3!f!1!d !2!Bcd | "D"!3!c!1!A!3!G !4!A!3!G!2!F |
+"G"!1!D!3!G!4!A !2!B{d}B!1!G | !3!cB!3!c !1!d2!4!g | !4!g!3!f!1!d !2!Bcd |1 "D"!3!c!1!A!2!F "G"!3!G3 :|2 "D"!3!c!1!A!2!F "G"!1!G !2!(3B!3!^c!1!d ||
+|: "G"!4!g2!1!d !3!fga | !4!g!3!f!1!d !2!Bcd | "D"!3!c!1!AA !3!f!1!AA | !5!agf !1!de!3!f |
+ "G"!1!g2a !3!ba!1!g | "D"!3!f!1!d!4!g !3!f!1!d!3!c | "G"!2!B2!1!G "D"{c}!2!A!1!G!2!F |1 "G"!1!D!3!G!2!F !1!G !2!(3B!3!^c!1!d :|2 "G"!1!D!3!G!2!F !3!G3 ||
 
 X:1099
 %%etbk:tnset id:98,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1049
+%%etbk:color #ffffcc
 T: Pipe On The Hob, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmix
-ded A2G|EFD DEF|EDE cBc|E2D DFA|
-dcB cBA|BAG A2G|EDE cBc|1E2D Dfe:|2E2D D2e||
-|:f2d d^cd|f2d d^cd|edB c2d|ede age|
-[1 f2d d^cd|f2d d^cd|ede age|ed^c dge:|
-[2 ~f3 ~g3|afa gfe|fed eag|ed^c d2A||
+|: "D"!5!d!4!^c!5!d !2!A{c}A!1!G | !3!F2!1!D DED | "A"!2!EDE !5!c!4!B!5!c | "D"!2!E{G}E!1!D !1!D!2!F!1!A |
+"D"!5!dcB !4!cBA | !3!BAG !2!A{c}A!1!G | "A"!2!EDE !5!c!4!B!5!c | "D"!2!E2!1!D D3:|
+|: "D"!3!f2!1!d !1!d!2!^c!1!d | !3!f{g}f!1!d !1!d!2!^c!1!d | "C"{g}!2!e!1!d!2!B !3!c!3!c!1!d | !2!ede !5!age |
+[1 "D"!3!f{g}f!1!d !1!d!2!^c!1!d | !3!f2!1!d !1!d!2!^c!1!d  | "A"{g}!2!ede !5!age | !2!e!1!d!2!^c !1!d3 :|
+[2 "D"!3!f!2!f!3!f !4!gfg | !5!agf !4!gfe | !3!fed "A"!2!e!5!ag | {g}!2!e!1!d!2!^c "D"!1!!5!d3 ||
 
 X:1100
 %%etbk:tnset id:99,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/232
+%%etbk:color #ffffcc
 T: Walls Of Liscarrol, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
@@ -4392,6 +4505,7 @@ K: Dmix
 X:1101
 %%etbk:tnset id:99,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/667
+%%etbk:color #ffffcc
 T: Killavil, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
@@ -4406,6 +4520,7 @@ K: Edor
 X:1102
 %%etbk:tnset id:99,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/816
+%%etbk:color #ffffcc
 T: Tom Billy's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
@@ -4422,6 +4537,7 @@ K: Amix
 X:1103
 %%etbk:tnset id:99,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1736
+%%etbk:color #ffffcc
 T: Hare In The Corn, The
 T: Rathawaun
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -4437,6 +4553,7 @@ K: Dmaj
 X:1104
 %%etbk:tnset id:99,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4579
+%%etbk:color #ffffcc
 T: Hare In The Corn, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 12/8
@@ -4451,6 +4568,7 @@ K: Gmaj
 X:1105
 %%etbk:tnset id:99,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/61
+%%etbk:color #ffffcc
 T: Langstrom's Pony
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
@@ -4466,215 +4584,226 @@ K: Amix
 |: "A"!2!A!1!E!2!A !1!A !3!(3A!2!A!1!A | !3!c!1!Ac !5!e!3!c!1!B | !2!A!1!E!2!A !1!AB!3!=c | "G"!2!B!1!G!2!B !4!d!3!c!1!B |
 "A"!2!A!1!E!2!A !1!A !3!(3A!2!A!1!A | !3!c!1!A!3!c !1!e!3!f!4!g | "G"!3!f!5!af !4!gfe | !1!d!2!B!1!G !2!Bc!4!d:|
 
-
 X:1106
 %%etbk:tnset id:100,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/76
+%%etbk:color #ffffcc
 T: My Darling Asleep
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:fdd cAA|BGG A2G|FAA def|gfg eaa|
-fdd cAA|BGG A2G|FAA def|gec d3:|
-FAA Add|FAA BGG|FAA def|gfg eaa|
-fdd cAA|BGG A2G|FAA def|gec d3:|
+!4!g |: "D"!3!f!1!d!1!d !3!c!1!A!1!A | !3!B!1!GG !2!A2!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!3!g!4!g !2!e!5!ag |
+"D"!3!f!1!d!1!d !3!c!1!A!1!A | !3!B!1!GG !2!AA!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!1!e!2!c "D"!3!d3:|
+|: "D"!2!F!3!AA !3!A!5!dd | !2!F!3!AA !4!B!3!A!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!3!g!4!g !2!e!5!ag |
+"D"!3!f!1!d!1!d !3!c!1!A!1!A | !3!B!1!GG !2!AA!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!1!e!2!c "D"!3!d3:|
 
 X:1107
 %%etbk:tnset id:100,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/92
+%%etbk:color #ffffcc
 T: Irish Washerwoman, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-|:BGG DGG|BGB dcB|cAA EAA|cAc edc|
-BGG DGG|BGB dcB|cBc Adc|BGG G3:|
-|:BGG DGG|BGB BAG|AFF DFF|AFA AGF|
-EGG DGG|CGG B,GG|cBc Adc|BGG G3:|
+|: "G"{d}!2!B!1!G!2!G !1!D!2!G!1!G | !2!B!1!G!2!B !4!dcB | "D"!3!c!1!A!2!A !1!D!2!A!1!A | !3!cAc !5!edc |
+"G"!2!B!1!G!2!G !1!D!2!G!1!G | !2!B!1!G!2!B !4!dcB | "D"!3!cBc !1!A!4!dc | "G"!2!B!1!GG G3:|
+!3!ga |: "G"!5!b!3!gg !1!d!3!gg | !5!bgb bag | "D"!4!a!2!ff !1!d!2!ff | !4!afa agf |
+"C"!1!e!3!gg !1!d!3!gg | !1!c!3!gg !1!B!3!gg | "D"!3!cBc !1!A!4!dc | "G"!2!B!1!GG G3:|
 
 X:1108
 %%etbk:tnset id:100,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/308
+%%etbk:color #ffffcc
 T: Tobin's Favourite
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-AF|DFA dcd|ecA cde|fdf gfg|ecA GFE|
-DFA dcd|ecA cde|(4fgaf gec|edc d:||
-d2|dfa agf|(4efge efg|fdf gfg|ecA GFE|
-DFA dcd|ecA cde|(4fgaf gec|edc d:||
+|: "D"!1!D!2!F!3!A !5!d!1!D!5!d | "A"!5!e!3!c!1!A !3!c!1!de | "D"!3!f!2!f!3!f "A"!4!g2!4!g | !5!e!3!c!1!A !4!G!3!F!2!E |
+"D"!1!D!2!F!3!A !5!d!1!D!5!d | "A"!5!e!3!c!1!A !3!c!1!de | "D"!3!f2f "A"!4!g!1!e!2!c | !4!edc "D"!3!d3:||
+|: "D"!1!dfa !5!agf | "A"!2!efg efg | "D"!3!fef "A"!4!g2g | !5!e!3!c!1!A !4!G!3!F!2!E |
+"D"!1!D!2!F!3!A !5!d!1!D!5!d | "A"!5!e!3!c!1!A !3!c!1!de | "D"!3!f2f "A"!4!g!1!e!2!c | !4!edc "D"!3!d3:||
 
 X:1109
 %%etbk:tnset id:100,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/84
+%%etbk:color #ffffcc
 T: Rakes Of Kildare, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Ador
-|:EAA AGA| Bcd e2f| g2g efg| dBA G2D|EAA AGA|
-Bcd e2f|gfe dBG| ABA A3:|aea aea| aea b2a|
-g2g efg|dBA G3|1aea aea| aea b2a| gfe dBG|
-ABA A3:|2 EAA AGA| Bcd e2f|gfe dBG| ABA A3|
+|: "am"!1!E!3!A!1!A !1!A!2!G!1!A| !2!Bc!4!d !2!e2f | "G"!4!g!3!g!4!g !2!ege | !1!d!3!BA !1!G2!2!F | 
+"am"!1!E!3!A!1!A !1!A!2!G!1!A| !2!Bc!4!d !2!e2f  | "em"!4!gfe !1!d!3!B!1!G | "am"!2!A3 A3:|
+|: "am"!5!a!2!e!5!a !3!a!1!e!3!a | !3!aea !4!b2!3!a | "em"!4!g!3!g!4!g !2!ege | !1!d!3!B!2!A !1!G3 | 
+|1 "am"!5!a!2!e!5!a !3!a!1!e!3!a | !3!aea !4!b2!3!a  | "em"!4!gfe !1!d!3!B!1!G | "am"!2!A3 !1!A3:|
+|2 "am"!1!E!3!A!1!A !1!A!2!G!1!A| !2!Bc!4!d !2!e2f  | "em"!4!gfe !1!d!3!B!1!G | "am"!2!A3 A3||
 
 X:1110
 %%etbk:tnset id:100,pos:5,rep:3
+%%etbk:color #ffffcc
 T: Top Of The Cork Road
 T: Father O'Flynn
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:d|dAF DFA|Bed cBA|dcd ede|faf ecA|
-dAF DFA|Bed cBA|dcd ede|fdd d2:|
-|:g|fdf fga|ece efe|dcd fed|cAA A2=c|
-BGB Bcd|AFA ABc|dcd efg|fdd d2:||
+|: "D"!4!d!1!A!2!F !1!D!2!F!1!A | !4!ded !3!cBA | !4!d!3!c!1!d !2!efg | "A"!3!f!1!d!3!f !5!e!3!c!1!A |
+"D"!4!d!1!A!2!F !1!D!2!F!1!A | !4!ded !3!cBA | !4!d!3!c!1!d "A"!2!efg | "D"!3!f!1!d!2!c !1!d3:|
+|: "D"{g}!3!fdf fg!5!a | "A"!4!e!2!c!1!A !1!AB!3!c | "G"!4!dcd !2!Bed | "A"!3!cAA A2c |
+"G"!2!B!1!GB !2!Bcd | "D"!1!A!2!F!1!D !1!D!2!F!1!A | !4!d!3!c!1!d "A"!2!efg | "D"!3!f!1!d!2!c !1!d3:||
 
 X:1111
 %%etbk:tnset id:101,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/264
+%%etbk:color #ffffcc
 T: Lanigan's Ball
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Emin
-E2F G2A|B2A B^cd|DED F2G|AdB AFD|
-E2F G2A|B2A B^cd|edB cBA|BGE E3:|
-|:e2f g2e|fag fed|e2f g2e|fdB B2B|
-e2f g2e|fag fed|edB cBA|BGE E3:|
+|: "em"!1!E!2!E!1!E !3!G2!4!A | !2!BBA B^cd | "D"!1!D2D !2!F2!1!G | !2!A!5!d!3!B !1!A!3!F!1!D |
+"em"!1!EFE !3!G2!4!A | !2!BBA B^cd | !5!ed!2!B "bm"!3!cBA | "em"!5!B!3!G!1!E E3:|
+|: "em"!2!e2f !4!gfe | "D"!3!f!5!ag !3!fed | "em"!2!e2f !4!g!3!g!4!g | "bm"!3!f!1!d!2!B !1!B2B |
+"em"!2!e2f !4!gfe | "D"!3!f!5!ag !3!fe!1!d |"em" !5!edB "bm"!3!cBA | "em"!5!B!3!G!1!E E3 :|
 
 X:1112
 %%etbk:tnset id:101,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/389
+%%etbk:color #ffffcc
 T: Eavesdropper, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-D2 B BAG|Bcd {e} dBG|cde dBG|BAG AGE|
-D2 B BAG|Bcd {e} dBG|cde dBG|BGF G2 z:||
-gfg afd|efg dBG|cde dBG|BAG Adf|
-gfg afd|efg dBG|cde dBG|AGF G2 d|
-gfg afd|efg dBG|cde dBG|BAG Adf|
-gab bfd|efg dBG|cde dBA|BGF G2 z||
+|: "G"!1!D2!3!B BA!1!G | !3!B!5!dd !5!d!3!B!1!G | "C"!3!c2!5!e !4!d!2!B!1!G | "D"!3!B!2!AA {c}A!1!G!2!E |
+"G"!1!D!3!BB !3!BA!1!G | !3!B2!5!d !5!d!3!B!1!G | "C"!3!cd!5!e !4!d!2!B!1!G | "D"{B}!2!A!1!G!2!F "G"!1!G3:|
+ !2!(3B!3!^c!1!d |: "G"!3!g!2!g!3!g !4!a!2!f!1!d | !2!ee!4!g !1!d!3!B!1!G | "C"!3!cd!5!e !4!d!2!B!1!G | "D"!2!B!1!AA A !2!(3B!3!^c!1!d  |
+"G"!3!ga!5!b !4!a!2!f!1!d | !2!ef!4!g !1!d!3!B!1!G | "C"!3!cd!5!e !4!d!2!B!1!G | "D"{B}!2!A!1!G!2!F "G"!1!G3:|
 
 X:1113
 %%etbk:tnset id:101,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/15
+%%etbk:color #ffffcc
 T: Calliope House
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|dAA fAA|eAA fAA|Bee e2d|efe dBA|FAA A2F|
-A2B d2e|1 f2f fed|e3 e2A:|2 f2fedc|d3 efg|
-a2a faa|eaa faa|g2g fgf|efe dBA|FAA A2F|
-A2B d2e|1 f2f fed|e3 efg:|2 f2fedc| d3 d3|
+|: "D"!5!a2a !3!f!5!aa | !2!e!5!aa !1!def | "G"!4!g!3!g!4!g !3!fgf | "A"!2!e3 {g}!2!e!1!d!2!B | 
+"D"!1!ABA !1!A2!2!F | !1!A2!2!B !4!d2!2!e |1 !3!faf fed | "A"!2!e{g}ee efg:|2 !3!faf "A"!2!efe | "D"!1!d3 !4!d!1!AB ||
+|: "D"!4!d!1!AA !3!f!1!AA | !2!e!1!AA !3!fe!1!d | "A"!2!B!5!ee !2!e2!1!d | !2!ef!1!d !2!B2A | 
+"D"!1!ABA !1!A2!2!F | !1!A2!2!B !4!d2e |1 !3!faf fed | "A"!2!e{g}ee e!1!d!2!B :|2 !3!faf "A"!2!ede | "D"!1!d6 ||
 
 X:1114
 %%etbk:tnset id:101,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/107
+%%etbk:color #ffffcc
 T: Atholl Highlanders, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Amaj
-|:e2e ecA|ecA Bcd|e2e ecA|Bcd cBA|
-e2e ecA|ecA Bcd|eae fed|cdB A3:|
-Ace Ace|Adf Adf|Ace Ace|Bcd c2B|
-Ace Ace|Adf Adf|eae fed|cdB A3:|
-|:a2a aec|a2a aec|a2a aec|Bcd cBA|
-a2a aec|a2a aec|eae fed|cdB A3:|
-c2c cBA|d2d fed|c2c cBA|=G2=G BA=G|
-c2c cBA|d2d fed|eae fed|cdB A3:|
+|: "A"!5!e2e !5!e!3!c!1!A| !5!ecA !2!Bcd | !5!e2e ecA | "E"!2!Bcd cBA |
+"A"!5!e2e ecA | !5!ecA !2!Bc!4!d | !2!e!5!ae "E"!3!fe!1!d | !3!c!4!d!2!B "A"!1!A3:|
+|: "A"!1!A!2!c!4!e Ace | "D"!1!B!2!d!4!f Bdf | "A"!1!A!2!c!4!e Ac!4!e | "E"!2!Bcd cBA |
+"A"!1!A!2!c!4!e Ace | "D"!1!B!2!d!4!f Bd!4!f | "A"!2!e!5!ae "E"!3!fe!1!d | !3!c!4!d!2!B "A"!1!A3:|
+|: "A"!5!a2!3!e !3!e!1!d!2!c | !5!a2!3!e !3!e!1!d!2!c | !5!a2!3!e !3!e!1!d!3!c | "E"!2!B!3!c!1!d !2!efg |
+"A"!5!a2!3!e !3!e!1!d!2!c | !5!a2!3!e !3!e!1!d!2!c | !2!e!5!ae "E"!3!fe!1!d | !3!c!4!d!2!B "A"!1!A3:|
+|: "A"!3!c2c c!1!Ac | "D"!4!d!1!Ad ded | "A"!3!ccc cAc | "E"!2!B2B {c}BAB |
+"A"!3!cAc cAc | "D"!4!d2d dc!4!d | "A"!2!e!5!ae !3!fe!1!d | "E"!3!c!4!d!2!B "A"!1!A3:|
 
 X:1115
 %%etbk:tnset id:102,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/414
+%%etbk:color #ffffcc
 T: Seamus Cooley's
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-BAB G2E|DB,D DEG|GAB AGE|A3 AGA|
-BAB G2E|DB,D DEG|GAB AGE|G3 G2A:|
-|:BAB d2B|BAB d2B|A3 AGE|ABA AGA|
-|1 BAB d2B|BAB d2B|G2B AGE|G3 G2A:|
-|2 BAB G2E|DB,D DEG|GAB AGE|G3 G2A||
+|: "G"!5!BAB !3!GG!2!E | !1!D!2!D!1!D !1!D!2!E!3!G | "D"!4!ADA !4!A!3!G!2!E | !4!ABA AGA |
+"G"!5!BAB !3!GG!2!E | !1!D!2!B,!1!D !1!D!2!E!3!G | "D"!4!A2A !4!A!3!G!2!E | "G"!3!G3 G2!4!A:|
+|: "G"!3!BAB !5!ddB | !3!BAB !5!dBG | "D"!2!A2!4!A !4!A!3!G!2!E | !4!ABA AGA |
+|1 "G"!3!BAB !5!ddB | !3!BAB !5!dBG | "D"!2!A2!2!A !2!A!1!G!2!E | "G"!1!G3 G2!2!A:|
+|2 "G"!5!BAB !3!GG!2!E | !1!D!2!D!1!D !1!D!2!E!3!G | "D"!4!A2A !4!A!3!G!2!E | "G"!3!G3 G2!4!A||
 
 X:1116
 %%etbk:tnset id:102,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2217
+%%etbk:color #ffffcc
 T: Bill Collin's
 T: Dan Sullivan's Father's
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-|:d2A BAB|def a3|aba f2e|d2B BAB|
-d2A BAB|def a3|aba f2e|edd d3:|
-|:faa faa|afe f3|aba f2e|d2B BAB|
-d2A BAB|def a3|aba f2e| edd d3:|
+|: "D"!4!d2!1!A {d}!2!BA!2!B | !1!de!3!f !4!a2!3!f | !4!ab!4!a !3!ffe | "G"!1!d!2!BB !2!BAB |
+"D"!4!d2!1!A {d}!2!BA!2!B | !1!de!3!f !4!a2!3!f | "A"!4!ab!4!a !3!f2e | "D"{g}!2!e!1!dd d3:|
+|: "D"!3!f!4!aa !3!f!4!a!5!b | !4!afe !3!f2f | !4!ab!4!a !3!ffe | "G"!1!d!2!BB !2!BAB |
+"D"!4!d2!1!A {d}!2!BA!2!B | !1!de!3!f !4!a2!3!f | "A"!4!ab!4!a !3!f2e | "D"{g}!2!e!1!dd d3:|
 
 X:1117
 %%etbk:tnset id:102,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1514
+%%etbk:color #ffffcc
 T: Hughie Travers'
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-B|:dBA B2B|dBG ABA|GBd gfg|edB A2B|
-dBA B2B|dBG ABA|GBd gfg|edB G2:|!
-* A[|Bdd edd|gdd edB|GBd gfg|edB A3|
-Bdd edd|gdd edB|GBd gfg|edB G2A|
-Bdd edd|gdd edB|GBd gfg|edB A2B|
-dBA B2B|dBG ABA|GBd gfg|edB G2|]
+|: "G"!4!d!2!B!1!A !2!B!1!B!2!B | !4!d!2!B!1!G "D"!2!ABA | "G"!1!G !2!(3B!3!^c!1!d !4!g2g | !2!e!1!d!2!B "D"!1!A2A |
+"G"!4!d!2!B!1!A !2!B!1!B!2!B | !4!d!2!B!1!G "D"!2!ABA | "G"!1!G !2!(3B!3!^c!1!d !4!gfg | !2!e!1!d!2!B !1!G3:|!
+|: "G"!1!B!2!dd !3!e!2!dd | !5!g!2!dd !3!e!2!dd |  !1!G !2!(3B!3!^c!1!d !4!g2g | !2!e!1!d!2!B "D"!1!A3 |
+|1 "G"!1!B!2!dd !3!e!2!dd | !5!g!2!dd !3!e!2!dd  | !1!G !2!(3B!3!^c!1!d !4!gfg | !2!e!1!d!2!B !1!G3 :|
+|2 "G"!4!d!2!B!1!A !2!B!1!B!2!B | !4!d!2!B!1!G "D"!2!ABA | "G"!1!G !2!(3B!3!^c!1!d !4!gfg | !2!e!1!d!2!B !1!G3||
 
 X:1118
 %%etbk:tnset id:102,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1098
+%%etbk:color #ffffcc
 T: Haunted House, The
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-D |: GFG AGA | BGE EDE | GBd e2 e | ege dBA |
-GFG AGA | BGE EDE | GBd ege | dBA G2 D :|
-|:GBd e2 e | ege dBA | GAB d2 B | ded BAG |
-[1 GBd e2 e | ege dBA | GBd ege | dBA G3 :|
-[2 GFG AGA | BGE EDE | GBd ege | dBA G2 D ||
+|: "G"!1!G!2!G!1!G !2!AGA | !3!B!1!G!2!E {G}!2!ED!2!E | !1!G!2!B!4!d "C"!2!e{g}ed | !2!ege {g}!2!e!1!d!2!B |
+"G"!1!G!2!G!1!G !2!AGA | !3!B!1!G!2!E {G}!2!ED!2!E | !1!G!2!B!4!d "C"!2!ege | "D"!1!d!3!BA "G"!1!G3 :|
+|: "G"!1!G!2!B!4!d "C"!2!e{g}ed | !2!ege {g}!2!e!1!d!2!B | "G"!1!G!2!A!3!B !4!d2d | !4!ded !4!d!3!B!2!A |
+|1 "G"!1!G!2!B!4!d "C"!2!e{g}ed | !2!ege {g}!2!e!1!d!2!B | "G"!1!G!2!B!4!d "C"!2!ege | "D"!1!d!3!BA "G"!1!G3 :|
+|2 "G"!1!G!2!G!1!G !2!AGA | !3!B!1!G!2!E {G}!2!ED!2!E | !1!G!2!B!4!d "C"!2!ege | "D"!1!d!3!BA "G"!1!G3 ||
 
 X:1119
 %%etbk:tnset id:102,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/358
+%%etbk:color #ffffcc
 T: Behind The Haystack
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 6/8
 L: 1/8
 R: jig
 K: Dmaj
-d2e fdB|d2e fdB|AFE ~E3|AFE EFA|
-d2e fdB|d2e fdB|AFD ~D3|AFD DFA:|
-|:~B3 BAF|ABc dcB|AFE ~E3|AFE EFA|
-~B3 BAF|ABc dcB|AFD ~D3|1 AFD DFA:|2 AFD D2f||
-|:~g3 faf|ede fdB|AFE ~E3|AFE E2f|
-~g3 faf|ede fdB|AFD ~D3|1 AFD D2f:|2 AFD DFA||
-
-X:1120
-%%etbk:tnset id:103,pos:1,rep:3
-%%etbk:site1 http://www.thesession.org/tunes/display/7929
-T: An Buachaill Dreoite
-Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
-M: 4/4
-L: 1/8
-R: fling
-K: Gmaj
-|: "G"!1!D!3!G!1!G!3!B !5!d2!1!G!3!B | !5!d2!1!G!2!F !3!G!5!BA!2!F | !1!D!3!G!1!GB !5!dBGB | !5!dB!4!cA "D"!1!=F3!2!E |
- "G"!1!D!3!G!1!GB !5!d2!1!G!2!F | !1!D!3!G!3!G!2!F !1!G2!2!B!3!d | !5!g2!3!gf !3!gbag | "D"!2!f!1!d!3!c!2!A "G"!1!G3:|
-|:GA| "G"!3!B2BG "D"!4!cBc!2!A | "G"!5!d2!1!G!2!F !1!G3A | !3!B2BG "D"!4!cBc!2!A | !5!d2!1!DE !3!F!1!GAG |
-"G"!3!B3G "D"!4!cBc!1!A | !3!d!2!^c!1!de !3!f2 !1!d/e/f | "G"!4!g2!3!gf !3!gbag | "D"!2!f!1!d!3!c!2!A "G"!1!G3:|
+|: "D"!3!d2e !5!f!3!d!2!B | !3!d2e !5!f!3!d!2!B | "A"!1!A!2!F!1!E !1!E!2!E!1!E | !4!A!2!FE !1!E!2!F!1!A |
+"D"!3!d2e !5!f!3!d!2!B | !3!d2e !5!f!3!d!2!B | !1!A!2!F!1!D !1!D !3!(3D!2!D!1!D |1 !4!A!2!F!1!D D3:|2 !4!A!2!F!1!D !1!D!2!F!4!A:|
+|: "G"!2!B2B B2!4!d | "D"!1!A!4!dd !4!dcB |  "A"!1!A!2!F!1!E !1!E!2!E!1!E | !4!A!2!FE !1!E!2!F!1!A |
+"G"!2!B2B B2!4!d | "D"!1!A!4!dd !4!dcB  | !1!A!2!F!1!D !1!D !3!(3D!2!D!1!D |1 !4!A!2!F!1!D !1!D!2!F!4!A :|2 !4!A!2!F!1!D !1!D2!3!f||
+|: "G"!4!g!3!g!4!g !3!faf | "D"!2!ede !3!f!1!d!2!B | "A"!1!A!3!FE !1!E!2!E!1!E | !4!A!2!F!1!E !1!E2!3!f |
+"G"!4!g!3!g!4!g !3!faf | "D"!2!ede !3!f!1!d!2!B | !1!D !3!(3D!2!D!1!D |1 !4!A!2!F!1!D !1!D2!3!f:|2 !4!A!2!F!1!D D3||
 
 X:1121
 %%etbk:tnset id:103,pos:2,rep:3
@@ -4754,6 +4883,7 @@ d2B c2A|BdB cAF|~G3 AcA|GAG GBc:|
 X:2001
 %%etbk:tnset id:105,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/159
+%%etbk:color #ffffcc
 T: Denis Murphy's
 M: 12/8
 L: 1/8
@@ -4767,6 +4897,7 @@ d2e f3 gfe f2f|a2f efe d3 d3:|
 X:2002
 %%etbk:tnset id:105,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1414
+%%etbk:color #ffffcc
 T: Brosna
 M: 12/8
 L: 1/8
@@ -4780,6 +4911,7 @@ g2f efg f2e d2B|c2A FED G3 G3 :|
 X:2003
 %%etbk:tnset id:105,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2359
+%%etbk:color #ffffcc
 T: Clog, The
 M: 12/8
 L: 1/8
@@ -4795,6 +4927,7 @@ ABA A2G F2G A2B|cBc d2B G3G3|
 X:2004
 %%etbk:tnset id:105,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2560
+%%etbk:color #ffffcc
 T: Mick Duggan's
 M: 12/8
 L: 1/8
@@ -4859,6 +4992,7 @@ K: Ador
 X:3001
 %%etbk:tnset id:107,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/204
+%%etbk:color #ffffcc
 T: Humours Of Whiskey No. 1, The 
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 9/8
@@ -4871,6 +5005,7 @@ K: Dmaj
 X:3002
 %%etbk:tnset id:107,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2743
+%%etbk:color #ffffcc
 T: Fairy Jig, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 9/8
@@ -4884,6 +5019,7 @@ K: Dmix
 X:3003
 %%etbk:tnset id:107,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/46
+%%etbk:color #ffffcc
 T: Humours Of Whiskey No. 2, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 9/8
@@ -4894,8 +5030,9 @@ K: Bmin
 |:"D"!3!d2e !5!fdf "A"!4!ecA|"D"!3!d2!4!e !3!fed "A"!4!gfe|"D"!1!d2e !3!fdf "A"!2!efg|!5!agf efd cBA:|
 
 X:3004
-%%etbk:tnset id:108,pos:1,rep:3
+%%etbk:tnset id:147,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/750
+%%etbk:color #ffffcc
 T: A Fig For A Kiss
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 9/8
@@ -4907,7 +5044,7 @@ K: Edor
 "em"!5!g2!3!e g2e !3!ed!1!B | "D"!4!f2!2!d {f}!2!d!1!c!2!d !4!fed | "em"!5!gfe !4!fed !3!ed!1!B | "D"!3!BdB A!1!G!2!F "em"!1!E3 ||
 
 X:3005
-%%etbk:tnset id:108,pos:2,rep:3
+%%etbk:tnset id:108,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/148
 T: Dever The Dancer
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -4919,7 +5056,7 @@ K: Emin
 |: "D"!5!d!1!Fd !4!c!2!A!1!F "G"!1!G2G | "D"!5!d2!2!d !2!def !5!gfe | !2!d2!5!d !4!c!2!A!1!F "G"!1!G2z | !2!Bc!4!d "D"!2!AA!1!G !3!FED:|
 
 X:3006
-%%etbk:tnset id:108,pos:3,rep:3
+%%etbk:tnset id:108,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/48
 T: Hardiman The Fiddler
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -4970,9 +5107,22 @@ gfg efe e2 f|gfg efg afd| gfg efe e2 a|bag fag fed:|
 eBB e2f g2f|eBB efg afd| eBB e2f g2a|bag fag fed:|
 edB dBA G2D|GAB dge dBA|edB dBA G2A|BAG FAG FED:|
 
+X: 3010
+%%etbk:tnset id:147,pos:2,rep:3
+%%etbk:site1 http://thesession.org/tunes/2410
+%%etbk:color #ffffcc
+T: Farewell To Whalley Range
+R: slip jig
+M: 9/8
+L: 1/8
+K: F#min
+|: "f#m"!2!F2!5!c !4!B!3!A!2!F FF!1!E | !2!F2!4!c !1!B!2!c!3!e !4!f!3!e!2!c | "bm"!1!B2!2!B BAB !3!cBA |1 !2!B3 BAB !3!cB!1!A:|2 !2!B3 BAB !3!c!5!e!3!f||
+|: "f#m"!5!a2!3!f !3!f!1!e!2!c !4!f!3!e!2!c | "bm"!1!B2!2!B !2!BAB !3!c!5!e!3!f | "f#m"!5!a2!4!a !5!b!4!a!3!f !4!a!3!f!1!e|1 !3!f!1!e!2!c !1!Bce !4!fe!2!c :|2 !3!f!1!e!2!c !4!f!3!e!2!c !1!B!3!A!4!B ||
+
 X:4001
 %%etbk:tnset id:111,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/481
+%%etbk:color #ffffcc
 T: Bill Sullivan's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -4985,6 +5135,7 @@ K: Amaj
 
 X:4002
 %%etbk:tnset id:111,pos:2,rep:3
+%%etbk:color #ffffcc
 T: Britches Full Of Stitches, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -4997,6 +5148,7 @@ K:Amaj
 X:4003
 %%etbk:tnset id:112,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/238
+%%etbk:color #ffffcc
 T: Ballydesmond 2, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -5011,6 +5163,7 @@ K: Ador
 X:4004
 %%etbk:tnset id:112,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/239
+%%etbk:color #ffffcc
 T: Ballydesmond 3, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -5025,6 +5178,7 @@ A/B/ |: "am"!3!c2 B2 | !1!A!3!B/A/ "G"!1!G>A | !3!B!4!d !2!e!1!d | !4!g2 gd |
 X:4005
 %%etbk:tnset id:113,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/466
+%%etbk:color #ffffcc
 T: Maids Of Ardagh, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -5037,6 +5191,7 @@ K: Dmaj
 X:4006
 %%etbk:tnset id:113,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1560
+%%etbk:color #ffffcc
 T: Memories Of Ballymote
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -5050,7 +5205,8 @@ K: Gmaj
 
 X:4007
 %%etbk:tnset id:114,pos:1,rep:3
-T:Mick's Polka
+%%etbk:color #ffffcc
+T: Mick's Polka
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
 L: 1/8
@@ -5063,6 +5219,7 @@ K: Gdor
 X:4008
 %%etbk:tnset id:114,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/329
+%%etbk:color #ffffcc
 T: Newmarket, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 2/4
@@ -5171,6 +5328,7 @@ K: Gmaj
 X:4016
 %%etbk:tnset id:118,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3230
+%%etbk:tube1 http://www.youtube.com/embed/VbFH8RypwrY
 T: Joe Bane's No. 2
 S: Mary McNamara
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -5321,6 +5479,7 @@ K: Gmaj
 X:4027
 %%etbk:tnset id:122,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/441
+%%etbk:color #ffffcc
 T: John Ryan's
 M: 2/4
 L: 1/8
@@ -5334,6 +5493,7 @@ fd de/f/ | gf ed | fd ec | d2 d2 ||
 X:4028
 %%etbk:tnset id:123,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/291
+%%etbk:color #ffffcc
 T: Maggie In The Woods
 M: 2/4
 L: 1/8
@@ -5347,6 +5507,7 @@ g>f ed|ef g>e|dB AB|G2 G2:|
 X:5001
 %%etbk:tnset id:124,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/980
+%%etbk:color #ffffcc
 T: Humours Of Tullycrine, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5361,6 +5522,7 @@ K:Ddor
 X:5002
 %%etbk:tnset id:124,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/13
+%%etbk:color #ffffcc
 T: Chief O'Neill's Favourite
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5375,6 +5537,7 @@ K: Dmaj
 X:5003
 %%etbk:tnset id:124,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/478
+%%etbk:color #ffffcc
 T: Cronin's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5389,6 +5552,7 @@ K: Gmaj
 X:5004
 %%etbk:tnset id:125,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/83
+%%etbk:color #ffffcc
 T: Rights Of Man, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5403,6 +5567,7 @@ K: Emin
 X:5005
 %%etbk:tnset id:125,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/82
+%%etbk:color #ffffcc
 T: Pride Of Petravore, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5416,6 +5581,7 @@ K: Emin
 
 X:5006
 %%etbk:tnset id:126,pos:1,rep:3
+%%etbk:color #ffffcc
 T: Harvest Home, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5430,6 +5596,7 @@ K: Dmaj
 X:5007
 %%etbk:tnset id:126,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/651
+%%etbk:color #ffffcc
 T: Boys Of Bluehill, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5500,19 +5667,19 @@ K: Gmaj
 X:5012
 %%etbk:tnset id:129,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/130
-T:Dance of the honeybees
+T: Dance of the honeybees
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 R: barndance
 M: 4/4
 L: 1/8
-K: Dmajor
+K: Dmaj
 !5!d !3!A!1!G |: "D"!3!(3FGF !2!EF !1!D!2!F!4!AF | "A"!3!GA!2!FG !1!E3F | !3!GF!3!G!4!A !2!(3Bcd !5!ed | !3!cd!5!ed !3!c!1!A!4!G!2!E |
 "D"!3!(3FGF !2!EF !1!D!2!F!4!AF | "A"!3!GA!2!FG !1!E3F| !3!GF!3!G!4!A !2!(3Bcd !5!ed  |1 !3!c!1!A!4!G!2!E "D"!1!D!5!d !3!A!1!G:|2 !3!c!1!A!4!G!2!E "D"!1!D2 !1!(3AB!3!c |
 |: "D"!1!d2 !5!ad !3!fd!2!e!1!d | !2!B!4!d!1!A!3!F !1!D!2!E!3!F!4!A | "em"!2!B!5!ee!4!d Beed | !2!B!4!d!2!ef !4!ggfe |
 | "D"!1!d2 !5!ad !3!fd!2!e!1!d | !2!B!4!d!1!A!3!F !1!D!2!E!3!F!4!A  | "em"!2!B!4!d!2!ef !4!gfe!1!d |1 "A"!3!c!1!A!4!G!2!E "D"!1!D2 !1!(3AB!3!c:|2 "A"!3!c!1!A!4!G!2!E "D"!1!D!5!d !3!A!1!G||
 
 X:6001
-%%etbk:tnset id:130,pos:1,rep:3
+%%etbk:tnset id:130,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1649
 T: Joe Banes Scotische
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -5526,9 +5693,10 @@ K: Amaj
 "A"!5!!4!a3 !5!b !4!a!2!f !1!e!4!a | "D"!2!f!1!e !2!c!1!e !2!f2 !4!af | "A" !1!e3 {a}f "E"!1!e!3!c !2!B!5!e |1 "A"!3!c2 !1!A2 A2 !2!c!3!e:|2 "A"!3!c2 !1!A2 A2 !5!a!3!f||
 
 X:6002
-%%etbk:tnset id:130,pos:2,rep:3
+%%etbk:tnset id:130,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4577
 T: Gypsy Princess
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
 L: 1/8
 R: barndance
@@ -5538,46 +5706,92 @@ K: Gmaj
 |: "G"!5!(d2 d)d d2 dd | !2!AB BA !1!GA !3!B!4!d | "C"!5!(e2e)e e2 ee | "G"!2!AB BA !1!GA !3!B!4!c |
 !5!(d2 d)d d2 dd | !2!AB BA !1!GA !3!B!1!d | !4!(g2 g)!2!e !1!d!3!B !2!A!5!d | "D"!3!B2 A2 "G"G2 z2:|
 
+X:6003
+%%etbk:tnset id:2,pos:1,rep:3
+%%etbk:site1 http://www.thesession.org/tunes/display/4188
+%%etbk:tube1 http://www.youtube.com/embed/pe__q4zIrAY
+T: Lucy Farr's Highland Fling
+N: http://www.thesession.org/discussions/display/28476/
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
+M: 4/4
+L: 1/8
+R: Fling
+K: Fmaj
+|: "F"!3!A2{B}AG !3!A!5!ccA | "C"!2!G{B}GGF !2!GA!4!BG | "F"!3!A!2!A!3!AG !3!A!5!ccA | "C"!2!GFGA "F"!1!F!2!F!1!F2 :|
+|: "F"!3!A!4!c !3!c!4!c !5!.d2 !4!c!3!A | !1!F!3!A!5!cA "C"!2!GAFG| "F"!3!A!4!c !3!c!4!c !5!.d2 !4!c!3!A | "C"!2!G{B}GGA "F"!1!F4  |
+"F"!3!A2 !5!c!5!c A2 cc | !3!A2 !5!c!3!A !4!B!2!G!3!A!1!F | "C"!2!G2{B}GF !2!GABG | !5!cAGA "F"!1!F4 :|
+
+X:6004
+%%etbk:tnset id:103,pos:1,rep:3
+%%etbk:site1 http://www.thesession.org/tunes/display/7929
+T: An Buachaill Dreoite
+Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
+M: 4/4
+L: 1/8
+R: fling
+K: Gmaj
+|: "G"!1!D!3!G!1!G!3!B !5!d2!1!G!3!B | !5!d2!1!G!2!F !3!G!5!BA!2!F | !1!D!3!G!1!GB !5!dBGB | !5!dB!4!cA "D"!1!=F3!2!E |
+ "G"!1!D!3!G!1!GB !5!d2!1!G!2!F | !1!D!3!G!3!G!2!F !1!G2!2!B!3!d | !5!g2!3!gf !3!gbag | "D"!2!f!1!d!3!c!2!A "G"!1!G3:|
+|:GA| "G"!3!B2BG "D"!4!cBc!2!A | "G"!5!d2!1!G!2!F !1!G3A | !3!B2BG "D"!4!cBc!2!A | !5!d2!1!DE !3!F!1!GAG |
+"G"!3!B3G "D"!4!cBc!1!A | !3!d!2!^c!1!de !3!f2 !1!d/e/f | "G"!4!g2!3!gf !3!gbag | "D"!2!f!1!d!3!c!2!A "G"!1!G3:|
+
+X:6005
+%%etbk:tnset id:130,pos:1,rep:3
+%%etbk:site1 http://thesession.org/tunes/1615
+%%etbk:color #ffffcc
+T: Kerry Fling
+R: fling
+M: 4/4
+L: 1/8
+K: Dmaj
+|: "A"!1!E3!2!F !1!A2AB | !3!c2!5!ec !2!Bc!1!A!4!e | !5!f2!4!e!3!c !1!ABcA | "E"!5!ecB!1!A !2!F!4!AA!2!F |
+"A"!1!E3!2!F !1!A2AB | !3!c2!5!ec !2!Bc!1!A!4!e | !5!f2!4!e!3!c !1!ABcA |1 "E"!5!ecBc "A"!1!A3!2!F:|2 "E"!5!ecBc "A"!1!A3!4!f||
+|: "A"!3!e!2!c!3!e!2!f !4!a2a!2!f | !1!e!3!cB!1!A !2!F!1!AAB | "E"!3!c!2!BB{c}B cBBA | !3!cA{d}BA !2!c!3!e!5!a!3!f |
+"A"!1!e3!3!f !5!a2af | !1!e!3!cB!1!A !2!F!1!AAB | "E"!3!c!2!BB{c}B cBBA |1 !3!ceBc "A"!1!A3!4!f :|2 !3!ceBc "A"!1!A3!2!F||
+
 X:7001
 %%etbk:tnset id:131,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11933
+%%etbk:color #ffffcc
 T: Hug The Bundle
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
 L: 1/8
 R: strathspey
 K: Edor
-!1!E3!2!B BA !2!(3Bc!4!d | !1!D2D!5!A AG !3!(3FE!1!D | !1!E3B !2!BA !2!(3Bc!4!d | !2!egfg !2!e!1!d!2!B!4!d|
-!1!EFGA !5!B!1!A !2!(3Bc!4!d | !1!D3!5!A AG !3!(3FE!1!D | !1!E2E!2!B BA !2!(3Bc!4!d | !2!egfd !2!!1!e4||
-!1!efga !5!b!1!ee!4!g | !3!ff!1!df ffd!3!f | !1!efga !5!bee!4!g | !3!ff!1!df !2!e4 |
-!1!efga !5!b!1!ee!4!g | !3!ffdf !5!a!3!f!1!d2 | !5!af!4!ge !3!fed!3!f | !2!e!1!d !2!(3Bc!4!d !5!ed!2!B!4!d ||
+"em"!1!E3!2!B BA !2!(3Bc!4!d | "D"!1!D2D!5!A AG !3!(3FE!1!D | "em"!1!E3B !2!BA !2!(3Bc!4!d | "bm"!2!egfg !2!e!1!d!2!B!4!d|
+"em"!1!EFGA !5!B!1!A !2!(3Bc!4!d | "D"!1!D3!5!A AG !3!(3FE!1!D | "em"!1!E2E!2!B BA !2!(3Bc!4!d | "bm"!2!egfd "em"!2!!1!e4||
+"em"!1!efga !5!b!1!ee!4!g | "D"!3!f{g}f!1!df f{g}fd!3!f | "em"!1!efga !5!bee!4!g | "D"!3!f{g}f!1!df "em"!2!!1!e4 |
+"em"!1!efga !5!b!1!ee!4!g | "D"!3!f{g}fdf !5!a!3!f!1!d2 | !5!af!4!ge !3!fed!3!f | !2!e!1!d !2!(3Bc!4!d !5!ed!2!B!4!d ||
 
 X:7002
 %%etbk:tnset id:131,pos:2,rep:3
-T:Maloney's
+%%etbk:color #ffffcc
+T: Maloney's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
 L: 1/8
 R: strathspey
 K: Dmaj
 |:"D"!2!F!4!AA!1!D FAA!2!F | "G"!3!G2GA !5!(3B!3!G!1!E !1!E!1!D | "D"!2!F!4!AA!1!D !2!F!3!A!5!d!3!A | "A"!4!BA!4!B!5!d "D"!3!(3A!2!F!1!D D2 :|
-| "A"!5!e!1!A!1!A!1!A !5!e2!1!A!2!F | "G"!1!G3A !3!B!5!ee2 | "A"!5!e2!1!AA !5!e2!4!d!1!A | "D"!2!BAB!4!d !1!(3A!2!F!1!D D2 |
-"D"!5!fedf !4!e!3!d!2!B!1!A |"G" !1!G3A !3!B!5!e!2!e2 | "D"!5!a3f !2!e2!1!AA | "A"!2!BAB!4!d "D"!1!(3A!2!F!1!D D2 |
+| "A"!5!e!1!A!1!A{B}!1!A !5!e!1!AA!2!F | "G"!1!G3A !3!B!5!ee2 | "A"!5!e2!1!AA !5!e2!4!d!1!A | "D"{d}!2!BAB!4!d !1!(3A!2!F!1!D D2 |
+"D"!5!fedf !4!e!3!d!2!B!1!A |"G" !1!G3A !3!B!5!e!2!e2 | "D"!5!a3f !2!e2!1!AA | "A"{d}!2!BAB!4!d "D"!1!(3A!2!F!1!D D2 |
 
 X:7003
 %%etbk:tnset id:131,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/10560
+%%etbk:color #ffffcc
 T: Thomas Reilly Clerk Of Fore
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
 L: 1/8
 R: strathspey
 K: Ador
-|: !1!E!2!AAB !4!c2 c/B/A | !1!GA !3!B/!5!d/!3!B !2!A!1!G!2!E!1!D | !1!E!2!AAB c2 !4!c/B/A | !1!GA !3!B/d/B !2!A3 :|
-|: !2!edef !4!gaed | !2!e!1!A!2!AA !3!B!1!G!2!E!1!D | !1!E!2!AAB c2 !4!c/B/A | !1!GA !3!B/!5!d/!3!B !2!A3 :|
+|: "am"!1!E!3!AAB !5!.c2 !5!c/B/A | "em"!2!GA !4!B/!5!d/!4!B !3!A!2!G!1!E!1!D | "am"!1!E!3!AAB !5!.c2 !5!c/B/A | "em"!2!GA !4!B/!5!d/!4!B "am"!3!A4 :|
+|: "am"{g}!2!edef !4!gaed | !3!e!1!A!3!A{B}A "em"!4!B!2!G!1!E!1!D | "am"!1!E!3!AAB !5!.c2 !5!c/B/A | "em"!2!GA !4!B/!5!d/!4!B "am"!3!A4 :|
 
 X:7004
-%%etbk:tnset id:132,pos:2,rep:3
+%%etbk:tnset id:132,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2823
 T: Brown-Sailed Boat, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -5591,9 +5805,9 @@ K: Edor
 
 
 X:7005
-%%etbk:tnset id:132,pos:3,rep:3
+%%etbk:tnset id:132,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1650
-T:Lord Seaforth
+T: Lord Seaforth
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
 L: 1/8
@@ -5603,8 +5817,49 @@ F| !4!G<!1!DD>E !1!G>A!3!B>!5!d | !4!c>!2!AB<!1!G !2!E3!3!F | !4!G<!1!DD>E !1!G>
 g| !3!(3ef!5!g !2!d>!5!g !1!B>!5!g!2!d>!1!B | !4!c>AB<!1!G !2!!1!E3!5!g | !3!(3ef!5!g !2!d>g !1!B>g!2!d>!1!B | !4!c>A!5!d<B !1!G3!5!g |
 !3!(3efg d>g B>gd>B | !4!c>AB<!1!G !2!E3!3!F | !4!G<!1!DD>E !1!G>A!3!B>!5!e | !4!d>!3!BA<B !1!G3||
 
+X:7006
+%%etbk:tnset id:135,pos:2,rep:3
+%%etbk:tube1 http://www.youtube.com/embed/HQlB0ytsM7I
+%%etbk:color #ffffcc
+T: Bog an Lochan
+R: strathspey
+L: 1/8
+M: 4/4
+K: Edor
+|: "em"!1!E2E2 !1!E>!2!F!4!B>F | !1!E2E2 "D"!2!F<!1!D!3!A>!2!F | "em"!1!E2E2 !1!E>!2!F!4!B>!3!A |1 "bm"!4!B<!5!d!3!A<!5!d !2!F<!1!DD>F:|2 "bm"!4!B<!5!d!3!A>!5!d !2!F<!1!DD>!3!A||
+|: "em"!4!B2B>A !4!B<!1!EE>!3!A | !4!B2B>!5!d "D"!2!F<!1!DD>!3!A | "em"!4!B2!2!B>A !3!d>e!5!f>!1!A|1 "bm"!4!d/c/B/!1!A/ !4!d>!1!A !2!F<!1!DD>!3!A :|2 "bm"!4!d/c/B/!1!A/ !4!d>!1!A !2!F<!1!DD>!4!f||
+"em"!3!e2!1!e2 !1!e>!2!f!5!b>f | !1!e2e2 "bm"!2!f<!1!d!4!a>!2!f | "em"!1!e2e2 !1!e>!2!f!5!b>f | "bm"!3!g<!1!e!5!b>!1!e !1!d!2!f/g/ !4!a>!2!f|
+"em"!3!g<!1!e!5!b>e g<eb>e | !3!g<!1!e!5!b>!1!e "bm"!1!d!2!f/g/ !4!a>!2!f | "em"!3!g<!1!e!5!b>!1!e "bm"!3!d>ef>e|d/c/B/A/ d>A F<DD>A||
+|: "em"!4!B2B>A !4!B<!1!EE>!3!A | !4!B2B>!5!d "D"!2!F<!1!DD>!3!A | "em"!4!B2!2!B>A !3!d>e!5!f>!1!A|1 "bm"!4!d/c/B/!1!A/ !4!d>!1!A !2!F<!1!DD>!3!A :|2 "bm"!4!d/c/B/!1!A/ !4!d>!1!A !2!F<!1!DD>F||
+
+X:7007
+%%etbk:tnset id:132,pos:3,rep:3
+%%etbk:site1 http://thesession.org/tunes/172
+T: The Iron Man
+R: strathspey
+M: 4/4
+L: 1/8
+K:Amaj
+|: "A"!3!A2!5!c>A "E"!4!B<!2!GA>!4!B | "A"!3!c2!5!e>c "E"!4!d<!1!B!2!c>!4!e | "D"!5!f2!3!d>f "A"!4!e{f}e !2!c>!4!e | "E"!3!(3dcB !3!(3cB!1!A !2!G<!4!BB>!5!c|
+"A"!3!A2!5!c>A "E"!4!B<!1!EA>!4!B | "A"!3!c2!5!e>c "E"!4!d<!1!B!2!c>!4!e | "D"!3!f2!1!d>!3!f "A"!2!e<!5!a!2!c>!1!A |1 "E"!2!(3Bcd !4!(3dcB !3!c<!1!A!3!A>!1!E:|2 "E"!2!(3Bcd !4!(3dcB !3!c<!1!AA>!2!e ||
+|: "A"!5!a>Ag>A !3!f<!5!a!2!e>!1!d | !3!(3cB!1!A !2!c>!3!e !5!a>!3!e!2!c>!1!A | "E"!4!d>Ec>E !2!B<Ec>E | !4!d/c/B !3!c/B/A !2!(3Bc!4!d !2!(3efg |
+"A"!5!a>Ag>A !3!f>A!2!e>A | !3!(3cB!1!A !2!c>!3!e !5!a>!3!e!2!c>!1!A | "D"!2!d2!4!f>!1!d "A"!2!(3e!5!ag !3!(3fe!1!d |1 "E"!3!(3cB!1!A !2!(3G!1!AB "A"!3!c<!1!AA>!2!e:|2 "E"!3!(3cB!1!A !2!(3G!1!AB "A"!3!c<!1!A!3!A>!1!E||
+
+X:7008
+%%etbk:tnset id:150,pos:1,rep:3
+%%etbk:site1 http://thesession.org/tunes/3016
+T: Calum's Road
+R: strathspey
+M: 4/4
+L: 1/8
+K: Dmaj
+|: "D"!1!D2!3!A>!2!F !3!A3A | "G"!4!B<!5!d d>c !3!B>!1!A !2!F>!3!A | !4!B2 !5!d>!1!E "D"!4!F2 !3!E>!2!D | !1!B,<!2!D !1!(3DEF "A"!2!E4 |
+"D"!1!D2!3!A>!2!F !3!A3A | "G"!4!B<!5!d d>c !3!B>!1!A !2!F>!3!A | !4!B2 !5!d>!1!E "D"!4!F2 !3!E>!2!D |1 "A"!1!B,<!2!D !1!D>E "D"D4 :|2 "A"!1!B,<!2!D !1!D>E "D"D2!2!F>!3!A ||
+|: "G"!4!B2!5!d>!4!c !3!B4 | "D"!2!A>B A<!1!E !2!F2F>!3!A | "G"!4!B2!5!d>!4!c !3!B3!1!A | "D"!3!d2!1!d>e !3!(3fe!1!d !4!(3dB!1!A |
+"G"!4!B2!5!d>!4!c !3!B4 | "D"!2!A>B A<!1!E !2!F2F>!3!A| !4!B2 !5!d>!1!E "D"!4!F2 !3!E>!2!D | "A"!1!B,<!2!D !1!D>E "D"D4 :|
+
 X:8001
-%%etbk:tnset id:132,pos:1,rep:3
+%%etbk:tnset id:152,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/655
 T: Charlie O'Neill's
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
@@ -5619,6 +5874,7 @@ K: Emin
 X:9001
 %%etbk:tnset id:133,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/10230
+%%etbk:color #ffffcc
 T: Piper In The Cave, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 4/4
@@ -5670,20 +5926,24 @@ K: Ador
 X:9004
 %%etbk:tnset id:135,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/835
+%%etbk:tube1 http://www.youtube.com/embed/VPxYJASgCvI
+%%etbk:color #ffffcc
 T: March Of The Kings Of Laois
 M: 6/8
 L: 1/8
 R: march
 K: Dmix
-|:!4!A2!2!F A2!1!D | !4!A2F A2D | !5!B2!3!G !4!A2!2!F | !4!G2F E2!1!D |
+|: "D-Drone"!4!A2!2!F A2!1!D | !4!A2F A2D | !5!B2!3!G !4!A2!2!F | !4!G2F E2!1!D |
 !4!A2F A2D | !4!A2F A2D | !4!B2!5!d !3!A2!2!F | !4!G2F E2D | 
-!3!F>ED !3!G>AB | !4!(A3 A)GF | !1!E>!5!c!3!G !2!E!1!C!1!E | !3!G>!5!cG !2!ECE | !1!D>!4!{G}!2!E!1!D D>{G}ED|D>{G}ED !1!D3:|
-|:!3!B2!1!G !5!d2!2!A | !3!B2G !5!d>cB | !2!A2!5!d !2!A2!1!F | !2!A2!5!d !2!A2>!4!c |
-!3!B2!5!e !4!d2!3!A | !2!G>AG E2!4!G | !3!F>ED !3!G>AB | !4!(A3 A)GF|
-!1!E>!5!c!3!G !2!ECE | !3!G>!5!cG !2!ECE | !1!D>!4!{G}!2!E!1!D D>{G}ED|D>{G}ED !1!D3:|
+!3!F>ED !3!G>AB | !4!(A3 A)GF | "C-Drone"!1!E>!5!c!3!G !2!E!1!C!1!E | !3!G>!5!cG !2!ECE | "D-Drone"!1!D>!4!{G}!2!E!1!D D>{G}ED|D>{G}ED !1!D3:|
+|: "G-Drone"!3!B2!1!G !5!d2!2!A | !3!B2G !5!d>cB | !2!A2!5!d "D-Drone"!2!A2!1!F | !2!A2!5!d !2!A2>!4!c |
+"G-Drone"!3!B2!5!e !4!d2!3!A | !2!G>AG E2!4!G | "D-Drone"!3!F>ED !3!G>AB | !4!(A3 A)GF|
+"C-Drone"!1!E>!5!c!3!G !2!ECE | !3!G>!5!cG !2!ECE | "D-Drone"!1!D>!4!{G}!2!E!1!D D>{G}ED|D>{G}ED !1!D3:|
+
 
 X:10001
 %%etbk:tnset id:137,pos:1,rep:3
+%%etbk:tube1 http://www.youtube.com/embed/M49G2pljqeM
 T: New Land, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 3/4
@@ -5697,7 +5957,7 @@ K: Dmaj
 
 X:10002
 %%etbk:tnset id:139,pos:1,rep:3
-T:Floor, The
+T: Floor, The
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 M: 3/4
 L: 1/4
@@ -5737,6 +5997,7 @@ K: Gmaj
 X:10005
 %%etbk:tnset id:142,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/957
+%%etbk:color #ffffcc
 T: Fanny Power
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 R: waltz
@@ -5751,12 +6012,13 @@ K: Gmaj
 X:10006
 %%etbk:tnset id:142,pos:2,rep:3
 %%etbk:site1 http://thesession.org/tunes/449
+%%etbk:color #ffffcc
 T: Si Bheag Si Mhor
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 R: waltz
 M: 3/4
 L: 1/8
-K: Dmajor
+K: Dmaj
 !1!de |: "D"!3!f3e !1!d2 | !1!d3e !1!d2 | "G"!2!B3{d}B !1!A2 | "D"!2!F4 !1!A2 | "A"{d}!2!BA Bc !4!d2 | !2!e3{g}e de| "D"!3!f4 e2 |
 !1!d4 !5!f2 | "G"!2!B4 !5!e2 | "D"!1!A4 !5!d2 | "A"!3!F2{A}F2 E2 | "D"!1!D4 !5!f2 | "G"!2!B4 !5!e2 | "D"!1!A4 !4!dc | !4!d6 | -d4 !1!de :|
 |: "D"!3!f3e d2 | {g}!2!ed e!3!f !4!a2 | "G"!5!b4 !4!a2 | "D"!3!f4 ed | "A"!2!e2e2 !5!a2 | "D"!3!f4 e!1!d | "G"!4!d4 !2!B2 | !2!B4-{d}B!1!A |
@@ -5782,6 +6044,7 @@ K: Gmaj
 X:11001
 %%etbk:tnset id:138,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/244
+%%etbk:tube1 http://www.youtube.com/embed/daOpMQCJJVI
 T: Carolan's Farewell To Music
 Z: Piano Box Version by Martin Fleischmann (boxplayer.ch, etunebook.ch)
 R: slow air
@@ -5819,6 +6082,7 @@ G>A/2 | "G"!3!B>{c}B/2A/2 !tenuto!!1!G2 G/2A/2B3/2 | "D"!2!A>{B}/2A/2!1!G/2 !ten
 X:11003
 %%etbk:tnset id:145,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/8547
+%%etbk:tube1 http://www.youtube.com/embed/qq60Ohiiq0I
 T: May Morning Dew
 R: slow air
 M: 3/4
@@ -5829,6 +6093,34 @@ K: Ddor
 !3!f2 -f>{g}f/2e/2 df | !2!e>{f}e/2!1!d/2 !tenuto!!3!c>c de | !tenuto!!4!d>{e}d c!1!A !3!G2- | 
 G2-G>{A}G !2!F!3!G | !1!A!4!d -!tenuto!d2 de | !4!d>{e}d c!1!A !3!G2- | G2 (!2!E2 {G}E)!1!D  | D6 |
 
+X:11004
+%%etbk:tnset id:146,pos:1,rep:3
+%%etbk:site1 http://thesession.org/tunes/9695
+T: An Raibh Tu Ar An gCarraig?
+T: Were you at the Rock?
+R: slow air
+M: 3/4
+L: 1/8
+K: Edor
+|: "E-Drone"(!tenuto!!2!e>{f}e/!1!d/ | !2!B4) (B!4!d | !5!e!tenuto!!2!e3) (ef | !4!g2 !tenuto!g>{a}g fe | !3!f2) (!tenuto!e>{f}e !1!(3d!2!B!1!A |
+A!2!!1!B3) (!2!ef | !4!g2 !tenuto!g>{a}g fe | !3!f4) (e>{f}e/2!1!d/2 | !2!B2!tenuto!!5!!2!e>{f}e de |
+!3!f2-f>{g}f e2 | !2!e4) (!4!g>{a}g/2f/2 | !2!e!1!d !tenuto!!2!B2 !1!(3AB!3!c | "B-Drone"!4!d>!2!B !tenuto!!1!B2) "E-Drone"(!4!gf | 
+!2!e>{f}e/2!1!d/2 !tenuto!!2!B2-B!1!A | "D-Drone"!3!F4 FE | !1!D4) (EF | "E-Drone"!4!G>!3!G !tenuto!!1!G2) (!tenuto!!2!e/!1!d/!3!B/!1!G/ |
+ "D-Drone"!3!F>F !tenuto!F2)  (AF | "A-Drone"!2!E4 DE  | !3!F4 E2 | !2!E4)||
+  
+X:12001
+%%etbk:tnset id:151,pos:1,rep:3
+%%etbk:site1 http://thesession.org/tunes/8007
+%%etbk:tube1 http://www.youtube.com/embed/WFayNpaP1FE
+T: Marga's Moment
+R: horo
+M: 7/8
+K: Dmaj
+|: d2 cA dcA | G2 D2 GDG | A2 D2 ADA | AE cE ABc |
+d2 c/B/A dcA | G2 D2 GDG |1 A2 D2 ABc | e2 c2 c2e :|2 A2 D2 AGF |  G2 F2 EED ||
+|: B2 dB fed | G2 Bd a2b | ag gf fga | g2 f2 edc |
+B2 dB fed | G2 Bd a2b | ag gf fga | g2 f2 edc :|
+|"var bar 8" e2 c2 cBc|
 
 
 
