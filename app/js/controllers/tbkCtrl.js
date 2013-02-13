@@ -146,11 +146,11 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			
 			if (settings.hasOwnProperty("tuneSetIdToFilter")){
 				$scope.tuneSetIdToFilter = settings.tuneSetIdToFilter;
-				//TODO: TuneSetId-Filter funktioniert zwar, 
-				//bei der Anzeige des selected tunes im Filter kommt das zuerst gefundene tune im set
-				//(was nicht zwingendermassen das zuletzt selektierte sein muss)
-				//-> selected tuneId müsste auch in local storage gespeichert werden.
-			} 
+			}
+
+			if (settings.hasOwnProperty("tuneSetPositionToFilter")){
+				$scope.tuneSetPositionToFilter = settings.tuneSetPositionToFilter;
+			}	
 			
 			if (settings.hasOwnProperty("tuneSetTypeFilter")){
 				$scope.tuneSetTypeFilter = settings.tuneSetTypeFilter;
@@ -186,11 +186,264 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		show(view);
 	}
 	
+	// ----  Beginn Synchronisation URL mit Anzeige  --- //
+	// URL --> Anzeige //
+	var pageKey = "page";
+	var tuneSetSortFieldKey = "sortfield";
+	var tuneSetSortReverseKey = "sortdesc";
+	var tuneSetIdToFilterKey = "set";
+	var tuneSetPositionToFilterKey = "pos";
+	var tuneSetTypeFilterKey = "type";
+	var tuneSetKeyToFilterKey = "key";
+	var tuneSetColorToFilterKey = "color";
+	var tuneSetSkillToFilterKey = "skill";
+    
+	$scope.$watch(function () { return $location.search(); }, function() {
+		//Die Search-Komponente in der URL hat geändert 
+		//(zB. weil der Back-Button gedrückt wurde -> Browser lädt die vorherige URL).
+		//-> entsprechende Filter setzen, so dass die Anzeige wieder der URL entspricht.
+		
+		var path = $location.path();
+		var pathSplits = path.split("/");
+		var view = pathSplits[1];
+		
+		if (view == "tuneSets") {
+			var updateFilter = false;
+		
+			// Page	
+			var page = $location.search()[pageKey] || "";
+			if (page == "") {
+				$scope.currentPage = 0;
+			} else {
+				$scope.currentPage = page - 1;
+			}
+			setPages($scope.currentPage);
+			
+			// Sortierung: Feld
+			var sortField = $location.search()[tuneSetSortFieldKey] || "";
+			if ($scope.tuneSetSortField != sortField){
+				if (sortField == "") {
+					// Sollte eigentlich nicht vorkommen
+					$scope.tuneSetSortField = "tuneSetId";
+				} else {
+					$scope.tuneSetSortField = sortField;
+				}
+			}
+			
+			// Sortierung: Richtung
+			var sortReverse = $location.search()[tuneSetSortReverseKey] || "";
+			if ($scope.tuneSetSortReverse != sortReverse){
+				if (sortReverse == "") {
+					// Sollte eigentlich nicht vorkommen
+					$scope.tuneSetSortReverse = false;
+				} else if (sortReverse == "false") {
+					$scope.tuneSetSortReverse = false;
+				} else if (sortReverse == "true") {
+					$scope.tuneSetSortReverse = true;
+				}
+			}
+			
+			// TuneSetPostion
+			updateFilter = false;
+			// Set-Id
+			var tuneSetId = $location.search()[tuneSetIdToFilterKey] || "";
+			if (tuneSetId == "") {
+				if ($scope.tuneSetIdToFilter != 0) { 
+					updateFilter = true;
+					$scope.tuneSetIdToFilter = 0;
+				}
+			} else if (tuneSetId != $scope.tuneSetIdToFilter)  {
+				updateFilter = true;
+				$scope.tuneSetIdToFilter = tuneSetId;
+			}
+			// Set-Position
+			var position = $location.search()[tuneSetPositionToFilterKey] || "";
+			if (position == ""){ 
+				if ($scope.tuneSetPositionToFilter != 0){
+					updateFilter = true;
+					$scope.tuneSetPositionToFilter = 0;
+				}
+			} else if (position != $scope.tuneSetPositionToFilter)  {
+				updateFilter = true;
+				$scope.tuneSetPositionToFilter = position;
+			}
+			
+			if (updateFilter) {
+				// Hinweis: tuneSetPositionToFilter wird nicht für den Filter verwendet (tuneSetIdToFilter genügt, da das Set selektioniert wird)
+				// tuneSetPositionToFilter wird nur gebraucht, damit das gleiche Tune in der Auswahl wieder angezeigt wird (und nicht ein anderes im Set)
+				setSelectedTuneSetPositionFilter($scope.tuneSetIdToFilter, $scope.tuneSetPositionToFilter);
+			}
+			
+			// Type
+			updateFilter = false;
+			var type = $location.search()[tuneSetTypeFilterKey] || "";
+			if (type == ""){
+				if ($scope.tuneSetTypeFilter != null) {	
+					updateFilter = true;
+					$scope.tuneSetTypeFilter = null;	
+					type = "All Types";
+				}
+			} else if (type != $scope.tuneSetTypeFilter.type) {
+				updateFilter = true;
+				$scope.tuneSetTypeFilter.type = type;
+			}
+			if (updateFilter){
+				setSelectedTuneSetTypeFilter(type);
+			}
+			
+			// Key
+			var key = $location.search()[tuneSetKeyToFilterKey] || "";
+			updateFilter = false;
+			if (key == "") {
+				if ($scope.tuneSetKeyToFilter != "All Keys") {
+					updateFilter = true;
+					$scope.tuneSetKeyToFilter = "All Keys";
+				}
+			} else if (key != $scope.tuneSetKeyToFilter) {
+				updateFilter = true;
+				$scope.tuneSetKeyToFilter = key;
+			}
+			if (updateFilter) {
+				setSelectedTuneSetKeyFilter($scope.tuneSetKeyToFilter);
+			}
+			
+			// Color
+			var color = $location.search()[tuneSetColorToFilterKey] || "";
+			updateFilter = false;
+			if (color == ""){
+				if ($scope.tuneSetColorToFilter != "All Colors") {
+					updateFilter = true;
+					$scope.tuneSetColorToFilter = "All Colors";
+				}
+			} else if (color != $scope.tuneSetColorToFilter) {
+				updateFilter = true;
+				$scope.tuneSetColorToFilter = color;
+			}
+			
+			
+			if (updateFilter){
+				setSelectedTuneSetColorFilter($scope.tuneSetColorToFilter);
+			}
+			
+			// Skill
+			var skill = $location.search()[tuneSetSkillToFilterKey] || "";
+			updateFilter = false;
+			if (skill == ""){
+				if ($scope.tuneSetSkillToFilter != 0) {
+					updateFilter = true;
+					$scope.tuneSetSkillToFilter = 0;
+				}
+			} else if (skill != $scope.tuneSetSkillToFilter) {
+				updateFilter = true;
+				$scope.tuneSetSkillToFilter = skill;
+			}
+			if (updateFilter){
+				setSelectedTuneSetSkillFilter($scope.tuneSetSkillToFilter);
+			}
+			
+			// In jedem Fall allfällig vorher offene Detail-Panels schliessen
+			initTuneSetViewDetailPanels();
+		}
+    });
+	
+	
+	
+	$scope.$watch(function () { return $location.path(); }, function() {
+		//Pfad = aktuelle view (z.B. /tuneSets)
+		var path = $location.path();
+		var pathSplits = path.split("/");
+		show(pathSplits[1]);
+    });
+		
+
+	// Anzeige --> URL //
+	// Hinweis: der Pfad wird in show(view) gesetzt (ev. später refactorieren).
+	// Die Search-Parameter werden 'gewatched':
+	$scope.$watch('currentPage', function(currentPage) {
+		//Aktuelle Seite hat geändert -> URL aktualisieren.
+		$location.search(pageKey, currentPage + 1);
+    });
+	
+	$scope.$watch('tuneSetPositionForFilter', function(tuneSetPositionForFilter) {
+		//Tune-Auswahl hat geändert -> URL aktualisieren.
+		var tuneSetId = tuneSetPositionForFilter.tuneSetId;
+		var position = tuneSetPositionForFilter.position;
+		if (tuneSetId == 0) {
+			tuneSetId = null;
+			position = null;
+		}
+		$location.search(tuneSetIdToFilterKey, tuneSetId);
+		$location.search(tuneSetPositionToFilterKey, position);
+    });
+	
+	$scope.$watch('tuneSetTypeFilter', function(tuneSetTypeFilter) {
+		//Type-Filter hat geändert -> URL aktualisieren.
+		var type = "";
+		if (tuneSetTypeFilter == null || tuneSetTypeFilter.type == "") {
+			// Type = "" sollte nicht vorkommen
+			type = null;
+		} else {
+			type = tuneSetTypeFilter.type;
+		}
+		$location.search(tuneSetTypeFilterKey, type);
+    });
+	
+	$scope.$watch('tuneSetKeyToFilter', function(tuneSetKeyToFilter) {
+		//Key-Filter hat geändert -> URL aktualisieren.
+		var key = tuneSetKeyToFilter;
+		if (key == "All Keys" || key == "") {
+			// Key = "" sollte nicht vorkommen
+			key = null;
+		}
+		$location.search(tuneSetKeyToFilterKey, key);
+    });
+	
+	$scope.$watch('tuneSetColorToFilter', function(tuneSetColorToFilter) {
+		//Color-Filter hat geändert -> URL aktualisieren.
+		var color = tuneSetColorToFilter;
+		if (color == "All Colors" || color == "") {
+			// Color = "" sollte nicht vorkommen
+			color = null;
+		}
+		$location.search(tuneSetColorToFilterKey, color);
+    });
+	
+	$scope.$watch('tuneSetSkillToFilter', function(tuneSetSkillToFilter) {
+		//Skill-Auswahl hat geändert -> URL aktualisieren.
+		var skill = tuneSetSkillToFilter;
+		if (skill == 0) {
+			skill = null;
+		}
+		$location.search(tuneSetSkillToFilterKey, skill);
+    });
+	
+	$scope.$watch('tuneSetSortField', function(tuneSetSortField) {
+		//Sortierungs-Feld hat geändert -> URL aktualisieren.
+		$location.search(tuneSetSortFieldKey, tuneSetSortField);
+    });
+	
+	$scope.$watch('tuneSetSortReverse', function(tuneSetSortReverse) {
+		//Sortierungs-Richtung hat geändert -> URL aktualisieren.
+		
+		var sortReverse = null;
+		if (tuneSetSortReverse == null){
+			//Sollte nicht vokommen
+		} else if (tuneSetSortReverse) {
+			sortReverse = "true";
+		} else {
+			sortReverse = "false";
+		}
+		$location.search(tuneSetSortReverseKey, sortReverse);
+    });
+	
+	// ----  Ende Synchronisation URL mit Anzeige  --- //
+	
 	function initTuneSetFilters() {
 		$scope.tuneSetColorToFilter = "All Colors";
 		$scope.tuneSetSkillToFilter = 0;
 		$scope.tuneSetKeyToFilter = "All Keys";
 		$scope.tuneSetIdToFilter = 0;
+		$scope.tuneSetPositionToFilter = 0;
 		$scope.tuneSetTypeFilter = null;
 	}
 		
@@ -211,6 +464,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			//tubeAbcIncl: $scope.tubeAbcIncl,
 			//fingeringAbcIncl: $scope.fingeringAbcIncl,
 			tuneSetIdToFilter: $scope.tuneSetIdToFilter,			// TuneSet Filter	// Tunebook-specific Settings
+			tuneSetPositionToFilter: $scope.tuneSetPositionToFilter,	
 			tuneSetTypeFilter: $scope.tuneSetTypeFilter,
 			tuneSetKeyToFilter: $scope.tuneSetKeyToFilter,
 			tuneSetColorToFilter: $scope.tuneSetColorToFilter,		
@@ -224,7 +478,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.editedTune = null;
 		$scope.infoEditedTuneSetPosition = null;
 		$scope.movedTuneSetPosition = null;
-		$scope.exportedTuneBook = null;
+		//$scope.exportedTuneBook = null; ..darf nicht auf null gestellt werden, da auch aus 'watch location.search' heraus aufgerufen
 		$scope.youTubeTune = null;
 		$scope.youTubeUrl = null;
 		$scope.dotsViewerTune = null;
@@ -262,7 +516,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			$scope.showCredits = true;
 		
 		} else if (view == "introduction") {
-			$scope.showIntroduction = true;  
+			$scope.showIntroduction = true;		
 			
 		} else if (view == "gettingStarted") {
 			$scope.showGettingStarted = true;
@@ -276,6 +530,15 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		} else if (view == "loading") {
 			$scope.showProgress = true;
 			$scope.progress = 50;
+		}
+		// URL aktualisieren
+		// Achtung: Im Prinzip müsste hier entflechtet werden 
+		//(show wird auch von 'watch location.path' aufgerufen, da macht ein erneutes Setzen des Pfads eigentlich keinen Sinn
+		// Refactoring ist aber kompliziert...)
+		// Desweiteren: search(null) bei nicht-TuneSet-Schirmen hatte immer einen Streueffekt auf den TuneSet-Schirm (nach Drücken des Back-Button)
+		// -> nicht umgesetzt -> page und sorting werden auch bei nicht-TuneSet-Schirmen geführt.
+		if (view != "loading") {
+			$location.path(view);
 		}
 	}
 	
@@ -467,12 +730,12 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	};
 	
 	$scope.orderByRandomNumber = function() {
-		if ($scope.tuneSetSortField == "sort"){
+		if ($scope.tuneSetSortField == "random"){
 			$scope.tuneSetSortReverse = !$scope.tuneSetSortReverse;
 			
 		} else {
 			eTBk.TuneBook.setRandomSort($scope.tuneBook);	// calculate new random numbers
-			$scope.tuneSetSortField = "sort";
+			$scope.tuneSetSortField = "random";
 		}
 		// Set page 1 as current page
 		$scope.currentPage = 0;
@@ -809,7 +1072,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	
 	function selectTuneSet(tuneSetPosition){
 		// Setzen tune im Auswahl-Filter
-		setSelectedTuneSetPositionFilter(tuneSetPosition);
+		setSelectedTuneSetPositionFilterByTuneSetPosition(tuneSetPosition);
 		// Merken aktuelles Tune im Filter für späteren 'unselect'
 		$scope.tuneSetIdToFilterPrev = $scope.tuneSetIdToFilter;
 		//Setzen tune für Filter
@@ -852,13 +1115,58 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		}
 	};
 	
-	function setSelectedTuneSetPositionFilter(tuneSetPosition) {
+	function setSelectedTuneSetPositionFilterByTuneSetPosition(tuneSetPosition) {
 		for (var i = 0; i < $scope.tuneSetPositionsForFilter.length; i++) {	
 			if ($scope.tuneSetPositionsForFilter[i].tuneSetId == tuneSetPosition.tuneSetId  && $scope.tuneSetPositionsForFilter[i].intTuneId == tuneSetPosition.intTuneId){
 				// Merken aktueller Filter für späteren 'unselect'
 				$scope.tuneSetPositionForFilterPrev = $scope.tuneSetPositionForFilter
 				// Setzen neuer Filter
 				$scope.tuneSetPositionForFilter = $scope.tuneSetPositionsForFilter[i];
+			}
+		}
+	}
+	
+	function setSelectedTuneSetPositionFilter(tuneSetId, position) {
+		for (var i = 0; i < $scope.tuneSetPositionsForFilter.length; i++) {	
+			if ($scope.tuneSetPositionsForFilter[i].tuneSetId == tuneSetId  && $scope.tuneSetPositionsForFilter[i].position == position){
+				// Setzen neuer Filter
+				$scope.tuneSetPositionForFilter = $scope.tuneSetPositionsForFilter[i];
+			}
+		}
+	}
+	
+	function setSelectedTuneSetTypeFilter(type) {
+		for (var i = 0; i < $scope.tuneSetTypesForFilter.length; i++) {	
+			if ($scope.tuneSetTypesForFilter[i].type == type){
+				// Setzen neuer Filter
+				$scope.tuneSetTypeForFilter = $scope.tuneSetTypesForFilter[i];
+			}
+		}
+	}
+	
+	function setSelectedTuneSetKeyFilter(key) {
+		for (var i = 0; i < $scope.tuneSetKeysForFilter.length; i++) {	
+			if ($scope.tuneSetKeysForFilter[i].key == key){
+				// Setzen neuer Filter
+				$scope.tuneSetKeyForFilter = $scope.tuneSetKeysForFilter[i];
+			}
+		}
+	}
+	
+	function setSelectedTuneSetColorFilter(color) {
+		for (var i = 0; i < $scope.tuneSetColorsForFilter.length; i++) {	
+			if ($scope.tuneSetColorsForFilter[i].color == color){
+				// Setzen neuer Filter
+				$scope.tuneSetColorForFilter = $scope.tuneSetColorsForFilter[i];
+			}
+		}
+	}
+	
+	function setSelectedTuneSetSkillFilter(skill) {
+		for (var i = 0; i < $scope.skillTypes.length; i++) {	
+			if ($scope.skillTypes[i].skill == skill){
+				// Setzen neuer Filter
+				$scope.skillType = $scope.skillTypes[i];
 			}
 		}
 	}
@@ -889,7 +1197,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		setPages($scope.currentPage);
 			
 		// Setzen tune im Auswahl-Filter
-		setSelectedTuneSetPositionFilter(tuneSetPosition);
+		setSelectedTuneSetPositionFilterByTuneSetPosition(tuneSetPosition);
 
 		// Put TuneBook to localStorage
 		eTBk.TuneBook.storeAbc($scope.tuneBook);
@@ -1383,6 +1691,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 					tuneSetPositionForFilter.tuneSetId = $scope.tuneBook.tuneSets[i].tuneSetPositions[z].tuneSetId;
 					tuneSetPositionForFilter.tuneType = $scope.tuneBook.tuneSets[i].tuneSetPositions[z].tune.type;
 					tuneSetPositionForFilter.intTuneId = $scope.tuneBook.tuneSets[i].tuneSetPositions[z].intTuneId;
+					tuneSetPositionForFilter.position = $scope.tuneBook.tuneSets[i].tuneSetPositions[z].position;
 					
 					titleSplits = new Array();
 					titleSplits = $scope.tuneBook.tuneSets[i].tuneSetPositions[z].tune.title.split(",");
@@ -1406,6 +1715,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		tuneSetPositionForFilter = new Array();
 		tuneSetPositionForFilter.tuneSetId = 0;
 		tuneSetPositionForFilter.intTuneId = 0;
+		tuneSetPositionForFilter.position = 0;
 		tuneSetPositionForFilter.tuneTitle = "All Tunes";	
 		tuneSetPositionsForFilter.unshift(tuneSetPositionForFilter);
 		

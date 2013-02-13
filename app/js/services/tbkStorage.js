@@ -6,7 +6,7 @@
 eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
   var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-  var eTBK_VERSION = '1.0.3';
+  var eTBK_VERSION = '1.0.4';
   var ABC_VERSION = '2.1';
   //var eTBK_DEFAULT_COLOR = "#E0F0F0";
   var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -14,7 +14,7 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_DEFAULT_PLAYDATE_STRING_FORMATTED = "1966-04-05 22:00";
   var eTBK_DEFAULT_PLAYDATE_DATE = moment(eTBK_DEFAULT_PLAYDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
-  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V098.abc';
+  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V099.abc';
   
 
   if (!window.eTBk) {

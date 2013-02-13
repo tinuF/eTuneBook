@@ -12,6 +12,10 @@
 	<meta name="revisit-after" content="7 days">
 	<meta name="page-topic" content="music, notation, repertoire">
 	
+	<!-- todo: mit HTML5-mode of $location gibt's Probleme mit Relativen Links (localhost/etunebook/tuneSets wird zu localhost/tunesets). 
+	Problem beim Page-Reload (F5) und beim Laden des Boxplayer.abc vom Server.
+	-->
+	
 	<link rel="SHORTCUT ICON" type="image/ico" href="app/img/eTuneBook10.ico">
 	<link href="assets/css/bootstrapDropdownCollapseFix.css" rel="stylesheet"><!--see http://jsfiddle.net/nczJF/1/ and https://github.com/twitter/bootstrap/issues/3184-->
 	<!--<link href="assets/css/bootstrap_2.2.2.css" rel="stylesheet">-->
@@ -34,7 +38,7 @@
 	<!-- Angular -->
 	<!-- Für ngCloak muss Angular.js im Header gelesen werden. Damit angular nicht jQuery-light lädt und dann der colorPicker umfällt: Zuerst jQuery laden und colorPicker-->
 	<!--<script src="assets/js/angular-1.0.1.js"></script>--> <!--Developer Version-->
-	<script src="assets/js/angular-1.0.1.min.js"></script> <!--Production Version--> 
+	<script src="assets/js/angular-1.0.4.min.js"></script> <!--Production Version--> 
 </head>
  
 <body id="TuneBookEditor" ng-controller="tbkCtrl" ng-cloak class="ng-cloak">
@@ -389,6 +393,12 @@
 				<div class="span8 well">			
 					<h2>Release Notes</h2>
 					<br>
+					<p>Release 1.0.5 (13.02.2013)</p>
+					<ul>
+						<li>13.02.13: First Version of Deep-Linking. Browser Back- and Forward-Button now supported.</li>
+						<li>13.02.13: Updated Boxplayer.abc from V098 to V099.</li>
+					</ul>
+					<br>
 					<p>Release 1.0.3 (22.12.2012)</p>
 					<ul>
 						<li>03.02.13: Updated Boxplayer.abc from V097 to V098.</li>
@@ -435,9 +445,9 @@
 					<ul>
 						<li>Tunes can only be moved, not copied; A tune cannot exist in more than one set.</li>
 						<li>No printing yet.</li>
-						<li>No Midi Integration.</li>
-						<li>Chords cannot be switched on/off.</li>
+						<li>Chords cannot be switched on/off yet.</li>
 						<li>Performance is bad in other browsers than Chrome.</li>
+						<li>Navigation on smarphones not optimized yet.</li>
 					</ul>
 				</div>		
 				<div class="span2"></div>
