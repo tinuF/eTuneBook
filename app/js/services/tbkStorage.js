@@ -14,7 +14,7 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_DEFAULT_PLAYDATE_STRING_FORMATTED = "1966-04-05 22:00";
   var eTBK_DEFAULT_PLAYDATE_DATE = moment(eTBK_DEFAULT_PLAYDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
-  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer_V099.abc';
+  var eTBk_EXAMPLE_FILENAME = 'BoxPlayer.abc';
   
 
   if (!window.eTBk) {
@@ -34,9 +34,17 @@ eTuneBook.factory( 'tbkStorage', function() {
 			// TuneBook-Name aus Header lesen
 			This.name = getAbcValue(This.header, "%%etbk:bname ", "");
 			
+			// TuneBook-Version aus Header lesen
+			This.version = getAbcValue(This.header, "%%etbk:bvers ", "");
+			
+			// TuneBook-Beschreibung aus Header lesen
+			This.description = getAbcValue(This.header, "%%etbk:bdesc ", "");
+			
 			// eTuneBook Model					abc								description
 			// tuneBook
-			//		name						%%etbk:bname					Book-Name (set from File-Name on load from Server or from local File System, set 'New TuneBook' when new)
+			//		name						%%etbk:bname					Book-Name (if directive is empty, name is taken from File-Name on load from local File System), set 'New TuneBook' when new
+			//		version						%%etbk:bvers					Book-Version 
+			//		description					%%etbk:bdesc					Book-Description 
 			//		header						-								ABCJS.TuneBook.header
 			//		tuneSets
 			//			tuneSetId				see %%etbk:tnset				Id of tuneSet
@@ -860,7 +868,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 			}	
 		}
 				
-		function getAbc(tuneSets, tuneBookName, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl){
+		function getAbc(tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl){
 			// Generate Abc
 			
 			var tuneAbc = "";
@@ -879,6 +887,12 @@ eTuneBook.factory( 'tbkStorage', function() {
 			if (tuneSetAbcIncl || playDateAbcIncl || skillAbcIncl || colorAbcIncl || annotationAbcIncl || siteAbcIncl || tubeAbcIncl) {
 				tbkAbc += "%%etbk:bname ";
 				tbkAbc += tuneBookName;
+				tbkAbc += "\n";
+				tbkAbc += "%%etbk:bvers ";
+				tbkAbc += tuneBookVersion;
+				tbkAbc += "\n";
+				tbkAbc += "%%etbk:bdesc ";
+				tbkAbc += tuneBookDescription;
 				tbkAbc += "\n";
 			} 
 			tbkAbc += "\n";			
@@ -1500,8 +1514,8 @@ eTuneBook.factory( 'tbkStorage', function() {
 		
 		
 		// Static Methods for Calling from Outside
-		eTBk.TuneBook.getAbc = function (tuneSets, tuneBookName, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl) {
-			return getAbc(tuneSets, tuneBookName, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl);
+		eTBk.TuneBook.getAbc = function (tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl) {
+			return getAbc(tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl);
 		}
 		
 		eTBk.TuneBook.getSampleAbc = function (tuneSetPosition) {
@@ -1575,7 +1589,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 		
 		eTBk.TuneBook.storeAbc = function (tuneBook) {
 			// Generate eTuneBook Abc from the tuneBook-Model and store it in localStorage
-			localStorage.setItem(eTBK_STORAGE_ID_TUNEBOOK, JSON.stringify(getAbc(tuneBook.tuneSets, tuneBook.name, true, true, true, true, true, true, true, true)));
+			localStorage.setItem(eTBK_STORAGE_ID_TUNEBOOK, JSON.stringify(getAbc(tuneBook.tuneSets, tuneBook.name, tuneBook.version, tuneBook.description, true, true, true, true, true, true, true, true)));
 		}
 		
 		eTBk.TuneBook.storeSettings = function (settings) {
@@ -1617,7 +1631,9 @@ eTuneBook.factory( 'tbkStorage', function() {
 	
 	getFromImportedFile: function(abc, fileName) {
 		var tuneBook = new eTBk.TuneBook(abc);
-		tuneBook.name = fileName;
+		if (tuneBook.name == ""){
+			tuneBook.name = fileName;
+		}
 		return	tuneBook;
 	},
 	
@@ -1656,7 +1672,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 			// This will only be called once the remote content has been loaded in
 			// The data will then be stored in the data param and can be used within your site
 			tuneBook = new eTBk.TuneBook(data);
-			tuneBook.name = eTBk.EXAMPLE_FILENAME;
+			//tuneBook.name = eTBk.EXAMPLE_FILENAME;
 			//tuneSets = tuneBook.tuneSets;
 		});
 

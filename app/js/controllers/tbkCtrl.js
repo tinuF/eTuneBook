@@ -730,12 +730,12 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	};
 	
 	$scope.orderByRandomNumber = function() {
-		if ($scope.tuneSetSortField == "random"){
+		if ($scope.tuneSetSortField == "sort"){
 			$scope.tuneSetSortReverse = !$scope.tuneSetSortReverse;
 			
 		} else {
 			eTBk.TuneBook.setRandomSort($scope.tuneBook);	// calculate new random numbers
-			$scope.tuneSetSortField = "random";
+			$scope.tuneSetSortField = "sort";
 		}
 		// Set page 1 as current page
 		$scope.currentPage = 0;
@@ -1408,7 +1408,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		}
 		
 		// Exportieren
-		$scope.exportedTuneBook = eTBk.TuneBook.getAbc(tuneSets, $scope.tuneBook.name, $scope.tuneSetAbcIncl, $scope.playDateAbcIncl, $scope.skillAbcIncl, $scope.colorAbcIncl, $scope.annotationAbcIncl, $scope.siteAbcIncl, $scope.tubeAbcIncl, $scope.fingeringAbcIncl);
+		$scope.exportedTuneBook = eTBk.TuneBook.getAbc(tuneSets, $scope.tuneBook.name, $scope.tuneBook.version, $scope.tuneBook.description, $scope.tuneSetAbcIncl, $scope.playDateAbcIncl, $scope.skillAbcIncl, $scope.colorAbcIncl, $scope.annotationAbcIncl, $scope.siteAbcIncl, $scope.tubeAbcIncl, $scope.fingeringAbcIncl);
 		show("export");
 	};
 	
