@@ -6,7 +6,7 @@
 eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
   var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-  var eTBK_VERSION = '1.0.5';
+  var eTBK_VERSION = '1.0.6';
   var ABC_VERSION = '2.1';
   //var eTBK_DEFAULT_COLOR = "#E0F0F0";
   var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -15,6 +15,8 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_DEFAULT_PLAYDATE_DATE = moment(eTBK_DEFAULT_PLAYDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
   var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
+  var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
+  var eTBk_EXAMPLE_VERSION = '2013-04-28';
   
 
   if (!window.eTBk) {
@@ -88,6 +90,8 @@ eTuneBook.factory( 'tbkStorage', function() {
 		eTBk.DEFAULT_PLAYDATE_DATE = eTBK_DEFAULT_PLAYDATE_DATE;
 		eTBk.PATTERN_FINGER = eTBK_PATTERN_FINGER;
 		eTBk.EXAMPLE_FILENAME = eTBk_EXAMPLE_FILENAME;
+		eTBk.EXAMPLE_FILENAME_WITHOUTABC = eTBk_EXAMPLE_FILENAME_WITHOUTABC;
+		eTBk.EXAMPLE_VERSION = eTBk_EXAMPLE_VERSION;
 		
 		function extractTuneSets(book){
 			// Generate TuneSets from the book.

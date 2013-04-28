@@ -1,7 +1,7 @@
 %abc-2.1
-I:abc-creator eTuneBook-1.0.5
+I:abc-creator eTuneBook-1.0.6
 %%etbk:bname Irish Tunes - Martin Fleischmann
-%%etbk:bvers 2013-03-30
+%%etbk:bvers 2013-04-28
 %%etbk:bdesc Irish Traditional Tunes adapted for Piano Accordion by Martin Fleischmann 
 
 X: 1
@@ -472,14 +472,14 @@ X:32
 T: Mike Flannagan's
 T: The Cavan
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-10
 M: 4/4
 L: 1/8
 R: reel
-K: Ador
-!5!e!1!A (3AAA !1!A2!5!a!4!g| !2!e!1!A A!4!d !2!B!1!G!2!B!4!d | !5!eA (3AAA !3!c!4!d!2!e!4!g | !5!a!4!g!2!e!1!d !2!B!1!G!2!B!4!d :||
-!1!c2 !4!gc !5!ac!4!gc | !1!c!5!a!4!g!2!e !1!d!2!B!1!G!2!B | !1!c2 gc acgc |afge !1!d!2!BGB |
-!1!c2 gc acgc | cage dBGB |!1!A!2!B!3!c!4!d !2!e!3!f!4!g!2!e | age!1!d !2!BGBd ||
+K:Edor
+|: "em"!5!B!1!E (3EEE !1!E2!5!e!4!d| !2!B!1!E E!4!A "bm"!2!F!1!D!2!F!4!A | "em"!5!BE (3EEE !2!B!3!c!4!d!5!f |1 "bm"!4!e!3!d!2!B!1!A !2!F!1!E!2!F!4!A :||2 "bm"!4!e!3!d!2!B!1!A !2!Fz !1!D!2!F ||
+"G"!1!G2 !4!dG !5!eG!4!dG | !3!(3G!2!G!1!G !5!d!3!B "D"!1!A!2!F!1!D!2!F | "G"!1!G2 dG eGdG | "D"!4!e!5!f!3!d!2!B !1!A!2!FDF |
+"G"!1!G2 dG eGdG | !3!(3G!2!G!1!G dB "D"AFDF | "em"!1!E!2!F!3!G!4!A !2!B!3!c!4!d!5!f | "bm"!4!e!3!d!2!B!1!A !2!FEFA ||
 
 X:33
 %%etbk:tnset id:12,pos:1,rep:3
@@ -768,7 +768,7 @@ X:52
 %%etbk:site1 http://www.thesession.org/tunes/display/1341
 T: Sailing Into Walpole's Marsh
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-10
 M: 4/4
 L: 1/8
 R: reel
@@ -777,8 +777,9 @@ K: Ador
 !3!A!2!GGG !3!A!2!GGG | !4!GEDE !4!G!2!E!1!D2 | !3!A2!3!A!2!G !1!ABc!4!d | !5!e!2!B!4!d!2!B {c}!2!BA!4!d!2!B|
 !1!A2!3!AB !5!c3!3!A | !2!G!1!E!2!E!1!E !4!G!2!E!1!D2 | !3!A2!3!A!2!G !1!ABc!4!d | !3!e!2!d!5!gd !1!B!2!dd!1!B |
 !3!A!2!GGG !3!A!2!GGG | !4!GEDE !4!G!2!E!1!D2 | !3!A2AG !1!ABc!4!d | !5!eBd!2!B {c}B!1!AA2||
-|: !2!e!4!g!3!g!4!g !2!e!5!a!4!a!5!a | !4!g!3!e!2!d!1!B !2!c!1!AA2| !2!e!4!g!3!g!4!g !2!e!5!a!4!a!5!a | !5!a!4!g!3!e!1!c !1!d2!2!c!1!d |
-!2!e!4!g!3!g!4!g !2!e!5!a!4!a!5!a | !4!g!3!e!2!d!1!B !2!c!1!AA!2!B | !1!c2!4!gc !5!ac!4!gc |1 !2!eage !1!d2 !2!c!1!d:|2 !2!eage !1!d4||
+|: !2!e!4!g!2!g{b}g !1!e!3!aa{b}a | !2!g!1!e!2!d!3!e !1!c!2!A!1!A2| !2!e!4!g!2!g{b}g !1!e!3!aa{b}a | !3!a!2!g!1!e!2!g !1!d3!1!d |
+!1!e!2!g!2!g{b}g !1!e!3!aa{b}a | !2!g!1!e!2!d!3!e !1!c!2!AA!3!B | !1!c2!4!gc !5!ac!4!gc |1 !2!eage !1!d2 !2!c!1!d:|2 !2!eage !1!d4||
+
 
 
 X:53
@@ -1134,15 +1135,15 @@ X:76
 %%etbk:site1 http://www.thesession.org/tunes/display/517
 T: Pigeon On The Gate, The
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-11
 M: 4/4
 L: 1/8
 R: reel
 K: Edor
 |: "em"!3!B!1!E !3!(3E!2!E!1!E !3!BE!5!dE | !3!B!1!E !3!(3E!2!E!1!E !5!d!4!B!3!A!2!F | "D"!1!D2 !3!(3FED !5!AD!3!FE  | !1!DE!3!F!4!A !5!BA!3!F!4!A |
 "em"!5!B!1!E !3!(3E!2!E!1!E !3!BE!5!dE | !3!B!1!E !3!(3E!2!E!1!E !5!B2 !4!A!2!F | "D"!1!D2 !2!F!1!A !3!d!5!f!4!e!2!c | !3!d!2!B!1!A!2!F "em"!1!E4:|
-|: "em"!2!B!5!e!2!ed !2!efe!1!d | !2!B!1!def !4!ge!1!d!2!B | "D"!1!A!3!ddc !3!d{e}dd!2!B | !1!A2 !3!FE !1!DE!3!F!4!A |
-"em"!2!B!5!e!2!ed !2!efed | !2!B!1!def !4!g2 fg | "D"!5!af!4!ge !3!fd!5!ec | !4!d!2!B!1!A!2!F "em"!1!E4:|
+|: "em"!2!B!5!e!3!ed !4!efe!2!d | !1!B!2!def !5!ge!2!d!1!B | "D"!1!A!3!ddc !3!d{e}dd!2!B | !1!A2 !3!FE !1!DE!3!F!4!A |
+"em"!1!B!3!e!3!ed !3!efed | !1!B!2!def !5!g2 !3!fg | "D"!5!af!4!ge !3!fd!5!ec | !4!d!2!B!1!A!2!F "em"!1!E4:|
 
 X:77
 %%etbk:tnset id:26,pos:2,rep:3
@@ -1162,43 +1163,44 @@ X:78
 %%etbk:tnset id:27,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/98
 T: Sally Gardens, The
+H: Created 2013-02-19 /  Last Modified 2013-04-11
 M: 4/4
 L: 1/8
 R: reel
 K: Gmaj
-|:G2GA BAGB|dBeB dBAB|d2Bd efge|dBAB GEDE|
-GFGA BAGB|d2eB dBAB|d2Bd efge|dBAB G4:|
-|:dggf g2de|g2bg ageg|eaag a2eg|a2bg ageg|
-dggf g2de|g2bg ageg|d2Bd efge|dBAB G4:|
+|: "G"!3!G2!1!DG !5!B2!1!G!2!B | !4!d!2!BeB dBAB | !4!d2!2!(3Bc^!1!d !2!efge | "D"!1!d!3!BAB !1!G!2!E!1!DE |
+"G"!3!G!2!F!1!GA !3!BA!1!G!2!B | !4!d2eB dBAB | !4!d2!2!(3Bc^!1!d  !2!efge | "D"!1!d!3!BAB "G"!1!G4:|
+|: "G"!1!d!3!ggf g2!1!d!2!e | !3!g2!5!bg !4!ag!1!e!3!g | "D"!1!e!4!aag a2!1!e!3!g | !4!a2bg ag!1!e!3!g |
+"G"!1!d!3!ggf g2!1!d!2!e | !3!g2!5!bg ag!2!e!4!g | !1!d2!2!B!1!d !2!efge | "D"!1!d!3!BAB "G"!1!G4:|
 
 X:79
 %%etbk:tnset id:27,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/102
 T: Johnny's Wedding
 T: Sean Frank's
+H: Created 2013-02-19 /  Last Modified 2013-04-11
 M: 4/4
 L: 1/8
 R: reel
 K: Edor
-|: EF |\
-GEBE GEBG | FDAD FDAF | GEBE GEBc | AGFG E2 EF |
-G/F/E BE G/F/E BE | ABAG FADF | GBGD GBdB | AGFD E2 :|
-|: EF |\
-G2 GF GBdB | A2 AG FADA | Bded e2 g/f/e | fedf e2 gf |
-e2 ed BcdB | ABAG FDAD | G2 GF GBdB | AGFG E2 :|
+EF|: "em"!3!G/F/E!5!BE GEBE | "bm"!2!FD!4!AD FDAD | "em"!3!G/F/E!5!BE GEBE | "bm"!4!AGFG "em"!1!E3F |
+"em"!3!GE!5!BE GEBE | "bm"!4!ABAG !2!F!1!D-D!2!F | "em"!3!GFE!2!F !1!G!3!B!5!d!3!B | "bm"!1!A!3!GFG "em"!1!E3F :|
+|: "G"!1!G2 G!2!F !1!G!3!BdB | "D"!1!A!3!B!1!A!3!G !2!FG!4!A2 | "em"!2!B!5!e!2!ed !2!efge | "bm"!3!fedf "em"!2!e3e |
+"em"!2!efe!1!d !2!BcdB | "bm"!1!AB!1!A!3!G !2!F!1!D-D!2!F | "em"!3!GFE!2!F !1!G!3!B!5!d!3!B | "bm"!1!A!3!GFG "em"!1!E3F :|
 
 X:80
 %%etbk:tnset id:27,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/197
 T: Star Of Munster, The
+H: Created 2013-02-19 /  Last Modified 2013-04-11
 M: 4/4
 L: 1/8
 R: reel
 K: Ador
-|:ed|c2Ac B2GB|AGEF GEDG|EAAB cBcd|eaaf gfed|
-|cBAc BAGB|AGEF GEDG|EAAB cded|cABG A2:|
-|:de|eaab ageg|agbg agef|gfga gfef|gfaf gfdf|
-|eaab ageg|agbg agef|g2ge a2ga|bgaf ge:|
+|: "am"!3!c2Ac !2!B!1!A!2!G!4!B | !3!A!2!G!1!E!3!F !4!G!2!E!1!D!4!G | !1!E!3!AA!2!G !1!ABc!4!d | !2!e2!5!af !4!ge!1!d!2!B |
+!3!c2Ac !2!B!1!A!2!G!4!B | !3!A!2!G!1!E!3!F !4!G!2!E!1!D!4!G | !1!E!3!AA!2!G !1!ABc!4!d  | "em"!5!e!3!c!4!d!2!B "am"!1!A4:|
+|: "am"!1!e!3!aab ag!1!eg | !3!agbg ag!1!ef | "G"!3!g!2!g!3!ga gf!1!ef | !3!(3gfe !4!af !3!gf!1!e!2!d |
+"am"!1!e!3!aab ag!1!eg | !3!agbg ag!1!ef | "G"!3!g2g!1!e !4!a2ga |1 !5!bg!4!af !4!g!2!e!1!d!4!g:|2 bgaf !4!ge!1!d!2!B:|
 
 X:81
 %%etbk:tnset id:28,pos:1,rep:3
@@ -3169,15 +3171,15 @@ X: 206
 %%etbk:color #ffffcc
 T: Master Crowley's
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-20
+H: Created 2013-02-19 /  Last Modified 2013-04-02
 R: reel
 M: 4/4
 L: 1/8
 K: Emin
 |: "em"!1!B,!3!E!2!E!2!E !1!B,!3!E!5!GE | "bm"!4!F!2!D!1!A,D !4!F!2!D!1!A,!2!D | "em"!1!B,!3!E!5!G!3!E !1!C!3!E!5!G!1!E | "bm"!2!F!3!A!5!dA "em"!2!F!1!E!3!E!2!D | 
 "em"!1!B,2!3!E{F}E !1!B,!3!E!5!GE | "bm"!4!F!2!D!1!A,D !4!F!2!D!1!A,!2!D | "em"!1!B,!3!E!5!G!3!E !1!C!3!E!5!G!1!E  |1 "bm"!2!F!3!A!5!dA "em"!2!F!1!E!3!E!2!D :|2 "bm"!2!F!3!A!5!dA "em"!2!F!1!EE2 :|
-|: "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g  | "bm"!1!d3!2!e "em"!2!B!2!ee2 |
-"em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"{g}!2!e!1!d!2!B!1!A !2!B2!4!dB |2 "bm"!1!A!2!F!1!D!2!F "em"!2!F!1!EE2:|2 "bm"!1!A!2!F!1!D!2!F "em"!2!F!1!E!3!E!2!D||
+|: "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g  | "bm"!1!d3!2!e "em"!1!B!2!ee2 |
+"em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"{g}!2!e!1!d!2!B!1!A !2!B2!4!dB |2 "bm"!1!A3!4!d "em"!1!B!2!ee2:|2 "bm"!1!A!2!F!1!D!2!F "em"!2!F!1!E!3!E!2!D|
 
 X:207
 %%etbk:tnset id:156,pos:3,rep:3
@@ -3212,7 +3214,7 @@ K: Gmaj
 
 
 X:209
-%%etbk:tnset id:152,pos:3,rep:3
+%%etbk:tnset id:158,pos:3,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/laureltree.html
 T:Laurel Tree, The
 Z: Piano Box Version by Martin Fleischmann
@@ -3269,7 +3271,7 @@ K: Gmaj
 "G"!1!d2!4!gd !2!edgd | !1!d2!4!g!1!d  !3!B!1!G!2!A!3!B| "C"!4!c2cA "G"!3!B2BA | !1!GA!3!B!4!d "D"!5!e2!4!d!3!B||
 
 X:213
-%%etbk:tnset id:158,pos:2,rep:3
+%%etbk:tnset id:152,pos:3,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/reelofrio.html
 T:Reel of Rio, The
 Z: Piano Box Version by Martin Fleischmann
@@ -3285,7 +3287,7 @@ K: Gmaj
 "G"!1!D!2!E!3!G!4!A !3!B!2!A!3!B!1!d | !2!e!4!g!3!g!4!g !5!agef | !4!gede !4!ge!1!d!3!B|1 "D"!4!c!2!ABA "G"!1!G2!2!B!3!c:|2 "D"!4!c!2!ABA "G"!1!G2G!2!E||
 
 X:214
-%%etbk:tnset id:158,pos:3,rep:3
+%%etbk:tnset id:158,pos:2,rep:3
 T:Thady Casey's
 T:Pat Mahon's
 H: Created 2013-02-19 /  Modified 2013-03-27
@@ -3911,14 +3913,14 @@ X:1039
 %%etbk:site1 http://www.thesession.org/tunes/display/1634
 T: Lark On The Strand, The
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-26
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-|: "D"!2!A3 {c}AGA | "G"!3!B!1!G!2!E !1!G2G | !2!ABA !1!G!2!B!4!d | "C"!2!e2e {g}e!1!d!3!B |
-"D"!2!A3 {c}AGA | "G"!3!B!1!G!2!E !1!G !3!(3G!2!G!1!G | !1!GBA GAB | !5!dBG !3!BdB :|
-|: "G"!1!G!2!B!3!d !5!g2!3!g | !3!gba !3!ggg | !1!G!2!B!3!d !5!g2!1!d | "C"!2!e2e {g}e!1!d!2!B |
+|: "D"!2!A3 {c}AGA | "G"!3!B!1!G!2!E !1!G2G | !2!ABA !1!G!2!B!3!d | "C"!4!e2e {g}e!3!d!2!B |
+"D"!1!A3 {c}!2!AGA | "G"!3!B!1!G!2!E !1!G !3!(3G!2!G!1!G | !1!GBA GAB | !5!dBG !3!BdB :|
+|: "G"!1!G!2!B!3!d !5!g2!3!g | !3!gba !3!ggg | !1!G!2!B!3!d !5!g2!3!d | "C"!4!e2e {g}e!3!d!2!B |
 "G"!1!G!2!B!3!d !5!g!1!G!5!g | !3!gba !3!ggg | "D"!4!aba age | {g}!2!edg e!1!d!2!B :|
 
 X:1040
@@ -4170,16 +4172,15 @@ X:1055
 %%etbk:site1 http://www.thesession.org/tunes/display/4191
 T: Humours Of Ballingarry, The
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-26
 M: 6/8
 L: 1/8
 R: jig
 K: Gmaj
-| !5!dc |: "G"!3!B!1!GG !5!dGG | "D"!4!cA!1!G !2!F!1!G!2!A | "G"!3!BBB BdB | "D"!4!c!2!A!1!F "G"!1!G!5!dc |
-!3!B!1!GG !5!dGG | "D"!4!c!2!A!1!G !1!F!5!d!2!d | !2!def !5!g!2!d!1!B |1 !3!c!1!A!2!F "G"!1!G!5!dc:|2 !3!c!1!A!2!F "G"!1!G!2!B!3!c:|
-|: "G"!1!def !4!ggg | !2!e!1!d!3!c !2!Bc!4!d | "D"!2!e2!4!a aga | !5!b!3!g!2!e e!1!d!2!B |
-"G"!1!def !4!ggg | !2!e!1!d!3!c !2!Bc!1!A | !1!G!2!B!3!d !5!g!3!d!2!B |1 "D"!3!c!1!A!2!F "G"!1!G!2!Bc:|2 "D"!3!c!1!A!2!F "G"!1!G!5!dc:|
-|"orig bar 10,11" edc BAG | A2a aga |
+ !2!A |: "G"!3!B!1!GG !5!dGG | "D"!4!cA!1!G !2!F!1!G!2!A | "G"!3!BAG BdB | "D"!4!c!2!A!1!F "G"!1!G2!2!A |
+!3!B!1!GG !5!dGG | "D"!4!c!2!A!1!G !2!F!1!G!2!A | !5!d!3!ef !5!g!2!d!1!B | !3!c!1!A!2!F "G"!1!G3:|
+!3!d|: "G"!1!def !4!ggg | !2!e!1!d!3!c !2!BA!1!G | "D"!2!e2!4!a aga | !5!b!3!g!2!e e!1!d!2!B |
+"G"!1!def !4!ggg | !2!e!1!d!3!c !2!B!1!AB | !1!G!2!B!3!d !5!g!3!d!2!B | "D"!3!c!1!A!2!F "G"!1!G3:||
 
 X:1056
 %%etbk:tnset id:85,pos:3,rep:3
@@ -5398,13 +5399,13 @@ X:1130
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/condonfrolics.html
 T: Condon's Frolics
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-03-28
+H: Created 2013-02-19 /  Last Modified 2013-04-02
 R: Jig
 M: 6/8
 K: Ador
 |: "am"!5!e!1!AB !3!c2d | !5!edc !2!B!1!A!1!G | !5!e!1!AB !3!c2!4!d | !3!e2d !3!e!5!ag |
-"am"!2!e!1!AB !3!c2d | !5!edc "em"!2!BBB | !1!G!2!B!3!d !5!g!3!d!2!B | "am"!1!ABA !1!A!2!B!4!d:|
-|: "am"!3!e!5!aa !3!ef!5!g | "G"!2!d{g}d!1!c !3!BAG | "am"!2!cBc !4!dcd | !3!e2d !3!efg |
+"am"!3!e!1!AB !3!c2d | !5!edc "em"!2!BBB | !1!G!2!B!3!d !5!g!3!d!2!B | "am"!1!ABA !1!A!2!B!4!d:|
+|: "am"!3!e!5!aa !3!ef!5!g | "G"!2!d{g}d!1!c !3!BAG | "am"!3!cBc !4!dcd | !3!e2d !3!efg |
 "am"!3!e!5!aa !3!ef!5!g | "G"!2!d{g}d!1!c !2!BAB |  !1!G!2!B!3!d !5!g!3!d!2!B | "am"!1!ABA !1!A!2!B!4!d:|
 
 
@@ -5440,15 +5441,15 @@ X:1133
 %%etbk:tnset id:167,pos:2,rep:3
 T:Eddie Kelly's No. 2
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-04
 M:6/8
 L:1/8
 R:jig
 K: Emin
 |: "em"!5!B!1!E!2!F !3!G2!4!A | !2!B!5!ee !5!e!4!d!3!c | !2!BBB !1!G!2!B!1!G | "D"!4!A!2!F!1!D AFD |
 "em"!3!GEF !3!G2!4!A | !2!B2!5!e edc | !2!BBB !1!G!2!B!1!G |1 "D"!4!A!2!F!1!D "em"!1!E2F:|2 "D"!4!A!2!F!1!D "em"!1!E2!4!f||
-|: "em"!5!gfe !4!fed | !1!B!3!ee Bee | !5!gfe !4!fed | "bm"!1!B!3!^c!4!d "em"!5!e2!4!f |
-"em"!5!gfe !4!fed | !1!B!3!ee Bee | !5!gfe !4!fed |1 "bm"!1!B!3!^c!4!d "em"!5!e2!4!f:|2 "bm"!1!B!3!^c!4!d !5!e!4!d!3!=c|
+|: "em"!5!gfe !4!fed | !1!B!3!ee Bee | !5!gfe !4!fed | "bm"!1!B!2!^c!1!d "em"!3!e2!4!f |
+"em"!5!gfe !4!fed | !1!B!3!ee Bee | !5!gfe !4!fed |1 "bm"!1!B!2!^c!1!d "em"!3!e2!4!f:|2 "bm"!1!B!3!^c!4!d !5!e!4!d!3!=c|
 
 X:1134
 %%etbk:tnset id:168,pos:1,rep:3
@@ -5498,14 +5499,14 @@ X:1139
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/kilmovee.html
 T:Kilmovee Jig, The
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-03-28
+H: Created 2013-02-19 /  Last Modified 2013-04-02
 R:jig
 M:6/8
 K: Gmaj
-|: "G"!1!G2G !3!B2B | !1!GAB !2!A!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g | "D"!4!e!5!ge !3!d!2!B!1!A |
+|: "G"!1!G2G !3!B2B | !1!GAB !2!A!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g | "D"!4!e!5!ge !3!d!1!B!2!A |
 "G"!1!GGG !3!BBB | !4!ded !3!B!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g |1 "D"!4!e!3!d!2!B "G"!1!G2!2!F:|2 "D"!4!e!3!d!2!B "G"!1!G!2!B!3!d||
-|: "G"!5!gGg !3!d!2!B!1!G | !3!A!2!G!1!E !2!G!1!E!2!F |!1!G!2!B!3!d !5!g2!4!f | "D"!2!e!5!ag !3!fe!1!d |
-"G"!2!BBB !4!d!3!B!2!A | !1!G!3!BG !2!A!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g|1 "D"!4!e!3!d!2!B "G"!1!G!2!B!3!d:|2 "D"!4!e!3!d!2!B "G"!1!G3||
+|: "G"!5!gGg !3!d!2!B!1!G | !3!A!2!G!1!E !2!G!1!E!2!F |!1!G!2!B!3!d !5!g2!4!f | "D"!2!e!5!ag !3!f!1!e!2!d |
+"G"!1!B!2!B!1!B !4!d!3!B!2!A | !1!G!3!BG !2!A!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g|1 "D"!4!e!3!d!2!B "G"!1!G!2!B!3!d:|2 "D"!4!e!3!d!2!B "G"!1!G3||
 
 X:1140
 %%etbk:tnset id:174,pos:3,rep:3
@@ -5556,14 +5557,14 @@ X:1143
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/pulltheknifeandstickitin.html
 T:Pull The Knife And Stick It In
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-03-24
+H: Created 2013-02-19 /  Last Modified 2013-04-02
 M:6/8
 L:1/8
 R:jig
 K:Edor
 |: "em"!2!E2E !4!GFE | "bm"!1!D!2!B,!5!E !4!D!2!B,!4!D | "em"!2!E2E !4!GFE | "bm"!4!ABG !4!A!2!F!1!D |
 "em"!2!E2E !4!GFE | "bm"!1!D!1!B,!2!E !1!DEF | "em"!4!G2E "bm"!3!FE!1!D |1 "em"!1!B,!2!E!1!D !2!E2!1!D:|2 "em"!1!B,!2!E!1!D !2!!1!E3||
-|: "em"!4!e!3!d!2!B !2!B!1!A!3!F | "bm"!2!E!1!D!2!B, !1!D2D | "em"!4!e!3!d!2!B !2!B!1!A!2!F | "bm"!1!ABc !4!d!5!e!3!f |
+|: "em"!4!e!3!d!2!B !2!B!1!A!3!F | "bm"!2!E!1!D!2!B, !1!D2D | "em"!4!e!3!d!2!B !2!B!1!A!2!F | "bm"!1!ABc !4!d!2!e!3!f |
 "em"!2!e!1!d!2!B !2!B!1!A!3!F | "bm"!2!E!1!D!2!B, !1!DEF | "em"!4!G2E "bm"!3!FE!1!D |1 "em"!1!B,!2!E!1!D !2!E3:|2 "em"!1!B,!2!E!3!D !2!E2!1!D||
 
 X:1144
@@ -5571,14 +5572,14 @@ X:1144
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/paddyinlondon.html
 T:Paddy in London
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-04
 R:Jig
 M:6/8
 K:Ador
-|: "am"!2!e!1!AA !3!fAA | !4!gfg !5!age | "G"!1!d!3!BA !1!G2A | !3!B!1!A!2!B !4!d!1!B!2!d|
-"am"!3!e!1!AA !3!f!1!AA | !4!gfg !5!age | "G"!1!d!2!B!1!d !4!g!1!d!3!B |1 !3!B!2!A!1!G "am"!1!A2A:|2 !3!B!2!A!1!G "am"!1!A2!2!e|
+|: "am"!2!e!1!AA !3!fAA | !4!gfg !5!age | "G"!1!d!3!BA !1!G2A | !3!B!2!B!1!B !2!d!1!B!2!d|
+"am"!3!e!1!AA !3!f!1!AA | !4!gfg !5!age | "G"!1!d!2!B!1!d !4!g!1!d!2!B |1 !2!B!1!A!2!G "am"!1!A2A:|2 !2!B!1!A!2!G "am"!1!A2!2!e|
 |: "am"!1!efg !4!a2g | !4!aba !4!a!3!g!2!e | "G"!1!d!2!B!1!d !4!g2!1!d | !3!gba !3!g!2!e!1!d|
-"am"!1!efg !4!a2g | !4!aba !4!a!3!g!2!e | "G"!1!d!4!ge !1!d!3!B!1!G |1 !3!BA!1!G "am"!1!A2!2!e:|2 !3!BA!1!G "am"!1!A3||
+"am"!1!efg !4!a2g | !4!aba !4!a!3!g!2!e | "G"!1!d!4!ge !1!d!2!B!1!G |1 !2!BA!2!G "am"!1!A2!2!e:|2 !2!BA!2!G "am"!1!A3||
 
 X:1145
 %%etbk:tnset id:180,pos:1,rep:3

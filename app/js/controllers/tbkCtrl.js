@@ -82,7 +82,8 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			// Process = Load TuneBook from local storage
 		
 			// Set current example
-			$scope.exampleFileName = eTBk.EXAMPLE_FILENAME;
+			$scope.exampleFileNameWithoutAbc = eTBk.EXAMPLE_FILENAME_WITHOUTABC;
+			$scope.exampleVersion = eTBk.EXAMPLE_VERSION;
 			
 			// Init TuneSet-Detail-Lines  
 			$scope.showTuneSecondLine = true;
@@ -839,7 +840,13 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		
 		$timeout(function(){
 			try {
-				tuneBook = $scope.tuneBook = tbkStorage.getDefaultFromServer();
+				tuneBook = tbkStorage.getDefaultFromServer();
+				$scope.tuneBook = tuneBook;
+				//TODO: Die nachfolgenden Statements lösen das Problem mit der fehlenden Aktualisierung der Version im Titel nicht
+				//$scope.tuneBook.name = tuneBook.name;
+				//$scope.tuneBook.version = tuneBook.version;
+				//$scope.tuneBook.description = tuneBook.description;
+				
 				eTBk.TuneBook.storeAbc($scope.tuneBook);			
 			} catch(e) {
 				alert("eTuneBook cannot import " + eTBk.EXAMPLE_FILENAME + " due to: " + e.toString());		
@@ -950,6 +957,13 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		renderAbc(tune);
 	};
 	
+	$scope.printTune = function( tuneSetPosition) {
+		// Im CSS wird beim Drucken alles bis auf .dotsViewer.showDotsViewer ausgeblendet 	
+		$timeout(function() {
+			window.print();
+		}, 0, false);
+	};
+	
 	$scope.showSampleDots = function( tuneSetPosition ) { 
 		$timeout(function() {
 			var showHere = 'sampleDotsViewerFor'+tuneSetPosition.tune.id;
@@ -979,7 +993,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			if ($scope.sessionModus) {
 				dotsScale = 0.6;
 			}
-			ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:dotsScale}, {});
+			ABCJS.renderAbc(showHere, tuneAbc, {print:true}, {scale:dotsScale}, {});
 		}, 0, false);
 	}
 

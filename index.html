@@ -59,7 +59,7 @@
 						<ul class="dropdown-menu">
 							<li><a class="newTuneBook" ng-click="initializeTuneBook()">New</a></li>
 							<li><a class="importTuneBook" tbk-file-select-delegate>Open</a></li>
-							<li><a class="loadBxplTuneBook" ng-click="loadBxplTuneBook()">Example: {{exampleFileName}}</a></li>
+							<li><a class="loadBxplTuneBook" ng-click="loadBxplTuneBook()">{{exampleFileNameWithoutAbc}} - Version {{exampleVersion}}</a></li>
 						</ul>
 					</li>
 				
@@ -243,7 +243,7 @@
 						<dt><h3>Import Abc tunes</h3></dt>
 						<dd>
 							<p><strong>TuneBook > Open</strong> <br>Import an Abc Tunebook from your local disc.</p>
-							<p><strong>TuneBook > Example: {{exampleFileName}}</strong> <br>Load an example Tunebook from the server. Current example is BoxPlayer.abc (irish tunes with fingering for piano accordion). For more information about BoxPlayer.abc please visit <a href="http://www.boxplayer.ch/" target="_blank">boxplayer.ch</a> (which will soon be ready)</p>
+							<p><strong>TuneBook > Example: {{exampleFileName}}</strong> <br>Load an example Tunebook from the server. Current example is 'Irish Tunes - Martin Fleischmann'.abc (irish tunes with fingering for piano accordion). For more information about this tunebook please visit <a href="http://www.boxplayer.ch/" target="_blank">boxplayer.ch</a> for articles and my <a href="http://www.youtube.com/user/pianoboxplayer" target="_blank">Irish Traditional Music YouTube Channel</a> </p>
 						</dd>
 						<br>
 						<dt><h3>Add Abc tunes</h3></dt>
@@ -300,6 +300,7 @@
 						<dd>
 							<p><strong>dots-Button</strong> <br>Opens/Closes the dots on the right side of the tune.</p>
 							<p>Transpose the tune by clicking the arrow up or down. This changes both the abc and the dots.</p>
+							<p>Print the tune by clicking the print button. This opens the print dialog of the browser.</p>
 							<p>Fingering can be switched on/off in the settings-menu.</p>
 						</dd>
 						<br>
@@ -392,6 +393,11 @@
 				<div class="span8 well">			
 					<h2>Release Notes</h2>
 					<br>
+					<p>Release 1.0.6 (28.04.2013)</p>
+					<ul>
+						<li>28.04.13: Updated to 'Irish Tunes - Martin Fleischmann', Version 2013-04-28.</li>
+						<li>28.04.13: Single Tunes are now printable</li>
+					</ul>
 					<p>Release 1.0.5 (13.02.2013)</p>
 					<ul>
 						<li>30.03.13: Renamed and Updated to 'Irish Tunes - Martin Fleischmann', Version 2013-03-30.</li>
@@ -515,37 +521,37 @@
 									<div class="tuneSetPositionRepeat">{{tuneSetPosition.repeat}}x</div>
 								</div>
 								<div class="tuneSecondLine" ng-show="showTuneSecondLine" ng-class="{showSessionModus: sessionModus}">
-									<a class='btn btn-mini btn-info justPlayedTheTune' ng-click="justPlayedTheTune(tuneSetPosition)">Played</a>
+									<a class='btn btn-mini btn-info justPlayedTheTune' ng-click="justPlayedTheTune(tuneSetPosition)" title="Just Played The Tune">Played</a>
 									<div class="tunePlayDateInfo">
 										<div class="tuneLastPlayed">{{tuneSetPosition.tune.lastPlayed | fromNow}}</div>
 										<!--<div class="tuneLastPlayed">{{tuneSetPosition.tune.lastPlayed | date:'yyyy-MM-dd HH:mm'}}</div>-->
 									</div>	
 									<div class="tuneSkillInfo">
 										<div class="tuneSkillLabel">Skill</div>
-										<a class='btn btn-mini btn-info decreaseSkill' ng-click="decreaseSkill(tuneSetPosition)" ><i class='icon-thumbs-down'></i></a>
-										<a class='btn btn-mini btn-info increaseSkill' ng-click="increaseSkill(tuneSetPosition)" ><i class='icon-thumbs-up'></i></a>
+										<a class='btn btn-mini btn-info decreaseSkill' ng-click="decreaseSkill(tuneSetPosition)" title="Worse"><i class='icon-thumbs-down'></i></a>
+										<a class='btn btn-mini btn-info increaseSkill' ng-click="increaseSkill(tuneSetPosition)" title="Better"><i class='icon-thumbs-up'></i></a>
 										<div class="tuneSkill">{{tuneSetPosition.tune.skill}}</div>
 									</div>	
-									<input class="tuneColorizer" id="colorFor{{tuneSetPosition.tune.title}}" type="text" name="{{tuneSetPosition.tune.color}}" value="{{tuneSetPosition.tune.color}}"  tbk-colorselect/>
+									<input class="tuneColorizer" id="colorFor{{tuneSetPosition.tune.title}}" type="text" name="{{tuneSetPosition.tune.color}}" value="{{tuneSetPosition.tune.color}}"  title="Colorize" tbk-colorselect/>
 								</div>
 								<div class="tuneThirdLine" ng-show="showTuneThirdLine">
 									<div class="tuneSelfInfoButtonGroup">
 										<!--<a class='btn btn-mini btn-info' tbk-popover><i class='icon-music'></i></a>-->
-										<a class='btn btn-mini btn-info dotsViewerBtn' ng-click="dotsViewer(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition.tune == dotsViewerTune}" ><i class='icon-music'></i></a>
+										<a class='btn btn-mini btn-info dotsViewerBtn' ng-click="dotsViewer(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition.tune == dotsViewerTune}" title="Show/Hide The Dots" ><i class='icon-music'></i></a>
 									</div>
 									<div class="tuneForeignInfoButtonGroup" ng-class="{showSessionModus: sessionModus}">
-										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site1" href={{tuneSetPosition.tune.site1}} target="_blank">s 1</a>
-										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site2" href={{tuneSetPosition.tune.site2}} target="_blank">s 2</a>
-										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site3" href={{tuneSetPosition.tune.site3}} target="_blank">s 3</a>
-										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube1" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube1)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune  && tuneSetPosition.tune.youTube1 == youTubeUrl}" >v 1</a>
-										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube2" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube2)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune && tuneSetPosition.tune.youTube2 == youTubeUrl}" >v 2</a>
-										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube3" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube3)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune && tuneSetPosition.tune.youTube3 == youTubeUrl}" >v 3</a>	
+										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site1" href={{tuneSetPosition.tune.site1}} target="_blank" title="Open Site 1" >s 1</a>
+										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site2" href={{tuneSetPosition.tune.site2}} target="_blank" title="Open Site 2" >s 2</a>
+										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.site3" href={{tuneSetPosition.tune.site3}} target="_blank" title="Open Site 3" >s 3</a>
+										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube1" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube1)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune  && tuneSetPosition.tune.youTube1 == youTubeUrl}" title="Show/Hide YouTube Video 1" >v 1</a>
+										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube2" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube2)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune && tuneSetPosition.tune.youTube2 == youTubeUrl}" title="Show/Hide YouTube Video 2" >v 2</a>
+										<a class='btn btn-mini btn-info' ng-show="tuneSetPosition.tune.youTube3" ng-click="toggleYouTubeVideo(tuneSetPosition, tuneSetPosition.tune.youTube3)" ng-class="{isActivControl: tuneSetPosition.tune == youTubeTune && tuneSetPosition.tune.youTube3 == youTubeUrl}" title="Show/Hide YouTube Video 3">v 3</a>	
 									</div>
 								</div>
 								<div class="tuneForthLine" ng-show="showTuneForthLine" ng-class="{showSessionModus: sessionModus}">
-									<a class='btn btn-mini btn-info editTuneBtn' ng-click="editTune(tuneSetPosition)" >Abc</a>
-									<a class='btn btn-mini btn-info editTuneInfoBtn' ng-click="editTuneInfo(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition == infoEditedTuneSetPosition}" >Info</a>
-									<a class='btn btn-mini btn-info moveTuneBtn' ng-click="moveTune(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition == movedTuneSetPosition}" >Move</a>
+									<a class='btn btn-mini btn-info editTuneBtn' ng-click="editTune(tuneSetPosition)" title="Edit The Tune">Abc</a>
+									<a class='btn btn-mini btn-info editTuneInfoBtn' ng-click="editTuneInfo(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition == infoEditedTuneSetPosition}" title="Edit Tune Infos">Info</a>
+									<a class='btn btn-mini btn-info moveTuneBtn' ng-click="moveTune(tuneSetPosition)" ng-class="{isActivControl: tuneSetPosition == movedTuneSetPosition}" title="Move The Tune To Another Set">Move</a>
 								</div>
 									
 							</div>
@@ -641,8 +647,9 @@
 							<div id="showTheDotsFor{{tuneSetPosition.tune.id}}" class="edit showTheDots" style="background-color:{{tuneSetPosition.tune.color}}"></div>
 							
 							<div id="dotsViewerFor{{tuneSetPosition.tune.id}}" class="dotsViewer" ng-class="{showDotsViewer: tuneSetPosition.tune == dotsViewerTune, showSessionModus: sessionModus}" style="background-color:{{tuneSetPosition.tune.color}}">
-								<a class='btn btn-mini btn-info' ng-click="tuneUp(tuneSetPosition)" ><i class='icon-arrow-up'></i></a>
-								<a class='btn btn-mini btn-info' ng-click="tuneDown(tuneSetPosition)" ><i class='icon-arrow-down'></i></a>
+								<a class='btn btn-mini btn-info' ng-click="tuneUp(tuneSetPosition)" title="Tune Up" ><i class='icon-arrow-up'></i></a>
+								<a class='btn btn-mini btn-info' ng-click="tuneDown(tuneSetPosition)" title="Tune Down" ><i class='icon-arrow-down'></i></a>
+								<a class='btn btn-mini btn-info' ng-click="printTune(tuneSetPosition)" title="Print" ><i class='icon-print'></i></a>
 								<div id="renderTheDotsFor{{tuneSetPosition.tune.id}}"></div>
 							</div>
 							
