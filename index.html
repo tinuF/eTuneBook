@@ -105,6 +105,7 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret black-caret"></b></a>
 						<ul class="dropdown-menu">
+							<li><a class="orderByLastModified" ng-click="orderByLastModified()">Last Modified <i ng-show="tuneSetSortField == 'lastModified'" class="icon-ok"></i><i ng-show="!tuneSetSortReverse  && tuneSetSortField == 'lastModified'" class="icon-arrow-up"></i><i ng-show="tuneSetSortReverse  && tuneSetSortField == 'lastModified'" class="icon-arrow-down"></i></a></li>
 							<li><a class="orderByLastPlayed" ng-click="orderByLastPlayed()">Last Played <i ng-show="tuneSetSortField == 'lastPlayed'" class="icon-ok"></i><i ng-show="!tuneSetSortReverse  && tuneSetSortField == 'lastPlayed'" class="icon-arrow-up"></i><i ng-show="tuneSetSortReverse  && tuneSetSortField == 'lastPlayed'" class="icon-arrow-down"></i></a></li>
 							<li><a class="orderByFrequencyPlayed" ng-click="orderByFrequencyPlayed()">Rehearse Frequency <i ng-show="tuneSetSortField == 'frequencyPlayed'" class="icon-ok"></i><i ng-show="!tuneSetSortReverse  && tuneSetSortField == 'frequencyPlayed'" class="icon-arrow-up"></i><i ng-show="tuneSetSortReverse  && tuneSetSortField == 'frequencyPlayed'" class="icon-arrow-down"></i></a></li>
 							<li><a class="orderByTuneSetId" ng-click="orderByTuneSetId()">TuneSet-Nr. <i ng-show="tuneSetSortField == 'tuneSetId'" class="icon-ok"></i><i ng-show="!tuneSetSortReverse  && tuneSetSortField == 'tuneSetId'" class="icon-arrow-up"></i><i ng-show="tuneSetSortReverse  && tuneSetSortField == 'tuneSetId'" class="icon-arrow-down"></i></a></li>
@@ -185,9 +186,10 @@
 						<li>Remember when you last played a tune and how good you were.</li>
 						<li>Label tunes with a color or add a comment.</li>
 						<li>Transpose tunes.</li>
+						<li>Print tunes.</li>
 						<li>Store links to other sites holding tune informations and jump to those sites by clicking the site buttons.</li>
 						<li>Store links to YouTube videos and view them in eTuneBook by clicking the video buttons.</li>
-						<li>Easily identify those tunes you should rehearse. Just sort by last play dates, rehearse frequency or skill.</li>
+						<li>Easily identify those tunes you should rehearse. Just sort by last modification date, last play date, rehearse frequency or skill.</li>
 						<li>Find tunes by title, key, type or color.</li>
 					</ul>
 					<br>
@@ -227,7 +229,7 @@
 					<ul>					
 					<li>TuneBook > New:     Begin from scratch</li>
 					<li>TuneBook > Open:    Import a Tunebook from your local disc</li> 
-					<li>TuneBook > Example: Load an example Tunebook from the server </li>
+					<li>TuneBook > Irish Tunes - Martin Fleischmann: Load Martin's Tunebook from the server </li>
 					</ul>
 				</div>
 				<div class="span2"></div>
@@ -243,7 +245,7 @@
 						<dt><h3>Import Abc tunes</h3></dt>
 						<dd>
 							<p><strong>TuneBook > Open</strong> <br>Import an Abc Tunebook from your local disc.</p>
-							<p><strong>TuneBook > Example: {{exampleFileName}}</strong> <br>Load an example Tunebook from the server. Current example is 'Irish Tunes - Martin Fleischmann'.abc (irish tunes with fingering for piano accordion). For more information about this tunebook please visit <a href="http://www.boxplayer.ch/" target="_blank">boxplayer.ch</a> for articles and my <a href="http://www.youtube.com/user/pianoboxplayer" target="_blank">Irish Traditional Music YouTube Channel</a> </p>
+							<p><strong>TuneBook > {{exampleFileNameWithoutAbc}}</strong> <br>Load an example Tunebook from the server. Martin's Tunebook contains Irish Tunes with Fingering for Piano Accordion. For more information please visit <a href="http://www.boxplayer.ch/" target="_blank">Martin's BoxPlayer Talks</a> and <a href="http://www.youtube.com/user/pianoboxplayer" target="_blank">Martin's Irish Traditional Music YouTube Channel</a> </p>
 						</dd>
 						<br>
 						<dt><h3>Add Abc tunes</h3></dt>
@@ -267,7 +269,8 @@
 						<dd>
 							<p>The Abc-Code of a tune can be edited by pressing:</p>
 							<p><strong>Abc-Button</strong> <br>The Abc-Editor opens. The dots are shown simultanously on the right side. 
-							<br>In case you want to get rid of the tune, just delete the whole Abc-Code of the tune. 
+							<br>In case you want to get rid of the tune, just delete the whole Abc-Code of the tune.
+							<br>In case you want to sort your sets by modification date, you have to include a line starting with 'H:' and also contains 'Modified' followed by the modification date in form of 'yyyy-mm-dd'. Check Martin's Tunebook for examples.							
 						</dd>
 						<br>
 						<dt><h3>Build tune sets</h3></dt>
@@ -336,6 +339,7 @@
 						<dd>
 							<p>Sets can be sorted by:</p>
 							<ul>
+								<li><p><strong>Last Modification Date</strong></p></li>
 								<li><p><strong>Last Playing Date</strong></p></li>
 								<li><p><strong>Rehearse Frequency</strong></p></li>
 								<li><p><strong>TuneSet Id</strong></p></li>
@@ -378,7 +382,7 @@
 								<li><p><strong>Videos</strong></p></li>								
 							</ul>
 							<p>Attention: If you choose to export only standard Abc eTuneBook-specific fields will be lost after Re-Import.</p>
-							<p>You can switch on/off fingering when viewing dots or Abc-exports.</p>
+							<p>You can switch on/off fingering when viewing dots or Abc.</p>
 						</dd>
 					</dl>
 				</div>		
@@ -395,7 +399,9 @@
 					<br>
 					<p>Release 1.0.6 (28.04.2013)</p>
 					<ul>
-						<li>28.04.13: Updated to 'Irish Tunes - Martin Fleischmann', Version 2013-04-28.</li>
+						<li>30.04.13: Irish Tunes - Martin Fleischmann: Version 2013-04-30.</li>
+						<li>30.04.13: Sorting by last modification date</li>
+						<li>28.04.13: Irish Tunes - Martin Fleischmann: Version 2013-04-28.</li>
 						<li>28.04.13: Single Tunes are now printable</li>
 					</ul>
 					<p>Release 1.0.5 (13.02.2013)</p>
@@ -454,10 +460,9 @@
 					<p>Limitations / Issues</p>
 					<ul>
 						<li>Tunes can only be moved, not copied; A tune cannot exist in more than one set.</li>
-						<li>No printing yet.</li>
+						<li>No printing of set-list yet.</li>
 						<li>Chords cannot be switched on/off yet.</li>
-						<li>Performance is bad in other browsers than Chrome.</li>
-						<li>Navigation on smarphones not optimized yet.</li>
+						<li>Navigation on smartphones not optimized yet.</li>
 					</ul>
 				</div>		
 				<div class="span2"></div>
@@ -507,8 +512,7 @@
 			<div class="span4" ng-show="showTuneSets">
 				<div class="tuneSet" ng-repeat="tuneSet in tuneSetsDisplayed = (tuneSetsFiltered = (tuneBook.tuneSets | orderBy:tuneSetSortField:tuneSetSortReverse | filter:tuneSetIdFilter | filter:tuneSetTypeFilter | filter:tuneSetKeyFilter | filter:tuneSetColorFilter | filter:tuneSetSkillFilter) | startFrom:currentPage*pageSize | limitTo:pageSize)" >		
 					<div class="tuneSetInfo">
-						<!--<div class="tuneSetNr">TuneSet-Nr.: {{tuneSet.tuneSetId}} /  Frequency: {{tuneSet.frequencyPlayed}} /  Last Played: {{tuneSet.lastPlayed | fromNow}}</div>-->
-						<div class="tuneSetNr">Set {{tuneSet.tuneSetId}} </div> 		
+						<div class="tuneSetNr">Set {{tuneSet.tuneSetId}} - Modified: {{tuneSet.lastModified | fromNow}} - Played: {{tuneSet.lastPlayed | fromNow}}</div> 		
 					</div>
 					<ul id="tuneSetPositionList" class='sortable' ng-class="{showSessionModus: sessionModus}"><!--TODO: connected und sortable ersetzen (siehe vorallem css)-->
 						<li ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy:'position'" ng-class="{editing: tuneSetPosition.tune == editedTune, showSessionModus: sessionModus}" style="background-color:{{tuneSetPosition.tune.color}}" tbk-show-sample-abc="tuneSetPosition.tune == editedTune">

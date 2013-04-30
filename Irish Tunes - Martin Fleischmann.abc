@@ -1,8 +1,8 @@
 %abc-2.1
 I:abc-creator eTuneBook-1.0.6
 %%etbk:bname Irish Tunes - Martin Fleischmann
-%%etbk:bvers 2013-04-28
-%%etbk:bdesc Irish Traditional Tunes adapted for Piano Accordion by Martin Fleischmann 
+%%etbk:bvers 2013-04-30
+%%etbk:bdesc Irish Traditional Tunes adapted for Piano Accordion by Martin Fleischmann
 
 X: 1
 %%etbk:tnset id:1,pos:1,rep:3
@@ -17,6 +17,8 @@ R: Reel
 K: Emin
 |: "em"!2!B3A B{d}BAB | "bm"!4!d!2!B!1!A!3!F !1!D!2!E!3!F!4!A | "em"!5!B2!2!BA B{d}BAB | "bm"!4!d!2!B!1!A!2!F "em"!1!E4 :|
 |: "em"!2!B!5!e!2!ef !4!g2 fe | "D"!1!d2 !2!B!4!d !1!AA!2!F!1!A |1 "em"!2!B!5!e!2!ef !4!g{a}gfe | "bm"!1!d!2!B!1!A!2!F "em"!1!E4 :|2 "em"!2!B!5!e!5!e!4!d !2!B!4!d!1!A!3!F| "bm"!1!D!2!E{G}ED "em"!2!E4||
+
+
 
 X: 2
 %%etbk:tnset id:1,pos:2,rep:3
@@ -34,6 +36,8 @@ K: Edor
 |: "em"!5!e2!3!ed !1!B!2!A!1!B!2!d | !3!e!5!g!4!f!2!d ed!1!B!2!c | "D"!3!d{e}dd!2!B !1!AA!2!F!1!A | !3!d!5!fed !2!B!1!A (3!2!B!3!c!4!d |
 "em"!5!e2!3!ed !1!B!2!A!1!B!2!d | !3!e!5!g!4!f!2!d ed!1!B!2!c | "D"!3!d{e}ddc d2!5!fe|!3!d!2!B!1!A!2!F "em"!5!B!1!EE2:|
 
+
+
 X: 3
 %%etbk:tnset id:1,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3270
@@ -47,6 +51,8 @@ K: Edor
 |: "em"!2!F!1!EE!2!D !1!E3!5!B | !2!F!1!E!2!E!1!E !2!F2!4!A!5!B | !2!F!1!EE!2!D !1!E2!5!B!4!A |1 "D"!2!F!1!D-DD !4!B!5!d!3!A!4!B:|2 "D"!2!F!1!D-DD !2!B!4!d!1!A!4!d||
 "em"!2!B!1!A!2!B!4!d !2!e!4!gfe | "D"!1!d2!4!a!5!b !4!a!3!f!2!e!1!d | "em"!2!B!1!d !4!g!2!e "bm"!3!f{g}ffe | !1!d!2!B!1!A!2!F "em"{A}F!1!EE2 |
 "em"!2!B!1!A!2!B!4!d !2!e!4!gfe | "D"!1!d2!4!a!5!b !4!a!3!f!2!ef | !5!b!3!f!2!f!2!f !4!a!3!f!2!f!3!f|!5!b!3!f!4!a!3!f !2!e!1!d!2!B!1!A||
+
+
 
 X:5
 %%etbk:tnset id:2,pos:2,rep:3
@@ -67,6 +73,8 @@ K: Cmix
 |: "C"!2!G!4!cc!3!=B !4!c2!1!G!2!A | "Bb"!3!B!4!c!3!d!4!e !5!f!3!d!2!c!1!=B | "C"!1!G!3!cc!2!=B !3!c2!1!GA | "Bb"!3!B!1!G!3!F!1!D "C"!2!E!1!CC2 |
 "C"!2!G!4!cc!3!=B !4!c2!1!G!2!A | "Bb"!3!B!4!c!1!d!2!e !3!f2!4!g!3!f | "C"!2!e!1!c{f}!2!d!1!c !4!c2!5!d!4!c | "Bb"!3!B!1!G!3!F!1!D "C"!2!E!1!CC2 :|
 
+
+
 X:6
 %%etbk:tnset id:3,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/132
@@ -83,6 +91,8 @@ K: Gdor
 |:!3!g2 g^f gbag|!2!=f2 fe fgaf|!3!g2 g^f ~g3 a|bga=f dgga|
 |bgag gfde|fdcB AFFA|BAGF DFGA|1 (3Bcd cA BGG2:|2 BdcA BGG2|
 
+
+
 X:7
 %%etbk:tnset id:3,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/541
@@ -98,6 +108,8 @@ K: Gdor
 |:!1!G2 !4!g!5!a !4!g!1!d!3!B!2!A|!1!G2 !4!g!2!e fgeg|!3!f!1!B !2!(3BBB !1!F!2!B!1!D!2!B|!5!f!2!B !2!(3BBB !5!f!3!d!2!c!1!A|
 !1!G2 ga gdBA|G2 !4!g!5!a !3!b!1!g!2!a!1!g|!3!~f3 g afge|!5!fdc!1!A !3!B!1!G!2!A!1!F:||
 
+
+
 X:8
 %%etbk:tnset id:3,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1423
@@ -112,6 +124,8 @@ A|!5!d!4!c!2!A!1!G !2!A!1!DD!2!A|!4!c!2!A!1!G!3!F !2!E!1!CCE|!1!D!2!E!3!F!4!G !2
 !5!dcAG A2dA|cAGF ECCE|DEFG Addc|!2!AA!1!G!2!E E!1!DD:||
 A|!3!d!2!c!1!A!2!G !1!Acde|!5!fAdf !4!e!2!c!1!A!2!B|!3!c!1!A!2!G!1!E !2!G!1!A!3!c!4!d|!5!e2!1!cc !2!e!5!a!4!g!1!e|
 !3!dcAG Acde|fAdf ec!1!A!4!G|!3!F2FE !3!F!4!G!2!AB|!4!c!2!A!1!G!2!E E!1!DD:||
+
+
 
 X:9
 %%etbk:tnset id:4,pos:1,rep:3
@@ -132,9 +146,12 @@ A,DDE FEFG|AAGc !2!A!5!d !3!d!4!e|!5!fded !3!dc!1!A!3!B|1 !4!c!2!A!1!G!2!E !2!E!
 |:!5!d2d!3!B !4!c2c!1!G|!2!A!5!ddB !4!c!2!AGA|d2dB !4!cdc!2!A|!1!G!2!E!5!c!2!E !2!E!1!DD2|
 d2dB !4!c!3!c!4!cG|Addc !5!d2!3!de|fded dcAB|1 cAGE EDD2:|2 cAGE FDEC||
 
+
+
 X:10
 %%etbk:tnset id:4,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1651
+%%etbk:tube1 https://www.youtube.com/embed/aSQSkj_QjcA
 T: Sergeant Early's Dream
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -146,6 +163,8 @@ K: Ddor
 !5!ADDE FAcA|GECD EFGE|D3E FAcA|!2!G!1!F!2!E!3!F !1!D2:|
 |:!2!A!5!d!3!dc d2de|f2ed !2!c!1!A!1!G!3!F|!2!E!1!C!2!E!3!G !5!c2!3!cd|!5!eccB cABc|
 !1!A!3!ddc d2de|f2ed !4!c!1!A!2!F!4!A|!3!G!1!EEE !5!c!1!EEE|!3!E!2!D!1!CE !1!D2:|
+
+
 
 X:11
 %%etbk:tnset id:4,pos:3,rep:3
@@ -162,6 +181,8 @@ d2 cA GE EE|DEcE dEcE|!1!D!2!E!3!F!5!A !4!G!2!E!5!c!2!E|!2!E!1!D!2!C!1!D !2!E!1!
 |:!3!d2 !4!e!3!d !2!c!1!A!1!G!2!c|!1!A!3!d!2!c!1!A !2!G!1!EEE|!3!d2 ed !2!cde!5!f|ed!2!c!1!A !3!d2 !5!a!4!g|
 !2!e!5!age !1!d!3!c!1!A!2!B|!3!c!1!A!2!G!5!c !3!A!1!E!2!G!1!E|!1!DEFA GEcE|EDCD ED D2:|
 
+
+
 X:12
 %%etbk:tnset id:5,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2878
@@ -176,6 +197,8 @@ K: Ddor
 dcAc d3e|dcA!1!G !2!E!4!G!1!D!4!G|!1!E!2!G!3!A!4!B !3!cded|cAGE EDD2:|
 |:!3!dcAc d2!2!c!3!d|!2!e!5!aag eg!1!d2|!4!g!3!e!2!de !1!c3d|!3!e!4!gag !3!e!1!dd2|
 !3!dcAc d2cd|!2!eaag eg!1!d2|!3!c!1!G~G2 !3!cded|!3!cAGE EDD2:|
+
+
 
 X:13
 %%etbk:tnset id:5,pos:2,rep:3
@@ -193,6 +216,8 @@ K: Ddor
 !3!edeg aged |  !2!d!1!c!2!AB !4!cAGc | !2!A!1!FFF !1!F!2!G!3!A!4!B | !5!cAG!1!E !2!E!1!DD2 :|
 
 
+
+
 X:14
 %%etbk:tnset id:5,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/10091
@@ -206,6 +231,8 @@ K: Ador
 !1!E!2!G!3!A!4!B !3!ccAB|cBcd !3!c!1!A!2!G!1!D|!1!EGA!4!B !3!cBcd|[1 ecde !3!c!1!AA!2!G:|[2 ecde cAA!3!e||
 !5!a!4!g!3!e!2!d !1!c3e|!5!a!4!g!3!e!2!d !1!c!1!AA!3!e|!5!aged c2ce|!4!gfga !4!g!3!ede|
 aged c3e|aged cAA!2!d|!3!e2!5!aa !4!g!3!e!2!d!1!B| !3!cded c!1!AA!2!G||
+
+
 
 X:15
 %%etbk:tnset id:6,pos:1,rep:3
@@ -224,6 +251,8 @@ K: Dmin
 |1!3!f2fg !5!af!4!ge | !5!fedc !1!A!3!FDE | !3!FEFG !3!AGFG | !3!A!5!d!3!d!2!c !3!d2 !1!de :|
 |2!3!f2!1!d!3!f dfdf | !2!ee!1!c!2!e cece | !5!af!4!ge !5!fedc | !1!ABc!5!e !4!d4   ||
 
+
+
 X:16
 %%etbk:tnset id:6,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/200
@@ -238,6 +267,8 @@ K: Gdor
 !5!bgag !2!f!1!ddd | !2!f2!1!e!3!g !2!f!1!d!2!c!1!A | !2!G2AG !1!FGA!4!c|!5!d!3!AcA !2!G4:|
 |:!3!g2!4!ag !2!f!1!d !3!(3d!2!d!1!d | !3!gf!1!d!2!c !1!A!2!cdc | !1!A2!2!GG !3!A!4!cdc | !3!A!2!GGG !1!F4|
 !1!FGGF GdcA | !2!G2AG !1!FGA!4!c | !3!d2 !5!g!3!g !2!fgag | !2!f!1!d!2!c!1!A !2!G4:|
+
+
 
 X:17
 %%etbk:tnset id:6,pos:3,rep:3
@@ -254,9 +285,12 @@ K: Ador
 |:!5!a2!2!ea agef | !4!g!3!e!2!d!4!g !1!B!4!g!2!d!4!g | !5!a!4!g!3!e!2!d !1!B!4!d !5!ed | !3!cA!2!B!1!G !1!G!2!A!1!A2|
 !5!a2ea agef | !4!ged!1!c !3!BA!1!G!3!B | !1!ABc!4!d !2!e!5!aag | !2!ee!1!d!2!B B!1!AA2:||
 
+
+
 X:18
 %%etbk:tnset id:7,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2660
+%%etbk:pldat 2013-04-30T17:26
 T: Cloon, The
 T: Humours Of Toomagh, The
 Z: Piano Box Version by Martin Fleischmann
@@ -270,24 +304,27 @@ K: Dmaj
 |: "D"!2!d2!3!f!2!d !5!a!2!d!3!f!2!d | !4!a!3!a!4!a!5!b !4!a!3!f!2!e!3!f | !2!dd!3!f!2!d !5!a!2!d!3!f!2!d | "A"!1!A!2!B!3!d!4!e !3!f!2!eef |
 "D"!2!d{f}d!3!f!2!d !5!a!2!d!3!f!2!d | !4!a!3!a!4!a!5!b !4!a!3!f!2!e!3!f | !5!b!4!a!3!f!1!d !2!egfe | "A" !1!d!2!B!1!A!2!F {A}F!1!EE2:|
 
+
+
 X:19
 %%etbk:tnset id:7,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/227
+%%etbk:pldat 2013-04-30T17:26
 T: Crooked Road To Dublin, The
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-30
 M: 4/4
 L: 1/8
 R: Reel
 K: Gmaj
-!2!G3 G !1!FGAF|GG !1!F!2!G !3!A!5!d!4!c!3!A|!2!G2AG !1!F!5!d!2!d!5!g|!4!f!3!d!2!c!1!A !4!d!2!B!3!c!1!A|
-!2!G3 G FGAF|GG FG AdcA|G2AG Fddg|!4!f!3!d!2!c!1!A !3!d2 !1!B!2!c|
-!1!d~!3!g3 !2!fgaf|!1!d!3!g!2!g!3!g !4!a!3!g!2!f!1!e|!1!d!3!~g3 !2!fgag|!2!f!1!d!3!c!1!A !4!d2!2!B!3!c|
-!1!d~g3 fgaf|dggg a2ga|!5!bg!4!af !3!gbag|!3!f!1!d!3!c!1!A !4!d!2!B!3!c!1!A|
+|: "G"!3!G3 G !2!FGAF | !3!GG !2!F!3!G "D"!2!A!5!d!4!c!2!A | "G"!1!G2A!1!G "D"!2!F!5!d!2!d!5!g |1 !4!f!2!d!1!c!2!A !5!d!3!B!4!c!2!A :|2 !4!f!2!d!1!c!2!A !5!d2 !3!B!4!c|
+"G"!1!d!4!ggg !3!fgaf | !1!d!4!g!3!g!4!g !5!a!4!g!3!f!2!e | !1!d!4!ggg !3!fgag |!3!f!1!d!3!c!1!A "D"!4!d2!2!B!3!c|
+"G"!1!d!4!ggg !3!fgaf | d2!3!gg !4!a2!3!ga | !5!bg!4!af !3!gbag | "D"!2!f!1!d!3!c!1!A !4!d!2!B!3!c!1!A|
 
 X:20
 %%etbk:tnset id:7,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/691
+%%etbk:pldat 2013-04-30T17:26
 T: Matt People's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -298,6 +335,8 @@ K: Ador
 |:!1!A2 !5!eA !2!BA!5!eA|!2!BB !5!g!2!B !2!B!1!A!1!G!2!B|!1!A2 eA BAeA|!3!BAGA !3!B!1!A!2!A!1!A:|
 |!5!a!2!e !1!e!2!e agef|!4!g!1!B !2!B!1!B !4!g2 fg|ae e2 !5!a!4!g!2!e!1!d|!2!BB !1!G!2!A !3!B!1!AA2|
 ae ee agef|gB BB g2 fg|!5!af!4!ge !3!f!1!d!2!e!1!d|!2!BB GA BAA2|
+
+
 
 X:21
 %%etbk:tnset id:8,pos:1,rep:3
@@ -318,6 +357,8 @@ Addd edcA|dcAG ED!1!C2|!5!A!4!G!2!E!1!D !2!C!1!D!2!E!4!G|AEGE !1!D!3!A!5!c!4!B|
 ADDD EGEG|ADDD EDC2|AGED CDEG|AEGE D4||
 
 
+
+
 X:22
 %%etbk:tnset id:8,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/500
@@ -332,6 +373,8 @@ K: Emin
 !1!E2 EE BE~E2 | !5!BB AF DEFD | !1!E2 EE BE~E2 | !3!BB Ac BE E2 ||
 !2!e2 !3!g!2!e !5!b!2!e!3!g!2!e | !1!d!2!d !1!d!3!f aafd | e2ge bege | !1!d!2!B!1!A!3!c !2!B!1!E E2 |
 !2!e2 ge be ge | !1!d2df a2fd | !2!efge !3!f!1!d!5!e!2!B | !4!d!2!B !1!A!3!c !2!B!1!E E2 :|
+
+
 
 X:23
 %%etbk:tnset id:8,pos:3,rep:3
@@ -348,6 +391,8 @@ K: Edor
 !5!e2 !2!ef !4!g!3!f!1!e!3!c|!4!dBAF DEF!1!D|!5!e2 !2!ef gfec|dBAF BE E2|
 !5!e2 !2!ef gf!1!e!3!c|!4!d2 !4!d!3!c !1!defg|afge fd!5!e!3!c|!4!dBAF DEFD:|
 
+
+
 X:24
 %%etbk:tnset id:9,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1474
@@ -363,6 +408,8 @@ K: Ador
 |: !2!e!5!aa!4!g eaag | !2!edef !4!ge!1!d!2!B | !1!d!2!e!3!g!5!b !4!aaga | !5!bgab !3!g!2!e!1!d2 |
 !2!e!5!aag eaag | !2!e!1!e!2!ef !4!gede | !4![g3d]e !1!dege | !1!d!2!B!1!G!2!B !2!B!1!AA2:||
 
+
+
 X:25
 %%etbk:tnset id:9,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/999
@@ -375,6 +422,8 @@ R: reel
 K: Ador
 |: !5!e!1!A!4!d!2!B !1!AB!1!A!2!G | !1!E!3!AA!2!G !1!AA!2!B!4!d | !5!eAdB AB!1!A!2!G | !1!E!3!GG!2!F !1!G4:|
 |: !3!ee!2!d!5!g !3!e!2!d!1!Bd | !3!e!1!A!2!A!1!A !5!e!1!A !3!(3A!2!A!1!A | !3!eedg !3!edBd | !2!d2 ef !5!g4:|
+
+
 
 
 X:26
@@ -390,6 +439,8 @@ K: Gmaj
 |: !1!G2G!2!F !1!G!2!G!1!GA | !3!BAGA BAAB | !1!G2G!2!F !1!GABG | !2!AB!1!G!2!E E!1!DD2:|
 |: !3!B!5!ddB !1!GGGA | !3!BddB !4!c!2!AAc | !3!BddB !1!GABG | !2!AB!1!G!2!E E!1!DD2:|
 |: !2!G!1!E!2!E!1!E !5!c3!3!A | !4!B2!5!d!4!B !3!A!5!c!4!B!3!A | !2!G!1!E !3!(3E!2!E!1!E !4!c!2!A!3!B!1!G | !2!AB!1!G!2!E E!1!DD2:|
+
+
 
 X:27
 %%etbk:tnset id:10,pos:1,rep:3
@@ -407,6 +458,8 @@ K:Gmaj
 !4!g3e !1!d2!2!B!1!d | !2!e!5!aag agef | !4!ggge !1!d2!2!B!1!d | !3!ggga !5!b!3!g!5!g2 ||
 
 
+
+
 X:28
 %%etbk:tnset id:10,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1365
@@ -420,6 +473,8 @@ K: Gmaj
 !4!g!2!e | !1!d!2!B!1!A!3!c !2!B!1!GG!2!A | !3!B2!2!BA !2!B!3!d!4!g!5!e | !3!d!2!B!1!A!3!c !2!B!1!G !3!(3G!2!G!1!G |1 !2!e!5!aag !5!age!4!g :|2 !2!e!5!aag !5!a!4!g!1!e!2!f :|
 !3!g2gf gaba | !3!gggb !4!agef | !3!gggf !3!gbag | !1!e!4!aag !4!agef|
 !3!g2gf !3!gaba | !3!gggb !4!a2ga | !5!bg!4!af !3!gf!1!e!2!d | !1!e!4!aa!3!g !5!a2||
+
+
 
 
 X:29
@@ -436,9 +491,12 @@ K: Amix
 | !2!ef | "em"!4!g2fg !2!e2ef | !4!gefd !2!e!5!aa2 | !4!ge!3!fd !2!e!1!d!2!c!1!d | !2!eage "D"!1!d2ef|
 "em"!4!g2fg !2!e2ef | !4!ge!3!fd !2!e!5!a!5!a2 | !5!bg!4!af !4!gfed| !2!e!5!aaf !4!gfe!1!d |
 
+
+
 X:30
 %%etbk:tnset id:11,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11114
+%%etbk:pldat 2013-04-30T16:30
 T: Tom Doherty's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -451,9 +509,12 @@ f2df Bfdf | fefg a2ga | !5!bg!4!af !3!g!1!efa | !1!e!2!c!1!A!2!c !3!e!2!f!3!g!4!
 |: !5!b!1!BBB !3!f!1!BBB | !5!b!1!BBB !3!f3!5!b | !5!b!1!BBB !3!f!1!BBB  | !3!e!2!c!1!A!2!c !3!e!2!f!3!g!4!a |
 bBBB fBBB | bBBB f3b | bgaf gefa | ecAc efga :|
 
+
+
 X:31
 %%etbk:tnset id:11,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/978
+%%etbk:pldat 2013-04-30T16:30
 T: Old Maids Of Galway, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -466,9 +527,12 @@ eB BB eBdB|A2 GA BABd|eB BB eBdB|(3ABA GA BGG2||
 !3!g!5!b!4!a!3!g !2!e!3!g !1!d!2!e|!3!gbag !2!e!4!a !3!a!4!a|!3!gabg !2!ee!1!d!3!B|!2!A2 GA BGG2|
 !3!gbag eg de|gbag ea aa|gabg e2dB|A2 GA BGG2||
 
+
+
 X:32
 %%etbk:tnset id:11,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2348
+%%etbk:pldat 2013-04-30T16:30
 T: Mike Flannagan's
 T: The Cavan
 Z: Piano Box Version by Martin Fleischmann
@@ -480,6 +544,8 @@ K:Edor
 |: "em"!5!B!1!E (3EEE !1!E2!5!e!4!d| !2!B!1!E E!4!A "bm"!2!F!1!D!2!F!4!A | "em"!5!BE (3EEE !2!B!3!c!4!d!5!f |1 "bm"!4!e!3!d!2!B!1!A !2!F!1!E!2!F!4!A :||2 "bm"!4!e!3!d!2!B!1!A !2!Fz !1!D!2!F ||
 "G"!1!G2 !4!dG !5!eG!4!dG | !3!(3G!2!G!1!G !5!d!3!B "D"!1!A!2!F!1!D!2!F | "G"!1!G2 dG eGdG | "D"!4!e!5!f!3!d!2!B !1!A!2!FDF |
 "G"!1!G2 dG eGdG | !3!(3G!2!G!1!G dB "D"AFDF | "em"!1!E!2!F!3!G!4!A !2!B!3!c!4!d!5!f | "bm"!4!e!3!d!2!B!1!A !2!FEFA ||
+
+
 
 X:33
 %%etbk:tnset id:12,pos:1,rep:3
@@ -495,6 +561,8 @@ K: Ador
 !1!E!3!AAG !1!ABc!4!d | !3!e2!5!a!4!f !5!g!3!e!2!d!1!B | !2!dd!1!Bd !3!efge |1 !2!d!1!B!2!G!4!B !3!A2AG :|2 !2!d!1!B!2!G!4!B !3!A2!1!B!2!d ||
 |: !3!e!5!a!3!ag !3!a2ga | !4!bgab !2!g!1!e!2!d!1!B | !2!ddBd !3!edBd | !3!e!4!g !3!f!5!a !2!g!2!d!1!Bd | 
 !3!e!5!a!3!ag !3!a2ga | !4!bgab !2!g!1!e!2!d!1!B | !2!ddBd !3!efge |1 !2!d!1!B!2!G!4!B !3!A2!1!B!2!d :|2 !2!d!1!B!2!G!1!B !3!A2AG ||
+
+
 
 
 X:34
@@ -513,6 +581,8 @@ K: Ador
 | !3!e3!5!a ag!2!ef | !4!g3a !4!g!3!e!2!d!1!B | !1!cccd !3!eged | !1!c!2!AAG !2!A4:|
 
 
+
+
 X:35
 %%etbk:tnset id:12,pos:3,rep:3
 T: Lilac, The
@@ -526,6 +596,8 @@ K: Ador
 !4!e3!3!d !2!c!1!A (3AAA | !3!cd ed c!5!AzA | !5!a3g !2!e3!1!d | !3!c!2!A!1!G!3!B !2!!1!A4:|
 !2!e2 !5!ag !2!e2e!1!d | !3!cded cAAA | !5!e2ed !3!c2!4!d!2!e | !2!e2!4!a!5!b !4!a!3!g!2!e!1!d |
 !2!e2 !5!ag !2!e2e!1!d | !2!cded !3!c!1!A (3AAA | !5!e3d !3!c!1!AAA | !3!BA!1!G!3!B !2!!1!A4:||
+
+
 
 X:36
 %%etbk:tnset id:13,pos:1,rep:3
@@ -542,6 +614,8 @@ K: Ddor
 !2!c2!5!g!2!c !5!a!2!c!5!g!2!c | !2!c2!5!gc !1!A!3!dd!1!B | !2!c2!5!gc !5!ac!5!gc | !1!A!5!c!2!G!1!E !1!E!2!G!3!A!4!B |
 !2!c2!5!gc !5!ac!5!gc | !2!c2!5!gc !1!A!3!dd!4!e | !5!f3d !4!eeed | !2!c!1!A!1!G!2!c !1!A!5!dd!4!c ||
 
+
+
 X:37
 %%etbk:tnset id:13,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/77
@@ -556,6 +630,8 @@ K: Dmaj
 !2!FFF!1!G !2!AB=c!3!B | !1!A!3!dd!2!c !1!defg | !5!af!4!ge !1!d2!5!e!4!d | !3!c!1!A!3!G!1!E !2!F!1!D D2:|
 |:!1!fde!4!g !3!f!1!d!5!e!3!c | !1!A!3!ddd !1!A!3!d!1!d!4!g | !3!fdeg !3!f!1!d!5!e!3!c | !1!G!3!BA!1!G !2!F!1!DD2 |
 !3!fdeg !3!fd!5!ec | !1!A!3!dd!2!c !1!defg | !5!af!4!ge !1!d2!5!e!4!d | !3!c!1!A!3!G!1!E !2!F!1!D D2:|
+
+
 
 X:38
 %%etbk:tnset id:13,pos:3,rep:3
@@ -572,6 +648,8 @@ K: Emin
 |:!2!B3!4!d !2!eeef | !4!ge!5!af !4!gfe!1!d | !2!B2!1!EF G!4!A!2!B^c | !4!dB!1!A!3!G !2!FGAF |
 !1!E2!3!BE !5!dE!3!BE | !2!BBAd !4!dBA!3!=c | !2!B!1!EEF G!4!A!2!B^c | !4!dB!1!A!2!F !2!F!1!EE2:||
 
+
+
 X:39
 %%etbk:tnset id:13,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/58
@@ -586,6 +664,8 @@ K: Emin
 !2!E2!1!B,B, !2!EGFE | !2!D2!1!A,A, !2!DEFD| !1!E2 !3!BE !5!dE!3!BE| !1!DEF!4!A !5!B!1!E E2:|
 |:!5!e!1!B!2!B!1!B !2!egfe| !1!defa !4!gfe!1!d| !2!B!1!d!2!ef !4!gfge | !3!fgaf !4!gfed|
 !2!e!1!B!2!B!1!B !3!G!5!B!2!F!5!B | !1!E!3!BB!2!A !3!B!1!def | !4!g2ge !3!f2fd| !2!efe!1!d !2!B!1!A!3!F!1!D:|
+
+
 
 X:40
 %%etbk:tnset id:14,pos:1,rep:3
@@ -602,6 +682,8 @@ K: Dmaj
 |: !3!f2!4!a!5!b !4!a!3!f!1!d!3!f | !5!aafd !2!e!1!d!2!B!1!d | !1!A!2!B!1!d!2!e !3!f!1!d!2!d!1!d | !2!ed!3!fd !2!e!1!d!2!B!1!d |
 !1!AB!1!de !3!f!1!d !3!(3d!2!d!1!d | !2!edfd !2!ed!2!B!4!d | !1!A2 !4!dB !1!A2!2!FF | !4!AF!1!EA !2!F!1!D D2 :|
 
+
+
 X:41
 %%etbk:tnset id:14,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/363
@@ -617,6 +699,8 @@ K: Edor
 |:"em"!2!B!4!ee!3!d !4!e2de | "D"!5!f2!3!df !4!e!5!f!3!d!2!B | !1!AB!1!A!2!F !1!D2!2!FD | !2!F!4!A!1!AA !2!B!1!A!2!F!1!A |
 "em"!2!B2!4!ed !4!eede | "D"!5!f2!3!df !4!ef!3!d!2!B | !1!A2Bc !4!d!1!A!5!e!3!c | !4!dB!1!A!2!F "em"!1!E4:|
 
+
+
 X:42
 %%etbk:tnset id:14,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/477
@@ -631,9 +715,12 @@ K: Ador
 | "am"!2!e!4!g!2!gg !3!a2!4!ba | "em"!2!gabg !3!ag!1!e!2!d | "am"!1!e!2!ggg !3!a2!2!g!3!a | "em"!5!bg!4!af !4!ged!4!g |
 "am"!1!e!2!g!1!g!2!g !3!ag!4!bg | !3!agbg !3!ag!1!e!2!d | !1!e!2!g!1!g!2!g !3!a2!2!g!3!a | "em"!5!bg!4!af !4!g!2!e!1!d!2!B |
 
+
+
 X:43
 %%etbk:tnset id:15,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/63
+%%etbk:tube1 https://www.youtube.com/embed/Ok4udRCsF_E
 T: Last Night's Fun
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -644,6 +731,8 @@ K: Dmaj
 |:!4!A!1!D!2!FD !4![A3D]!5!B | !4!ADF!1!D !1!EF!3!G!5!B | !4!ADFD !4!A!1!A !2!B!3!d |1 !4!e2!5!fe !3!d!2!BB!1!A:|2 !4!e2!5!fe !3!d!2!B!1!A!2!B||
 | !1!d!3!f!2!f!3!f !5!a!3!f!2!f!3!f | !1!defd !2!edfe| !1!d!3!fff !5!afdf | !2!egfe !1!d!2!B!1!A!2!B|
 !1!d!3!fff !5!a!3!fff | !1!defd !2!e2!3!f!4!g | !5!a2!5!b!3!f !5!af!2!e!4!g | !3!f!1!d!2!e!1!d !2!B!4!dd!1!A |
+
+
 
 X:44
 %%etbk:tnset id:15,pos:2,rep:3
@@ -660,6 +749,8 @@ K: Ador
 |:!5!a2!2!e!5!a !3!ag!1!eg | !3!ag!4!bg ag!1!e!3!f | !4!g!2!e!1!d!3!c !2!B!1!G!2!B!3!d | !5!g2!2!ga !4!bg!1!e!2!g|
 !3!a2!1!e!3!a !3!ageg | !3!agbg !3!ag!1!e!2!g | !1!d!2!d!1!d!2!e !4!g3e | !1!d!2!B!1!G!2!B !2!B!1!AA2:||
 
+
+
 X:45
 %%etbk:tnset id:15,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/874
@@ -672,6 +763,8 @@ R: reel
 K: Ador
 |:!3!e3!5!g !3!e!1!A !3!(3A!2!A!1!A | !3!e!5!ged !1!B!2!A!1!B!2!d | !3![e3A]d !3!e!1!A!2!A!1!A | !2!B!5!edB !2!B!1!AA2:||
 |:!3!AAAB !1!E!2!G!4!B!2!G | !3!A2!1!AB !4!ded!2!B | !1!AAA!2!B !1!G!2!A!3!B!4!d | !5!e2dB !2!B!1!AA2:|
+
+
 
 X:46
 %%etbk:tnset id:16,pos:1,rep:3
@@ -688,6 +781,8 @@ K: Amix
 |: "G"!4!gf!2!ef gfef | !4!gf!1!e!2!c "D"!3!d2 cd | "A"!4!e2!1!A2 !3!ABcA| "E"!4!B!2!=G!1!E!2!F !3!G3 F |
 "A"!1!E2!3!A2 !1!ABc!4!d | !3!efe!2!c "D"!3!d2 !2!c!3!d | "A"!2!e2!5!ag age!1!d | !3!c2!1!A2 A4:|
 
+
+
 X:47
 %%etbk:tnset id:16,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/237
@@ -701,6 +796,8 @@ K: Amix
 |: "A"!3!cAAB cdec | "G"!4!d2 !5!g!4!d !2!BGGB | "A"!3!cBAB cd!5!ec | "D"!4!d!1!A!5!e!3!c "A"!1!A4:|
 | "A"!3!c!1!def "G"!4!g2eg | "D"!3!f2df !4!gfe!1!d | !2!c!1!def "G"!4!g2ag | !3!f!1!d"A"!5!e!3!c !1!A4 |
 | !3!c!1!def "G"!4!ggeg  | "D"!3!ffdf "G"!4!g2fg | !5!afge !3!fd!5!e!3!c | !4!d!1!A"A"!5!e!3!c !1!A4 ||
+
+
 
 X:48
 %%etbk:tnset id:16,pos:3,rep:3
@@ -717,6 +814,8 @@ K: Emin
 |:"em"!4!gfeg !3!fe!1!d!2!e | !1!B!2!eee !1!B!2!eee | !4!gfeg !3!fe!1!d!2!B | "D"!1!AcB!1!A "em"!3!G!1!EE2 |
 "em"!4!gfeg !3!fe!1!d!2!e | !1!B!2!ee!1!d !2!e2ef | !4!ge !3!(3.f.e.d !5!e!2!B!4!d!2!B | "D"!1!AcB!1!A "em"!3!G!1!EE2 :|
 
+
+
 X:49
 %%etbk:tnset id:17,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/558
@@ -731,6 +830,8 @@ K: Edor
 !2!B,!5!E!2!EE  !1!DEF!4!A | !2!B2 !5!ee !4!dB!1!A!3!F | !1!DEF!4!A !4!ABA!3!F | !2!EGFD !2!E4 :|
 |: !2!B2!4!ee !5!f!4!e!3!d!2!B | !4!e2fe !3!d!2!B!1!A!2!F | !1!A3 !2!B !3!d2 !5!fd | !4!edef !3!dd!2!B!1!A | 
 !2!B2!4!ee !5!fed!2!B | !4!e2fe !3!d!2!B!1!A!3!F | !1!DEF!4!A ABA!3!F | !2!EGFD !2!E4 :|
+
+
 
 X:50
 %%etbk:tnset id:17,pos:2,rep:3
@@ -747,6 +848,8 @@ K: Edor
 !2!B2!4!ee !5!feed | !2!B2!4!ee !3!d!2!B!1!A!3!d | !1!B2!2!ee !3!fee!1!d | !2!BABc !4!dBA!4!d |
 !1!B2!2!ee !3!feed | !2!e!4!gfe !1!d4 | !5!f2!4!e!3!c !4!d!2!B!3!c!1!A | !2!BBBc !4!dcBA||
 
+
+
 X:51
 %%etbk:tnset id:17,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/73
@@ -762,6 +865,8 @@ K: Bmin
 |:!4!d2!3!dc !3!d!5!fed | !2!c!1!A!4!eA !5!fA!4!eA | !3!d!2!c!1!B!2!c !1!d!2!e!3!f!5!b | !4!a!3!f!1!e!3!c !2!B2:|
 | !5!b!1!B!3!fB !5!bBf!1!B | !3!cBAc !5!ecBA | !5!b!1!B!3!fB !5!bBfB | !4!cBAB !3!c!1!B !3!(3B!2!B!1!B |
 !5!bB!3!fB !5!bBfB | !3!cBAc !5!ecBA |  !2!Bcd!3!c !1!defg | !5!a!3!f!1!e!3!c !4!d!2!BBA|
+
+
 
 X:52
 %%etbk:tnset id:18,pos:1,rep:3
@@ -782,6 +887,8 @@ K: Ador
 
 
 
+
+
 X:53
 %%etbk:tnset id:18,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2212
@@ -797,6 +904,8 @@ K: Ador
 |:!5!a3 a age!1!d | !2!B!1!def !4!g2fg | !5!a3 a agef | !4!ge!1!d!2!B B!1!A A2 |
 !5!a3 a age!1!d | !2!Bdef !4!g3 !4!a | !5!b2 !4!aa ag!2!ef | !4!ge!1!d!2!B B!1!A A2:|
 
+
+
 X:54
 %%etbk:tnset id:18,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/368
@@ -811,6 +920,8 @@ K: Ador
 | !5!c2!4!B!5!c !3!AG!1!E!2!F | !1!G2!3!BG !5!dGBG | !5!c!3!A!4!B!2!G !3!A!1!EE!2!F | !1!GABG A4:|
 |:!3!c!1!def !4!g2 !2!e!5!a | !5!age!1!d !3!c!1!A A2 | !3!c!1!def !4!gedg | !2!e!5!a!2!ag !2!a3a |
 | !3!bagb !2!a!1!g!2!ef | !4!ggge !1!d!2!B!1!G!4!B | !5!c!3!A!4!B!2!G !3!A!1!EE!2!F | !1!GABG !2!A4:|
+
+
 
 X:55
 %%etbk:tnset id:19,pos:1,rep:3
@@ -829,6 +940,8 @@ K: Ador
 "C"!1!c2!3!ec !4!gc!3!e!2!d | !1!cc!3!eg !5!a!4!g!2!e!1!d | "am"!2!e2!5!ag !2!eee!1!d |1 "em"!3!c!1!A!2!B!1!G "am"!1!A3!2!B |2 "em"!3!c!1!A!2!B!1!G "am"!1!A4||
 
 
+
+
 X:56
 %%etbk:tnset id:19,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1988
@@ -841,6 +954,8 @@ R: reel
 K: Dmaj
 !5!dcA!2!G !1!E!2!F!4!{A}!2!F!2!F | !4!A!3!G!2!G!3!G !1!E!2!F!4!{A}!2!F!2!F  |1 !5!dcAG !1!E!2!F!4!{A}!2!F!2!F  | !4!A2!3!G!2!E E!1!DD2:|2 !4!A!3!G!2!G!3!G !1!E!2!F!4!{A}!2!F!2!F  | !4!A2!3!G!2!E ED!5!A!1!D ||
 |:!2!(3EF!4!G !2!AB !4!=c3B | !2!A!5!d!3!d2 !4!efed | !3!dc!1!A!3!G !1!EF!3!GE |1 !4!A2GE ED!5!AD:|2 !4!A2!3!G!2!E E!1!DD2||
+
+
 
 
 X:57
@@ -858,6 +973,8 @@ K: Gmaj
 |: !4!g3e !3!fedf | !2!efge !3!fedf | !2!e!1!B!2!B!1!B !2!efge | !3!fdef !4!g3!2!f |
 !3!gbag !2!e!5!gfe | !2!d!1!B!3!BA BA!1!G!2!F | !1!GBdB !2!AcBA | !1!G!2!E!1!DE !4!G4:||
 
+
+
 X:58
 %%etbk:tnset id:20,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/733
@@ -872,6 +989,8 @@ K: Emin
 !2!E3 D EE FA|BBAF DEFA|!2!B!1!A !2!B!3!d !4!e!5!f !4!e!3!d|!2!BB!1!A!2!F FEED:|
 |:!2!B!5!ee!4!d Beed|!2!BB!1!A!2!F !1!D!5!d!1!d!2!e|!3!f2 fe fgfe|!1!d!2!B!1!A!3!F !1!DEF!4!A
 !2!B!5!eed Beed|BBAF Ddde|f2 fe fgfe|dBAF E3 z:|
+
+
 
 X:59
 %%etbk:tnset id:20,pos:2,rep:3
@@ -888,6 +1007,8 @@ K: Dmaj
 |:!5!"D"d!3!f{!4!g}!3!f!2!e !3!f!4!g!3!f!2!e|(!1!dd)!4!d!2!B {!4!d}!2!B!1!A!2!F!1!A|!2!"A"B!3!c!2!c!3!c !5!e!3!c!1!A!3!c|!2!B!1!A!2!G!4!B !3!"D"A!1!D!2!F!3!A|
 !5!"D"d!3!f{!4!g}!3!f!2!e !3!f!4!g!3!f!2!e|!1!d!3!c!4!d!2!B {!4!d}!2!B!1!A!2!F!1!A|!1!"G"G!2!B !2!B{!4!d}!2!B !1!"D"A!2!F !2!F{!4!A}!2!F|!1!"A"E!2!F!3!G!1!E !2!"D"F!1!D!1!D2:|
 
+
+
 X:60
 %%etbk:tnset id:20,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/605
@@ -902,6 +1023,8 @@ K: Gmaj
 !3!B3B BAGA | !3!B2GB A!1!G!2!E!1!G  | !3!B!4!d!5!e!4!d !3!B!4!c!5!d!4!c | !2!AcB!1!G A!1!G!2!E!4!G ||
 |: !1!D!2!GGG !1!D!2!G!4!BG | !1!D!2!G!4!BG !3!AG!1!E!2!G | !1!D!3!GG!2!F !1!G3!2!B | !4!dBAc !2!BGGG :|
 |:d!2!d!1!B!2!d !3!ef!5!ge | !2!d!1!GGG !2!A!1!GGG | dd!1!B!2!d !3!ef!5!g!3!g | !4!a2bg !4!ag!1!e!3!g :|
+
+
 
 X:61
 %%etbk:tnset id:21,pos:1,rep:3
@@ -918,6 +1041,8 @@ K:Dmaj
 |: !5!a2 !3!f!2!d !1!A!3!d!5!f!3!d | !4!efed cAA2 | !4!a2 !2!fa !5!b!3!g!2!e!1!d | !1!B!2!ee!1!d !2!efge |
 | !3!fffa !4!ggge | !3!f2ef !1!d!2!B!1!A!3!G | !2!F2!3!A!2!F !1!G!2!B!5!e!4!d | !2!c!3!e!5!a!4!g !3!f!1!dd2:||
 
+
+
 X:62
 %%etbk:tnset id:21,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/762
@@ -933,6 +1058,8 @@ K: Dmaj
 |:!5!a3g !3!fffe | !1!d2!4!d!1!A !2!B!1!GzG | !2!d!4!g!2!gg !4!b!2!ggg | !4!a!2!fff !3!g2 zz|
 !1!D2!2!FF !3!ADFA | !5!d!3!fff !4!g2 fe | !1!!4!d3B !1!AB!1!d!3!f | !5!afe!4!g !3!f!1!d d2:|
 
+
+
 X:63
 %%etbk:tnset id:22,pos:1,rep:3
 T: Beare Island
@@ -947,6 +1074,8 @@ K: Edor
 "em"!2!B,!5!E!1!EF !3!!1!G3A | !3!BAGA !3!B!1!def | !4!g2fg !2!egfe |1 "bm"!1!d!2!B!1!A!2!F "em"!1!E3E:|2 "bm"!1!d!2!B!1!A!2!F "em"!1!E3 !2!A||
 |:"em"!3!B!5!e!2!ef !4!gef!1!d | "D"!2!Bd!1!A!3!G !2!F!1!D!2!F!3!A | "em"!2!B!5!e!2!ef !4!gef!1!d | "bm"!1!B!2!e!1!d!3!f "em"!2!e4 | 
 "em"!2!e!1!d!2!Bc !4!d!3!d!4!dc | "D"!2!BcdB !1!A!2!F!1!D!2!F | "em"!1!G!2!BBB !1!A!3!F!1!D!3!F |1 "bm"!4!GE!3!FD "em"!2!!1!E3!2!A:|2 "bm"!4!GE!3!FD "em"!2!E3!1!E||
+
+
 
 X:64
 %%etbk:tnset id:22,pos:2,rep:3
@@ -965,6 +1094,8 @@ K: Ddor
 "am"!2!cBc!4!e !5!g!4!e!2!c!4!e | "dm"!1!d2 !5!ad!5!bd!5!ad | "am"!5!agag !2!e^fge | !5!afge !1!d4:|
 |"var bar 3"!5!A!1!DD!2!E !1!F!2!A!5!d!4!e|
 
+
+
 X:65
 %%etbk:tnset id:22,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2872
@@ -981,6 +1112,8 @@ K:Gdor
 |: "B"!3!B2 !2!B!2!B !5!g!2!B!5!f!2!B | !2!B2 !5!f!4!d "F"!3!c!2!A!1!F!2!A | "B"!3!B2 !2!B!2!B !5!g!2!B!5!f!2!B | !5!g!4!f!3!d!1!c !3!B!1!G !3!(3G!2!G!1!G |
 "gm"!2!ABcA !3!B!4!c!3!d!4!f | !5!g!3!d!4!f!3!d "dm"!2!c!1!A !3!(3A!2!A!1!A | "gm"!1!G2!2!B!1!d !3!g!5!bag | "dm"!2!f!1!d!4!c!3!B !2!A!1!FFA:|
 
+
+
 X:66
 %%etbk:tnset id:23,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1270
@@ -996,6 +1129,8 @@ K: Dmix
 | "D"!3!e2!2!dd !3!edcd | !3!e!2!d!1!d!2!d !3!efgf | !3!e2dd !3!e!2!d!1!c!2!B | "A"!1!ABcd "D"!5!e!4!dd2 |
 | "D"!3!e2!2!dd !3!edcd | !3!eddd !3!ef!5!g!2!e | !5!a2!4!g!2!e !3!f!1!d!5!e!3!c | "A"!1!ABcd "D"!5!e!4!dd2||
 
+
+
 X:67
 %%etbk:tnset id:23,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/595
@@ -1009,6 +1144,8 @@ K: Gmaj
 :"G"!2!B!1!G!4!{B}!2!G!2!G !1!D!2!G!2!G!2!G | !4!B!1!G !3!(3G!2!G!1!G  "C"!3!cedc | "G"!2!B!1!G!4!{B}!2!G!2!G  !1!D!3!GFG | "D"!4!A2!1!A!3!d !5!f!4!d!2!c!1!A:|
 "G"!3!d!5!g!3!gf !3!g!2!g!3!gf | !1!d!3!g!2!g!3!g !5!b!3!g!4!a!2!f | "D"!1!d!3!ffe fgfe | !1!d!3!f!2!f!3!f !5!a!3!fff |
 "G"!1!d!3!ggf !3!g3f | !1!d!3!g!2!g!3!g !5!b!3!g!4!ag | !5!b!3!g!2!g!3!g !4!a!3!g!3!gf | "D"!1!d2!3!d!4!e !5!f!3!d!2!c!1!A ||
+
+
 
 X:68
 %%etbk:tnset id:23,pos:3,rep:3
@@ -1025,6 +1162,8 @@ K: Dmix
 |:"C"!2!e2!4!gg !2!e!1!d!2!c!1!d | !2!efge !1!c3!1!d | !2!e!4!g!3!g!4!g !5!a2ge | "D"!1!dfe!1!d !3!c!1!AA2 |
 "C"!2!e!4!g!3!g!4!g !5!a!4!g!3!g!4!g | !2!efge !1!defg | "D"!5!a2!4!g!2!e !3!f!1!d!4!e!2!^c | !3!dfed !2!c!1!AA2:|
 
+
+
 X:69
 %%etbk:tnset id:24,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/596
@@ -1039,6 +1178,8 @@ K: Gmaj
 "G"!4!B!1!G!2!G!1!G !3!AG!1!EG | !4!B!1!G !3!(3G!2!G!1!G !2!B!2!d!5!g!3!d  | !2!B3!1!G "D"!3!AG!1!E!2!D | "G"!1!E!3!G G!2!F !1!G2 :|
 | !2!B!3!c |: "G"!1!dega !5!bgag | !2!e!3!g!1!dg eg!1!d!2!B | !1!dega !5!bgag | "D"!2!e!4!aag !4!a{b}age |
 "G"!1!dega !5!bgag | !2!e!3!g!1!dg e{g}e!1!d!3!c | !2!B3!1!G "D"!3!AG!1!E!2!D | "G"!1!E!3!G G!2!F !1!G2 :|
+
+
 
 X:70
 %%etbk:tnset id:24,pos:2,rep:3
@@ -1056,6 +1197,8 @@ K: Ador
 |: "am"!2!e2!4!aa !5!bg!4!a!3!g | "G"!2!ee!1!d!3!B !1!GAB!4!d | "am"!2!e2!4!aa bga!3!g | "em"!4!gede g2eg |
 "am"!5!a3f "G"!4!g!3!g!4!ge | !1!d3!3!B !1!GAB!4!d | "am"!5!e!1!A (3AAA "em"!2!efge |1 !1!d!2!B!1!G!2!B "am"!1!A2 B!4!d:|2 !1!d!2!B!1!G!2!B "am"!1!A3!2!G||
 
+
+
 X:71
 %%etbk:tnset id:24,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/192
@@ -1069,9 +1212,12 @@ K: Bmin
 |: "bm"!2!B!1!B!2!Bc !4!dB!1!A!2!F | !5!B2!2!B!3!c !1!d!3!fe!1!d | !2!B{d}!2!B!2!Bc !4!dcdB | "f#m"!1!A!2!B!1!de !3!fde!1!d:|
 |: "D"!1!d!2!f!4!af !5!bfaf | !1!df!4!a!2!f "A"!4!g!4!gfg | "D"!5!afge !1!d3!2!B | "A"!1!A!2!B!1!de !3!fde!1!d:|
 
+
+
 X:72
 %%etbk:tnset id:25,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/496
+%%etbk:tube1 https://www.youtube.com/embed/0Mi-szr1Sl0
 T: Glen of Aherlow, The
 T: Lafferty's
 Z: Piano Box Version by Martin Fleischmann
@@ -1084,6 +1230,8 @@ K: Edor
 "em"!5!B2!4!A!2!F BFAF | !1!E!2!D!3!EF !3!ED!1!B,!1!A, | !1!B,2!2!EE !1!D!2!E!3!F!4!A | "bm"!5!BBA!2!F "em"F!1!EE2 :|
 |: "em"!5!e!1!B!2!B!1!B !3!efge | "D"!4!f2!2!dd !1!A!2!d!4!fd | "em"!3!e!1!B!2!B!1!B !2!egfe | "bm"!1!d!2!B!1!A!2!F "em"F!1!EE2 |
 "em"!5!e!1!B!2!B!1!B !3!efge | "D"!4!f2!2!dd !1!A!2!d!4!fd  | "em"!1!B3!2!d !2!egfe | "bm"!1!d!2!B!1!A!2!F "em"F!1!EE2 :|
+
+
 
 X:73
 %%etbk:tnset id:25,pos:2,rep:3
@@ -1100,6 +1248,8 @@ K: Edor
 |: "em"!1!B2 {g}!2!eB !2!egfe | "D"!1!defa afe!1!d | "em"!1!B2!2!e!1!e !1!efg!5!b | "bm"!4!agfa "em"g!1!ee!2!d |
 "em"!1!B2 {g}!2!eB !2!egfe | "D"!1!defa af!1!d!3!f | "em"!1!efga !5!bagf | "bm"!1!e!4!gf!1!d "em"!2!e4:|
 
+
+
 X:74
 %%etbk:tnset id:25,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2922
@@ -1114,6 +1264,8 @@ K: Edor
 "em"!5![B3E]!4!A !5!B!1!E !3!(3E!2!E!1!E | !2!BdAd !2!Bd!5!e!4!d | !3!fde!1!d !2!BABd | "bm"dBAd "em"BE E2:|
 |: "em"!2!e{g}e!1!Be !4!geBg | !2!eBef !4!gfe!1!d | "D"!3!d2!1!Ad !5!fde!3!d | !2!B!1!B!2!Bc !4!d!1!A!2!F!1!A |
 "em"!5!e2!1!B!2!e !4!geBg | !2!eBef !4!g!2!fga | !5!bg!4!a!2!f !4!gfe!1!d | "bm"!2!B!1!d!2!e!4!g "em"f!2!ee2 :|
+
+
 
 X:75
 %%etbk:tnset id:25,pos:4,rep:3
@@ -1130,9 +1282,12 @@ K: Bmin
 |: "bm"!2!f2!5!ba !2!f!4!a!1!e!3!d | "A"!2!cA!2!c!3!e !5!a!3!e!2!c!3!e | "bm"!2!f2!5!ba !2!f!4!a!1!e!3!d | "f#m"!2!cdec "bm"!3!d!1!B !3!(3B!2!B!1!B |
 "bm"!2!f2!5!ba !2!f!4!a!1!e!3!d | "A"!2!c!1!A!2!c!3!e !5!a!3!e!2!c!1!A | "bm"!2!B2!4!dB "f#m"!3!c!1!de!4!g | !3!fe!1!d!2!c "bm"!3!d!1!B !3!(3B!2!B!1!B:|
 
+
+
 X:76
 %%etbk:tnset id:26,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/517
+%%etbk:pldat 2013-04-30T16:18
 T: Pigeon On The Gate, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-04-11
@@ -1145,9 +1300,12 @@ K: Edor
 |: "em"!2!B!5!e!3!ed !4!efe!2!d | !1!B!2!def !5!ge!2!d!1!B | "D"!1!A!3!ddc !3!d{e}dd!2!B | !1!A2 !3!FE !1!DE!3!F!4!A |
 "em"!1!B!3!e!3!ed !3!efed | !1!B!2!def !5!g2 !3!fg | "D"!5!af!4!ge !3!fd!5!ec | !4!d!2!B!1!A!2!F "em"!1!E4:|
 
+
+
 X:77
 %%etbk:tnset id:26,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/384
+%%etbk:pldat 2013-04-30T16:18
 T: Dublin, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1159,9 +1317,12 @@ K: Dmaj
 |: "A"!5!e!1!A !3!(3A!2!A!1!A !5!e!1!A!5!f!1!A | !5!e!1!A !3!(3A!2!A!1!A !2!B!1!A!2!F!1!A | !5!e2!2!ed !2!e!4!gfe | !1!d!2!B!3!c!1!A {d}!2!B!1!A!2!F!1!A :|
 |: "D"!4!d3c !4!d!1!A!2!F!1!A | !4!dcd!1!A !2!F!1!D!2!F!1!A |1 !4!d2!4!d!3!c !1!d!3!fe!1!d | "A"!3!c!1!A!2!B!1!G !4!A!2!F!1!E!2!F :|2 !4!d2!1!d!3!f "A"!2!e3!4!g| !3!f!1!d!2!Bc "D"!4!d4||
 
+
+
 X:78
 %%etbk:tnset id:27,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/98
+%%etbk:pldat 2013-04-30T16:09
 T: Sally Gardens, The
 H: Created 2013-02-19 /  Last Modified 2013-04-11
 M: 4/4
@@ -1173,9 +1334,12 @@ K: Gmaj
 |: "G"!1!d!3!ggf g2!1!d!2!e | !3!g2!5!bg !4!ag!1!e!3!g | "D"!1!e!4!aag a2!1!e!3!g | !4!a2bg ag!1!e!3!g |
 "G"!1!d!3!ggf g2!1!d!2!e | !3!g2!5!bg ag!2!e!4!g | !1!d2!2!B!1!d !2!efge | "D"!1!d!3!BAB "G"!1!G4:|
 
+
+
 X:79
 %%etbk:tnset id:27,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/102
+%%etbk:pldat 2013-04-30T16:09
 T: Johnny's Wedding
 T: Sean Frank's
 H: Created 2013-02-19 /  Last Modified 2013-04-11
@@ -1188,9 +1352,12 @@ EF|: "em"!3!G/F/E!5!BE GEBE | "bm"!2!FD!4!AD FDAD | "em"!3!G/F/E!5!BE GEBE | "bm
 |: "G"!1!G2 G!2!F !1!G!3!BdB | "D"!1!A!3!B!1!A!3!G !2!FG!4!A2 | "em"!2!B!5!e!2!ed !2!efge | "bm"!3!fedf "em"!2!e3e |
 "em"!2!efe!1!d !2!BcdB | "bm"!1!AB!1!A!3!G !2!F!1!D-D!2!F | "em"!3!GFE!2!F !1!G!3!B!5!d!3!B | "bm"!1!A!3!GFG "em"!1!E3F :|
 
+
+
 X:80
 %%etbk:tnset id:27,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/197
+%%etbk:pldat 2013-04-30T16:09
 T: Star Of Munster, The
 H: Created 2013-02-19 /  Last Modified 2013-04-11
 M: 4/4
@@ -1201,6 +1368,8 @@ K: Ador
 !3!c2Ac !2!B!1!A!2!G!4!B | !3!A!2!G!1!E!3!F !4!G!2!E!1!D!4!G | !1!E!3!AA!2!G !1!ABc!4!d  | "em"!5!e!3!c!4!d!2!B "am"!1!A4:|
 |: "am"!1!e!3!aab ag!1!eg | !3!agbg ag!1!ef | "G"!3!g!2!g!3!ga gf!1!ef | !3!(3gfe !4!af !3!gf!1!e!2!d |
 "am"!1!e!3!aab ag!1!eg | !3!agbg ag!1!ef | "G"!3!g2g!1!e !4!a2ga |1 !5!bg!4!af !4!g!2!e!1!d!4!g:|2 bgaf !4!ge!1!d!2!B:|
+
+
 
 X:81
 %%etbk:tnset id:28,pos:1,rep:3
@@ -1217,6 +1386,8 @@ K: Gmix
 |: !1!G2!2!B!3!d !5!gdB!1!G | !1!FF!2!A!3!c !5!fcA!1!F | !1!G2Bd gdB!1!G | !3!cccd !3!c!1!A!2!^F!4!A |
 !1!G2Bd gdBG | !1!F2Ac fcAF | !1!GA!3!B!5!d !4!c!2!A!1!G!2!F | !1!D2!3!G!2!^F !3!G2 :||
 
+
+
 X:82
 %%etbk:tnset id:28,pos:2,rep:3
 T: Paddy Fahey's
@@ -1230,6 +1401,8 @@ K: Gmix
 !3!B3d c2dc | !3!B!1!G!3!GF !1!DEF!4!G | !1!GABG !3!cedc |1!2!(3Bcd !1!A!2!^F !1!G3A:|2!2!(3Bcd !1!A!2!^F !1!GAB!4!c||
 |:!2!d2!4!gg !2!d!4!g!1!B!1!c | !2!d!4!g!5!ag !3!^f!1!d!2!c!1!A | !2!c2!4!ff !2!c!4!f!1!A!1!B | !2!c!4!f!5!a!4!g !3!^f!1!d!2!c!1!A |
 !2!d2!4!gg dg!1!B!1!c | !2!d!4!gag !3!^fde!3!^f | !3!gbag !2!^f!1!d !2!(3e^fg |1!3!^f!1!d!2!c!1!A !1!GAB!4!c:|2!3!^f!1!d!2!c!1!A !1!G3A||
+
+
 
 X:83
 %%etbk:tnset id:29,pos:1,rep:3
@@ -1245,6 +1418,8 @@ K: Gdor
 !1!D!3!GGF G3A|BGGF GF!1!D!2!E|!1!F2!4!cF !5!dF!4!cF|!2!AdcA !1!G4:|
 |:!2!d!4!g!3!g!2!f !3!ggga|bggf gfde|!3!fffg fede|fgaf gf!1!d!2!c|
 !1!d!3!ggf g3a|bggf gfde|!3!f3!1!d !5!d!4!c!2!A!1!G|!1!F!5!d!4!c!2!A !1!G4:|
+
+
 
 X:84
 %%etbk:tnset id:29,pos:2,rep:3
@@ -1262,6 +1437,8 @@ K: Ddor
 !5!d2 Ad dcA!1!G|!3!F2!1!D!3!F !2!E!1!CC2|!5!d3(d d)cAG|!2!ABcA !5!!3!d3!4!e|
 !5!f!3!d!4!e!3!d !4!c!2!AA!1!G|!2!E3E E!1!D!2!C!4!E|!1!DEF!4!G !2!Addc|!2!AA!1!G!2!E E!1!DD2:|
 
+
+
 X:85
 %%etbk:tnset id:30,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/240
@@ -1276,6 +1453,8 @@ K: Dmaj
 "D"!1!D2 !3!(3FED !3!F!5!A-A!1!A | !3!dcde !5!f!3!d!1!A!2!F | "G"!1!G2!3!BG "D"!3!F!5!A!1!D!3!F | "A"!4!E!1!A,!2!C!4!E "D"!3!D2:|
 |: "A"!1!A,B,!3!C!1!D !2!EF!4!G!2!E | "D"!3!(3FE!1!D !2!E!3!F !1!GAB!4!c | "G"!5!d!2!B{d}BA !2!B!3!c!1!de | "D"!3!f2gf "A"!2!e4 |
 "D"!1!d2!3!f!1!d !3!c!5!e!1!A!3!c | !4!dcdB !1!A!2!F!1!D!2!F | "G"!1!G2!3!BG "D"!3!F!5!A!1!D!3!F | "A"!4!E!1!A,!2!C!4!E "D"!3!D2:|
+
+
 
 X:86
 %%etbk:tnset id:30,pos:2,rep:3
@@ -1293,6 +1472,8 @@ K: Gmaj
 |: "G"!4!g3e "D"!3!f3d | "em"!2!e{g}eef !2!e!1!d!2!B!1!A | !2!B!1!def !4!gfg!1!d | !2!B!1!def !4!g!1!d!2!B!1!d |
 "G"!4!g3e "D"!3!f3d | "em"!2!e{g}eef !2!e!1!d!2!B!1!A | !2!B!1!def !4!gfg!2!e | "D"!1!d!2!B!1!AB "G"!1!G4 :||
 
+
+
 X:87
 %%etbk:tnset id:30,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3808
@@ -1307,6 +1488,8 @@ K:Dmaj
 "D"!1!D2!3!F!1!D "A"!1!C!2!E!5!A!4!G | "D"!1!F!4!ddc !4!d!2!A!1!F!2!A | "G"!1!G!2!B!5!ed "A"!3!c!2!A!1!G!2!E |1 {G}!2!E!1!D!2!C!4!E "D"!1!D4,:|2 {G}!2!E!1!D!2!C!4!E "D"!1!D2!3!fg||
 |: "D"!5!a!3!f!1!df "A"!4!g!2!e!1!c!2!e | "D"!1!d2!5!e!3!c !4!d!2!A!1!F!2!A | "G"!1!G!2!B!5!e!1!G "D"!1!F!4!d!1!d!3!f | "A"!4!g!2!e{g}ed !2!ef!4!g!3!^g |
 "D"!5!a!3!f!1!df "A"!4!g!2!e!1!c!2!e | "D"!1!d2!5!e!3!c !4!d!2!A!1!F!2!A  | "G"!1!G!2!B!5!ed "A"!3!c!2!A!1!G!2!E |1 {G}!2!E!1!D!2!C!4!E "D"!1!D2!3!fg :|2 {G}!2!E!1!D!2!C!4!E "D"!1!D4,||
+
+
 
 
 X:88
@@ -1324,6 +1507,8 @@ K: Dmaj
 |: "D"!4!aa!2!fa !1!da!2!f!4!a | "A"!4!gfe!1!d !2!B!4!d!1!A2 | "D"!4!aa!2!fa !1!da!2!f!4!a  | "A"!5!bg!1!e!4!a "D"!2!f!1!dd2 | 
 "D"!4!aa!2!fa !1!da!2!f!4!a  | "A"!4!gfe!1!d !2!Bd!1!A!3!f | "D"!5!a!3!f!1!e!3!c !4!d!2!B!1!A!2!F| "A"!3!GBAG "D"!2!F!1!DD2:|
 
+
+
 X:89
 %%etbk:tnset id:31,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/637
@@ -1338,6 +1523,8 @@ K: Edor
 | "em"!5!e!1!B!2!B!1!B !2!efge | "D"!3!f!1!d!5!ad !5!bd!5!ad | "em"!2!e!1!B !3!(3B!2!B!1!B !2!efge | "bm"!3!fedf "em"!2!e2ed |
 "em"!2!e!1!B!2!B!1!B !2!efge | "D"!3!f!1!d!5!ad !5!bd!5!ad | !3!fagf !2!egfe | !1!d!2!B!1!A!2!F !1!EFG!4!A |
 |: "em"!2!B2BA !2!BB!4!dB | "D"!1!A2!2!FF !5!dF!4!AF | "em"!1!E!2!BBA B2!4!dB | "bm"!1!A!3!F!1!DE "em"!3!F!1!EE2 :|
+
+
 
 X:90
 %%etbk:tnset id:31,pos:3,rep:3
@@ -1354,6 +1541,8 @@ K: Gmaj
 "G"!3!gggb "D"!4!a3b | "G"!3!g2bg !4!agef | !3!gggb "D"!4!a3!1!d | !5!g!3!e!2!d!1!B !1!A3!2!f | 
 "G"!3!g2bg !3!gabg | !3!gabg "D"!4!aaga | "G"!5!bg!4!ag !1!e!4!g!3!f!5!a | "D"!4!g!3!e!2!d!1!B !3!A!2!G!1!E!2!F||
 
+
+
 X:91
 %%etbk:tnset id:32,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/452
@@ -1368,6 +1557,8 @@ K: Dmaj
 "D"!3!A3!2!F !1!A!2!B!4!d!2!e | !3!f!1!d!5!e!3!c !4!d2cd | "G"!2!BB!1!GB "A"!1!A!2!B!4!d!2!e | !3!ffeg "D"!3!f!1!dd2 :|
 |: "D"!2!fd!4!ad !5!bd!4!a!2!f | !1!d!2!f!4!af !2!f!1!e!2!d!1!e | "bm"!2!f!5!bba !5!b2ba | !2!f!5!baf "A"!2!f!1!e!2!e!1!e |
 "D"!2!fd!4!ad !5!bd!4!a!2!f | !1!d!3!f!5!a!3!f !3!fe!1!d!2!B | !1!A3!2!F !1!A!2!B!4!d!2!e | "A"!3!ffeg "D"!3!f!1!dd2 :|
+
+
 
 X:92
 %%etbk:tnset id:32,pos:2,rep:3
@@ -1384,6 +1575,8 @@ K: Amin
 |: "am"!5!a!4!g!3!e!1!c !3!d!5!fed | !2!c!1!A!2!GE "G"!2!!1!G4 | "am"!5!a!4!g!3!e!1!c "em"!2!d2cd | "am"!3!e!5!aag !5!a4 |
 "am"!5!a!4!g!3!e!1!c !3!d!5!fed | !2!c!1!A!2!GE "G"!2!G2E!2!G | "am"!1!A2 c!1!A !2!G!1!A!3!cd | "em"!5!ecdB "am"!3!c!1!AA2:|
 
+
+
 X:93
 %%etbk:tnset id:32,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1020
@@ -1399,8 +1592,11 @@ K: Emin
 |:!1!GA | "em"!3!B!5!e!2!ed !2!eeef | !4!ge!3!fd !5!e!4!d!3!B!2!A | "G"!1!G2!3!BG !4!dG!3!BA | !1!GA!3!B!5!e !4!d!3!B!2!A!4!d |
  "em"!1!B!2!eed !2!eeef | !4!ge!3!fd !5!e!4!d!3!B!2!A | "G"!1!GA!3!B!4!d !5!ed!3!BA | "em"!1!G!2!EED !2!E4:|
 
+
+
 X:94
 %%etbk:tnset id:33,pos:1,rep:3
+%%etbk:pldat 2013-04-30T17:41
 T: New Custom House, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1413,9 +1609,12 @@ K:Ddor
 |: "dm"!2!A2!4!d!3!d !1!A!3!d!5!f!3!d | "am"!4!ed!2!c!1!d !2!ef!4!g2 | "dm"!1!A!3!d!2!d!3!d !1!A!3!d!5!f!3!d | "am"!4!ed!2!c!3!d "dm"!4!e!3!d!2!d!3!d |
 "dm"!1!A2!3!dd !1!Ad!5!fd | "am"!4!ed!2!c!1!d ef!4!g2 | "dm"!5!af!4!ge !1!dd!2!c!1!d | "am"!2!e!5!aag "dm"!2!e!1!dd2 :|
 
+
+
 X:95
 %%etbk:tnset id:33,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2289
+%%etbk:pldat 2013-04-30T17:41
 T: Maghera Mountain
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1429,9 +1628,12 @@ S:Martin Hayes
 |: "F"!1!F2 !2!A!3!c !5!f2 !2!ef | !4!g2 ag !4!gf!1!d!3!f | "C"!2!e!1!c !3!(3c!2!c!1!c !5!a!1!c!5!gc | !2!ec!4!gc !5!ac!4!g!1!c |
 "gm"!3!B!1!GG!2!F !1!G3 !3!B | "dm"!2!A!1!F !3!(3F!2!F!1!F !1!F3 !1!A | "gm"!2!B2 !5!g!4!e !5!f!3!d!2!c!1!A | "dm"!3!BBAB "gm"!1!G4:|
 
+
+
 X:96
 %%etbk:tnset id:33,pos:3,rep:3
 %%etbk:tube1 http://www.youtube.com/embed/-j3pF5KCOBo
+%%etbk:pldat 2013-04-30T17:41
 T: Bunch Of Keys, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1446,6 +1648,8 @@ K: Gmix
 |: "G"!3!B!1!G !3!(3G!2!G!1!G !3!BG!5!dG | !3!BG (3GGG !3!BddB | "D"!2!A!1!F !3!(3F!2!F!1!F AFcF | !2!A!1!F (3FFF !2!ABcA |
 "G"!3!B!1!G (3GGG !3!BGdG | !3!B!1!GGA !3!B!4!c!3!d!4!e | "D"!5!f3e !5!f!3!d!2!c!1!A | !3!_B!5!d!1!A!2!^F "G"!1!D!3!GG2:|
 
+
+
 X:97
 %%etbk:tnset id:34,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1348
@@ -1459,6 +1663,8 @@ K: Dmaj
 "D"!5!f2!3!df "A"!4!e!2!BB!1!A | !2!B!3!d!4!e!3!f !4!g2ag | "D"!3!f2df "A"!2!e!1!B!1!B!3!c | !4!dB!1!A!3!F !2!E2!1!D2:|
 "D"!3!fgaf !1!d4| !2!fgaf "G"!3!g4 | "D"!2!f!4!aab !4!a!2!f!1!d!3!f | "A"!4!gef!1!d !2!B2!1!A2|
 "D"!3!fgaf !1!d4 | !2!fgaf "G"!3!g3a | !5!bg!4!a!2!f !4!gfe!1!d | "A"!2!c!1!def !4!g2ag||
+
+
 
 X:98
 %%etbk:tnset id:34,pos:2,rep:3
@@ -1477,6 +1683,8 @@ K: Dmix
 "D"!4!d!1!A!2!A!1!A !4!d!1!A!2!F!1!A | !4!d!1!A!2!A!1!A !3!def!4!e | !3!d!1!A!2!A!1!A !4!d!1!A!2!F!4!A | "C"!3!G!1!E !3!(3E!2!E!1!E !5!c2 !2!B!3!c |
 "D"!4!d!1!A!2!A!1!A !4!d!1!A!2!F!1!A | !4!d2!3!d^c !3!defe | !3!d!1!B!2!c!1!A !2!B!1!G!4!A!2!F | "C"!2!G!1!E !3!(3E!2!E!1!E !5!c2BA ||
 
+
+
 X:99
 %%etbk:tnset id:34,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/302
@@ -1489,6 +1697,8 @@ K: Gmaj
 | "G"!3!g2!5!b!3!g "C"!1!e2!4!g!2!e | "G"!1!de{g}e!1!d !2!BAB!4!d | "C"!2!egf!5!a !4!ge!1!d!3!B | "D"!2!AcBA !1!G!2!E{G}E!1!D:|
 |: "em"!1!E2!3!BE !5!dEBE | !1!E!4!d^cB !1!A!3!F!1!D!3!F | !1!E!2!E!1!EF !3!GFG!5!B | "D"!4!A!2!FF{A}F DFF{A}F |
 | "em"!1!E!2!BBA !2!B3 B | -!2!B!1!A!2!G!1!A B!3!^c!1!d!2!e | "D"!3!f2!5!af !4!g!3!f!1!e!3!^c| !4!d!2!B!1!A!3!F !1!DEFD:|
+
+
 
 X:100
 %%etbk:tnset id:35,pos:1,rep:3
@@ -1514,6 +1724,8 @@ K:Ddor
 |: "dm"!5!d3!3!d !3!defc | "am"!1!A!2!ccc !2!c!1!A!2!G!1!A | "dm"!3![d4A] !3!ddc!3!d | "am"!2!e!5!aag "dm"!2!e!1!d!3!d2 |
 | "dm"!3!d2ce !3!d!2!c!1!A!3!B| "am"!4!cBcd !4!c!2!A!1!G!2!E | "dm"!1!DEF!4!G !2!A!5!ddc |1 "am"!2!AGcG !2!AGGA:|2"am"!2!AA!1!G!2!E !2!E!1!D!2!C!4!E ||
 
+
+
 X:101
 %%etbk:tnset id:36,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1748
@@ -1530,6 +1742,8 @@ K: Ddor
 "C"!2!ec!4!gc !5!acgc | !2!ecgc e!5!aa2 | !5!a3g !2!eee!1!d | !2!ccAc "dm"c!3!dd2||
 |"bar 4 is normally played like this" !4!cA!1!G!2!E E!1!DD2 |
 
+
+
 X:102
 %%etbk:tnset id:36,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1428
@@ -1543,6 +1757,8 @@ K: Dmaj
 | "D"!3!de!5!fe !3!d!2!B!1!A!2!F | !5!B!2!F!4!AF "A"!1!EFFE | "D"!3!d2!5!fe !3!d!2!B!1!A!2!F | !5!B!2!F!4!A!2!F !1!D4:|
 |: "D"!3!(3FE!1!D!5!AD !3!FD!5!AD | "A"!3!G!1!E!5!BE !3!GE!5!BE | "D"!2!FD!4!AD !5!BD!4!A!2!F | "A"!3!GBAF "D"!1!D4:|
 |: "D"!4!a2ba !4!a!1!d!4!a!2!f | "A"!3!g!1!e!2!c!1!e !3!g!1!e!2!c!1!e | "D"!3!a2aa !4!b2!3!a!1!g |1 "A"!3!fa!2!eg "D"!3!f!1!dd2:|2 "A"!3!fa!2!ef "D"!1!d4:|
+
+
 
 
 X:103
@@ -1560,6 +1776,8 @@ K: Ador
 "am"!1!e!3!aag !3!a2!4!b!3!a | "G"!4!gede !4!ged!4!g | "am"!1!e!3!aag !3!aaga | "em"!4!bagb !3!aaag |
 "am"!1!e!3!aag !3!a2!4!b!3!a | "G"!4!ge!1!d!2!B !1!de!3!g!4!a | !5!bg!4!af !4!gfed | !2!eeed !2!!5!e4 ||
 
+
+
 X:104
 %%etbk:tnset id:37,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/769
@@ -1574,6 +1792,8 @@ K: Dmaj
 "D"!3!d!1!A !3!(3A!2!A!1!A !1!A2!2!F!1!A | !3!de!5!fe !3!d!2!BB!1!A | !2!B{d}B!1!A!2!F !1!AB!4!d!2!B | "A"!1!A!3!FE!4!G "D"!3!F!1!DD2 :||
 |: "D"!4!a!1!dab !4!a!2!fd!3!f | !4!gfe!1!d !2!B!1!def | "G"!4!g2!3!gf !3!g!5!ba!3!g | "D"!3!f2!5!af "A"!2!e!5!g!4!f!3!e |
 "G"!2!d!1!B!2!BB "D"!1!A!2!FFF | !1!D2!2!FF !1!A!2!B!4!d!3!f | !5!a!3!f!1!e!3!c !4!d!2!B!1!AF |1 !1!AB!3!de !5!f!3!d!1!d2 :|2 "A"!2!EF!4!GE "D"!3!F!1!DD2 ||
+
+
 
 X:105
 %%etbk:tnset id:37,pos:2,rep:3
@@ -1590,6 +1810,8 @@ K: Gmaj
 |: "G"!3!gede !3!gaba | !3!g!2!g!3!ga !3!ge!1!d!2!B | !1!de!3!ga !5!bgag | "D"!1!e!4!aag aaga |
 "G"!5!b!3!g!2!eg !1!d2de | !3!gede !3!gaba | !3!g{a}!3!g!3!gd !2!e!4!g!1!d!3!B | "D"!2!AGAB "G"!1!G4 :||
 
+
+
 X:106
 %%etbk:tnset id:37,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1573
@@ -1604,6 +1826,8 @@ K: Emin
 "G"!3!B3A G2GA | !3!B!1!G !3!(3G!2!G!1!G !2!B!3!d!5!gd | !2!B2!3!BA G3G | "D"!2!A2!1!DD !2!ABBA |
 "G"!3!BdBA G2GA | !3!B!1!G !3!(3G!2!G!1!G !2!B!3!d!5!!3!g2 | !3!gbaf !3!g{a}!3!g!3!ge | "D"!1!de!1!d!3!B !2!AAGA ||
 
+
+
 X:107
 %%etbk:tnset id:38,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3147
@@ -1617,6 +1841,8 @@ K: Gmaj
 |: "G"!3!G!2!E!1!DE !3!G3!5!B | "D"!4!ADED ADED | "G"!3!GED!2!E !1!GA!3!B!4!d |1 !5!e!3!B!4!d!3!B "D"!2!AcBA:|2 !5!e!3!B!4!d!3!B !1!G3!2!f||
 "G"!3!g{a}!3!g!3!g!5!b "D"!4!a3b | "G"!3!g2bg ag!1!ef | !3!g!2!g!3!gb "D"!4!a3!1!d | !5!g!3!e!2!d!1!B !1!A2!1!B!2!d |
 "G"!5!!3!g3b "D"a3b | "G"!3!g2bg !4!a!3!g!1!e!2!d | "C"!3!e3e {f}ed!1!B!2!d | "D"!5!g!3!e!2!d!1!B !2!AABA ||
+
+
 
 X:108
 %%etbk:tnset id:38,pos:2,rep:3
@@ -1635,6 +1861,8 @@ K: Gmaj
 |: "G"!1!G2!4!g!3!f !4!!3!g3g | "D"!4!a!1!d!2!fd !4!ad!3!fe | "G"!1!d!3!g{a}g!2!f !4!g2fe | "D"!1!def!1!d !3!c!1!A!2!F!4!A |
 "G"!1!G2!3!gf !3!g3g | "D"!4!a3b !4!agf!1!e | "G"!1!d!3!g!2!g!3!g !5!b!3!g!2!g!3!g | "D"!1!def!1!d !3!c!1!A!2!F!4!A:|
 
+
+
 X:109
 %%etbk:tnset id:38,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/430
@@ -1649,6 +1877,8 @@ K: Ador
 "am" !4!g!1!e!2!e!1!e !2!g!2!ede | !4!g!1!e !3!(3e!2!e!1!e !4!a2ba | !3!g!1!e!2!e!1!e !4!ge!1!d2 | "em"!2!efge !1!d2ef |
  "am"!4!g!1!e!2!e!1!e !2!g!2!ede | !4!g!1!e !3!(3e!2!e!1!e !4!a2ga | !5!bgab !3!g!2!e!1!d2 | "em"!2!efge !1!d!2!B!1!A!2!G ||
  
+
+
 X:110
 %%etbk:tnset id:39,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1946
@@ -1664,6 +1894,8 @@ K: Dmaj
 "D"!3!d!2!c!1!d!3!f !5!a2ag | !3!ffef !1!d!2!BB!1!A | !3!d!2!c!1!d!3!f !5!a2!2!f!4!a | "A"!5!b!3!g!1!e!4!a "D"!2!f!1!dd2 |
 "D"!1!d!3!f!5!af "G"!4!g2ag | "D"!3!ffef !1!d!2!BB!1!A | !3!d!2!c!1!d!3!f "G"!4!g2ag | "A"!3!f2eg !3!fe!1!d!2!B||
 
+
+
 X:111
 %%etbk:tnset id:39,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4620
@@ -1678,6 +1910,8 @@ K: Dmaj
 "D"!1!d2!3!fd !2!ef!1!d!2!B | !1!A!2!F!1!AB "A"!5!e2d!2!B | "D"!1!d2!3!fd !2!ef!1!d!2!B | !1!A!2!F!1!AB !4!!1!d4 |
 "D"!1!defd !2!ef!1!d!2!B | !1!A!2!F!1!AB "A"!5!e2dB | "D"!1!d!2!fff !4!af!5!bf | "A"!4!a!3!fef "D"!1!d3!2!B ||
 
+
+
 X:112
 %%etbk:tnset id:39,pos:3,rep:3
 T: Michael Cramer's
@@ -1691,6 +1925,8 @@ K: Dmaj
 "D"!4![A3D]B !4!A2!2!FF | !3!A!2!F!3!A!5!d !3!f2fg | !5!afef !1!d2!2!BB | "A"!1!A!3!d!5!fe "D"!3!d4:|
 |:"D"!5!f!3!ded !2!B!1!A!2!A!1!A | !3!d!2!c!1!d!3!f !5!a3f | "G"!4!g2fg "A"!2!e!1!B!2!B!1!B | !4!d!2!B!1!A!3!F !3!FE!1!D!2!F |
 "D"!4![A3D]B !4!A2!2!FF | !3!A!2!F!3!A!5!d !3!f2fg | !5!afef !1!d2!2!BB | "A"!1!A!3!d!5!fe "D"!3!d4:|
+
+
 
 X:113
 %%etbk:tnset id:40,pos:1,rep:3
@@ -1708,6 +1944,8 @@ K: Dmaj
 |: "G"!1!GABc !5!d!1!G!3!B!1!G | "D"!5!dd!4!Bd !3!A!2!F!1!D!2!F | "G"!1!GABc !5!d2!3!BB | "D"!1!A!2!FD!2!F "A"{A}F!1!EE!2!F |
 "G"!1!GABc !5!d!1!GGG | "D"!5!d2!4!Bd !3!A!2!F!1!D!2!F | "G"!5!G3E "D"!4!FE!2!D!1!B, |1 "A"!1!A,!1!B,!2!DE !4!F!3!EE!4!F:|2 "A"!1!A,!1!B,!2!DE !4!F!1!!3!E!1!E2||
 
+
+
 X:114
 %%etbk:tnset id:40,pos:2,rep:3
 %%etbk:tube1 http://www.youtube.com/embed/byYDj7NtO20
@@ -1723,6 +1961,8 @@ K: Dmix
 |: "D"!1!A!3!ddd !1!A!3!ddd | !1!A!3!ddd !4!ed^c!3!d | "A"!2!e!5!aag a3g | !2!e!5!aag !2!e!1!d!2!^c!1!d |
  "A"!2!ef !4!(3gfe !5!aage | !3!f!1!d!2!e!1!d !2!c!1!AA!2!B | !3!c!1!A!2!B!1!G "D"!1!A3 !2!^c |1 !3!d!5!fed !2!c!1!A!1!G!2!c :|2 !3!d!5!fed !2!c!1!A!2!G!1!E |
 
+
+
 X:115
 %%etbk:tnset id:41,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/724
@@ -1735,6 +1975,8 @@ R: reel
 K: Dmaj
 |: "D"!5!A!3!F{A}FE !3!FEDE | !3!F!2!F!3!F!1!E !2!F!3!A!5!d!4!B | !3!A!2!F!3!FE !3!FEDE |1 !3!F!4!ABA "A"!3!F!2!EE2 :|2 "A"!3!F!5!A!2!E!4!G "D"!3!F!1!DD2 ||
 |: "D"!1!A3B !1!A2!2!FF | !1!AB!3!de !5!f!4!ee2 | !5!fedB  !1!A!1!B!3!dB | !1!AB!3!de !5!fed!2!B :|
+
+
 
 X:116
 %%etbk:tnset id:41,pos:2,rep:3
@@ -1752,6 +1994,8 @@ K: Gmaj
 "G"!2!B!4!d!2!d{=f}d !1!B!2!d!5!gd | Bdgd "D"!1!B!1!AA!2!d | "G"!1!B2!2!d!5!g !3!e!1!B!2!d!1!B | "D"!2!AcBA !1!G!2!E!1!D2 |
 "G"!2!B!4!d!2!d{=f}d !1!B!2!d!5!gd | Bdgd "D"!1!B!1!A!2!B!4!d | "G"!5!e2!3!BB !5!e!3!B!4!d!3!B | "D"!2!AcBA !1!G!2!E!1!D2||
 
+
+
 X:117
 %%etbk:tnset id:41,pos:3,rep:3
 T: Killavil Fancy, The
@@ -1765,6 +2009,8 @@ K: Gmaj
 "G"!3!B3!5!d "D"!3!A3!4!B | "C"!2!G!1!E !3!(3E!2!E!1!E !5!c!1!E!2!G!1!E | "G"!1!D!2!G!4!B!2!G "D"!3!A2!4!BA | "C"!2!G!1!EE!2!D !1!E4 :|
 |: "G"!1!GA!3!B!4!d !3!ef!5!g!3!e | !2!d!1!B !3!(3B!2!B!1!B !4!d!2!B!1!A!2!B | !1!GA!3!B!4!d !3!ef!5!g!3!e | !2!d!1!B!3!A!2!G !1!E!2!G!1!G2 |
 !1!GA!3!B!4!d !3!ef!5!g!3!e | !2!d!1!B !3!(3B!2!B!1!B !2!d2!3!ga | !5!b!3!g!4!a!3!g !2!e{g}e!1!d!3!e | !5!g!3!e!2!d!1!B !3!A!2!G!1!E!2!G :|
+
+
 
 X:118
 %%etbk:tnset id:42,pos:1,rep:3
@@ -1781,6 +2027,8 @@ K: Dmaj
 |: "D"!3!f2!5!af afdf | "A"!4!ge!3!fd !2!e!1!d!2!B!1!d | "D"!3!f2af af!1!d!2!B | "A"!1!ABd!4!e !3!f!2!ee2 | 
 "D"!3!f2af afdf | "A"!4!gefd {g}!2!e!1!d!2!B!1!A | !2!F2!3!A!2!F "G"!1!G2!2!B!1!G | [1 "A"!1!ABd!4!e "D"!3!fdd2:|2 "A"!1!ABd!4!e "D"!3!f!1!dd2||
 
+
+
 X:119
 %%etbk:tnset id:42,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3636
@@ -1793,6 +2041,8 @@ R: reel
 K: Gmaj
 |: "G"!4!d!2!B!1!B!2!B !4!d!2!B!1!G!2!B | dBBB "D"!1!AB!3!c!5!e | "G"!4!dBBB dBGB |1 "D"!3!ccBc !1!ABc!5!e :|2 "D"!3!ccBc !1!AcB!1!A ||
 |: "G"!2!GG!4!B!2!G !1!D!2!G!4!B!2!G | !2!GGBG "D"!3!ABcA | "G"!2!GGBG !1!DGBG |1 "D"!3!ccBc !1!AcB!1!A:|2 "D"!3!ccBc !1!ABc!5!e||
+
+
 
 X:120
 %%etbk:tnset id:42,pos:3,rep:3
@@ -1808,6 +2058,8 @@ K: Ador
 "am"!1!E!2!A{c}AG A2Bd | !2!e2 !4!gg eg!1!d!4!g | "em"!1!e!3!g!2!g!3!g !3!gaba | !3!g!2!e!1!d!2!B "am"{d}B!1!AA2 :||
 |: "am"!5!a2!2!e!5!a !3!a!2!g!1!e!2!g | !3!agbg ag!1!e!3!f | "G"!4!g2!2!d!4!g !1!B!4!g!2!d!4!g | !4!geaf gede |
 "am"!5!a2!1!e!3!a {b}!3!ageg | !3!agbg ag!1!e!2!g | "em"!1!d!3!g!2!g!3!g !3!gaba | ge!1!d!2!B "am"{d}B!1!AA2 :||
+
+
 
 
 X:121
@@ -1826,6 +2078,8 @@ K: Dmix
 |!1!d2!3!^fd !5!ad!3!fd|!2!cc !4!ec !5!gc!4!ec|!1!d2fd adfd|!2!c!1!A!1!G!2!c Add!2!^c|
 |!1!d2fd adfd|!2!c3!1!B !2!c!3!d!2!e!4!g|!5!af !4!ge !3!fd!2!ed|!2!c!1!A!1!G!2!c !1!A!3!dd2||
 
+
+
 X:122
 %%etbk:tnset id:43,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2125
@@ -1841,6 +2095,8 @@ K: Gmix
 !5!d!1!G!2!G!1!G !5!dG!3!B!5!d | !4!c!1!=FFF !4!c!1!=F!2!A!4!c | !5!d!1!G!2!GG !1!D!2!G!1!G!2!A | !3!BdcA G2 :|
 |:!1!B!2!c | !3!d!5!gg!4!f !5!g2!3!d!4!e | !5!f!3!d!2!c!1!B !2!A!1!F!2!A!4!c | !3!d!5!g!3!gf !3!g3!2!f | !1!defg !5!a2gf |
 !1!d2!5!g!4!f !5!g2!3!d!4!e | !5!f!3!d!2!c!1!B !2!A!1!F!2!A!4!c  | !5!d!1!G!2!GG !1!D!2!G!1!G!2!A | !3!BdcA G2 :|
+
+
 
 
 X:123
@@ -1859,6 +2115,8 @@ K: Gmaj
 "G"!2!d!4!g!3!g!4!g !5!a!4!g!4!g!3!f|!1!d2 !4!g!4!g "D"!3!f!1!d!2!c!1!A | "G"!2!d!4!g!3!g!4!g !5!a!4!g!4!g!3!f| "D"!1!d!2!^c!1!de !3!f!1!d=!2!c!1!A|
 "G"d2 !4!gg a!4!g !1!(3efg | "D"!4!abag !2!f3!4!g|!5!a2 !4!ge !3!fd!4!e!2!^c|!1!d2 e!4!g f!1!d!2!c!1!A||
 
+
+
 X:124
 %%etbk:tnset id:44,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/570
@@ -1872,6 +2130,8 @@ K: Dmaj
 |: "D"!3!A2 !2!F!3!A !5!d2!3!f{g}f | !1!d!3!fef !1!d!2!BB{d}B | !1!A2!2!F!3!A !5!d!3!fef | "A"!1!d!2!B!1!A!2!F "D"!3!A!1!DD2 :|
 |: "D"!4!a3b !4!a!2!f!1!d!3!f | !5!a!3!fef "bm"!1!d2!1!BB | !2![f2B]!5!ba [b3B]a | !2!fbaf "A"!2!f!1!e!2!e!1!e |
 "D"!5!b!3!f!2!f!3!f !4!a!3!f!2!f!3!f | !3!fgfe !1!d!2!BB{d}B | !1!A2!2!F!3!A !5!d!3!fef | "A"!1!d!2!B!1!A!2!F "D"!3!A!1!DD2 :||
+
+
 
 X:125
 %%etbk:tnset id:44,pos:2,rep:3
@@ -1891,6 +2151,8 @@ K: Dmaj
 "D"!1!d2!3!f{g}f dfef | !1!d!3!f!2!f!3!f !5!afef | !1!d!3!ffe f2{g}fe | !1!d!2!B!1!A!2!F !4!A!1!D D2 |
 "D"!1!d2!3!f{g}f dfef | !1!d!3!f!2!f!3!f !5!afdf | "G"!4!g3e "D"!3!f3e | !1!d!2!B!1!A!2!F !4!A!1!D D2 ||
 
+
+
 X:126
 %%etbk:tnset id:45,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2601
@@ -1908,6 +2170,8 @@ K: Gmaj
 "G"!3!ggga !3!gfdf | !3!g2bg !4!agf!1!e | "D"!1!defg !5!ag!3!f!1!d | !3!c!1!A!2!F!4!A "G"!3!G4 :|
 
 
+
+
 X:127
 %%etbk:tnset id:45,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/411
@@ -1920,6 +2184,8 @@ R: reel
 K: Gmaj
 "G"!1!D!2!G!3!BG !5!dG!3!BG | "D"!1!D!2!F!3!AF !5!cF!3!AF | "G"!1!D!2!G!3!BG !5!dG!3!B!1!G |1 "D"!3!B!5!d!4!c!2!A !3!B!1!G!2!G!1!E :|2 !3!B!5!d!4!c!2!A !3!B!1!G!2!B!3!d ||
 "G"!5!g2 !3!gf !3!gbag | "D"!2!fdde !3!fg!5!a!2!f | "G"!3!gggf !3!gbag |1 "D"!2!f!1!d!3!c!1!A !2!B!1!G!2!B!3!d :|2 "D"!2!f!1!d!3!c!1!A !2!B!1!G!2!G!1!E||
+
+
 
 
 X:128
@@ -1937,6 +2203,8 @@ K: Dmaj
 |: "D"!2!A!4!ddc d3!1!A | "A"!2!B!1!d!2!ef !4!gfe!1!d | !2!c!1!A!4!eA !5!fAeA | !2!c!1!d!2!ef !4!gfeg |
 | "D"!3!faeg !3!faeg | !3!fd!1!d!2!c !1!defg | !5!afge !1!d2!5!ed | "A"!3!c!1!A!3!G!1!E "D"!2!F!1!DD2:|
 
+
+
 X:129
 %%etbk:tnset id:46,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/513
@@ -1951,6 +2219,8 @@ K: Ador
 "am"!5!edce "em"!4!dcBd | "am"!3!cBc!4!d !2!ee d2 | !2!eg!3!fa !4!g!2!e!1!d!2!B | "em"!3!cA!4!BG !1!(3E!2!G!1!E!1!D2 :||
 |:"am"!1!E!2!AA!4!c "G"!3!B!1!GG!2!B | !3!cBcd !5!e2d2 | "am"!5!e!1!A!2!A!1!A "G"!4!B!2!G!2!G!2!G | !5!c!3!A!4!BG !1!E2!1!D2 |
 "am"!1!E2!2!A!4!c "G"!3!B!1!GG!2!B | !3!cBcd !5!e2!4!d2 | "am"!2!(3efg !3!fa !4!ge!1!d!2!B | "em"!3!cA!4!BG !1!(3E!2!G!1!E!1!D2 :||
+
+
 
 X:130
 %%etbk:tnset id:46,pos:2,rep:3
@@ -1967,6 +2237,8 @@ K: Ador
 |: "am"!2!e!5!a!3!a!2!g !1!e!3!a{b}ag | !1!e!2!d!1!ef !3!gabg | "G"!1!d!3!g!2!g!3!g !4!a!3!g!2!g!3!g | !5!b!3!g!4!a!3!g !3!g!2!e!1!d!3!g |
 "am"!1!e!3!a{b}ag !1!e!3!aag | !1!e3!4!f !5!g3g | "G"!5!g!4!e!3!d!2!B !1!G!1!A!2!B!3!d | !5!g!4!e!3!d!2!B "am"{d}B!1!AA2:|
 
+
+
 X:131
 %%etbk:tnset id:46,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/426
@@ -1981,6 +2253,8 @@ K: Ador
 "am"!2!e!1!A!2!A!1!A !2!B!5!e!4!d!1!B | "G"!3!A!2!G!1!E!2!F !3!G3 !4!A| "am"!1!E2!2!A!2!A !3!B!2!A!3!B!1!d| "em"!4!g!2!e!1!d!2!B "am"!1!A4:||
 |: "am"!2!efge !5!agfg | !2!e2!5!ag !2!e!1!d!2!B!1!d | !2!egfa !4!g3e | "G"!1!d2!4!g!2!e !1!d!2!B!1!G!2!B |
 "am"!3!c3!1!A "G"!3!d3!1!B | "am"!2!efge !5!a2 !3!ga | "em"!5!b!3!g!2!g!3!g !4!agab | !3!g!2!e!1!d!2!B "am"!1!A4:|
+
+
 
 X:132
 %%etbk:tnset id:47,pos:1,rep:3
@@ -1998,6 +2272,8 @@ K: Dmaj
 | "D"!3![f3d]a "G"!4![g3d]e | "D"!3!faf!1!d !2!B!3!c!1!de | !3!fdf!5!a "G"!4!g!1!d!3!g!5!b | "A"!4!afe!1!d !2!B!3!c!1!de |
 "D"!3!(3fed fd "G"!4!gdgd | "D"!3!fdfd !2!e!1!d!2!B!1!d | !1!defg !5!a!1!d!4!a!5!b | "A"!4!afe!1!d !2!B!4!ddB |
 
+
+
 X:133
 %%etbk:tnset id:47,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2996
@@ -2012,6 +2288,8 @@ K: Gmaj
 "G"!3!BAB!4!d !5!ee!4!d!3!B | !4!ded!3!B !2!A!1!G!2!E!1!G | !3!B3G {c}!2!A!1!G!2!E!4!G | "D"!1!D!4!GG!3!F "G"!4!!1!G4 :|
 |: "G"!3!B2 !4![d2G] "C"!3![c3G]!5!e | "G"!4![d3G]e !4!d!3!B!1!G2 | !3!B!4!d !4!d2 !2!e!1!d d2 | !4!ge!1!d!3!B "D"!2!AAGA |
 "G"!3!BAB!4!d !5!ee!4!d!3!B | !4!ded!3!B !2!A!1!G!2!E!1!G | !3!B3G {c}!2!A!1!G!2!E!4!G | "D"!1!D!4!GG!3!F "G"!4!!1!G4 :|
+
+
 
 X:134
 %%etbk:tnset id:47,pos:3,rep:3
@@ -2028,6 +2306,8 @@ K:Edor
 |: "A"!4!e2!2!ce !5!fe!2!ce | !4!e2!3!c!1!A {d}!2!B!1!A!2!F!1!A | !4!e2!2!ce !5!fe!3!cB | !1!A!3!cB!1!A "D"!2!F!1!AA2 |
 "A"!4!e2!2!ce !5!fe!2!ce | !4!e2!3!c!1!A {d}!2!B!1!A!2!F!1!A | "D"!4!d3B "A"!3!c3B |1 !1!A!3!cB!1!A !2!F!1!A!2!c!3!d:|2 !1!A!3!cB!1!A !2!FE!2!F!4!A||
 
+
+
 X:135
 %%etbk:tnset id:48,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/7037
@@ -2040,6 +2320,8 @@ R: reel
 K: Edor
 !1!EFGA !5!B!1!E !3!(3E!2!E!1!E|!3!G!1!E!5!B!1!E !4!G!2!E!1!D!4!G|!1!EFG!4!A !2!BABc|1 !4!d!2!B!1!A!3!G !2!F!1!DD!2!F:|2 dB!1!A!3!G !2!F!1!DD2||
 !5!e2ed !2!BB!2!B!4!d|!5!e2!2!ef gagf|!2!~e3!1!d !2!B2Bc|1 !4!dBAG FDD2:|2 dBAG FDDF||
+
+
 
 X:136
 %%etbk:tnset id:48,pos:2,rep:3
@@ -2057,6 +2339,8 @@ K: Emin
 !2!B2ed BAGA|!2!B!4!d!2!ef !4!!3!g3 !4!a|!5!b!3!g!4!a!3!g !2!eede |!4!ge!1!d!2!B !1!A2||
 
 
+
+
 X:137
 %%etbk:tnset id:48,pos:3,rep:3
 T:Gan Ainm (Mary MacNamara + Pat O'Connor's)
@@ -2070,6 +2354,8 @@ K: Ador
 !5!e3 d cAAB |ccec dBGB | e3 d  ^cdef |gfge !1!d!3!c!1!A!2!B |
 !1!c2!4!gc !5!ac!4!gc|!2!cc!5!g!4!e !3!d!2!B!1!A!2!B |!1!c2gc acgc |!2!eage !1!d!3!c!1!A!2!B |
 !1!c2gc acgc|!2!ccge dBAB |!1!c2gc acgc |eage !1!d2 !3!^c!4!d||
+
+
 
 X:138
 %%etbk:tnset id:49,pos:1,rep:3
@@ -2086,6 +2372,8 @@ K: Ador
 "C"!5!e4 "G"!4!d3!3!B | "am"!5!cBA!2!G !1!E!2!G!3!B!4!d | "C"!5!e4 "G"!4!d3!1!d | !1!de!4!ga g2 !2!B/c/!4!d |
 "C"!5!e4 "G"!4!d3 !3!B | "am"!5!cBA!2!G !1!E!2!G!3!A!4!B | !5!cBAc "em"!4!B!3!A!2!G!1!E | !1!DE!3!GA G4 ||
 
+
+
 X:139
 %%etbk:tnset id:49,pos:2,rep:3
 %%etkb:site1 http://www.thesession.org/tunes/display/8494
@@ -2098,6 +2386,8 @@ R: reel
 K: Gmaj
 |: "G"!3!GEDE !4!A2 GE | "G"!3!GEDE "C"!5!c2 !5!BA | "G"!3!GEDE !4!A2 !3!G!4!A | "D"!3!Bc!2!AB "G"!1!G4 :|
 |: "G"!1!B!2!d!3!e!5!g de!1!B!2!A | !1!Bde!5!g !2!d4 | !1!Bde!5!g de!1!B!2!A | !1!G!2!EDE !3!G4 :|
+
+
 
 X:140
 %%etbk:tnset id:49,pos:3,rep:3
@@ -2116,6 +2406,8 @@ K: Ador
 |: "am"!3!ageg !3!a{b}!3!a!3!ab | "G"!2!g!1!e!2!e!1!e !2!g3!4!b | "am"!3!ageg !3!a{b}!3!aga | "em"!4!b!2!g!2!g{b}!2!g bgg{b}g |
 | "am"!3!agea !3!ag!1!e!5!a | "G"!4!g!3!e!2!d!1!B !1!G3G | "am"!2!e!5!aag !2!eg!3!fa | "em"!4!ge!1!d!2!B "am"{d}B!1!AA2:|
 
+
+
 X:141
 %%etbk:tnset id:50,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2425
@@ -2129,6 +2421,8 @@ R: reel
 K:Fmaj
 |: "F"!1!A!2!cc{e}c !1!A!3!dd{e}d | !1!A!2!cc!1!A !2!G{B}G!1!F!2!G | !1!A!2!cc{e}c !1!A!3!dd!1!c | "C"!2!fgaf "F"!3!g{a}g!2!f2 :|
 |: "F"!2!fgaf "C"!1!d!3!gg{a}g | "F"!2!fgaf !1!d2!1!c2 | !2!fgaf "C"!1!d!3!gg{a}g | "F"!2!f!1!d!2!c!1!A !2!G{A}G!1!F2:|
+
+
 
 X:142
 %%etbk:tnset id:50,pos:2,rep:3
@@ -2144,6 +2438,8 @@ K: Ddor
 E|: "F"!3!F!2!F!3!F!2!E !3!FGAF | !3!F2AF "C"!4!G!2!E!1!CE | "F"!3!F3!2!E !1!F!3!A!5!c!3!A | "dm"!2!G!1!F!2!E!3!F !1!D3E |
 "F" !3!F{G}!3!F!3!FE !3!FGAF | !3!F2AF "C"!4!G!2!E!1!CE | "dm"!1!DEF!4!G !2!A3!5!d | "am"!4!c!2!A!1!G!2!E "dm"!1!D4 :|
 
+
+
 X:143
 %%etbk:tnset id:50,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4305
@@ -2157,6 +2453,8 @@ K: Ador
 |: "am"!3!A3B !3!A!2!G!1!EG | !3!AGAB "em"!5!ccBc | "am"!3!A3B AG!1!E!4!f |1 "G"!5!g!3!e!2!d!1!B !2!c{e}c!1!Bc:|2 "G"!5!g!3!e!2!d!1!B !2!c2cd||
 "C"!4!!3!e3!5!g !3!edBd | !3!e2ge "G"!2!d{f}d!1!B!2!d | "C"!3!e3!5!g !3!edBd | !3!efge "G"!2!d2Bd |
 "C"!3!e!2!e!3!e!3!g !3!edBd | !3!e!5!gge "G"!2!d{f}dBd | "C"!3!e!5!gg!2!d !3!e!5!aa!3!e | "am"!5!g!3!e!2!d!1!B !2!c{e}c!1!Bc||
+
+
 
 X:144
 %%etbk:tnset id:51,pos:1,rep:3
@@ -2173,6 +2471,8 @@ f|: !4!gfe!1!d !3!BA!1!G!2!F | !3!G!5!BAG !1!E!2!E!1!E!2!F | !3!G!1!EEE !3!G!4!A
 |:!4!g!2!e!1!Be !3!gabg | !4!a!2!f!1!df afd!2!f | !4!geBe !3!gabg | !4!afd!2!f !3!g!1!e !3!(3e!2!e!1!e|
 !4!geBe !3!gbag | !4!af!1!d!1!e !2!fg!4!a2| !5!bg!4!a!2!f !4!gfe!1!d | !1!B!4!gfg !2!e3f:|
 
+
+
 X:145
 %%etbk:tnset id:51,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1100
@@ -2185,6 +2485,8 @@ R: reel
 K: Gmaj
 |:!1!G2!3!BG !4!cGBG | !2!A!1!DDE !3!FGA!3!F | !1!G2BG cGBG|1 !2!A!5!ddc BG!1!G!2!F:|2 !2!Addc BGG!3!f||
 |:!4!g2!1!dg !2!eg!1!d!2!e | !4!g2!5!b!4!g !3!fgaf | !4!g2!1!dg !2!eg!1!d!3!B|1 !4!cAdc !3!BGGf:|2 !4!cAdc !3!BGGF||
+
+
 
 X:146
 %%etbk:tnset id:51,pos:3,rep:3
@@ -2200,6 +2502,8 @@ K: Gmaj
 "G"!4!gedg e!1!d!3!BA | !1!G!2!EEE EDB,D | !3!G2GA !2!BdeB | "D"!4!dBAd "G"!2!B!1!GG2:|
 |: "G"!5!g!2!BB!1!A !2!B!1!B!4!g!1!B | !1!B!4!gg!1!B !5!ag!2!e!1!d | "C"!3!c3!4!d !2!eeef | !4!g2!5!b!4!g !2!e!1!d!2!B!4!d |
 "G"!5!g!2!BB!1!A !2!B!1!B!4!g!1!B | !1!B!4!gg!1!B !5!aged | "C"!3!c3d !2!e2!4!ge | "D"!1!d!3!BAc "G"BGG2:|
+
+
 
 X:147
 %%etbk:tnset id:52,pos:1,rep:3
@@ -2217,6 +2521,8 @@ K: Dmaj
 |:!3!f!1!dd!2!c !1!d2de | !3!f!1!d!2!d!1!d !1!d!3!f!5!a!3!f | !2!e2!1!AA !4!gA!3!fA | !2!eAzA !2!B!5!d!2!e!4!g |
 !3!f!1!dd!2!c !1!d2de | !3!f!1!d !3!(3d!2!d!1!d !1!df!5!af | !4!g2 g!3!f !1!g!3!ba!1!g |1 !3!fgef !1!d3e:||2 !3!fgef !1!d3!2!B:|
 
+
+
 X:148
 %%etbk:tnset id:52,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/336
@@ -2232,6 +2538,8 @@ K: Edor
 !1!EFGA !5!BA!2!F!4!A | !2!BdAB !4!dB!1!A!2!F | !1!D2!2!F!3!A !5!d!3!f!5!a!3!f | !4!gfe!1!d !2!B!5!ee2:|
 |:!1!e2 !3!(3gfe !5!be!3!gf | !1!efga !5!b!2!f!4!a!2!f | !1!d!3!f!2!f!3!f !5!a!3!f!2!f!3!f | !1!d!3!f!2!f!3!f !5!afdf | 
 !1!e2 !3!(3gfe !5!begf | !1!efga !5!b!2!f!4!a!2!f | !1!d!2!c!1!d!3!f !5!a3f | !4!gfe!1!d !2!B!5!ee2:||
+
+
 
 X:149
 %%etbk:tnset id:52,pos:3,rep:3
@@ -2249,6 +2557,8 @@ K: Ador
 |:!5!ag!2!eg a2eg | !5!age!1!d !3!c!1!AA2 | !4!gf!2!ef g2!1!de | !4!ge!1!d!3!c !2!B!1!GG2 |
 !5!ageg a2eg | !5!age!1!d !3!c!1!A!2!B!1!G | !1!AB!3!c!1!d !2!efge | !5!age!1!d !3!c!1!AA2 :|
 
+
+
 X:150
 %%etbk:tnset id:52,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/408
@@ -2264,6 +2574,8 @@ K: Dmaj
 | !3!F2AF !4!GFED | !1!DFAF !4!GFED | !3!c!4!d!2!e!3!f !4!g!1!e!2!c!4!e | !3!d2dc d4:|
 |:!4!g!1!B (3BBB !4!gB!5!aB | !4!g!1!B (3BBB !4!gfe!1!d | !3!(3cBA !5!eA !5!fA!5!eA | !3!c!1!def !4!gfef |
 | !4!g!1!B (3BBB !4!gB!5!aB | !4!g!1!B (3BBB !4!gfe!1!d | !2!c!1!def !4!g!1!e!2!c!4!e | !3!d2dc d4:|
+
+
 
 X:151
 %%etbk:tnset id:52,pos:5,rep:3
@@ -2284,6 +2596,8 @@ K: Edor
 !2!F!3!A!5!dA !2!F!3!A!4!BA | !2!F2!5!d!2!e !3!f!2!ee2 | !3!fd!5!ec !4!dB!1!A!2!F | !3!G!5!BAG !2!F!1!D D2:|
 
 
+
+
 X:152
 %%etbk:tnset id:52,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/7671
@@ -2299,6 +2613,8 @@ K: Amaj
 !3!c3B !1!ABcA | !2!B2cB !1!A!2!F!1!E!2!F |1 !1!A2!2!c!3!e !4!fA!3!eA | !2!BccB !1!A4:|2 !1!A2!2!c!3!e !4!fe!2!c!3!e | !4!fA!4!gA !5!a2ag |
 ||: !3!f2!2!fe fgaf | !3!g!1!eee !3!geag | !2!f3e fgaf | !3!gfef !2!f3g |
 !4!a!1!e!3!cB !1!ABcA | !2!B2cB !1!A!2!F!1!E!2!F |1 !1!A2!2!c!3!e !4!fe!2!c!3!e | !4!fA!4!gA !5!a2ag:|2 !1!A2!2!c!3!e !4!fA!3!eA | !2!BccB !1!A4||
+
+
 
 
 X:153
@@ -2317,6 +2633,8 @@ K: Bmin
 |:"D"!1!d3!2!f !4!adfa | !5!b!2!f!4!a!3!f "A"!2!effe | "D"!1!d!2!d!1!d!2!f !4!adfa | !5!b!2!f!4!a!3!f "A"!2!eee2 | 
 "D"!1!d3!2!f !4!adfa | !5!b!2!f!4!a!3!f "A"!2!effe | "bm"!3!f!1!B!2!B!1!A !2!FEF!4!B |1 "f#m"!1!ABBA "bm"!2!B2B!3!c :|2 "f#m"!1!ABBA "bm"!2!!1!B4||
 
+
+
 X:154
 %%etbk:tnset id:53,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/114
@@ -2333,6 +2651,8 @@ K: Gmaj
 |: "em"!1!B!2!e!2!e!1!d !2!e{g}eef | !4!geaf !4!gfe!1!d | "D"!2!B!4!dd!3!^c !1!d2de | !3!fdf!5!a !4!gfe!1!d |
 "em"!2!B!5!e!2!e!1!d !2!e{g}eef | !4!geaf !4!gfe!1!d | !2!B2!1!E!2!D !1!EFGA | "D"!5!BG!4!A!2!F "G"!3!G4:|
 
+
+
 X:155
 %%etbk:tnset id:53,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/415
@@ -2346,6 +2666,8 @@ R: reel
 K: Dmaj
 |: "D"!3!d{e}d!1!A!3!d !2!B!3!dAB | !3!dd!5!f!3!d "A"!4!ed!2!BA | "D" !3!d{e}dAd !2!B!3!dAd |1 "A"!2!B!1!def !4!gef!2!e :|2 "A"!2!B!1!def !4!g2fg :|
 |: "D"!5!a!3!f!2!f!3!f !1!d!3!f!2!f!2!f | !5!a!3!f!2!f!3!f "A"!4!g!1!e !3!(3e!2!e!1!e | "D"!5!affe !1!dfe!1!d |1 "A"!2!B!1!def !4!g2fg :|2 "A"!2!B!1!def !4!g2fe ||
+
+
 
 X:156
 %%etbk:tnset id:53,pos:4,rep:3
@@ -2362,6 +2684,8 @@ K: Edor
 "em"!1!E2!5!e!1!d !2!efge | !3!fedf !2!e!1!d!2!B!1!A | !3!G2!5!B!3!G "bm"!2!F!1!G!2!A!4!=c | !3!B!1!G!4!A!2!F "em"!3!G!1!EE2 :|
 |: "em"!3!gfef !3!g!1!e!5!be | !3!gebe !3!gf!1!e!2!f | "D"!1!d2 !5!f!3!d !1!A!3!d!5!f!3!d | !2!B!4!d!1!A!3!G !2!F!1!DD!2!F |
 "em"!3!G2!5!B!3!G "D"!2!F2AF | "em"!1!E!5!e!2!ef !4!gfe!1!d | !2!B2!4!dB "D"!1!A2!3!GA | !5!BG!4!AF "em"!3!G!1!EE2 :|
+
+
 
 X:157
 %%etbk:tnset id:53,pos:5,rep:3
@@ -2380,6 +2704,8 @@ K: Gmaj
 "G"!2!B!3!d!5!g!3!d !2!B!3!d!5!g!3!d | !2!B!3!d!5!g!3!d !2!B!1!GG2 | "F"!2!A!3!c!5!g!3!c !2!A!3!c!5!g!3!c | !2!A!3!c!5!g!3!c "G"!2!A!1!GG2 |
 "G"!2!B!3!d!5!g!3!d !2!B!3!d!5!g!3!d | !2!B!1!de!3!f !1!g3a |!3!b!1!g!5!a!3!f !4!ge!1!d!3!B | "D"!2!A!1!G!2!F!1!G !2!AB!4!c!2!A||
 
+
+
 X:158
 %%etbk:tnset id:53,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/24
@@ -2395,6 +2721,8 @@ K: Amix
 |1 "A"!5!a2!1!AA !5!aA!5!bA | !5!aAzA !5!agef  |  "G"!4!g3e "D"!3!f2e!1!d | "E"!3!cdBc "A"!1!A4 :|
 |2 "A"!5!a3f !4!g2ge | !3!f2fd {g}!2!edef |  "G"!4!g3e "D"!3!f2e!1!d | "E"!3!cdBc "A"!1!A4 ||
 
+
+
 X:159
 %%etbk:tnset id:54,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/938
@@ -2409,6 +2737,8 @@ K: Dmaj
  "D"!2!B!1!A!2!F!5!B !4!AF!1!E!2!F | !1!DD!2!F!1!A BA!4!d!2!B | {d}!2!B!1!A!2!F!5!B !1!A3!2!B |1 !4!d!2!efd "A"!2!ef!1!d!2!B :|2 !4!d!2!efd "A"!2!e4|
  "D"!1!d2fd "A"!2!efge | "D"!5!afdf !2!e!1!d!2!B!3!c | !1!d2fd !2!efge | !5!afdf "A"!2!e4 | 
 "D"!1!d2fd "A"!2!efge | "D"!5!afdf !2!e!1!d!2!B!3!c !1!defg !5!a!3!f!5!b!3!f | !5!afdf "A"!2!e{g}e!1!d!2!B ||
+
+
 
 X:160
 %%etbk:tnset id:54,pos:2,rep:3
@@ -2426,6 +2756,8 @@ K: Edor
 |: "em"!2!eeef e!1!d!2!B!1!A | !2!B!1!def !4!g2fe | !1!d2!4!de "D"!4!d!1!A!2!F!1!A | !4!d!3!c!1!de !3!ffed |
 "em"!2!e3f e!1!d!2!B!1!A | !2!B!1!def !4!ge!1!d!2!B | "G"!1!G3!2!F !1!G!2!B!4!d!2!B | "D"!1!A!3!G!2!FG "em"!1!E4:|
 
+
+
 X:161
 %%etbk:tnset id:54,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/921
@@ -2442,6 +2774,8 @@ K: Ador
 |: "am"!2!e2!5!aa !1!e!3!a{b}ag | !1!e!3!aag !3!ag!1!e!2!d | "G"!1!e2!3!gg !1!e!3!ggf | !3!g!2!g!3!ga !3!g!1!ee!2!d |
 "am"!1!e2!3!a{b}a !1!e!3!aag | !1!e!3!aa!2!g !5!ag!2!e!1!d | "G"!2!B3!1!d !3!ga!5!ba | !3!ge!1!d!2!B "am"B!1!A A2 :|
 
+
+
 X:162
 %%etbk:tnset id:54,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2536
@@ -2457,6 +2791,8 @@ K: Dmaj
 "D"!4!A3!2!F !5!BF!4!A!2!F | !1!D2!2!F{A}!2!F !1!A!2!B!4!d!2!e | !3!f2{g}fe !1!d!3!f!1!e!3!c | "A"!4!d!2!B!1!A!2!F "D"!1!D4 :|
  |: "D"!1!d!3!ffe !3!f{g}ffe | !1!dfe!1!d !2!B!1!A!2!F!1!A | "A"!2!B!5!e!2!ed !2!e{g}ede | "D"!3!f2df !2!e!1!d!2!B!1!d |
 "D"!1!d!3!ffe !3!f3e | !1!dfe!1!d !2!B!1!A!2!F!1!A | !1!A!2!B!3!d!4!e !5!f!3!d!1!A!3!F | "A"!2!EDEF "D"!1!D4 :|
+
+
 
 X:163
 %%etbk:tnset id:54,pos:5,rep:3
@@ -2477,6 +2813,8 @@ K:Cmaj
 |: "C"!1!c2!4!gc !5!ac!4!gc | !3!(3c!2!c!1!c !5!g!1!c "G"!3!BA!1!G!3!B | "C"!1!c2!4!gc !5!ac!4!gc | "G"!5!ged!1!c !3!BA!1!G!3!B |
 "C"!1!c2!4!gc !5!ac!4!gc | !3!(3c!2!c!1!c !5!g!1!c "G"!3!BA!1!G!3!B | "am"!1!AB!3!c!1!d efg!5!a | "G"!4!g!3!ed!1!c !3!BA!1!G!3!B :|
 
+
+
 X:164
 %%etbk:tnset id:54,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11
@@ -2492,6 +2830,8 @@ K: Amaj
 | "A"!5!a2!1!AA !2!c!1!A!2!c!3!e | !5!a2ag !3!fefg | !5!a!1!A !3!(3A!2!A!1!A !3!c!1!A!3!c!5!e | "E"!4!dc!2!B!3!c !1!def!4!g |
 "A"!5!a2!1!AA !2!c!1!A!2!c!3!e | !5!a2ag !3!fefg  | !5!a2!4!ge !3!fd!4!e!2!c | "E"!4!ddBc d2!3!cB |
 |: "A"!1!A!4!e!2!ce Aece | Aec!4!e "D"!4!d2cB | "A"!1!A!4!e!2!ce Aec!4!e | "E"!3!f!1!d!2!B!3!c !4!ddcB:|
+
+
 
 X:165
 %%etbk:tnset id:55,pos:1,rep:3
@@ -2509,10 +2849,12 @@ K: Dmaj
 |: "D"!3!f3f fede | !3!fe!1!d!2!B !1!A!2!B!1!de | !3!f3f fede | !3!f2af "A"!2!e{g}ede |
 "D"!3!f3f fede | !3!fe!1!d!2!B !1!A!2!B!1!de | !3!fde!1!d !2!B!4!d!1!A!4!d | "A"!2!egfe "D"!1!d4:|
 
+
+
 X:166
 %%etbk:tnset id:55,pos:2,rep:3
-%%etkb:site1 http://www.thesession.org/tunes/display/44
 %%etbk:color #ffffcc
+%%etkb:site1 http://www.thesession.org/tunes/display/44
 T: High Reel, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2524,6 +2866,8 @@ K: Amix
 "A"!5!a2 !3!fa !2!e!1!A !3!(3A!2!A!1!A | !3!c!1!def "G"!4!g2fg | !5!af!4!ge !3!f!1!d!2!e!1!d | !2!B!5!edc !2!B!1!GG2:|
 |:"A" !3!c!1!A!5!eA !5!fA!5!eA | !3!c!1!A!5!a!3!f !2!e!1!AA2 | !3!c!1!A!5!eA !5!fA!5!eA | "G"!2!Bcdc !2!B!1!GG2|
 "A"!3!c!1!A!5!eA !5!fA!5!eA | !3!c!1!def "G"!4!g2fg | !5!af!4!ge !3!f!1!d!2!e!1!d | !2!B!5!edc !2!B!1!GG2:|
+
+
 
 X:167
 %%etbk:tnset id:55,pos:3,rep:3
@@ -2540,6 +2884,8 @@ K: Edor
 "D"!2!B!1!d!2!ed "em"!2!e3e | !3!fede !3!f!1!e!2!e!1!e | !2!f!1!e!5!be feb!1!e | "D"!3!fede "em"!3!f!2!ee{g}e |
 "em"!1!B!2!ee!1!d !2!e3e | !3!fede "D"!3!f!4!a -aa | !5!b!3!f!2!f!1!f !4!a!3!f!2!f!3!f | !3!f!4!gfe !1!d!2!B!1!A!2!F ||
 
+
+
 X:168
 %%etbk:tnset id:55,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/756
@@ -2554,6 +2900,8 @@ K: Bmin
 |: "bm"!3!f3f {g}!3!f!1!e!2!c!1!e | !3!f!1!e!3!f!5!a "f#m"!2!e!1!A!2!c!4!e | "bm"!3!f3f {g}!3!f!1!e!2!c!1!e | "f#m"!3!f2!5!a!3!f !2!e!1!A!2!c!4!e :|
 |: "bm"!3!f!1!BB!2!A !1!B2B!2!e | !3!f!1!B!2!B!1!B "f#m"!4!e!1!A!2!c!4!e | "bm"!3!f!1!BB!2!A !1!B2B!2!e | "f#m"!3!f2!5!af !2!e!1!A!2!c!4!e :|
 |: "bm"!1!B2 !5!bB !4!aB!3!^gB | !1!B2!3!fB "f#m"!3!cB!1!A!3!c | "bm"!1!B2 !5!bB !4!aB!3!^gB |1 "f#m"!3!f2!5!af !2!e!1!A!2!c!4!e :|2 "f#m"!3!f2!5!af !2!e4 :|
+
+
 
 X:169
 %%etbk:tnset id:55,pos:5,rep:3
@@ -2570,6 +2918,8 @@ K: Amaj
 |: "bm"!4!f!1!B !3!(3B!2!B!1!B !1!B3!5!a | "A"!3!e2!2!c{e}c !1!ABcA | !1!A2!3!cA !5!eA!5!fA | !1!ABcA !2!B!5!e"E"e2 |
 "bm"!4!f!1!B!2!B!1!B !1!B!2!c!3!d!5!f | "A"!4!e2!2!c{g}c !1!A!2!c!5!a!2!c | "bm"!1!B2!3!dB "A"!2!c2!4!ec |1 "E"!1!defg !5!agfe :|2 "E"!2!B!1!A!2!G!4!B !1!A4 ||
 
+
+
 X:170
 %%etbk:tnset id:56,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/87
@@ -2583,6 +2933,8 @@ R: reel
 K: Dmaj
 |: "D"!4!A!3!A!4!A!2!F !1!DF!4!A!2!F | "G"!1!G2!3!BG !5!dG!3!B!1!G | "D"!4!ABA!2!F !1!DF!4!A!2!F |1 "A"!3!G!5!BAF !1!E!2!F!1!D!2!F:|2 "A"!3!G!5!BAF !1!E!2!F"D"!1!D2 ||
 |: "D"!2!AB!5!d!2!e !3!f!1!def | "G"!4!g2f!1!d !2!B!4!dd!2!B | "D"!1!A!2!B!4!d!2!e !3!fefg | !5!afdf "A"!2!ee!1!d!2!B:|
+
+
 
 X:171
 %%etbk:tnset id:56,pos:2,rep:3
@@ -2600,6 +2952,8 @@ K: Gmaj
 |: "am"!3!e2!5!a!4!g !3!e!4!f!5!g!3!e | "em"!2!d!1!BB!2!A !1!B2Bd | !3!e!2!B!2!B!1!B !5!g!1!B!4!fB | !3!e!1!BB!2!A !1!B2Bd |
 "am"!3!e2!5!a!4!g !3!e!4!f!5!g!3!e | "G"!2!d!1!BB!2!A !1!B2Bd  | "C"!3!e!5!ge!2!d "G"!1!B!3!A!2!GA | "D"!4!BA!2!G!1!E {G}!2!E!1!DD2:|
 
+
+
 X:172
 %%etbk:tnset id:56,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/18
@@ -2616,6 +2970,8 @@ K: Dmaj
 |: "D"!1!A!3!d!2!d!3!d Addd | !1!A2!3!dA {d}!2!B!1!A!2!F!3!A | "A"!2!B2 (3cBA BAcA | !2!BAcA !2!B!1!A!2!F!3!A  |
 "D"!1!A!3!d!2!d!3!d Addd | !1!A2!3!dA {d}!2!B!1!A!2!F!3!A | !2!F!1!A!2!Bc !4!ded!2!B | "A"!1!A!3!F!2!EF "D"!1!D4:|
 
+
+
 X:173
 %%etbk:tnset id:56,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/222
@@ -2631,6 +2987,8 @@ K: Edor
  "em"!2!e2ge "D"!3!fgaf | "em"!4!gfe!1!d {g}!2!e!1!d!2!B!1!d | !2!e2!4!ge "D"!3!fgaf | "em"!4!gfe!1!d !2!B!5!e!2!e2 |
 "em"!2!efge "D"!3!fgaf | "em"!4!gfed {g}!2!e!1!d!2!B!1!d | !5!bg!4!a!2!f !4!gfe!1!d | !5!e!2!B{d}B!1!A !1!B!1!E !3!(3E!2!E!1!E ||
 
+
+
 X:174
 %%etbk:tnset id:56,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/68
@@ -2645,6 +3003,8 @@ K: Dmaj
 "D"!3!F2!4!A!3!F !5!B!3!F!4!A!3!F | !3!F2!4!AF "A"!2!EFDE | "D"!3!F2!4!AF !5!BF!4!A!3!F | "A"!4!GGFG !2!EFDE |
 "D"!3!F2!4!AF !5!BF!4!AF | !3!F2!4!AF "A"!2!EFDE | "D"!3!F!4!A-A!1!A {d}!2!BAAB | "A"!1!AB!3!d!4!e !3!f2fe |
 |: "D"!1!d2!4!d!2!B !1!A2!2!F!1!A | !4!d2!1!de !3!fgfe | !1!d2!4!dB !1!A2!3!F!5!A | "A"!4!GE!3!FD !2!E!1!D!2!B,!1!D :|
+
+
 
 X:175
 %%etbk:tnset id:56,pos:6,rep:3
@@ -2662,6 +3022,8 @@ K: Edor
 "em"!2!B2!5!eB !5!fB!5!eB | !2!B2!4!d!2!B "bm"!1!AA!2!F!1!A | "em"!2!B!4!d!2!e!4!g !3!fd!5!e!3!c | "D"!4!d3!2!B !1!A2!2!F!4!A |
 |: "em"!5!BAGF !1!EFGA | !5!B!1!D!3!GB "D"!4!A!1!D!2!F!4!A | "em"!5!BAGF !1!EFG!4!A | "bm"!2!B2!4!d!2!B !4!A!1!D!2!F!4!A:|
 
+
+
 X:176
 %%etbk:tnset id:56,pos:7,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/472
@@ -2678,6 +3040,8 @@ K: Gmaj
 |: "G"!1!B2!4!gB !5!aB!4!gB | !3!(3B!2!B!1!B !4!gf !2!e!1!d!3!cB | "D"!1!A2!4!aa !5!b!4!aa!3!f | !1!d!3!f!5!af !4!gfe!1!d |
 "G"!1!B2!4!gB !5!aB!4!gB | !2!B!1!B!4!gf !2!e!1!d!3!cB | "D"!3!cB!1!A!4!g !3!fgaf | "G"!4!g!1!d!2!B!4!d "D"!3!c!1!A!2!F!1!A :|
 
+
+
 X:177
 %%etbk:tnset id:57,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/27
@@ -2692,6 +3056,8 @@ K: Edor
 |: "em"!1!E2!3!BE !5!dEB!1!E | !3!(3E!2!E!1!E !5!B!1!E "bm"!4!A!2!F!1!DF | "em"!1!E2!3!BE !5!dEB!1!E | "bm"!2!BABc !4!d!1!A!2!FA :|
 "D"!3!d2!5!fd "A"!2!cde!2!c | "D"!1!d2!3!fd !3!f!5!aa2 | !1!d2!3!f!1!d "A"!2!cde!3!c | !2!BABc !4!d!1!A!2!F!1!A |
 "D"!3!d2!5!fd "A"!2!cde!2!c | "D"!1!d2fd !3!f!5!a!5!a2 | "A"!5!bg!4!a!2!f !4!gfe!1!d | !2!BABc !4!d!1!A!2!F!4!A |
+
+
 
 X:178
 %%etbk:tnset id:57,pos:2,rep:3
@@ -2709,6 +3075,8 @@ K: Gmaj
 |:"G"!3!g{a}ggf !1!d2!2!ef | !4!g2!3!ga "D"!5!bg!4!a!2!f | "G"!3!g{a}ggf !1!d2!2!e!4!g | "D"!3!f!1!d!3!c!1!A "G"!2!B!1!GG2 |
 "G"!3!g!2!g!3!gf !1!d2!2!ef | !4!g2!3!ga "D"!5!bgaf | "G"!3!gbag "D"!2!f!1!d!2!e!4!g | !3!f!1!d!3!c!1!A "G"!2!B!1!GG2:|
 
+
+
 X:179
 %%etbk:tnset id:57,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/182
@@ -2725,6 +3093,8 @@ K: Dmaj
 |: "D"!3!f2!4!af !5!bf!4!a!3!f | "A"!4!gfe!1!d !2!B!1!dde | "D"!3!f2!4!af !5!bf!4!a!3!f | "A"!4!gfe!1!d !2!B{d}B!1!A2 |
  "D"!3!f2!4!af !5!bf!4!a!3!f | !4!gfe!1!d !2!B!1!def | "G"!4!g!3!g!4!ge "D"!3!f3e | !1!dfe!1!d !2!B{d}B!1!A2:|
 
+
+
 X:180
 %%etbk:tnset id:57,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/219
@@ -2740,6 +3110,8 @@ K: Emin
 "em"!2!G!1!E !3!(3E!2!E!1!E !5!BE (3EEE | !3!GE (3EEE !4!BcB!3!A | "G"!1!G3!2!F !1!G!2!B!4!d!2!B | "D"!1!A!2!F!1!D!2!F !3!A!5!cBA :|
 |: "G"!1!G2!3!BG !5!dGBG | !1!G2!3!B!1!d ef!4!g2 | !1!G2!3!BG !5!dGBG | "D"!3!AFDF A!5!cB!3!A |
 "G"!1!G2!3!BG !5!dGBG | !1!G2!3!B!1!d ef!4!g2 | !5!afge !1!d3!2!B | "D"!1!A!2!F!1!DF !3!A!5!cBA :|
+
+
 
 X:181
 %%etbk:tnset id:57,pos:5,rep:3
@@ -2761,6 +3133,8 @@ K: Ador
 |: "A"!5!a!3!e!2!^ce ae^ce | "G"!4!g!2!d!1!Bd gdBd | "A"!5!a!3!e!2!^ce !5!a2af | "G"!4!ge!1!d!2!B "am"{d}B!1!AA2 |
 "am"!5!agef !4!g!3!g!4!ge | "G"!1!de!1!d!3!B !1!GA!3!B!4!d | "am"!3!cBAB !3!c!1!de!5!a | "em"!4!ge!1!d!2!B "am"{d}B!1!AA2 :|
 
+
+
 X:182
 %%etbk:tnset id:58,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/252
@@ -2776,6 +3150,8 @@ K: Dmaj
 "D"!1!A2!2!F!4!A A2!2!F!4!A | "G"!2!B{d}B!1!GB B2!4!d!2!B | "A"!1!A!4!dcB !1!A!4!GFE | "D"!1!D2!2!C!4!E !3!!1!D4 :|
 |: "D"!1!A!2!d!4!fd Adfd | "A"!1!A!2!c!4!ec Acec | "D"!1!A!2!d!4!fd Adf!2!d | "A"!5!e!1!ABc "D"!4!d{e}dd2 | 
 "D"!1!A!2!d!4!fd Adfd | "A"!1!A!2!c!4!ec Ace!2!c | "D"!4!d2cB "A"!1!A!4!GFE | "D"!1!D2!2!C!4!E !3!!1!D4 :|
+
+
 
 X:183
 %%etbk:tnset id:58,pos:2,rep:3
@@ -2793,6 +3169,8 @@ K: Ador
 |: "am"!2!e2!4!ag !4!aaga | !5!bg!4!a!2!f !4!gfed | "G"!2!e!4!ggf !4!g!3!g!4!ge | !1!de!3!ga !5!bga!3!g |
 "am"!2!e2!4!ag !4!aaga | !5!bg!4!a!2!f !4!gfed | "G"!2!e2!4!gg !2!e!1!d!2!Bc | !4!d!2!B!5!g!2!B "am"{d}B!1!AA2 :|
 
+
+
 X:184
 %%etbk:tnset id:58,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1723
@@ -2809,6 +3187,8 @@ K: Dmaj
 |: "D"!3!d2!5!fd !1!A!3!d!5!f!3!d | "A"!5!ggfg !3!e!2!d!1!B!2!c | "D"!3!d2!5!fd !1!A!3!d!5!f!3!d | "A"!5!ggfg !3!e{f}ee2 |
 "D"!3!d2!5!fd !1!A!3!d!5!f!3!d | "A"!5!ggfg !3!e!2!d!1!B!3!c  | !4!d!2!B{d}BA !2!B!3!c!1!de |1 !3!f!1!d!5!e!3!c !4!d!2!B!1!A!2!B :|2 !3!f!1!d!5!e!3!c !4!d!2!B!1!A!2!F ||
 
+
+
 X:185
 %%etbk:tnset id:58,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/75
@@ -2824,6 +3204,8 @@ K: Gmaj
 "G"!1!G2!3!BG !5!dGBG |  !3!B3A !3!Bc!5!d2 | "C"!5!e!3!ccB !3!c!1!def | "D"!4!ge!1!d!3!B !2!AcBA:|
 |: "G"!1!G2!4!gf !2!ede!4!g | !1!B2!3!BA BcBA | !1!G2!4!gf !2!ede!4!g | "D"!5!a2!3!ab !3!ag!1!e!3!f |
 "G"!4!g2gf !2!ede!4!g | !1!B2!3!BA !3!Bc!5!d2 | "C"!5!e!3!ccB !3!c!1!def | "D"!4!ge!1!d!3!B !2!AcBA:|
+
+
 
 X:186
 %%etbk:tnset id:58,pos:5,rep:3
@@ -2850,6 +3232,8 @@ K: Dmaj
 | "D"!3!f3e !1!d2!4!d!2!B | !1!A2!2!F{A}F !1!D!2!F!3!A!5!d  | "G"!2!B!1!G!2!B!4!d "C"!3!c3!4!d  | !2!e{g}eed efge |
 "D"!3!f2{g}fe !1!d2!4!d!2!B | !1!A2!2!F{A}F !1!D!2!F!3!A!5!d  | "G"!2!B!1!G!2!B!4!d "C"!3!c3!1!G  | !2!E!1!D!2!C!1!D !2!EFGE  ||
 
+
+
 X:187
 %%etbk:tnset id:59,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/423
@@ -2868,6 +3252,8 @@ K: Gmaj
 |: "G"!1!G2!3!BG G!4!cGG | !3!B!1!GG!4!c GGB!1!G | "D"!2!F!1!GAB !4!c!1!A!2!F!1!D | "G"!3!G!1!ABc !4!d2 !1!(3DE!3!F |
 "G"!1!G2!3!BG G!4!cGG | !3!B!1!GG!4!c GGB!1!G | "D"!2!F!1!GAB !4!c!1!A!2!F!1!D  | "G"!3!G!5!BAF !3!!1!G4:|
 
+
+
 X:188
 %%etbk:tnset id:59,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/322
@@ -2885,6 +3271,8 @@ K: Edor
 |: "em"!2!B!4!d!2!ef !4!g2fe | "D"!1!d2!2!BB !4!dB!1!A!4!d | "em"!2!B!4!d!2!ef !4!gfge | !1!d!2!B!1!A!2!F !1!E4 |
 "em"!4!g!1!E!4!ga !4!gfeg | "D"!3!f!2!f!3!fg !3!fe!1!d!2!B | !1!A!2!B!1!de !3!fgfe | !1!d!2!B!1!A!2!F "em"!1!E4:|
 
+
+
 X:189
 %%etbk:tnset id:59,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/474
@@ -2900,6 +3288,8 @@ K: Gmaj
 "G"!3!g2!5!bg !2!e!3!g!1!dg | !2!e!3!gdg !2!e!1!d!2!B!1!d | !3!g2!5!bg !2!e!3!g!1!d!2!B | "D"!1!ABcd !5!ed!2!B!1!d |
 "G"!3!g2!5!bg !2!e!3!g!1!dg | !2!e!3!gdg !2!e!1!d!2!B!1!d | !3!g2!5!bg "D"!2!e!3!f!4!g!2!e | !1!de!3!ga !5!bag!2!e ||
 
+
+
 X:190
 %%etbk:tnset id:59,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/188
@@ -2913,6 +3303,8 @@ R: reel
 K: Bmin
 |: "bm"!3!f!1!B!2!B!1!B !3!fB!5!aB | !3!f!1!B!2!B!1!B "f#m"!2!ee!1!de | "bm"!3!f!1!B !3!(3B!2!B!1!B !3!f2fe |1 !1!dfaf "f#m"!2!e{g}ede:|2 !1!dfaf "A"!2!e{f}ee2||
 |: "D"!1!d3e !3!f2{g}fe | !1!def!1!d "A"!5!e!3!cB!1!A | "D"!3!d!2!c!1!de !3!fgfe | !1!dfaf "A"!2!e{f}ee2 :|
+
+
 
 X:191
 %%etbk:tnset id:59,pos:5,rep:3
@@ -2930,6 +3322,8 @@ K: Amaj
 |: "A"!2!c2!4!ec !5!fcec | !1!A!2!c!4!ec !5!fce!2!c | "D"!1!d2!3!fd !4!gdfd | !3!(3d!2!d!1!d !3!fd !4!gfe!1!d |
 "A"!2!c2!4!ec !5!fcec | !1!A!2!c!4!ec !5!fce!2!c | "D"!1!d!2!c!1!de !3!fga!3!f | "E"!5!e!3!cBc "A"!1!A4:|
 
+
+
 X:192
 %%etbk:tnset id:59,pos:6,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1
@@ -2945,6 +3339,8 @@ K: Edor
 "em"!1!E!3!BBA B2EB | !3!B z !1!AB !3!d!4!e!3!fg | "D"!5!a!3!f!1!e!3!c !4!d!2!B!1!A!3!F | !1!DEFD "em"!2!E4:|
 |: "em"!3!e!1!B!2!B!1!B !3!eB!5!gB | !3!e!1!B!2!B!1!B !5!g!3!e!2!d!1!B | "D"!3!A2!2!FA !1!D!3!A!2!F!3!A | !1!A3A !2!def!5!g |
 "em"!3!e!1!B!2!B!1!B !3!eB!5!gB | !3!e!2!d!1!B!2!c !1!defg | "D"!5!a!3!f!1!e!3!c !4!d!2!B!1!A!3!F | !1!DEFD "em"!2!E4:|
+
+
 
 X:193
 %%etbk:tnset id:59,pos:7,rep:3
@@ -2963,6 +3359,8 @@ K:Amaj
 |: "A"!1!e!4!aag !4!a!3!a!4!af | !1!e!4!aae !2!f!4!a!1!e!2!c | !1!e2!4!ag !4!a{b}aae | "E"!2!(3fg!4!a !1!e!3!c !2!BAB!3!c :|
 |: "A"!1!A2 !3!(3cBA !5!eAcB | !1!A!3!ccA !2!BABc | !1!A2!3!cA !5!e!1!A!3!c!1!e | "E"!2!f!4!a!1!e!3!c !2!BccB :|
 
+
+
 X:194
 %%etbk:tnset id:60,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/359
@@ -2979,6 +3377,8 @@ K: Dmaj
 |: "D"!2!F!5!B!4!A!2!F !4!A2!2!F!1!A | "A"!2!(3Bc!4!d !2!e!4!g "D"!3!fdde | !3!f2af "A"!2!egfe | !1!dfe!1!d !2!B!1!A!2!F!1!E |
 "D"!2!F!5!B!4!A!2!F !4!A2!2!F!1!A | "A"!2!(3Bc!4!d !2!e!4!g "D"!3!fdde | !3!f2af "A"!2!egfe | !1!d!2!B!1!A!2!F "bm"!5!B4:|
 
+
+
 X:195
 %%etbk:tnset id:60,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2980
@@ -2993,6 +3393,8 @@ K: Dmaj
 |: "D"!2!F!1!A!2!Bc !4!ddBA | !4!ddB!1!A "A"!2!F!1!E !3!(3E!2!E!1!E | "D"!2!F!1!A!2!Bc !4!dBB!1!A |1 "A"!4!e2fe !3!d!2!B{d}B!1!A :|2 "A"!4!e2fe !3!d!2!BB!1!d :|
  "D"!5!a!1!d!2!d!1!d !5!ad!5!bd | !5!a!1!dde "A"!3!fee2 | "D"!5!a!1!d !3!(3d!2!d!1!d !5!a2af | "A"!2!egfe !1!d!2!BB!1!d |
 "D"!5!a!1!d!2!d!1!d !5!ad!5!bd | !5!a!1!dde "A"!3!fee2  | "D"!3!f!4!aa!3!f !5!b2!4!a!3!f | "A"!2!egfe !1!d!2!BB!1!A |
+
+
 
 X:196
 %%etbk:tnset id:60,pos:3,rep:3
@@ -3009,6 +3411,8 @@ K: Dmaj
 "bm"!2!B2!4!dB {d}!2!B!1!A!2!F!1!A | !2!B{d}BdB !2!B!1!A!2!F!5!B | "D"!1!A3!2!B !4!d!2!efd | "A"{g}!2!edef "bm"!1!d4 :|
 |: "em"!2!e!1!e!2!ef !1!d2df | !2!e{g}eef !1!d!2!B!1!Az | !2!eAef !1!d2de | "D"!3!fe!1!d!2!B !1!A{d}A!2!F!1!A |
 "em"!4!e3f !4!e!1!B!2!B!1!B | !5!g!1!B!2!B!2!B !1!defg | "D"!5!a!3!f!5!b!3!f !5!afeg | !3!fe!1!d!2!B !1!A3A :|
+
+
 
 
 X:197
@@ -3029,6 +3433,8 @@ K: Gmaj
 !3!d2!1!Bc dBc!3!d | !4!e2!2!cc !1!G!2!c!4!e!5!g | !3!f2de fde!3!f | !3!g z !5!b b2!1!B!3!c!2!^c |
 !3!d2!1!Bc dBc!3!d | !4!e2cd ecd!4!e | !3!f3e fdef | !4!g!2!d!1!B!2!d !1!G2!3!G!5!B |
 
+
+
 X:198
 %%etbk:tnset id:61,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/483
@@ -3048,6 +3454,8 @@ K: Amin
 |:!5!c3!2!G !1!E!2!G!5!cG | !5!c!2!G!1!G!2!G !1!EGc!2!G | !4!B2!2!GG !1!D!2!G!4!B!2!G | !4!c2BA !1!G!3!FE!1!D |
 !3!C3!1!G, !2!G,!1!G,!3!C!5!E | !3!C!1!G, !3!(3G,!2!G,!1!G, !1!G,2!3!C!5!E | !4!D2!2!B,B, !1!G,!2!B,!4!D!2!B, |1,2 !3!CB,DB, !3!C2 z2:|3 !3!C2!2!B,2!1!A,4||
 
+
+
 X:199
 %%etbk:tnset id:62,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/118
@@ -3063,6 +3471,8 @@ K: Dmaj
 "D"!3!F2FG !3!FEDE | !3!F!4!AAB !4!A!3!FE!1!D | !5!d2!2!eg !3!f!1!d!5!e!3!c | "A"!4!d!2!B!1!A!2!F "D"!1!D4:|
 |: "D"!5!d2!2!A!1!G !2!F!1!D!2!F!3!A | !5!d!3!f!5!af "A"!4!gfeg | "D"!3!f!1!A!2!d!4!f "A"!3!e!1!A!2!c!3!e | "D"!1!d!3!fe!1!d "A"!3!c!1!A A2 |
 "G"!4!B!1!D!2!GB "D"!3!A!1!D!2!F!3!A | !5!d!3!f!5!af !4!gfe!1!d | "G"!2!B!4!d!3!c!5!e "D"!4!d!2!B!1!A!3!G | "A"!2!FF!1!EF "D"!1!D4:|
+
+
 
 X:200
 %%etbk:tnset id:63,pos:1,rep:3
@@ -3080,6 +3490,8 @@ K: Dmaj
 |: "D"!3!fg!5!ag !3!f!1!dde | !3!fd!5!ad f!1!dd2 | "A"!1!efga !5!b!1!e !3!(3e!2!e!1!e | !3!g!1!e!5!be !3!g!1!ee2 |
 "D"!3!f!1!d!5!ad !5!bd!5!a!3!f | !1!defd !2!e{g}ede | "bm"!3!f!1!B!2!BA !2!BcdB | "A"!1!A!3!FEF "D"!1!D4:|
 
+
+
 X:201
 %%etbk:tnset id:64,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/72
@@ -3095,6 +3507,8 @@ K: Dmaj
 "D"!1!!4!d3!1!A {d}!2!B!1!A!2!F!1!A | !1!AB!4!dA !2!B!1!A!2!F!1!A | !1!A!2!B!3!d!4!e !5!f2!4!e!3!c | "A"!3!d!2!B!1!A!2!F "D"!1!D4 :|
 |: "D"!5!a3g !3!f!2!f!3!fe | !1!d2!4!d!1!A !2!B!1!A!2!F!1!A | !1!A!2!B!3!d!4!e !5!fde!3!d | "A"!1!B!2!ee!1!d !2!e!4!gf!2!e |
 "D"!5!a3g !3!f{g}ffe | !1!d2!4!d!1!A !2!B!1!A!2!F!1!A |  !1!A!2!B!3!d!4!e !5!f2!4!e!3!c | "A"!3!d!2!B!1!A!2!F "D"!1!D4:|
+
+
 
 X:202
 %%etbk:tnset id:65,pos:1,rep:3
@@ -3112,6 +3526,8 @@ K: Gmaj
 |: "C"!5!e3!3!c "G"!4!d2d!2!B | "C"!3!c2c!1!A "G"!2!BB!1!A!2!G | "D"!1!E!3!AAG ABAG | !1!E!3!AA!2!G !1!ABc!4!d |
 "C"!5!e3!3!c "G"!4!d2d!2!B | "C"!3!c2c!1!A "G"!2!BB!1!A!2!G | "C"!1!D!2!G!1!G!2!G !4!B!2!GAG | "G"!1!E!3!GGF !3!G4:|
 
+
+
 X:203
 %%etbk:tnset id:66,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3178
@@ -3127,6 +3543,8 @@ K: Emaj
 !1!E3 B GB BB | EBGB cAFD | E3 B G2  BB | !5!c!3!A!2!F!3!G !4!A!5!B!3!G!2!F |
 !1!E3 !5!e e2 !3!B!2!A | !1!G2 !2!e!4!g !3!f!2!d!1!B!2!A | !1!G!2!B!5!e!2!B !1!G!1!G!2!e!4!g | !3!f!1!B!2!B!1!B !2!B!3!c!1!A!2!F |
 !1!E3 e e2 BA | G2 eg !3!f!4!g!5!a!3!f | !5!b!3!g!4!a!2!f !3!g!1!e !2!f!1!e | !3!d!1!B !4!f!1!B !2!A!3!B!1!F!3!B |
+
+
 
 X:204
 %%etbk:tnset id:136,pos:1,rep:3
@@ -3145,6 +3563,8 @@ K: Cmaj
 |:!2!e!1!c!2!cc !2!c!1!G!2!A!1!G | !2!E!1!G!2!A!3!B !4!cA!1!G!2!E | !1!GA!3!cd !5!e!3!c!4!d!3!c | !2!A!1!G!3!c!1!G !2!E!1!DD2:|
 | !2!(3ef!4!g !1!c!4!g !2!(3efg !1!c!4!g | !3!(3fg!5!a !1!d!5!a !3!(3fga !1!d!5!a | !2!(3efg cg (3efg !1!c!4!g | !1!AB!3!c!1!d !4!ge!1!d!4!g |
 !2!e2!5!a!2!e !4!g!2!e!3!f!1!d | !5!e!3!c!4!d!2!B !3!c!2!A!1!G!2!E | !1!GA!3!cd !5!e!3!c!4!dc | !2!A!1!G!3!c!1!G !2!E!1!DD2||
+
+
 
 X:205
 %%etbk:tnset id:148,pos:1,rep:3
@@ -3165,6 +3585,8 @@ K: Dmaj
 "D"!3!f2!5!af !2!e!1!d!2!B!3!c | "G"!4!d2!5!f!4!d !2!B!1!A!2!F!4!A | "D"!1!A,2 !2!DD !1!A,!2!D!3!F!4!A | "A"!5!B!3!F!4!A!3!F "D"!1!D4 ||
 |"var Part B bar 2" fd (3ddd edBc |"var Part B bar 3" fagf e3d  |
 
+
+
 X: 206
 %%etbk:tnset id:148,pos:2,rep:3
 %%etbk:site1 http://thesession.org/tunes/281
@@ -3180,6 +3602,8 @@ K: Emin
 "em"!1!B,2!3!E{F}E !1!B,!3!E!5!GE | "bm"!4!F!2!D!1!A,D !4!F!2!D!1!A,!2!D | "em"!1!B,!3!E!5!G!3!E !1!C!3!E!5!G!1!E  |1 "bm"!2!F!3!A!5!dA "em"!2!F!1!E!3!E!2!D :|2 "bm"!2!F!3!A!5!dA "em"!2!F!1!EE2 :|
 |: "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g  | "bm"!1!d3!2!e "em"!1!B!2!ee2 |
 "em"!2!e!5!b!4!^ab !2!f!3!g!1!e!3!g | "bm"!2!f!1!d!4!ad !5!bd!4!a!1!d | "em"{g}!2!e!1!d!2!B!1!A !2!B2!4!dB |2 "bm"!1!A3!4!d "em"!1!B!2!ee2:|2 "bm"!1!A!2!F!1!D!2!F "em"!2!F!1!E!3!E!2!D|
+
+
 
 X:207
 %%etbk:tnset id:156,pos:3,rep:3
@@ -3197,6 +3621,8 @@ K: Dmaj
 |: "D"!1!d!3!f!3!f{g}!3!f dff{g}f | "A"!1!c!2!e!2!e{g}!2!e cee{g}e | "D"!1!d!3!ffe f2fg | "A"!5!a2ge "D"fdde|
 "D"!3!f2ef !1!d!2!B!1!A!2!F | "G"!3!G2!5!BG !1!EFG!1!E | "D"!1!D2FA !5!d2d!4!c | "A"!2!A2!1!G!2!E "D"!2!E!1!DD2:|
 
+
+
 X:208
 %%etbk:tnset id:152,pos:2,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/greengates.html
@@ -3210,6 +3636,8 @@ K: Gmaj
 "G"!1!G!2!B!3!d!5!g !4!e2dB | !1!G!2!B!3!d!5!g !4!e!5!g!3!d!2!B | "C"!1!cdef !5!ged!1!c |1 "D"!3!B!1!G!4!A!2!F "G"!1!G3!1!G:|2 "D"!3!B!1!G!4!A!2!F "G"!1!G2!2!B!3!c||
 |: "G"!1!d!3!g!2!g!3!g !5!b!3!g!2!g!3!g | !1!d2 !5!gg !3!e!2!d!1!B!2!d | "D"!3!e!1!A!2!A!1!A !5!e!1!A!3!c!1!A | !2!(3B!3!c!4!d !2!ef !4!ge!1!d!2!B|
 "G"!1!d!3!g!2!g!3!g !5!b!3!g!2!g!3!g | !1!d2 !5!gg !3!e!2!d!1!B!2!d| "D"!1!ABc!4!d !2!efge|1 !1!d!2!B!1!A!2!B "G"!1!G2!2!B!3!c:|2 !1!d!2!B!1!A!2!B "G"!1!G4|| 
+
+
 
 
 
@@ -3229,6 +3657,8 @@ K:Ador
 "am"!2!e!5!aag !2!e!4!g!1!d!3!c | "em"!2!B!1!A!1!G!2!B !1!ABc!4!d | "am"!2!e!5!aag !5!a2!3!g!4!a | "em"!5!bagb "am"!4!a2!4!a!3!g |
 "am"!2!e!5!aag !2!e!4!g!1!d!3!c | "em"!2!B!1!A!1!G!2!B !1!ABc!4!d | "am"!2!eeef !4!g2af | "em"!4!ge!1!d!2!B "am"!1!A2 (3Bcd||
 
+
+
 X:210
 %%etbk:tnset id:156,pos:1,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/maidsofmitchelstown.html
@@ -3240,6 +3670,8 @@ M: 4/4
 K: Ddor
 |: "dm"!1!D2!4!AG "am"!2!E!3!G!2!G!3!G | !4!A2GA !5!c!4!A!3!G!2!E | "dm"!1!D2!4!AG "am"!1!E!3!G!2!G!3!G |1 !4!A2!2!G!1!E !2!E!1!D!1!C!2!E:|2 !4!A2!2!G!1!E "dm"!2!E!1!DD2||
 |: "C"!1!E!2!G!3!A!4!B !5!c2!4!B!2!G | "dm"!1!A!3!dde !5!f2e!3!d | !4!c!2!A!1!G!2!E !3!F2F!4!G |1 "am"!2!A!4!c!1!G!2!E "dm"!2!E!1!DD2:|2 "am"!2!A!4!c!3!B!5!d !4!c!2!A!1!G!2!E||
+
+
 
 X:211
 %%etbk:tnset id:156,pos:2,rep:3
@@ -3257,6 +3689,8 @@ K:Edor
 "em"!5!e2!1!B!3!e !3!e!5!gfe | "bm"!2!d!1!BB!2!c !1!d2de | "D"!3!f2fe defe |1 !1!d!2!B!1!A!4!d "em"!2!B!1!EE!2!B:|2 !1!d!2!B!1!A!4!d "em"!2!B!1!EED||
 
 
+
+
 X:212
 %%etbk:tnset id:158,pos:1,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/redhairedlass.html
@@ -3269,6 +3703,8 @@ K: Gmaj
 |: "G"!1!D!3!GGF G2!5!BG | !3!G2!5!BG "D"!4!AG!2!E!3!G | "G"!1!D!3!GG!2!F !1!G!1!A!2!B!3!d |1 !5!g!4!e!3!d!2!B "D"!3!c!1!A!5!B!3!G:|2 !5!g!4!e!3!d!2!B "D"!3!c2!2!B!3!c||
 "G"!1!d2!4!gd !2!edgd | !1!d2!4!g!1!d !3!c!1!A!2!B!3!c | !1!d2!4!gd !2!e2!2!ef | !5!ge!2!d!1!B "D"!2!c2!1!B!2!c |
 "G"!1!d2!4!gd !2!edgd | !1!d2!4!g!1!d  !3!B!1!G!2!A!3!B| "C"!4!c2cA "G"!3!B2BA | !1!GA!3!B!4!d "D"!5!e2!4!d!3!B||
+
+
 
 X:213
 %%etbk:tnset id:152,pos:3,rep:3
@@ -3286,6 +3722,8 @@ K: Gmaj
 |: "G"!1!d!3!ggg !4!aggg | !5!b!3!gag !2!e!1!d!2!B!4!d | "em"!5!e!3!BB!2!A !1!G!2!A!3!B!1!d | !4!ge!1!d!3!B "D"!2!AB!1!G!2!E|
 "G"!1!D!2!E!3!G!4!A !3!B!2!A!3!B!1!d | !2!e!4!g!3!g!4!g !5!agef | !4!gede !4!ge!1!d!3!B|1 "D"!4!c!2!ABA "G"!1!G2!2!B!3!c:|2 "D"!4!c!2!ABA "G"!1!G2G!2!E||
 
+
+
 X:214
 %%etbk:tnset id:158,pos:2,rep:3
 T:Thady Casey's
@@ -3297,6 +3735,8 @@ L:1/8
 K: Edor
 |: "em"!2!B2BA !2!(3Bcd !5!ed | !2!B2A!4!d !2!BE-EE| !3!B!2!A!1!G!2!A !3!B!1!d !2!e!3!f |1 !4!gfe!1!d !2!(3Bcd !5!ed:|2 !4!gfe!1!d !2!B!1!def||
 |: "G"!5!g2g!3!e !2!d!1!BB{e}B| !2!d!4!gg{a}g !1!B!2!d!3!e!2!f | !3!g2!3!ga !5!bga!2!f|1 !5!gfed !1!Bdef:|2 !5!gfed !1!Bded||
+
+
 
 X:1001
 %%etbk:tnset id:67,pos:1,rep:3
@@ -3313,6 +3753,8 @@ K: Gmaj
 |: "G"!1!D2E !3!G2A | !5!B2B BAG | "D"!4!A!3!A!4!A !4!A!3!G!2!E | !3!GGG !4!AG!2!E |
 "G"!1!D2E !3!G2A | !5!BDB !5!BAG | "D"!4!AG!2!E !1!D!2!E!3!G | !4!ABA "G"!3!G3:||
 
+
+
 X:1002
 %%etbk:tnset id:67,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/56
@@ -3328,6 +3770,8 @@ K: Gmaj
 |: "G"!4!gGg !3!fgf | !2!efe !1!d2d | !1!d{g}ed ded | de!1!d !2!B2!1!d |
 !4!g!3!g!4!g !3!fgf | !2!efe !1!d3 |1 !1!d!4!g!2!e !1!d!3!B!2!A | !1!GAG G3:|2 !1!d!4!g!2!e dge | dge !1!d!2!B!1!A |
 
+
+
 X:1003
 %%etbk:tnset id:67,pos:3,rep:3
 T: Jim Ward's
@@ -3341,6 +3785,8 @@ K: Gmaj
 "G"!1!GGG GAB | !2!A!1!G!2!E !1!GAB | "C"!4!c2A !3!B!1!G!2!E |1 "D"!1!DED !1!DE!3!F:|2 "D"!1!DED D3||
 |: "D"!4!c2A !3!BAG | !2!A!1!A!2!A !2!AdB | !4!c2A !3!B!1!G!2!E | !1!DED D2!3!B | 
 !4!c2A !3!BAG | !2!AAA ABc | !5!dc!2!A {c}A!1!G!2!E |1 !4!GE!1!D D2!3!B :|2 !4!GE!1!D DEF || !4!G6|
+
+
 
 X:1004
 %%etbk:tnset id:68,pos:1,rep:3
@@ -3362,6 +3808,8 @@ fdd gdd | !2!^c!1!de !4!gag |1 e!1!d!2!^c !1!d2d:|2 e!1!d!3!^c !4!d!3!^c!2!B|
 !2!A!1!A!2!A !5!d!2!A!1!G| !3!F2F GE!5!A | !1!D!2!D!1!D !1!D!3!F!5!A | !1!D !3!(3D!2!D!1!D !1!D3:||
 
 
+
+
 X:1005
 %%etbk:tnset id:68,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/131
@@ -3376,6 +3824,8 @@ B|: !3!cBA !2!BcB | !1!A!2!G!1!E !2!G!3!A!4!B | !3!cBA !2!B!5!e!4!d | !2!BAA A2B
 !3!cBA !2!BcB | !1!A!2!G!1!E !2!G!3!A!4!B | !3!cde !4!ded | !2!B!1!AA A2:|
 f|: !4!gfe !5!age | !1!d!2!B!1!G !1!G!2!B!1!d | !4!gfe !5!agf | !2!efg !5!a2f |
 !4!gfe !5!age | !1!d!2!B!1!G !2!G!3!A!4!B | !3!cBA !2!Bed | !2!BAA A2:|
+
+
 
 X:1006
 %%etbk:tnset id:68,pos:3,rep:3
@@ -3397,8 +3847,11 @@ K: Gmaj
 !4!gdB gdB | !4!ecA ecA | !2!BBB !1!GBd | !3!cBc !1!ABc |
 !2!BBB !1!GBd | !3!cBc ABc | !4!ded !3!c!1!A!2!F | !4!AGF !1!G3 |
 
+
+
 X:1007
 %%etbk:tnset id:69,pos:1,rep:3
+%%etbk:pldat 2013-04-30T17:51
 T: Dorrus Mill
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3418,9 +3871,12 @@ K: Edor
 
 
 
+
+
 X:1008
-%%etbk:site1 http://www.thesession.org/tunes/display/1359
 %%etbk:tnset id:69,pos:2,rep:3
+%%etbk:site1 http://www.thesession.org/tunes/display/1359
+%%etbk:pldat 2013-04-30T17:51
 T: Old Hag You Have Killed Me
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3435,9 +3891,12 @@ K: Dmix
 
 
 
+
+
 X:1009
-%%etbk:site1 http://www.thesession.org/tunes/display/728
 %%etbk:tnset id:69,pos:3,rep:3
+%%etbk:site1 http://www.thesession.org/tunes/display/728
+%%etbk:pldat 2013-04-30T17:51
 T:Scatter the Mud
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3449,6 +3908,8 @@ K: Ador
 eAA BAB|!5!e!1!A!3!A !3!AGE|!2!G!1!A!2!B !4!d2!5!e|dBA A3:|
 !2!e!5!aa !2!e!4!gg|!1!d!2!B!1!G !1!G!2!B!1!d|eaa egg|!1!d!2!B!1!d e2 e|
 !2!e!5!aa egg|!1!d!2!B!1!G !3!A!2!G!1!E|!2!G!1!A!2!B !4!d2e|dBA !1!A3:|
+
+
 
 X:1010
 %%etbk:tnset id:70,pos:1,rep:3
@@ -3464,6 +3925,8 @@ K: Gmaj
 !5!gfg !3!eed | !1!B!5!ee !4!d!3!B!2!A | !3!B!1!GG !4!d!3!B!2!A |1 !3!B!1!G!2!F !1!G3:|2 BGF !1!G2!2!f||
 |: !3!ggg !4!a!2!f!1!d | !3!ggg !4!a2!2!f | !3!ggg !1!e!4!ag | !3!f!1!dd d!3!g!4!a |
 !5!bgb !4!af!4!a | !5!g3 !3!e2!2!d | !1!B!5!ee !4!d!3!B!2!A |1 !3!B!1!GG G2!2!f|2 !3!B!1!GG G3:|
+
+
 
 X:1011
 %%etbk:tnset id:70,pos:2,rep:3
@@ -3482,6 +3945,8 @@ K: Gmaj
 |2!3!ggg !4!aga | !5!b!3!g!2!e !1!d!3!B!2!A | !3!B2B GAB | !2!AG!2!F !1!G3||
 
 
+
+
 X:1012
 %%etbk:tnset id:70,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1805
@@ -3497,9 +3962,12 @@ K: Gmaj
 |:!4!g!1!G!4!g !3!fgf | !2!efe !1!def | !4!g2g !1!efg | !4!a2a !5!b!3!g!1!e |
 !4!g!3!g!4!g !3!fgf | !2!efe !1!de!4!g | !5!ag!2!e !1!d!3!B!1!G |1 !2!AAA !3!B!1!GG:|2 !2!A2A !3!B!1!G!2!E||
 
+
+
 X:1013
 %%etbk:tnset id:71,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/698
+%%etbk:tube1 https://www.youtube.com/embed/c2E25fA_fSA
 T: Caves Of Kiltanon, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3516,6 +3984,8 @@ K: Gdor
 |:"gm"!3!B!1!G!5!d !3!BGd | "F"!2!A!1!F!4!c !2!AFA | "gm"!3!BGd !3!BG!5!d | "dm"!1!d!4!af "gm"!3!ggg |
 "gm"!5!bag !4!agf | !3!gf!1!d !1!c!3!B!2!A | !3!B2!5!d !4!cBA | "dm"!3!B!1!D!2!F "gm"!3!G3 :|
 
+
+
 X:1014
 %%etbk:tnset id:71,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3437
@@ -3531,6 +4001,8 @@ K:Gdor
 |: "gm"!3!B!2!B!3!B !4!cBc | !3!d2!5!g !4!f!3!d!2!c | !3!d!5!g!3!g !3!gfg | !4!agf !3!ggg |
 !1!d!3!gg !4!a!3!gg | !3!gag !2!f!1!d!1!c | !3!B2B "dm"!4!c!2!A!1!F | !2!A!1!G!2!F "gm"!1!G3:|
 |"Var bar 9"!3!B!1!G!3!B !4!c!1!G!4!c|
+
+
 
 X:1015
 %%etbk:tnset id:72,pos:1,rep:3
@@ -3550,6 +4022,8 @@ K: Ador
 "G"!4!gef g2a | !4!gef !4!g!1!d!3!c | !2!BGG !4!dGG | !2!Bdc B!1!A!2!G |
 "am" !1!E!3!A!1!A !1!AB!4!d | !2!ede !5!a2g | "em"!2!e!1!d!3!c !2!Bcd | "am"!5!e!3!c!1!A A3||
 
+
+
 X:1016
 %%etbk:tnset id:72,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/401
@@ -3565,6 +4039,8 @@ K: Dmix
 |:  "D"!2!A!4!dd ded | "A"!3!cAB !3!c!1!A!2!G | "D"!1!A!4!dd ded | "A"!3!cAB !3!c!2!c!3!c |
 "D"!1!A!4!dd ded | "A"!3!c!1!AB !3!cd!5!e | !5!fed !4!e!2!^c!1!A | !4!GE!1!D "D"D3 :|
 
+
+
 X:1017
 %%etbk:tnset id:72,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/160
@@ -3579,6 +4055,8 @@ K: Edor
 "em"!1!E3 !3!GFE | !2!BBB !4!dBA | !2!B!1!A!3!G "bm"!2!F!4!AF | "em"!3!G!1!EE E3:|
 |: "em"!2!e2f !4!gf!2!e | !3!g2a !5!b!3!g!2!e | "D"!1!d!2!d!1!d !3!fed | !3!f!5!a!1!d !3!fed |
 "em"!2!e2f !4!gfe | "bm"!1!dfe !1!d!2!B!1!A |{d} !2!B!1!A!3!G !2!F!4!AF | "em"!3!G!1!EE E3:|
+
+
 
 X:1018
 %%etbk:tnset id:73,pos:1,rep:3
@@ -3597,6 +4075,8 @@ K: Bmin
 !4!geg !3!f!1!d!2!B|!1!def !4!aaa|afb afe|
 !1!def !4!geg|1 f!1!d!2!B B2B:|2 f!1!d!2!B B2A||
 
+
+
 X:1019
 %%etbk:tnset id:73,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1880
@@ -3612,6 +4092,8 @@ K: Dmaj
 |:!1!D!2!F!3!A !5!!3!d2!3!d|!4!ede !5!f!3!d!2!B|!3!def e!3!d!2!B|!1!ABd !4!e2!5!f|
 !4!e!3!d!2!B !1!A!3!FE|!1!D !4!(3G!2!E!1!D E!1!D!2!B,|!1!A,B,!1!D !2!EDE|!3!F!1!DD D2:|
 
+
+
 X:1020
 %%etbk:tnset id:73,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/261
@@ -3626,6 +4108,8 @@ K: Gmaj
 !1!D!3!G!1!G BGG|dGG BGG | !2!efg !1!d!3!B!1!G | !2!ABA !1!G3 :||
 !2!d!4!g!3!g !5!b!3!gg |!4!aga !5!b!3!g!2!e |!1!d!3!gg !5!b!3!gg |!4!aaa age |
 !1!dgg bgg |!4!aga bge | !2!efg !1!d!3!B!1!G | !2!ABA !1!G3 :||
+
+
 
 X:1021
 %%etbk:tnset id:74,pos:1,rep:3
@@ -3645,6 +4129,8 @@ K: Dmaj
 !3!f!1!dd ede | fdd d2 e | fdf def | ggg efg |
 !5!a!3!f!1!d !2!B2A | !1!A2 !2!F !3!G2 G | !4!ABA !3!F2 E | !2!E!1!DD D2 :|
 
+
+
 X:1022
 %%etbk:tnset id:74,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/5199
@@ -3661,6 +4147,8 @@ K: Dmaj
 |:!3!fff afd| !3!ggg !5!b!4!a!3!g | !3!fef afd | !4!gfg !2!e2 e |
 !3!fdf afd | !3!gdg ba!3!g | !3!faf ede | fdd d2 :||
 
+
+
 X:1023
 %%etbk:tnset id:74,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/510
@@ -3676,6 +4164,8 @@ K: Amaj
 |!1!E!2!C!1!E E2 !4!A|!2!F!1!EE E2 !4!e|!5!fec ABc|1 BBA !1!A2 !2!F :|2 BBA !1!A2!5!e||
 |: !5!e!3!c!1!A !1!A!2!c!3!e|!5!a!3!ff fa!3!f|!1!e!3!c!1!A !5!e!4!d!3!c|!2!BBB Bcd|
 |!5!ecA !1!A!2!c!3!e|!5!aff faf|!1!e!3!c!1!A !2!BAB|1 cAA A2c:|2 cAA A2 F||
+
+
 
 X:1024
 %%etbk:tnset id:75,pos:1,rep:3
@@ -3694,6 +4184,8 @@ K: Ador
 "am"!4!a!3!g!2!e a2!5!b | !4!ag!2!e e!1!d!3!B | "G"!2!A!1!G!2!E !1!G2A | !3!BAB !1!G!2!E!1!D |
 !2!ED!2!E !1!G2A | !3!BAG !2!A!3!B!1!d | !2!ef!4!g !1!d!3!B!1!G | !3!BAG "am"!2!A3||
 
+
+
 X:1025
 %%etbk:tnset id:75,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/273
@@ -3710,6 +4202,8 @@ K: Ador
 |: "am"!3!cBA !4!a!1!A!4!a | !5!bag !2!e!1!d!2!B | "G" !1!G!2!B!3!d !5!g2g | !1!G!2!B!4!d GBd |
 "am"!3!ccc !4!dcd | !2!ede !3!gab | !4!a!3!g!2!e !1!d!2!B!1!G | "em"!1!G!2!B!1!G "am"!1!A3:|
 
+
+
 X:1026
 %%etbk:tnset id:75,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1868
@@ -3724,6 +4218,8 @@ K: Ador
 "am"!1!E!3!A!2!G !1!A2B | !3!cAB c!4!d!2!e | "G"!4!g!3!g!4!g ege | !1!d!3!B!1!G "am"!2!A3:|
 |: "am"!5!a!2!ea aef | "G"!4!g!1!dg gdg | "am"!5!a!2!ea aef | "G"!4!gfe def |
 !4!g2e !3!fed | {g}!2!e!1!d!2!B !1!G!2!B!3!d | !5!g2g !2!e!4!ge | !1!d!3!B!1!G "am"!2!A3:|
+
+
 
 X:1027
 %%etbk:tnset id:76,pos:1,rep:3
@@ -3740,6 +4236,8 @@ K: Ador
 |: "C"!4!g!2!ea !4!ge!1!d | !3!c!1!AB !3!cd!5!e | !2!e!5!aa age | "G"!2!e!1!dd d3 | 
 "C"!4!g!2!eg !4!ge!1!d | !3!c!1!AB !3!cd!5!e | "dm"!5!=fed !2!c!1!A!2!G | "am"!1!E!3!A!1!A A3:|
 
+
+
 X:1028
 %%etbk:tnset id:76,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/861
@@ -3754,6 +4252,8 @@ K:Ddor
 "dm"!5!dc!2!A !1!G!2!E!5!A | !1!D2D !2!E!4!G!1!G | "C"!2!c!3!e!5!a !4!g!2!e!1!c |  "dm"!1!de!1!d !3!d3 :|
 |: "dm"!1!A!3!d!1!d !1!de!4!g | !5!age !1!d!3!c!1!A | "C"!3!ccc !1!A!3!cc | !1!G!3!c!5!e !1!AB!3!c |
 "dm"!4!d2!1!d !1!deg | !5!age !1!d!3!c!1!A | "C"!2!c!3!e!5!a !4!g!2!e!1!c | "dm"!1!de!1!d !3!d3 :|
+
+
 
 X:1029
 %%etbk:tnset id:76,pos:3,rep:3
@@ -3770,6 +4270,8 @@ K: Bmin
 |: "bm"!5!b!1!Bb !4!a!3!f!2!e | !3!fe!5!a !3!fe!1!d | !2!B!4!dB !1!A!2!B!4!d | !2!efd !2!e!3!f!4!a |
 !5!b!3!f!5!a !2!ef!1!d | !2!(3Bcd B !1!A!2!F!1!A | !3!d!4!e!3!f "f#m"!5!afe | "bm"!1!d!2!BA !2!B3:|
 
+
+
 X:1030
 %%etbk:tnset id:77,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/926
@@ -3784,6 +4286,8 @@ K: Dmix
 "D"!5!A2D !3!FED | !3!A2B !5!c!3!A!2!F | "C"!4!G!2!EE !5!c!2!EE | "D"!1!DED !1!D3:|
 |:"D"!3!d2e !5!=fed | !4!eed !2!c!1!A!3!F | "C"!4!G2E !2!EDE | !4!c2d !4!c!2!A!1!G |
 "D"!3!d2e !5!=fed | !4!eed !2!c!1!A!3!F | "C"!4!G!2!EE !5!c!2!EE | "D"!1!DED !1!D3:|
+
+
 
 X:1031
 %%etbk:tnset id:77,pos:2,rep:3
@@ -3800,6 +4304,8 @@ K: Gmaj
 |:"A"!5!e!1!AA !4!fed | !3!e!1!AA !1!ABd | !5!e!1!AA !4!gfe | "G"!1!d!2!B!1!G !1!G!2!B!4!d |
 "A"!5!e!1!AA !4!fAA | !3!e!1!AA !1!A2!4!g | "G"!3!faf !4!gfe |1!1!d!2!BG !1!G!2!B!4!d:|2!1!d!2!B!1!G !1!G3||
 
+
+
 X:1032
 %%etbk:tnset id:77,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/335
@@ -3814,6 +4320,8 @@ K: Ador
 "am"!5!e!1!AA !2!Bc!4!d | !2!e!5!af !4!ged | !2!e!1!d!2!B !3!cB!1!A | "em"!2!B!1!A!2!G "am"!1!A3:|
 |:"am"!2!e!5!aa !2!efg | !5!agf !4!ged | !2!eaa !2!efg | "em"!3!fed !2!eee |
 "am"!2!e!5!aa !2!efg | !5!agf !4!ged | !2!e!1!d!2!B !3!cB!1!A | "em"!2!B!1!A!2!G "am"!1!A3:|
+
+
 
 X:1033
 %%etbk:tnset id:78,pos:1,rep:3
@@ -3830,6 +4338,8 @@ K: Emin
 |:"Em"!4!e!1!E!4!e !4!e!3!d!2!B | "D"!3!d!2!d!3!d !3!def | "Em"!4!e2e !4!e!3!d!2!B | "D"!3!d3 !3!d2!4!e |
 "G"!3!d2!2!B !1!GA!3!B | "D"!1!A2!3!F !1!DEF | !4!G2E !3!FED | "Em"!2!E3 E3:|
 
+
+
 X:1034
 %%etbk:tnset id:78,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/770
@@ -3845,6 +4355,8 @@ K: Ador
 |: "am"!5!a2a !2!ede | !4!aba !4!ag!2!f | "G"!4!g!3!g!4!g !4!gfe | !1!d!2!B!1!G !1!G!2!B!1!d |
 "am"!2!e!4!g!2!e !1!!4!d2!1!A | !2!B!1!A!1!G !2!Bcd | !5!edc !2!B!1!A!1!G | !2!BB!1!A A3:|
 
+
+
 X:1035
 %%etbk:tnset id:78,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1043
@@ -3859,6 +4371,8 @@ K: Ador
 "C"!3!AGE !2!G2E | !5!c2!1!E !2!D!1!E!2!G | "D"!3![A3D] !4!BAG | !3!([A3D] [A3D]):|
 |: !4!B | "C"!3!c2B !3!c2d | !5!e!3!c!1!A !1!AB!3!c | "G"!3!BAG !1!GAB | !5!dBG !1!GA!3!B |
 "C"!3!c2B !3!c2d | !5!ecA !1!AB!3!c | "G"!3!BA!1!G !2!GEG | "D"!3!(A3 A3):|
+
+
 
 X:1036
 %%etbk:tnset id:78,pos:4,rep:3
@@ -3876,9 +4390,12 @@ K: Ador
 "C"!1!c!2!d!3!e !4!g2!5!a | !4!ged !1!c2!1!d | "am"!2!e!5!aa !2!ee!1!d | !3!c!1!AA A3 :|
 
 
+
+
 X:1037
 %%etbk:tnset id:79,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/317
+%%etbk:pldat 2013-04-30T15:44
 T: Paddy Whack
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3891,26 +4408,29 @@ D |: "G"!2!GA!4!B "C"!3!cc!5!e | "G"!4!d!2!B!1!G "D"!4!A!2!F!1!D | "G"!2!G!3!B!5
 |: "G"!1!G !2!(3B!3!^c!1!d !4!g2g | !2!e!2!d!3!c !2!Bc!1!A | !1!G !2!(3B!3!^c!1!d !2!e!5!ag | "D"!3!f!1!dd def |
 "G"!4!g!3!g!4!g !5!af!1!d | "C"!3!cc!5!e "G"!4!d!2!B!1!G | !2!GA!4!B "D"!3!ced |1 !3!B!1!G!2!F "G"!1!G3:|2 !2!B!1!G!2!F "G"!3!G2!1!D:|
 
+
+
 X:1038
 %%etbk:tnset id:79,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1395
+%%etbk:pldat 2013-04-30T15:44
 T: Goat on the Green
 T: Frog In The Well, The
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Last Modified 2013-02-19
+H: Created 2013-02-19 /  Last Modified 2013-04-30
 M: 6/8
 L: 1/8
 R: jig
 K: Emin
 |: "em"!1!E !3!(3E!2!E!1!E !3!GFE | !5!BEE !3!GFE | "D"!1!D !3!(3D!2!D!1!D !3!FED | !5!A2G !3!FE!1!D |
 "em"!1!E !3!(3E!2!E!1!E !3!GFE | !5!BEE !3!GFE | "D"!5!BGB BA!2!F | "em"!3!G!1!EE E3:|
-|: "em"!2!efe !1!B!2!B!1!B | !2!e!1!Be !3!fge | "D"!3!f!1!dd !5!add | !3!fdf !5!agf |
-"em"!2!efe !1!B!2!B!1!B | !2!e!1!Be !3!fge | "D"!3!f!1!d!2!B !1!A!3!G!2!F |"em" !3!G!1!EE E3:|
-
+|: "em"!2!efe !1!B!4!g/!2!e/!1!B | !2!e!1!Be !3!fge | "D"!3!f!1!dd !5!add | !3!fdf !5!agf |
+"em"!2!efe !1!B!4!g/!2!e/!1!B | !2!e!1!Be !3!fge | "D"!3!f!1!d!2!B !1!A!3!G!2!F |"em" !3!G!1!EE E3:|
 
 X:1039
 %%etbk:tnset id:79,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1634
+%%etbk:pldat 2013-04-30T15:44
 T: Lark On The Strand, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-04-26
@@ -3922,6 +4442,8 @@ K: Gmaj
 "D"!1!A3 {c}!2!AGA | "G"!3!B!1!G!2!E !1!G !3!(3G!2!G!1!G | !1!GBA GAB | !5!dBG !3!BdB :|
 |: "G"!1!G!2!B!3!d !5!g2!3!g | !3!gba !3!ggg | !1!G!2!B!3!d !5!g2!3!d | "C"!4!e2e {g}e!3!d!2!B |
 "G"!1!G!2!B!3!d !5!g!1!G!5!g | !3!gba !3!ggg | "D"!4!aba age | {g}!2!edg e!1!d!2!B :|
+
+
 
 X:1040
 %%etbk:tnset id:80,pos:1,rep:3
@@ -3938,6 +4460,8 @@ K: Dmix
 |: "D"!5!d2B !4!cBA | !3!BAG !2!ABc | !5!d2B !4!cBA | !3!BA!1!G !2!E2!1!D |
 !5!dcB !4!cBA | !3!BAG ABc | !5!dDd !4!c2A | !3!BA!1!G !2!EE!1!D:|
 
+
+
 X:1041
 %%etbk:tnset id:80,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1301
@@ -3953,6 +4477,8 @@ K: Dmix
 |: "D"!5!fed !4!edc | !1!Add !2!^cd!4!e | !3!fed !2!efg | "A"!1!AB!3!c !1!def |
 "G"!4!g!3!g!4!g !5!ag!2!e | !1!d!3!c!1!A !3!A!2!G!1!E | "A"!2!GGG !1!A!3!d!4!e | "D"!5!f!3!d^c d3:|
 
+
+
 X:1042
 %%etbk:tnset id:80,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/829
@@ -3966,6 +4492,8 @@ K: Dmix
 |: "D"!3!A2G !3!A!1!DD | !3!AAG !3!A!5!d!4!c | !3!A2G !3!A!1!DD | "A"!2!EFG EF!4!G:|
 "D"!2!A!5!d!3!B !4!c3 | !1!A!3!dd !4!e!3!f!4!g | !1!A!4!dB !3! c2!1!2A | "A"!3!G!1!E!3!F !4!GE!1!D |
 "D"!2!A!5!d!3!B !4!c3 | !1!A!3!d!1!d !2!e!3!f!4!g | !5!age !1!d!3!c!1!A | "A"!3!G!1!E!3!F !4!GE!1!D||
+
+
 
 X:1043
 %%etbk:tnset id:81,pos:1,rep:3
@@ -3985,6 +4513,8 @@ D (3DDD DEG|A2d cce|dcA AGE|GED DEG|
 |:!2!A2!4!d !4!d!3!c!2!A|!3!c!4!d!5!e !5!e!1!G!4!d|!3!c!2!A!2!A !2!A!1!G!2!A|!3!c2e dcA|!2!A2d dcA|
 |cde eGd|!3!c!2!AA !2!A!1!G!2!E|!4!GED DEG:||
 
+
+
 X:1044
 %%etbk:tnset id:81,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11901
@@ -4003,6 +4533,8 @@ B3 !1!E !3!(3E!2!E!1!E | BAG FED | A2 D !2!F!2!F!2!F |1 A2A AGA :|2 A2A AGF ||
 |: !5!B2 !2!c !3!d2 !4!e | !5!f!3!d!2!B !1!A!3!G!2!F | !5!B2 !2!c !3!d2 !4!e | !5!f2 !4!e !5!f!3!d!2!B |
 !1!B2 !2!c !3!d2 !4!e | !5!fdB AGF | !1!D !3!(3D!2!D!1!D !2!F!2!F!2!F | !4!A2A AGA :|
 
+
+
 X:1045
 %%etbk:tnset id:82,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3321
@@ -4018,6 +4550,8 @@ K: Bmin
 "G"!2!BdB {d}!2!B!1!A!2!F | "A"!4!A!2!F!1!E E2F | "D"!1!D!2!F!3!A !5!d!2!ef |1 "bm"!2!e!1!d!2!B B2!1!A:|2 "bm"!2!e!1!d!2!B B2!4!d:|
 |: "A"!5!e!1!A!5!e !5!e!4!d!2!B | "D"!1!A!2!F!1!A !4!d2!1!A | !2!d2!3!f !4!a!3!a!4!a | !5!b!4!a!3!f !4!a!3!f!4!a |
 !5!ba!3!f !4!afa | !5!ba!3!f !2!e!1!d!2!B | !1!d2!3!f !5!afe |1 "bm"!1!d!2!BA !2!B2!4!d:|2 "bm"!1!d!2!BA !2!B2!1!A||
+
+
 
 X:1046
 %%etbk:tnset id:89,pos:1,rep:3
@@ -4036,6 +4570,8 @@ K: Gmaj
 "G"!5!g!3!dd !5!g!3!d!1!B | "C"!2!c2d !4!e!5!g!4!e | "G"!3!d!2!B!1!G "D"!3!A!2!G!1!E |1 "G"!2!G3 !1!G2!3!d:|2 "G"!2!G3 G2!1!D:|
 |"var bar 2" !5!d!1!Dd !5!d!4!B!3!A |
 
+
+
 X:1047
 %%etbk:tnset id:82,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/60
@@ -4050,6 +4586,8 @@ K: Ador
 "am"!1!E!3!AA !1!E!3!AA | "em"!4!BAB !1!G2A | !3!B!5!ee !5!e!4!d!3!B | !4!d!3!B!2!A "am"A3:|
 |: "am"!3!e!5!aa !5!a!4!g!3!e | "em"!2!d!1!B!2!A !1!G2A | !3!B!5!e!3!e !3!e!2!d!1!B | !2!def !5!gfg |
 "am"!3!e!5!aa ag!3!e | "em"!2!d!1!B!2!A !1!G2A | !3!B!5!ee edB | !4!d!3!B!2!A "am"A3:|
+
+
 
 X:1048
 %%etbk:tnset id:83,pos:1,rep:3
@@ -4067,6 +4605,8 @@ K: Ador
 "am"!1!A!5!a!1!A !4!g2g | !3!fed {g}!2!e!1!d!2!B | !1!ABc !2!Bcd | !3!cde !4!d!2!B!1!G:|
 |"var bar 1" !1!A3 !1!A!2!G!1!A | |"var bar 9,10 / 13,14" !1!A!5!a!1!A !4!g!1!A!3!f | !1!A!5!e!1!A !4!d!2!B!1!G |
 
+
+
 X:1049
 %%etbk:tnset id:83,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3867
@@ -4083,6 +4623,8 @@ K: Dmix
 "D"!3!ffd !1!d!2!^c!1!d | !5!afd !1!de!3!f | "G"!3!ggg !1!e!3!g!5!b | "D"!4!afd !1!d!5!ag |
 "D"!3!ffd !1!d!2!^c!1!d | !5!afd !1!def | "C"!2!eec !1!c!2!B!1!c | !4!g!2!e!1!c !2!efg | 
 "D"!5!a!1!AA !4!g!1!GG | !3!fe!1!d !3!cB!1!A | "G"!3!GGG !1!E!3!G!5!B | "D"!4!A!2!F!1!D D3 ||
+
+
 
 X:1050
 %%etbk:tnset id:83,pos:3,rep:3
@@ -4104,6 +4646,8 @@ K: Dmix
 |:"D"!5!d!1!DD !4!cDD | !3!BDD !2!ADD | !5!dDD !4!c!2!A!1!G | !3!FAG !3!FED |
 !5!d!1!DD !4!cDD | !3!BDD !4!A!2!F!1!D | "C"!1!C!2!E!3!G !5!c2!2!A |1 !1!GBA !1!G!3!B!4!c:|2 !1!GBA !1!G!2!F!1!G:|
 
+
+
 X:1051
 %%etbk:tnset id:84,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/373
@@ -4119,6 +4663,8 @@ K: Dmix
 !1!DE/F/!4!G !2!~A3|AdB cAG|EGG EAG|1 ~E2D D2A:|2 !2!EGA !1!D2!4!e||
 |:!3!f!1!dd ede|!3!f!1!d!2!^c !1!d2e|!3!fe!1!d !3!~c3|!2!B!1!A!2!G !1!A2!4!g|
 !3!fdd e!1!d!3!^c|!4!d!5!e!4!d !3!c!2!A!1!G|!2!E!4!GG EAG|1 ~E2D D2!4!e:|2 ~E2D D2A||
+
+
 
 X:1052
 %%etbk:tnset id:84,pos:2,rep:3
@@ -4137,6 +4683,8 @@ K: Dmaj
 |: !3!B2G A2G | !3!B2!1!D D2!3!B | !3!BAG !2!A!1!G!2!E | !4!G!2!E!1!D D2!5!d |
 !3!B2G A2G | BdB BAG | !2!AGA !3!BAB  |1 GED D2!5!d|2 GED D2!3!B :||
 
+
+
 X:1053
 %%etbk:tnset id:84,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2838
@@ -4152,9 +4700,12 @@ K: Gmaj
 |:!4!g3fgf|efe !1!d!3!B!2!A|!1!G3!2!AGA|!3!B!5!e!2!e !1!def|
 !4!gag fgf|efe d3|!2!efg eag|[1fdd def:|[2fdd !1!d2!3!c|]
 
+
+
 X:1054
 %%etbk:tnset id:85,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1214
+%%etbk:pldat 2013-04-30T15:55
 T: Girl Of The House, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -4167,9 +4718,12 @@ K: Dmix
 |: !2!AB | "C"!4!c2!2!A {c}A!1!G!2!F | "G"!2!F!1!GG {c}!1!G!2!F!1!G | "D"!2!AdB !4!cAG | !2!A!5!d!2!^c !3!d2!4!e |
 !5!fed !2!c!1!A!3!G | !1!E!2!FF !3!G!1!E!3!A | !5!d!4!c!3!A "A"!2!G!1!E!3!A | "D"!1!D !3!(3D!2!D!1!D D:|
 
+
+
 X:1055
 %%etbk:tnset id:85,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4191
+%%etbk:pldat 2013-04-30T15:55
 T: Humours Of Ballingarry, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-04-26
@@ -4182,9 +4736,12 @@ K: Gmaj
 !3!d|: "G"!1!def !4!ggg | !2!e!1!d!3!c !2!BA!1!G | "D"!2!e2!4!a aga | !5!b!3!g!2!e e!1!d!2!B |
 "G"!1!def !4!ggg | !2!e!1!d!3!c !2!B!1!AB | !1!G!2!B!3!d !5!g!3!d!2!B | "D"!3!c!1!A!2!F "G"!1!G3:||
 
+
+
 X:1056
 %%etbk:tnset id:85,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1895
+%%etbk:pldat 2013-04-30T15:55
 T: Maloney's Wife
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -4199,9 +4756,12 @@ K: Dmaj
 |: "G"!3!ggg !2!faf | "D"!3!gf!1!e !2!d!1!ef | "G"!3!gbg fga | "A"!5!b!3!g!1!e e2f |
 "G"!3!ggg !2!faf | "D"!3!gf!1!e !2!d2!1!A | "A"!2!Bcd !5!edB |1 "D"!1!A!2!F!1!D D2!2!f:|2 "D"!1!A!2!F!1!D D!4!AG:|
 
+
+
 X:1057
 %%etbk:tnset id:85,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/6422
+%%etbk:pldat 2013-04-30T15:55
 T: Dawn Chorus, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -4215,6 +4775,8 @@ K: Gmaj
 "G"!1!D2!4!B BAB | !5!d!4!BB BAG | "D"!3!A!4!B!5!d !4!BAB | "em"!2!F!1!EE E2!2!f||
 |:"em"!3!g2!1!e eag | "bm"!2!f/g/af !1!d!1!e!2!f | "em"!3!g!2!g!3!g !4!aga | !5!b!3!g!1!e e2!2!f |
 "G"!3!gag {a}gf!1!e | !2!ded !2!d!1!B!2!d | !5!g2g !1!B!2!B!1!B |1 !4!d!2!B!1!G G2!2!f:|2 "D"!4!d2!1!D !1!D!2!G!3!A||
+
+
 
 X:1058
 %%etbk:tnset id:86,pos:1,rep:3
@@ -4237,6 +4799,8 @@ K: Dmaj
 |: "D"!3!F!2!F!3!F !4!G2G | !3!F!5!AF !3!FE!1!D | {A}!2!FEF !3!GFG | !4!A!2!F!1!D "A"!1!E2E |
 "D"!2!F{A}!2!F!2!F !3!G!2!G!3!G | !2!FAF !2!F!1!E!1!D | "G"!2!B!1!B!2!B !2!Bc!4!d | "D"!1!A!2!F!1!D D3:|
 
+
+
 X:1059
 %%etbk:tnset id:86,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1392
@@ -4253,6 +4817,8 @@ K: Emin
 |: "em"!2!B!5!e!2!e {g}!2!e!1!d!2!B | "D"!1!def !5!afd | "em"!2!ege !1!df!1!d | !2!BAB !4!dB!1!A |
 "em"!2!B!5!e!2!e {g}!2!e!1!d!2!B | "D"!1!def !5!afd | "em"{g}!2!e!1!d!2!B !1!A!2!F!4!A | !5!B!1!EE E3:|
 
+
+
 X:1060
 %%etbk:tnset id:86,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/88
@@ -4267,6 +4833,8 @@ K: Dmaj
 !3!FEF !1!D !3!(3D!2!D!1!D | D2!5!d !4!c!2!A!1!G | !2!FAF !3!GB!3!G | "A"!5!AAF !4!GFE:|
 |: "D"!1!D2!5!d !4!c!2!Ad | !4!c!2!A!5!d !4!c!2!A!1!G | !1!F2!5!d !4!c!2!A!1!G | !5!AAF !4!GFE |
 !1!D2!3!d !2!c!1!A!3!d | !5!fed !2!c!1!A!3!G | !2!FAF "A"!3!GB!3!G | !5!AAF !4!GFE:|
+
+
 
 X:1061
 %%etbk:tnset id:87,pos:1,rep:3
@@ -4283,6 +4851,8 @@ K: Dmaj
 |: "D"!1!AB!4!d !2!e2f | !1!d2!3!c B{d}B!1!A | !1!AB!4!d !2!e2f | !1!d!3!c!1!A "G"!2!B3 |
 | "D"!1!AB!4!d !2!ede | !3!f!1!d!2!B {d}B!1!A!2!F | !4!A!2!F!1!E EF!4!A | "G"!2!B3 !4!d3:|
 
+
+
 X:1062
 %%etbk:tnset id:87,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1447
@@ -4298,6 +4868,8 @@ K: Edor
 |: "em"!2!BAB !5!e2!2!e | !3!fed !2!eee | !1!B!2!B!1!B !4!gfe | "D"!3!f!1!d!2!B !1!A!2!F!1!A |
 "em"!2!BAB !5!e2!2!e | !3!fed !2!e2f | "bm"!4!g!2!ee !5!a!1!dd | !3!(3fe!1!d !2!B !1!A!2!F!1!A:|
 
+
+
 X:1063
 %%etbk:tnset id:87,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/451
@@ -4312,6 +4884,8 @@ E|: "D"!3!F!2!F!3!F !5!A!3!F!1!E | !3!E!2!D!1!B, !1!A,!1!B,!2!D | !4!F!1!E!2!F !
 "D"!3!F!2!F!3!F !5!A!3!F!1!E | !3!E!2!D!1!B, !1!A,!1!B,!2!D | !4!F!1!E!2!F "A"!3!GFG | "D"!4!A!2!F!1!D D3:|
 !4!e |: "D"!5!f2!3!d {e}dcd | "A"!4!ed!2!c !1!Bc!3!d | "D" !5!f2d {e}!3!dcd | "A"!1!ABA !1!A!3!de |
 "D"!5!f2!3!d {e}dcd | !4!ed!2!c !1!B!2!c!1!d | !3!f!5!af "A"!4!g!1!e!2!c | "D"!3!d!5!fe !3!d3:|
+
+
 
 X:1064
 %%etbk:tnset id:88,pos:1,rep:3
@@ -4329,6 +4903,8 @@ B |: "am"!3!cBA !5!eBd | !3!cAA A2B | !3!cBA !5!e!3!fg | "G"!1!d!2!B!1!G !1!G!2!
 |1 "am"!5!aga !2!ee!1!d | !3!cAA !5!e2 d | !3!cB!1!A "G"!2!G!1!AB | "am"!3!c!1!AA A2 !2!e :|
 |2 "am"!5!aeg !3!f!1!d!2!B | !5!e!3!c!1!A !4!B!2!G!1!E | !3!A!4!B!3!c "em"!5!eBd | "am"!3!c!1!AA A3||
 
+
+
 X:1065
 %%etbk:tnset id:88,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/797
@@ -4342,6 +4918,8 @@ K:Edor
 "em"!5!BAF !1!E !3!(3E!2!E!1!E | !2!F!1!EE E3 | !5!ed!2!B !1!ABd | !5!edB !1!A!2!F!1!A:||
 |: "em"!2!Bc!4!d !2!eee | !3!fed !2!eee | !1!B!2!ee Bee | "D"!3!fff !1!def |
 "em"!4!ggg !3!fff | !2!e!1!d!2!B !4![e2B]f | !4!e!3!d!2!B !1!AB!4!d | !5!edB !1!A!2!F!1!A:||
+
+
 
 X:1066
 %%etbk:tnset id:88,pos:3,rep:3
@@ -4357,6 +4935,8 @@ K: Ador
 "am"!1!A !3!(3A!2!A!1!A !1!AB!4!d | "G"!5!ed!2!B !1!G2!2!B | !4!d!2!BB !1!G!2!BB | "am"!1!ABA A3 :|
 |: "am"!2!e!4!aa aga | "G"!5!b!1!d!5!b !4!ag!2!e | !2!e2!1!G !1!G!2!B!4!d | !5!e2!2!e !4!ged |
 "am"!2!e!4!aa aga | "G"!5!b!1!d!5!b !4!ag!2!e | !2!e!4!ge !1!d!2!B!1!G | "am"!1!ABA A3:||
+
+
 
 X:1067
 %%etbk:tnset id:89,pos:2,rep:3
@@ -4382,6 +4962,8 @@ K: Emin
 |: "em"!4!e!3!d!2!B edB | !1!A!2!A!1!A !4!B!2!G!1!E | !4!e!3!d!2!B edB | "bm"!1!AB!3!c "em"!1!B!2!B!1!B | 
 "em"!3!e!2!d!1!B !5!gfe | d!1!c!2!B !1!A!2!A!1!A | "bm"!4!BAG !1!E!3!A!2!G | "em"!1!E !3!(3E!2!E!1!E !1!E3:|
 
+
+
 X:1068
 %%etbk:tnset id:90,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/241
@@ -4405,6 +4987,8 @@ f|: "em"!3!gbg !2!faf | !3!g!1!ee e2f | !3!gbg !2!fag | "D"!2!f!1!dd d2!2!f |
 f|: "em"!5!g!2!d!1!c !2!Bc!1!A | !2!G!1!EE E2!4!f | !5!g!3!d!2!B !3!d!1!A!3!G | "D"!2!F!1!DD DE!3!F |
 "em"!1!G2G {c}!2!AG!2!A | !1!B!2!B!1!B !5!gfg | "bm"!3!e!2!d!1!B {d}!2!B!1!A!2!F | "em"!3!G!1!EE E3:|
 
+
+
 X:1069
 %%etbk:tnset id:91,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1237
@@ -4420,6 +5004,8 @@ K: Dmix
 |: "D"!1!D !3!(3D!2!D!1!D !4!c2c | !2!AdB !4!cBc | !1!D !3!(3D!2!D!1!D !4!c2c | !5!dc!2!A !1!G!2!E!1!D |
 !1!D !3!(3D!2!D!1!D !4!c2c | !2!AdB !4!cBc | !2!ABA ABc | !5!dc!2!A !1!G!2!E!1!D:|
 
+
+
 X:1070
 %%etbk:tnset id:91,pos:2,rep:3
 T: Gan Ainm
@@ -4433,6 +5019,8 @@ K: Dmaj
 "D"!2!FGA !2!EFG | !1!D2!3!F {A}FED | "G"!3!G2!5!B !4!A!2!F!1!D | "A"!3!FEE {G}EDE:|
 |: "D"!3!F2F {A}FED | !3!F!5!A!1!A A2!4!d | "G"!2!B!4!dd !1!A!4!dd | !2!B2B !1!A!3!F!2!E |
 "D"!3!F2F {A}FED | !3!F!5!A!1!A A2!4!d | !2!B!1!AA !1!A!3!F!1!D | "A"!3!FEE EDE:|
+
+
 
 X:1071
 %%etbk:tnset id:91,pos:3,rep:3
@@ -4449,6 +5037,8 @@ G,|: "G"!1!G,!2!B,!4!D !2!E{G}ED | "D"!2!EG!3!F "G"!4!!5!G2 G, | !1!G,!2!B,!4!D 
 |: "C"!2!ege "G"!1!de!1!d | !2!B!1!GG !1!G!2!B!4!d | "C"!2!ege "G"!1!de!1!d | !3!BAG "D"!2!A2!1!A |
  "C"!2!efe "G"!1!de!1!d | !2!B!1!GG !1!GA!3!B | "C"!4!c2c "G"!3!BdB |1 "D"!2!A!1!G!2!F "G"!1!G!2!B!4!d:|2 "D"!2!A!1!G!3!F "G"!4!!5!G2G,||
 
+
+
 X:1072
 %%etbk:tnset id:92,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/43
@@ -4463,6 +5053,8 @@ B |: "C"!5!c!1!EE {B}!2!G!1!EE | !5!c!1!EE !2!GAB | !5!c!1!EE !2!G!1!E!2!D | "am
 "C"!5!c!1!EE {B}!2!G!1!EE | !5!c!1!EE !2!GAB | !5!cBA !2!G!1!E!2!D | "am"!1!E!3!AA A3:|
 |: "C"!1!cd!3!e !4!g!3!e!2!d | !3!e!5!aa !4!ged | !1!cde !4!ged | "am"!3!e!5!aa a3 |
 "C"!1!cde !4!ged | !3!e!5!aa !4!g2!1!G | !5!cBA !2!G!1!E!2!D | "am"!1!E!3!AA A3:|
+
+
 
 X:1073
 %%etbk:tnset id:92,pos:2,rep:3
@@ -4481,6 +5073,8 @@ K: Ador
 "am"!2!e2!4!a aba | "G"!2!e{g}e!4!g ga!4!g | !3!e!5!ge !2!d!1!B!2!G  | !4!BAB !2!G!1!E!2!D |
 "am"!1!E2!2!A {c}!2!AGA | "G"!3!B!4!d!2!d !2!d!1!Bd | !3!e!5!ge !2!d!1!B!2!G | !4!BA!2!G "am"!3!A3||
 
+
+
 X:1074
 %%etbk:tnset id:92,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1732
@@ -4495,6 +5089,8 @@ e|: "D"!5!f!1!AA !1!A!2!F!1!A | {d}!2!B!1!A!2!F !1!A2A | "G"!2!B{d}!2!B!2!B !1!A
 "D"!3!f!1!AA !1!A!2!F!1!A | {d}!2!B!1!A!2!F !1!A2A | "G"!2!B!1!B!2!B !1!A!2!F!1!A | "A"!2!B!4!dc "D"!4!!3!d3 :|
 !4!e|: "D"!5!fAf !4!efe | !3!d!2!B!1!A !3!d2!4!e | !3!f!4!aa !4!a!3!fe | !3!f!4!aa !5!b2a |
 !3!f!2!f!3!f !2!efe | !1!d!2!B!1!A !3!d2!4!e | !5!f!1!AA !1!A!2!F!1!A | "A"!2!B!4!dc "D"!4!!3!d3 :|
+
+
 
 X:1075
 %%etbk:tnset id:93,pos:1,rep:3
@@ -4512,6 +5108,8 @@ K: Edor
 |: !3!F!4!A | "em"!2!B2!4!e efe | "D"!3!d!2!B!3!c !4!dcd | "em"!5!eed !2!BBB | "D"!1!A!3!F!1!D !3!FED |
 "em"!2!EEE !3!FEE | !2!E!3!F!4!A !2!B!3!d!5!f | "D"!4!e!3!d!2!B !2!B!4!dB | !1!A!3!F!1!D "em"!2!E2:|
 
+
+
 X:1076
 %%etbk:tnset id:93,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/319
@@ -4526,6 +5124,8 @@ K: Dmaj
 "D"!1!D!2!F!3!A !5!d!3!de | !5!f!3!d!2!B B!1!A!2!F | !1!A!2!A!1!A !4!d!1!A!3!F | !1!DED D2 :||
 !5!d |: "D"!1!d!3!fa !5!a!3!fd | "G"!3!gbg "D"!2!faf | !1!d!3!fa !5!a!3!f!1!d | "A"!2!cd!4!e !4!e!2!c!1!A |
 "D"!2!d!3!f!5!a af!1!d | "G"!3!gbg "D"!2!faf | !1!B2!2!B !1!A!2!F!4!A | !1!DED D2 :||
+
+
 
 X:1077
 %%etbk:tnset id:93,pos:3,rep:3
@@ -4544,6 +5144,8 @@ K: Dmaj
 |: "D"!4!fAA !3!eAA | !2!def !5!gfe | !4!fAA !3!eAA | !2!d!4!fe !2!d!1!B!1!A |
 !4!f!1!AA !3!e!1!AA | !2!def "G"!5!g2!4!g | "D"!5!afd !4!gfe | !1!d !4!(3gfe !1!d!2!B!1!A:|
 
+
+
 X:1078
 %%etbk:tnset id:94,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/139
@@ -4558,6 +5160,8 @@ K: Dmaj
  "D"!3![F3D] !3!FED | !2!FG!4!A !2!Bc!4!d | !1!A2B !2!B!1!A!3!F |1 "A"!2!EFE "D"!1!D2 E:|2 "A"!2!EFE "D"!1!D!2!F!3!A |
 |: "D"!5!!3!d3 !3!def | "G"!2!BBB BAB | "D"!3!d!1!Ad !3!def | "A"!5!fed !4!efe |
 "D"!3!d!2!d!3!d !3!def | "G"!2!BBB BAB | "D"!1!A2 !4!d d!1!A!3!F |1 "A"!2!EFE "D"!1!D!2!F!3!A:|2 "A"!2!EFE "D"!1!D2 E |
+
+
 
 X:1079
 %%etbk:tnset id:94,pos:2,rep:3
@@ -4574,6 +5178,8 @@ K: Dmaj
 "D"!1!d!2!f!4!a !4!a!2!f!4!a | "A"!5!b!3!g!2!e e!1!d!2!B | "D"!1!d!2!f!4!a !4!a!2!f!2!a | "A"!5!b!3!g!2!e !2!eee | 
 "D"!1!d!2!f!4!a !4!a!2!f!4!a | "A"!5!b!3!g!2!e e!1!d!2!B | "D"!4!d2!2!B !1!A!2!F!1!A|1 "A"!4!d!1!A!2!F !1!E2!4!d:|2 "A"!4!d!1!A!2!F !1!E2F||
 
+
+
 X:1080
 %%etbk:tnset id:94,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1160
@@ -4588,6 +5194,8 @@ K: Gmaj
 "G"!1!G!2!G!1!G !4!d!1!GG | !3!ed!1!B !2!def | !5!gfe !2!d!1!B!2!A |1 "D"!1!B!3!ee !2!d!1!B!2!A:|2 "D"!1!B!3!ee !2!d!1!B!2!d:|
 |: !5!"G"g2!3!g !5!b!3!g!1!e | "D"!2!fff !4!a!2!f!1!d | "G"!3!g!2!g!3!g !5!b!3!g!1!e | !3!e!2!d!1!B !1!G!2!B!3!d |
 "G"!5!g2!3!g !5!b!3!g!1!e | "D"!2!fff !4!aga | "G"!5!bag !4!agf | !1!e!4!f!5!g !3!e!2!d!1!B:|
+
+
 
 X:1081
 %%etbk:tnset id:95,pos:1,rep:3
@@ -4607,6 +5215,8 @@ K: Dmix
 |: "D"!2!A!1!DD !3!B!1!DD | !2!A!1!DD !2!ABc | "G"!3!BAG {c}A!1!G!2!E | !4!G2A GED |
 "D"!2!A!1!DD !3!B!1!DD | !2!A!1!DD !2!ABc | "G"!3!BAG {c}A!1!G!2!E | !4!GED !1!D3:|
 
+
+
 X:1082
 %%etbk:tnset id:95,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/544
@@ -4623,6 +5233,8 @@ K: Dmix
 |: "D"!3!dcA d2e | !5!fed !4!e!5!ge | !3!dcA "A"!2!c2d | !4!e!5!f!3!d !4!e!2!c!1!A |
 "D"!3!dcA !3!d2e | !5!fed !4!e!5!ge | "A"!3!d!2!c!1!A !3!G!1!E!4!A | "D"!1!D !3!(3D!2!D!1!D !1!D3 :|
 
+
+
 X:1083
 %%etbk:tnset id:95,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/55
@@ -4638,6 +5250,8 @@ K: Gmaj
 "G"!1!GAG GA!3!B | "D"!1!A2A !1!A!2!B!4!d | "G"!2!e!1!dd !4!g!1!d!3!B | "D"!2!A!1!G!2!F "G"!1!G3:|
 |: "G"!1!B!2!B!1!B !2!dBd | !3!e!5!ge !2!d!1!B!2!G | !3!B!1!G!3!B B!5!dB | "D"!2!A2A {c}AG!2!A |
 "G"!1!B!2!B!1!B !2!dBd | !3!e!5!ge !2!dB!2!d | !3!g!1!dg "D"!4!a!1!da | "G"!5!bgf !3!g3:|
+
+
 
 X:1084
 %%etbk:tnset id:95,pos:4,rep:3
@@ -4659,6 +5273,8 @@ K: Dmaj
 |: "D"!1!A!3!d!1!d !3!f!1!dd | {g}!2!ede !3!f!1!d!2!B | !1!A!3!d!1!d !3!f!1!dd | "A"!2!e2e {g}!2!e!1!d!2!B |
 "D"!1!A!3!d!1!d !3!f!1!dd | {g}!2!ede !3!f2f | "G"!4!g2g !3!faf | "A"!2!e!1!d!2!B {d}BAB:|
 
+
+
 X:1085
 %%etbk:tnset id:96,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/89
@@ -4674,6 +5290,8 @@ K: Dmaj
 "D"!2!F!1!F!2!F !4!A!2!FF | !5!d!2!FF !4!A!2!F!1!D | "G"!3!G!2!G!3!G !5!BAG | "D"!4!A!2!F!1!D D3:|
 |: "D"!3!d2e !5!fed | "A"!4!e!2!c!1!A !1!A!2!F!1!A | "D"!3!d!2!c!1!d !2!efg | !3!faf "A"!4!gfe |
 "D"!1!d2e !3!fe!1!d | "A"!4!e!2!c!1!A !4!A!2!F!1!D | "G"!3!G{A}GG !5!BAG | "D"!4!A!2!F!1!D D3:|
+
+
 
 X:1086
 %%etbk:tnset id:96,pos:2,rep:3
@@ -4693,6 +5311,8 @@ K: Ador
 |: "am"!1!A2A !5!gA!4!f | !1!A2A !5!e!4!d!2!B | "G"!1!G!2!G!1!G !5!eG!4!d | !1!G2G !5!e!4!d!2!B |
 "am"!1!A!2!A!1!A !5!gA!4!f | !1!A2A !2!efg | "em"!5!age !1!d!2!B!1!G | "am"!1!ABA A3:|
 
+
+
 X:1087
 %%etbk:tnset id:96,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/9
@@ -4710,6 +5330,8 @@ K: Dmix
 "D"!3!f2g !5!agf | "C"!2!e2f !4!gfe | "D"!5!fe!1!d !2!c!1!A!2!G | !1!A!3!d!2!^c !3!d3 :|
 |: "D"!3!f2g e2f | !1!de!1!d !2!c2!3!d | !1!A!2!A!1!A !3!GAG | !2!F2F !3!G!2!F!1!D |
  "C"!3!c2!2!c !2!c!1!A!2!G | !1!A!2!G!1!A !2!cde | "D"!5!fed !2!c!1!A!2!G | !1!A!3!d^c d3 :|
+
+
 
 X:1088
 %%etbk:tnset id:96,pos:4,rep:3
@@ -4729,6 +5351,8 @@ K: Gmaj
 !2!f |: "G"!3!g!2!g!3!g !4!aga !5!b!3!g!2!e !1!d!2!B!1!d | !3!g!1!d!3!g !3!ga!5!b "D"!4!a2a agf | 
 "G"!3!g!5!bg !2!f!4!a!2!f !2!e!4!ge !1!d!3!B!2!A | !1!GA!3!B "D"!1!D2E "G"!3!G3 G3:|
 
+
+
 X:1089
 %%etbk:tnset id:96,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/71
@@ -4747,6 +5371,8 @@ K: Edor
 "em"!2!B!5!e!2!e !3!f!2!ee | !5!a!2!ee !3!f!2!e!1!d | !1!B!2!ee !3!f!2!ee | "D"!3!f!5!af def |
 "G"!4!g!3!g!2!g gfe | !1!d!2!e!3!f !4!g2!1!d | !4!edc "D"!3!d2!1!A | !3!BA!1!G !3!FE!1!D |
 
+
+
 X:1090
 %%etbk:tnset id:97,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1076
@@ -4762,6 +5388,8 @@ K: Dmaj
 "A"!3!c!1!AA !3!BA!1!G | !3!c!1!A!4!A !4!A!2!F!1!D | "G"!3!G!2!G!3!G !5!BAG | "D"!4!A!2!F!1!D D3 :|
 !4!e |:"D"!3!f!2!f!3!f !4!gfg | !5!a!3!f!1!d !3!cBA| !3!fff !4!gfg | !5!a!3!f!1!d !1!df!4!g |
 !5!agf !4!gfe | !3!fed !2!ef!1!d | "A"!3!c!1!AA !3!BA!1!G | "D"!4!A!2!F!1!D !1!D3 :||
+
+
 
 X:1091
 %%etbk:tnset id:97,pos:2,rep:3
@@ -4781,6 +5409,8 @@ K: Amaj
  "D"!3!f2f {g}!3!f!1!e!2!c | !3!faf !3!f!1!e!2!c | "A"!1!e2e !1!e!3!f!4!g | !5!a!4!g!3!f !1!e!3!c!2!B |
 "A"!1!A2B !3!c2!5!e | !3!faf !1!e!3!c!2!B | !1!A!2!F!1!E !3!A2B | !5!c!3!A!2!G !3!A3 |
 
+
+
 X:1092
 %%etbk:tnset id:97,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/447
@@ -4796,6 +5426,8 @@ K: Dmaj
 "D"!3!F!2!F!3!F !2!EFE | !1!D!2!F!3!A !4!B!3!A!2!F | "A"!1!A!4!dB !1!A!3!F!2!E | "D"!3!F!1!D!2!C !1!D3:|
 |: "D"!5!f!3!d!2!B !1!A!2!B!1!d | !3!f!5!aa !5!afd | "G"!4!g!3!g!4!g !3!fe!1!d | "A"!2!B!5!e!2!e !2!efg | 
 "D"!3!f!1!d!2!B !1!A!2!B!1!d | !3!f!5!aa !5!afd | "G"!5!b!4!a!2!f "A"!4!gfe | "D"!3!f!1!d!2!c !1!d3:|
+
+
 
 X:1093
 %%etbk:tnset id:97,pos:4,rep:3
@@ -4813,6 +5445,8 @@ K: Edor
 |: "G"!1!GA!3!B !4!d!3!d!4!d | !5!e!4!d!3!B !4!d!3!B!2!A | !1!GA!3!B !5!dBG | "D"!2!AA!1!G !3!FE!1!D |
 "G"!1!GA!3!B !4!d2d | !5!e!4!d!3!B !1!def | !4!gfe !1!d!3!BG | "D"!2!AA!1!G !3!FE!1!D :|
 
+
+
 X:1094
 %%etbk:tnset id:97,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/19
@@ -4828,6 +5462,8 @@ K: Dmaj
 "D"!2!F!1!AA !4!d!1!AA | {d}!2!BA!2!B !1!def | "A"!4!gfe !1!dfe |1 "bm"!1!d!2!BB !2!B2!1!A :|2 "bm"!1!d!2!BB !1!B3 ||
 |: "bm"!2!f!5!bb !2!f!4!aa | !3!fed !1!de!3!f | !2!f!5!bb !2!f!4!aa | "f#m"!3!fed !2!e2!1!e |
 "bm"!2!f!5!bb !2!f!4!aa | !3!fed !1!def | "f#m"!4!gfe !1!dfe |1 "bm"!1!d!2!BB !1!B3:|2 "bm"!1!d!2!BB !2!B2!1!A||
+
+
 
 X:1095
 %%etbk:tnset id:98,pos:1,rep:3
@@ -4845,6 +5481,8 @@ K: Dmaj
 |: "D"!4!a!2!fa afa | "G"!5!b!3!gb bgb | "D" !4!a!2!fa af!4!a | "A"!4!gfg !2!efg |
 "D"!5!a3 !3!f3 | !2!ede !3!f!1!d!2!B | !1!A!2!F!1!A "A"!3!faf | "D"!1!ded d3:|
 
+
+
 X:1096
 %%etbk:tnset id:98,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/702
@@ -4860,6 +5498,8 @@ K: Gmaj
 "G"!4!g!3!g!4!g !5!age | !1!d!3!B!1!G {c}!2!A!1!G!2!E | !1!D!3!GG !2!F!1!G!2!A | !3!B!1!GG G3 :|
 !1!d |: "G"{g}!2!e!1!dd !4!g!1!dd | !2!e!1!dd !4!g!1!dd | !2!ede !4!gfg | !2!e!1!d!2!B "D"!1!A2!2!d |
 "G"!4!g!3!g!4!g !5!age | !1!d!3!B!1!G {c}!2!A!1!G!2!E | !1!D!3!GG !2!F!1!G!2!A | !3!B!1!GG G3:|
+
+
 
 X:1097
 %%etbk:tnset id:98,pos:3,rep:3
@@ -4877,6 +5517,8 @@ K: Dmaj
 |: "bm"!2!d!1!BB !3!f!1!BB | !3!fgf fe!1!d | "f#m"{e}!2!c!1!AA !2!e!1!AA | !2!efe e!1!d!2!c |
 "bm"!3!d!1!BB !3!f!1!BB | !3!fgf fe!1!d | "A"!2!c!4!e!2!c !1!AB!3!c | "D"!1!dfe d3 :|
 
+
+
 X:1098
 %%etbk:tnset id:98,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/532
@@ -4892,6 +5534,8 @@ K: Gmaj
 "G"!1!D!3!G!4!A !2!B{d}B!1!G | !3!cB!3!c !1!d2!4!g | !4!g!3!f!1!d !2!Bcd |1 "D"!3!c!1!A!2!F "G"!3!G3 :|2 "D"!3!c!1!A!2!F "G"!1!G !2!(3B!3!^c!1!d ||
 |: "G"!4!g2!1!d !3!fga | !4!g!3!f!1!d !2!Bcd | "D"!3!c!1!AA !3!f!1!AA | !5!agf !1!de!3!f |
  "G"!1!g2a !3!ba!1!g | "D"!3!f!1!d!4!g !3!f!1!d!3!c | "G"!2!B2!1!G "D"{c}!2!A!1!G!2!F |1 "G"!1!D!3!G!2!F !1!G !2!(3B!3!^c!1!d :|2 "G"!1!D!3!G!2!F !3!G3 ||
+
+
 
 X:1099
 %%etbk:tnset id:98,pos:5,rep:3
@@ -4910,6 +5554,8 @@ K: Dmix
 [1 "D"!3!f{g}f!1!d !1!d!2!^c!1!d | !3!f2!1!d !1!d!2!^c!1!d  | "A"{g}!2!ede !5!age | !2!e!1!d!2!^c !1!d3 :|
 [2 "D"!3!f!2!f!3!f !4!gfg | !5!agf !4!gfe | !3!fed "A"!2!e!5!ag | {g}!2!e!1!d!2!^c "D"!1!!5!d3 ||
 
+
+
 X:1100
 %%etbk:tnset id:99,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/232
@@ -4927,6 +5573,8 @@ K: Dmix
 |1 "dm"!3!d{e}dd !4!ecA | !3!d{e}dd !4!ecA | "am"!4!G!2!EE !5!c!2!EE | "dm"!1!DED D3 :|
 |2 "dm"!5!dc!2!A {c}!2!A!1!G!2!E | !4!G!2!E!1!D D2D | "am"!4!G!2!EE !5!c!2!EE | "dm"!1!DED D3 ||
 
+
+
 X:1101
 %%etbk:tnset id:99,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/667
@@ -4942,6 +5590,8 @@ K: Edor
 "em"!4!B!1!EE !2!B!1!EE | !2!B!4!d!3!f !2!e!1!d!2!B | "bm"{d}!2!B!1!A!2!F !5!d!3!A!2!F | !2!F!1!E!2!D "em"!1!E3 :|
 |: "em"!2!B!5!e!3!f !4!gfe | "D"!3!f!2!f!3!f !2!e!1!d!2!B | {d}!2!B!1!A!2!F FEF | !1!D!2!F!3!A !5!d!4!B!3!A |
 "em"!1!B!2!ef !4!gfe | "D"!3!f2!5!a !2!e!1!d!2!B | {d}!2!B!1!A!2!F !5!d!3!A!2!F | !2!F!1!E!2!D "em"!1!E3 :|
+
+
 
 X:1102
 %%etbk:tnset id:99,pos:3,rep:3
@@ -4961,6 +5611,8 @@ K: Amix
 |: "A"!2!B!3!cc !5!e!4!dd | !5!ed!2!B !4!dB!1!A | !1!A!2!A!1!A !4!dB!1!A | !1!A2A !5!a!3!e!1!d | 
 !2!B!3!cc !4!d!3!c!1!d | !2!ede !3!ga!5!b | "G"!4!a!3!g!2!e !1!d!2!B!5!e | "A"!1!A!2!A!1!A !1!A3:||
 
+
+
 X:1103
 %%etbk:tnset id:99,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1736
@@ -4978,6 +5630,8 @@ K: Dmaj
 |: "D"!3!fdf fed | "A"!4!g2e {g}ede | "D"!3!faf !3!fed | !3!ada !4!b!3!a!1!g |
 "D"!3!f{g}!3!f!3!f !3!fed | "A"!4!g2!2!e !4!e!2!c!1!A |  !2!Bc!4!d !2!efe |1 "D"!1!d3 d2e:|2 "D"!1!!4!d2!1!A !2!B{d}BA ||
 
+
+
 X:1104
 %%etbk:tnset id:99,pos:5,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4579
@@ -4993,6 +5647,8 @@ K: Gmaj
 "G"!3!B!2!B!3!B A2G !3!B!4!dB !2!AGA |1 !3!B2 !5!e !4!d2!3!B !1!G3 G2!2!A :|2 !3!B2 !5!e !4!d2!3!B !1!G3 !1!G!3!B!4!d :|
 |: "C"!5!e!1!G!3!e !3!e!2!d!1!B !3!e2f !5!g2!1!B | "G"{d}!2!BAB !4!d2 !2!B "D"!1!A!2!A!1!A !1!A!2!B!4!d |
 "C"!5!e2!3!e !3!e!2!d!1!B !3!e2f !5!g2 !1!B |1 "G"{d}!2!BAB !4!d2!2!B !1!G3 !1!G!3!B!4!d :|2 "G"{d}!2!BAB !4!d2!2!B !1!G3 G2!2!A ||
+
+
 
 X:1105
 %%etbk:tnset id:99,pos:6,rep:3
@@ -5014,6 +5670,8 @@ K: Amix
 |: "A"!2!A!1!E!2!A !1!A !3!(3A!2!A!1!A | !3!c!1!Ac !5!e!3!c!1!B | !2!A!1!E!2!A !1!AB!3!=c | "G"!2!B!1!G!2!B !4!d!3!c!1!B |
 "A"!2!A!1!E!2!A !1!A !3!(3A!2!A!1!A | !3!c!1!A!3!c !1!e!3!f!4!g | "G"!3!f!5!af !4!gfe | !1!d!2!B!1!G !2!Bc!4!d:|
 
+
+
 X:1106
 %%etbk:tnset id:100,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/76
@@ -5029,6 +5687,8 @@ K: Dmaj
 "D"!3!f!1!d!1!d !3!c!1!A!1!A | !3!B!1!GG !2!AA!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!1!e!2!c "D"!3!d3:|
 |: "D"!2!F!3!AA !3!A!5!dd | !2!F!3!AA !4!B!3!A!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!3!g!4!g !2!e!5!ag |
 "D"!3!f!1!d!1!d !3!c!1!A!1!A | !3!B!1!GG !2!AA!1!G | !2!F!3!AA !5!d!2!ef | "A"!4!g!1!e!2!c "D"!3!d3:|
+
+
 
 X:1107
 %%etbk:tnset id:100,pos:2,rep:3
@@ -5046,6 +5706,8 @@ K: Gmaj
 !3!ga |: "G"!5!b!3!gg !1!d!3!gg | !5!bgb bag | "D"!4!a!2!ff !1!d!2!ff | !4!afa agf |
 "C"!1!e!3!gg !1!d!3!gg | !1!c!3!gg !1!B!3!gg | "D"!3!cBc !1!A!4!dc | "G"!2!B!1!GG G3:|
 
+
+
 X:1108
 %%etbk:tnset id:100,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/308
@@ -5061,6 +5723,8 @@ K: Dmaj
 "D"!1!D!2!F!3!A !5!d!1!D!5!d | "A"!5!e!3!c!1!A !3!c!1!de | "D"!3!f2f "A"!4!g!1!e!2!c | !4!edc "D"!3!d3:||
 |: "D"!1!dfa !5!agf | "A"!2!efg efg | "D"!3!fef "A"!4!g2g | !5!e!3!c!1!A !4!G!3!F!2!E |
 "D"!1!D!2!F!3!A !5!d!1!D!5!d | "A"!5!e!3!c!1!A !3!c!1!de | "D"!3!f2f "A"!4!g!1!e!2!c | !4!edc "D"!3!d3:||
+
+
 
 X:1109
 %%etbk:tnset id:100,pos:4,rep:3
@@ -5079,6 +5743,8 @@ K: Ador
 |1 "am"!5!a!2!e!5!a !3!a!1!e!3!a | !3!aea !4!b2!3!a  | "em"!4!gfe !1!d!3!B!1!G | "am"!2!A3 !1!A3:|
 |2 "am"!1!E!3!A!1!A !1!A!2!G!1!A| !2!Bc!4!d !2!e2f  | "em"!4!gfe !1!d!3!B!1!G | "am"!2!A3 A3||
 
+
+
 X:1110
 %%etbk:tnset id:100,pos:5,rep:3
 %%etbk:color #ffffcc
@@ -5094,6 +5760,8 @@ K: Dmaj
 "D"!4!d!1!A!2!F !1!D!2!F!1!A | !4!ded !3!cBA | !4!d!3!c!1!d "A"!2!efg | "D"!3!f!1!d!2!c !1!d3:|
 |: "D"{g}!3!fdf fg!5!a | "A"!4!e!2!c!1!A !1!AB!3!c | "G"!4!dcd !2!Bed | "A"!3!cAA A2c |
 "G"!2!B!1!GB !2!Bcd | "D"!1!A!2!F!1!D !1!D!2!F!1!A | !4!d!3!c!1!d "A"!2!efg | "D"!3!f!1!d!2!c !1!d3:||
+
+
 
 X:1111
 %%etbk:tnset id:101,pos:1,rep:3
@@ -5111,6 +5779,8 @@ K: Emin
 |: "em"!2!e2f !4!gfe | "D"!3!f!5!ag !3!fed | "em"!2!e2f !4!g!3!g!4!g | "bm"!3!f!1!d!2!B !1!B2B |
 "em"!2!e2f !4!gfe | "D"!3!f!5!ag !3!fe!1!d |"em" !5!edB "bm"!3!cBA | "em"!5!B!3!G!1!E E3 :|
 
+
+
 X:1112
 %%etbk:tnset id:101,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/389
@@ -5127,6 +5797,8 @@ K: Gmaj
  !2!(3B!3!^c!1!d |: "G"!3!g!2!g!3!g !4!a!2!f!1!d | !2!ee!4!g !1!d!3!B!1!G | "C"!3!cd!5!e !4!d!2!B!1!G | "D"!2!B!1!AA A !2!(3B!3!^c!1!d  |
 "G"!3!ga!5!b !4!a!2!f!1!d | !2!ef!4!g !1!d!3!B!1!G | "C"!3!cd!5!e !4!d!2!B!1!G | "D"{B}!2!A!1!G!2!F "G"!1!G3:|
 
+
+
 X:1113
 %%etbk:tnset id:101,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/15
@@ -5142,6 +5814,8 @@ K: Dmaj
 "D"!1!ABA !1!A2!2!F | !1!A2!2!B !4!d2!2!e |1 !3!faf fed | "A"!2!e{g}ee efg:|2 !3!faf "A"!2!efe | "D"!1!d3 !4!d!1!AB ||
 |: "D"!4!d!1!AA !3!f!1!AA | !2!e!1!AA !3!fe!1!d | "A"!2!B!5!ee !2!e2!1!d | !2!ef!1!d !2!B2A | 
 "D"!1!ABA !1!A2!2!F | !1!A2!2!B !4!d2e |1 !3!faf fed | "A"!2!e{g}ee e!1!d!2!B :|2 !3!faf "A"!2!ede | "D"!1!d6 ||
+
+
 
 X:1114
 %%etbk:tnset id:101,pos:4,rep:3
@@ -5163,6 +5837,8 @@ K: Amaj
 |: "A"!3!c2c c!1!Ac | "D"!4!d!1!Ad ded | "A"!3!ccc cAc | "E"!2!B2B {c}BAB |
 "A"!3!cAc cAc | "D"!4!d2d dc!4!d | "A"!2!e!5!ae !3!fe!1!d | "E"!3!c!4!d!2!B "A"!1!A3:|
 
+
+
 X:1115
 %%etbk:tnset id:102,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/414
@@ -5179,6 +5855,8 @@ K: Gmaj
 |: "G"!3!BAB !5!ddB | !3!BAB !5!dBG | "D"!2!A2!4!A !4!A!3!G!2!E | !4!ABA AGA |
 |1 "G"!3!BAB !5!ddB | !3!BAB !5!dBG | "D"!2!A2!2!A !2!A!1!G!2!E | "G"!1!G3 G2!2!A:|
 |2 "G"!5!BAB !3!GG!2!E | !1!D!2!D!1!D !1!D!2!E!3!G | "D"!4!A2A !4!A!3!G!2!E | "G"!3!G3 G2!4!A||
+
+
 
 X:1116
 %%etbk:tnset id:102,pos:2,rep:3
@@ -5197,6 +5875,8 @@ K: Dmaj
 |: "D"!3!f!4!aa !3!f!4!a!5!b | !4!afe !3!f2f | !4!ab!4!a !3!ffe | "G"!1!d!2!BB !2!BAB |
 "D"!4!d2!1!A {d}!2!BA!2!B | !1!de!3!f !4!a2!3!f | "A"!4!ab!4!a !3!f2e | "D"{g}!2!e!1!dd d3:|
 
+
+
 X:1117
 %%etbk:tnset id:102,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1514
@@ -5214,6 +5894,8 @@ K: Gmaj
 |1 "G"!1!B!2!dd !3!e!2!dd | !5!g!2!dd !3!e!2!dd  | !1!G !2!(3B!3!^c!1!d !4!gfg | !2!e!1!d!2!B !1!G3 :|
 |2 "G"!4!d!2!B!1!A !2!B!1!B!2!B | !4!d!2!B!1!G "D"!2!ABA | "G"!1!G !2!(3B!3!^c!1!d !4!gfg | !2!e!1!d!2!B !1!G3||
 
+
+
 X:1118
 %%etbk:tnset id:102,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1098
@@ -5230,6 +5912,8 @@ K: Gmaj
 |: "G"!1!G!2!B!4!d "C"!2!e{g}ed | !2!ege {g}!2!e!1!d!2!B | "G"!1!G!2!A!3!B !4!d2d | !4!ded !4!d!3!B!2!A |
 |1 "G"!1!G!2!B!4!d "C"!2!e{g}ed | !2!ege {g}!2!e!1!d!2!B | "G"!1!G!2!B!4!d "C"!2!ege | "D"!1!d!3!BA "G"!1!G3 :|
 |2 "G"!1!G!2!G!1!G !2!AGA | !3!B!1!G!2!E {G}!2!ED!2!E | !1!G!2!B!4!d "C"!2!ege | "D"!1!d!3!BA "G"!1!G3 ||
+
+
 
 X:1119
 %%etbk:tnset id:102,pos:5,rep:3
@@ -5249,6 +5933,8 @@ K: Dmaj
 |: "G"!4!g!3!g!4!g !3!faf | "D"!2!ede !3!f!1!d!2!B | "A"!1!A!3!FE !1!E!2!E!1!E | !4!A!2!F!1!E !1!E2!3!f |
 "G"!4!g!3!g!4!g !3!faf | "D"!2!ede !3!f!1!d!2!B | !1!D !3!(3D!2!D!1!D |1 !4!A!2!F!1!D !1!D2!3!f:|2 !4!A!2!F!1!D D3||
 
+
+
 X:1121
 %%etbk:tnset id:103,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1772
@@ -5263,6 +5949,8 @@ K: Gmaj
 "G"!1!D!2!GG !3!AAG | !3!AA!2!G !1!G!2!B!3!d | "D"!4!e2!3!f !4!g!3!f!1!d | !3!c!1!A!2!F "G"!3!G3:|
 |: !4!A| "G"!2!BBB !3!cBc | !4!ded !1!G2!1!A | !2!BBB !1!G!2!B!4!d | "D"!3!c!1!A!3!G !2!FG!4!A |
 "G"!2!BBB !3!cBc | !4!dc!4!d !2!efg | "D"!5!a2f !4!gf!1!d | !3!c!1!A!2!F "G"!3!G3:|
+
+
 
 X:1122
 %%etbk:tnset id:103,pos:3,rep:3
@@ -5282,6 +5970,8 @@ K: Ador
 "am"!2!eee !1!ded | !3!c!5!ec !2!B!5!eB | "G" !1!GAB !4!d!3!B!2!A | !1!E!2!F!1!G "am"!2!A3 ||
 |"var bar 1"!4!a!1!A!4!a !5!bag|
 
+
+
 X:1123
 %%etbk:tnset id:104,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/879
@@ -5296,6 +5986,8 @@ K: Dmix
 |:FGA AFd AFd|AFd AFD GED|FGA AFA c2A|BAG F/2G/2AF GED:|
 |:~D3 ~D3 c3|c2B c2A GED|~D3 ~D3 d2^c|d/2g/2fe dcA GED:|
 |:d^cd ege c2A|d^cd fdf ~g3|~a3 ged c2A|BAG F/2G/2AF GED:||
+
+
 
 X:1124
 %%etbk:tnset id:104,pos:2,rep:3
@@ -5314,6 +6006,8 @@ GEE BEE | GEE B2 c | dcd AGF | GEE E2 :|
 Bc^d e2 f | e2 f edB | Bc^d e2 f | edB d3 |
 Bc^d e2 f | e2 f edB | dcd AGF | GEE E2 :|
 
+
+
 X:1125
 %%etbk:tnset id:104,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1220
@@ -5327,6 +6021,8 @@ dge fdc|BdB cAF|~G3 AcA|~G3 ABc|
 dge fdc|BdB cAF|~G3 AcA|~G3 GBc:|
 |:d2B c2A|BdB cAF|~G3 AcA|~G3 ABc|
 d2B c2A|BdB cAF|~G3 AcA|GAG GBc:|
+
+
 
 X:1126
 %%etbk:tnset id:174,pos:1,rep:3
@@ -5347,6 +6043,8 @@ K:Edor
 |2 "em"!5!g2!3!e !4!fed | !1!B!3!e!2!c !3!dfe | "bm"!3!d!2!B!1!A !2!F!3!GA | "em"!5!B!3!G!1!E E3||
 
 
+
+
 X:1127
 %%etbk:tnset id:177,pos:1,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/paddytaylors.html
@@ -5363,8 +6061,11 @@ K: Dmaj
 |: "D"!3!f2d !4!gfe | !3!f!1!d!2!B !1!AB=c | "G"!2!B2B !1!EFG | "D"!4!A2!1!D !2!F!1!E!1!D|
 "D"!5!f2!3!f !4!gfe | !3!f!1!d!2!B !1!AFA | "A"!2!Bcd !5!ecA |1 "D"!3!dfe !3!d2!4!e:|2 "D"!3!dfe !3!d!1!A!3!G||
 
+
+
 X:1128
 %%etbk:tnset id:163,pos:2,rep:3
+%%etbk:pldat 2013-04-30T15:32
 T:Christy Barry's No. 1
 H: Created 2013-02-19 /  Modified 2013-03-24
 C:Christy Barry
@@ -5378,21 +6079,26 @@ K:Gmaj
 |1 "G"!5!g2!3!g !3!gfg | !4!abg !1!d2!2!e | !4!g!2!e!1!d !3!B!1!GG | "D"!2!A!1!G!2!F "G"!1!G!2!B!3!d:|
 |2 "G"!1!D!1!E!2!G !4!BAG | "D"!1!A2!2!B !3!d2!4!e | "G"!5!g!4!ed !2!B!1!GG | "D"!2!A!1!G!2!F "G"!3!G2!1!D||
 
+
+
 X:1129
 %%etbk:tnset id:163,pos:3,rep:3
+%%etbk:pldat 2013-04-30T15:32
 T:Christy Barry's No. 2
 T:The Butlers Of Glen Avenue
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-02-19 /  Modified 2013-03-24
+H: Created 2013-02-19 /  Modified 2013-04-29
 C:Anthony Sullivan
 M:6/8
 L:1/8
 R:jig
 K:Gmaj
-|: "G"!1!D!2!E!3!G !2!E!1!D!2!B, | !1!D!2!E!3!G !5!B2B | !1!D!2!E!1!G !3!B2!5!e | "D"!4!d!3!B!5!e !4!d!3!B!2!A |
-"G"!1!D!2!E!3!G !2!E!1!D!2!B, | !1!D!2!E!1!G !3!B2!1!B | !2!d2d !5!gfe |1 "D"!2!d!1!B!2!A "G"!1!G2!2!E:|2 "D"!2!d!1!B!2!A "G"!1!G!2!B!1!d||
+|: "G"!1!D!2!E!3!G !2!E!1!D!2!B, | !1!D!2!E!3!G !5!B2B | !1!D!2!E!3!G !5!B!3!B!5!e | "D"!4!d!3!B!5!e !4!d!3!B!2!A |
+"G"!1!D!2!E!3!G !2!E!1!D!2!B, | !1!D!2!E!3!G !5!B2!1!B | !2!d2d !5!gfe |1 "D"!2!d!1!B!2!A "G"!1!G2!2!E:|2 "D"!2!d!1!B!2!A "G"!1!G!2!B!1!d||
 |: "G"!3!gab !4!a!3!g!2!e | !1!d!2!e!3!g !1!B2B | !3!gab gab | !1!dBd !2!e2!1!e |
 "G"!3!g2b !4!a!3!g!2!e | !1!d!2!e!3!g !1!BBB | !2!d2d !5!gfe |1 "D"!2!d!1!B!2!A "G"!1!G!2!B!1!d:|2 "D"!2!d!1!B!2!A "G"!1!G2!2!E||
+
+
 
 X:1130
 %%etbk:tnset id:174,pos:2,rep:3
@@ -5409,6 +6115,8 @@ K: Ador
 "am"!3!e!5!aa !3!ef!5!g | "G"!2!d{g}d!1!c !2!BAB |  !1!G!2!B!3!d !5!g!3!d!2!B | "am"!1!ABA !1!A!2!B!4!d:|
 
 
+
+
 X:1131
 %%etbk:tnset id:166,pos:3,rep:3
 T:Drummond Castle
@@ -5421,6 +6129,8 @@ K:Ador
 "am"!1!AAA !5!aAa | !5!age "G"!4!ggg | "em"!2!ege !1!deg |1 !2!e!1!d!2!B "am"A2G:|2 edB "am"!1!A2!2!B||
 |: "C"!3!c2!2!c !4!edc | "G"!3!d2d !5!=fed | "C"!2!c2c edc | "G"!1!B!3!d!5!g !3!d!2!B!1!G|
 "C"!2!c2!2!c !4!edc | "am"!1!deg !5!a2g | "em"!2!ege deg|1 !2!e!1!d!2!B "am"!1!A2B:|2 edB "am"A2G||
+
+
 
 
 X:1132
@@ -5437,6 +6147,8 @@ K: Edor
 "bm"!5!g2f !3!e!2!d!1!B | !3!A!2!F!1!D !2!F!1!G!3!A | !5!d2!4!e !5!fed|1 !2!B!1!A!2!F "em"!1!E2!3!d:|2 !2!B!1!A!2!F "em"!1!E2!2!A||
 
 
+
+
 X:1133
 %%etbk:tnset id:167,pos:2,rep:3
 T:Eddie Kelly's No. 2
@@ -5450,6 +6162,8 @@ K: Emin
 "em"!3!GEF !3!G2!4!A | !2!B2!5!e edc | !2!BBB !1!G!2!B!1!G |1 "D"!4!A!2!F!1!D "em"!1!E2F:|2 "D"!4!A!2!F!1!D "em"!1!E2!4!f||
 |: "em"!5!gfe !4!fed | !1!B!3!ee Bee | !5!gfe !4!fed | "bm"!1!B!2!^c!1!d "em"!3!e2!4!f |
 "em"!5!gfe !4!fed | !1!B!3!ee Bee | !5!gfe !4!fed |1 "bm"!1!B!2!^c!1!d "em"!3!e2!4!f:|2 "bm"!1!B!3!^c!4!d !5!e!4!d!3!=c|
+
+
 
 X:1134
 %%etbk:tnset id:168,pos:1,rep:3
@@ -5466,6 +6180,8 @@ K:Ador
 |: "am"!2!e!4!ge ege | !1!d!2!B!1!A A2B | "G"!3!ded !3!d!5!g!3!d | !2!B!1!GG !1!G2!4!g|
 "am"!3!fed !2!efg | !5!a!1!AA !2!e2!5!a | "em"!4!g2e !1!d!2!B!4!d| "am"!5!e!1!AA A2A:||
 
+
+
 X:1135
 %%etbk:tnset id:168,pos:2,rep:3
 T: Happy to Meet and Sorry to Part
@@ -5479,6 +6195,8 @@ K: Gmaj
 "G"!3!d!2!B!1!G !2!A!1!G!2!E | !1!DE!3!F !1!G2!2!A | "em"!1!B!5!g!3!e !2!d!1!B!2!A|1 "D"!2!A!1!G!2!F "G"!1!G2!5!g:|2 "D"!2!A!1!G!2!F "G"!1!G!2!B!3!d||
 |: "G"!5!g2g !4!fe!2!d | "D"!1!B!3!d!2!^c !1!de!3!f | "G"!4!g!3!g!4!g !3!fe!1!d | "em"!1!B!2!e!1!d !2!e2f|
 "G"!4!gGg !4!gfe | !1!d!2!B!1!d !4!gfe | !1!d!3!B!1!G "D"!2!A!1!G!2!E |1 !1!DE!3!F "G"!1!G!2!B!3!d:|2 !1!DE!3!F "G"!1!G2!5!g||
+
+
 
 X:1136
 %%etbk:tnset id:167,pos:1,rep:3
@@ -5494,6 +6212,8 @@ K: Dmix
 |: "D"!2!d2!3!e !4!fed | !4!f!5!af "A"!5!gfe | "D"!2!d2!3!e !4!fe!2!d | "A"!3!d=cA d=cA|
 "D"!2!d2!3!e !4!fed | !4!f!5!af !5!gfe | !2!d!2!d!1!A "A"!2!B!1!A!3!G |1 "D"!4!A!2!F!1!D !1!D!2!F!1!A:|2 "D"!4!A!2!F!1!D D3||
 
+
+
 X:1139
 %%etbk:tnset id:166,pos:2,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/kilmovee.html
@@ -5507,6 +6227,8 @@ K: Gmaj
 "G"!1!GGG !3!BBB | !4!ded !3!B!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g |1 "D"!4!e!3!d!2!B "G"!1!G2!2!F:|2 "D"!4!e!3!d!2!B "G"!1!G!2!B!3!d||
 |: "G"!5!gGg !3!d!2!B!1!G | !3!A!2!G!1!E !2!G!1!E!2!F |!1!G!2!B!3!d !5!g2!4!f | "D"!2!e!5!ag !3!f!1!e!2!d |
 "G"!1!B!2!B!1!B !4!d!3!B!2!A | !1!G!3!BG !2!A!1!G!2!E | !1!D!2!E!1!G !2!B!3!d!5!g|1 "D"!4!e!3!d!2!B "G"!1!G!2!B!3!d:|2 "D"!4!e!3!d!2!B "G"!1!G3||
+
+
 
 X:1140
 %%etbk:tnset id:174,pos:3,rep:3
@@ -5523,8 +6245,11 @@ K: Gmaj
 |: "C"!3!e2f !5!gfe | "G"!2!d2!1!B !3!BAG | "C"!2!e2f !4!g!3!f!1!e | "D"!4!a2a !5!ba!3!g |
 "C"!1!e2!4!f !5!gfe | "G"!2!d2!1!B !3!BAG | "D"!2!A2B !4!cBA |1 !3!B!5!e!3!e !2!d!1!B!2!d:|2 !3!B!5!ee !5!e!4!d!3!B||
 
+
+
 X:1141
 %%etbk:tnset id:163,pos:1,rep:3
+%%etbk:pldat 2013-04-30T15:32
 T:My Former Wife
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -5536,6 +6261,8 @@ K:Ador
 "am"!1!E!3!A!1!A !1!ABc | !2!B!1!A!2!B !1!G!2!B!3!d | "G"!4!e!3!d!4!e !5!g!3!d!2!B |1 !2!B!1!A!2!G "am"!3!A2!2!G:|2 !2!B!1!A!2!G "am"!1!A2!2!e||
 |: "am"!1!efg !4!a!3!a!4!a | !5!bag !4!a2g | "em"!2!ede !3!g2g | !3!g!5!ba !3!ge!1!d |
 "am"!1!efg !4!aga | !5!bag !4!a2g | "em"!2!ede !4!g!1!d!2!B |1 !2!B!1!A!2!G "am"!1!A2!2!e :||2 !2!B!1!A!2!G "am"!3!A2!2!G||
+
+
 
 X:1142
 %%etbk:tnset id:177,pos:3,rep:3
@@ -5552,6 +6279,8 @@ K:Gmaj
 |: "G"!4!d2!1!B !2!def | "em"!5!g2!3!e !4!f!2!d!1!B | "D"!1!ABA !1!A!1!B!2!d | !3!e!5!g!4!f !3!e2f|
 "G"!5!gfe !4!fed | !3!e!2!d!1!B !5!g2g | !3!e!2!d!1!B "D"!2!AGA|1 "G"!3!B!1!G!2!F !1!G!2!B!3!c:|2 "G"!3!B!1!G!2!F !3!G2!2!E||
 
+
+
 X:1143
 %%etbk:tnset id:177,pos:2,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/pulltheknifeandstickitin.html
@@ -5567,6 +6296,8 @@ K:Edor
 |: "em"!4!e!3!d!2!B !2!B!1!A!3!F | "bm"!2!E!1!D!2!B, !1!D2D | "em"!4!e!3!d!2!B !2!B!1!A!2!F | "bm"!1!ABc !4!d!2!e!3!f |
 "em"!2!e!1!d!2!B !2!B!1!A!3!F | "bm"!2!E!1!D!2!B, !1!DEF | "em"!4!G2E "bm"!3!FE!1!D |1 "em"!1!B,!2!E!1!D !2!E3:|2 "em"!1!B,!2!E!3!D !2!E2!1!D||
 
+
+
 X:1144
 %%etbk:tnset id:168,pos:3,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/paddyinlondon.html
@@ -5581,9 +6312,12 @@ K:Ador
 |: "am"!1!efg !4!a2g | !4!aba !4!a!3!g!2!e | "G"!1!d!2!B!1!d !4!g2!1!d | !3!gba !3!g!2!e!1!d|
 "am"!1!efg !4!a2g | !4!aba !4!a!3!g!2!e | "G"!1!d!4!ge !1!d!2!B!1!G |1 !2!BA!2!G "am"!1!A2!2!e:|2 !2!BA!2!G "am"!1!A3||
 
+
+
 X:1145
 %%etbk:tnset id:180,pos:1,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/shandonbells.html
+%%etbk:pldat 2013-04-30T16:37
 T:Shandon Bells
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-03-24
@@ -5596,9 +6330,12 @@ K: Dmaj
 |: "D"!3!f2d !1!d!2!c!1!d | !3!f2!5!a !5!af!1!d | "A"!3!c!1!AA !5!e!1!AA | !3!cAc !5!e!3!f!4!g |
 "D"!3!f2d !1!d!2!c!1!d | !3!f2!5!a !5!af!1!d | "A"!2!Bcd !5!ec!1!A |1 "D"!3!dfe !3!d2!4!e:|2 "D"!3!dfe !3!d2!2!B||
 
+
+
 X:1146
 %%etbk:tnset id:180,pos:2,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/sheepintheboat.html
+%%etbk:pldat 2013-04-30T16:37
 T:Sheep in the Boat, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -5614,9 +6351,12 @@ K:Edor
 "em"!2!B2!4!e ed!4!e | "bm"!3!faf !1!def | "em"!2!e!1!d!2!B !2!B!1!A!3!F | "bm"!5!A!3!F!2!E !3!FE!1!D  |
 "em"!1!B,!2!E!3!F !4!GFG | "bm"!3!FE!1!D !3!def | "em"!4!e!3!d!2!B !2!B!1!A!3!F | "bm"!5!A!3!F!2!E "em"E2E||
 
+
+
 X:1147
 %%etbk:tnset id:180,pos:3,rep:3
 %%etbk:site1 http://www.trad.katesplacedoolin.com/tunes/wallopthespot.html
+%%etbk:pldat 2013-04-30T16:37
 T:Spot the Wallop
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-03-25
@@ -5629,6 +6369,8 @@ K: Dmaj
 !2!Bcd !5!e!1!AA | !3!fed !2!efg | !5!age !2!e!1!d!2!B | !2!B!1!A!2!F !4!A!2!F!1!E:|
 |: "D"!1!D!2!F!3!A !5!d2!3!d | !4!ed!2!c !3!d2!1!D | !1!D!2!F!3!A !5!d2!3!A |  "A"!4!B!3!A!2!F !3!AF!1!E |
 "D"!1!D!2!F!3!A !5!d2!3!d | !4!edc !3!d2e | !5!fed !4!e!3!d!2!B |  "A"!2!B!1!A!2!F !4!A!2!F!1!E:|
+
+
 
 
 X:2001
@@ -5646,6 +6388,8 @@ A2D FED F2A A2f|a2f efe d3 d3:|
 |:d2e f3 gfe f3|gfe fed e2d BdB|
 d2e f3 gfe f2f|a2f efe d3 d3:|
 
+
+
 X:2002
 %%etbk:tnset id:105,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1414
@@ -5660,6 +6404,8 @@ D2G G2A BAB d2B|A2D FED A2D FED|
 G2G G2A BAB d2B|A2D FED G3 G3 :|
 |:g2f efg f2e d2B|c2B A2B c2d e2f|
 g2f efg f2e d2B|c2A FED G3 G3 :|
+
+
 
 X:2003
 %%etbk:tnset id:105,pos:3,rep:3
@@ -5678,6 +6424,8 @@ d2g gfg d2 A A2B|cBc d2B G3 G3|
 d2g gfg d2A A2B|cBc e2d B3 B2G|
 ABA A2G F2G A2B|cBc d2B G3G3|
 
+
+
 X:2004
 %%etbk:tnset id:105,pos:4,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/2560
@@ -5692,6 +6440,8 @@ K: Amaj
 A2c e2c d2f a2f|efe dcB A3 A3:|
 |:a3 a2f g3 g2e|fef a2f e3 e2c|
 A2c e2c d2f a2f|efe dcB A3 A3:|
+
+
 
 X:2005
 %%etbk:tnset id:106,pos:1,rep:3
@@ -5708,6 +6458,8 @@ K: Gmaj
 |: "D"!3!d2!4!e !3!f2!5!a "G"!4!g2e !1!d2!3!B | !1!G2!3!B c2B "D"{c}!3!BAG !2!AB!4!c |
 "D"!3!d2!4!e !3!f2!5!a "G"!4!g2e !1!d2!3!B | !1!G2B !4!c2!1!E "D"!1!D !3!(3D!2!D!1!D !1!D3:|
 
+
+
 X:2006
 %%etbk:tnset id:106,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/826
@@ -5723,6 +6475,8 @@ K: Gmaj
 |: "G"!3!g{a}!3!g!3!g !1!d !3!(3d!2!d!1!d !2!ege !1!d!2!d!1!d | !3!g!2!g!3!g !4!aga !5!bgb "D"!4!a!2!f!1!d |
 "G"!3!g{a}!3!g!3!g !1!d2d !2!ege !1!d!2!d!1!d | !3!gdg "D"!4!ada "G"!5!b!3!gf !3!g3 :|
 
+
+
 X:2007
 %%etbk:tnset id:106,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/53
@@ -5736,6 +6490,8 @@ K: Ador
 |: "am"!1!A2!5!e e2d !2!BAB !4!d2B | !1!A2!5!e e2!4!d "G"!3!B2!2!A !1!GA!3!B | "am"!1!A2!5!e e2d !2!BAB !4!d3 | "G"!2!BAB d2!5!e "am"!2!B{d}B!1!A A3:|
 |: "am"!2!e2!4!a a2!5!b !4!a2!3!g !2!e2!1!d | !1!efg a2!5!b a2g !1!e2 !4!f | "G"!5!g3 gfe !2!d!1!B!2!A !1!G3 | !2!BAB d2!5!e "am"!2!B{d}B!1!A A3:|
 
+
+
 X:2008
 %%etbk:tnset id:106,pos:4,rep:3
 T: Toormore, The
@@ -5747,6 +6503,8 @@ R: slide
 K: Ador
 |: "am"!1!E2!3!A {B}A!2!G!1!A !3!c2d !5!e3 | "G"!2!ddd ded !1!B2!2!d !5!g3 | "am"!1!E2!3!A {B}A!2!G!1!A !3!c2d !5!e2c | "G"!4!d2!3!c !2!A{c}AG "am"A3 A3 :|
 |: "am"!2!e{g}ee !1!ded !3!cec !2!BdB | !1!A!2!A!1!A !5!d!4!c!2!A "G"!1!G2!2!E ED!2!E | "am"!1!E2!3!A {B}A!2!G!1!A !3!c2d !5!e2c | "G"!4!d2!3!c !2!A{c}AG "am"A3 A3 :|
+
+
 
 X:3001
 %%etbk:tnset id:107,pos:1,rep:3
@@ -5761,6 +6519,8 @@ R: slip jig
 K: Dmaj
 |:!3!G2!4!A !2!B!5!ee Bee|!1!G!2!G!1!G !5!B!3!G!5!B !4!A!2!F!1!D|!3!G2!4!A !2!B!5!ee Bee|!4!dcd !2!AA!1!G !3!FED:|
 |:!3!d2e !5!fdf !4!e!2!c!1!A|!3!d2!4!e !3!fdf !4!gfe|!1!d2!4!e !5!fdf !4!ecA|!2!Bcd !2!AAG FED:||
+
+
 
 X:3002
 %%etbk:tnset id:107,pos:2,rep:3
@@ -5777,6 +6537,8 @@ K: Dmix
 | !4!a2g !4!a!1!dd add | !4!abg add bag | !4!a2g add add | !5!bag !4!a2!3!g !2!f!1!e!1!d|
 | !4!a2g add add | !4!abg add bag | !4!a2a !5!ba!2!f !4!g2g | !3!f!2!e!1!d !3!c!2!A!1!G !3!FED ||
 
+
+
 X:3003
 %%etbk:tnset id:107,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/46
@@ -5791,10 +6553,13 @@ K: Bmin
 |:"f#m"!4!gfe "bm"!3!f!1!BB !3!fBB|!4!gfe !3!f!1!BB !3!fga|!4!gfe !3!f!1!BB fBB| "f#m"!5!agf !2!ef!1!d !3!cBA:|
 |:"D"!3!d2e !5!fdf "A"!4!ecA|"D"!3!d2!4!e !3!fed "A"!4!gfe|"D"!1!d2e !3!fdf "A"!2!efg|!5!agf efd cBA:|
 
+
+
 X:3004
 %%etbk:tnset id:147,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/750
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-04-30T16:40
 T: A Fig For A Kiss
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -5805,6 +6570,8 @@ K: Edor
 |: "em"!3!G2!5!B !1!E2!5!B BAG | "D"!2!F2!4!A !1!D2!4!A AGF | "em"!3!G2B E2!3!B !3!BAG | "D"!3!BdB A!1!G!2!F "em"!1!E3 :||
 | "em"!5!g2!3!e g2e !3!ed!1!B | "D"!4!f2!2!d {f}!2!d!1!c!2!d !4!fed | "em"!5!g2!3!e g2e !3!ed!1!B | "G"!4!d!2!B!1!G !1!G!2!B!4!d !3!e2f |
 "em"!5!g2!3!e g2e !3!ed!1!B | "D"!4!f2!2!d {f}!2!d!1!c!2!d !4!fed | "em"!5!gfe !4!fed !3!ed!1!B | "D"!3!BdB A!1!G!2!F "em"!1!E3 ||
+
+
 
 X:3005
 %%etbk:tnset id:108,pos:1,rep:3
@@ -5818,6 +6585,8 @@ R: slip jig
 K: Emin
 |: "em"!5!B!1!EE BEF !3!GGG | !5!B!1!EE BAG !2!FGA | !5!BEE BEF G2!4!A | !2!Bc!4!d "D"!2!AA!1!G !3!FED:|
 |: "D"!5!d!1!Fd !4!c!2!A!1!F "G"!1!G2G | "D"!5!d2!2!d !2!def !5!gfe | !2!d2!5!d !4!c!2!A!1!F "G"!1!G2z | !2!Bc!4!d "D"!2!AA!1!G !3!FED:|
+
+
 
 X:3006
 %%etbk:tnset id:108,pos:2,rep:3
@@ -5833,6 +6602,8 @@ K: Dmix
  "D"!1!A!3!d!3!d d2e !5!f!1!A!5!f | !1!A!3!dd ded !2!c!1!A!1!G | !1!A!3!dd d2!4!e !3!f2!4!g | !5!afa !4!g!2!e!1!d !2!c!1!A!1!G |
 !1!A!3!d!3!d d2e !5!f2f | !1!A!3!dd ded !2!c!1!A!1!G | !3!dcA !2!cd!4!e !3!f2!4!g | !5!afa !4!ged !2!c!1!A!1!G ||
 
+
+
 X:3007
 %%etbk:tnset id:109,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1968
@@ -5845,6 +6616,8 @@ R: slip jig
 K: Gmaj
 |: !5!B!3!GG !4!A!3!G!2!E !3!G!2!E!1!D | !2!E!3!GD !1!D!2!E!3!G !4!A2A | !5!BGG !4!AGE !3!GED |1!2!EGD !1!DEF !4!!3!G3:|2EGD DE!3!F !1!G2!1!G||
 |:!3!B!4!dd !5!e!4!dd !3!BAG | Bdd !5!e!4!d!3!B !2!A2A | !3!B!4!dd edd !3!BA!1!G |1 !4!GED DEF !4!G2!1!G :|2 !4!GED DEF !4!!3!G3||
+
+
 
 X:3008
 %%etbk:tnset id:109,pos:2,rep:3
@@ -5859,6 +6632,8 @@ K: Gmaj
 |: !2!BBB B!4!dB !3!c2!1!A | !2!B!1!A!1!G !2!BdB !1!ABc | !2!B!1!A!1!G BdB !3!c2!5!e|1 !4!d!2!B!1!G G (3GGG G2G:|2 dBG G (3GGG G3||
 !5!g2g !4!e!3!d!2!c !1!Bcd | !4!e!2!c!1!A !1!A !3!(3A!2!A!1!A !1!A2!3!d | !5!gGg !4!edc !1!Bcd | !5!g!3!d!2!B !1!G (3GGG G2!3!d|
 !5![g3G] !4!edc !1!Bcd | !4!e!2!c!1!A A (3AAA A2!3!d | !1!def !4!gfe !1!def | !4!g!5!b!4!g !5!agf !4!g3||
+
+
 
 X:3009
 %%etbk:tnset id:110,pos:1,rep:3
@@ -5875,10 +6650,13 @@ gfg efe e2 f|gfg efg afd| gfg efe e2 a|bag fag fed:|
 eBB e2f g2f|eBB efg afd| eBB e2f g2a|bag fag fed:|
 edB dBA G2D|GAB dge dBA|edB dBA G2A|BAG FAG FED:|
 
+
+
 X: 3010
 %%etbk:tnset id:147,pos:2,rep:3
 %%etbk:site1 http://thesession.org/tunes/2410
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-04-30T16:40
 T: Farewell To Whalley Range
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -5888,6 +6666,8 @@ L: 1/8
 K: F#min
 |: "f#m"!2!F2!5!c !4!B!3!A!2!F FF!1!E | !2!F2!4!c !1!B!2!c!3!e !4!f!3!e!2!c | "bm"!1!B2!2!B BAB !3!cBA |1 !2!B3 BAB !3!cB!1!A:|2 !2!B3 BAB !3!c!5!e!3!f||
 |: "f#m"!5!a2!3!f !3!f!1!e!2!c !4!f!3!e!2!c | "bm"!1!B2!2!B !2!BAB !3!c!5!e!3!f | "f#m"!5!a2!4!a !5!b!4!a!3!f !4!a!3!f!1!e|1 !3!f!1!e!2!c !1!Bce !4!fe!2!c :|2 !3!f!1!e!2!c !4!f!3!e!2!c !1!B!3!A!4!B ||
+
+
 
 X:3011
 %%etbk:tnset id:178,pos:1,rep:3
@@ -5899,6 +6679,8 @@ L:1/8
 K:D
 |:FAA FAd AFD|FAA FAd B2A|FAA FAd AFD|EDB, DFA B2A:|
 |:f2f faf edB|A2f fef gfe|f2f faf edB|AFE DFA B2A:|
+
+
 
 X:4001
 %%etbk:tnset id:111,pos:1,rep:3
@@ -5915,6 +6697,8 @@ K: Amaj
 |: "A"!2!c!4!e e!2!c | "D"!1!d!3!f f!1!d | "A"!3!c!5!e e!1!A/B/ | "E"!3!cB B!1!A | "A"!2!c!4!e e!2!c | "D"!1!d!3!f f!1!d | "A"!3!c!5!e "E"!2!B>c | "A"B!1!A A2 :|
 
 
+
+
 X:4002
 %%etbk:tnset id:111,pos:2,rep:3
 %%etbk:color #ffffcc
@@ -5927,6 +6711,8 @@ R: polka
 K:Amaj
 |: "A"!1!A>B !3!cA | !3!(3cBA cA | !1!A>B cA | !3!(3cB!1!A "D"!2!F2 | "A"!1!A>B cA | !2!BA !3!c!5!e | !1!A>B !1!A!2!F | {A}F!1!E E2:|
 |: "A"!4!e>f e!3!c | !2!BA B!3!c | !4!e>f e!3!c | !2!B!1!A "D"!2!F2 | "A"!4!e>f e!3!c | !2!BA Bc | !1!A>B !1!A!2!F | {A}F!1!E E2:|
+
+
 
 X:4003
 %%etbk:tnset id:112,pos:1,rep:3
@@ -5944,6 +6730,8 @@ K: Ador
 |: "am"!3!a/b/a/g/ ab | !3!ag !1!e!2!f | "G"!3!g>f ga | !3!g!1!e {g}!2!e!1!d |
 | "am"!3!a/b/a/g/ ab | !3!ag !1!e!4!f | "em"!5!g!3!e !2!d!1!B | "am"!1!A2 A2:|
 
+
+
 X:4004
 %%etbk:tnset id:112,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/239
@@ -5960,6 +6748,8 @@ A/B/ |: "am"!3!c2 B2 | !1!A!3!B/A/ "G"!1!G>A | !3!B!4!d !2!e!1!d | !4!g2 gd |
 |: "am"!2!e!5!a ag/e/ | "G"!1!d!4!g gd | "am"!2!e!4!a a!5!b | !3!"em"(3gag g2 |
 "am"!2!e!5!a !4!g!3!e | "G"!2!d!1!B !1!G!1!A/B/ | !3!c!5!e !4!d!2!B |1 "am"A2 !1!A2:|2 "am"!1!A2 A>B||
 
+
+
 X:4005
 %%etbk:tnset id:113,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/466
@@ -5973,6 +6763,8 @@ R: polka
 K: Dmaj
 |: "D"!2!F>A !4!B!1!A | !3!d!4!e !3!f2 | "A"!3!fe/f/ !4!g!2!c | "D"!4!e!3!d !2!B!1!A | !2!F>A !4!B!1!A | !3!d!4!e !3!f2 | "A"!3!fe/f/ !4!g!2!c | "D"!4!e!3!d d2:|
 |: "A"!3!ef/e/ !2!c!3!e | !4!fe !5!a!1!A | !3!ef/e/ !2!c!3!e | !4!f!3!e !2!c!1!A | !3!ef/e/ !2!c!3!e | !4!f!3!e !5!a2 | "E"!3!ef/e/ !2!d!1!B | "A"!1!B!1!A A2:|
+
+
 
 X:4006
 %%etbk:tnset id:113,pos:2,rep:3
@@ -5990,6 +6782,8 @@ K: Gmaj
 |: "G"!4!g2 !3!f2 | "C"!1!c2-c2>d | "D"!3!e{f}e !2!d{e}d | "G"!1!B2-B2>!3!c |
 "G"!4!d>e d!3!c | "D"!2!A2 AB/A/ |1 "G"!1!GA B!3!c | !5!d!1!d !2!e!3!f:|2 "G"!1!G!4!g "D"!3!f!5!a | "G"!4![g2d2] z!5!d/c/||
 
+
+
 X:4007
 %%etbk:tnset id:114,pos:1,rep:3
 %%etbk:color #ffffcc
@@ -6004,6 +6798,8 @@ K: Gdor
 "gm"!3!B!5!d dc/B/ | "dm"!2!A!4!c cA | "gm"!3!B!5!d dc/B/ | "dm"!2!A!1!F F2 | "gm"!3!B!5!d dc/B/ | "dm"!2!A!4!c !2!c!4!e | !5!f!3!d !2!c!1!A | "gm"!1!G2 G>A |
 "gm"!3!B!5!d dc/B/ | "dm"!2!A!4!c cA | "gm"!3!B!5!d dc/B/ | "dm"!2!A!1!F F2 | fe dc | Ac dc | Bd Ac | "gm"G2 G2||
 
+
+
 X:4008
 %%etbk:tnset id:114,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/329
@@ -6017,6 +6813,8 @@ R: polka
 K: Amaj
  |: "A"!5!e2 !3!c>{e}c | !2!B!1!E !2!A>!3!B | !4!c!1!E !2!A!3!B | "E"!4!c!3!B !2!B!3!c | "A"!5!e2 !3!c>{e}c | !2!B!1!E !2!A>B | !4!c!1!E !2!AB | !4!c!2!A A2 :|
 |: "A"!1!ef/g/ !4!a>a | !3!gf {a}f!1!e | !2!c!1!e !2!f>g | !2!f!1!e !2!c!1!e | !1!ef/g/ !4!a>a | !3!gf {a}f!1!e | !2!c!1!e !2!fg | !4!a2 a2.:|
+
+
 
 X:4009
 %%etbk:tnset id:115,pos:1,rep:3
@@ -6033,6 +6831,8 @@ K: Ador
 |: "am"!2!e2 ef/g/ | !5!a!2!e !3!f!2!e | "G"!1!d2 de/f/ | !4!g!2!e !3!f!1!d |
 "am"!2!e2 ef/g/ | !5!a!2!e !3!f!2!e | "em"!3!e!5!a !3!e/f/e/d/ | "am"!1!B!1!A A2 :|
 
+
+
 X:4010
 %%etbk:tnset id:115,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/559
@@ -6046,6 +6846,8 @@ K:Gdor
 |: "gm"!3!B!1!G !3!GF | !1!D!3!G !1!G>A |  !3!BA !1!G!1!F | "dm"!3!Bc d>c | "gm"!3!B!1!G !3!GF |  !1!D!3!G !1!G2 | "dm"!5!d>c BA | "gm"G2 G2 :|
 |: "gm"!2!d!4!g !3!ga | !3!g/a/g/f/ !1!d!2!c | !1!d!3!g "dm"!2!f!4!a | "gm"!3!g2 g>a | !5!b2 !4!ab/a/ | gf !1!d!2!c | !3!d!1!G !1!G/A/B/c/ |  !5!d4:|
 
+
+
 X:4011
 %%etbk:tnset id:116,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/39
@@ -6058,6 +6860,8 @@ R: polka
 K: Dmaj
 |: "D"!5!f!1!A !2!BA | fA BA | !3!d2 "A"!4!e>!5!f | !4!e!3!d !2!B!1!A | "D"!5!f!1!A !2!BA | fA BA | !3!d2 "A"!4!e>!5!f | "D"!4!e!3!d d2:|
 |: "D"!3!fa fe | {g}!2!e!1!d !2!B!1!A | !3!d2 "A"!4!e>!5!f | !4!e!3!d !2!B!1!A | "D"!3!fa fe | {g}!2!e!1!d !2!B!1!A | !3!d2 "A"!4!e>!5!f | "D"!4!e!3!d d2:|
+
+
 
 X:4012
 %%etbk:tnset id:116,pos:2,rep:3
@@ -6073,6 +6877,8 @@ K: Bmin
 "bm"!2!d!1!B !5!bB | !2!de !4!f>e | !2!d>e "f#m"!4!f/e/d | "bm" !1!B2B2:|
 |:"bm"!2!f!1!e/f/ !5!ba | !2!f!1!e !4!f>!3!e | !2!d!1!B !5!bB | "A" !3!c/B/A/c/ !5!e!1!d/e/ |!
 "bm" !3!f!1!e/!2!f/ !5!ba | !2!f!1!e !4!f>e | !2!d>e "f#m"!4!f/e/d | "bm" !1!B2 B2:|
+
+
 
 X:4013
 %%etbk:tnset id:117,pos:1,rep:3
@@ -6090,6 +6896,8 @@ K:Ador
 |:"am"!2!e!4!a ag/a/ | "G"!5!ba !3!g!1!d | "am"!2!e!4!a ag/a/ | "G"!5!ba !3!g2 |
 "am"!2!e!4!a ag/a/ | "G"!5!ba !3!g!1!d | !3!ed !5!g!1!G | "am"!2!B!1!A A2:|
 
+
+
 X:4014
 %%etbk:tnset id:117,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3724
@@ -6106,6 +6914,8 @@ K: Gmaj
 |:"am"!5!a!3!e ae | ae e>!4!f | "G"!5!g!2!d gd | gd d>!3!e |
 "am"!5!a!3!e ae | ae e>!4!f | "em"!5!g!3!e !2!d!1!B | "am"!1!A2 A2:|
 
+
+
 X:4015
 %%etbk:tnset id:117,pos:3,rep:3
 T: Gan Ainm
@@ -6120,6 +6930,8 @@ K: Gmaj
  "G"!1!D2 !2!G>A | !4!B!5!d !4!B!5!c/!4!B/ | "D"!3!AG BA | "G"!2![G4D] :|
 |:"G" !5!g2 !4!e2 | !3!d!2!B !3!d2 | !1!G>A B!2!A | "D"!3!AG !1!E!2!G |
  "G"!1!D2 !2!G>A | !4!B!5!d !4!B!5!c/!4!B/ | "D"!3!AG BA | "G"!2!G4 :|
+
+
 
 X:4016
 %%etbk:tnset id:118,pos:1,rep:3
@@ -6137,6 +6949,8 @@ K: Gmaj
 !1!D!2!G !3!B!4!c | !5!dG Bd | !4!c2 Ad|[1 !1!G4:|[2 G3 !3!d||
 |:!5!g!3!d !4!ed | !5!gd !4!ed | !2!B!1!G !5!g!3!d | !2!B!1!G !4!ed |
 !5!gd !4!ed | gd !2!B!3!d | !2!ed !3!fa  |[1 !4![g3d]!3!d:|[2 [g4d]||
+
+
 
 X:4017
 %%etbk:tnset id:118,pos:2,rep:3
@@ -6156,6 +6970,8 @@ K: Ador
 "Variation Takt 4"
 | AE EG |
 
+
+
 X:4018
 %%etbk:tnset id:119,pos:1,rep:3
 T: Gan Ainm
@@ -6168,6 +6984,8 @@ R: polka
 K: Dmaj
 |: "D"!3!dc/d/ ed | "A"!2!c!4!e !1!A!2!F | "G"!3!GF/G/ AG | "D"!2!F!4!A !1!DF | "G"!3!G!1!E !4!AG | "D"!2!F!3!A !5!d>!3!f | "A"!4!g!1!e !2!c!4!e | "D"!3!d2 d2 :|
 |: "D"!1!d>e !3!f!5!a | !4!gf e!1!d | "A"!3!c/B/!1!A !5!e!1!A | !2!e/f/e/!1!d/ !3!c!1!A | "D"!3!d>!4!e !3!f!5!a | !4!gf e!1!d | "A"!3!c!1!A Bc | "D"!4!d2 d2 :|
+
+
 
 X:4019
 %%etbk:tnset id:119,pos:2,rep:3
@@ -6182,6 +7000,8 @@ K: Edor
 |: "em"!1!E2 !2!F!4!A | !2!B!5!e ed | !2!B!4!d/B/ !1!A!3!F | "D"!2!EF !1!D2 | "em"!1!E>F G!4!A | !2!B!5!e ed | "bm"!2!B!4!d/B/ !1!A!2!F | "em"{A}!2!F!1!E E2:|
 |: "em"!2!B!5!e !2!ef | "bm"!5!af e!1!d | "em"!1!B!2!e ef | "D"!5!af !1!d2 | "em"!1!B!2!e ef | "bm"!5!af e!1!d | !2!B!4!d/B/ !1!A!2!F | "em"{A}!2!F!1!E E2:|
 
+
+
 X:4020
 %%etbk:tnset id:119,pos:3,rep:3
 T: Gan Ainm
@@ -6194,6 +7014,8 @@ R: polka
 K: Dmaj
 |: "D"!5!d!3!A !2!F!3!A | !5!!3!d2 !3!dc/d/ | "A"!4!e!2!c !1!A!2!c | !4!e!3!f !4!gf/g/ | "D"!5!af !4!ge | !1!d!3!c !1!A!2!F | "A"!3!GB !4!A/B/A/G/ | "D"!2!F!1!D D2 :|
 |: "D"!3!f>e fd | "A"!4!g>f ge | "D"!3!f>e fa | "A"!4!gf ef/g/ | "D"!5!af !4!ge | !1!d!3!c !1!A!2!F | "A"!3!GB !4!A/B/A/G/ | "D"!2!F!1!D D2 :|
+
+
 
 X:4021
 %%etbk:tnset id:120,pos:1,rep:3
@@ -6208,6 +7030,8 @@ K: Dmix
 |: "D"!3!A!1!D !2!F!3!A | !5!d!4!^c !3!A!4!B | "A"!5!c>B c!1!E | !1!EF !3!G!1!E | "D"!3!A!1!D !2!F!3!A | !5!d!4!^c !3!A!4!B | "A"!5!c>B c!1!E | "D"{G}!2!E!1!D D2:|
 |: "D"!3!f>{g}f e!1!d | "A"!3!^c!1!A A!2!e | "D"!3!f>{g}f ef | "A"!5!ag !2!e!3!=f | "D"!3!f>{g}f e!1!d | "A"!3!^c!1!A !3!A!4!B | !5!c>B c!1!E | "D"{G}!2!E!1!D D2:|
 
+
+
 X:4022
 %%etbk:tnset id:120,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/715
@@ -6220,6 +7044,8 @@ R: polka
 K:Dmix
 |: "D"!1!D2!2!AB | !4!c!2!A {c}A!1!G | !2!A!5!d !3!d^c | !3!d{e}!3!d !3!de | !5!f!3!d !4!ed | !2!c!1!A !3!A!4!B | "A"!5!c!3!A !2!G!1!E | "D"!1!D4:|
 |: "D"!5!f!3!d !4!ed | !2!c!1!A A>!2!e | !3!f!1!d {g}!2!ed | !3!fg !5!a>g | !3!f!1!d {g}!2!e!1!d | !2!c!1!A !3!A!4!B | "A"!5!c!3!A !2!G!1!E | "D"!1!D4:|
+
+
 
 X:4023
 %%etbk:tnset id:120,pos:3,rep:3
@@ -6234,6 +7060,8 @@ K: Dmix
 |: "D"!3!A>B AG | "A"!1!EF !3!GE | "D"!3!A>B AG | "A"!3!A!5!d d!4!c | "D"!3!A>B AG | "A"!1!EF !3!G2 | !3!AB !5!c!1!E | "D"{G}!2!E!1!D D2:|
 "A"!5!ed !3!^cd | !5!e!1!A !3!^cd | !5!ed ^c!4!d | !2!e!5!a a2 | "A"!2!e!1!d !3!^c!4!d | !5!ed !3!^cd | !1!A>B !3!c!4!d | !2!ef gf |
 "A"!2!e!1!d !3!^c!4!d | !5!eA !3!^cd | !5!ed !3!^c!4!d | !2!e!5!a a2 | "G"!2!e!4!g !1!d>!2!B | !3!c!5!e !4!d>!2!B | "D"!1!A!2!B !3!c!1!E | {G}!2!E!1!D D2 ||
+
+
 
 X:4024
 %%etbk:tnset id:121,pos:1,rep:3
@@ -6252,6 +7080,8 @@ K: Gmaj
 !4!g2 gf/g/|!5!ag ge|d!1!B !3!BA|!1!G2 G2:|
 
 
+
+
 X:4025
 %%etbk:tnset id:121,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4824
@@ -6266,6 +7096,8 @@ K: Gmaj
 !1!G>A B!4!d | !3!ef !5!g2 | !3!ed !1!B!2!A | !1!G4 :||
 !5!g>f ed | !3!ef g2 | !3!ed !1!Bd | !3!e/f/e/d/ !1!Bd |
 !5!g>f ed | !3!ef g2 | !3!ed !1!B!2!A |!1!G4 :||
+
+
 
 
 X:4026
@@ -6284,6 +7116,8 @@ K: Gmaj
 |:!3!d!5!g !3!g>!4!a|!5!b!3!g !4!g2|!2!(3efg e!1!d |!3!d!1!B !1!B>!2!c |
 !3!d!5!g !3!g>!4!a|!5!b!3!g !4!g2|!2!(3efg e!1!d |1!4!g2 g>e:|2 g4 ||
 
+
+
 X:4027
 %%etbk:tnset id:122,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/441
@@ -6299,6 +7133,8 @@ dd B/c/d/B/ | AF Ad | fd ec | d2 d2 ||
 fd de/f/ | gf ed | fd de/f/ | gf a2 |
 fd de/f/ | gf ed | fd ec | d2 d2 ||
 
+
+
 X:4028
 %%etbk:tnset id:123,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/291
@@ -6313,6 +7149,8 @@ B/A/|GD GA|Be e/f/g/e/|dB B/A/G/A/|BA A/c/B/A/|
 GD GA|Be e/f/g/e/| dB AB/A/|G2 G:|
 d|g>f ed|ef g>e| dB B/A/G/A/|BA A>d|
 g>f ed|ef g>e|dB AB|G2 G2:|
+
+
 
 X:5001
 %%etbk:tnset id:124,pos:1,rep:3
@@ -6330,6 +7168,8 @@ K:Ddor
 |: "dm"!2!A2!4!de !4!d!3!c!2!A!1!G | !2!A!4!dde !4!d!3!c!2!A!1!G | "am"!2!A!4!ccd !4!cA!1!G2 | !2!A!4!ccd !4!c!2!A!1!G!2!E |
 "dm"!1!D3E !3!FEF!4!G | !2!A!5!ddc !2!AA!1!G!2!E | !3!F2DF "am"!2!E!1!D!2!C!1!D |1 !2!EE!1!D!2!C "dm"!1!D2!2!E!4!G :|2 !2!EE!1!D!2!C "dm"!3!D4 ||
 
+
+
 X:5002
 %%etbk:tnset id:124,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/13
@@ -6345,6 +7185,8 @@ K: Dmaj
  "D"!3!f{g}ffg !5!af!4!ge | !3!(3fed !5!ec !4!d!2!B!1!A!4!G | !3!F2D!3!F "A"!1!G!3!BA!1!G |1 "D"!3!F{G}F!1!D2 D2!3!d!4!e:|2 "D"!3!F{G}F!1!D2 D2DE ||
 |: "dm"!3!=F2{G}FE !3!F!4!G!2!AB | !4!=c!2!A!5!d!3!B !4!=cA!1!G!3!B | "D"!1!A!3!dde !5!f!3!d!4!ed | "A"!2!=c!1!A!3!d!2!^c !1!A2!3!d!4!e |
  "D"!3!f{g}ffg !5!af!4!ge | !3!(3fed !5!ec !4!d!2!B!1!A!4!G | !3!F2D!3!F "A"!1!G!3!BA!1!G |1 "D"!3!F{G}F!1!D2 D2DE :|2 "D"!3!F{G}F!1!D2 D2!3!d!4!e ||
+
+
 
 X:5003
 %%etbk:tnset id:124,pos:3,rep:3
@@ -6362,6 +7204,8 @@ K: Gmaj
 |: "D"!5!a!3!f!1!d!2!^c !1!d2!3!ga | "em"!5!b!1!e !3!(3e!2!e!1!e !1!e2!3!ga | !5!bg!4!a!2!f !4!g!2!e!1!d!3!B | "D"!3!BAAG !2!AcBA |
 "G"!1!GA!3!B!4!d !2!d!1!B!2!d!3!e | !4!g!3!g!4!g!2!e !1!de!3!ga | !5!ba!3!g!2!e "D"!1!d!3!B!2!A!4!c |1 "G"!3!B2!1!G2 G3!3!fg:|2 "G"!3!B2!1!G2 G4 ||
 
+
+
 X:5004
 %%etbk:tnset id:125,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/83
@@ -6377,6 +7221,8 @@ K: Emin
 "em"!3!(3BcB !2!(3ABA !1!(3GAG !2!(3FGF | !1!EFGA !5!B!1!B!3!ef | !5!gfe!2!d  "bm"!1!B!5!gfg | "em"!3!e2 !1!E2 E4:|
 |:"em"!3!ga| !5!bgbg !1!efga | !5!bgbg !1!e!4!gfe | "D"!1!d!2!d!1!d!2!e !3!fefg | !5!afdf !5!a2gf |
 "em"!1!e!2!e!1!ef !3!gfga | !5!bg!4!af !4!gfe!3!f | !5!gfe!2!d "bm"!1!Bg!5!fg | "em"!3!e2 !1!E2 E4:|
+
+
 
 X:5005
 %%etbk:tnset id:125,pos:2,rep:3
@@ -6394,6 +7240,8 @@ K: Emin
 |:"C"!2!e2ee e2!4!ge | "G"!1!d!3!B!1!GA !3!B4 | "D"!3!B!1!A!2!F!3!G !4!A4  | "em"!4!A!3!G!1!E!2!D !1!E4 |
 "C"!2!e2ee !4!gege | "G"!1!d!3!B!1!GA !3!B4 |  "D"!3!B3c !3!B!1!A!2!F!3!G | "em"!1!E2 !3!(3E!2!E!1!E !1!E4:|
 
+
+
 X:5006
 %%etbk:tnset id:126,pos:1,rep:3
 %%etbk:color #ffffcc
@@ -6408,6 +7256,8 @@ K: Dmaj
  "D"!1!D2!2!F!3!A DA!2!F!1!A | !3!de!5!fe !3!dc!1!B!1!A | "A"!3!e!1!A!4!fA !5!gA!3!e!2!c | "D"!3!d2 !5!f2 d4:|
 |: "A"!3!e!1!AzA !4!fAzA | !5!g!1!A!4!fA !3!eAzA | !3!e!1!A!4!fA !5!gA!4!f!1!A | !5!edcB !1!A!4!GFE | 
 "D"!1!D2!2!F!3!A DA!2!F!1!A | !3!de!5!fe !3!dc!1!B!1!A | "A"!3!e!1!A!4!fA !5!gA!3!e!2!c | "D"!3!d2 !5!f2 d4:|
+
+
 
 X:5007
 %%etbk:tnset id:126,pos:2,rep:3
@@ -6425,6 +7275,8 @@ K: Dmaj
 fg |: "D"!5!a!3!f!1!df a2!4!g!3!f | "A"!1!efga !5!b2!4!a!3!g | "D"!3!fagf !2!egfe | !1!dfe!1!d "G"!2!B{d}B!4!dB |
 | "D"{d}!2!B!1!A!2!F!4!A !1!D2!2!F!4!A | "A"!2!BA !2!(3Bc!4!d !2!e2de | "D"!3!fagf "A"!2!egfe | "D"!1!d2 !3!f2 d4 :|
 
+
+
 X:5008
 %%etbk:tnset id:127,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/310
@@ -6439,6 +7291,8 @@ K: Dmaj
 "D"!1!D2!2!F!3!A DAFA | !5!d!3!fe!1!d "A"!2!BcdB | "D"!1!A3B "A"!1!A!3!F!2!E!4!G | "D"!3!F2!1!D2 D4 :|
 !2!B |: "D"!1!A!4!dd!3!c !1!d2 d!2!f | !4!a!2!f!5!b!2!f !4!a!3!fe!1!d | "A"!2!efe!1!d !2!B!1!A!2!F!1!A | !3!ffe!1!d !2!BBAB |
 "D"!1!A!4!dd!3!c !1!d!2!d!1!d!2!f | !4!a!2!f!5!b!2!f !4!a!3!fe!1!d | "A"!2!efe!1!d !2!B!1!A!4!dB | !1!A!3!F!2!EF "D"!1!D4:|
+
+
 
 X:5009
 %%etbk:tnset id:127,pos:2,rep:3
@@ -6455,6 +7309,8 @@ K: Dmaj
 |: !3!fg | "D"!5!afed !5!b!4!a!3!fe | !1!d2fd {g}e!1!d!2!B!4!d | !1!D!2!F!3!A!5!d !2!F!3!A!5!d!2!e | !3!fedf "A"!2!e2fg |
 "D"!5!afed !5!b!4!a!3!fe | !1!d2fd {g}e!1!d!2!B!4!d | !1!D!2!F!3!A!5!d !2!F!3!A!5!d!3!f | "A"!2!e!1!ABc "D"!4!d4:|
 
+
+
 X:5010
 %%etbk:tnset id:128,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/3453
@@ -6469,6 +7325,8 @@ K:Edor
 !5!E!1!B,!2!EF !4!GA (3GFE | "D"!1!D3F {G}FE!1!D!3!F | "em"!1!EFGA "bm"!5!BAGF |1 "em"!3!G2 !1!E2 E2EF:|2 "em"!3!G2 !1!E2 E3!3!e:|
 |: "em"{f}!3!edBd !3!eB!5!gf | !3!ed!1!B!2!A !3!B!1!G!2!E!3!F | "G"!1!G3A !3!B!1!ABc | "D"!4!d!1!A!4!AG !2!FFDF |
 "em"!3!G!1!D!5!B!3!G "D"!2!F!5!d!3!A!2!F | "em"!3!G!1!E!5!B!3!G "bm"!1!F!2!B!4!d!1!B | "em"!1!Bdef "bm"!5!gfed |1 "em"!1!B!3!e{f}ed e3e:|2 "em"!1!B!3!e{f}ed e2!1!E!2!F:|
+
+
 
 X:5011
 %%etbk:tnset id:128,pos:2,rep:3
@@ -6485,6 +7343,8 @@ K: Gmaj
 |: "G"!3!d2!5!g!4!e !3!d!2!B!1!G2 | "C"!3!c!1!E!3!c!5!e "D"!2!A!1!G !2!(3EFG | !1!D2 !2!(3EF!4!G !2!AB!4!c!1!A | !3!d!4!e!3!f!1!d !5!afdf |
 "G"!4!g2fg "D"!5!afdf | "G"!4!gfga "D"!3!f!1!dd!3!c | !1!AB!4!dc dc!1!A!2!F |1 "G"!3!G2GF G2 !1!B!2!c:|2 "G"!3!G2GF G2 !5!BA||
 
+
+
 X:5012
 %%etbk:tnset id:129,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/130
@@ -6499,6 +7359,8 @@ K: Dmaj
 "D"!3!(3FGF !2!EF !1!D!2!F!4!AF | "A"!3!GA!2!FG !1!E3F| !3!GF!3!G!4!A !2!(3Bcd !5!ed  |1 !3!c!1!A!4!G!2!E "D"!1!D!5!d !3!A!1!G:|2 !3!c!1!A!4!G!2!E "D"!1!D2 !1!(3AB!3!c |
 |: "D"!1!d2 !5!ad !3!fd!2!e!1!d | !2!B!4!d!1!A!3!F !1!D!2!E!3!F!4!A | "em"!2!B!5!ee!4!d Beed | !2!B!4!d!2!ef !4!ggfe |
 | "D"!1!d2 !5!ad !3!fd!2!e!1!d | !2!B!4!d!1!A!3!F !1!D!2!E!3!F!4!A  | "em"!2!B!4!d!2!ef !4!gfe!1!d |1 "A"!3!c!1!A!4!G!2!E "D"!1!D2 !1!(3AB!3!c:|2 "A"!3!c!1!A!4!G!2!E "D"!1!D!5!d !3!A!1!G||
+
+
 
 X:6001
 %%etbk:tnset id:130,pos:2,rep:3
@@ -6515,6 +7377,8 @@ K: Amaj
 |: "A"!5!!4!a3 !5!b !4!a!2!f !1!e!4!a | "D"!2!f2 {a}fe !2!f2 !4!a!2!f | "A"!1!e3 {a}f !1!e!3!c !1!A!2!B | "E"!3!c2 !2!B2 !1!B2 !2!c!3!e|
 "A"!5!!4!a3 !5!b !4!a!2!f !1!e!4!a | "D"!2!f!1!e !2!c!1!e !2!f2 !4!af | "A" !1!e3 {a}f "E"!1!e!3!c !2!B!5!e |1 "A"!3!c2 !1!A2 A2 !2!c!3!e:|2 "A"!3!c2 !1!A2 A2 !5!a!3!f||
 
+
+
 X:6002
 %%etbk:tnset id:130,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4577
@@ -6530,10 +7394,13 @@ K: Gmaj
 |: "G"!5!(d2 d)d d2 dd | !2!AB BA !1!GA !3!B!4!d | "C"!5!(e2e)e e2 ee | "G"!2!AB BA !1!GA !3!B!4!c |
 !5!(d2 d)d d2 dd | !2!AB BA !1!GA !3!B!1!d | !4!(g2 g)!2!e !1!d!3!B !2!A!5!d | "D"!3!B2 A2 "G"G2 z2:|
 
+
+
 X:6003
 %%etbk:tnset id:2,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/4188
 %%etbk:tube1 http://www.youtube.com/embed/pe__q4zIrAY
+%%etbk:tube2 https://www.youtube.com/embed/A_HwIaRltKo
 T: Lucy Farr's Highland Fling
 N: http://www.thesession.org/discussions/display/28476/
 Z: Piano Box Version by Martin Fleischmann
@@ -6545,6 +7412,8 @@ K: Fmaj
 |: "F"!3!A2{B}AG !3!A!5!ccA | "C"!2!G{B}GGF !2!GA!4!BG | "F"!3!A!2!A!3!AG !3!A!5!ccA | "C"!2!GFGA "F"!1!F!2!F!1!F2 :|
 |: "F"!3!A!4!c !3!c!4!c !5!.d2 !4!c!3!A | !1!F!3!A!5!cA "C"!2!GAFG| "F"!3!A!4!c !3!c!4!c !5!.d2 !4!c!3!A | "C"!2!G{B}GGA "F"!1!F4  |
 "F"!3!A2 !5!c!5!c A2 cc | !3!A2 !5!c!3!A !4!B!2!G!3!A!1!F | "C"!2!G2{B}GF !2!GABG | !5!cAGA "F"!1!F4 :|
+
+
 
 X:6004
 %%etbk:tnset id:103,pos:1,rep:3
@@ -6560,6 +7429,8 @@ K: Gmaj
  "G"!1!D!3!G!1!GB !5!d2!1!G!2!F | !1!D!3!G!3!G!2!F !1!G2!2!B!3!d | !5!g2!3!gf !3!gbag | "D"!2!f!1!d!3!c!2!A "G"!1!G3:|
 |:GA| "G"!3!B2BG "D"!4!cBc!2!A | "G"!5!d2!1!G!2!F !1!G3A | !3!B2BG "D"!4!cBc!2!A | !5!d2!1!DE !3!F!1!GAG |
 "G"!3!B3G "D"!4!cBc!1!A | !3!d!2!^c!1!de !3!f2 !1!d/e/f | "G"!4!g2!3!gf !3!gbag | "D"!2!f!1!d!3!c!2!A "G"!1!G3:|
+
+
 
 X:6005
 %%etbk:tnset id:130,pos:1,rep:3
@@ -6577,6 +7448,8 @@ K: Dmaj
 |: "A"!3!e!2!c!3!e!2!f !4!a2a!2!f | !1!e!3!cB!1!A !2!F!1!AAB | "E"!3!c!2!BB{c}B cBBA | !3!cA{d}BA !2!c!3!e!5!a!3!f |
 "A"!1!e3!3!f !5!a2af | !1!e!3!cB!1!A !2!F!1!AAB | "E"!3!c!2!BB{c}B cBBA |1 !3!ceBc "A"!1!A3!4!f :|2 !3!ceBc "A"!1!A3!2!F||
 
+
+
 X:7001
 %%etbk:tnset id:131,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/11933
@@ -6593,6 +7466,8 @@ K: Edor
 "em"!1!efga !5!b!1!ee!4!g | "D"!3!f{g}f!1!df f{g}fd!3!f | "em"!1!efga !5!bee!4!g | "D"!3!f{g}f!1!df "em"!2!!1!e4 |
 "em"!1!efga !5!b!1!ee!4!g | "D"!3!f{g}fdf !5!a!3!f!1!d2 | !5!af!4!ge !3!fed!3!f | !2!e!1!d !2!(3Bc!4!d !5!ed!2!B!4!d ||
 
+
+
 X:7002
 %%etbk:tnset id:131,pos:2,rep:3
 %%etbk:color #ffffcc
@@ -6607,6 +7482,8 @@ K: Dmaj
 | "A"!5!e!1!A!1!A{B}!1!A !5!e!1!AA!2!F | "G"!1!G3A !3!B!5!ee2 | "A"!5!e2!1!AA !5!e2!4!d!1!A | "D"{d}!2!BAB!4!d !1!(3A!2!F!1!D D2 |
 "D"!5!fedf !4!e!3!d!2!B!1!A |"G" !1!G3A !3!B!5!e!2!e2 | "D"!5!a3f !2!e2!1!AA | "A"{d}!2!BAB!4!d "D"!1!(3A!2!F!1!D D2 |
 
+
+
 X:7003
 %%etbk:tnset id:131,pos:3,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/10560
@@ -6620,6 +7497,8 @@ R: strathspey
 K: Ador
 |: "am"!1!E!3!AAB !5!.c2 !5!c/B/A | "em"!2!GA !4!B/!5!d/!4!B !3!A!2!G!1!E!1!D | "am"!1!E!3!AAB !5!.c2 !5!c/B/A | "em"!2!GA !4!B/!5!d/!4!B "am"!3!A4 :|
 |: "am"{g}!3!edef !5!g!5!a!3!ed | !3!e!1!A!3!A{B}A "em"!4!B!2!G!1!E!1!D | "am"!1!E!3!AAB !5!.c2 !5!c/B/A | "em"!2!GA !4!B/!5!d/!4!B "am"!3!A4 :|
+
+
 
 X:7004
 %%etbk:tnset id:132,pos:1,rep:3
@@ -6636,6 +7515,8 @@ K: Edor
 !3!g>f e>f !3!(3gab !1!e>!3!g | !2!f>!1!e !2!d>!1!e !2!f>!4!a !1!d>!2!f | !3!g>b !2!f>a !1!(3e!2!f!1!e !2!d>e | !1!B>!5!d !2!F>A !3!G<!1!E E2|
 
 
+
+
 X:7005
 %%etbk:tnset id:132,pos:2,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1650
@@ -6649,6 +7530,8 @@ K: Gmaj
 F| !4!G<!1!DD>E !1!G>A!3!B>!5!d | !4!c>!2!AB<!1!G !2!E3!3!F | !4!G<!1!DD>E !1!G>A!3!B>!5!e | !4!d>!3!BA<B !1!G3:|
 g| !3!(3ef!5!g !2!d>!5!g !1!B>!5!g!2!d>!1!B | !4!c>AB<!1!G !2!!1!E3!5!g | !3!(3ef!5!g !2!d>g !1!B>g!2!d>!1!B | !4!c>A!5!d<B !1!G3!5!g |
 !3!(3efg d>g B>gd>B | !4!c>AB<!1!G !2!E3!3!F | !4!G<!1!DD>E !1!G>A!3!B>!5!e | !4!d>!3!BA<B !1!G3||
+
+
 
 X:7006
 %%etbk:tnset id:135,pos:2,rep:3
@@ -6667,6 +7550,8 @@ K: Edor
 "em"!3!g<!1!e!5!b>e g<eb>e | !3!g<!1!e!5!b>!1!e "bm"!1!d!2!f/g/ !4!a>!2!f | "em"!3!g<!1!e!5!b>!1!e "bm"!3!d>ef>e|d/c/B/A/ d>A F<DD>A||
 |: "em"!4!B2B>A !4!B<!1!EE>!3!A | !4!B2B>!5!d "D"!2!F<!1!DD>!3!A | "em"!4!B2!2!B>A !3!d>e!5!f>!1!A|1 "bm"!4!d/c/B/!1!A/ !4!d>!1!A !2!F<!1!DD>!3!A :|2 "bm"!4!d/c/B/!1!A/ !4!d>!1!A !2!F<!1!DD>F||
 
+
+
 X:7007
 %%etbk:tnset id:132,pos:3,rep:3
 %%etbk:site1 http://thesession.org/tunes/172
@@ -6682,6 +7567,8 @@ K:Amaj
 |: "A"!5!a>Ag>A !3!f<!5!a!2!e>!1!d | !3!(3cB!1!A !2!c>!3!e !5!a>!3!e!2!c>!1!A | "E"!4!d>Ec>E !2!B<Ec>E | !4!d/c/B !3!c/B/A !2!(3Bc!4!d !2!(3efg |
 "A"!5!a>Ag>A !3!f>A!2!e>A | !3!(3cB!1!A !2!c>!3!e !5!a>!3!e!2!c>!1!A | "D"!2!d2!4!f>!1!d "A"!2!(3e!5!ag !3!(3fe!1!d |1 "E"!3!(3cB!1!A !2!(3G!1!AB "A"!3!c<!1!AA>!2!e:|2 "E"!3!(3cB!1!A !2!(3G!1!AB "A"!3!c<!1!A!3!A>!1!E||
 
+
+
 X:7008
 %%etbk:tnset id:150,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/3016
@@ -6696,6 +7583,8 @@ K: Dmaj
 |: "G"!4!B2!5!d>!4!c !3!B4 | "D"!2!A>B A<!1!E !2!F2F>!3!A | "G"!4!B2!5!d>!4!c !3!B3!1!A | "D"!3!d2!1!d>e !3!(3fe!1!d !4!(3dB!1!A |
 "G"!4!B2!5!d>!4!c !3!B4 | "D"!2!A>B A<!1!E !2!F2F>!3!A| !4!B2 !5!d>!1!E "D"!4!F2 !3!E>!2!D | "A"!1!B,<!2!D !1!D>E "D"D4 :|
 
+
+
 X:8001
 %%etbk:tnset id:152,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/655
@@ -6709,6 +7598,8 @@ K: Emin
 |: !3!B<!1!E!3!B>!1!E !4!cBc!2!A | !3!B<!1!E!3!B>!1!E !4!c!2!A!1!F!2!A | !3!B<!1!E!3!B>!1!E !4!cBcB | !2!Acdc !3!B<!1!GG2:||
 | !5!g2!4!fg !1!B2!3!BA | !1!G!2!e!5!ag !3!fdef | !5!g2fg !1!B2!3!BA | !1!G!2!B!4!d!3!c !2!B<!1!GG2 |
 !5!g2!4!fg !1!B2!3!BA | !1!G!2!e!5!ag !3!f!1!d!3!c!1!A | !1!G!2!B!4!d!2!B !3!c!4!d!5!e!2!f | !3!g!5!ba!2!f !3!g4||
+
+
 
 
 X:9001
@@ -6735,6 +7626,8 @@ K:Bdor
 "bm"!3!f2!1!B2 "E"!3!gg!1!e!3!g | "bm"!2!f2!1!B2 !1!B!2!c!1!de | !3!f3!2!f !2!f!1!e!2!c!1!e | !2!ff fe !2!f2ga |
 !5!bagb !2!agfa | !3!ggeg !2!f3!1!e | "A"!2!edcB !1!ABcd | !5!e3c d2!5!e2 ||
 
+
+
 X:9002
 %%etbk:tnset id:134,pos:1,rep:3
 %%etbk:site1 http://www.thesession.org/tunes/display/1308
@@ -6749,6 +7642,8 @@ K: Ador
 "am"!1!E!3!A !1!A/B/c/!4!d/ | !2!ee/d/ !2!e/!5!a/a/g/ | !2!e>!1!d "em"!2!B/!5!e/d/B/ | "am"!1!A2 A2 :|
 |: "am"!3!a/{b}a/a/g/ !1!ef/g/ | !4!a/b/a/!3!g/ !1!ef/g/ | !4!a/b/a/f/ "G"!3!g/a/g/!2!e/ | !1!d/e/!1!d/!2!B/ !1!G2 |
 "am"!3!a{b}a/g/ !1!ef/g/ | !4!a>b !4!a/g/e/!1!d/ | "G"!2!B!5!e dB | "am"!1!A2 A2 :|
+
+
 
 X:9003
 %%etbk:tnset id:134,pos:2,rep:3
@@ -6765,6 +7660,8 @@ K: Ador
 |: "am"!3!a>{b}a !2!g/!1!e/g/a/ | "em"!4!b !5!b- ba/!3!g/ | "C"!2!e!1!d d/e/!3!g | "G"!1!G>A G2 |
 |1 "am"!3!a>{b}a g/e/g/a/ | "em"!4!b !5!b- ba/!3!g/ | "C"!2!e!1!d d/e/!3!g | "D"!4!a4:|
 |2 "am"{c}!2!A/G/A/!3!B/ !4!dd/B/ | !2!A/{c}A/!1!G "C"!4!g>g | "G"!2!e>!4!g !2!e/!1!d/!2!B/!1!G/ | "D"!1!A4||
+
+
 
 X:9004
 %%etbk:tnset id:135,pos:1,rep:3
@@ -6786,6 +7683,8 @@ K: Dmix
 "C-Drone"!1!E>!5!c!3!G !2!ECE | !3!G>!5!cG !2!ECE | "D-Drone"!1!D>!4!{G}!2!E!1!D D>{G}ED|D>{G}ED !1!D3:|
 
 
+
+
 X:10001
 %%etbk:tnset id:137,pos:1,rep:3
 %%etbk:tube1 http://www.youtube.com/embed/M49G2pljqeM
@@ -6801,6 +7700,8 @@ K: Dmaj
 |: "D"!4!f3!3!ef!5!g  | !4!f2e2!2!d2 | "G"!1!G4GA | !1!G2!2!B2!3!d2 | "A"!4!e3!3!de!5!f |  !4!e2d2!2!c2 | "D"!1!F4FG | !1!F2!2!A2!3!c2 |
  "bm"!4!d3!3!cd!5!e | !4!d2!3!c2!2!B2 | "em"!1!E4EF | !1!E2!2!D2!1!B,2 | "D"!5!A!3!F3!1!D2 | "A"!5!E!3!C3!1!A,2 | "bm"!2!B,6-|1 B,3!3!c!4!d!5!e:|2 B,3 !1!A,B,!3!C||
 
+
+
 X:10002
 %%etbk:tnset id:139,pos:1,rep:3
 T: Floor, The
@@ -6815,6 +7716,8 @@ K: Dmaj
 !2!B |: "D"!3!d>!5!fd  | !2!B<!4!dB | !1!A>!2!B!1!d | !3!f<!5!af | "A"!2!e>fe | "D"!3!f>e!1!d | "G"!2!B>!4!dB |!2!B>{d}B !1!A/!2!G/ |
 "D"!1!A>BA | !1!A2!3!f/g/ | !5!a>gf | "A"!2!e>{g}e d/e/ | "bm"!3!f>e!1!d | "G"!2!B>!4!dB | "D"!1!A3 | A3 :|
  
+
+
 X:10003
 %%etbk:tnset id:140,pos:1,rep:3
 T: Dark Island, The
@@ -6829,6 +7732,8 @@ E |: "am"!4!A>BA| "em"!3!G>AG | "C"!2!E<!1!CE | "G"!1!D2 !2!G/A/ | !4!B>AG | "bm
 D |: "G"!5!d>!1!DD | !5!B !4!A !3!G | "C"!2!E<!1!CE | "G"!1!D2 !2!G/A/ | !4!B>AG | "bm"!4!B<!5!d!1!D | "em"!4!B2 !5!d/!4!B/ | "D"!3!A2 E | 
  "am"!4!A>BA| "em"!3!G>AG | "C"!2!E<!1!CE | "G"!1!D2 !2!G/A/ | !4!B2 !5!d/B/ | "D"!3!A2 B/A/ | "C"!2!!3!G>AG | "G"!3!G3 :| 
 
+
+
 X:10004
 %%etbk:tnset id:141,pos:1,rep:3
 T: Belgarth Waltz, The
@@ -6842,6 +7747,8 @@ K: Gmaj
 "G"!4!B>cB | !3!A!1!G!3!F | "C"!2!E<!4!G!1!C | "G"!1!D2D | "C"!1!E<!2!G!5!c | "D"!3!A!1!G!2!F | "G"!1!G2-G | -G>G !2!B/c/ |
 "G"!4!d2d | "C"!5!e2e | "G"!2!B<!4!d !2!B/!1!A/ | !1!G>G !2!B/c/ | !4!d>Bd | "C"!5!e>d c/B/ | "D"!1!!5!A3 | -A2 G/F/ |
 "C"!2!E<!4!G G/E/ | "G"!1!D<!4!G G/!1!D/ | "C"!1!C<!4!G-G/!1!C/ | "G"!1!B,>B, !2!G/A/ | !4!B>cB | "D"!3!A!1!G!2!F | "G"!1!G2-G | -G3 ||
+
+
 
 X:10005
 %%etbk:tnset id:142,pos:1,rep:3
@@ -6859,6 +7766,8 @@ K: Gmaj
 !2!B2c2 |: "G"!4!d2 !2!Bc d2 | !4!d2 Bc d2 | !1!G3 A G2 | !1!G2 !2!B2 !4!d2 | "C"!3!e2 !1!cd !3!e2 | e2 cd e2 | "D"!1!A3 B A2 | !1!A2 B2 c2 |
 "G"!2!B3c !4!d2 | "C"!2!e2 f2 g2 | "D"!3!f3g a2 | !1!!5!d4 c2 | "G"!3!B3 A !1!G2 | "D"!2!A!4!c- c2 !2!F2 | "G"!1!G6- | G6 :|
 
+
+
 X:10006
 %%etbk:tnset id:142,pos:2,rep:3
 %%etbk:site1 http://thesession.org/tunes/449
@@ -6873,7 +7782,9 @@ K: Dmaj
 !1!de |: "D"!3!f3e !1!d2 | !1!d3e !1!d2 | "G"!2!B3{d}B !1!A2 | "D"!2!F4 !1!A2 | "A"{d}!2!BA Bc !4!d2 | !2!e3{g}e de| "D"!3!f4 e2 |
 !1!d4 !5!f2 | "G"!2!B4 !5!e2 | "D"!1!A4 !5!d2 | "A"!3!F2{A}F2 E2 | "D"!1!D4 !5!f2 | "G"!2!B4 !5!e2 | "D"!1!A4 !4!dc | !4!d6 | -d4 !1!de :|
 |: "D"!3!f3e d2 | {g}!2!ed e!3!f !4!a2 | "G"!5!b4 !4!a2 | "D"!3!f4 ed | "A"!2!e2e2 !5!a2 | "D"!3!f4 e!1!d | "G"!4!d4 !2!B2 | !2!B4-{d}B!1!A |
-"D"!3!F4 E2 | !1!D4 !5!f2| "G"!2!B4 !5!e2 | "D"!1!A4 !2!a2 | "A"!3!ba !1!g!3!f e!§!d | !2!e3{g}e !1!d!2!c | "D"!1!d6 |1 -d4 de:|2 !1!d6 ||
+"D"!3!F4 E2 | !1!D4 !5!f2| "G"!2!B4 !5!e2 | "D"!1!A4 !2!a2 | "A"!3!ba !1!g!3!f e!?!d | !2!e3{g}e !1!d!2!c | "D"!1!d6 |1 -d4 de:|2 !1!d6 ||
+
+
 
 X:10007
 %%etbk:tnset id:143,pos:1,rep:3
@@ -6892,6 +7803,8 @@ K: Gmaj
 "G"!1!G3!1!A !2!B!3!d | "C"!4!e3f ed | "bm"!2!B3A B!3!d | "em"!5!gf e!2!d !1!B/2!2!c/2!3!d | 
 "C"!4!e3!1!A !2!B!3!d | !4!e3f ed | "D"!2!B2{d}-BA !2!B<!4!d  | "G"!1!G3!3!B "D"!2!A/2!1!G/2!2!F | "G"!1!G6 ||
 
+
+
 X: 10008
 %%etbk:tnset id:181,pos:1,rep:3
 T: Inion Ni Scannlian
@@ -6907,6 +7820,8 @@ e3 a ab|g2 gd e/2f/2g/2a/2|b6|bd ad gd|
 e3 g fd|e2 ed (3BAG|A2 AG AB|Bd de BG|
 A2 AB AG|DE ED (3EFG|A2 AG AB|Bd de BA||
  
+
+
 X:11001
 %%etbk:tnset id:138,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/244
@@ -6923,6 +7838,8 @@ K: Gdor
 d | "gm"!tenuto!(!3!g2-ga g/{a}g/f ga | g/{a}g/f ga gb "dm"!tenuto!!4!a/4{b}a/4g/f/d/ | !tenuto!!2!f2)- f(g fd f<g | !tenuto!!4!a/{b}a/g f<a g<b !tenuto!!4!a/4{b}a/4g/f/d/ | 
 "gm"!tenuto!!3!g3) (f !tenuto!g3a | !tenuto!!3!(3gab !tenuto!(3gab "dm"!tenuto!!4!a/{b}a/>g f<d | !2!f/{g}f/e f)(g !4!a/b/!3!g/a/ !2!f/g/!2!e/f/ | !2!d/4e/4d/4e/4!2!c/4d/4c/4d/4 !2!B/4c/4B/4c/4!2!A/4B/4A/4B/4 "gm"!tenuto!!1!G)>(!3!B "dm"!tenuto!!2!A/4{B}A/4!1!G/!2!F/!1!D/ | 
 "gm"!tenuto!!3!G2) (!1!GA !3!B2 !tenuto!B/{c}B/A/!1!G/  | !tenuto!!2!G2) !tenuto!(!3!A/G/{A}G/.!1!F/ !tenuto!!4!!3!g)>(!2!f ga/!5!b/ | "dm"!tenuto!!1!!3!d)>(d d<!5!f "C/G"!tenuto!!2!!3!c)>(c c<!4!d | "G/D"!2!!3!B)""!tenuto!(!2!A- "dm"!tenuto!A>.G A<B "gm"!tenuto!!1!G2)  |]
+
+
 
 X:11002
 %%etbk:tnset id:144,pos:1,rep:3
@@ -6947,6 +7864,8 @@ G>A/2 | "G"!3!B>{c}B/2A/2 !tenuto!!1!G2 G/2A/2B3/2 | "D"!2!A>{B}/2A/2!1!G/2 !ten
 "C"!3!c>c !tenuto!c>!5!e !4!d>{e}d/2!3!c/2 | "G"!2!B>B !tenuto!B>!5!e !4!d>{e}d/2!3!B/2 | "D"!2!A>B  !4!c>B !2!A>{B}A/2!1!G/2 | "C"!2!E4 !1!G<A |
 "G"!3!B>A G>A B>G | "D"!2!A>{c}A/2!1!G/2 !tenuto!!2!E>!4!G A>E | "C"!4!G>{A}G/2E/2 !tenuto!D>E G>A | "G"!4!G>!3!G !1!G4  ||
 
+
+
 X:11003
 %%etbk:tnset id:145,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/8547
@@ -6963,9 +7882,12 @@ K: Ddor
 !3!f2 -f>{g}f/2e/2 df | !2!e>{f}e/2!1!d/2 !tenuto!!3!c>c de | !tenuto!!4!d>{e}d c!1!A !3!G2- | 
 G2-G>{A}G !2!F!3!G | !1!A!4!d -!tenuto!d2 de | !4!d>{e}d c!1!A !3!G2- | G2 (!2!E2 {G}E)!1!D  | D6 |
 
+
+
 X:11004
 %%etbk:tnset id:146,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/9695
+%%etbk:tube1 https://www.youtube.com/embed/ZsOyRXE5QXk
 T: An Raibh Tu Ar An gCarraig?
 T: Were you at the Rock?
 Z: Piano Box Version by Martin Fleischmann
@@ -6980,6 +7902,8 @@ A!2!!1!B3) (!2!ef | !4!g2 !tenuto!g>{a}g fe | !3!f4) (e>{f}e/2!1!d/2 | !2!B2!ten
 !2!e>{f}e/2!1!d/2 !tenuto!!2!B2-B!1!A | "D-Drone"!3!F4 FE | !1!D4) (EF | "E-Drone"!4!G>!3!G !tenuto!!1!G2) (!tenuto!!2!e/!1!d/!3!B/!1!G/ |
  "D-Drone"!3!F>F !tenuto!F2)  (AF | "A-Drone"!2!E4 DE  | !3!F4 E2 | !2!E4)||
   
+
+
 X:12001
 %%etbk:tnset id:151,pos:1,rep:3
 %%etbk:site1 http://thesession.org/tunes/8007
@@ -6995,63 +7919,3 @@ d2 c/B/A dcA | G2 D2 GDG |1 A2 D2 ABc | e2 c2 c2e :|2 A2 D2 AGF |  G2 F2 EED ||
 |: B2 dB fed | G2 Bd a2b | ag gf fga | g2 f2 edc |
 B2 dB fed | G2 Bd a2b | ag gf fga | g2 f2 edc :|
 |"var bar 8" e2 c2 cBc|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

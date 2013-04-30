@@ -703,6 +703,18 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		return match;
 	};
 	
+	$scope.orderByLastModified = function() {
+		if ($scope.tuneSetSortField == "lastModified"){
+			$scope.tuneSetSortReverse = !$scope.tuneSetSortReverse;
+			
+		} else {
+			$scope.tuneSetSortField = "lastModified";
+		}
+		// Set page 1 as current page
+		$scope.currentPage = 0;
+		// Put Settings to localStorage
+		eTBk.TuneBook.storeSettings(getSettings());
+	};
 			
 	$scope.orderByFrequencyPlayed = function() {
 		if ($scope.tuneSetSortField == "frequencyPlayed"){
