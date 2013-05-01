@@ -1000,12 +1000,14 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	
 		$timeout(function() {
 			var showHere = 'renderTheDotsFor'+tune.id;
+			var playHere = 'renderMidiFor'+tune.id;
 			var tuneAbc = skipFingering(tune.pure);
 			var dotsScale = 1.0;
 			if ($scope.sessionModus) {
 				dotsScale = 0.6;
 			}
 			ABCJS.renderAbc(showHere, tuneAbc, {print:true}, {scale:dotsScale}, {});
+			ABCJS.renderMidi(playHere, tuneAbc, {}, {}, {});
 		}, 0, false);
 	}
 

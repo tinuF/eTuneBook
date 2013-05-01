@@ -540,6 +540,13 @@
 		border-radius: 6px;
 		box-shadow: 0 1px 3px rgba(0,0,0,.25)
 	}
+	
+	.midiPlayer {
+		float: left;
+		margin-top: 15px;
+		margin-left: 15px;
+		margin-bottom: 15px;
+	}
 
 
 	.dotsViewer.showDotsViewer.showSessionModus {
@@ -971,7 +978,7 @@
 	
 	
 	.tuneSecondLine, .tuneThirdLine, .tuneForthLine,
-	.dotsViewer, .moveEditor, .infoEditor, 
+	.dotsViewer, .midiPlayer, .moveEditor, .infoEditor, 
 	.edit, .tuneSetInfo, .showTheVideo, 
 	.btn, header, .paginationButtons, .navbar-inner, .input-file, .fbLikeBox{
 		display: none;
