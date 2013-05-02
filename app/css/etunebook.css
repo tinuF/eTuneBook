@@ -182,16 +182,10 @@
 		display: none;
 	}
 
-	/*
-	#tuneSetPositionList li.sleeping.view {
-		display: none;
-	}
-	*/
-
 	#tuneSetPositionList li .tuneTitle {
 		/*margin: 5px; */
 		/*padding: 5px; */
-		/*font-size: 1.1em;*/
+		/*font-size: xx-small;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
 		min-width: 180px;
 		max-width: 180px;
 		display: inline-block;
@@ -253,7 +247,7 @@
 	#tuneSetPositionList li .tuneType {
 		margin: 5px; 
 		padding: 5px; 
-		/*font-size: 1.2em;*/
+		/*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
 		min-width: 45px;
 		max-width: 45px;
 		display: inline-block;
@@ -371,15 +365,6 @@
 		box-shadow: none;
 	}
 
-	.navbar-inner {
-		background: #c0e0f0;
-		
-	}
-
-	.subnav {
-		background: #c0e0f0;
-	}
-
 	.sortable { 
 		background: #c0e0f0; 
 	}
@@ -395,22 +380,13 @@
 	*/	
 	}
 
-	.navbar .nav .active > a, .navbar .nav .active > a:hover {
-		background-color: #e0f0f0;;
-		color: black;
-	}
-
 	div.colorPicker-picker {
 	  display: inline-block;
 	}
 
-
-
 	.playTuneForeignVideo {
 		
 	}
-
-
 
 	.showTuneForeignDots {
 		
@@ -579,7 +555,7 @@
 		position: absolute;
 		/*margin: 10px;*/
 		/*padding: 10px;*/
-		margin-top: -80px; /*Auf Höhe des Tunes setzen*/
+		margin-top: -125px; /*Auf Höhe des Tunes setzen*/
 		left: 420px; 
 		/*padding: 16px 16px 16px 60px;*/
 		/*border: none;*/
@@ -602,7 +578,7 @@
 	.sampleDotsViewer.showSessionModus {
 		display: block;
 		position: absolute;
-		margin-top: -80px; /*Auf Höhe des Tunes setzen*/
+		margin-top: -125px; /*Auf Höhe des Tunes setzen*/
 		left: 60px; 
 	}
 
@@ -624,16 +600,6 @@
 		top: 90px; 
 		/*left: 0px;*/
 	}
-
-	/*
-	@media (max-width: 979px) {
-	  .nav-collapse,
-	  .nav-collapse.collapse {
-		height: auto;
-		overflow: hidden;
-	  }
-	}
-	*/
 
 	li.selectTuneColor {
 		height: 40px;	/*funktioniert nicht (Idee: Text leer, nur Farbe anzeigen)*/
@@ -808,25 +774,6 @@
 		-moz-user-select: none; /* Firefox */
 		-ms-user-select: none; /* IE */
 		user-select: none; /* CSS3 */
-	}
-
-
-	.navbar .nav > li > a {
-		color: black;
-	}
-
-	.black-caret{
-		border-top-color: black !important;
-		border-bottom-color: black !important;
-	}
-
-	.navbar .nav > li > a:hover {
-		color: blue;
-	}
-
-	.black-caret a:hover{
-		border-top-color: blue !important;
-		border-bottom-color: blue !important;
 	}
 
 	.well > p  {
@@ -1208,15 +1155,6 @@
 		box-shadow: none;
 	}
 
-	.navbar-inner {
-		background: #c0e0f0;
-		
-	}
-
-	.subnav {
-		background: #c0e0f0;
-	}
-
 	.sortable { 
 		background: #c0e0f0; 
 	}
@@ -1232,16 +1170,9 @@
 	*/	
 	}
 
-	.navbar .nav .active > a, .navbar .nav .active > a:hover {
-		background-color: #e0f0f0;;
-		color: black;
-	}
-
 	div.colorPicker-picker {
 	  display: inline-block;
 	}
-
-
 
 	.playTuneForeignVideo {
 		
@@ -1475,38 +1406,4 @@
 		font-size: 1em;
 	}
 }
-
-
-
-
-
-
-/*
-header div > p  {
-    text-align: center;
-}
-
-header h2  {
-    text-align: center;
-}
-*/
-
-
-/*
-.initializing_panel {
-  display: block;
-  background: url(../../assets/img/hardshoes1.gif) center center no-repeat;
-  position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-}
-*/
-
-
-
-/* title: 180px											|type: 40px		key: 10px			repeat: 10px 			= 240px*/
-/* justPlayedTheTune: 45px		tuneLastPlayed: 120 px 	|	btn   btn	tuneSkill: 60px	 	tuneColorizer: 10px 	= ?*/
-
 	
