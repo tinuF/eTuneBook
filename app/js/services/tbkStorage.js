@@ -17,7 +17,7 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
   var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
   var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-  var eTBk_EXAMPLE_VERSION = '2013-04-30';
+  var eTBk_EXAMPLE_VERSION = '2013-05-06';
   
 
   if (!window.eTBk) {

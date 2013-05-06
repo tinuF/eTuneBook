@@ -130,10 +130,12 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret black-caret"></b></a>
 						<ul class="dropdown-menu">
+							<!--
 							<li><a ng-click="toggleTuneSecondLine()">Show Rehearse Buttons <i ng-show="showTuneSets && showTuneSecondLine && !(sessionModus)" class="icon-ok"></i></a></li>
 							<li><a ng-click="toggleTuneThirdLine()">Show Info Buttons <i ng-show="showTuneSets && showTuneThirdLine && !(sessionModus)" class="icon-ok"></i></a></li>
 							<li><a ng-click="toggleTuneForthLine()">Show Edit Buttons <i ng-show="showTuneSets && showTuneForthLine && !(sessionModus)" class="icon-ok"></i></a></li>
 							<li class="divider"></li>
+							-->
 							<li><a ng-click="toggleSessionModus()">Session Modus<i ng-show="showTuneSets && sessionModus" class="icon-ok"></i></a></li>
 							<li class="divider"></li>
 							<li><a ng-click="toggleTuneSetAbc()">Export TuneSets<i ng-show="tuneSetAbcIncl" class="icon-ok"></i></a></li>
@@ -370,13 +372,15 @@
 						<br>
 						<dt><h3>Settings</h3></dt>
 						<dd>		
+							<!--
 							<p>You can show/hide tune-buttons in the TuneSet-View:</p>
 							<ul>
 								<li><p><strong>Rehearse Buttons</strong><br>Show/Hide the first line of tune-buttons (Played-Button, Skill-Button, Color-Selector).</p></li>
 								<li><p><strong>Info Buttons</strong><br>Show/Hide the second line of tune-buttons (Dots-Button, Site-Buttons, YouTube-Buttons).</p></li>
 								<li><p><strong>Edit Buttons</strong><br>Show/Hide the third line of tune-buttons (Abc-Button, Info-Button, Move-Button).</p></li>								
 							</ul>
-							<p>You can choose between the normal TuneSet-View and a more compact session modus (less scrolling on smaller screens).</p>
+							-->
+							<p>You can choose between the normal TuneSet-View and a more compact session modus (without edit buttons).</p>
 							<p>You can choose to export eTuneBook-specific fields:</p>
 							<ul>
 								<li><p><strong>TuneSets</strong></p></li>
@@ -405,6 +409,9 @@
 					<br>
 					<p>Release 1.0.6 (28.04.2013)</p>
 					<ul>
+						<li>06.05.13: Dots scale increased</li>
+						<li>06.05.13: Settings: Removed Show/Hide Info,Edit,Rehearse Buttons</li>
+						<li>06.05.13: abcjs: 1.6 -> 1.7</li>
 						<li>02.05.13: Change in Topnavigation: Color and Shading</li>
 						<li>02.05.13: abcjs: 1.3 -> 1.6</li>
 						<li>02.05.13: Bootstrap: 2.0.4 -> 2.3.1</li>
@@ -699,7 +706,7 @@
 	<script src="assets/js/bootstrap.min.js"></script> <!--Developer Version-->
 		
 	<!-- Abc-Editor.js -->
-	<script src="assets/js/abcjs_editor_1.6-min.js"></script><!--Production Version-->
+	<script src="assets/js/abcjs_editor_1.7-min.js"></script><!--Production Version-->
 	<!--Developer Version 
 	<script src="assets/js/abcjs/api/abc_tunebook.js"></script>
 	<script src="assets/js/abcjs/data/abc_tune.js"></script>

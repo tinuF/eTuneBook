@@ -42,7 +42,7 @@
 
 
 	.sortable.showSessionModus { 
-		width: 640px;	
+		width: 975px;	
 	}
 
 		
@@ -55,6 +55,7 @@
 		padding: 5px;
 		/*height: 100%;*/	/*wird gebraucht, damit der Edit-Bereich (textarea) das li-Element vergrössert und nicht andere li-Elemente überdeckt */
 		/*height: 22px;*/
+		min-height: 130px;		/*braucht es bei 0.9 sampledots scale */
 		width: 350px;
 		padding-bottom: 0px;
 		border-radius: 6px;
@@ -63,7 +64,8 @@
 
 
 	.sortable li.showSessionModus {
-		width: 620px; 
+		width: 960px;
+		min-height: 150px;		/*braucht es bei 0.9 sampledots scale */		
 	}
 
 			
@@ -578,7 +580,7 @@
 	.sampleDotsViewer.showSessionModus {
 		display: block;
 		position: absolute;
-		margin-top: -125px; /*Auf Höhe des Tunes setzen*/
+		margin-top: -100px; /*Auf Höhe des Tunes setzen*/
 		left: 60px; 
 	}
 
@@ -982,7 +984,7 @@
 
 
 	.sortable.showSessionModus { 
-		width: 640px;	
+		width: 975px;	
 	}
 
 		
@@ -992,9 +994,8 @@
 		background: #99EDEA;
 		color: #1C94C4;
 		margin: 5px;
-		padding: 5px;
-		/*height: 100%;*/	/*wird gebraucht, damit der Edit-Bereich (textarea) das li-Element vergrössert und nicht andere li-Elemente überdeckt */
-		/*height: 22px;*/
+		padding: 5px; 
+		height: 100px;		/*braucht es bei 0.9 sampledots scale */
 		width: 350px;
 		padding-bottom: 0px;
 		border-radius: 6px;
@@ -1003,7 +1004,8 @@
 
 
 	.sortable li.showSessionModus {
-		width: 620px; 
+		width: 960px;
+		min-height: 150px;		/*braucht es bei 0.9 sampledots scale */		
 	}
 
 	#tuneSetPositionList li .tuneTitle {
@@ -1363,7 +1365,7 @@
 	.sampleDotsViewer.showSessionModus {
 		display: block;
 		position: absolute;
-		margin-top: -80px; /*Auf Höhe des Tunes setzen*/
+		margin-top: -40px; /*Auf Höhe des Tunes setzen*/
 		left: 60px; 
 	}
 

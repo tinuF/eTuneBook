@@ -121,6 +121,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			var settings =  eTBk.TuneBook.getSettingsFromStore();
 		
 			// Apply Settings
+			
+			// Ab 06.05.13: Wegfall der Möglichkeit, Buttons ein- und auszublenden (showTuneSecond,Third,Forth Line immer true)
+			/*	
 			if (settings.hasOwnProperty("showTuneSecondLine")){
 				$scope.showTuneSecondLine = settings.showTuneSecondLine;
 			} 
@@ -132,6 +135,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			if (settings.hasOwnProperty("showTuneForthLine")){
 				$scope.showTuneForthLine = settings.showTuneForthLine;
 			}
+			*/
 
 			if (settings.hasOwnProperty("sessionModus")){
 				$scope.sessionModus = settings.sessionModus;
@@ -982,11 +986,14 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			var tuneAbc = eTBk.TuneBook.getSampleAbc(tuneSetPosition);
 			tuneAbc = skipFingering(tuneAbc);
 			
-			var sampleDotsScale = 0.6;
+			var sampleDotsScale = 0.9;
 			var sampleDotsStaffWidth = 960;
+			/*
 			if ($scope.sessionModus) {
+				sampleDotsScale = 0.6;
 				sampleDotsStaffWidth = 840;
 			}
+			*/
 			
 			ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:sampleDotsScale, paddingtop:0, paddingbottom:0, staffwidth:sampleDotsStaffWidth}, {});	
 		}, 0, false);
@@ -1003,9 +1010,11 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 			var playHere = 'renderMidiFor'+tune.id;
 			var tuneAbc = skipFingering(tune.pure);
 			var dotsScale = 1.0;
+			/*
 			if ($scope.sessionModus) {
 				dotsScale = 0.6;
 			}
+			*/
 			ABCJS.renderAbc(showHere, tuneAbc, {print:true}, {scale:dotsScale}, {});
 			ABCJS.renderMidi(playHere, tuneAbc, {}, {}, {});
 		}, 0, false);
