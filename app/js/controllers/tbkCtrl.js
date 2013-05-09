@@ -884,7 +884,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		
 		var newTuneSet = eTBk.TuneBook.initializeTuneSet($scope.tuneBook.tuneSets);
 		$scope.tuneBook.tuneSets.unshift(newTuneSet);
-		initView("tuneSets");
+		initView("tuneSets", "initializeTune");
 		selectTuneSet(newTuneSet.tuneSetPositions[0]);
 		
 		//Setzen tune für Editor -> Textarea geht gleich auf

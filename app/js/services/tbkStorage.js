@@ -17,7 +17,7 @@ eTuneBook.factory( 'tbkStorage', function() {
   var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
   var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
   var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-  var eTBk_EXAMPLE_VERSION = '2013-05-06';
+  var eTBk_EXAMPLE_VERSION = '2013-05-09';
   
 
   if (!window.eTBk) {
@@ -246,7 +246,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 			tune.color = eTBK_DEFAULT_COLOR;
 			tune.skill = "";
 			tune.playDates = new Array();
-			tune.lastModified = moment(eTBK_DEFAULT_MODIFICATIONDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();;
+			tune.lastModified = moment(eTBK_DEFAULT_MODIFICATIONDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
 			
 			for (var i = 0; i < tuneSplits.length; i++) {		
 				beginOfLine = "";
@@ -343,6 +343,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 			tune.skill = "";
 			tune.playDates = initializePlayDates(tune);
 			tune.lastPlayed = getTuneLastPlayed(tune.playDates);
+			tune.lastModified = moment(eTBK_DEFAULT_MODIFICATIONDATE_STRING, "YYYY-MM-DDTHH:mm").toDate();
 		}
 		
 		function getFrequencyPlayedPerTune(playDates, today){
@@ -719,7 +720,7 @@ eTuneBook.factory( 'tbkStorage', function() {
 			var tuneSetPosition = newTuneSetPosition(newTuneSetId, newIntTuneId, tune, 1, 3);
 			//addNewTuneSetDirective(tuneSetPosition);
 			tuneSetPositions.push(tuneSetPosition);
-			tuneSet = newTuneSet(newTuneSetId, tune.lastPlayed, 0, tune.type, tuneSetPositions);
+			tuneSet = newTuneSet(newTuneSetId, tune.lastPlayed, tune.lastModified, 0, tune.type, tuneSetPositions);
 			
 			return tuneSet; 
 		}
