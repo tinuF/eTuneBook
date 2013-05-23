@@ -4,10 +4,6 @@
 		padding-top: 60px;
 		padding-bottom: 40px;
 		background: #e0f0f0;
-		/*
-		background-image: url('../img/martin07.jpg');
-		background-repeat:no-repeat;
-		*/
 	}
 
 	.sidebar-nav {
@@ -185,23 +181,6 @@
 	}
 
 	#tuneSetPositionList li .tuneTitle {
-		/*margin: 5px; */
-		/*padding: 5px; */
-		/*font-size: xx-small;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
-		min-width: 180px;
-		max-width: 180px;
-		display: inline-block;
-		
-		word-break: break-word;
-		/*margin: 15px 15px 15px 60px;*/
-		/*display: inline-block;*/
-		/*line-height: 1.2;*/
-		/*-webkit-transition: color 0.4s;
-		-moz-transition: color 0.4s;
-		-ms-transition: color 0.4s;
-		-o-transition: color 0.4s;
-		transition: color 0.4s;
-		*/
 		color: black;
 	}
 
@@ -219,6 +198,10 @@
 	}
 
 	#tuneSetPositionList li .tuneSecondLine.showSessionModus {
+		visibility:hidden; 
+	}
+	
+	.tuneSetInfo.showSessionModus {
 		visibility:hidden; 
 	}
 
@@ -250,8 +233,8 @@
 		margin: 5px; 
 		padding: 5px; 
 		/*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
-		min-width: 45px;
-		max-width: 45px;
+		min-width: 50px;
+		max-width: 50px;
 		display: inline-block;
 		color: black;
 	}
@@ -267,11 +250,12 @@
 	}
 
 	#tuneSetPositionList li .tuneSetPositionRepeat {
+		float: right;
 		margin: 5px; 
 		padding: 5px; 
 		/*font-size: 1.2em;*/
-		min-width: 5px;
-		max-width: 5px;
+		min-width: 80px;
+		max-width: 80px;
 		display: inline-block;
 		color: black;
 	}
@@ -411,8 +395,12 @@
 	}
 
 	.tuneSetInfo {
-		width: 380px; 
-		float: left;
+		/*width: 380px; 
+		float: left;*/
+		margin: 0;
+		padding: 0;
+		display: block;
+		border: none;
 	}
 
 
@@ -465,11 +453,11 @@
 		box-shadow: 0 1px 3px rgba(0,0,0,.25)
 	}
 
-	.infoEditor {
+	.infoEditorTuneSetPosition {
 		display: none;
 	}
 
-	.infoEditor.showInfoEditor {
+	.infoEditorTuneSetPosition.showInfoEditorTuneSetPosition {
 		display: block;
 		overflow: true;
 		position: absolute;
@@ -486,6 +474,33 @@
 		border: 1px solid #CCC;
 		background: #eee; 
 		background: #99EDEA;
+		
+		padding-bottom: 0px;
+		border-radius: 6px;
+		box-shadow: 0 1px 3px rgba(0,0,0,.25)
+	}
+	
+	.infoEditorTuneSet {
+		display: none;
+	}
+
+	.infoEditorTuneSet.showInfoEditorTuneSet {
+		display: block;
+		overflow: true;
+		position: absolute;
+		margin: 10px;
+		padding: 10px;
+		/*margin-top: -50px; *//*Auf Höhe des TuneSets setzen*/
+		left: 450px; 
+		/*padding: 16px 16px 16px 60px;*/
+		/*border: none;*/
+		/*background: rgba(0, 0, 0, 0.02);*/
+		/*z-index: 2;*/
+		/*box-shadow: none;*/
+		
+		border: 1px solid #CCC;
+		background: #c0e0f0; 
+		
 		
 		padding-bottom: 0px;
 		border-radius: 6px;
@@ -769,6 +784,7 @@
 		user-select: none; /* CSS3 */
 	}
 	
+	
 	.tuneSetNr {
 		font-size: 0.8em;
 		-webkit-user-select: none; /* Safari, Chrome */
@@ -776,6 +792,64 @@
 		-moz-user-select: none; /* Firefox */
 		-ms-user-select: none; /* IE */
 		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px;
+		margin-right: 5px;		
+		min-width: 345px;
+		max-width: 345px;
+		display: inline-block;
+	}
+	
+	.tuneSetInfoLine {
+		margin: 0;
+		padding: 0;
+		display: block;
+		border: none;
+	}
+	
+	.tuneSetName {
+		font-size: 0.8em;
+		-webkit-user-select: none; /* Safari, Chrome */
+		-khtml-user-select: none; /* Konqueror */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE */
+		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px; 
+		min-width: 120px;
+		max-width: 120px;
+		display: inline-block;
+		color: black;
+	}
+	
+	.tuneSetEnv {
+		font-size: 0.8em;
+		-webkit-user-select: none; /* Safari, Chrome */
+		-khtml-user-select: none; /* Konqueror */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE */
+		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px; 
+		min-width: 100px;
+		max-width: 100px;
+		display: inline-block;
+		color: black;
+	}
+	
+	.tuneSetTarget {
+		font-size: 0.8em;
+		-webkit-user-select: none; /* Safari, Chrome */
+		-khtml-user-select: none; /* Konqueror */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE */
+		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px; 
+		min-width: 100px;
+		max-width: 100px;
+		display: inline-block;
+		color: black;
 	}
 
 	.well > p  {
@@ -927,7 +1001,7 @@
 	
 	
 	.tuneSecondLine, .tuneThirdLine, .tuneForthLine,
-	.dotsViewer, .midiPlayer, .moveEditor, .infoEditor, 
+	.dotsViewer, .midiPlayer, .moveEditor, .infoEditorTuneSetPosition, .infoEditorTuneSet, 
 	.edit, .tuneSetInfo, .showTheVideo, 
 	.btn, header, .paginationButtons, .navbar-inner, .input-file, .fbLikeBox{
 		display: none;
@@ -1009,23 +1083,6 @@
 	}
 
 	#tuneSetPositionList li .tuneTitle {
-		/*margin: 5px; */
-		/*padding: 5px; */
-		/*font-size: 1.1em;*/
-		min-width: 180px;
-		max-width: 180px;
-		display: inline-block;
-		
-		word-break: break-word;
-		/*margin: 15px 15px 15px 60px;*/
-		/*display: inline-block;*/
-		/*line-height: 1.2;*/
-		/*-webkit-transition: color 0.4s;
-		-moz-transition: color 0.4s;
-		-ms-transition: color 0.4s;
-		-o-transition: color 0.4s;
-		transition: color 0.4s;
-		*/
 		color: black;
 	}
 
@@ -1050,8 +1107,8 @@
 		margin: 5px; 
 		padding: 5px; 
 		/*font-size: 1.2em;*/
-		min-width: 5px;
-		max-width: 5px;
+		min-width: 45px;
+		max-width: 45px;
 		display: inline-block;
 		color: black;
 	}
@@ -1060,8 +1117,8 @@
 		margin: 5px; 
 		padding: 5px; 
 		/*font-size: 1.2em;*/
-		min-width: 5px;
-		max-width: 5px;
+		min-width: 80px;
+		max-width: 80px;
 		display: inline-block;
 		color: black;
 	}
@@ -1257,11 +1314,38 @@
 		box-shadow: 0 1px 3px rgba(0,0,0,.25)
 	}
 
-	.infoEditor {
+	.infoEditorTuneSetPosition {
 		display: none;
 	}
 
-	.infoEditor.showInfoEditor {
+	.infoEditorTuneSetPosition.showInfoEditorTuneSetPosition {
+		display: block;
+		overflow: true;
+		position: absolute;
+		margin: 10px;
+		padding: 10px;
+		margin-top: -125px; /*Auf Höhe des Tunes setzen*/
+		left: 450px; 
+		/*padding: 16px 16px 16px 60px;*/
+		/*border: none;*/
+		/*background: rgba(0, 0, 0, 0.02);*/
+		/*z-index: 2;*/
+		/*box-shadow: none;*/
+		
+		border: 1px solid #CCC;
+		background: #eee; 
+		background: #99EDEA;
+		
+		padding-bottom: 0px;
+		border-radius: 6px;
+		box-shadow: 0 1px 3px rgba(0,0,0,.25)
+	}
+	
+	.infoEditorTuneSet {
+		display: none;
+	}
+
+	.infoEditorTuneSet.showInfoEditorTuneSet {
 		display: block;
 		overflow: true;
 		position: absolute;
@@ -1400,6 +1484,58 @@
 		-moz-user-select: none; /* Firefox */
 		-ms-user-select: none; /* IE */
 		user-select: none; /* CSS3 */
+	}
+	
+	.tuneSetInfoLine {
+		margin: 0;
+		padding: 0;
+		display: block;
+		border: none;
+	}
+	
+	.tuneSetName {
+		font-size: 0.8em;
+		-webkit-user-select: none; /* Safari, Chrome */
+		-khtml-user-select: none; /* Konqueror */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE */
+		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px; 
+		min-width: 120px;
+		max-width: 120px;
+		display: inline-block;
+		color: black;
+	}
+	
+	.tuneSetEnv {
+		font-size: 0.8em;
+		-webkit-user-select: none; /* Safari, Chrome */
+		-khtml-user-select: none; /* Konqueror */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE */
+		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px; 
+		min-width: 100px;
+		max-width: 100px;
+		display: inline-block;
+		color: black;
+	}
+	
+	.tuneSetTarget {
+		font-size: 0.8em;
+		-webkit-user-select: none; /* Safari, Chrome */
+		-khtml-user-select: none; /* Konqueror */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* IE */
+		user-select: none; /* CSS3 */
+		margin:0;
+		margin-left: 5px; 
+		min-width: 100px;
+		max-width: 100px;
+		display: inline-block;
+		color: black;
 	}
 
 	/*TuneBook Name*/

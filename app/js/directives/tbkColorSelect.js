@@ -10,7 +10,7 @@ eTuneBook.directive('tbkColorselect', function(){
 				var currentScope = angular.element(this).scope();
 				//console.log("ID: " + id + " has been changed to " + newValue); 
 				currentScope.tuneSetPosition.tune.color = newValue;
-				scope.saveColorDirective(currentScope.tuneSetPosition);
+				//scope.saveColorDirective(currentScope.tuneSetPosition);
 				scope.putTuneBookToLocalStorage();
 				scope.refreshColorFilter();
 				// notify angular of the change

@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# eTuneBook 1.0.6 - 1130509-22-20		
+# eTuneBook 1.0.7 - 1130523-21-40		
 
 CACHE:
 assets/img/glyphicons-halflings.png
@@ -13,6 +13,7 @@ assets/js/jquery.colorPicker.min.js
 assets/js/angular-1.0.6.min.js
 assets/js/bootstrap.min.js
 assets/js/abcjs_editor_1.7-min.js
+#assets/js/dropbox.min.js
 #assets/js/abcjs/api/abc_tunebook.js
 #assets/js/abcjs/data/abc_tune.js
 #assets/js/abcjs/edit/abc_editor.js
@@ -43,7 +44,6 @@ app/js/directives/tbkFileSelectDelegate.js
 app/js/directives/tbkColorSelect.js
 app/js/directives/tbkShowSampleAbc.js
 app/js/filters/tbkFromNow.js
-app/js/filters/tbkMax20chars.js
 app/js/filters/tbkEliminateThe.js
 app/js/filters/tbkStartFrom.js
 app/js/filters/tbkNoDefaultDate.js

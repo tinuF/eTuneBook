@@ -25,6 +25,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		},1000);
   
 	} else {
+		// Init TuneBook
+		$scope.tuneBook = tuneBook =  eTBk.TuneBook.initializeTuneBook();
+		
 		// First time here -> show Welcome-Page
 		initView("introduction", "loadPage");
 	}
@@ -482,6 +485,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		// Init TuneSet-View-Detail-Panels (Panels shown on the right side of the tuneSets)
 		$scope.editedTune = null;
 		$scope.infoEditedTuneSetPosition = null;
+		$scope.infoEditedTuneSet = null;
 		$scope.movedTuneSetPosition = null;
 		//$scope.exportedTuneBook = null; ..darf nicht auf null gestellt werden, da auch aus 'watch location.search' heraus aufgerufen
 		$scope.youTubeTune = null;
@@ -870,10 +874,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 				initView("tuneSets", "loadExampleTunebook");
 				$scope.$apply();
 			}
-		},1000);
-		
+		},1000);	
 	};
-	
+		
 	$scope.newTune = function( ) {
 		initializeTune( );
 	};
@@ -881,21 +884,43 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	function initializeTune( ) {
 		// A new Tune gets the highest TuneId, intTuneId and TuneSetId
 		// Set OrderBy to -tuneSetId, so that new TuneSet appears on top
+		var initTuneBook = false;
 		
-		var newTuneSet = eTBk.TuneBook.initializeTuneSet($scope.tuneBook.tuneSets);
-		$scope.tuneBook.tuneSets.unshift(newTuneSet);
-		initView("tuneSets", "initializeTune");
-		selectTuneSet(newTuneSet.tuneSetPositions[0]);
+		if ($scope.hasOwnProperty("tuneBook")) {
+			if ($scope.tuneBook.hasOwnProperty("tuneSets")){
+				var newTuneSet = eTBk.TuneBook.initializeTuneSet($scope.tuneBook.tuneSets);
+				$scope.tuneBook.tuneSets.unshift(newTuneSet);
+				initView("tuneSets", "initializeTune");
+				selectTuneSet(newTuneSet.tuneSetPositions[0]);
+				
+				//Setzen tune für Editor -> Textarea geht gleich auf
+				$scope.editedTune = newTuneSet.tuneSetPositions[0].tune;
+			} else {
+				initTuneBook = true;
+			}
+		} else {
+			initTuneBook = true;
+		}
 		
-		//Setzen tune für Editor -> Textarea geht gleich auf
-		$scope.editedTune = newTuneSet.tuneSetPositions[0].tune;
+		if (initTuneBook) {
+			$scope.tuneBook = eTBk.TuneBook.initializeTuneBook();
+		}
 	}
 	
 	$scope.initializeTuneBook = function( ) {
-		$scope.tuneBook.tuneSets = new Array();
-		$scope.tuneBook.name = "New TuneBook";
-		$scope.tuneBook.header = "";
-		initializeTune( );
+		// Init TuneBook
+		$scope.tuneBook = eTBk.TuneBook.initializeTuneBook();
+		
+		if ($scope.tuneBook.hasOwnProperty("tuneSets")){
+			initView("tuneSets", "initializeTune");
+			selectTuneSet($scope.tuneBook.tuneSets[0].tuneSetPositions[0]);
+				
+			//Setzen tune für Editor -> Textarea geht gleich auf
+			$scope.editedTune = $scope.tuneBook.tuneSets[0].tuneSetPositions[0].tune;
+		
+		} else {
+			alert("TuneBook could not be initialized!");
+		}
 	};
    
 	$scope.editTune = function( tuneSetPosition ) {
@@ -926,6 +951,33 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		
 			//Setzen tuneSetPosition für Info-Editor
 			$scope.infoEditedTuneSetPosition = tuneSetPosition;
+		}
+		
+		// Put TuneBook to localStorage
+		eTBk.TuneBook.storeAbc($scope.tuneBook);
+	};
+	
+	$scope.editTuneSetInfo = function( tuneSet ) { 
+		if ($scope.infoEditedTuneSet == tuneSet) {
+			$scope.infoEditedTuneSet = null;
+			
+			// Übertragen TuneSet-Infos auf erste TuneSetPosition
+			for (var z = 0; z < tuneSet.tuneSetPositions.length; z++) {	
+				if (tuneSet.tuneSetPositions[z].position == "1"){
+					tuneSet.tuneSetPositions[z].tuneSetTarget = tuneSet.tuneSetTarget;
+					tuneSet.tuneSetPositions[z].tuneSetEnv = tuneSet.tuneSetEnv;
+					tuneSet.tuneSetPositions[z].tuneSetName = tuneSet.tuneSetName;	
+				} 	
+			}
+		
+		} else {
+			selectTuneSet(tuneSet);
+			
+			// Only one TuneSet-View-Detail-Panel can be active -> Init
+			initTuneSetViewDetailPanels();
+		
+			//Setzen tuneSet für Info-Editor
+			$scope.infoEditedTuneSet = tuneSet;
 		}
 		
 		// Put TuneBook to localStorage
@@ -1031,12 +1083,12 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.fingeringAbcIncl = !$scope.fingeringAbcIncl;
 	
 		if ($scope.showExport == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 			
 		} else if ($scope.dotsViewerTune != null) {
 			renderAbc($scope.dotsViewerTune);
 		
-		} else if ($scope.editedTune == null && $scope.infoEditedTuneSetPosition == null && $scope.movedTuneSetPosition == null && $scope.dotsViewerTune == null  && $scope.youTubeTune == null) {  
+		} else if ($scope.editedTune == null && $scope.infoEditedTuneSetPosition == null && $scope.infoEditedTuneSet == null && $scope.movedTuneSetPosition == null && $scope.dotsViewerTune == null  && $scope.youTubeTune == null) {  
 			$timeout(function() {
 				if ($scope.tuneSetsDisplayed && $scope.tuneSetsDisplayed.length > 0) {
 					for (var i = 0; i < $scope.tuneSetsDisplayed.length; i++) {
@@ -1053,7 +1105,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.tuneSetAbcIncl = !$scope.tuneSetAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1061,7 +1113,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.playDateAbcIncl = !$scope.playDateAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1069,7 +1121,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.skillAbcIncl = !$scope.skillAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1077,7 +1129,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.colorAbcIncl = !$scope.colorAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1085,7 +1137,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.annotationAbcIncl = !$scope.annotationAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1093,7 +1145,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.siteAbcIncl = !$scope.siteAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1101,7 +1153,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.tubeAbcIncl = !$scope.tubeAbcIncl;
 	
 		if ($scope.showExport  == true) {
-			$scope.exportTuneBook();
+			$scope.exportTuneBook(false);
 		}
 	};
 	
@@ -1114,6 +1166,24 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		$scope.tuneSetIdToFilterPrev = $scope.tuneSetIdToFilter;
 		//Setzen tune für Filter
 		$scope.tuneSetIdToFilter = tuneSetPosition.tuneSetId;
+	
+		// Merken aktuelle Seite für späteren 'unselect'
+		$scope.currentPagePrev = $scope.currentPage;
+		// Set page 1 as current page
+		$scope.currentPage = 0;
+		// Put Settings to localStorage
+		eTBk.TuneBook.storeSettings(getSettings());
+		setPages($scope.currentPage);
+	}
+	
+	function selectTuneSet(tuneSet){
+		// Setzen tune im Auswahl-Filter (first tune): 
+		setSelectedTuneSetPositionFilterByTuneSet(tuneSet);
+		
+		// Merken aktuelles Tune im Filter für späteren 'unselect'
+		$scope.tuneSetIdToFilterPrev = $scope.tuneSetIdToFilter;
+		//Setzen tune für Filter
+		$scope.tuneSetIdToFilter = tuneSet.tuneSetId;
 	
 		// Merken aktuelle Seite für späteren 'unselect'
 		$scope.currentPagePrev = $scope.currentPage;
@@ -1155,6 +1225,17 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 	function setSelectedTuneSetPositionFilterByTuneSetPosition(tuneSetPosition) {
 		for (var i = 0; i < $scope.tuneSetPositionsForFilter.length; i++) {	
 			if ($scope.tuneSetPositionsForFilter[i].tuneSetId == tuneSetPosition.tuneSetId  && $scope.tuneSetPositionsForFilter[i].intTuneId == tuneSetPosition.intTuneId){
+				// Merken aktueller Filter für späteren 'unselect'
+				$scope.tuneSetPositionForFilterPrev = $scope.tuneSetPositionForFilter
+				// Setzen neuer Filter
+				$scope.tuneSetPositionForFilter = $scope.tuneSetPositionsForFilter[i];
+			}
+		}
+	}
+	
+	function setSelectedTuneSetPositionFilterByTuneSet(tuneSet) {
+		for (var i = 0; i < $scope.tuneSetPositionsForFilter.length; i++) {	
+			if ($scope.tuneSetPositionsForFilter[i].tuneSetId == tuneSet.tuneSetId  && $scope.tuneSetPositionsForFilter[i].position == "1"){
 				// Merken aktueller Filter für späteren 'unselect'
 				$scope.tuneSetPositionForFilterPrev = $scope.tuneSetPositionForFilter
 				// Setzen neuer Filter
@@ -1240,7 +1321,7 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		eTBk.TuneBook.storeAbc($scope.tuneBook);
 	};
 	
-	$scope.doneMoving = function( tuneSetPosition, targetTuneSetPosition, beforeOrAfter ) {
+	$scope.doneMoving = function( tuneSetPosition, targetTuneSetPosition, beforeOrAfter, moveOrCopy ) {
 		// Hinweis:	Der OrderBy-Filter auf position (siehe HTML) funktioniert natürlich nur,
 		// 			wenn alle Positionen das gleiche Format haben (alles Strings oder alles Zahlen). 
 		//			Beim Lesen aus der ABC-Datei sowie beim lesen aus LocalStorage ist dies der Fall (alles Strings). 
@@ -1261,8 +1342,9 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		removedPosition = parseInt(tuneSetPosition.position);
 		
 		
-		// Handle Sending TuneSet (only if sending tuneSet ist different from target tuneSet)
-		if (twoSetsInvolved){
+		// Handle Sending TuneSet 
+		// (only in case of moving and if sending tuneSet ist different from target tuneSet)
+		if (moveOrCopy == "move" && twoSetsInvolved){
 			for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {
 				if ($scope.tuneBook.tuneSets[i].tuneSetId == tuneSetPosition.tuneSetId){
 					// Sending TuneSet
@@ -1322,15 +1404,31 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 					}
 				}
 				
-				// Set new TuneSetId and Position on TuneSetPosition
-				tuneSetPosition.tuneSetId = targetTuneSetPosition.tuneSetId;
-				tuneSetPosition.position = newPosition.toString();
+				var newTuneSetPosition = new Array();
+				
+				// Todo: Handle TuneSet-Fields on first TuneSetPosition
+				if (moveOrCopy == "move"){
+					// Set new TuneSetId and Position on TuneSetPosition
+					// copy by reference
+					newTuneSetPosition = tuneSetPosition 
+					newTuneSetPosition.tuneSetId = targetTuneSetPosition.tuneSetId;
+					newTuneSetPosition.position = newPosition.toString();
+				
+				} else if (moveOrCopy == "copy"){
+					// Set new TuneSetId and Position on TuneSetPosition
+					// copy by value (primitive types), copy by reference (objects) -> tune is shared
+					newTuneSetPosition = eTBk.TuneBook.newTuneSetPosition(targetTuneSetPosition.tuneSetId,
+																tuneSetPosition.tuneSetTarget, tuneSetPosition.tuneSetEnv, 
+																tuneSetPosition.tuneSetName,
+																tuneSetPosition.intTuneId, tuneSetPosition.tune, 
+																newPosition.toString(), tuneSetPosition.repeat);
+				} 
 				
 				// Add TuneSetPosition to TuneSet (only if sending tuneSet ist different from target tuneSet)
 				if (twoSetsInvolved) {
 					// At index (newPosition--) insert the moving TuneSetPosition, but don't remove other TuneSetPositions
 					var insertAt = newPosition - 1;
-					$scope.tuneBook.tuneSets[i].tuneSetPositions.splice(insertAt,0,tuneSetPosition);
+					$scope.tuneBook.tuneSets[i].tuneSetPositions.splice(insertAt,0,newTuneSetPosition);
 					// Add new TuneSetDirective
 					//eTBk.TuneBook.addNewTuneSetDirective(tuneSetPosition);
 				
@@ -1395,11 +1493,6 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		//tbkStorage.putToLocalStorage($scope.tuneBook);
 		eTBk.TuneBook.storeAbc($scope.tuneBook);
 	};
-	
-	$scope.saveColorDirective = function(tuneSetPosition) {
-		// tune.pure remains pure in tuneSet-View. color-directive is added to the Abc-Code of the tune only during Abc-Export.
-		//eTBk.TuneBook.saveColorDirective(tuneSetPosition);
-	};
   
 	$scope.removeTuneSetPosition = function( tuneSetPosition ) {
 		for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {	
@@ -1432,22 +1525,66 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		},1000);
 	};
 	
-	$scope.exportTuneBook = function() {
+	$scope.exportTuneBook = function(startDownload) {
 		var tuneSets = new Array();
+		var convertToAbc = false;
 		
-		// Umfang des Exports bestimmen
-		if ($scope.tuneSetsFiltered && $scope.tuneSetsFiltered.length > 0) {
-			// Subset of the TuneBook
-			tuneSets = $scope.tuneSetsFiltered;
-		} else if ($scope.tuneBook.tuneSets) {
-			// TuneBook
-			tuneSets = $scope.tuneBook.tuneSets;	
+		if ($scope.hasOwnProperty("tuneBook")) {
+			// Umfang des Exports bestimmen
+			if ($scope.tuneSetsFiltered && $scope.tuneSetsFiltered.length > 0) {
+				// Subset of the TuneBook
+				tuneSets = $scope.tuneSetsFiltered;
+				convertToAbc = true;
+			
+			} else if ($scope.tuneBook.tuneSets) {
+				// TuneBook
+				tuneSets = $scope.tuneBook.tuneSets;
+				convertToAbc = true;
+			}
 		}
 		
-		// Exportieren
-		$scope.exportedTuneBook = eTBk.TuneBook.getAbc(tuneSets, $scope.tuneBook.name, $scope.tuneBook.version, $scope.tuneBook.description, $scope.tuneSetAbcIncl, $scope.playDateAbcIncl, $scope.skillAbcIncl, $scope.colorAbcIncl, $scope.annotationAbcIncl, $scope.siteAbcIncl, $scope.tubeAbcIncl, $scope.fingeringAbcIncl);
-		show("export");
+		if (convertToAbc) {
+			// Exportieren
+			var date = moment(new Date());
+			var tuneBookVersion = date.format("YYYY-MM-DDTHH:mm");
+			
+			$scope.exportedTuneBook = eTBk.TuneBook.getAbc(tuneSets, $scope.tuneBook.name, tuneBookVersion, $scope.tuneBook.description, $scope.tuneSetAbcIncl, $scope.playDateAbcIncl, $scope.skillAbcIncl, $scope.colorAbcIncl, $scope.annotationAbcIncl, $scope.siteAbcIncl, $scope.tubeAbcIncl, $scope.fingeringAbcIncl);
+			show("export");
+			// Generieren Object URL zum exportierten Tunebook (für Backup des Abc-Codes in File)
+			saveTuneBookAsFile($scope.exportedTuneBook, startDownload);
+		
+		} else {
+			alert("No TuneBook loaded yet.");
+		}
+		
 	};
+	
+	
+	function saveTuneBookAsFile(exportedTuneBookAsText, startDownload){
+	    var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], {type:'text/plain'});
+	    var fileNameToSaveAs = "My TuneBook";
+	    
+	    var downloadLink = document.getElementById("saveTuneBookToFile");
+	    downloadLink.href = createObjectURL(exportedTuneBookAsBlob);
+	    downloadLink.download = fileNameToSaveAs;
+	    
+	    if (startDownload) {
+	    	downloadLink.click();
+	    }
+	}
+	
+	function createObjectURL ( file ) {
+	    if ( window.webkitURL ) {
+	    	// Chrome
+	        return window.webkitURL.createObjectURL( file );
+	    } else if ( window.URL && window.URL.createObjectURL ) {
+	    	// Firefox
+	        return window.URL.createObjectURL( file );
+	    } else {
+	        return null;
+	    }
+	}
+		
 	
 	function setTuneSetTypesForFilter(){
 		//Extract TuneSetTypes for TypeFilter
@@ -1800,18 +1937,6 @@ eTuneBook.controller( 'tbkCtrl', function tuneBookCtrl( $scope, $location, $time
 		}
 		
 		eTBk.TuneBook.storeAbc($scope.tuneBook);
-	};
-	
-	$scope.changePositionOnTuneSetDirective = function( tuneSetPosition) {
-		eTBk.TuneBook.changePositionOnTuneSetDirective( tuneSetPosition);
-	};
-	
-	$scope.addNewTuneSetDirective = function( tuneSetPosition) {
-		eTBk.TuneBook.addNewTuneSetDirective( tuneSetPosition);
-	};
-	
-	$scope.deleteTuneSetDirective = function( tuneSetPosition) {
-		eTBk.TuneBook.deleteTuneSetDirective( tuneSetPosition);
 	};
 	
 	$scope.decreaseSkill = function( tuneSetPosition) {
