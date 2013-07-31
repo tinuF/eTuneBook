@@ -1,0 +1,12 @@
+<div class="tunePracticeEditor" style="background-color:{{tune.color}}">
+    <p>Frequency: {{ tune.frequencyPlayed }}</p>
+    <div class="tunePlayDateListGrid" ng-grid="tunePlayDateList"></div>
+
+    <form class="form-inline form-search" >
+        <label>Skill:</label>
+        <select class="input-large" ng-change="setSkill(skillType)" ng-model="skillType" ng-options="skillType.description for skillType in skillTypes"></select>
+    </form>
+</div>
+
+
+

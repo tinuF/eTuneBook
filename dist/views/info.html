@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="span2">
+        <div class="navbar">
+            <!--
+            <div class="navbar-inner">
+            -->
+                <ul class="nav">
+                    <li ng-class="{ active: introductionMenuActive }"><a href="#/info/introduction"> Introduction</a></li>
+                    <li ng-class="{ active: getStartedMenuActive }"><a href="#/info/getstarted"> Getting Started</a></li>
+                    <li ng-class="{ active: manualMenuActive }"><a href="#/info/manual"> Manual</a></li>
+                    <li ng-class="{ active: releaseNotesMenuActive }"><a href="#/info/releasenotes"> Release Notes</a></li>
+                    <li ng-class="{ active: creditsMenuActive }"><a href="#/info/credits"> Credits</a></li>
+                    <li ng-class="{ active: feedbackMenuActive }"><a href="#/info/feedback"> Feedback</a></li>
+                </ul>
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="span10" ui-view="" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>
+</div>

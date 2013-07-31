@@ -1,0 +1,7 @@
+<div class="tuneInfoEditor" style="background-color:{{tune.color}}">
+    <button class="btn btn-mini btn-info" ng-click="newWebsite()">New</button>
+    <div class="tuneWebsiteListGrid" ng-grid="tuneWebsiteList"></div>
+    <br>
+    <label>Comment</label>
+    <input type="text" class="input-xlarge" id="inputAnnotiation" ng-model="tune.annotation" ng-blur="storeTuneBook()">
+</div>

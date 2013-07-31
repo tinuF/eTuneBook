@@ -1,0 +1,23 @@
+<div class="row-fluid">
+    <div class="span1"><label></label></div>
+    <div class="span11">
+        <div class="navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <form class="form-inline form-search">
+
+                        <button class="btn" ng-click="filter()"><i class="icon-filter" title="Filter"></i></button>
+
+                        <select class="input-medium" ng-model="tuneSetTypeForFilter" ng-options="tuneSetTypeForFilter.type for tuneSetTypeForFilter in tuneSetTypesForFilter | orderBy:'type'">	</select>
+                        <select class="input-small" ng-model="tuneSetKeyForFilter" ng-options="tuneSetKeyForFilter.key for tuneSetKeyForFilter in tuneSetKeysForFilter | orderBy:'sort'">	</select>
+                        <select class="input-medium" ng-model="tuneSetColorForFilter" ng-options="tuneSetColorForFilter.color for tuneSetColorForFilter in tuneSetColorsForFilter | orderBy:'sort'" style="background-color:{{tuneSetColorForFilter.color}}">	</select>
+                        <select class="input-medium" ng-model="skillType" ng-options="skillType.description for skillType in skillTypes">	</select>
+                        <select class="input-medium" ng-model="tuneSetTargetForFilter" ng-options="tuneSetTargetForFilter.target for tuneSetTargetForFilter in tuneSetTargetsForFilter | orderBy:'target'">	</select>
+                        <select class="input-medium" ng-model="tuneSetEnvForFilter" ng-options="tuneSetEnvForFilter.env for tuneSetEnvForFilter in tuneSetEnvsForFilter">	</select>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

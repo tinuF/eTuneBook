@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="eTuneBookApp">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<title>eTuneBook</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Martin Fleischmann | eTuneBook">
+	<meta name="keywords" content="eTuneBook, Abc Tunes">
+	<meta name="description" content="eTuneBook, an application for managing abc tunes.">
+	<meta name="audience" content="all">
+	<meta name="robots" content="index,follow">
+	<meta name="revisit-after" content="7 days">
+	<meta name="page-topic" content="music, notation, repertoire">
+    <link rel="SHORTCUT ICON" type="image/ico" href="favicon.ico">
+    <!--<base href="/eTuneBook/app/"/>-->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/main.css -->
+	<link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="components/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="lib/styles/docs.css" rel="stylesheet"> <!-- Fuer Brand rechts und dann links beim Verkleinern (fruehere Bootstrap Version)-->
+	<link href="lib/styles/colorPicker.css" rel="stylesheet">
+    <link href="components/ng-grid/ng-grid.min.css" rel="stylesheet">
+	<link href="styles/etunebook.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+	<script src="components/jquery/jquery.min.js"></script>
+	<script src="lib/scripts/jquery.colorPicker.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="components/ng-grid/ng-grid-2.0.7.min.js"></script>
+</head>
+ 
+<body   ng-cloak class="ng-cloak">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="components/es5-shim/es5-shim.js"></script>
+        <script src="components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>
+
+    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+	<script src="lib/scripts/abcjs_editor_1.7-min.js"></script>
+	<script src="lib/scripts/moment.js"></script>
+	
+	<!-- build:js scripts/scripts.js -->
+	<script src="scripts/eTuneBookApp.js"></script>
+	<script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/controllers/bookCtrl.js"></script>
+    <script src="scripts/controllers/bookeditCtrl.js"></script>
+    <script src="scripts/controllers/abcCtrl.js"></script>
+    <script src="scripts/controllers/setsCtrl.js"></script>
+    <script src="scripts/controllers/setlistCtrl.js"></script>
+    <script src="scripts/controllers/setCtrl.js"></script>
+    <script src="scripts/controllers/tuneCtrl.js"></script>
+    <script src="scripts/controllers/tunesetsCtrl.js"></script>
+    <script src="scripts/controllers/tuneabcCtrl.js"></script>
+    <script src="scripts/controllers/tuneinfoCtrl.js"></script>
+    <script src="scripts/controllers/tunepracticeCtrl.js"></script>
+    <script src="scripts/controllers/tunesCtrl.js"></script>
+    <script src="scripts/controllers/tunelistCtrl.js"></script>
+    <script src="scripts/controllers/filterCtrl.js"></script>
+    <script src="scripts/controllers/infoCtrl.js"></script>
+    <script src="scripts/controllers/tunevideosCtrl.js"></script>
+    <script src="scripts/controllers/tunevideoCtrl.js"></script>
+    <script src="scripts/services/eTuneBookService.js"></script>
+    <script src="scripts/directives/ngBlur.js"></script>
+    <script src="scripts/directives/tbkTuneBlur.js"></script>
+	<script src="scripts/directives/tbkFileSelect.js"></script>
+	<script src="scripts/directives/tbkFileSelectDelegate.js"></script>
+	<script src="scripts/directives/tbkColorSelect.js"></script>
+	<script src="scripts/directives/tbkShowSampleAbc.js"></script>
+    <script src="scripts/directives/renderSampleAbcDir.js"></script>
+    <script src="scripts/filters/tbkFromNow.js"></script>
+	<script src="scripts/filters/tbkEliminateThe.js"></script>
+	<!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!--
+    <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    -->
+</body>
+</html>
