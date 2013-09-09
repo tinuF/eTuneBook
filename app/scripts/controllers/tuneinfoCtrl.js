@@ -27,7 +27,7 @@ angular.module('eTuneBookApp').controller( 'tuneinfoCtrl', function ( $scope, $l
         enableCellEditOnFocus: true,
         columnDefs: [
             {field: '',
-                cellTemplate: '<button class="btn btn-mini btn-info" ng-click="openWebsite(row)"><i class="icon-play" title="Jump to"></i></button>',
+                cellTemplate: '<button class="btn btn-xs btn-default" ng-click="openWebsite(row)"><i class="glyphicon glyphicon-play" title="Jump to"></i></button>',
                 enableCellEdit: false,
                 width:'10%'
             },
@@ -38,7 +38,7 @@ angular.module('eTuneBookApp').controller( 'tuneinfoCtrl', function ( $scope, $l
                 width:'75%'
             },
             {field: '',
-                cellTemplate: '<button class="btn btn-mini btn-info" ng-click="deleteWebsite(row)"><i class="icon-trash" title="Delete Website"></i></button>',
+                cellTemplate: '<button class="btn btn-xs btn-default" ng-click="deleteWebsite(row)"><i class="glyphicon glyphicon-trash" title="Delete Website"></i></button>',
                 enableCellEdit: false,
                 width:'10%'
             }

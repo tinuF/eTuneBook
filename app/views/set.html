@@ -1,9 +1,9 @@
-<div class="row-fluid">
-    <div class="span4 tuneSet">
+<div class="row">
+    <div class="col-md-4 tuneSet">
         <div class="tuneSetInfo">
             <div class="tuneSetNr">
-                <a class='btn btn-mini btn-info' ng-click="editTuneSet(tuneSet)" title="Edit TuneSet">Set {{tuneSet.tuneSetId}}</a>
-                <a class='btn btn-mini btn-info justPlayedTheTuneSet' ng-click="justPlayedTheSet(tuneSet)" title="Just Played The Set">Just Played</a>
+                <a class='btn btn-xs btn-default' ng-click="editTuneSet(tuneSet)" title="Edit TuneSet">Set {{tuneSet.tuneSetId}}</a>
+                <a class='btn btn-xs btn-default justPlayedTheTuneSet' ng-click="justPlayedTheSet(tuneSet)" title="Just Played The Set">Just Played</a>
             </div>
 
         </div>
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn" ng-click="doneTuneSetEditing()">Done</button>
+                    <button class="btn btn-default" ng-click="doneTuneSetEditing()">Done</button>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@
                         <div class="control-group">
                             <label class="control-label" for="inputPlaytime">Repeat</label>
                             <div class="controls">
-                                <input type="text" class="span2" id="inputPlaytime" ng-model="tuneSetPositionToBeEdited.repeat" placeholder="3">
+                                <input type="text" class="col-md-2" id="inputPlaytime" ng-model="tuneSetPositionToBeEdited.repeat" placeholder="3">
                             </div>
                         </div>
 
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn" ng-click="doneTuneSetPositionEditing()">Done</button>
+                    <button class="btn btn-default" ng-click="doneTuneSetPositionEditing()">Done</button>
                 </div>
             </div>
 
@@ -107,21 +107,17 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                    <button class="btn" ng-click="doneMoving(tuneSetPositionToBeMoved, targetTuneSetPosition, beforeOrAfter, moveOrCopy)">Send</button>
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button class="btn btn-default" ng-click="doneMoving(tuneSetPositionToBeMoved, targetTuneSetPosition, beforeOrAfter, moveOrCopy)">Send</button>
                 </div>
             </div>
 
-            <li class="tuneSetPosition" ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber" style="background-color:{{tuneSetPosition.tune.color}}" tbk-show-sample-abc>
+            <li class="tuneSetPosition" ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber" ng-style="{'background-color':tuneSetPosition.tune.color}" tbk-show-sample-abc>
                 <div class="view">
                     <div class="tuneFirstLine">
                         <div class="btn-group">
-                            <button class="btn">
-                                <div class="tuneTitle">
-                                    <a ng-click="showTune(tuneSetPosition.tune.intTuneId)" title="Show The Dots"><strong>{{tuneSetPosition.tune.title | eliminateThe}}</strong></a>
-                                </div>
-                            </button>
-                            <button class="btn dropdown-toggle" data-toggle="dropdown">
+                            <a class="btn btn-default tuneTitle" ng-click="showTune(tuneSetPosition.tune.intTuneId)" title="Show The Dots"><strong>{{tuneSetPosition.tune.title | eliminateThe}}</strong></a>
+                            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                 <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu">
@@ -144,7 +140,7 @@
                     </div>
 
                     <div class="tunePlayDateInfo">
-                        <a class='btn btn-mini btn-info justPlayedTheTune' ng-click="justPlayedTheTune(tuneSetPosition.tune)" title="Just Played The Tune">Played</a>
+                        <a class='btn btn-xs btn-default justPlayedTheTune' ng-click="justPlayedTheTune(tuneSetPosition.tune)" title="Just Played The Tune">Played</a>
 
                         <div class="tuneLastPlayed">{{tuneSetPosition.tune.lastPlayed | fromNow}}</div>
                     </div>
@@ -157,5 +153,5 @@
             </li>
         </ul>
     </div>
-    <div class="span8"></div>
+    <div class="col-md-8"></div>
 </div>

@@ -1,6 +1,6 @@
 'use strict';
 angular.module('eTuneBookApp', [
-  'ui.state',
+  'ui.router',
   'ngGrid'
 ]);
 angular.module('eTuneBookApp').config([
@@ -772,7 +772,7 @@ angular.module('eTuneBookApp').controller('tuneCtrl', [
         var playHere = 'renderMidi';
         var tuneAbc = skipFingering(tune.pure);
         var dotsScale = 1;
-        ABCJS.renderAbc(showHere, tuneAbc, {}, {}, {});
+        ABCJS.renderAbc(showHere, tuneAbc, {}, { scale: dotsScale }, {});
       }, 0, false);
     }
     function skipFingering(tuneAbc) {
@@ -978,7 +978,7 @@ angular.module('eTuneBookApp').controller('tuneinfoCtrl', [
       columnDefs: [
         {
           field: '',
-          cellTemplate: '<button class="btn btn-mini btn-info" ng-click="openWebsite(row)"><i class="icon-play" title="Jump to"></i></button>',
+          cellTemplate: '<button class="btn btn-xs btn-default" ng-click="openWebsite(row)"><i class="glyphicon glyphicon-play" title="Jump to"></i></button>',
           enableCellEdit: false,
           width: '10%'
         },
@@ -991,7 +991,7 @@ angular.module('eTuneBookApp').controller('tuneinfoCtrl', [
         },
         {
           field: '',
-          cellTemplate: '<button class="btn btn-mini btn-info" ng-click="deleteWebsite(row)"><i class="icon-trash" title="Delete Website"></i></button>',
+          cellTemplate: '<button class="btn btn-xs btn-default" ng-click="deleteWebsite(row)"><i class="glyphicon glyphicon-trash" title="Delete Website"></i></button>',
           enableCellEdit: false,
           width: '10%'
         }
@@ -1469,7 +1469,7 @@ angular.module('eTuneBookApp').controller('tunevideosCtrl', [
         },
         {
           field: '',
-          cellTemplate: '<button class="btn btn-mini btn-info" ng-click="deleteVideo(row)"><i class="icon-trash" title="Delete Video"></i></button>',
+          cellTemplate: '<button class="btn btn-xs btn-default" ng-click="deleteVideo(row)"><i class="glyphicon glyphicon-trash" title="Delete Video"></i></button>',
           enableCellEdit: false,
           width: '10%'
         }
@@ -1536,14 +1536,14 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
   var eTBkModule = function (eTBk) {
       var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
       var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-      var eTBK_VERSION = '1.1.0';
+      var eTBK_VERSION = '1.1.1';
       var ABC_VERSION = '2.1';
       var eTBK_DEFAULT_COLOR = '#F5F5F5';
       var eTBK_DEFAULT_MODIFICATIONDATE_STRING = '1966-04-05T22:00';
       var eTBK_PATTERN_FINGER = /!\d!/g;
       var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
       var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-      var eTBk_EXAMPLE_VERSION = '2013-07-31';
+      var eTBk_EXAMPLE_VERSION = '2013-09-09';
       var currentTuneBook;
       var TuneBook = function (abc) {
         var This = this;

@@ -20,10 +20,10 @@
     <!--<base href="/eTuneBook/app/"/>-->
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
     <!-- build:css styles/main.css -->
-	<link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="components/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="lib/styles/docs.css" rel="stylesheet"> <!-- Fuer Brand rechts und dann links beim Verkleinern (fruehere Bootstrap Version)-->
 	<link href="lib/styles/colorPicker.css" rel="stylesheet">
     <link href="components/ng-grid/ng-grid.min.css" rel="stylesheet">
 	<link href="styles/etunebook.css" rel="stylesheet">
@@ -47,9 +47,11 @@
         <script src="components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>
+    <!--<div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>-->
+    <div ui-view></div>
 
-    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="lib/scripts/abcjs_editor_1.7-min.js"></script>
 	<script src="lib/scripts/moment.js"></script>
 	

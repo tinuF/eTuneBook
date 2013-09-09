@@ -1,39 +1,40 @@
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#/info/introduction">eTuneBook</a>
-            <div class="nav-collapse collapse">
-                <ul class="nav ">
-                    <li class="dropdown" ng-class="{ active: bookMenuActive }">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Book <b class="caret black-caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a ng-click="initializeTuneBook()">New</a></li>
-                            <li><a tbk-file-select-delegate>Import</a></li>
-                            <li><a ng-click="loadBxplTuneBook()">{{exampleFileNameWithoutAbc}} - Version {{exampleVersion}}</a></li>
-                            <li class="divider"></li>
-                            <li><a ng-click="editTuneBook()">Edit Book Title</a></li>
-                            <li class="divider"></li>
-                            <li><a ng-click="exportTuneBook()">Export</a></li>
-                        </ul>
-                    </li>
-                    <li ng-class="{ active: setsMenuActive }"><a ng-click="showSets()">Sets</a></li>
-                    <li ng-class="{ active: tunesMenuActive }"><a ng-click="showTunes()">Tunes</a></li>
-                    <li ng-class="{ active: infoMenuActive }"><a ng-click="showInfo()"> Info</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header pull-right">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/info/introduction">eTuneBook</a>
     </div>
-</div>
-<div class="container-fluid">
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown" ng-class="{ active: bookMenuActive }">
+                <a class="dropdown-toggle" data-toggle="dropdown">Book <b class="caret black-caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a ng-click="initializeTuneBook()">New</a></li>
+                    <li><a tbk-file-select-delegate>Import</a></li>
+                    <li><a ng-click="loadBxplTuneBook()">{{exampleFileNameWithoutAbc}} - Version {{exampleVersion}}</a></li>
+                    <li class="divider"></li>
+                    <li><a ng-click="editTuneBook()">Edit Book Title</a></li>
+                    <li class="divider"></li>
+                    <li><a ng-click="exportTuneBook()">Export</a></li>
+                </ul>
+            </li>
+            <li ng-class="{ active: setsMenuActive }"><a ng-click="showSets()">Sets</a></li>
+            <li ng-class="{ active: tunesMenuActive }"><a ng-click="showTunes()">Tunes</a></li>
+            <li ng-class="{ active: infoMenuActive }"><a ng-click="showInfo()"> Info</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+<div class="container">
     <div ui-view="booktitle"></div>
 
     <!--/book or /sets or /tunes or /abc or /info -->
-    <div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>
+    <div ui-view></div>
+    <!--<div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>-->
 
     <!--
     <div class="row-fluid">

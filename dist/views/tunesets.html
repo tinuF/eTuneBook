@@ -1,6 +1,6 @@
-<div class="tuneSetEditor" style="background-color:{{tune.color}}">
+<div class="tuneSetEditor" ng-style="{'background-color':tune.color}">
         <!--<input type="text" ng-model="search" />-->
-    <button class="btn btn-mini btn-info" ng-click="newTuneSet()">New</button>
+    <button class="btn btn-xs btn-default" ng-click="newTuneSet()">New</button>
 
     <div class="tuneSetListGrid" ng-grid="tuneSetList"></div>
         <!--<button ng-click="addVideo()">Add Video</button>-->

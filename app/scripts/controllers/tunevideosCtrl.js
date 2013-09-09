@@ -38,7 +38,7 @@ angular.module('eTuneBookApp').controller( 'tunevideosCtrl', function( $scope, $
                 width:'60%'
             },
             {field: '',
-                cellTemplate: '<button class="btn btn-mini btn-info" ng-click="deleteVideo(row)"><i class="icon-trash" title="Delete Video"></i></button>',
+                cellTemplate: '<button class="btn btn-xs btn-default" ng-click="deleteVideo(row)"><i class="glyphicon glyphicon-trash" title="Delete Video"></i></button>',
                 enableCellEdit: false,
                 width:'10%'
             }

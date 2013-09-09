@@ -190,11 +190,6 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/images',
           src: '{,*/}*.{png,jpg,jpeg}',
           dest: '<%= yeoman.dist %>/images'
-        },{
-            expand: true,
-            cwd: '<%= yeoman.app %>/components/bootstrap/img',
-            src: '{,*/}*.{png,jpg,jpeg}',
-            dest: '<%= yeoman.dist %>/img'
         }]
       }
     },
@@ -280,7 +275,9 @@ module.exports = function (grunt) {
             'components/angular/angular.min.js',
             'components/angular-ui-router/release/angular-ui-router.min.js',
             'components/ng-grid/ng-grid-2.0.7.min.js',
-            'components/bootstrap/js/bootstrap.min.js',
+            'components/bootstrap/dist/css/bootstrap.min.css',
+            'components/bootstrap/dist/js/bootstrap.min.js',
+             'components/bootstrap/dist/fonts/*',
              'components/es5-shim/es5-shim.js',
              'components/json3/lib/json3.min.js',
              'images/{,*/}*.{gif,webp}',

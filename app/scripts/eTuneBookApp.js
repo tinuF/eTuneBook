@@ -10,7 +10,7 @@
 //angular.module('eTuneBookApp', ['ui.state', 'ngGrid', 'ui.bootstrap']);
 //ACHTUNG: ui.bootsrap bricht importFile (File-Auswahl-Schirm kommt nicht mehr hoch)!
 
-angular.module('eTuneBookApp', ['ui.state', 'ngGrid']);
+angular.module('eTuneBookApp', ['ui.router', 'ngGrid']);
 
 angular.module('eTuneBookApp').config(function($locationProvider) {
 	$locationProvider.html5Mode(false);

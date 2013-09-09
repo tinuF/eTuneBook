@@ -60,7 +60,7 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
              }
              */
             //ABCJS.renderAbc(showHere, tuneAbc, {print:true}, {scale:dotsScale}, {});
-            ABCJS.renderAbc(showHere, tuneAbc, {}, {}, {});
+            ABCJS.renderAbc(showHere, tuneAbc, {}, {scale:dotsScale}, {});
 
             //TODO: MIDI-Button, Anzeige in separatem Window. Eventuell Einbau MIDI.js
             //siehe http://mudcu.be/midi-js/ und https://github.com/mudcube/MIDI.js
