@@ -1,7 +1,7 @@
 %abc-2.1
-I:abc-creator eTuneBook-1.1.1
+I:abc-creator eTuneBook-1.1.2
 %%etbk:bname Irish Tunes - Martin Fleischmann
-%%etbk:bvers 2013-09-09T19:08
+%%etbk:bvers 2013-09-12T20:36
 %%etbk:bdesc Irish Traditional Tunes adapted for Piano Accordion by Martin Fleischmann
 X: 1
 %%etbk:tnset id:1,pos:1,rep:3x,ant:
@@ -665,7 +665,7 @@ X:43
 %%etbk:wsite http://www.thesession.org/tunes/display/63
 %%etbk:video src:ytube,cde:Ok4udRCsF_E,desc:
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:20,2013-08-26T18:01
+%%etbk:pldat 2013-09-12T18:15,2013-08-29T16:20,2013-08-26T18:01
 T: Last Night's Fun
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -681,7 +681,7 @@ X:44
 %%etbk:wsite http://www.thesession.org/tunes/display/579
 %%etbk:video src:ytube,cde:BjLcfnY8-gY,desc:second tune
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:20,2013-08-26T18:01
+%%etbk:pldat 2013-09-12T18:15,2013-08-29T16:20,2013-08-26T18:01
 T: Bag Of Spuds, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -697,7 +697,7 @@ X:45
 %%etbk:tnset id:15,pos:3,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/874
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:20,2013-08-26T18:01
+%%etbk:pldat 2013-09-12T18:15,2013-08-29T16:20,2013-08-26T18:01
 T: Rathlin Island
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -728,7 +728,7 @@ X:47
 %%etbk:wsite http://www.thesession.org/tunes/display/237
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-26T18:28,2013-05-23T18:39,2013-05-21T17:00,2013-05-10T15:20,2013-05-07T19:28,2013-05-01T17:12
+%%etbk:pldat 2013-09-12T18:36,2013-08-26T18:28,2013-05-23T18:39,2013-05-21T17:00,2013-05-10T15:20,2013-05-07T19:28,2013-05-01T17:12
 T: Blackhaired Lass, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1594,7 +1594,7 @@ X:101
 %%etbk:tnset id:36,pos:1,rep:3x,ant:,targ:Concert,env:HiBernia
 %%etbk:wsite http://www.thesession.org/tunes/display/1748
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:00,2013-08-26T18:13,2013-05-20T15:24,2013-05-05T14:08,2013-05-01T16:11
+%%etbk:pldat 2013-09-12T18:12,2013-08-29T16:00,2013-08-26T18:13,2013-05-20T15:24,2013-05-05T14:08,2013-05-01T16:11
 T: Humours Of Scarriff, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1611,7 +1611,7 @@ X:102
 %%etbk:tnset id:36,pos:2,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/1428
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:00,2013-08-26T18:13,2013-05-20T15:25,2013-05-05T14:08,2013-05-01T16:11
+%%etbk:pldat 2013-09-12T18:12,2013-08-29T16:00,2013-08-26T18:13,2013-05-20T15:25,2013-05-05T14:08,2013-05-01T16:11
 T: Humours Of Ballyconnell, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -1627,7 +1627,7 @@ X:103
 %%etbk:wsite http://www.thesession.org/tunes/display/176
 %%etbk:video src:ytube,cde:5_wkF6TO4h0,desc:second tune
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:00,2013-08-26T18:13,2013-05-20T15:25,2013-05-05T14:08,2013-05-01T16:11
+%%etbk:pldat 2013-09-12T18:12,2013-08-29T16:00,2013-08-26T18:13,2013-05-20T15:25,2013-05-05T14:08,2013-05-01T16:11
 T: Sandmount
 T: Mick Hand's
 Z: Piano Box Version by Martin Fleischmann
@@ -1826,6 +1826,7 @@ K: Dmaj
 |: "D"!1!A3B !1!A2!2!FF | !1!AB!3!de !5!f!4!ee2 | !5!fedB  !1!A!1!B!3!dB | !1!AB!3!de !5!fed!2!B :|
 X:116
 %%etbk:tnset id:41,pos:2,rep:3x,ant:
+%%etbk:video src:ytube,cde:wEIcEXK1Rck,desc:first tune
 %%etbk:skill ?
 T: Boys Of Ballysodare, The
 Z: Piano Box Version by Martin Fleischmann
@@ -1989,7 +1990,7 @@ X:126
 %%etbk:wsite http://www.thesession.org/tunes/display/2601
 %%etbk:video src:ytube,cde:YJfnvIYaQjk,desc:
 %%etbk:skill ?
-%%etbk:pldat 2013-08-28T16:18,2013-05-22T17:33,2013-05-10T15:53
+%%etbk:pldat 2013-09-11T20:07,2013-08-28T16:18,2013-05-22T17:33,2013-05-10T15:53
 T: First House In Connaught, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2005,7 +2006,7 @@ X:127
 %%etbk:tnset id:45,pos:2,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/411
 %%etbk:skill ?
-%%etbk:pldat 2013-08-28T16:18,2013-05-22T17:33,2013-05-10T15:53
+%%etbk:pldat 2013-09-11T20:07,2013-08-28T16:18,2013-05-22T17:33,2013-05-10T15:53
 T: Heather Breeze, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2082,7 +2083,7 @@ X:132
 %%etbk:wsite http://www.thesession.org/tunes/display/116
 %%etbk:video src:ytube,cde:njeGP4vTXNM,desc:
 %%etbk:skill ?
-%%etbk:pldat 2013-08-26T18:50,2013-05-22T17:28,2013-05-21T17:32,2013-05-10T16:30,2013-05-05T14:51
+%%etbk:pldat 2013-09-12T18:50,2013-08-26T18:50,2013-05-22T17:28,2013-05-21T17:32,2013-05-10T16:30,2013-05-05T14:51
 T: Wind That Shakes The Barley, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2098,7 +2099,7 @@ X:133
 %%etbk:tnset id:47,pos:2,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/2996
 %%etbk:skill ?
-%%etbk:pldat 2013-08-26T18:50,2013-05-22T17:28,2013-05-21T17:32,2013-05-10T16:30,2013-05-05T14:51
+%%etbk:pldat 2013-09-12T18:50,2013-08-26T18:50,2013-05-22T17:28,2013-05-21T17:32,2013-05-10T16:30,2013-05-05T14:51
 T: Trip To Cullenstown, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2114,7 +2115,7 @@ X:134
 %%etbk:tnset id:47,pos:3,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/2706
 %%etbk:skill ?
-%%etbk:pldat 2013-08-26T18:50,2013-05-22T17:28,2013-05-21T17:32,2013-05-10T16:30,2013-05-05T14:51
+%%etbk:pldat 2013-09-12T18:50,2013-08-26T18:50,2013-05-22T17:28,2013-05-21T17:32,2013-05-10T16:30,2013-05-05T14:51
 T:The New Mown Meadow
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2338,8 +2339,8 @@ K: Edor
 |:!1!e2 !3!(3gfe !5!be!3!gf | !1!efga !5!b!2!f!4!a!2!f | !1!d!3!f!2!f!3!f !5!a!3!f!2!f!3!f | !1!d!3!f!2!f!3!f !5!afdf | 
 !1!e2 !3!(3gfe !5!begf | !1!efga !5!b!2!f!4!a!2!f | !1!d!2!c!1!d!3!f !5!a3f | !4!gfe!1!d !2!B!5!ee2:||
 X:149
-%%etbk:tnset id:52,pos:3,rep:3x,ant:
 %%etbk:tnset id:182,pos:1,rep:2x,ant:,targ:Set-Dance,env:Toe for Toe,name:Clare Lancers Set
+%%etbk:tnset id:52,pos:3,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/410
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -2372,8 +2373,8 @@ K: Dmaj
 |:!4!g!1!B (3BBB !4!gB!5!aB | !4!g!1!B (3BBB !4!gfe!1!d | !3!(3cBA !5!eA !5!fA!5!eA | !3!c!1!def !4!gfef |
 | !4!g!1!B (3BBB !4!gB!5!aB | !4!g!1!B (3BBB !4!gfe!1!d | !2!c!1!def !4!g!1!e!2!c!4!e | !3!d2dc d4:|
 X:151
-%%etbk:tnset id:52,pos:5,rep:3x,ant:
 %%etbk:tnset id:182,pos:7,rep:2x,ant:
+%%etbk:tnset id:52,pos:5,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/20
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -2391,8 +2392,8 @@ K: Edor
 |:!2!F!3!A!5!dA !2!F!3!A!4!BA | !2!F!3!A!5!d!3!A !2!F!1!EE2 | !2!F!3!A!5!d!3!A !2!F!1!A!2!Bc | !4!dB!1!A!3!G !2!F!1!D D2 |
 !2!F!3!A!5!dA !2!F!3!A!4!BA | !2!F2!5!d!2!e !3!f!2!ee2 | !3!fd!5!ec !4!dB!1!A!2!F | !3!G!5!BAG !2!F!1!D D2:|
 X:152
-%%etbk:tnset id:52,pos:6,rep:3x,ant:
 %%etbk:tnset id:182,pos:8,rep:3x-STOP,ant:
+%%etbk:tnset id:52,pos:6,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/7671
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -2457,8 +2458,8 @@ K: Dmaj
 |: "D"!3!d{e}d!1!A!3!d !2!B!3!dAB | !3!dd!5!f!3!d "A"!4!ed!2!BA | "D" !3!d{e}dAd !2!B!3!dAd |1 "A"!2!B!1!def !4!gef!2!e :|2 "A"!2!B!1!def !4!g2fg :|
 |: "D"!5!a!3!f!2!f!3!f !1!d!3!f!2!f!2!f | !5!a!3!f!2!f!3!f "A"!4!g!1!e !3!(3e!2!e!1!e | "D"!5!affe !1!dfe!1!d |1 "A"!2!B!1!def !4!g2fg :|2 "A"!2!B!1!def !4!g2fe ||
 X:156
-%%etbk:tnset id:53,pos:4,rep:3x,ant:
 %%etbk:tnset id:182,pos:3,rep:3x,ant:
+%%etbk:tnset id:53,pos:4,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/560
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -2474,8 +2475,8 @@ K: Edor
 |: "em"!3!gfef !3!g!1!e!5!be | !3!gebe !3!gf!1!e!2!f | "D"!1!d2 !5!f!3!d !1!A!3!d!5!f!3!d | !2!B!4!d!1!A!3!G !2!F!1!DD!2!F |
 "em"!3!G2!5!B!3!G "D"!2!F2AF | "em"!1!E!5!e!2!ef !4!gfe!1!d | !2!B2!4!dB "D"!1!A2!3!GA | !5!BG!4!AF "em"!3!G!1!EE2 :|
 X:157
-%%etbk:tnset id:53,pos:5,rep:3x,ant:
 %%etbk:tnset id:183,pos:1,rep:2x + AB,ant:,targ:Set-Dance,env:Toe for Toe,name:Connemara Set
+%%etbk:tnset id:53,pos:5,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/195
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -2492,8 +2493,8 @@ K: Gmaj
 "G"!2!B!3!d!5!g!3!d !2!B!3!d!5!g!3!d | !2!B!3!d!5!g!3!d !2!B!1!GG2 | "F"!2!A!3!c!5!g!3!c !2!A!3!c!5!g!3!c | !2!A!3!c!5!g!3!c "G"!2!A!1!GG2 |
 "G"!2!B!3!d!5!g!3!d !2!B!3!d!5!g!3!d | !2!B!1!de!3!f !1!g3a |!3!b!1!g!5!a!3!f !4!ge!1!d!3!B | "D"!2!A!1!G!2!F!1!G !2!AB!4!c!2!A||
 X:158
-%%etbk:tnset id:183,pos:2,rep:3x-STOP,ant:
 %%etbk:tnset id:53,pos:6,rep:3x,ant:
+%%etbk:tnset id:183,pos:2,rep:3x-STOP,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/24
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -2512,7 +2513,7 @@ X:159
 %%etbk:wsite http://www.thesession.org/tunes/display/938
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-29T16:39
+%%etbk:pldat 2013-09-11T19:05,2013-08-29T16:39
 T: Lady On The Island, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2528,7 +2529,7 @@ X:160
 %%etbk:wsite http://www.thesession.org/tunes/display/3259
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-29T16:39
+%%etbk:pldat 2013-09-11T19:05,2013-08-29T16:39
 T: Moving In Decency
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2545,7 +2546,7 @@ X:161
 %%etbk:wsite http://www.thesession.org/tunes/display/921
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-29T16:39
+%%etbk:pldat 2013-09-11T19:05,2013-08-29T16:39
 T: Knotted Cord, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2745,7 +2746,7 @@ X:173
 %%etbk:wsite http://www.thesession.org/tunes/display/222
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-29T16:14
+%%etbk:pldat 2013-09-12T17:53,2013-09-11T19:13,2013-08-29T16:14
 T: Man Of The House, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2761,7 +2762,7 @@ X:174
 %%etbk:wsite http://www.thesession.org/tunes/display/68
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-29T16:14
+%%etbk:pldat 2013-09-12T17:53,2013-09-11T19:13,2013-08-29T16:14
 T: Mountain Road, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2777,7 +2778,7 @@ X:175
 %%etbk:wsite http://www.thesession.org/tunes/display/69
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-29T16:14
+%%etbk:pldat 2013-09-12T17:53,2013-09-11T19:13,2013-08-29T16:14
 T: Morning Dew, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -2874,8 +2875,8 @@ K: Emin
 |: "G"!1!G2!3!BG !5!dGBG | !1!G2!3!B!1!d ef!4!g2 | !1!G2!3!BG !5!dGBG | "D"!3!AFDF A!5!cB!3!A |
 "G"!1!G2!3!BG !5!dGBG | !1!G2!3!B!1!d ef!4!g2 | !5!afge !1!d3!2!B | "D"!1!A!2!F!1!DF !3!A!5!cBA :|
 X:181
-%%etbk:tnset id:57,pos:5,rep:3x,ant:
 %%etbk:tnset id:182,pos:9,rep:3x,ant:
+%%etbk:tnset id:57,pos:5,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/33
 %%etbk:skill ?
 %%etbk:color #ffffcc
@@ -3692,7 +3693,7 @@ X:1015
 %%etbk:tnset id:72,pos:1,rep:3x,ant:,targ:Concert,env:HiBernia
 %%etbk:wsite http://www.thesession.org/tunes/display/2200
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:25,2013-08-28T17:18,2013-08-26T17:53
+%%etbk:pldat 2013-09-12T18:27,2013-09-11T18:59,2013-08-29T16:25,2013-08-28T17:18,2013-08-26T17:53
 T: Old Man Dillon
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3711,7 +3712,7 @@ X:1016
 %%etbk:tnset id:72,pos:2,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/401
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:25,2013-08-28T17:18,2013-08-26T17:53
+%%etbk:pldat 2013-09-12T18:27,2013-09-11T18:59,2013-08-29T16:25,2013-08-28T17:18,2013-08-26T17:53
 T: Gander In The Pratie Hole, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -3727,7 +3728,7 @@ X:1017
 %%etbk:tnset id:72,pos:3,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/160
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:25,2013-08-28T17:18,2013-08-26T17:53
+%%etbk:pldat 2013-09-12T18:27,2013-09-11T18:59,2013-08-29T16:25,2013-08-28T17:18,2013-08-26T17:53
 T: Gallagher's Frolics
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -4517,7 +4518,7 @@ X:1064
 %%etbk:tnset id:88,pos:1,rep:3x,ant:,targ:Concert,env:HiBernia
 %%etbk:wsite http://www.thesession.org/tunes/display/1369
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:05,2013-08-26T18:17,2013-05-13T19:09,2013-05-12T18:51,2013-05-09T17:30,2013-05-02T18:33
+%%etbk:pldat 2013-09-12T18:09,2013-08-29T16:05,2013-08-26T18:17,2013-05-13T19:09,2013-05-12T18:51,2013-05-09T17:30,2013-05-02T18:33
 T: Gallowglass, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-05-09
@@ -4534,7 +4535,7 @@ X:1065
 %%etbk:tnset id:88,pos:2,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/797
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:05,2013-08-26T18:17,2013-05-13T19:09,2013-05-12T18:51,2013-05-09T17:30,2013-05-02T18:33
+%%etbk:pldat 2013-09-12T18:09,2013-08-29T16:05,2013-08-26T18:17,2013-05-13T19:09,2013-05-12T18:51,2013-05-09T17:30,2013-05-02T18:33
 T:Winnie Hayes'
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -4549,7 +4550,7 @@ X:1066
 %%etbk:tnset id:88,pos:3,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/1283
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T16:05,2013-08-26T18:17,2013-05-13T19:09,2013-05-12T18:51,2013-05-09T17:30,2013-05-02T18:33
+%%etbk:pldat 2013-09-12T18:09,2013-08-29T16:05,2013-08-26T18:17,2013-05-13T19:09,2013-05-12T18:51,2013-05-09T17:30,2013-05-02T18:33
 T: Flowers Of Spring, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -4565,7 +4566,7 @@ X:1067
 %%etbk:tnset id:89,pos:1,rep:3x,ant:,targ:Concert,env:Toe for Toe,name:Strayaway Child
 %%etbk:wsite http://www.thesession.org/tunes/display/134
 %%etbk:skill ?
-%%etbk:pldat 2013-05-23T17:56,2013-05-21T17:15,2013-05-07T18:10
+%%etbk:pldat 2013-09-12T17:35,2013-05-23T17:56,2013-05-21T17:15,2013-05-07T18:10
 T: Strayaway Child, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -5185,6 +5186,7 @@ X:1103
 %%etbk:wsite http://www.thesession.org/tunes/display/1736
 %%etbk:skill ?
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-09-12T17:43,2013-09-11T18:59
 T: Hare In The Corn, The
 T: Rathawaun
 Z: Piano Box Version by Martin Fleischmann
@@ -5202,6 +5204,7 @@ X:1104
 %%etbk:wsite http://www.thesession.org/tunes/display/4579
 %%etbk:skill ?
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-09-12T17:43,2013-09-11T18:59
 T: Hare In The Corn, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -5352,7 +5355,7 @@ X:1113
 %%etbk:wsite http://www.thesession.org/tunes/display/15
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-21T17:19,2013-05-20T15:39
+%%etbk:pldat 2013-09-12T18:19,2013-05-21T17:19,2013-05-20T15:39
 T: Calliope House
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-05-20
@@ -5370,7 +5373,7 @@ X:1114
 %%etbk:wsite http://www.thesession.org/tunes/display/107
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-21T17:19,2013-05-20T15:39
+%%etbk:pldat 2013-09-12T18:19,2013-05-21T17:19,2013-05-20T15:39
 T: Atholl Highlanders, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6248,7 +6251,7 @@ X:4007
 %%etbk:tnset id:114,pos:1,rep:3x,ant:
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-13T18:01
+%%etbk:pldat 2013-09-11T18:59,2013-05-13T18:01
 T: Mick's Polka
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6264,7 +6267,7 @@ X:4008
 %%etbk:wsite http://www.thesession.org/tunes/display/329
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-13T18:01
+%%etbk:pldat 2013-09-11T18:59,2013-05-13T18:01
 T: Newmarket, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6308,7 +6311,7 @@ X:4011
 %%etbk:tnset id:116,pos:1,rep:3x,ant:,targ:Concert,env:HiBernia
 %%etbk:wsite http://www.thesession.org/tunes/display/39
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T15:28,2013-08-27T18:29,2013-08-26T17:56,2013-05-22T17:17,2013-05-15T16:09
+%%etbk:pldat 2013-09-12T18:22,2013-09-11T19:00,2013-08-29T15:28,2013-08-27T18:29,2013-08-26T17:56,2013-05-22T17:17,2013-05-15T16:09
 T: Egan's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6322,7 +6325,7 @@ X:4012
 %%etbk:tnset id:116,pos:2,rep:3x,ant:
 %%etbk:wsite http://www.thesession.org/tunes/display/1841
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T15:28,2013-08-27T18:29,2013-08-26T17:56,2013-05-22T17:17,2013-05-15T16:09
+%%etbk:pldat 2013-09-12T18:22,2013-09-11T19:00,2013-08-29T15:28,2013-08-27T18:29,2013-08-26T17:56,2013-05-22T17:17,2013-05-15T16:09
 T: O'Keefe's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6588,6 +6591,7 @@ X:5001
 %%etbk:wsite http://www.thesession.org/tunes/display/980
 %%etbk:skill ?
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-09-12T17:39
 T: Humours Of Tullycrine, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6604,6 +6608,7 @@ X:5002
 %%etbk:wsite http://www.thesession.org/tunes/display/13
 %%etbk:skill ?
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-09-12T17:39
 T: Chief O'Neill's Favourite
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6620,6 +6625,7 @@ X:5003
 %%etbk:wsite http://www.thesession.org/tunes/display/478
 %%etbk:skill ?
 %%etbk:color #ffffcc
+%%etbk:pldat 2013-09-12T17:39
 T: Cronin's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6862,7 +6868,7 @@ X:7001
 %%etbk:wsite http://www.thesession.org/tunes/display/11933
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-23T18:05,2013-05-21T17:20,2013-05-10T16:09,2013-05-09T15:38,2013-05-01T17:49
+%%etbk:pldat 2013-09-12T17:30,2013-05-23T18:05,2013-05-21T17:20,2013-05-10T16:09,2013-05-09T15:38,2013-05-01T17:49
 T: Hug The Bundle
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6878,7 +6884,7 @@ X:7002
 %%etbk:tnset id:131,pos:2,rep:3x,ant:
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-23T18:05,2013-05-21T17:20,2013-05-10T16:09,2013-05-09T15:38,2013-05-01T17:49
+%%etbk:pldat 2013-09-12T17:30,2013-05-23T18:05,2013-05-21T17:20,2013-05-10T16:09,2013-05-09T15:38,2013-05-01T17:49
 T: Maloney's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6894,7 +6900,7 @@ X:7003
 %%etbk:wsite http://www.thesession.org/tunes/display/10560
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-05-23T18:05,2013-05-21T17:20,2013-05-10T16:09,2013-05-09T15:38,2013-05-01T17:49
+%%etbk:pldat 2013-09-12T17:30,2013-05-23T18:05,2013-05-21T17:20,2013-05-10T16:09,2013-05-09T15:38,2013-05-01T17:49
 T: Thomas Reilly Clerk Of Fore
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -6939,7 +6945,7 @@ X:7006
 %%etbk:video src:ytube,cde:HQlB0ytsM7I,desc:
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-26T18:28,2013-05-23T18:39,2013-05-21T17:00,2013-05-10T15:20,2013-05-07T19:28,2013-05-01T17:12
+%%etbk:pldat 2013-09-12T18:36,2013-08-26T18:28,2013-05-23T18:39,2013-05-21T17:00,2013-05-10T15:20,2013-05-07T19:28,2013-05-01T17:12
 T: Bog an Lochan
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -7058,7 +7064,7 @@ X:9004
 %%etbk:video src:ytube,cde:VPxYJASgCvI,desc:
 %%etbk:skill ?
 %%etbk:color #ffffcc
-%%etbk:pldat 2013-08-26T18:28,2013-05-23T18:39,2013-05-21T17:00,2013-05-10T15:20,2013-05-07T19:28,2013-05-01T17:12
+%%etbk:pldat 2013-09-12T18:36,2013-08-26T18:28,2013-05-23T18:39,2013-05-21T17:00,2013-05-10T15:20,2013-05-07T19:28,2013-05-01T17:12
 T: March Of The Kings Of Laois
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -7076,7 +7082,7 @@ X:10001
 %%etbk:tnset id:137,pos:1,rep:3x,ant:
 %%etbk:video src:ytube,cde:M49G2pljqeM,desc:
 %%etbk:skill ?
-%%etbk:pldat 2013-08-29T17:04,2013-05-07T18:30,2013-05-05T15:27
+%%etbk:pldat 2013-09-12T18:04,2013-09-11T19:23,2013-08-29T17:04,2013-05-07T18:30,2013-05-05T15:27
 T: New Land, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -7107,7 +7113,7 @@ K: Dmaj
 X:10003
 %%etbk:tnset id:140,pos:1,rep:3x,ant:
 %%etbk:skill ?
-%%etbk:pldat 2013-08-26T18:53,2013-05-05T14:46
+%%etbk:pldat 2013-09-12T17:56,2013-09-11T19:17,2013-08-26T18:53,2013-05-05T14:46
 T: Dark Island, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -7122,7 +7128,7 @@ D |: "G"!5!d>!1!DD | !5!B !4!A !3!G | "C"!2!E<!1!CE | "G"!1!D2 !2!G/A/ | !4!B>AG
 X:10004
 %%etbk:tnset id:141,pos:1,rep:3x,ant:
 %%etbk:skill ?
-%%etbk:pldat 2013-08-26T18:45,2013-05-20T15:27,2013-05-07T18:14,2013-05-05T14:26
+%%etbk:pldat 2013-09-12T18:00,2013-08-26T18:45,2013-05-20T15:27,2013-05-07T18:14,2013-05-05T14:26
 T: Belgarth Waltz, The
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -7284,6 +7290,7 @@ X:11003
 %%etbk:wsite http://thesession.org/tunes/8547
 %%etbk:video src:ytube,cde:qq60Ohiiq0I,desc:
 %%etbk:skill ?
+%%etbk:pldat 2013-09-12T18:55
 T: May Morning Dew
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-02-19 /  Last Modified 2013-02-19
@@ -7717,41 +7724,50 @@ X:13030
 %%etbk:tnset id:216,pos:3,rep:3x,ant:undefined
 %%etbk:wsite http://www.trad.katesplacedoolin.com/tunes/kilmaley.html
 %%etbk:skill ?
+%%etbk:pldat 2013-09-11T18:58
 T:Kilmaley Jig, The
 T: Boys of the Town
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-11 /  Last Modified 2013-09-11
 R:jig
 M:6/8
 K:Gmaj
-|:G2G GBd|edB dBA|GFG GBd|edB AFD|
-G2G GBd|edB gag|edB AGA|1 BGF G2D:|2 BGF G2B||
-|:def gfg|afd edB|def g2g|afd e2B|
-[1 def gfg|afd efg|edB AGA|BGF G2B:|
-[2 def gbb|faa efg|edB AGA|BGF G2D||
+|:!1!G2G !1!G!3!B!4!d|!5!ed!3!B !4!dB!2!A|!1!GGG !1!G!3!B!4!d|!5!edB !2!A!1!DD|
+!2!G2!1!G !1!G!3!B!4!d|!3!ed!1!B !4!gag|!2!e!1!d!3!B !2!AGA|1 BGF G2D:|2 BGF G2d||
+|:!1!def !4!gfg|!5!afd !2!e!1!d!2!B|!1!def !4!g2g|!5!afd !1!e2d|
+[1 !1!def !4!gfg|!5!afd !2!efg|!2!e!1!d!3!B !2!AGA|!3!BGF G2B:|
+[2 !1!def !4!g!5!bb|!3!f!5!aa !2!efg|!2!e!1!d!3!B !2!AGA|!3!B!1!G!2!F G2D||
 X:13031
 %%etbk:tnset id:216,pos:1,rep:3x,ant:undefined
 %%etbk:skill ?
+%%etbk:pldat 2013-09-11T18:58
 T:Green Fields of Woodford
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-10 /  Last Modified 2013-09-11
 R:Jig
 M:6/8
 L:1/8
 K:Gmaj
-|:dBA G2E|EDE G2d|edB dBA|Bee ege|
-dBA G2E|EDE G2B|AGE A2B|GED D2d:||
-|BGG dGG|edB dBA|BGG dGG|edB AGA|
-BGG dGG|edB dBG|AGE A2B|GED D2d|
-BGG dGG|edB dBA|BGG dGG|edB AGA|
-BAB deg|age dBG|AGE A2B|GED D2d||
+|:!5!d!4!B!3!A !2!G2!1!E|!1!E!4!B/!2!G/!1!E !2!G2!4!d|!5!ed!3!B !4!dB!2!A|!3!B!5!e!3!e !3!e!5!ge|
+!2!d!1!B!2!A !1!G2!2!E|!2!EDE !3!G2!5!B|!4!A!3!G!2!E !4!A2B|!3!GE!1!D D2!5!d:||
+|:!3!B!1!GG !4!d!1!GG|!5!ed!3!B !4!dB!2!A|!3!BGG !4!dGG|!5!ed!3!B !2!AGA|
+|1!3!BGG !4!dGG|!4!edB !4!d!3!B!1!G|!4!AG!2!E !4!A2B|!3!GE!1!D D2!4!d:|
+|2 !3!BAB !1!deg|age !1!d!3!B!1!G|!4!AG!2!E !4!A2B|!3!GED !1!D2!5!d||
 X:13032
 %%etbk:tnset id:216,pos:2,rep:3x,ant:undefined
+%%etbk:video src:ytube,cde:OxFL9WN5J4I,desc:second tune (-1)
 %%etbk:skill ?
-T:Drumraney Lass
+%%etbk:pldat 2013-09-11T18:58
+T:Drunraney Lass
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-11 /  Last Modified 2013-09-11
 M:6/8
 R:Jig
 K:Ador
-|:A2A ABA|GEE G2B|A2A ABd|edB edB|
-A2A ABA|GEE G2B|dBA GAB|ded dBA:||
-|:def g2g|agf g2e|def g2d|edB dBA|
-def gfg|agf g2a|bag agf|gfe fdB:||
+|:"am"!3!A2A ABA|"em"!2!G!1!EE !2!G2!4!B|"am"!3!A2!1!A AB!4!d|"em"!5!edB edB|
+"am"!1!A2!3!A ABA|"em"!2!G!1!EE !2!G2!3!B|"G"!5!d!3!B!2!A !1!GAB|!4!ded !4!d!3!B!1!A:||
+|:"G"!3!d!4!e!3!f !4!g2g|!5!agf g2e|!1!def !4!g2d|"D"!2!e!1!d!2!B !3!dBA|
+"G"!3!d!4!e!3!f !4!ggg|!5!a!4!g!2!f !3!g2a|!5!bag !4!agf|!4!gfe !3!f!1!d!2!B:||
 X:13033
 %%etbk:tnset id:219,pos:2,rep:3x,ant:undefined
 %%etbk:skill ?
@@ -7840,8 +7856,7 @@ L:1/8
 K:Ador
 A3B G3B|A2af gedB|A2AB G2GB|dBGB d2BG|
 A2AB G3B|A2af gedB|A2AB GGGB|dBGB d2Bd||
-edef g2ef|g2af gedg|edeg a2eg|a2bg aged|
-(3B^cd ef g2ef|g2af gedg|edeg a2eg|a2bg aged||
+|:edef g2ef|g2af gedg|edeg a2eg|a2bg aged:|
 eaag edBd|eaag e2Bd|eaag efge|dBGB d2Bd|
 eaag eaag|eaag egdg|eaag efge|dBGB d2Bd||
 edgd edBd|edgd e2Bd|e2ef ggge|dBGB d2Bd|
@@ -7861,15 +7876,18 @@ eaag bgag|eaag egdg|e~a3 bgag|edef gedg|
 e~a3 bgag|eaaf g2ga|b~g3 aged|eaag edBd||
 X:13043
 %%etbk:tnset id:246,pos:3,rep:3x,ant:undefined
+%%etbk:video src:ytube,cde:wEIcEXK1Rck,desc:second tune
 %%etbk:skill ?
 T:Five Mile Chase, The
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-10 /  Last Modified 2013-09-09
 R:reel
 M:4/4
-K:G
-G2BG dGBG|FADA FADA|G2BG dG (3Bcd|egfa gedB|
+K:Gmaj
+!1!G2!3!BG !5!dGB!1!G|!2!F!4!A!1!DA FADA|!1!G2!3!BG !5!dG !2!(3Bc!4!d|!2!egf!5!a ge!1!d!2!B|
 G2BG dGBG|FADA FADA|G2BG dG (3Bcd|egfa ~g3f||
-gd (3Bcd ed (3Bcd|g2bg agef|gd (3Bcd ed (3Bcd|egfa ~g3f|
-gabg efge|dedB BABd|~e3f edBd|egfa gedB||
+!4!g!2!d!1!Bd !3!edB!2!d|!4!g2!5!b!4!g !3!faaf|gdBd edBd|!3!e!4!g!3!f!5!a !4!~g3!2!f|
+!3!gabg !2!efge|!1!ded!2!c !1!Bc!3!d2|!4!~e3f eBdB|!2!egfa gedB||
 X:13044
 %%etbk:tnset id:233,pos:2,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:tCU07LkzSvE,desc:third tune
@@ -7902,17 +7920,20 @@ BA (3Bcd edeg|a2ge ~g3e|a2ge dBGB|1 ABGE ~G3A:|2 ABGE G2dc||
 |:B~G3 DGBd|e~g3 egdc|B~G3 dGBG|E~A3 EAcA|
 BGG2 DG (3Bcd|e~g3 egdg|b2ag edBG|1 ABGE G2dc:|2 ABGE G2GE||
 X:13046
-%%etbk:tnset id:252,pos:1,rep:3x,ant:undefined
+%%etbk:tnset id:254,pos:3,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:BjLcfnY8-gY,desc:first tune
 %%etbk:skill ?
+%%etbk:pldat 2013-09-11T20:03
 T:Boys on the Hilltop, The
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-09 /  Last Modified 2013-09-10
 R:reel
 M:4/4
 K:Ador
-!3!A2Ac B2AG|E!2!GGG!2!G2AG|!1!E!3!A!1!Ac BGBd|!4!e!5!g!3!dg !2!B!1!G!3!d!2!B|
-!1!A2!3!Ac BGAG|EGGF G2AB|c2cA B2Bc|dBGA BAAG||
-A2 (3Bcd egdB|GAB^c defg|aged egdB|GBdB BAA2|
-aged egdB|GAB^c defg|afge fdef|g2af gedB||
+!1!A2A!3!c!2!B2!1!A!2!G|!1!E!2!GGG!2!G2AG|!1!E!3!A!1!A!3!c !2!B!1!GB!3!d|!4!e!5!g!3!dg !2!B!1!G!3!d!2!B|
+!1!A2A!3!c !2!B2!1!A!2!G|!1!E!2!GGG !2!G2!3!A!4!B|!3!c2cA !2!B2Bc|!4!d!2!B!1!G!2!A !3!B!1!AA2||
+!1!A2 !2!B!3!d !4!e!5!g!3!d!2!B|!1!GAB!4!^c !1!defg|!5!aged !2!eg!1!d!2!B|!1!GBd!2!B B!1!AA2|
+!5!aged !2!eg!1!d!2!B|!1!GAB!4!^c !1!defg|!5!afge fdef|!4!g2af !4!ge!1!d!2!B||
 X:13047
 %%etbk:tnset id:233,pos:3,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:QTbs02yBD3o,desc:
@@ -7951,20 +7972,21 @@ K:D
 a2af defa|a2fd efdf|a2af defe|dBAF EFD2|
 ~a3f defa|a2fd efdB|A2AB defe|dBAF EFD2||
 X:13051
-%%etbk:tnset id:252,pos:3,rep:3x,ant:undefined
+%%etbk:tnset id:252,pos:2,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:CTKporjFV-w,desc:second tune
+%%etbk:video src:ytube,cde:q1jZbqqPjH8,desc:third tune
 %%etbk:skill ?
 T: The Woman Of The House
 Z: Piano Box Version by Martin Fleischmann
-H: Created 2013-09-09 /  Last Modified 2013-09-09
+H: Created 2013-09-09 /  Last Modified 2013-09-10
 R: reel
 M: 4/4
 L: 1/8
 K: Gmaj
 "G"!1!D!3!BBA B2BA|!1!GA!3!B!4!d !5!eBdB| "D"!2!(3ABA GB A2!3!B!4!d|"G"!5!e!3!BBB !5!eB!4!dB|
 "G"DBBA B2BA|GABd eBdB|!1!GABG "D"!2!(3ABA GA |BGAG "G"EGG2:||
-"D"!5!f2f!3!d !4!ed!2!B!3!d|!4!ed!5!ge !3!dABd|!5!f2fd edBd|"A"!2!eaag eaag|
-"D"!3!f2fd e!1!d!2!B!3!d|"G"!5!g2g!4!e !3!d!2!c!1!B!2!A|!1!GABG "D"(3ABA GA |BGAG "G"EGG2:||
+"D"!4!f2f!2!d !3!e!2!d!1!B!2!d|!3!e!5!gfd !3!e!2!d!1!B!2!d|!4!f2fd !3!e!2!d!1!B!2!d|"A"!3!e!5!aag !2!e!5!aa!4!g|
+"D"!3!f2!4!f!2!d !3!e!2!d!1!B!2!d|"G"!5!g2g!3!e !2!d!1!c!3!B!2!A|!1!GABG "D"(3ABA GA |BGAG "G"!2!E!1!GG2:||
 X:13053
 %%etbk:tnset id:234,pos:2,rep:3x,ant:undefined
 %%etbk:skill ?
@@ -7994,6 +8016,7 @@ X:13055
 %%etbk:tnset id:240,pos:1,rep:3x,ant:undefined
 %%etbk:wsite http://comhaltas.ie/music/detail/andersons/
 %%etbk:skill ?
+%%etbk:pldat 2013-09-12T18:46
 T:Anderson's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-09-04 /  Last Modified 2013-09-09
@@ -8029,6 +8052,7 @@ X:13057
 %%etbk:video src:ytube,cde:5_wkF6TO4h0,desc:third tune
 %%etbk:video src:ytube,cde:_0CTHmQ2Jus,desc:first tune
 %%etbk:skill ?
+%%etbk:pldat 2013-09-12T18:46
 T: Mulhaire's
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-09-04 /  Last Modified 2013-09-09
@@ -8075,18 +8099,21 @@ X:13061
 %%etbk:video src:ytube,cde:ietRxTd4rxU,desc:second tune
 %%etbk:skill ?
 T: The Doon
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-09 /  Last Modified 2013-09-09
 R: reel
 M: 4/4
 L: 1/8
 K: Dmaj
-DFAF BFAF|DFAF E2FE|D2FA BAFA|1 (3Bcd ec dBAF:|2 (3Bcd ec d3A||
-d2fd Adfd|Adfd BABc|d2fd Adfb|afea fddA|
-d2fd Adfd|Adfd ~e3f|gfec dcBA|(3Bcd ec dBAF||
+!1!D!2!F!4!AF BFAF|DFAF !1!E2!3!F!2!E|!1!D2!2!FA !5!BA!2!F!1!A|1 !2!(3Bcd !5!ec dB!1!A!2!F:|2 !2!(3Bcd ec !4!d3!1!A||
+!3!d2!5!fd !1!Ad!5!f!3!d|!1!Adf!3!d !2!BAB!3!c|!1!d2!3!f!2!d !1!A!2!d!3!f!5!b|!4!a!3!f!2!e!5!a !3!f!1!d!3!d!1!A|
+!3!d2!5!fd !1!A!3!d!5!f!3!d|!1!A!2!d!3!f!1!d !2!~e3f|!4!g!3!f!1!e!3!c !4!dcB!1!A|!2!(3Bcd !5!ec !4!d!2!B!1!A!2!F||
 X:13063
 %%etbk:tnset id:248,pos:1,rep:3x,ant:undefined
 %%etbk:wsite http://thesession.org/tunes/1990
 %%etbk:video src:ytube,cde:wovHOcbm-BQ,desc:
 %%etbk:skill ?
+%%etbk:pldat 2013-09-11T19:27
 T: Jenny Will You Marry Me?
 Z: Piano Box Version by Martin Fleischmann
 H: Created 2013-09-08 /  Last Modified 2013-09-09
@@ -8102,29 +8129,33 @@ X:13064
 %%etbk:video src:ytube,cde:yAkVrc5LjsI,desc:third tune
 %%etbk:skill ?
 T: Charlie Mulvihill's
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-10 /  Last Modified 2013-09-10
 R: reel
 M: 4/4
 L: 1/8
 K: Dmaj
-dB|: AF FF G3B | AF FF EGFE | D2 FA dfed | dBAF E2 dB |
-AF FF G2dB | AF F2 EGFE | D2 FA dfed |1 dBAF D2 dB :|2 dBAF Daag||
-fffa g2 fg | afdf eBBA | fffe dfed | dBAF E2 fg 
-|1afff bfff | afdf eBBA | fgfe dfed | dBAF Daag :|
-|2a3f bafe | dfed BBBe | fgfe dfed | dBAF D2dB ||
+!5!d!4!B|: !3!A!2!F FF !3!G3B | !4!AF FF !1!E!4!GFE | !1!D2 !2!F!3!A !5!d!3!fe!1!d | !4!d!2!B!1!A!2!F !1!E2 dB |
+!3!AF FF G3B | AF F2 EGFE | !1!D2 !2!F!1!A !3!d!5!fe!3!d |1 !3!dB!1!A!2!F !1!D2 dB :|2 dBAF D!5!aag||
+!3!fffa !4!g2 fg | !5!afd!3!f !2!e!1!B!2!B!1!A | fffe dfed | dBAF E2 fg 
+|1!5!a!3!fff !5!bfff | !5!afdf !2!e!1!B!1!B!2!e | !3!fgfe !1!dfe!1!d | !4!dBAF Daag :|
+|2!5!a3f !5!ba!3!fe | !1!d!4!fe!2!d !1!BBB!2!e | fgfe dfed | dBAF D2dB ||
 X:13065
 %%etbk:tnset id:250,pos:1,rep:3x,ant:undefined
 %%etbk:wsite http://thesession.org/tunes/941
 %%etbk:video src:ytube,cde:yAkVrc5LjsI,desc:second tune
 %%etbk:skill ?
 T: The Gatehouse Maid
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-10 /  Last Modified 2013-09-10
 R: reel
 M: 4/4
 L: 1/8
-K: Gmaj
-A2Bd edBA|GBAE GEDE|A2Bd eBBB|gedB {c}BAGB|
-A2gf edBA|GGGA GEDE|A2Bd eBBB|egdB {c}BAAe||
-~a2ea {b}agef|~g2dg Bgdg|~a2ea {b}agab| gedB {c}BAAz|
-agab agef|~g3a gzge|dega bgag|gedB {c}BAGB||
+K: Ador
+!1!A2Bd !5!edBA|!3!GGGA !3!GEDE|!4!A!1!ABd !5!e!1!BBB|!5!g!4!ed!2!B {c}B!1!A!1!G!2!B|
+!1!A2!5!gf !3!ed!1!B!2!A|!1!G2!3!GA GEDE|!4!A!1!ABd eBBB|egdB {c}BAAe||
+!5!a2!1!e!4!a {b}agef|!3!~g2!1!dg !1!Bgdg|!4!aaea {b}agab| !3!ge!1!d!2!B {c}B!1!AAz|
+!4!agab agef|~g3a gzge|dega bga!3!g|!4!gedB {c}BAGB||
 X:13066
 %%etbk:tnset id:251,pos:1,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:JlpIhMwQU-w,desc:first tune
@@ -8146,16 +8177,18 @@ fdec dABG|FFDF A3A|defd AGFD|Ed=cA GABc|
 dD~D2 ADFD|dD~D2 A2(3ABc|dD~D2 ADFD|GE=CE GABc|
 dD~D2 ADFA|dD~D2 A2(3ABc|defd AGFD|Ed=cA GBAG|
 X:13067
-%%etbk:tnset id:252,pos:2,rep:3x,ant:undefined
+%%etbk:tnset id:252,pos:1,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:YsqoDuI_eJ4,desc:second tune
 %%etbk:skill ?
 T: The Famous Ballymote
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-10 /  Last Modified 2013-09-10
 R: reel
 M: 4/4
 L: 1/8
 K: Dmix
 !2!FD!3!AD FAA!4!B|!5!cA!4!BG !1!EFGE|FDAD FAAB|!5!cA!2!G!1!E !2!E!1!D D2:||
-FDFA !5!d2 !5!ed|!3!c!1!A!4!BG EFGE|FDFA d2 ed|cAGE ED D2:||
+FDFA !5!d2 !5!ed|!3!c!1!A!4!BG EFGE|FDFA d2 !5!e!4!d|!3!c!2!A!1!G!2!E E!1!D D2:||
 X:13068
 %%etbk:tnset id:221,pos:1,rep:3x,ant:undefined
 %%etbk:video src:ytube,cde:9uWMPaQj7NY,desc:first tune (-1)
@@ -8175,31 +8208,38 @@ eaae abag|ebae gbag|edd^c dega|bbab gedg|
 X:13069
 %%etbk:tnset id:254,pos:2,rep:3x,ant:undefined
 %%etbk:skill ?
+%%etbk:pldat 2013-09-11T20:03
 T: The Crock Of Gold
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-11 /  Last Modified 2013-09-11
 R: reel
 M: 4/4
 L: 1/8
 K: Gmaj
-|: B3B BAGE | G3A GEDB, | DEGA BAGA | BedB BAAc |
-B3c BAGE | GBAG GED2 | g2fg egdB |1 DEGA BAGA :|2 DEGA BGG2||
-|: eaa2 baga | baga bagf| gedB GABd | egdB BAA2 |
-eaa2 baga | baga bagf| g2fg egdB | DEGA BGG2 :|
+|: "G"!5!B3B BAGE | !3!G3A GE!1!DB, | !1!DEG!4!A !3!BAGA | !3!B!5!edB "D"B!2!AA!4!c |
+"G"!3!B3c BA!1!G!2!E | !3!GBAG GED2 | !4!g2fg egdB |1 DEGA BAGA :|2GGGA BGG2||
+|: "am"!2!e!4!aaa !5!baga | baga bag!2!f| !4!ge!1!d!3!B !1!GAB!4!d | !2!eg!1!d!2!B B!1!AA2 |
+!2!e!4!aaa !5!baga | baga bag!2!f| !4!g2fg !2!eg!1!dB | DEGA BGG2 :|
 X:13070
 %%etbk:tnset id:254,pos:1,rep:3x,ant:undefined
 %%etbk:wsite http://comhaltas.ie/music/detail/comhaltaslive_246_1_cruinniu
 %%etbk:skill ?
+%%etbk:pldat 2013-09-11T20:03
 T: The Milky Way
+Z: Piano Box Version by Martin Fleischmann
+H: Created 2013-09-11 /  Last Modified 2013-09-11
 R: reel
 M: 4/4
 L: 1/8
 K: Dmaj
-D2 FD FAAB | defd efd2 | D2 FD FAAA | BFFF BFAF |
-D2 FD FAAB | defd ef d2 | efdB BAFB | AFEG FD D2 :|
-|efdB BAFA | d2 fd ef d2 | efdB BAFB | AFEG FD D2 |
-efdB BAFA | d2 fd efde | f2 df efdB | AFEG FD D2 :|
+!1!D2 !2!FD !2!F!4!A!1!AB | !3!defd efd2 | D2 FD !2!F!4!AAA | !5!B!2!FFF !5!BF!4!AF |
+D2 FD FAAB | defd ef d2 | !4!efd!2!B !2!B!1!A!2!F!5!B | !4!AF!1!E!3!G !2!F!1!D D2 :|
+|: !4!efd!2!B B!1!AFA | !3!d2 fd ef d2 | !4!efdB B!1!A!2!F!5!B | !4!AFE!3!G F!1!D D2 |
+!4!efdB BAFA | !3!d2 fd efde | !5!f2 df !4!efdB | !1!A!3!FEG !3!F!1!D D2 :|
 X:13071
 %%etbk:tnset id:240,pos:3,rep:3x,ant:undefined
 %%etbk:skill ?
+%%etbk:pldat 2013-09-12T18:46
 T: The Green Mountain
 R: reel
 M: 4/4

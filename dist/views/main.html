@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="navbar-header pull-right">
+    <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -8,6 +8,8 @@
         </button>
         <a class="navbar-brand" href="#/info/introduction">eTuneBook</a>
     </div>
+
+
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
@@ -27,10 +29,12 @@
             <li ng-class="{ active: tunesMenuActive }"><a ng-click="showTunes()">Tunes</a></li>
             <li ng-class="{ active: infoMenuActive }"><a ng-click="showInfo()"> Info</a></li>
         </ul>
+        <div ui-view="booktitle" class="navbar-text"></div>
     </div><!-- /.navbar-collapse -->
 </nav>
 <div class="container">
-    <div ui-view="booktitle"></div>
+    <!--<div ui-view="booktitle"></div>-->
+
 
     <!--/book or /sets or /tunes or /abc or /info -->
     <div ui-view=""></div>
@@ -48,5 +52,3 @@
 
 </div> <!-- /container -->
 <input class="input-file" id="fileInput" type="file" tbk-file-select="">
-
-<div ui-view="search"></div>

@@ -60,6 +60,11 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
     }
     setSelectedTuneSetEnvFilter(env);
 
+    $scope.editSetFilter = function( ) {
+        angular.element("#SetFilter").modal("show");
+    };
+
+
     function setSelectedTuneSetTypeFilter(type) {
 		for (var i = 0; i < $scope.tuneSetTypesForFilter.length; i++) {	
 			if ($scope.tuneSetTypesForFilter[i].type == type){
@@ -298,7 +303,44 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
         $scope.skillTypes = skillTypes;
     }
 
-    $scope.filter = function () {
+    $scope.applySetFilter = function () {
+
+        angular.element("#SetFilter").modal("hide");
+
+        $timeout(function(){
+            var key, type, color, skill, target, env;
+
+            type = $scope.tuneSetTypeForFilter.type;
+            key = $scope.tuneSetKeyForFilter.key;
+            color = $scope.tuneSetColorForFilter.color;
+            skill = $scope.skillType.description;
+            target = $scope.tuneSetTargetForFilter.target;
+            env = $scope.tuneSetEnvForFilter.env;
+
+            if($scope.tuneSetTypeForFilter.type == "All Types"){
+                type = "";
+            }
+            if($scope.tuneSetKeyForFilter.key == "All Keys"){
+                key = "";
+            }
+            if($scope.tuneSetColorForFilter.color == "All Colors"){
+                color = "";
+            }
+            if($scope.skillType.description == "All Skills"){
+                skill = "";
+            }
+            if($scope.tuneSetTargetForFilter.target == "All Targets"){
+                target = "";
+            }
+            if($scope.tuneSetEnvForFilter.env == "All Environments"){
+                env = "";
+            }
+            $state.transitionTo('setlist', {key: key, type: type, color: color, skill: skill, targ: target, env: env});
+
+        },1000);
+
+
+        /*
         var key, type, color, skill, target, env;
 
         type = $scope.tuneSetTypeForFilter.type;
@@ -327,6 +369,7 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
             env = "";
         }
         $state.transitionTo('setlist', {key: key, type: type, color: color, skill: skill, targ: target, env: env});
+        */
     };
 });
 

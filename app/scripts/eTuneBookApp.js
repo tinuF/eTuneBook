@@ -52,16 +52,6 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
         }
     };
 
-    /*
-    var sets = {
-        name: 'sets',
-        parent: main,
-        url: '/sets?tune&type&key&color&skill&page&sort&desc',
-        templateUrl: 'views/sets.html',
-        controller: 'setsCtrl'
-    };
-    */
-
     var sets = {
         name: 'sets',
         abstract: true,
@@ -93,7 +83,7 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
             //'pagination@setlist': {
             //    templateUrl: 'views/pagination.html'
             //},
-            'search@main': {
+            'search@setlist': {
                 templateUrl: 'views/filter.html',
                 controller: 'filterCtrl'
             }
@@ -208,8 +198,8 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
 
     var filter = {
         name: 'filter',
-        parent: main,
-        url: '/filter',
+        parent: setlist,
+        url: '',
         templateUrl: 'views/filter.html',
         controller: 'filterCtrl'
     };
