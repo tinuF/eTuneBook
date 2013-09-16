@@ -1,37 +1,69 @@
+<div class="btn-group dotsViewerBtn">
+    <button type="button" class="btn btn-default dropdown-toggle  active" data-toggle="dropdown" ng-style="{'background-color':tune.color}">
+        <strong> {{ tune.title | eliminateThe }}</strong> <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" ng-style="{'background-color':tune.color}">
+        <li ng-repeat="tune in tunes | orderBy:'title'"><a href="#tunes/{{tune.intTuneId}}" >{{ tune.title | eliminateThe }}</a></li>
+    </ul>
+
+</div>
+
+<div class="btn-group dotsViewerBtn">
+    <button type="button" class="btn btn-default dropdown-toggle  active" data-toggle="dropdown" ng-style="{'background-color':tune.color}">
+        {{ currentState }} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" ng-style="{'background-color':tune.color}">
+        <li ><a href="#tunes/{{intTuneId}}" >Dots</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/sets" >Sets</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/videos" >Videos</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/abc" >Abc</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/practice" >Practice</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/info" >Info</a></li>
+    </ul>
+</div>
+
+<button type="button" class="btn btn-default " ng-click="loadRandomTune()">
+    Random
+</button>
+
+
+<!--
+<div class="btn-group dotsViewerBtn">
+    <button type="button" class="btn btn-default dropdown-toggle  active" data-toggle="dropdown" ng-style="{'background-color':tune.color}">
+        {{ tune.title | eliminateThe }} <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" ng-style="{'background-color':tune.color}">
+        <li ><a href="#tunes/{{intTuneId}}/sets" >Sets</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/videos" >Videos</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/abc" >Abc</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/practice" >Practice</a></li>
+        <li ><a href="#tunes/{{intTuneId}}/info" >Info</a></li>
+    </ul>
+</div>
+-->
+
+<div ui-view></div>
+
 <div id="dotsViewer" class="dotsViewer row" ng-style="{'background-color':tune.color}">
-    <!--<div class="container">-->
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="tuneControlButtons">
 
-            <div class="tuneControlButtons">
-
-                <div class="played pull-left">
-                    <a class='btn btn-xs btn-default justPlayedTheTune' ng-click="justPlayedTheTune(tune)" title="Just Played The Tune">Played </a>{{tune.lastPlayed | fromNow}}
-                </div>
-
-                <div class="tuneColorizer">
-                    Color: <input type="text" name="{{tune.color}}" value="{{tune.color}}"  title="Colorize" tbk-colorselect/>
-                </div>
-
-                <div class="transposeButtons pull-right">
-                    Transpose:
-                    <a class='btn btn-xs btn-default' ng-click="tuneUp()" title="Tune Up" ><i class='glyphicon glyphicon-arrow-up'></i></a>
-                    <a class='btn btn-xs btn-default' ng-click="tuneDown()" title="Tune Down" ><i class='glyphicon glyphicon-arrow-down'></i></a>
-                </div>
-
-            </div>
-
-            <div id="renderTheDotsFor{{tune.intTuneId}}" class="renderTheDots"></div>
+        <div class="played pull-left">
+            <a class='btn btn-xs btn-default justPlayedTheTune' ng-click="justPlayedTheTune(tune)" title="Just Played The Tune">Played </a>{{tune.lastPlayed | fromNow}}
         </div>
-        <!--<div id="renderMidi" class="midiPlayer"></div>-->
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-            <ul class="nav nav-tabs">
-                <li ng-class="tabClass(tab)" ng-repeat="tab in tabs" tab="tab"><a href="{{tab.link}}" ng-click="setSelectedTab(tab)">{{tab.label}}</a></li>
-            </ul>
 
-            <!--<div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" class="tuneTabContent"></div>-->
-            <div ui-view class="tuneTabContent"></div>
+        <div class="tuneColorizer">
+            Color: <input type="text" name="{{tune.color}}" value="{{tune.color}}"  title="Colorize" tbk-colorselect/>
         </div>
-    <!--</div>-->
+
+        <div class="transposeButtons pull-right">
+            Transpose:
+            <a class='btn btn-xs btn-default' ng-click="tuneUp()" title="Tune Up" ><i class='glyphicon glyphicon-arrow-up'></i></a>
+            <a class='btn btn-xs btn-default' ng-click="tuneDown()" title="Tune Down" ><i class='glyphicon glyphicon-arrow-down'></i></a>
+        </div>
+
+    </div>
+
+    <div id="renderTheDotsFor{{tune.intTuneId}}" class="renderTheDots"></div>
 </div>
 
 

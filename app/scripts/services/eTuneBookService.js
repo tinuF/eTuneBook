@@ -72,7 +72,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         //Private Variables
         var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
         var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-        var eTBK_VERSION = '1.1.2';
+        var eTBK_VERSION = '1.1.3';
         var ABC_VERSION = '2.1';
         //var eTBK_DEFAULT_COLOR = "#E0F0F0";
         var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -80,7 +80,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
         var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
         var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-        var eTBk_EXAMPLE_VERSION = '2013-09-12';
+        var eTBk_EXAMPLE_VERSION = '2013-09-16';
         var currentTuneBook;
 
         //Private Methods
@@ -1339,6 +1339,16 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 				tuneBook.tuneSets[i].sort = randomNumber;
 			}	
 		}
+
+        function getRandomTuneSetIndex(tuneBook){
+            // Get a random number between 1 and the number of TuneSets
+            return Math.floor(Math.random()* tuneBook.tuneSets.length) + 1;
+        }
+
+        function getRandomTuneIndex(tunes){
+            // Get a random number between 1 and the number of Tunes
+            return Math.floor(Math.random()* tunes.length) + 1;
+        }
 				
 		function getAbc(tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl){
 			// Generate Abc
@@ -2133,6 +2143,32 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return tuneSetPositions;
         }
 
+        function extractFirstTuneSetPositions(tuneSets){
+            // Extract First TuneSetPositions from all TuneSets.
+            var tuneSetPositions = [];
+
+            for (var i = 0; i < tuneSets.length; i++) {
+                for (var z = 0; z < tuneSets[i].tuneSetPositions.length; z++) {
+                    if (tuneSets[i].tuneSetPositions[z].position == "1"){
+                        tuneSetPositions.push(tuneSets[i].tuneSetPositions[z]);
+                    }
+                }
+            }
+
+            return tuneSetPositions;
+        }
+
+        function extractFirstTuneSetPosition(tuneSet){
+            // Extract First TuneSetPosition from a TuneSet.
+
+            for (var z = 0; z < tuneSet.tuneSetPositions.length; z++) {
+                if (tuneSet.tuneSetPositions[z].position == "1"){
+                    return tuneSet.tuneSetPositions[z];
+                }
+            }
+        }
+
+
         function getTuneSetsByIntTuneId(tuneBook, intTuneId){
             var tuneSets = [];
 
@@ -2431,6 +2467,17 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return getTuneSetById(currentTuneBook, tuneSetId);
         };
 
+        eTBk.getRandomTuneSetId = function () {
+            var tuneSetIndex = getRandomTuneSetIndex(currentTuneBook);
+            return currentTuneBook.tuneSets[tuneSetIndex].tuneSetId;
+        };
+
+        eTBk.getRandomIntTuneId = function () {
+            var tunes = extractTunes(currentTuneBook);
+            var tuneIndex = getRandomTuneIndex(tunes);
+            return tunes[tuneIndex].intTuneId;
+        };
+
         eTBk.getTune = function (intTuneId) {
             return getTuneById(currentTuneBook, intTuneId);
         };
@@ -2445,6 +2492,14 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
         eTBk.getTunes = function () {
             return extractTunes(eTBk.getCurrentTuneBook());
+        };
+
+        eTBk.getFirstTuneSetPositions = function () {
+            return extractFirstTuneSetPositions(eTBk.getCurrentTuneBook().tuneSets);
+        };
+
+        eTBk.getFirstTuneSetPosition = function (tuneSet) {
+            return extractFirstTuneSetPosition(tuneSet);
         };
 
         eTBk.getTuneSetPositions = function () {

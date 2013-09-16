@@ -8,6 +8,8 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
     $scope.tuneSetId = $stateParams['tuneSetId'];
     $scope.tuneSet =  eTuneBookService.getTuneSet($scope.tuneSetId);
     $scope.tuneBook = eTuneBookService.getCurrentTuneBook();
+    $scope.firstTuneSetPositions = eTuneBookService.getFirstTuneSetPositions();
+    $scope.currentFirstTuneSetPosition = eTuneBookService.getFirstTuneSetPosition($scope.tuneSet);
 
     setTargetTuneSetPositionsForMoving();
 
@@ -104,6 +106,11 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
 
         return parseInt(tuneSetPosition.position);
     }
+
+    $scope.loadRandomTuneSet = function( ) {
+        var tuneSetId = eTuneBookService.getRandomTuneSetId();
+        $state.transitionTo('set', {tuneSetId: tuneSetId});
+    };
 });
 
 

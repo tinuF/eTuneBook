@@ -10,6 +10,8 @@ angular.module('eTuneBookApp').controller( 'tunepracticeCtrl', function( $scope,
     $scope.tunePlayDates = $scope.tune.playDates;
     $scope.tunePlayDatesSelected = [];
 
+    $scope.$parent.currentState = "Practice";
+
     $scope.tunePlayDateList = {
         data: 'tunePlayDates',
         selectedItems: $scope.tunePlayDatesSelected,

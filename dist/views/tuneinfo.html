@@ -2,6 +2,13 @@
     <button class="btn btn-xs btn-default" ng-click="newWebsite()">New</button>
     <div class="tuneWebsiteListGrid" ng-grid="tuneWebsiteList"></div>
     <br>
-    <label>Comment</label>
-    <input type="text" class="input-xlarge" id="inputAnnotiation" ng-model="tune.annotation" ng-blur="storeTuneBook()">
+
+    <form class="form" role="form">
+        <div class="form-group">
+            <label class="control-label" for="inputAnnotation">Comment</label>
+            <div>
+                <input type="text" class="form-control" id="inputAnnotation" ng-model="tune.annotation" ng-blur="storeTuneBook()">
+             </div>
+        </div>
+    </form>
 </div>

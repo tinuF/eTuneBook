@@ -72,14 +72,20 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $locat
 	};
 
     $scope.showSets = function(  ) {
+        initActiveMenu();
+        $scope.setsMenuActive = true;
         $state.transitionTo('setlist');
     };
 
     $scope.showTunes = function(  ) {
+        initActiveMenu();
+        $scope.tunesMenuActive = true;
         $state.transitionTo('tunelist');
     };
 
     $scope.showInfo = function(  ) {
+        initActiveMenu();
+        $scope.infoMenuActive = true;
         $state.transitionTo('info.introduction');
     };
 
@@ -88,12 +94,14 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $locat
         $scope.setsMenuActive = false;
         $scope.tunesMenuActive = false;
         $scope.infoMenuActive = false;
+        /*
         $scope.introductionMenuActive = false;
         $scope.getStartedMenuActive = false;
         $scope.manualMenuActive = false;
         $scope.releaseNotesMenuActive = false;
         $scope.creditsMenuActive = false;
         $scope.feedbackMenuActive = false;
+        */
     }
 
 
@@ -133,11 +141,17 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $locat
         var pathSplits = path.split("/");
         var beginOfPath = pathSplits[1].substring(0,4);
 
+        //$scope.pathSplits = pathSplits;
+
         initActiveMenu();
         if (beginOfPath == "sets"){
-            $scope.setsMenuActive = true;
+            if (pathSplits.length == 2){
+                $scope.setsMenuActive = true;
+            }
         } else if (beginOfPath == "tune"){
-            $scope.tunesMenuActive = true;
+            if (pathSplits.length == 2){
+                $scope.tunesMenuActive = true;
+            }
         } else if (beginOfPath == "book"){
             $scope.bookMenuActive = true;
         } else if (beginOfPath == "abc"){
@@ -145,6 +159,7 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $locat
         } else if (beginOfPath == "info"){
             $scope.infoMenuActive = true;
             // siehe info.html
+            /*
             beginOfPath = pathSplits[2].substring(0,5);
             if (beginOfPath == "intro"){
                 $scope.introductionMenuActive = true;
@@ -159,8 +174,10 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $locat
             } else if (beginOfPath == "feedb"){
                 $scope.feedbackMenuActive = true;
             }
+            */
         }
     });
+
 });
 
 

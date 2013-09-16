@@ -1,4 +1,52 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header pull-right">
+        <a class="navbar-brand" href="#/info/introduction"><img src="../../favicon.ico" class="img-responsive" alt="eTuneBook">
+        </a>
+    </div>
+    <div class="navbar-header pull-left">
+        <div class="btn-group">
+            <button type="button" ng-class="{ active: bookMenuActive }" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Book <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a ng-click="initializeTuneBook()">New</a></li>
+                <li><a tbk-file-select-delegate>Import</a></li>
+                <li><a ng-click="loadBxplTuneBook()">{{exampleFileNameWithoutAbc}} - Version {{exampleVersion}}</a></li>
+                <li class="divider"></li>
+                <li><a ng-click="editTuneBook()">Edit Book Title</a></li>
+                <li class="divider"></li>
+                <li><a ng-click="exportTuneBook()">Export</a></li>
+            </ul>
+
+        </div>
+
+        <button class="btn btn-default navbar-btn" ng-class="{ active: setsMenuActive }" ng-click="showSets()">Sets</button>
+        <button class="btn btn-default navbar-btn" ng-class="{ active: tunesMenuActive }" ng-click="showTunes()">Tunes</button>
+        <!--
+        <button class="btn btn-default navbar-btn" ng-class="{ active: infoMenuActive }" ng-click="showInfo()"> Info</button>
+        -->
+
+        <div class="btn-group">
+            <button type="button" ng-class="{ active: infoMenuActive }" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Info <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li ng-class="{ active: introductionMenuActive }"><a href="#/info/introduction"> Introduction</a></li>
+                <li ng-class="{ active: getStartedMenuActive }"><a href="#/info/getstarted"> Getting Started</a></li>
+                <li ng-class="{ active: manualMenuActive }"><a href="#/info/manual"> Manual</a></li>
+                <li ng-class="{ active: releaseNotesMenuActive }"><a href="#/info/releasenotes"> Release Notes</a></li>
+                <li ng-class="{ active: creditsMenuActive }"><a href="#/info/credits"> Credits</a></li>
+                <li ng-class="{ active: feedbackMenuActive }"><a href="#/info/feedback"> Feedback</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <!--<div ui-view="booktitle" class="navbar-text"></div>-->
+
+
+    <!--
+
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -8,7 +56,6 @@
         </button>
         <a class="navbar-brand" href="#/info/introduction">eTuneBook</a>
     </div>
-
 
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -30,10 +77,18 @@
             <li ng-class="{ active: infoMenuActive }"><a ng-click="showInfo()"> Info</a></li>
         </ul>
         <div ui-view="booktitle" class="navbar-text"></div>
-    </div><!-- /.navbar-collapse -->
+    </div>
+    -->
+    <!-- /.navbar-collapse -->
 </nav>
 <div class="container">
     <!--<div ui-view="booktitle"></div>-->
+
+    <!--
+    <ol class="breadcrumb">
+        <li ng-repeat="pathSplit in pathSplits"><a href="{{ pathSplit }}">{{ pathSplit }}</a></li>
+    </ol>
+    -->
 
 
     <!--/book or /sets or /tunes or /abc or /info -->
@@ -41,14 +96,11 @@
     <!--<div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>-->
 
     <!--
-    <div class="row-fluid">
-        <div class="span8" >
-            <iframe class="fbLikeBox" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fe-TuneBook%2F577631982265183&amp;width=292&amp;height=427&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:427px;" allowTransparency="true"></iframe>
-        </div>
-        <div class="span4" >
-        </div>
+    <div class="row">
+        <iframe class="fbLikeBox" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fe-TuneBook%2F577631982265183&amp;width=292&amp;height=427&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:427px;" allowTransparency="true"></iframe>
     </div>
     -->
+
 
 </div> <!-- /container -->
 <input class="input-file" id="fileInput" type="file" tbk-file-select>

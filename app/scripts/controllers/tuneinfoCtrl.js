@@ -8,6 +8,8 @@ angular.module('eTuneBookApp').controller( 'tuneinfoCtrl', function ( $scope, $l
     $scope.intTuneId = $stateParams['intTuneId'];
     $scope.tune =  eTuneBookService.getTune($scope.intTuneId);
 
+    $scope.$parent.currentState = "Info";
+
     $scope.tuneWebsites = $scope.tune.wsites;
 
     $scope.tuneWebsitesSelected = [];

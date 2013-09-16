@@ -8,40 +8,49 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
     $scope.intTuneId = $stateParams['intTuneId'];
     $scope.tune =  eTuneBookService.getTune($scope.intTuneId);
 
+    $scope.tunes =  eTuneBookService.getTunes();
+
+    $scope.currentState = "Dots";
+
     renderAbc($scope.tune);
 
+    $scope.showTuneSets = function(  ) {
+        initActiveMenu();
+        $scope.tuneSetsMenuActive = true;
+        $state.transitionTo('tunesets', {intTuneId: $scope.intTuneId});
+    };
 
+    $scope.showTuneVideos = function(  ) {
+        initActiveMenu();
+        $scope.tuneVideosMenuActive = true;
+        $state.transitionTo('tunevideos', {intTuneId: $scope.intTuneId});
+    };
 
-    $scope.tabs = [
-        { link : '#tunes/'+$scope.intTuneId+'/sets', label : 'Sets' },
-        { link : '#tunes/'+$scope.intTuneId+'/videos', label : 'Videos' },
-        { link : '#tunes/'+$scope.intTuneId+'/abc', label : 'Abc' },
-        { link : '#tunes/'+$scope.intTuneId+'/practice', label : 'Practice' },
-        { link : '#tunes/'+$scope.intTuneId+'/info', label : 'Info' }
-    ];
+    $scope.showTuneAbc = function(  ) {
+        initActiveMenu();
+        $scope.tuneAbcMenuActive = true;
+        $state.transitionTo('tuneabc', {intTuneId: $scope.intTuneId});
+    };
 
+    $scope.showTunePractice = function(  ) {
+        initActiveMenu();
+        $scope.tunePracticeMenuActive = true;
+        $state.transitionTo('tunepractice', {intTuneId: $scope.intTuneId});
+    };
 
+    $scope.showTuneInfo = function(  ) {
+        initActiveMenu();
+        $scope.tuneInfoMenuActive = true;
+        $state.transitionTo('tuneinfo', {intTuneId: $scope.intTuneId});
+    };
 
-    if ($state.is('tune')){
-        $state.transitionTo('tunesets', {intTuneId: $scope.tune.intTuneId});
-        $scope.selectedTab = $scope.tabs[0];
-    } else if ($state.is('tuneabc')){
-        //'New Tune'-Button pressed
-        $scope.selectedTab = $scope.tabs[2];
+    function initActiveMenu(){
+        $scope.tuneSetsMenuActive = false;
+        $scope.tuneVideosMenuActive = false;
+        $scope.tuneAbcMenuActive = false;
+        $scope.tunePracticeMenuActive = false;
+        $scope.tuneInfoMenuActive = false;
     }
-
-    $scope.setSelectedTab = function(tab) {
-        $scope.selectedTab = tab;
-    };
-
-    $scope.tabClass = function(tab) {
-        if ($scope.selectedTab == tab) {
-            return "active";
-        } else {
-            return "";
-        }
-    };
-
 
     function renderAbc(tune) {
         //Render Abc
@@ -108,5 +117,17 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
         eTuneBookService.addTunePlayDate(tune, now);
         eTuneBookService.storeTuneBookAbc();
     };
+
+    $scope.loadRandomTune = function( ) {
+        var intTuneId = eTuneBookService.getRandomIntTuneId();
+        $state.transitionTo('tune', {intTuneId: intTuneId});
+    };
+
+
+    $scope.$watch(function () { return $state.is('tune'); }, function() {
+        if ($state.is('tune')){
+            $scope.currentState = "Dots";
+        }
+    });
 
 });

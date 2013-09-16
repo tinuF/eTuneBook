@@ -7,6 +7,8 @@ angular.module('eTuneBookApp').controller( 'tunesetsCtrl', function ( $scope, $l
     // Get current tune
     $scope.intTuneId = $stateParams['intTuneId'];
 
+    $scope.$parent.currentState = "Sets";
+
     $scope.tuneSetPositions = eTuneBookService.getTuneSetsAsTuneSetPositions($scope.intTuneId);
     $scope.tuneSetPositionsSelected = [];
 

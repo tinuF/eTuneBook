@@ -8,6 +8,8 @@ angular.module('eTuneBookApp').controller( 'tunevideosCtrl', function( $scope, $
     $scope.intTuneId = $stateParams['intTuneId'];
     $scope.tune =  eTuneBookService.getTune($scope.intTuneId);
 
+    $scope.$parent.currentState = "Videos";
+
     $scope.tuneVideos = $scope.tune.videos;
 
     $scope.tuneVideosSelected = [];

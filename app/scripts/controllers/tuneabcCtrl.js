@@ -8,6 +8,8 @@ angular.module('eTuneBookApp').controller( 'tuneabcCtrl', function tuneabcCtrl( 
     $scope.intTuneId = $stateParams['intTuneId'];
     $scope.tune =  eTuneBookService.getTune($scope.intTuneId);
 
+    $scope.$parent.currentState = "Abc";
+
     $timeout(function() {
         var editHere = 'abcEditorFor' + $scope.intTuneId;
         var showHere = 'renderTheDotsFor' + $scope.intTuneId;

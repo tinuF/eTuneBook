@@ -21,6 +21,7 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
         //sortInfo: { fields: ['title'], directions: ['asc'] },
         showFilter: true,
         showColumnMenu: true,
+        /*rowHeight: 35,*/
         rowTemplate: rowTempl,
         //showFooter: true,
         afterSelectionChange: function () {
@@ -29,9 +30,9 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
         //enableRowSelection: false,
         columnDefs: [
             //{field: '',
-            //    cellTemplate: '<a class="btn btn-mini btn-info dotsViewerBtn" href="#/tunes/{{row.entity.intTuneId}}/dots" title="Show The Tune" ><i class="icon-music"></i></a>'
-            //        + '<a class="btn btn-mini btn-info setsViewerBtn" href="#/sets?tune={{row.entity.intTuneId}}" title="Show The Sets" >Sets</a>',
-            //    width:'5%'
+              //  cellTemplate: '<a class="btn btn-xs dotsViewerBtn" href="#/tunes/{{row.entity.intTuneId}}/dots" title="Show The Tune" >Tune</a>'
+              //      + '<a class="btn btn-xs setsViewerBtn" href="#/sets?tune={{row.entity.intTuneId}}" title="Show The Sets" >Sets</a>',
+              //  width:'15%'
             //},
             {field:'title',
                 displayName:'Tune',
