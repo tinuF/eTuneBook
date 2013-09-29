@@ -15,9 +15,17 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
     renderAbc($scope.tune);
 
     $scope.showTuneSets = function(  ) {
-        initActiveMenu();
-        $scope.tuneSetsMenuActive = true;
-        $state.transitionTo('tunesets', {intTuneId: $scope.intTuneId});
+        var sets = eTuneBookService.getTuneSetsByIntTuneId($scope.intTuneId);
+
+        if (sets.length == 0 || sets.length > 1) {
+            initActiveMenu();
+            $scope.tuneSetsMenuActive = true;
+            $state.transitionTo('tunesets', {intTuneId: $scope.intTuneId});
+        } else {
+            //Tune kommt nur in einem Set vor -> Set-View anzeigen
+            $state.transitionTo('set', {tuneSetId: sets[0].tuneSetId});
+        }
+
     };
 
     $scope.showTuneVideos = function(  ) {
@@ -118,8 +126,9 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
         eTuneBookService.storeTuneBookAbc();
     };
 
-    $scope.loadRandomTune = function( ) {
-        var intTuneId = eTuneBookService.getRandomIntTuneId();
+    $scope.loadRandomTune = function(playDateFilter) {
+        $scope.$parent.playDateFilter = playDateFilter;
+        var intTuneId = eTuneBookService.getRandomIntTuneId(playDateFilter);
         $state.transitionTo('tune', {intTuneId: intTuneId});
     };
 

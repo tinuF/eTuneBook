@@ -24,9 +24,9 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
         /*rowHeight: 35,*/
         rowTemplate: rowTempl,
         //showFooter: true,
-        afterSelectionChange: function () {
-            $state.transitionTo('tune', {intTuneId: $scope.tunesSelected[0].intTuneId});
-        },
+        //afterSelectionChange: function () {
+        //    $state.transitionTo('tune', {intTuneId: $scope.tunesSelected[0].intTuneId});
+        //},
         //enableRowSelection: false,
         columnDefs: [
             //{field: '',
@@ -37,7 +37,9 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
             {field:'title',
                 displayName:'Tune',
                 cellFilter: 'eliminateThe',
-                width:'50%'
+                width:'50%',
+                cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.title}}</a>'
+
             },
             {field:'type', displayName:'Type', width:'10%'},
             {field:'key', displayName:'Key', width:'5%'},

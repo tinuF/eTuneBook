@@ -107,8 +107,9 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
         return parseInt(tuneSetPosition.position);
     }
 
-    $scope.loadRandomTuneSet = function( ) {
-        var tuneSetId = eTuneBookService.getRandomTuneSetId();
+    $scope.loadRandomTuneSet = function(playDateFilter) {
+        $scope.$parent.playDateFilter = playDateFilter;
+        var tuneSetId = eTuneBookService.getRandomTuneSetId(playDateFilter);
         $state.transitionTo('set', {tuneSetId: tuneSetId});
     };
 });

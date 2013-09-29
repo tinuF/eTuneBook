@@ -1,3 +1,23 @@
+
+<div class="btn-group btn-default">
+    <button type="button" class="btn btn-default" ng-click="loadRandomTune(playDateFilter)">
+        Random: {{playDateFilter}}
+    </button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li ng-click="loadRandomTune('All Tunes')" ><a href="" >All Tunes</a></li>
+        <li ng-click="loadRandomTune('Played Last Day')"><a href="" >Played Last Day</a></li>
+        <li ng-click="loadRandomTune('Played Last Week')"><a href="" >Played Last Week</a></li>
+        <li ng-click="loadRandomTune('Played Last Month')"><a href="" >Played Last Month</a></li>
+        <li ng-click="loadRandomTune('Played Last Year')"><a href="" >Played Last Year</a></li>
+        <li ng-click="loadRandomTune('Played Never')"><a href="" >Played Never</a></li>
+    </ul>
+</div>
+
+<br>
+
 <div class="btn-group dotsViewerBtn">
     <button type="button" class="btn btn-default dropdown-toggle  active" data-toggle="dropdown" ng-style="{'background-color':tune.color}">
         <strong> {{ tune.title | eliminateThe }}</strong> <span class="caret"></span>
@@ -14,7 +34,7 @@
     </button>
     <ul class="dropdown-menu" role="menu" ng-style="{'background-color':tune.color}">
         <li ><a href="#tunes/{{intTuneId}}" >Dots</a></li>
-        <li ><a href="#tunes/{{intTuneId}}/sets" >Sets</a></li>
+        <li ><a href="" ng-click="showTuneSets()">Sets</a></li>
         <li ><a href="#tunes/{{intTuneId}}/videos" >Videos</a></li>
         <li ><a href="#tunes/{{intTuneId}}/abc" >Abc</a></li>
         <li ><a href="#tunes/{{intTuneId}}/practice" >Practice</a></li>
@@ -22,9 +42,6 @@
     </ul>
 </div>
 
-<button type="button" class="btn btn-default " ng-click="loadRandomTune()">
-    Random
-</button>
 
 
 <!--

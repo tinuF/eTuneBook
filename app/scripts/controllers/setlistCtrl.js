@@ -23,7 +23,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
         'style="background-color:{{row.entity.tune.color}}" ' +
         'class="ngCell {{col.cellClass}} {{col.colIndex()}}" ng-cell></div>';
 
-    var aggregateTemplate = '<div ng-click="row.toggleExpand()" ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText">{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</span> <div class="{{row.aggClass()}}"></div> </div>';
+    var aggregateTemplate = '<div ng-click="row.toggleExpand()" ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div> </div>';
 
 
         //$scope.tuneSetPositions = eTuneBookService.getTuneSetPositions();
@@ -39,18 +39,18 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
         groupsCollapsedByDefault:false,
         aggregateTemplate: aggregateTemplate,
         rowTemplate: rowTempl,
-        afterSelectionChange: function () {
-            $state.transitionTo('set', {tuneSetId: $scope.tuneSetPositionsSelected[0].tuneSetId});
-        },
+        //afterSelectionChange: function () {
+        //    $state.transitionTo('set', {tuneSetId: $scope.tuneSetPositionsSelected[0].tuneSetId});
+        //},
 
         //showFooter: true,
 
         //enableRowSelection: false,
         columnDefs: [
             //{field: '',
-            //    cellTemplate: '<a class="btn btn-mini btn-info dotsViewerBtn" href="#/tunes/{{row.entity.intTuneId}}/dots" title="Show The Tune" ><i class="icon-music"></i></a>'
-            //        + '<a class="btn btn-mini btn-info setsViewerBtn" href="#/sets?tune={{row.entity.intTuneId}}" title="Show The Sets" >Sets</a>',
-            //    width:'5%'
+            //    cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >Tune</a>'
+            //        + '<a href="#/sets/{{row.entity.tuneSetId}}" title="Show The Set" >Set</a>',
+            //    width:'10%'
             //},
 
 
@@ -74,7 +74,8 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
                 cellFilter: 'eliminateThe',
                 width:'50%',
                 sortable:false,
-                groupable:false
+                groupable:false,
+                cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
 
             },
             {field:'tune.type',
