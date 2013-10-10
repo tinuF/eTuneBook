@@ -72,7 +72,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         //Private Variables
         var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
         var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-        var eTBK_VERSION = '1.1.4';
+        var eTBK_VERSION = '1.1.5';
         var ABC_VERSION = '2.1';
         //var eTBK_DEFAULT_COLOR = "#E0F0F0";
         var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -80,7 +80,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
         var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
         var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-        var eTBk_EXAMPLE_VERSION = '2013-09-29';
+        var eTBk_EXAMPLE_VERSION = '2013-10-10';
         var currentTuneBook;
 
         //Private Methods
@@ -565,19 +565,17 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
 
         function moveTuneSetPosition(currentTuneBook, sourceTuneSetId, sourcePosition, targetTuneSetId, targetPosition, beforeOrAfter, moveOrCopy){
-            // Moving or Copying a TuneSetPosition: The Tune never ends up set-less
+            // Moving or Copying a TuneSetPosition
             var sourceTuneSet = getTuneSetById(currentTuneBook, sourceTuneSetId);
             var sourceTuneSetPosition = null;
-            var targetTuneSet = getTuneSetById(currentTuneBook, targetTuneSetId);
+            var targetTuneSet = null;
             var tuneSetDeleted = false;
             var twoSetsInvolved = false;
-            var removedPosition = 0;
+            var removedPosition = parseInt(sourcePosition);
 
-            if (sourceTuneSetId !== targetTuneSetId){
+            if (targetTuneSetId == null || sourceTuneSetId !== targetTuneSetId){
                 twoSetsInvolved = true;
             }
-
-            removedPosition = parseInt(sourcePosition);
 
             for (var z = 0; z < sourceTuneSet.tuneSetPositions.length; z++) {
                 if (sourceTuneSet.tuneSetPositions[z].position == sourcePosition){
@@ -585,14 +583,25 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                 }
             }
 
+            if (targetTuneSetId == null) {
+                // Copy or Move TuneSetPosition to a new Set
+                initializeTuneSet(currentTuneBook.tuneSets, sourceTuneSetPosition.tune);
+
+            } else {
+                targetTuneSet = getTuneSetById(currentTuneBook, targetTuneSetId);
+            }
+
+
             // Handle Source TuneSet
-            // (only in case of moving and if source tuneSet ist different from target tuneSet)
-            if (moveOrCopy == "move" && twoSetsInvolved){
-                 // Remove TuneSetPosition from Source TuneSet
-                for (var z = 0; z < sourceTuneSet.tuneSetPositions.length; z++) {
-                    if (sourceTuneSet.tuneSetPositions[z].position == sourcePosition){
-                        // Delete TuneSetPosition from TuneSet
-                        sourceTuneSet.tuneSetPositions.splice(z, 1);
+            if (moveOrCopy == "move"){
+
+                if (twoSetsInvolved) {
+                    // Remove TuneSetPosition from Source TuneSet
+                    for (var z = 0; z < sourceTuneSet.tuneSetPositions.length; z++) {
+                        if (sourceTuneSet.tuneSetPositions[z].position == sourcePosition){
+                            // Delete TuneSetPosition from TuneSet
+                            sourceTuneSet.tuneSetPositions.splice(z, 1);
+                        }
                     }
                 }
 
@@ -604,7 +613,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
                 } else {
                     // TuneSet still has TuneSetPositions
-                    // Adjust Positions of remaining TuneSetPositions: Only necessary for tunes that come after the removed tune
+                    // Adjust Positions of remaining TuneSetPositions:
+                    // Only necessary for tunes that come after the removed tune
                     var currentPosition = 0;
 
                     for (var y = 0; y < sourceTuneSet.tuneSetPositions.length; y++) {
@@ -620,99 +630,64 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             }
 
             // Handle Target TuneSet
+            if (targetTuneSetId != null) {
+                var newPosition = 0;
+                newPosition = parseInt(targetPosition);
 
-            var newPosition = 0;
-            newPosition = parseInt(targetPosition);
-
-            if (beforeOrAfter == "after"){
-                newPosition++;
-
-            } else {
-                newPosition--;
-
-                if (newPosition < 1) {
-                    newPosition = 1;
+                if (beforeOrAfter == "after"){
+                    newPosition++;
                 }
-            }
 
-            var targetTuneSetPosition = {};
+                var targetTuneSetPosition = {};
 
-            // Todo: Handle TuneSet-Fields on first TuneSetPosition
-            if (moveOrCopy == "move"){
-                // Set new TuneSetId and Position on TuneSetPosition
-                // copy by reference
-                targetTuneSetPosition = sourceTuneSetPosition;
-                targetTuneSetPosition.tuneSetId = targetTuneSetId;
-                targetTuneSetPosition.position = newPosition.toString();
+                // Todo: Handle TuneSet-Fields on first TuneSetPosition
+                if (moveOrCopy == "move"){
+                    // Set new TuneSetId and Position on TuneSetPosition
+                    // copy by reference
+                    targetTuneSetPosition = sourceTuneSetPosition;
+                    targetTuneSetPosition.tuneSetId = targetTuneSetId;
+                    targetTuneSetPosition.position = newPosition.toString();
 
-            } else if (moveOrCopy == "copy"){
-                // Set new TuneSetId and Position on TuneSetPosition
-                // copy by value (primitive types), copy by reference (objects) -> tune is shared
-                targetTuneSetPosition = newTuneSetPosition(targetTuneSetId,
-                    sourceTuneSetPosition.tuneSetTarget, sourceTuneSetPosition.tuneSetEnv,
-                    sourceTuneSetPosition.tuneSetName,
-                    sourceTuneSetPosition.intTuneId, sourceTuneSetPosition.tune,
-                    newPosition.toString(), sourceTuneSetPosition.repeat,
-                    sourceTuneSetPosition.annotation);
-            }
+                } else if (moveOrCopy == "copy"){
+                    // Set new TuneSetId and Position on TuneSetPosition
+                    // copy by value (primitive types), copy by reference (objects) -> tune is shared
+                    targetTuneSetPosition = newTuneSetPosition(targetTuneSetId,
+                        sourceTuneSetPosition.tuneSetTarget, sourceTuneSetPosition.tuneSetEnv,
+                        sourceTuneSetPosition.tuneSetName,
+                        sourceTuneSetPosition.intTuneId, sourceTuneSetPosition.tune,
+                        newPosition.toString(), sourceTuneSetPosition.repeat,
+                        sourceTuneSetPosition.annotation);
+                }
 
-            // Add TuneSetPosition to TuneSet (only if source tuneSet ist different from target tuneSet)
-            if (twoSetsInvolved) {
-                // At index (newPosition--) insert the moving TuneSetPosition, but don't remove other TuneSetPositions
-                var insertAt = newPosition - 1;
-                targetTuneSet.tuneSetPositions.splice(insertAt,0,targetTuneSetPosition);
+                // Add TuneSetPosition to TuneSet (only if source tuneSet ist different from target tuneSet)
+                if (twoSetsInvolved) {
+                    // At index (newPosition--) insert the moving TuneSetPosition, but don't remove other TuneSetPositions
+                    var insertAt = newPosition - 1;
+                    targetTuneSet.tuneSetPositions.splice(insertAt,0,targetTuneSetPosition);
+                }
 
-            } else {
-                // Change Position on TuneSetDirective
-                //eTuneBookService.changePositionOnTuneSetDirective(tuneSetPosition);
-            }
+                // Change Position of other TuneSetPositions in the Targe-Set:
+                // Only necessary for tunes that come after the inserted tune
+                for (var y = 0; y < targetTuneSet.tuneSetPositions.length; y++) {
 
-            // Change Position of other TuneSetPositions in the Set: Only necessary for tunes that come after the inserted tune
-            // TODO: Beachte aber Spezialfall: Nach hinten schieben im gleichen Set! Hier muss so was wie ein Delete simuliert werden (position runterz�hlen)
-            // (ist aber nicht trivial). Die jetzige Version sortiert in einem solchen Fall die View zwar richtig, es gehen aber positions verloren.
-            // Bsp: move position 2 after position 3 in the same tuneSet: before: 1,2,3,4, after: 1,3,4,5 -> position 2 ist verloren gegangen.
-            for (var y = 0; y < targetTuneSet.tuneSetPositions.length; y++) {
+                    var currentPosition = 0;
 
-                var currentPosition = 0;
+                    if (targetTuneSet.tuneSetPositions[y] == targetTuneSetPosition){
+                        // TuneSetPosition which was moved: Already Done
 
-                if (targetTuneSet.tuneSetPositions[y] == targetTuneSetPosition){
-                    // Moving TuneSetPosition: Already Done
+                    } else {
+                        // TuneSetPositions which were not moved
+                        currentPosition = parseInt(targetTuneSet.tuneSetPositions[y].position);
 
-                } else {
-                    // TuneSetPositions that where here before
-                    currentPosition = parseInt(targetTuneSet.tuneSetPositions[y].position);
-                    //var positionStored = currentPosition;
-
-                    /*
-                     if (!twoSetsInvolved && currentPosition > removedPosition) {
-                     currentPosition--;
-                     }
-                     */
-
-                    if (currentPosition >= newPosition) {
-                        currentPosition++;
-                        // Change Position on TuneSetPosition
-                        targetTuneSet.tuneSetPositions[y].position = currentPosition.toString();
-                        // Change Position on TuneSetDirective
-                        //eTuneBookService.changePositionOnTuneSetDirective($scope.tuneBook.tuneSets[i].tuneSetPositions[y]);
+                        if (currentPosition >= newPosition) {
+                            currentPosition++;
+                            // Change Position on TuneSetPosition
+                            targetTuneSet.tuneSetPositions[y].position = currentPosition.toString();
+                        }
                     }
-
-                    /*
-                     if (currentPosition < 1) {
-                     currentPosition = 1;
-                     }
-                     */
-
-                    /*
-                     if (currentPosition !== positionStored) {
-                     // Change Position on TuneSetPosition
-                     $scope.tuneBook.tuneSets[i].tuneSetPositions[y].position = currentPosition.toString();
-                     // Change Position on TuneSetDirective
-                     eTuneBookService.changePositionOnTuneSetDirective($scope.tuneBook.tuneSets[i].tuneSetPositions[y]);
-                     }
-                     */
                 }
             }
+
             return tuneSetDeleted;
         }
 
@@ -2626,6 +2601,10 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return extractFirstTuneSetPosition(tuneSet);
         };
 
+        eTBk.getFirstTuneSetPositionById = function (tuneSetId) {
+            return extractFirstTuneSetPosition(getTuneSetById(currentTuneBook, tuneSetId));
+        };
+
         eTBk.getTuneSetPositions = function () {
             return extractTuneSetPositions(eTBk.getCurrentTuneBook().tuneSets);
         };
@@ -2748,6 +2727,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             var jqxhr = $.ajax({
                 url: eTBk.EXAMPLE_FILENAME,
                 async: false,
+                cache: false,
                 dataType: "text"
             });
 

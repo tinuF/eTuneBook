@@ -3,9 +3,10 @@
 /**
  * Controller for sets Template
  */
-angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( $scope, $location, $timeout, $rootScope, $state, $stateParams,eTuneBookService ) {
-    var filterOptions = {};
+angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( $scope, $window, $location, $timeout, $rootScope, $state, $stateParams,eTuneBookService ) {
+    var filterOptions, columnDefs, rowTempl, aggregateTemplate;
 
+    filterOptions = {};
     filterOptions.key = $stateParams['key'];
     filterOptions.type = $stateParams['type'];
     filterOptions.color = $stateParams['color'];
@@ -14,39 +15,85 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
     filterOptions.target = $stateParams['targ'];
     filterOptions.env = $stateParams['env'];
 
-
     $scope.tuneSetPositions = eTuneBookService.getTuneSetPositionsFiltered(filterOptions);
 
-
-    var rowTempl = '<div ng-style="{ \'cursor\': row.cursor }" '+
+    rowTempl = '<div ng-style="{ \'cursor\': row.cursor }" '+
         'ng-repeat="col in renderedColumns" '+
         'style="background-color:{{row.entity.tune.color}}" ' +
         'class="ngCell {{col.cellClass}} {{col.colIndex()}}" ng-cell></div>';
 
-    var aggregateTemplate = '<div ng-click="row.toggleExpand()" ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div> </div>';
+    aggregateTemplate = '<div ng-click="row.toggleExpand()" ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div> </div>';
 
-
-        //$scope.tuneSetPositions = eTuneBookService.getTuneSetPositions();
     $scope.tuneSetPositionsSelected = [];
-    $scope.setList = {
-        data: 'tuneSetPositions',
-        selectedItems: $scope.tuneSetPositionsSelected,
-        multiSelect: false,
-        //showFilter: true,
-        //showColumnMenu: true,
-        sortInfo: { fields: ['position'], directions: ['asc'] },
-        groups: ['tuneSetId'],
-        groupsCollapsedByDefault:false,
-        aggregateTemplate: aggregateTemplate,
-        rowTemplate: rowTempl,
-        //afterSelectionChange: function () {
-        //    $state.transitionTo('set', {tuneSetId: $scope.tuneSetPositionsSelected[0].tuneSetId});
-        //},
 
-        //showFooter: true,
+    if ($window.mobilecheck()){
+        // Small Device -> Display Less Columns
+        columnDefs = [
+            {field:'title',
+                displayName:'Tune',
+                cellFilter: 'eliminateThe',
+                width:'60%',
+                cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.title}}</a>'
 
-        //enableRowSelection: false,
-        columnDefs: [
+            },
+            {field:'type', displayName:'Type', width:'10%'},
+            {field:'lastPlayed',
+                displayName:'Played',
+                cellFilter: 'fromNow',
+                width:'30%'
+            }
+        ];
+
+
+        columnDefs = [
+            //{field: '',
+            //    cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >Tune</a>'
+            //        + '<a href="#/sets/{{row.entity.tuneSetId}}" title="Show The Set" >Set</a>',
+            //    width:'10%'
+            //},
+
+
+            {field:'tuneSetId',
+                displayName:'',
+                width:'0%',
+                sortable:false,
+                groupable:false
+            },
+
+            {field:'position',
+                displayName:'',
+                width:'0%',
+                sortable:false,
+                groupable:false
+
+            },
+
+            {field:'tune.title',
+                displayName:'Set',
+                cellFilter: 'eliminateThe',
+                width:'60%',
+                sortable:false,
+                groupable:false,
+                cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
+
+            },
+            {field:'tune.lastPlayed',
+                displayName:'Played',
+                cellFilter: 'fromNow',
+                width:'30%',
+                sortable:false,
+                groupable:false
+
+            }
+        ];
+
+    } else {
+        // Desktop Device -> Display All Columns
+
+        //alert('document: '+ $window.document.width + '/' + $window.document.height + ' window: ' + $window.screen.width + '/' + $window.screen.height );
+
+
+        columnDefs = [
             //{field: '',
             //    cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >Tune</a>'
             //        + '<a href="#/sets/{{row.entity.tuneSetId}}" title="Show The Set" >Set</a>',
@@ -117,7 +164,28 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
                 sortable:false,
                 groupable:false
             }
-        ]
+        ];
+    }
+
+    $scope.setList = {
+        data: 'tuneSetPositions',
+        selectedItems: $scope.tuneSetPositionsSelected,
+        multiSelect: false,
+        //showFilter: true,
+        //showColumnMenu: true,
+        sortInfo: { fields: ['position'], directions: ['asc'] },
+        groups: ['tuneSetId'],
+        groupsCollapsedByDefault:false,
+        aggregateTemplate: aggregateTemplate,
+        rowTemplate: rowTempl,
+        //afterSelectionChange: function () {
+        //    $state.transitionTo('set', {tuneSetId: $scope.tuneSetPositionsSelected[0].tuneSetId});
+        //},
+
+        //showFooter: true,
+
+        //enableRowSelection: false,
+        columnDefs: columnDefs
     };
 
     $scope.aggFC = function (row) {
@@ -159,6 +227,47 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
 
         return tuneSetInfo;
     }
+
+    if ($rootScope.$previousState != undefined && $rootScope.$previousState.name == 'set') {
+        //$scope.setList.ngGrid existiert erst nach call von setlistCtrl -> timeout
+
+        $timeout(function() {
+
+            var previousFirstSetPosition = eTuneBookService.getFirstTuneSetPositionById($rootScope.$previousStateParams.tuneSetId);
+            var grid = $scope.setList.ngGrid;
+            var rowIndex = grid.data.indexOf(previousFirstSetPosition);
+            //TODO: rowIndex funktioniert nicht bei Gruppierung (die Gruppen-Header sind auch rows).
+            grid.$viewport.scrollTop(grid.rowMap[rowIndex] * grid.config.rowHeight);
+
+            /* prevScrollTop immer 0, weil grid immer neu aufgebaut wird (setlistCtrl wird immer wieder initialisiert)
+            var grid = $scope.setList.ngGrid;
+            grid.$viewport.scrollTop(grid.prevScrollTop);
+            */
+
+        }, 0, false);
+
+    }
+
+    $scope.setList.filterOptions = {
+        filterText:'',
+        useExternalFilter: false
+    };
+
+    $scope.$watch('search', function(searchText) {
+        if (searchText) {
+            if (searchText != ''){
+                // console.log(searchText);
+                // 'Set:' works but is buggy, 'tune.title' does not work
+                var searchQuery = 'Set:' + searchText + ';';
+                $scope.setList.filterOptions.filterText = searchQuery;
+                //console.log(searchQuery);
+            } else {
+                //bringt nichts
+                //$scope.setList.filterOptions.filterText = '';
+            }
+
+        }
+    });
 });
 
 
