@@ -10,10 +10,15 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
     filterOptions.key = $stateParams['key'];
     filterOptions.type = $stateParams['type'];
     filterOptions.color = $stateParams['color'];
-    filterOptions.tuneId = $stateParams['tune'];    //currently not used
     filterOptions.skill = $stateParams['skill'];
     filterOptions.target = $stateParams['targ'];
     filterOptions.env = $stateParams['env'];
+    filterOptions.plmin = $stateParams['plmin'];
+    filterOptions.plmax = $stateParams['plmax'];
+    filterOptions.freqcomp = $stateParams['freqcomp'];
+    filterOptions.freq = $stateParams['freq'];
+    filterOptions.updmin = $stateParams['updmin'];
+    filterOptions.updmax = $stateParams['updmax'];
 
     $scope.tuneSetPositions = eTuneBookService.getTuneSetPositionsFiltered(filterOptions);
 
@@ -22,7 +27,12 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
         'style="background-color:{{row.entity.tune.color}}" ' +
         'class="ngCell {{col.cellClass}} {{col.colIndex()}}" ng-cell></div>';
 
-    aggregateTemplate = '<div ng-click="row.toggleExpand()" ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div> </div>';
+    //aggregateTemplate = '<div ng-click="row.toggleExpand()" ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div> </div>';
+    //ohne Collapse-Funktionalität
+    //aggregateTemplate = '<div ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div> </div>';
+
+    //mit justplayed-Button
+    aggregateTemplate = '<div ng-style="rowStyle(row)" class="ngAggregate"> <span class="ngAggregateText"><a href="#/sets/{{row.label}}" title="Show The Set" >{{row.label CUSTOM_FILTERS}}{{aggFC(row)}}</a></span> <div class="{{row.aggClass()}}"></div><button type="button" ng-click="justPlayedTheSet(row.label)" class="btn btn-default col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8" title="Just played"><i class="glyphicon glyphicon-ok-circle"></i></button> </div>';
 
     $scope.tuneSetPositionsSelected = [];
 
@@ -171,6 +181,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
         data: 'tuneSetPositions',
         selectedItems: $scope.tuneSetPositionsSelected,
         multiSelect: false,
+        //showSelectionCheckbox: true,
         //showFilter: true,
         //showColumnMenu: true,
         sortInfo: { fields: ['position'], directions: ['asc'] },
@@ -268,6 +279,12 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
 
         }
     });
+
+    $scope.justPlayedTheSet = function( tuneSetId) {
+        var now = new Date();
+        eTuneBookService.addTuneSetPlayDate(eTuneBookService.getTuneSet(tuneSetId), now);
+        eTuneBookService.storeAbc($scope.tuneBook);
+    };
 });
 
 

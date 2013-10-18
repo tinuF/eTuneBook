@@ -10,7 +10,7 @@
 //angular.module('eTuneBookApp', ['ui.state', 'ngGrid', 'ui.bootstrap']);
 //ACHTUNG: ui.bootsrap bricht importFile (File-Auswahl-Schirm kommt nicht mehr hoch)!
 
-angular.module('eTuneBookApp', ['ui.router', 'ngGrid']);
+angular.module('eTuneBookApp', ['ui.router', 'ngGrid', 'ngBootstrap', 'ngTouch']);
 
 angular.module('eTuneBookApp').config(function($locationProvider) {
 	$locationProvider.html5Mode(false);
@@ -71,19 +71,13 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
     var setlist = {
         name: 'setlist',
         parent: sets,
-        url: '?tune&type&key&color&skill&targ&env',
+        url: '?type&key&color&skill&targ&env&plmin&plmax&freqcomp&freq&updmin&updmax',
         views: {
             '@sets': {
                 templateUrl: 'views/setlist.html',
                 controller: 'setlistCtrl'
             },
-            //'booktitle@main': {
-            //    templateUrl: 'views/booktitle.html'
-            //},
-            //'pagination@setlist': {
-            //    templateUrl: 'views/pagination.html'
-            //},
-            'search@setlist': {
+            'filter@setlist': {
                 templateUrl: 'views/filter.html',
                 controller: 'filterCtrl'
             }
@@ -118,9 +112,17 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
     var tunelist = {
         name: 'tunelist',
         parent: tunes,
-        url: '',
-        templateUrl: 'views/tunelist.html',
-        controller: 'tunelistCtrl'
+        url: '?type&key&color&skill&targ&env&plmin&plmax&freqcomp&freq&updmin&updmax',
+        views: {
+            '@tunes': {
+                templateUrl: 'views/tunelist.html',
+                controller: 'tunelistCtrl'
+            },
+            'filter@tunelist': {
+                templateUrl: 'views/filter.html',
+                controller: 'filterCtrl'
+            }
+        }
      };
 
     var tune = {
@@ -198,7 +200,7 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
 
     var filter = {
         name: 'filter',
-        parent: setlist,
+        //parent: setlist,
         url: '',
         templateUrl: 'views/filter.html',
         controller: 'filterCtrl'

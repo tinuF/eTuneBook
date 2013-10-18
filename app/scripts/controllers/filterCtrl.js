@@ -5,16 +5,7 @@
  */
 angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService ) {
 	// Get current tuneBook
-	var tuneBook =  eTuneBookService.getCurrentTuneBook();
-  
-	if (tuneBook.hasOwnProperty("tuneSets")){
-		// Show TuneBook from LocalStorage
-		$scope.tuneBook = tuneBook;
-
-	} else {
-		// Init TuneBook
-		$scope.tuneBook = tuneBook =  eTuneBookService.initializeTuneBook();
-	}
+	$scope.tuneBook =  eTuneBookService.getCurrentTuneBook();
 
     setFilterOptions();
 
@@ -58,7 +49,67 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
     if (env == "" || env == null) {
         env = "All Environments";
     }
+
     setSelectedTuneSetEnvFilter(env);
+
+    // Set which Play Range to Filter
+    // Default: Launch Date of eTuneBook till now
+    $scope.tuneSetPlayRangeFilter = {
+        startDate: moment('05.10.2012', 'DD.MM.YYYY'),
+        endDate: moment()
+    };
+
+    var playMin = $stateParams['plmin'];
+    if (playMin != null && playMin != "") {
+        $scope.tuneSetPlayRangeFilter.startDate = moment(playMin, 'DD.MM.YYYY');
+    }
+    var playMax = $stateParams['plmax'];
+    if (playMax != null && playMax != "") {
+        $scope.tuneSetPlayRangeFilter.endDate = moment(playMax, 'DD.MM.YYYY');
+    }
+
+    // Set which Update Range to Filter
+    // Default: Launch Date of eTuneBook till now
+    $scope.tuneSetUpdateRangeFilter = {
+        startDate: moment('05.10.2012', 'DD.MM.YYYY'),
+        endDate: moment()
+    };
+
+    var updateMin = $stateParams['updmin'];
+    if (updateMin != null && updateMin != "") {
+        $scope.tuneSetUpdateRangeFilter.startDate = moment(updateMin, 'DD.MM.YYYY');
+    }
+    var updateMax = $stateParams['plmax'];
+    if (updateMax != null && updateMax != "") {
+        $scope.tuneSetUpdateRangeFilter.endDate = moment(updateMax, 'DD.MM.YYYY');
+    }
+
+
+
+    $scope.ranges = {
+        'Today': [moment().startOf('day'), moment().add('days', 1)],
+        'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+        'Last 7 Days': [moment().subtract('days', 7), moment()],
+        'Last 30 Days': [moment().subtract('days', 30), moment()],
+        'This Month': [moment().startOf('month'), moment()],
+        'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')],
+        'Maximum Range': [moment('05.10.2012', 'DD.MM.YYYY'), moment()]
+
+    };
+
+
+    // Set which Frequency Range to Filter
+    var freqComp = $stateParams['freqcomp'];
+    if (freqComp == null) {
+        freqComp = "";
+    }
+    var freq = $stateParams['freq'];
+    if (freq == null) {
+        freq = "";
+    }
+
+    $scope.freqencyComparator = freqComp;
+    $scope.tuneSetFrequencyForFilter = freq;
 
     $scope.editSetFilter = function( ) {
         angular.element("#SetFilter").modal("show");
@@ -308,7 +359,7 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
         angular.element("#SetFilter").modal("hide");
 
         $timeout(function(){
-            var key, type, color, skill, target, env;
+            var key, type, color, skill, target, env, playmin, playmax, freqcomp, freq, updatemin, updatemax;
 
             type = $scope.tuneSetTypeForFilter.type;
             key = $scope.tuneSetKeyForFilter.key;
@@ -316,6 +367,12 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
             skill = $scope.skillType.description;
             target = $scope.tuneSetTargetForFilter.target;
             env = $scope.tuneSetEnvForFilter.env;
+            playmin = $scope.tuneSetPlayRangeFilter.startDate.format('DD.MM.YYYY');
+            playmax = $scope.tuneSetPlayRangeFilter.endDate.format('DD.MM.YYYY');
+            updatemin = $scope.tuneSetUpdateRangeFilter.startDate.format('DD.MM.YYYY');
+            updatemax = $scope.tuneSetUpdateRangeFilter.endDate.format('DD.MM.YYYY');
+            freqcomp = $scope.freqencyComparator;
+            freq = $scope.tuneSetFrequencyForFilter;
 
             if($scope.tuneSetTypeForFilter.type == "All Types"){
                 type = "";
@@ -335,41 +392,20 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
             if($scope.tuneSetEnvForFilter.env == "All Environments"){
                 env = "";
             }
-            $state.transitionTo('setlist', {key: key, type: type, color: color, skill: skill, targ: target, env: env});
+            if(playmin == "05.10.2012"){
+                playmin = "";
+                playmax = "";
+            }
+
+            if(updatemin == "05.10.2012"){
+                updatemin = "";
+                updatemax = "";
+            }
+
+            $state.transitionTo($state.current.name, {key: key, type: type, color: color, skill: skill, targ: target, env: env, plmin: playmin, plmax: playmax, freqcomp: freqcomp, freq: freq, updmin: updatemin, updmax: updatemax});
 
         },1000);
 
-
-        /*
-        var key, type, color, skill, target, env;
-
-        type = $scope.tuneSetTypeForFilter.type;
-        key = $scope.tuneSetKeyForFilter.key;
-        color = $scope.tuneSetColorForFilter.color;
-        skill = $scope.skillType.description;
-        target = $scope.tuneSetTargetForFilter.target;
-        env = $scope.tuneSetEnvForFilter.env;
-
-        if($scope.tuneSetTypeForFilter.type == "All Types"){
-            type = "";
-        }
-        if($scope.tuneSetKeyForFilter.key == "All Keys"){
-            key = "";
-        }
-        if($scope.tuneSetColorForFilter.color == "All Colors"){
-            color = "";
-        }
-        if($scope.skillType.description == "All Skills"){
-            skill = "";
-        }
-        if($scope.tuneSetTargetForFilter.target == "All Targets"){
-            target = "";
-        }
-        if($scope.tuneSetEnvForFilter.env == "All Environments"){
-            env = "";
-        }
-        $state.transitionTo('setlist', {key: key, type: type, color: color, skill: skill, targ: target, env: env});
-        */
     };
 });
 

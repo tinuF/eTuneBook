@@ -3,9 +3,24 @@
 /**
  * Controller for tunlist Template
  */
-angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl( $scope, $window, $location, $timeout, $rootScope, $state, eTuneBookService ) {
-    var columnDefs, rowTempl;
-    $scope.tunes = eTuneBookService.getTunes();
+angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl( $scope, $window, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService ) {
+    var filterOptions, columnDefs, rowTempl;
+
+    filterOptions = {};
+    filterOptions.key = $stateParams['key'];
+    filterOptions.type = $stateParams['type'];
+    filterOptions.color = $stateParams['color'];
+    filterOptions.skill = $stateParams['skill'];
+    filterOptions.target = $stateParams['targ'];
+    filterOptions.env = $stateParams['env'];
+    filterOptions.plmin = $stateParams['plmin'];
+    filterOptions.plmax = $stateParams['plmax'];
+    filterOptions.freqcomp = $stateParams['freqcomp'];
+    filterOptions.freq = $stateParams['freq'];
+    filterOptions.updmin = $stateParams['updmin'];
+    filterOptions.updmax = $stateParams['updmax'];
+
+    $scope.tunes = eTuneBookService.getTunesFiltered(filterOptions);
     $scope.tunesSelected = [];
 
     rowTempl = '<div ng-style="{ \'cursor\': row.cursor }" '+

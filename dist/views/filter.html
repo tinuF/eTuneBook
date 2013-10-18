@@ -8,45 +8,78 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
-                <form class="form" role="form">
+                <form role="form">
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputPlayRange">Played</label>
+                        <div class="col-lg-5">
+                            <input ng-daterange="" type="daterange" class="form-control" id="inputPlayRange" ng-model="tuneSetPlayRangeFilter" format="DD.MM.YYYY" ranges="ranges">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label" for="inputUpdateRange">Modified</label>
+                        <div class="col-lg-5">
+                            <input ng-daterange="" type="daterange" class="form-control" id="inputUpdateRange" ng-model="tuneSetUpdateRangeFilter" format="DD.MM.YYYY" ranges="ranges">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="tuneSetFrequencyForFilter">Frequency</label>
+                        <div class="col-lg-5">
+                            <input class="form-control" type="text" id="tuneSetFrequencyForFilter" ng-model="tuneSetFrequencyForFilter">
+                        </div>
+                        <div class="radio">
+                            <label class="col-lg-4" for="freqencyComparator1">Less than</label>
+                            <input type="radio" name="freqencyComparator" id="freqencyComparator1" ng-model="freqencyComparator" value="LT" checked="checked">
+                        </div>
+
+                        <div class="radio">
+                            <label class="col-lg-4" for="freqencyComparator2">Greater or equal</label>
+                            <input type="radio" name="freqencyComparator" id="freqencyComparator2" ng-model="freqencyComparator" value="GE">
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label class="control-label" for="tuneSetTypeForFilterSelector">Type</label>
-                        <div>
+                        <div class="col-lg-5">
                             <select class="form-control" id="tuneSetTypeForFilterSelector" ng-model="tuneSetTypeForFilter" ng-options="tuneSetTypeForFilter.type for tuneSetTypeForFilter in tuneSetTypesForFilter | orderBy:'type'">	</select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="tuneSetKeyForFilterSelector">Key</label>
-                        <div>
+                        <div class="col-lg-5">
                             <select class="form-control" id="tuneSetKeyForFilterSelector" ng-model="tuneSetKeyForFilter" ng-options="tuneSetKeyForFilter.key for tuneSetKeyForFilter in tuneSetKeysForFilter | orderBy:'sort'">	</select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="tuneSetColorForFilterSelector">Color</label>
-                        <div>
+                        <div class="col-lg-5">
                             <select class="form-control" id="tuneSetColorForFilterSelector" ng-model="tuneSetColorForFilter" ng-options="tuneSetColorForFilter.color for tuneSetColorForFilter in tuneSetColorsForFilter | orderBy:'sort'" ng-style="{'background-color':tuneSetColorForFilter.color}">	</select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="control-label" for="skillTypeSelector">Skill</label>
-                        <div>
+                        <div class="col-lg-5">
                             <select class="form-control" id="skillTypeSelector" ng-model="skillType" ng-options="skillType.description for skillType in skillTypes">	</select>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="tuneSetTargetForFilterSelector">Target</label>
-                        <div>
+                        <div class="col-lg-5">
                             <select class="form-control" id="tuneSetTargetForFilterSelector" ng-model="tuneSetTargetForFilter" ng-options="tuneSetTargetForFilter.target for tuneSetTargetForFilter in tuneSetTargetsForFilter | orderBy:'target'">	</select>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label class="control-label" for="tuneSetEnvForFilterSelector">Environment</label>
-                        <div>
+                        <div class="col-lg-5">
                             <select class="form-control" id="tuneSetEnvForFilterSelector" ng-model="tuneSetEnvForFilter" ng-options="tuneSetEnvForFilter.env for tuneSetEnvForFilter in tuneSetEnvsForFilter">	</select>
                         </div>
                     </div>
-                </form>
+                 </form>
             </div>
         </div>
     </div>

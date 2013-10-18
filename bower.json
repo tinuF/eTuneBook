@@ -1,13 +1,16 @@
 {
   "name": "eTuneBook",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "dependencies": {
     "angular": "v1.0.8",
     "json3": "~3.2.4",
     "es5-shim": "~2.0.8",
     "angular-ui-router": "~0.2.0",
     "ng-grid": "~2.0.7",
-    "bootstrap": "~v3.0.0"
+    "bootstrap": "~3.0.0",
+    "moment": "~2.3.1",
+    "ng-bs-daterangepicker-plus": "~0.1.0",
+    "angular-touch": "~1.2.0-rc.3"
   },
   "devDependencies": {}
 }
