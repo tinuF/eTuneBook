@@ -10,12 +10,17 @@
 //angular.module('eTuneBookApp', ['ui.state', 'ngGrid', 'ui.bootstrap']);
 //ACHTUNG: ui.bootsrap bricht importFile (File-Auswahl-Schirm kommt nicht mehr hoch)!
 
-angular.module('eTuneBookApp', ['ui.router', 'ngGrid', 'ngBootstrap', 'ngTouch']);
+angular.module('eTuneBookApp', ['ui.router', 'ngGrid', 'ngBootstrap', 'ngTouch', 'chieffancypants.loadingBar', 'ngAnimate', 'gapi']);
 
 angular.module('eTuneBookApp').config(function($locationProvider) {
 	$locationProvider.html5Mode(false);
 });
 
+angular.module('eTuneBookApp').config(function($sceProvider) {
+    // Temporary Fix for broken Youtube-Embeds
+    // check http://docs.angularjs.org/api/ng.$sce
+    $sceProvider.enabled(false);
+});
 
 angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvider) {
 
@@ -282,3 +287,49 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
         .state(feedback)
         .state(credits);
 }]);
+
+angular.module('eTuneBookApp').value('GoogleApp', {
+    apiKey: 'AIzaSyDz8AxR3gRMYpVQs4HUw879ZsFeKYTJoWk',
+    clientId: '344379596022.apps.googleusercontent.com',
+    scopes: [
+        'https://www.googleapis.com/auth/drive',
+        'https://www.googleapis.com/auth/youtube',
+        'https://www.googleapis.com/auth/userinfo.profile'
+    ]
+});
+
+
+
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
+// http://stackoverflow.com/questions/13320015/how-to-write-a-debounce-service-in-angularjs
+// http://plnkr.co/edit/fJwRER?p=preview
+angular.module('eTuneBookApp').factory('debounce', function($timeout, $q) {
+    return function(func, wait, immediate) {
+        var timeout;
+        var deferred = $q.defer();
+        return function() {
+            var context = this, args = arguments;
+            var later = function() {
+                timeout = null;
+                if(!immediate) {
+                    deferred.resolve(func.apply(context, args));
+                    deferred = $q.defer();
+                }
+            };
+            var callNow = immediate && !timeout;
+            if ( timeout ) {
+                $timeout.cancel(timeout);
+            }
+            timeout = $timeout(later, wait);
+            if (callNow) {
+                deferred.resolve(func.apply(context,args));
+                deferred = $q.defer();
+            }
+            return deferred.promise;
+        };
+    };
+});
+

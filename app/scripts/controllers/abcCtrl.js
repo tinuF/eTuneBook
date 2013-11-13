@@ -3,7 +3,7 @@
 /**
  * Controller for abc Template
  */
-angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $location, $timeout, $rootScope, $state, eTuneBookService ) {
+angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $location, $timeout, $rootScope, $state, eTuneBookService, GAPI, Drive ) {
     $scope.fingeringAbcIncl = true;
     $scope.tuneSetAbcIncl = true;
     $scope.playDateAbcIncl = true;
@@ -15,7 +15,7 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
 
     $scope.tuneBook = eTuneBookService.getCurrentTuneBook();
 
-    exportTuneBook(true);
+    exportTuneBook(false);
 
     function exportTuneBook(startDownload){
         var date = moment(new Date());
@@ -25,6 +25,96 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
 
         // Generieren Object URL zum exportierten Tunebook (fuer Backup des Abc-Codes in File)
         saveTuneBookAsFile($scope.exportedTuneBook, startDownload);
+    }
+
+
+    $scope.saveTuneBookToGoogleDrive = function() {
+        var promise = GAPI.init();
+
+        promise.then(function(result) {
+            //success
+            //Load Google Drive File Picker
+            loadPicker();
+        }, function(error) {
+            //error
+            alert('Failed: ' + error);
+        });
+    };
+
+
+    // Use the API Loader script to load google.picker.
+    function loadPicker() {
+        gapi.load('picker', {'callback': createPicker});
+    }
+
+    // Create and render a Picker object for selecting a folder
+    function createPicker() {
+        var docsView = new google.picker.DocsView()
+            .setIncludeFolders(true)
+            .setMimeTypes('application/vnd.google-apps.folder')
+            .setSelectFolderEnabled(true);
+
+        var picker = new google.picker.PickerBuilder().
+            addView(docsView).
+            setAppId(GAPI.app.apiKey).
+            setOAuthToken(GAPI.app.oauthToken.access_token).
+            setCallback(pickerCallback).
+            build();
+        picker.setVisible(true);
+    }
+
+
+    function pickerCallback(data) {
+        if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+            var doc = data[google.picker.Response.DOCUMENTS][0];
+            insertFile($scope.exportedTuneBook, doc[google.picker.Document.ID]);
+        }
+    }
+
+    function insertFile(abc, folderId, callback) {
+        var boundary = '-------314159265358979323846';
+        var delimiter = "\r\n--" + boundary + "\r\n";
+        var close_delim = "\r\n--" + boundary + "--";
+
+        var date = moment();
+        var tuneBookVersion = date.format("YYYY-MM-DDTHH:mm");
+
+        var fileNameToSaveAs = "My TuneBook - eTb-" + tuneBookVersion;
+
+        var contentType = 'text/plain';
+        var metadata = {
+            'title': fileNameToSaveAs,
+            'mimeType': contentType,
+            'parents':[{"id":folderId}]
+        };
+
+        var base64Data = btoa(abc);
+        var multipartRequestBody =
+            delimiter +
+                'Content-Type: application/json\r\n\r\n' +
+                JSON.stringify(metadata) +
+                delimiter +
+                'Content-Type: ' + contentType + '\r\n' +
+                'Content-Transfer-Encoding: base64\r\n' +
+                '\r\n' +
+                base64Data +
+                close_delim;
+
+        var request = gapi.client.request({
+            'path': '/upload/drive/v2/files',
+            'method': 'POST',
+            'params': {'uploadType': 'multipart'},
+            'headers': {
+                'Content-Type': 'multipart/mixed; boundary="' + boundary + '"'
+            },
+            'body': multipartRequestBody});
+        if (!callback) {
+            callback = function(file) {
+                console.log(file);
+                alert("'"+ file.title + "' exported to Google Drive");
+            };
+        }
+        request.execute(callback);
     }
 
     function saveTuneBookAsFile(exportedTuneBookAsText, startDownload){

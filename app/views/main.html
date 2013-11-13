@@ -10,12 +10,13 @@
             </button>
             <ul class="dropdown-menu" role="menu">
                 <li><a ng-click="initializeTuneBook()">New</a></li>
-                <li><a tbk-file-select-delegate>Import</a></li>
+                <li><a tbk-file-select-delegate>Import TuneBook (Local Drive)</a></li>
+                <li><a ng-click="selectFileOnGoogleDrive()">Import TuneBook (Google Drive)</a></li>
                 <li><a ng-click="loadBxplTuneBook()">{{exampleFileNameWithoutAbc}} - Version {{exampleVersion}}</a></li>
                 <li class="divider"></li>
                 <li><a ng-click="editTuneBook()">Edit Book Title</a></li>
                 <li class="divider"></li>
-                <li><a ng-click="exportTuneBook()">Export</a></li>
+                <li><a ng-click="exportTuneBook()">Export TuneBook</a></li>
             </ul>
 
         </div>
@@ -63,7 +64,6 @@
 
      <!--/book or /sets or /tunes or /abc or /info -->
     <div ui-view></div>
-    <!--<div ui-view ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"></div>-->
 
     <!--
     <div class="row">
@@ -73,4 +73,3 @@
 
 </div> <!-- /container -->
 <input class="input-file" id="fileInput" type="file" tbk-file-select>
-

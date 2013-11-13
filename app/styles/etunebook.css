@@ -5,15 +5,13 @@
 		background: #e0f0f0;
 	}
 
-	/*
-    li.disabled {
-		opacity: 0.5;
-	}
-
-	li.highlight {
-		background: #FEE25F;
-	}
-	*/
+     #loading-bar-spinner {
+         z-index: 2000;
+         top: 10px;
+         left: 75%;
+         /*top: 10px;
+         left: 10px;*/
+     }
 			
 	.tuneSetBox {
 		list-style-type: none;

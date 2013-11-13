@@ -3,12 +3,21 @@ angular.module('eTuneBookApp', [
   'ui.router',
   'ngGrid',
   'ngBootstrap',
-  'ngTouch'
+  'ngTouch',
+  'chieffancypants.loadingBar',
+  'ngAnimate',
+  'gapi'
 ]);
 angular.module('eTuneBookApp').config([
   '$locationProvider',
   function ($locationProvider) {
     $locationProvider.html5Mode(false);
+  }
+]);
+angular.module('eTuneBookApp').config([
+  '$sceProvider',
+  function ($sceProvider) {
+    $sceProvider.enabled(false);
   }
 ]);
 angular.module('eTuneBookApp').config([
@@ -220,6 +229,45 @@ angular.module('eTuneBookApp').config([
     $stateProvider.state(main).state(book).state(sets).state(tunes).state(abc).state(info).state(bookedit).state(set).state(setlist).state(filter).state(tunelist).state(tune).state(tunesets).state(tuneabc).state(tuneinfo).state(tunepractice).state(tunevideos).state(tunevideo).state(introduction).state(getstarted).state(manual).state(releasenotes).state(feedback).state(credits);
   }
 ]);
+angular.module('eTuneBookApp').value('GoogleApp', {
+  apiKey: 'AIzaSyDz8AxR3gRMYpVQs4HUw879ZsFeKYTJoWk',
+  clientId: '344379596022.apps.googleusercontent.com',
+  scopes: [
+    'https://www.googleapis.com/auth/drive',
+    'https://www.googleapis.com/auth/youtube',
+    'https://www.googleapis.com/auth/userinfo.profile'
+  ]
+});
+angular.module('eTuneBookApp').factory('debounce', [
+  '$timeout',
+  '$q',
+  function ($timeout, $q) {
+    return function (func, wait, immediate) {
+      var timeout;
+      var deferred = $q.defer();
+      return function () {
+        var context = this, args = arguments;
+        var later = function () {
+          timeout = null;
+          if (!immediate) {
+            deferred.resolve(func.apply(context, args));
+            deferred = $q.defer();
+          }
+        };
+        var callNow = immediate && !timeout;
+        if (timeout) {
+          $timeout.cancel(timeout);
+        }
+        timeout = $timeout(later, wait);
+        if (callNow) {
+          deferred.resolve(func.apply(context, args));
+          deferred = $q.defer();
+        }
+        return deferred.promise;
+      };
+    };
+  }
+]);
 'use strict';
 angular.module('eTuneBookApp').controller('mainCtrl', [
   '$scope',
@@ -230,7 +278,9 @@ angular.module('eTuneBookApp').controller('mainCtrl', [
   '$state',
   '$stateParams',
   'eTuneBookService',
-  function ($scope, $window, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService) {
+  'GAPI',
+  'Drive',
+  function ($scope, $window, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService, GAPI, Drive) {
     $scope.exampleFileNameWithoutAbc = eTBk.EXAMPLE_FILENAME_WITHOUTABC;
     $scope.exampleVersion = eTBk.EXAMPLE_VERSION;
     $.fn.colorPicker.defaults.colors = [
@@ -328,6 +378,59 @@ angular.module('eTuneBookApp').controller('mainCtrl', [
         }
       }, 0);
     };
+    $scope.selectFileOnGoogleDrive = function () {
+      var promise = GAPI.init();
+      promise.then(function (result) {
+        loadPicker();
+      }, function (error) {
+        alert('Failed: ' + error);
+      });
+    };
+    function loadPicker() {
+      gapi.load('picker', { 'callback': createPicker });
+    }
+    function createPicker() {
+      var docsView = new google.picker.DocsView(google.picker.ViewId.DOCUMENTS).setIncludeFolders(true);
+      var picker = new google.picker.PickerBuilder().addView(docsView).setAppId(GAPI.app.apiKey).setOAuthToken(GAPI.app.oauthToken.access_token).setCallback(pickerCallback).build();
+      picker.setVisible(true);
+    }
+    function pickerCallback(data) {
+      var url = 'nothing';
+      if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+        var doc = data[google.picker.Response.DOCUMENTS][0];
+        url = doc[google.picker.Document.URL];
+        var promise = Drive.getFiles(doc[google.picker.Document.ID]);
+        promise.then(function (file) {
+          importTuneBookFromGoogleDrive(file);
+        }, function (error) {
+          alert('Failed: ' + error);
+        });
+      }
+    }
+    function importTuneBookFromGoogleDrive(file) {
+      if (file.downloadUrl) {
+        var accessToken = GAPI.app.oauthToken.access_token;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', file.downloadUrl);
+        xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+        xhr.onload = function () {
+          eTuneBookService.getTuneBookFromImportedFile(xhr.responseText, file.title);
+          eTuneBookService.storeTuneBookAbc();
+          if ($state.is('tunelist')) {
+            $state.transitionTo('setlist');
+          } else {
+            $state.transitionTo('tunelist');
+          }
+        };
+        xhr.onerror = function () {
+          alert('Fehler beim Download des TuneBooks');
+        };
+        xhr.send();
+      } else {
+        alert('Fehler beim Laden des TuneBooks (kein Download-Link)');
+      }
+    }
+    ;
     $scope.exportTuneBook = function (startDownload) {
       $state.transitionTo('abc');
     };
@@ -370,6 +473,7 @@ angular.module('eTuneBookApp').controller('bookCtrl', [
   '$stateParams',
   'eTuneBookService',
   function bookCtrl($scope, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService) {
+    $scope.tuneBook = eTuneBookService.getCurrentTuneBook();
     $scope.edit = function () {
       $state.transitionTo('bookedit', $stateParams);
     };
@@ -409,7 +513,9 @@ angular.module('eTuneBookApp').controller('abcCtrl', [
   '$rootScope',
   '$state',
   'eTuneBookService',
-  function ($scope, $location, $timeout, $rootScope, $state, eTuneBookService) {
+  'GAPI',
+  'Drive',
+  function ($scope, $location, $timeout, $rootScope, $state, eTuneBookService, GAPI, Drive) {
     $scope.fingeringAbcIncl = true;
     $scope.tuneSetAbcIncl = true;
     $scope.playDateAbcIncl = true;
@@ -419,12 +525,64 @@ angular.module('eTuneBookApp').controller('abcCtrl', [
     $scope.siteAbcIncl = true;
     $scope.tubeAbcIncl = true;
     $scope.tuneBook = eTuneBookService.getCurrentTuneBook();
-    exportTuneBook(true);
+    exportTuneBook(false);
     function exportTuneBook(startDownload) {
       var date = moment(new Date());
       var tuneBookVersion = date.format('YYYY-MM-DDTHH:mm');
       $scope.exportedTuneBook = eTuneBookService.getAbc($scope.tuneBook.tuneSets, $scope.tuneBook.name, tuneBookVersion, $scope.tuneBook.description, $scope.tuneSetAbcIncl, $scope.playDateAbcIncl, $scope.skillAbcIncl, $scope.colorAbcIncl, $scope.annotationAbcIncl, $scope.siteAbcIncl, $scope.tubeAbcIncl, $scope.fingeringAbcIncl);
       saveTuneBookAsFile($scope.exportedTuneBook, startDownload);
+    }
+    $scope.saveTuneBookToGoogleDrive = function () {
+      var promise = GAPI.init();
+      promise.then(function (result) {
+        loadPicker();
+      }, function (error) {
+        alert('Failed: ' + error);
+      });
+    };
+    function loadPicker() {
+      gapi.load('picker', { 'callback': createPicker });
+    }
+    function createPicker() {
+      var docsView = new google.picker.DocsView().setIncludeFolders(true).setMimeTypes('application/vnd.google-apps.folder').setSelectFolderEnabled(true);
+      var picker = new google.picker.PickerBuilder().addView(docsView).setAppId(GAPI.app.apiKey).setOAuthToken(GAPI.app.oauthToken.access_token).setCallback(pickerCallback).build();
+      picker.setVisible(true);
+    }
+    function pickerCallback(data) {
+      if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+        var doc = data[google.picker.Response.DOCUMENTS][0];
+        insertFile($scope.exportedTuneBook, doc[google.picker.Document.ID]);
+      }
+    }
+    function insertFile(abc, folderId, callback) {
+      var boundary = '-------314159265358979323846';
+      var delimiter = '\r\n--' + boundary + '\r\n';
+      var close_delim = '\r\n--' + boundary + '--';
+      var date = moment();
+      var tuneBookVersion = date.format('YYYY-MM-DDTHH:mm');
+      var fileNameToSaveAs = 'My TuneBook - eTb-' + tuneBookVersion;
+      var contentType = 'text/plain';
+      var metadata = {
+          'title': fileNameToSaveAs,
+          'mimeType': contentType,
+          'parents': [{ 'id': folderId }]
+        };
+      var base64Data = btoa(abc);
+      var multipartRequestBody = delimiter + 'Content-Type: application/json\r\n\r\n' + JSON.stringify(metadata) + delimiter + 'Content-Type: ' + contentType + '\r\n' + 'Content-Transfer-Encoding: base64\r\n' + '\r\n' + base64Data + close_delim;
+      var request = gapi.client.request({
+          'path': '/upload/drive/v2/files',
+          'method': 'POST',
+          'params': { 'uploadType': 'multipart' },
+          'headers': { 'Content-Type': 'multipart/mixed; boundary="' + boundary + '"' },
+          'body': multipartRequestBody
+        });
+      if (!callback) {
+        callback = function (file) {
+          console.log(file);
+          alert('\'' + file.title + '\' exported to Google Drive');
+        };
+      }
+      request.execute(callback);
     }
     function saveTuneBookAsFile(exportedTuneBookAsText, startDownload) {
       var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], { type: 'text/plain' });
@@ -1808,14 +1966,14 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
   var eTBkModule = function (eTBk) {
       var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
       var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-      var eTBK_VERSION = '1.1.6';
+      var eTBK_VERSION = '1.1.7';
       var ABC_VERSION = '2.1';
       var eTBK_DEFAULT_COLOR = '#F5F5F5';
       var eTBK_DEFAULT_MODIFICATIONDATE_STRING = '1966-04-05T22:00';
       var eTBK_PATTERN_FINGER = /!\d!/g;
       var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
       var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-      var eTBk_EXAMPLE_VERSION = '2013-10-18';
+      var eTBk_EXAMPLE_VERSION = '2013-11-12';
       var currentTuneBook;
       var TuneBook = function (abc) {
         var This = this;

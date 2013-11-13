@@ -1,8 +1,8 @@
 {
   "name": "eTuneBook",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "dependencies": {
-    "angular": "v1.0.8",
+    "angular": "~1.2.0",
     "json3": "~3.2.4",
     "es5-shim": "~2.0.8",
     "angular-ui-router": "~0.2.0",
@@ -10,7 +10,12 @@
     "bootstrap": "~3.0.0",
     "moment": "~2.3.1",
     "ng-bs-daterangepicker-plus": "~0.1.0",
-    "angular-touch": "~1.2.0-rc.3"
+    "angular-touch": "~1.2.0-rc.3",
+    "angular-loading-bar": "~0.0.5",
+    "ngGAPI": "christiansmith/ngGAPI"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "~1.2.0"
+  }
 }

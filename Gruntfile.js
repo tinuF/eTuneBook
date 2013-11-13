@@ -58,7 +58,8 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost',
+        //hostname: 'localhost',
+        hostname: '0.0.0.0',
         //Versuch, YouTube-iFrame zum Laufen zu bringen.
         //siehe hierzu:
         //http://stackoverflow.com/questions/14617111/yeoman-how-to-set-headers-htaccess
@@ -273,6 +274,9 @@ module.exports = function (grunt) {
             //'components/**/*',
             'components/jquery/jquery.min.js',
             'components/angular/angular.min.js',
+            'components/angular-animate/angular-animate.min.js',
+            'components/angular-loading-bar/build/loading-bar.min.js',
+             'components/ngGAPI/gapi.js',
             'components/angular-touch/angular-touch.min.js',
             'components/angular-ui-router/release/angular-ui-router.min.js',
             'components/ng-grid/ng-grid-2.0.7.min.js',

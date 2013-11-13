@@ -3,7 +3,7 @@
 /**
  * Main controller for eTuneBookApp. 
  */
-angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $window, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService ) {
+angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $window, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService, GAPI, Drive ) {
 	// Test for first-time navigation to the welcome-page
 	//localStorage.clear();
 
@@ -120,6 +120,98 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $windo
 			}
 		},0);
 	};
+
+    // Import TuneBook from Google Drive
+    $scope.selectFileOnGoogleDrive = function() {
+
+        // User needs to login and to authorize eTuneBook so that eTuneBook is able to access his Google Drive
+        var promise = GAPI.init();
+
+        promise.then(function(result) {
+            //success
+            //Load Google Drive File Picker
+            loadPicker();
+        }, function(error) {
+            //error
+            alert('Failed: ' + error);
+        });
+    };
+
+    // Use the API Loader script to load google.picker.
+    function loadPicker() {
+        gapi.load('picker', {'callback': createPicker});
+    }
+
+    // Create and render a Picker object for searching documents
+    function createPicker() {
+        var docsView = new google.picker.DocsView(google.picker.ViewId.DOCUMENTS)
+            .setIncludeFolders(true);
+
+        var picker = new google.picker.PickerBuilder().
+            addView(docsView).
+            setAppId(GAPI.app.apiKey).
+            setOAuthToken(GAPI.app.oauthToken.access_token).
+            setCallback(pickerCallback).
+            build();
+        picker.setVisible(true);
+    }
+
+    // Back from the Picker
+    function pickerCallback(data) {
+        var url = 'nothing';
+        if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+            var doc = data[google.picker.Response.DOCUMENTS][0];
+            url = doc[google.picker.Document.URL];
+
+            //Metadaten des ausgewählten Dokuments holen
+            var promise = Drive.getFiles(doc[google.picker.Document.ID]);
+
+            promise.then(function(file) {
+                //success
+                //File-Download und Übernahme in eTuneBook
+                importTuneBookFromGoogleDrive(file);
+
+            }, function(error) {
+                //error
+                alert('Failed: ' + error);
+            });
+        }
+    }
+
+    function importTuneBookFromGoogleDrive(file) {
+
+        if (file.downloadUrl) {
+            var accessToken = GAPI.app.oauthToken.access_token;
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', file.downloadUrl);
+            xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+            xhr.onload = function() {
+                eTuneBookService.getTuneBookFromImportedFile(xhr.responseText, file.title);
+                eTuneBookService.storeTuneBookAbc();
+                // TODO: Check for ui-router fix
+                // ui-router does not refresh state, if no parameter has changed
+                //(see https://github.com/angular-ui/ui-router/issues/122)
+                // Umgehungsloesung: Alternativ tunelist oder setlist als Start-Page
+                if ($state.is('tunelist')){
+                    $state.transitionTo('setlist');
+                } else {
+                    $state.transitionTo('tunelist');
+                }
+            };
+            xhr.onerror = function() {
+                alert("Fehler beim Download des TuneBooks");
+                //callback(null);
+            };
+            xhr.send();
+        } else {
+            alert("Fehler beim Laden des TuneBooks (kein Download-Link)");
+            //callback(null);
+        }
+    };
+
+
+
+
 
     $scope.exportTuneBook = function(startDownload) {
         $state.transitionTo('abc');
