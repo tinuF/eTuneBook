@@ -12,8 +12,21 @@
          /*top: 10px;
          left: 10px;*/
      }
-			
-	.tuneSetBox {
+
+     .ng-hide {
+         /*Override AngularJs ng-hide. Wird gebraucht, um den TuneEditor (textarea) verschwinden zu lassen,
+         falls der NoteEditor gewählt wurde. Bei der Verwendung vom normalen AngularJs ng-hide funktionieren die
+         Select-Events nicht mehr, die vom ABCEditor an die textarea geschickt werden.
+         */
+
+         display:block!important;
+         position:absolute;
+         top:-9999px;
+         left:-9999px;
+
+     }
+
+     .tuneSetBox {
 		list-style-type: none;
         float: left;
         margin: 0 10px 40px 0; /*Abstand zwischen den TuneSets*/
@@ -558,7 +571,7 @@
     .lead, .justPlayedTheTuneSet, .tunePlayDateInfo,
     .tuneControlButtons, .tuneTabContent,
     .dropdown-toggle, .nav, .nav-tabs, .navbar-inner,
-    .input-file, .fbLikeBox{
+     .fbLikeBox{
         display: none;
     }
 

@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-4">
 
-        <div class="btn-group btn-default">
+        <div class="btn-group btn-default hidden-print">
             <button type="button" class="btn btn-default" ng-click="loadRandomTuneSet(playDateFilter)">
                 Random: {{playDateFilter}}
             </button>
@@ -21,7 +21,7 @@
         <br>
 
 
-        <div class="btn-group ">
+        <div class="btn-group hidden-print">
             <button type="button" class="btn btn-default dropdown-toggle  active" data-toggle="dropdown">
                 <strong> {{ currentFirstTuneSetPosition.tune.title | eliminateThe }} </strong> <span class="caret"></span>
             </button>
@@ -34,7 +34,7 @@
         <select class="form-control" id="tuneSetSelector" ng-model="firstTuneSetPosition" ng-options="(firstTuneSetPosition.tune.title | eliminateThe) + ' (Set ' + firstTuneSetPosition.tuneSetId + ')'  for firstTuneSetPosition in firstTuneSetPositions | orderBy:'tune.title'">	</select>
         -->
 
-        <div class="btn-group">
+        <div class="btn-group hidden-print">
             <button type="button" ng-click="justPlayedTheSet(tuneSet)" class="btn btn-default">
                 Just Played
             </button>

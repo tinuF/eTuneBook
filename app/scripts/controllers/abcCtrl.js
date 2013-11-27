@@ -49,7 +49,7 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
 
     // Create and render a Picker object for selecting a folder
     function createPicker() {
-        var docsView = new google.picker.DocsView()
+        var docsView = new google.picker.DocsView(google.picker.ViewId.FOLDERS)
             .setIncludeFolders(true)
             .setMimeTypes('application/vnd.google-apps.folder')
             .setSelectFolderEnabled(true);
@@ -79,7 +79,7 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
         var date = moment();
         var tuneBookVersion = date.format("YYYY-MM-DDTHH:mm");
 
-        var fileNameToSaveAs = "My TuneBook - eTb-" + tuneBookVersion;
+        var fileNameToSaveAs = "TuneBook-" + tuneBookVersion;
 
         var contentType = 'text/plain';
         var metadata = {
@@ -88,14 +88,15 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
             'parents':[{"id":folderId}]
         };
 
-        var base64Data = btoa(abc);
+        //var base64Data = btoa(abc);
+        var base64Data = abc;
         var multipartRequestBody =
             delimiter +
                 'Content-Type: application/json\r\n\r\n' +
                 JSON.stringify(metadata) +
                 delimiter +
                 'Content-Type: ' + contentType + '\r\n' +
-                'Content-Transfer-Encoding: base64\r\n' +
+                //'Content-Transfer-Encoding: base64\r\n' +
                 '\r\n' +
                 base64Data +
                 close_delim;
