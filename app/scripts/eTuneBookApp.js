@@ -57,6 +57,43 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
         }
     };
 
+    var playlists = {
+        name: 'playlists',
+        abstract: true,
+        parent: main,
+        url: '/playlists',
+        views: {
+            '@main': {
+                templateUrl: 'views/playlists.html',
+                controller: 'playlistsCtrl'
+            },
+            'booktitle@main': {
+                templateUrl: 'views/booktitle.html'
+            }
+        }
+    };
+
+    var playlistlist = {
+        name: 'playlistlist',
+        parent: playlists,
+        url: '',
+        views: {
+            '@playlists': {
+                templateUrl: 'views/playlistlist.html',
+                controller: 'playlistlistCtrl'
+            }
+        }
+    };
+
+    var playlist = {
+        name: 'playlist',
+        parent: playlists,
+        url: '/{playlistId}',
+        templateUrl: 'views/playlist.html',
+        controller: 'playlistCtrl'
+    };
+
+
     var sets = {
         name: 'sets',
         abstract: true,
@@ -76,7 +113,7 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
     var setlist = {
         name: 'setlist',
         parent: sets,
-        url: '?type&key&color&skill&targ&env&plmin&plmax&freqcomp&freq&updmin&updmax',
+        url: '?type&key&color&skill&evt&band&plmin&plmax&freqcomp&freq&updmin&updmax',
         views: {
             '@sets': {
                 templateUrl: 'views/setlist.html',
@@ -117,7 +154,7 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
     var tunelist = {
         name: 'tunelist',
         parent: tunes,
-        url: '?type&key&color&skill&targ&env&plmin&plmax&freqcomp&freq&updmin&updmax',
+        url: '?type&key&color&skill&evt&band&plmin&plmax&freqcomp&freq&updmin&updmax',
         views: {
             '@tunes': {
                 templateUrl: 'views/tunelist.html',
@@ -264,11 +301,14 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
     $stateProvider
 		.state(main)
         .state(book)
+        .state(playlists)
         .state(sets)
         .state(tunes)
         .state(abc)
         .state(info)
         .state(bookedit)
+        .state(playlist)
+        .state(playlistlist)
         .state(set)
         .state(setlist)
         .state(filter)

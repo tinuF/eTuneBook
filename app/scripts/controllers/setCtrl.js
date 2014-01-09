@@ -23,12 +23,14 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
         angular.element("#TuneSetEditor").modal("show");
     };
 
+    /*
     $scope.doneTuneSetEditing = function() {
         angular.element("#TuneSetEditor").modal("hide");
         $scope.tuneSetToBeEdited = null;
-        eTuneBookService.updateFirstTuneSetPosition($scope.tuneSet);
+        //eTuneBookService.updateFirstTuneSetPosition($scope.tuneSet);
         eTuneBookService.storeTuneBookAbc();
     };
+    */
 	
 	$scope.showSampleDots = function( tuneSetPosition ) { 
 		$timeout(function() {
@@ -83,7 +85,7 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
 	
 	$scope.putTuneBookToLocalStorage = function() {
 		//tbkStorage.putToLocalStorage($scope.tuneBook);
-		eTuneBookService.storeAbc($scope.tuneBook);
+		eTuneBookService.storeTuneBookAbc();
 	};
 
 	function setTargetTuneSetPositionsForMoving(){
@@ -93,7 +95,7 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
 	$scope.justPlayedTheSet = function( tuneSet) {
 		var now = new Date();
 		eTuneBookService.addTuneSetPlayDate(tuneSet, now);
-		eTuneBookService.storeAbc($scope.tuneBook);
+		eTuneBookService.storeTuneBookAbc();
 	};
 
     $scope.justPlayedTheTune = function( tune) {

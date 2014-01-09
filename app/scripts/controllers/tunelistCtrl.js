@@ -11,8 +11,8 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
     filterOptions.type = $stateParams['type'];
     filterOptions.color = $stateParams['color'];
     filterOptions.skill = $stateParams['skill'];
-    filterOptions.target = $stateParams['targ'];
-    filterOptions.env = $stateParams['env'];
+    filterOptions.event = $stateParams['evt'];
+    filterOptions.band = $stateParams['band'];
     filterOptions.plmin = $stateParams['plmin'];
     filterOptions.plmax = $stateParams['plmax'];
     filterOptions.freqcomp = $stateParams['freqcomp'];

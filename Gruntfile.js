@@ -291,11 +291,69 @@ module.exports = function (grunt) {
              'components/json3/lib/json3.min.js',
              'images/{,*/}*.{gif,webp}',
             'styles/fonts/*',
-             'lib/**/*'
+              'lib/scripts/abcjs_editor_1.7-min.js',
+              'lib/scripts/jquery.colorPicker.min.js',
+              'lib/styles/colorPicker.css',
+              'lib/styles/social-buttons-3.css'
           ]
         }]
       }
-    }
+    },
+      manifest: {
+          generate: {
+              options: {
+                  basePath: 'dist/',
+                  network: ['*', 'http://*', 'https://*'],
+                  preferOnline: true,
+                  verbose: true,
+                  timestamp: true,
+                  hash: true,
+                  master: 'index.html'
+              },
+              src: [
+                  'views/*.html',
+                  'scripts/*.js',
+                  'styles/*.css',
+                  'index.html',
+                  'favicon.ico',
+                  'components/jquery/jquery.min.js',
+                  'components/angular/angular.min.js',
+                  'components/angular-animate/angular-animate.min.js',
+                  'components/angular-loading-bar/build/loading-bar.min.js',
+                  'components/ngGAPI/gapi.js',
+                  'components/angular-touch/angular-touch.min.js',
+                  'components/angular-ui-router/release/angular-ui-router.min.js',
+                  'components/ng-grid/ng-grid-2.0.7.min.js',
+                  'components/bootstrap/dist/css/bootstrap.min.css',
+                  'components/bootstrap/dist/js/bootstrap.min.js',
+                  'components/bootstrap/dist/fonts/*',
+                  'components/bootstrap-daterangepicker/daterangepicker.js',
+                  'components/bootstrap-daterangepicker/daterangepicker-bs3.css',
+                  'components/ng-bs-daterangepicker-plus/dist/ng-bs-daterangepicker.min.js',
+                  'components/moment/min/moment.min.js',
+                  'components/es5-shim/es5-shim.js',
+                  'components/json3/lib/json3.min.js',
+                  'http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css',
+                  'images/{,*/}*.{gif,webp}',
+                  'styles/fonts/*',
+                  'lib/scripts/abcjs_editor_1.7-min.js',
+                  'lib/scripts/jquery.colorPicker.min.js',
+                  'lib/styles/colorPicker.css',
+                  'lib/styles/social-buttons-3.css'
+              ],
+              dest: 'dist/manifest.appcache'
+          }
+      },
+      replace: {
+          build: {
+              src: ['dist/index.html'],
+              overwrite: true,
+              replacements: [{
+                  from: /<html([^>]+)>/,
+                  to: '<html$1 manifest="manifest.appcache">'
+              }]
+          }
+      }
   });
 
   grunt.renameTask('regarde', 'watch');
@@ -303,7 +361,7 @@ module.exports = function (grunt) {
   grunt.registerTask('server', [
     'clean:server',
     'coffee:dist',
-    'compass:server',
+    //'compass:server',
     'livereload-start',
     'connect:livereload',
     'open',
@@ -334,7 +392,9 @@ module.exports = function (grunt) {
     'ngmin',
     //'uglify',
     'rev',
-    'usemin'
+    'usemin',
+    'manifest',
+    'replace'
   ]);
 
   grunt.registerTask('default', ['build']);

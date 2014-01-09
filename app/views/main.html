@@ -1,9 +1,20 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="navbar-header pull-right">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="#/info/introduction" title="eTuneBook"><img src="../../favicon.ico" class="img-responsive" alt="eTuneBook">
         </a>
     </div>
+
+    <!--
     <div class="navbar-header pull-left">
+    -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="btn-group">
             <button type="button" ng-class="{ active: bookMenuActive }" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 Book <span class="caret"></span>
@@ -21,6 +32,7 @@
 
         </div>
 
+        <button class="btn btn-default navbar-btn" ng-class="{ active: playlistsMenuActive }" ng-click="showPlaylists()">Playlists</button>
         <button class="btn btn-default navbar-btn" ng-class="{ active: setsMenuActive }" ng-click="showSets()">Sets</button>
         <button class="btn btn-default navbar-btn" ng-class="{ active: tunesMenuActive }" ng-click="showTunes()">Tunes</button>
         <!--
@@ -40,9 +52,14 @@
                 <li ng-class="{ active: feedbackMenuActive }"><a href="#/info/feedback"> Feedback</a></li>
             </ul>
         </div>
+        <div ui-view="booktitle" class="navbar-text pull-right"></div>
     </div>
-    <!--<div ui-view="booktitle" class="navbar-text"></div>-->
+
+
+
+
 </nav>
+
 
 <div class="container">
     <div class="btn-group pull-right hidden-print">
@@ -54,15 +71,16 @@
 
 
 <div class="container">
-    <!--<div ui-view="booktitle"></div>-->
-
+    <!--
+    <div ui-view="booktitle"></div>
+    -->
     <!--
     <ol class="breadcrumb">
         <li ng-repeat="pathSplit in pathSplits"><a href="{{ pathSplit }}">{{ pathSplit }}</a></li>
     </ol>
     -->
 
-     <!--/book or /sets or /tunes or /abc or /info -->
+     <!--/book or /playlists or /sets or /tunes or /abc or /info -->
     <div ui-view></div>
 
     <!--

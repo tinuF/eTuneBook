@@ -15,11 +15,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
     //		header						-								ABCJS.TuneBook.header
     //		tuneSets
     //			tuneSetId				see %%etbk:tnset
-    //			tuneSetTarget			see %%etbk:tnset
-    //			tuneSetEnv				see %%etbk:tnset
-    //			tuneSetName				see %%etbk:tnset
+    //			tuneSetName				see %%etbk:tnset                name of first tune
     //			tuneSetPositions
-    //				intTuneId 			-								todo: Remove.
     //				tune				-								ABCJS.TuneBook.tunes.tune[i]
     //				    intTuneId 		-								internal key managed by TuneBookEditor (tuneId in abc can be screwed up by the user)
     //					pure			'from X: to next X:'			ABCJS.TuneBook.tunes.tune[i].pure
@@ -42,24 +39,34 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
     //			        frequencyPlayed	-								Score calculated on the basis of playDates
     //					playDates		%%etbk:pldat					<YYYY-MM-DDTHH:mm>,<YYYY-MM-DDTHH:mm>,<YYYY-MM-DDTHH:mm>....
     //						playDate
-    //									%%etbk:tnset					id:<tuneSetId>,pos:<position>,rep:<repeat>,ant:<annotation>,targ:<tuneSetTarget>,env:<tuneSetEnv>, name:<tuneSetName>
+    //									%%etbk:tnset					id:<tuneSetId>,pos:<position>,rep:<repeat>,ant:<annotation>
+    //
     //				tuneSetId											key of tuneSet
     //				position 											position within the tuneSet. (index + 1)
     //				repeat 												repetition within the tuneSet. (default: 3)
     //              annotation                                          optional comment
-    //																	tuneSet-Fields defined by first tuneSetPosition (pos:1)
-    //				tuneSetTarget										'Set-Dance', 'Ceili', 'Session', 'Concert', ...
-    //				tuneSetEnv											'Toe for Toe', 'Steffisburg', ...
-    //				tuneSetName											default: Name of first tune. Aim: Set-Dance-Name 'Clare Lancers Set', ...
+    //
+    //          playlists               %%etbk:plldf                    Playlist Definition. Since 1.2.0. Im Header
+    //              playlist                                            id:<playListId>,name:<playListName>,evt:<playListEvent>,band:<playListBand>,vnue:<playListVenue>
+    //			        id           		see %%etbk:plldf
+    //			        name               	see %%etbk:plldf            'Schmitte Steffisburg', 'Bären Biglen', 'Thunfest',...
+    //			        event           	see %%etbk:plldf            'Set-Dance', 'Ceili', 'Session', 'Concert', 'Wedding', 'Christmas Party', 'Birth Day Party'
+    //			        band        	  	see %%etbk:plldf            'Toe for Toe', 'Scealta', 'Hibernia', 'Solo', ...
+    //			        playlistPositions 	see %%etbk:pllps             Playlist Position. Since 1.2.0. Im Header
+    //                                                                   id:<playListId>,pos:<position>,tnset:<tuneSetId>,name:<name>,ant:<annotation>
+    //			            tuneSet 	 	see %%etbk:pllps
+    //			            position 	 	see %%etbk:pllps
+    //			            annotation 	 	see %%etbk:pllps
 
-	// Immediately invoked function expression in order to build the eTBk module
+
+    // Immediately invoked function expression in order to build the eTBk module
     // Inspired by: http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
     //noinspection JSUnusedLocalSymbols
     var eTBkModule = (function(eTBk) {
         //Private Variables
         var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
         var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-        var eTBK_VERSION = '1.1.8';
+        var eTBK_VERSION = '1.2.0';
         var ABC_VERSION = '2.1';
         //var eTBK_DEFAULT_COLOR = "#E0F0F0";
         var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -67,7 +74,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
         var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
         var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-        var eTBk_EXAMPLE_VERSION = '2013-11-26';
+        var eTBk_EXAMPLE_VERSION = '2014-01-08';
         var currentTuneBook;
 
         //Private Methods
@@ -91,8 +98,71 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             // TuneBook-Beschreibung aus Header lesen
             This.description = getAbcValue(This.header, "%%etbk:bdesc ", "");
 
-            This.tuneSets = extractTuneSets(book);
+            This.tuneSets = extractTuneSets(book);   //TuneSets zuerst, weil Playlists auf TuneSets referenzieren
+
+            This.playlists = extractPlaylists(This);
+
+            extractPlaylistPositions(This);
         };
+
+
+        function extractPlaylists(tuneBook){
+            // Generate Playlists from the book.
+            var playlists, playlistDefinitionDirectives, playlistPositionDirectives;
+
+            playlists = [];
+            playlistDefinitionDirectives = getAbcValues(tuneBook.header, "%%etbk:plldf ");
+
+            if (playlistDefinitionDirectives.length > 0){
+                for (var y = 0; y < playlistDefinitionDirectives.length; y++) {
+                    // Get Playlist Definition
+                    var playlistId = getPlaylistId(playlistDefinitionDirectives[y]);
+                    var playlistName = getPlaylistName(playlistDefinitionDirectives[y]);
+                    var playlistEvent = getPlaylistEvent(playlistDefinitionDirectives[y]);
+                    var playlistBand = getPlaylistBand(playlistDefinitionDirectives[y]);
+
+                    // Generate Playlist
+                    var playlist = [];
+                    playlist = createPlaylist(playlistId, playlistName, playlistEvent, playlistBand);
+                    playlists.push(playlist);
+                }
+            }
+
+           return playlists;
+        }
+
+        function extractPlaylistPositions(tuneBook){
+            // Generate Playlists from the book.
+            var playlistPositionDirectives;
+
+            playlistPositionDirectives = getAbcValues(tuneBook.header, "%%etbk:pllps ");
+
+            if (playlistPositionDirectives.length > 0){
+                for (var z = 0; z < playlistPositionDirectives.length; z++) {
+                    // Get Playlist Positions
+                    var playlistId = getPlaylistId(playlistPositionDirectives[z]);
+                    var position = getPlaylistPositionPosition(playlistPositionDirectives[z]);
+                    var tuneSetId = getPlaylistPositionTuneSetId(playlistPositionDirectives[z]);
+                    var name = getPlaylistPositionName(playlistPositionDirectives[z]);
+                    var annotation = getPlaylistPositionAnnotation(playlistPositionDirectives[z]);
+                    var tuneSet = getTuneSetById(tuneBook, tuneSetId);
+
+                    if(name == "") {
+                        //Default-Name of PlaylistPosition = Name of TuneSet = Name of first tune
+                        name = eliminateThe(tuneSet.tuneSetName);
+                        name += " Set";
+                    }
+
+                    // Generate PlaylistPosition
+                    var playlistPosition = createPlaylistPosition(playlistId, position, tuneSet, name, annotation);
+
+                    // Add PlaylistPosition to Playlist
+                    var playlist = getPlaylistById(tuneBook, playlistId);
+                    playlist.addPlaylistPostion(playlistPosition);
+                }
+            }
+        }
+
 
         function extractTuneSets(book){
 			// Generate TuneSets from the book.
@@ -115,7 +185,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 					// Tune that was exported from eTuneBook
 					// The tune can have one or more tuneSetDirective
 					extractEtbkFields(tune);
-                    tune.intTuneId = intTuneId;     //Ab RE 1.0.8: intTuneId auf tune
+                    tune.intTuneId = intTuneId;
 					
 					for (var y = 0; y < tuneSetDirectives.length; y++) {
 						// Get tuneSetId, position, repeat
@@ -123,20 +193,10 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 						var position = getTuneSetTunePosition(tuneSetDirectives[y]);	
 						var repeat = getTuneSetTuneRepeat(tuneSetDirectives[y]);
                         var annotation = getTuneSetTuneAnnotation(tuneSetDirectives[y]);
-						
-						var tuneSetTarget = "";
-						var tuneSetEnv = "";
-						var tuneSetName = "";
-						
-						if (position == "1") {
-							tuneSetTarget = getTuneSetTarget(tuneSetDirectives[y]);
-							tuneSetEnv = getTuneSetEnvironment(tuneSetDirectives[y]);
-							tuneSetName = getTuneSetName(tuneSetDirectives[y]);
-						}
-						
+
 						// Generate tuneSetPosition
 						var tuneSetPosition = []; 
-						tuneSetPosition = newTuneSetPosition(tuneSetId, tuneSetTarget, tuneSetEnv, tuneSetName, intTuneId, tune, position, repeat, annotation);
+						tuneSetPosition = createTuneSetPosition(tuneSetId, tune, position, repeat, annotation);
 						allTuneSetPositions.push(tuneSetPosition);
 					}
 					
@@ -164,60 +224,26 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 					wTuneSetId = allTuneSetPositions[i].tuneSetId;
 					
 					var tuneSet = [];
-					var tuneSetTarget = "";
-					var tuneSetEnv = "";
 					var tuneSetName = "";
-					var tuneSetType = "";
-					var tuneSetLastPlayed = "";
-					var tuneSetLastModified = "";
-					var frequencyPlayed = 0;
-					var tuneSetPositions = [];
-					
+                    var tuneSetPositions = [];
+
 					// Get all tuneSetPositions for wTuneSetId
 					for (var z = 0; z < allTuneSetPositions.length; z++) {	
 						var tuneSetPosition = allTuneSetPositions[z];
 				
 						if (wTuneSetId == tuneSetPosition.tuneSetId){
 							tuneSetPositions.push(tuneSetPosition);
-							
-							if (tuneSetType == ""){
-								tuneSetType = tuneSetPosition.tune.type;
-								
-							} else if (tuneSetType !== "mixed" && tuneSetType !== tuneSetPosition.tune.type){
-								tuneSetType = "mixed";
-							}
-							
-							if (tuneSetLastPlayed == "" || tuneSetPosition.tune.lastPlayed > tuneSetLastPlayed){
-								tuneSetLastPlayed = tuneSetPosition.tune.lastPlayed;
-							}
-							
-							if (tuneSetLastModified == "" || tuneSetPosition.tune.lastModified > tuneSetLastModified){
-								tuneSetLastModified = tuneSetPosition.tune.lastModified;
-							}
-							
-							if (tuneSetPosition.tuneSetTarget != ""  && tuneSetPosition.tuneSetTarget != "undefined"){
-								tuneSetTarget = tuneSetPosition.tuneSetTarget;
-							}
-							
-							if (tuneSetPosition.tuneSetEnv != "" && tuneSetPosition.tuneSetEnv != "undefined"){
-								tuneSetEnv = tuneSetPosition.tuneSetEnv;
-							}
-							
-							if (tuneSetPosition.tuneSetName != "" && tuneSetPosition.tuneSetName != "undefined"){
-								tuneSetName = tuneSetPosition.tuneSetName;
+
+							if (tuneSetPosition.position == "1"){
+                                //Name of TuneSet = Name of first tune
+                                tuneSetName = eliminateThe(tuneSetPosition.tune.title);
+                                tuneSetName += " Set";
 							}
                             tuneSetPosition.tune.frequencyPlayed = calculateFrequencyPlayed(tuneSetPosition.tune.playDates);
-							frequencyPlayed = frequencyPlayed + tuneSetPosition.tune.frequencyPlayed;
-							
 						}
 					}
-					
-					// Frequency Played: Durchschnitt pro Tune
-					if (tuneSetPositions.length > 1) {
-						frequencyPlayed = Math.round(frequencyPlayed / tuneSetPositions.length); 
-					} 
-					
-					tuneSet = newTuneSet(wTuneSetId, tuneSetTarget, tuneSetEnv, tuneSetName, tuneSetLastPlayed, tuneSetLastModified, frequencyPlayed, tuneSetType, tuneSetPositions);
+
+					tuneSet = createTuneSet(wTuneSetId, tuneSetName, tuneSetPositions);
 					tuneSets.push(tuneSet);
 				}
 			}
@@ -238,9 +264,9 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 				extractEtbkFields(tune);
 				//setTuneSetDirective(tune, wTuneSetId, 1, 3);				
 					
-				tuneSetPosition = newTuneSetPosition(wTuneSetId, "", "", "", intTuneId, tune, 1, "3x");	
+				tuneSetPosition = createTuneSetPosition(wTuneSetId, tune, 1, "3x", "");
 				tuneSetPositions.push(tuneSetPosition);
-				tuneSet = newTuneSet(wTuneSetId, "", "", "", tune.lastPlayed, tune.lastModified, frequencyPlayed, tune.type, tuneSetPositions);
+				tuneSet = createTuneSet(wTuneSetId, tune.title, tuneSetPositions);
 				tuneSets.push(tuneSet);
 				intTuneId++;
 				wTuneSetId++;
@@ -299,17 +325,17 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 					} else if (beginOfLine == "%%etbk:tube1"){
 						//Old youTube directive. Deprecated.
                         //tune.youTube1 = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:tube1 ", "");
-                        tune.videos.push(newVideo("ytube", getAbcValueOfTuneLine(tuneSplits[i], "//www.youtube.com/embed/", ""),""));
+                        tune.videos.push(createVideo("ytube", getAbcValueOfTuneLine(tuneSplits[i], "//www.youtube.com/embed/", ""),""));
                         isStandardAbc = false;
 					} else if (beginOfLine == "%%etbk:tube2"){
                         //Old youTube directive. Deprecated.
 						//tune.youTube2 = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:tube2 ", "");
-                        tune.videos.push(newVideo("ytube", getAbcValueOfTuneLine(tuneSplits[i], "//www.youtube.com/embed/", ""),""));
+                        tune.videos.push(createVideo("ytube", getAbcValueOfTuneLine(tuneSplits[i], "//www.youtube.com/embed/", ""),""));
 						isStandardAbc = false;
 					} else if (beginOfLine == "%%etbk:tube3"){
                         //Old youTube directive. Deprecated.
 						//tune.youTube3 = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:tube3 ", "");
-                        tune.videos.push(newVideo("ytube", getAbcValueOfTuneLine(tuneSplits[i], "//www.youtube.com/embed/", ""),""));
+                        tune.videos.push(createVideo("ytube", getAbcValueOfTuneLine(tuneSplits[i], "//www.youtube.com/embed/", ""),""));
 						isStandardAbc = false;
 					} else if (beginOfLine == "%%etbk:video"){
                         tune.videos.push(getVideoFromDirective(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:video ", "")));
@@ -317,20 +343,20 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                     } else if (beginOfLine == "%%etbk:site1"){
                         //Old site1 directive. Deprecated.
 						//tune.site1 = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site1 ", "");
-                        tune.wsites.push(newWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site1 ", "")));
+                        tune.wsites.push(createWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site1 ", "")));
                         isStandardAbc = false;
 					} else if (beginOfLine == "%%etbk:site2"){
                         //Old site2 directive. Deprecated.
 						//tune.site2 = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site2 ", "");
-                        tune.wsites.push(newWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site2 ", "")));
+                        tune.wsites.push(createWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site2 ", "")));
                         isStandardAbc = false;
 					} else if (beginOfLine == "%%etbk:site3"){
                         //Old site3 directive. Deprecated.
 						//tune.site3 = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site3 ", "");
-                        tune.wsites.push(newWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site3 ", "")));
+                        tune.wsites.push(createWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:site3 ", "")));
                         isStandardAbc = false;
 					} else if (beginOfLine == "%%etbk:wsite"){
-                        tune.wsites.push(newWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:wsite ", "")));
+                        tune.wsites.push(createWebsite(getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:wsite ", "")));
                         isStandardAbc = false;
                     } else if (beginOfLine == "%%etbk:annot"){
 						tune.annotation = getAbcValueOfTuneLine(tuneSplits[i], "%%etbk:annot ", "");
@@ -398,34 +424,89 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 			
 			return frequencyPlayed;
 		}
-		
-		function newTuneSetPosition(iTuneSetId, iTuneSetTarget, iTuneSetEnv, iTuneSetName, iIntTuneId, iTune, iPosition, iRepeat, iAnnotation){
-			return {	tuneSetId: iTuneSetId, 
-						tuneSetTarget: iTuneSetTarget, 
-						tuneSetEnv: iTuneSetEnv, 
-						tuneSetName: iTuneSetName, 
-						intTuneId: iIntTuneId, 
-						tune: iTune, 
-						position: iPosition, 
-						repeat: iRepeat,
-                        annotation: iAnnotation
-					};
+
+
+
+        //AbcOption-Factory
+        function createAbcOption(tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, playlistAbcIncl, fingeringAbcIncl){
+            return {
+                //eTuneBook Directives
+                tuneSet: tuneSetAbcIncl,
+                playDate: playDateAbcIncl,
+                skill: skillAbcIncl,
+                color: colorAbcIncl,
+                annotation: annotationAbcIncl,
+                website: siteAbcIncl,
+                video: tubeAbcIncl,
+                playlist: playlistAbcIncl,
+                //Standard Abc
+                fingering: fingeringAbcIncl,
+
+                includeAtLeastOneEtbkDirective: function(){
+                    if (this.tuneSet || this.playDate || this.skill || this.color || this.annotation || this.website || this.video || this.playlist) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+
+            };
+        }
+
+
+        //Create Default AbcOption
+        function createDefaultAbcOption(){
+            return createAbcOption(true, true, true, true, true, true, true, true, true);
+        }
+
+        //Playlist-Factory
+        function createPlaylist(playlistId, playlistName, playlistEvent, playlistBand){
+            return {
+                id: playlistId,
+                name: playlistName,
+                event: playlistEvent,
+                band: playlistBand,
+                playlistPositions: [],
+
+                addPlaylistPostion: function(playlistPostion){
+                    this.playlistPositions.push(playlistPostion);
+                }
+            };
+        }
+
+        //PlaylistPosition-Factory
+        function createPlaylistPosition(playlistId, position, tuneSet, name, annotation){
+            return {
+                playlistId: playlistId,
+                position: position,
+                tuneSet: tuneSet,
+                name: name,
+                annotation: annotation
+            };
+        }
+
+        //TuneSetPosition-Factory
+        function createTuneSetPosition(iTuneSetId, iTune, iPosition, iRepeat, iAnnotation){
+			return {
+                tuneSetId: iTuneSetId,
+				tune: iTune,
+				position: iPosition,
+				repeat: iRepeat,
+                annotation: iAnnotation
+			};
 		}
 		
-		function newTuneSet(iTuneSetId, iTuneSetTarget, iTuneSetEnv, iTuneSetName, iLastPlayed, iLastModified, ifrequencyPlayed, iType, iTuneSetPositions){
-			return {	tuneSetId: iTuneSetId, 
-						tuneSetTarget: iTuneSetTarget, 
-						tuneSetEnv: iTuneSetEnv, 
-						tuneSetName: iTuneSetName,
-						lastPlayed: iLastPlayed, 
-						lastModified: iLastModified, 
-						frequencyPlayed: ifrequencyPlayed, 
-						type: iType, 
-						sort: 0, 
-						tuneSetPositions: iTuneSetPositions};
+		//TuneSet-Factory
+        function createTuneSet(iTuneSetId, iTuneSetName, iTuneSetPositions){
+			return {
+                tuneSetId: iTuneSetId,
+				tuneSetName: iTuneSetName,
+				sort: 0,
+				tuneSetPositions: iTuneSetPositions};
 		}
 
-        function newVideo(iSource, iCode, iDescription){
+        //Video-Factory
+        function createVideo(iSource, iCode, iDescription){
             return {
                 source: iSource,
                 code: iCode,
@@ -433,13 +514,15 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             };
         }
 
-        function newWebsite(iURL){
+        //Website-Factory
+        function createWebsite(iURL){
             return {
                 url: iURL
             };
         }
 
-        function newPlayDate(iDate){
+        //PlayDate-Factory
+        function createPlayDate(iDate){
             return {
                 playDate: iDate
             };
@@ -607,7 +690,6 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
                 var targetTuneSetPosition = {};
 
-                // Todo: Handle TuneSet-Fields on first TuneSetPosition
                 if (moveOrCopy == "move"){
                     // Set new TuneSetId and Position on TuneSetPosition
                     // copy by reference
@@ -618,12 +700,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                 } else if (moveOrCopy == "copy"){
                     // Set new TuneSetId and Position on TuneSetPosition
                     // copy by value (primitive types), copy by reference (objects) -> tune is shared
-                    targetTuneSetPosition = newTuneSetPosition(targetTuneSetId,
-                        sourceTuneSetPosition.tuneSetTarget, sourceTuneSetPosition.tuneSetEnv,
-                        sourceTuneSetPosition.tuneSetName,
-                        sourceTuneSetPosition.intTuneId, sourceTuneSetPosition.tune,
-                        newPosition.toString(), sourceTuneSetPosition.repeat,
-                        sourceTuneSetPosition.annotation);
+                    targetTuneSetPosition = createTuneSetPosition(targetTuneSetId,sourceTuneSetPosition.tune, newPosition.toString(), sourceTuneSetPosition.repeat, sourceTuneSetPosition.annotation);
                 }
 
                 // Add TuneSetPosition to TuneSet (only if source tuneSet ist different from target tuneSet)
@@ -658,6 +735,147 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return tuneSetDeleted;
         }
 
+        function moveUpPlaylistPosition(currentTuneBook, playlistId, position){
+            var playlist, oldPosition, newPosition, movingPlaylistPosition;
+
+            oldPosition = parseInt(position);
+            newPosition = oldPosition - 1;
+            if (newPosition < 1) {
+                newPosition = 1
+            }
+            playlist = getPlaylistById(currentTuneBook,playlistId);
+
+           //Change moving Playlist-Position
+            for (var z = 0; z < playlist.playlistPositions.length; z++) {
+                if(parseInt(playlist.playlistPositions[z].position) == oldPosition){
+                    playlist.playlistPositions[z].position = newPosition.toString();
+                    movingPlaylistPosition = playlist.playlistPositions[z];
+                }
+            }
+
+            //Change overlapping Playlist-Position
+            for (var y = 0; y < playlist.playlistPositions.length; y++) {
+                if(parseInt(playlist.playlistPositions[y].position) == newPosition){
+                    if(playlist.playlistPositions[y] != movingPlaylistPosition){
+                        playlist.playlistPositions[y].position = oldPosition.toString();
+                    }
+                }
+            }
+
+            // Sort PlaylistPositions by position
+            playlist.playlistPositions.sort(function(a, b){
+                return a.position-b.position
+            });
+
+            return playlist;
+        }
+
+        function moveDownPlaylistPosition(currentTuneBook, playlistId, position){
+            var playlist, oldPosition, newPosition, movingPlaylistPosition;
+
+            oldPosition = parseInt(position);
+            newPosition = oldPosition + 1;
+
+            playlist = getPlaylistById(currentTuneBook,playlistId);
+
+            if (playlist.playlistPositions.length < newPosition) {
+                newPosition = oldPosition
+            } else {
+                //Change moving Playlist-Position
+                for (var z = 0; z < playlist.playlistPositions.length; z++) {
+                    if(parseInt(playlist.playlistPositions[z].position) == oldPosition){
+                        playlist.playlistPositions[z].position = newPosition.toString();
+                        movingPlaylistPosition = playlist.playlistPositions[z];
+                    }
+                }
+
+                //Change overlapping Playlist-Position
+                for (var y = 0; y < playlist.playlistPositions.length; y++) {
+                    if(parseInt(playlist.playlistPositions[y].position) == newPosition){
+                        if(playlist.playlistPositions[y] != movingPlaylistPosition){
+                            playlist.playlistPositions[y].position = oldPosition.toString();
+                        }
+                    }
+                }
+
+                // Sort PlaylistPositions by position
+                playlist.playlistPositions.sort(function(a, b){
+                    return a.position-b.position
+                });
+
+            }
+
+            return playlist;
+        }
+
+        function addEmptyPlaylistPosition(currentTuneBook, playlistId){
+            var playlist, emptyPlaylistPosition;
+
+            playlist = getPlaylistById(currentTuneBook,playlistId);
+            emptyPlaylistPosition = createPlaylistPosition(playlist.id, playlist.playlistPositions.length + 1, null, "", "");
+            playlist.playlistPositions.push(emptyPlaylistPosition);
+
+            return emptyPlaylistPosition;
+        }
+
+        function addEmptyPlaylist(currentTuneBook){
+            var playlistId, emptyPlaylist;
+
+            playlistId = currentTuneBook.playlists.length + 1
+            emptyPlaylist = createPlaylist(playlistId,"","","");
+            currentTuneBook.playlists.push(emptyPlaylist);
+
+            return emptyPlaylist;
+        }
+
+        function deletePlaylistPosition(currentTuneBook, playlistId, position){
+            var playlist = getPlaylistById(currentTuneBook, playlistId);
+            var playlistPosition = null;
+            var removedPosition = 0;
+            removedPosition = parseInt(position);
+
+            for (var z = 0; z < playlist.playlistPositions.length; z++) {
+                if (playlist.playlistPositions[z].position == position){
+                    playlistPosition = playlist.playlistPositions[z];
+                    // Delete playlistPosition from playlist
+                    playlist.playlistPositions.splice(z, 1);
+                }
+            }
+
+            if (playlist.playlistPositions.length == 0) {
+                // Empty playlistt
+
+            } else {
+                // playlist still has playlistPositions
+                // Adjust Positions of remaining playlistPositions: Only necessary for playlistPositions that come after the removed playlistPosition
+                var currentPosition = 0;
+
+                for (var y = 0; y < playlist.playlistPositions.length; y++) {
+                    currentPosition = parseInt(playlist.playlistPositions[y].position);
+
+                    if (currentPosition > removedPosition) {
+                        currentPosition--;
+                        // Change Position on TuneSetPosition
+                        playlist.playlistPositions[y].position = currentPosition.toString();
+                    }
+                }
+            }
+        }
+
+        function deletePlaylist(currentTuneBook, playlistId){
+            var playlist = getPlaylistById(currentTuneBook, playlistId);
+
+            for (var z = 0; z < currentTuneBook.playlists.length; z++) {
+                if (currentTuneBook.playlists[z].id == playlistId){
+                    // Delete all playlistPositions
+                    // nicht nötig, da beim Export die Playlist der Trigger ist
+
+                    // Delete playlist
+                    currentTuneBook.playlists.splice(z, 1);
+                }
+            }
+        }
+
 
         function getTuneSetId(tuneSetDirective){
 			var tuneSetId = 0;
@@ -681,6 +899,40 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             }
             return detail;
         }
+
+
+        function getPlaylistId(playlistDirective){
+            return getSubDirective(playlistDirective, "id:", ",");
+        }
+
+        function getPlaylistName(playlistDirective){
+            return getSubDirective(playlistDirective, "name:", ",");
+        }
+
+        function getPlaylistEvent(playlistDirective){
+            return getSubDirective(playlistDirective, "evt:", ",");
+        }
+
+        function getPlaylistBand(playlistDirective){
+            return getSubDirective(playlistDirective, "band:", ",");
+        }
+
+        function getPlaylistPositionPosition(playlistDirective){
+            return getSubDirective(playlistDirective, "pos:", ",");
+        }
+
+        function getPlaylistPositionTuneSetId(playlistDirective){
+            return getSubDirective(playlistDirective, "tnset:", ",");
+        }
+
+        function getPlaylistPositionName(playlistDirective){
+            return getSubDirective(playlistDirective, "name:", ",");
+        }
+
+        function getPlaylistPositionAnnotation(playlistDirective){
+            return getSubDirective(playlistDirective, "ant:", ",");
+        }
+
 
         function getVideoSource(videoDirective){
             return getSubDirective(videoDirective, "src:", ",");
@@ -727,41 +979,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             }
             return tuneSetTuneAnnotation;
         }
-		
-		function getTuneSetTarget(tuneSetDirective){
-			var tuneSetTarget = "";
-			var tuneSetTargetSplits = [];
-			tuneSetTargetSplits = tuneSetDirective.split("targ:");
-			if  (tuneSetTargetSplits.length > 1){
-				tuneSetTargetSplits = tuneSetTargetSplits[1].split(",");
-				tuneSetTarget = tuneSetTargetSplits[0].replace(/^\s+|\s+$/g, '');
-			}
-			return tuneSetTarget; 
-		}
-		
-		function getTuneSetEnvironment(tuneSetDirective){
-			var tuneSetEnvironment = "";
-			var tuneSetEnvironmentSplits = [];
-			tuneSetEnvironmentSplits = tuneSetDirective.split("env:");
-			if  (tuneSetEnvironmentSplits.length > 1){
-				tuneSetEnvironmentSplits = tuneSetEnvironmentSplits[1].split(",");
-				tuneSetEnvironment = tuneSetEnvironmentSplits[0].replace(/^\s+|\s+$/g, '');
-			}
-			return tuneSetEnvironment; 
-		}
-		
-		function getTuneSetName(tuneSetDirective){
-			var tuneSetName = "";
-			var tuneSetNameSplits = [];
-			tuneSetNameSplits = tuneSetDirective.split("name:");
-			if  (tuneSetNameSplits.length > 1){
-				tuneSetNameSplits = tuneSetNameSplits[1].split("\n");
-				tuneSetName = tuneSetNameSplits[0].replace(/^\s+|\s+$/g, '');
-			}
-			return tuneSetName; 
-		}
-		
-		
+
 		function getAbcValue(abc, abcField, initValue){
 			var value = initValue;
 			var abcFieldSplits = [];
@@ -844,7 +1062,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 		}
 		
 		
-		function getTuneAbcWithEtbkDirectives(tune, tuneSetPositions, targetLine, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl){
+		function writeTuneAbcWithEtbkDirectives(tune, tuneSetPositions, targetLine, abcOption){
 			var tuneSplits = [];
 			var newAbc = "";
 			tuneSplits = tune.pure.split("\n");
@@ -863,47 +1081,16 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 					}
 				
 					if (!curLineIsTargetLine && lastLineIsTargetLine){			
-						if (tuneSetAbcIncl) {
+						if (abcOption.tuneSet) {
 							for (var w = 0; w < tuneSetPositions.length; w++) {	
 								directive = "%%etbk:tnset id:"+tuneSetPositions[w].tuneSetId+",pos:"+tuneSetPositions[w].position+",rep:"+tuneSetPositions[w].repeat+",ant:"+tuneSetPositions[w].annotation;
-								
-								if (tuneSetPositions[w].tuneSetTarget != ""){
-									directive = directive+",targ:"+tuneSetPositions[w].tuneSetTarget;
-								}
-								
-								if (tuneSetPositions[w].tuneSetEnv != ""){
-									directive = directive+",env:"+tuneSetPositions[w].tuneSetEnv;
-								}
-								
-								if (tuneSetPositions[w].tuneSetName != ""){
-									directive = directive+",name:"+tuneSetPositions[w].tuneSetName;
-								}
-								
+
 								newAbc = newAbc + directive;
 								newAbc = newAbc + "\n";
 							}
 						}
 						
-						if (siteAbcIncl) {
-							/*
-                            if (tune.site1 != "") {
-								directive = "%%etbk:site1 " + tune.site1;
-								newAbc = newAbc + directive;
-								newAbc = newAbc + "\n";
-							}
-							
-							if (tune.site2 != "") {
-								directive = "%%etbk:site2 " + tune.site2;
-								newAbc = newAbc + directive;
-								newAbc = newAbc + "\n";
-							}
-							
-							if (tune.site3 != "") {
-								directive = "%%etbk:site3 " + tune.site3;
-								newAbc = newAbc + directive;
-								newAbc = newAbc + "\n";
-							}
-							*/
+						if (abcOption.website) {
                             for (var z = 0; z < tune.wsites.length; z++) {
                                 directive = "%%etbk:wsite " + tune.wsites[z].url;
                                 newAbc = newAbc + directive;
@@ -911,27 +1098,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                             }
 						}
 						
-						if (tubeAbcIncl) {
-							// tube1, tube2 and tube3: deprecated
-                            /*
-                            if (tune.youTube1 != "") {
-								directive = "%%etbk:tube1 " + tune.youTube1;
-								newAbc = newAbc + directive;
-								newAbc = newAbc + "\n";
-							}
-							
-							if (tune.youTube2 != "") {
-								directive = "%%etbk:tube2 " + tune.youTube2;
-								newAbc = newAbc + directive;
-								newAbc = newAbc + "\n";
-							}
-							
-							if (tune.youTube3 != "") {
-								directive = "%%etbk:tube3 " + tune.youTube3;
-								newAbc = newAbc + directive;
-								newAbc = newAbc + "\n";
-							}
-							*/
+						if (abcOption.video) {
                             for (var z = 0; z < tune.videos.length; z++) {
                                 directive = "%%etbk:video "
                                             + "src:" + tune.videos[z].source
@@ -940,27 +1107,25 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                                 newAbc = newAbc + directive;
                                 newAbc = newAbc + "\n";
                             }
-
-
 						}
 
-						if (annotationAbcIncl) {	
+						if (abcOption.annotation) {
 							if (tune.annotation != "") {
 								directive = "%%etbk:annot " + tune.annotation;
 								newAbc = newAbc + directive;
 								newAbc = newAbc + "\n";
 							}
 						}
-						
-						if (skillAbcIncl) {
+
+						if (abcOption.skill) {
 							if (tune.skill != "") {
 								directive = "%%etbk:skill " + tune.skill;
 								newAbc = newAbc + directive;
 								newAbc = newAbc + "\n";
 							}
 						}
-						
-						if (colorAbcIncl) {
+
+						if (abcOption.color) {
 							if (tune.color != eTBK_DEFAULT_COLOR) {
 								directive = "%%etbk:color " + tune.color;
 								newAbc = newAbc + directive;
@@ -968,7 +1133,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 							}
 						}
 						
-						if (playDateAbcIncl) {
+						if (abcOption.playDate) {
 							/*
                             if (!isDefaultPlayDate(tune.lastPlayed)) {
 								directive = getPlayDatesDirective(tune);
@@ -1010,9 +1175,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                 return playDates[0].playDate;
             }
 		}
-		
-		
-		function getPlayDates(tuneLine){
+
+        function getPlayDates(tuneLine){
 			var playDates = [];
 			var playDate = new Date();
 			var playDatesSplits = [];
@@ -1023,14 +1187,14 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 				//moment kann nicht verwendet werden, weil Object mit methoden, und Object kann folglich nicht aus localStorage restored werden.
 				//playDate = newPlayDate(moment(playDatesSplits[i], "YYYY-MM-DDTHH:mm"));
 				playDate = moment(playDatesSplits[i], "YYYY-MM-DDTHH:mm").toDate();
-				playDates.push(newPlayDate(playDate));
+				playDates.push(createPlayDate(playDate));
 			}	
 						
 			return playDates; 
 		}
 
         function getVideoFromDirective(videoDirective){
-            return newVideo(getVideoSource(videoDirective), getVideoCode(videoDirective), getVideoDescription(videoDirective));
+            return createVideo(getVideoSource(videoDirective), getVideoCode(videoDirective), getVideoDescription(videoDirective));
         }
 		
 		function initializeTuneAndTuneSet(tuneSets){
@@ -1051,7 +1215,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 					
 				for (var z = 0; z < tuneSets[i].tuneSetPositions.length; z++) {
 					
-					currentIntTuneId = parseInt(tuneSets[i].tuneSetPositions[z].intTuneId);
+					currentIntTuneId = parseInt(tuneSets[i].tuneSetPositions[z].tune.intTuneId);
 					if (currentIntTuneId > maxIntTuneId){
 						maxIntTuneId = currentIntTuneId;
 					}
@@ -1078,10 +1242,9 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 			
 			var tuneSet = [];
 			var tuneSetPositions = [];
-			var tuneSetPosition = newTuneSetPosition(newTuneSetId, "", "", "", newIntTuneId, tune, 1, "3x");
-			//addNewTuneSetDirective(tuneSetPosition);
+			var tuneSetPosition = createTuneSetPosition(newTuneSetId, tune, 1, "3x", "");
 			tuneSetPositions.push(tuneSetPosition);
-			tuneSet = newTuneSet(newTuneSetId, "", "", "", tune.lastPlayed, tune.lastModified, 0, tune.type, tuneSetPositions);
+			tuneSet = createTuneSet(newTuneSetId, tune.title, tuneSetPositions);
 
             tuneSets.unshift(tuneSet);
 
@@ -1105,10 +1268,10 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             var tuneSet = [];
             var tuneSetPositions = [];
             var newTuneSetId = ++maxTuneSetId;
-            var tuneSetPosition = newTuneSetPosition(newTuneSetId, "", "", "", tune.intTuneId, tune, 1, "3x");
+            var tuneSetPosition = createTuneSetPosition(newTuneSetId, tune, 1, "3x", "");
             //addNewTuneSetDirective(tuneSetPosition);
             tuneSetPositions.push(tuneSetPosition);
-            tuneSet = newTuneSet(newTuneSetId, "", "", "", tune.lastPlayed, tune.lastModified, 0, tune.type, tuneSetPositions);
+            tuneSet = createTuneSet(newTuneSetId, tune.title, tuneSetPositions);
 
             tuneSets.unshift(tuneSet);
 
@@ -1116,62 +1279,6 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return tuneSet;
         }
 
-
-		
-		/*
-		function changePositionOnTuneSetDirective(tuneSetPosition){
-			var tuneSplits = [];
-			var newAbc = "";
-			tuneSplits = tuneSetPosition.tune.pure.split("\n");
-			tuneSetPosition.tune.pure = "";
-			
-			var searchTuneSetDirective = "%%etbk:tnset id:"+tuneSetPosition.tuneSetId;
-			var newTuneSetDirective = "%%etbk:tnset id:"+tuneSetPosition.tuneSetId+",pos:"+tuneSetPosition.position+",rep:"+tuneSetPosition.repeat;
-
-			for (var i = 0; i < tuneSplits.length; i++) {	
-				if (tuneSplits[i].indexOf(searchTuneSetDirective) !== -1){
-					newAbc = newAbc + newTuneSetDirective;
-				
-				} else {
-					newAbc = newAbc + tuneSplits[i];
-				}
-				
-				newAbc = newAbc + "\n";
-			}
-			
-			tuneSetPosition.tune.pure = newAbc; 
-		}
-		*/
-
-		/*
-		function addNewTuneSetDirective(tuneSetPosition){
-			setTuneSetDirective(tuneSetPosition.tune, tuneSetPosition.tuneSetId, tuneSetPosition.position, tuneSetPosition.repeat); 
-		}
-		*/
-		
-		/*
-		function deleteTuneSetDirective(tuneSetPosition){
-			var tuneSplits = [];
-			var newAbc = "";
-			tuneSplits = tuneSetPosition.tune.pure.split("\n");
-			tuneSetPosition.tune.pure = "";
-			
-			var searchTuneSetDirective = "%%etbk:tnset id:"+tuneSetPosition.tuneSetId;
-			var newTuneSetDirective = "%%etbk:tnset id:"+tuneSetPosition.tuneSetId+",pos:"+tuneSetPosition.position+",rep:"+tuneSetPosition.repeat;
-
-			for (var i = 0; i < tuneSplits.length; i++) {	
-				if (tuneSplits[i].indexOf(searchTuneSetDirective) !== -1){
-				
-				} else {
-					newAbc = newAbc + tuneSplits[i];
-					newAbc = newAbc + "\n";
-				}
-			}
-			
-			tuneSetPosition.tune.pure = newAbc; 
-		}
-		*/
-		
 		function addTunePlayDate(tune, newDate){
 			if (tune.lastPlayed != null && moment(tune.lastPlayed).diff(newDate, "minutes") == 0){
 				// Power-Clicker
@@ -1182,7 +1289,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 				tune.lastPlayed = newDate;
 				
 				// Put LastPlayed on first Position in the playDates-Array
-                tune.playDates.unshift(newPlayDate(tune.lastPlayed));
+                tune.playDates.unshift(createPlayDate(tune.lastPlayed));
 
                 // Calculate Frequency Played
                 tune.frequencyPlayed = calculateFrequencyPlayed(tune.playDates);
@@ -1217,21 +1324,21 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 			
 			return directive;
 		}
-		
+
 		/*
 		function saveColorDirective(tuneSetPosition){
 			var searchDirective = "%%etbk:color ";
 			var newDirective = "%%etbk:color " + tuneSetPosition.tune.color;
-			
-			saveDirective(tuneSetPosition, searchDirective, newDirective); 
+
+			saveDirective(tuneSetPosition, searchDirective, newDirective);
 		}
 		*/
-		
+
 		function saveSkillDirective(tuneSetPosition){
 			var searchDirective = "%%etbk:skill ";
 			var newDirective = "%%etbk:skill " + tuneSetPosition.tune.skill;
-			
-			saveDirective(tuneSetPosition, searchDirective, newDirective); 
+
+			saveDirective(tuneSetPosition, searchDirective, newDirective);
 		}
 		
 		function saveDirective(tuneSetPosition, searchDirective, newDirective){			
@@ -1296,72 +1403,63 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return Math.floor(Math.random()* tunes.length) + 1;
         }
 				
-		function getAbc(tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl){
+		function writeAbc(tuneBook, abcOption){
 			// Generate Abc
-			
-			var tuneAbc = "";
-			var allTuneSetPositions = [];
-			var wIntTuneId = 0;
-			var wTune = [];
-			var wTuneSetPositions = [];
-			
-			// Construct Header
-			var tbkAbc = "";
-			var includeEtbkDirective = false;
-			if (tuneSetAbcIncl || playDateAbcIncl || skillAbcIncl || colorAbcIncl || annotationAbcIncl || siteAbcIncl || tubeAbcIncl) {
-				includeEtbkDirective = true;
-			}
-			tbkAbc = getAbcHeader(tuneBookName, tuneBookVersion, tuneBookDescription, includeEtbkDirective);
+            var tbkAbc, tuneAbc, tunes;
 
-			for (var i = 0; i < tuneSets.length; i++) {	
-				for (var z = 0; z < tuneSets[i].tuneSetPositions.length; z++) {
-					allTuneSetPositions.push(tuneSets[i].tuneSetPositions[z]);
-				}
-			}	
-			
-			// Sort TuneSetPositions by intTuneId
-			allTuneSetPositions.sort(function(a, b){
-				return a.intTuneId-b.intTuneId
-			});
-			
-			for (var i = 0; i < allTuneSetPositions.length; i++) {	
-				
-				if (wIntTuneId == 0) {
-					// First Record
-					tuneAbc = "";
-					wTuneSetPositions = [];
-					wIntTuneId = allTuneSetPositions[i].intTuneId;
-					wTune = allTuneSetPositions[i].tune;
-					wTuneSetPositions.push(allTuneSetPositions[i]);
-					
-				} else if (wIntTuneId == allTuneSetPositions[i].intTuneId  && wTune == allTuneSetPositions[i].tune) {
-					// Gruppenbruch intTuneId
-					// Tune belongs to more than one set
-					wTuneSetPositions.push(allTuneSetPositions[i]);
-				
-				} else {
-					
-					tuneAbc = getTuneAbc(wTune, wTuneSetPositions, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl);
-					tbkAbc += tuneAbc;
-					tbkAbc += "\n";	//empty line between tunes
-					
-					// Init
-					tuneAbc = "";
-					wTuneSetPositions = [];
-					wIntTuneId = allTuneSetPositions[i].intTuneId;
-					wTune = allTuneSetPositions[i].tune;
-					wTuneSetPositions.push(allTuneSetPositions[i]);
-				}
-			}
-			
-			// EOF: Last Tune
-			tuneAbc = getTuneAbc(wTune, wTuneSetPositions, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl);
-			tbkAbc += tuneAbc;
-	
+            tunes = [];
+			tuneAbc = "";
+            tbkAbc = "";
+
+            // Construct Header
+			tbkAbc = writeAbcHeader(tuneBook, abcOption);
+
+            // Get Tunes
+            tunes = extractTunes(tuneBook.tuneSets);
+
+            // Sort Tunes by intTuneId
+            tunes.sort(function(a, b){
+                return a.intTuneId-b.intTuneId
+            });
+
+			for (var i = 0; i < tunes.length; i++) {
+				tuneAbc = writeTuneAbc(tunes[i], getTuneSetPositionsByIntTuneId(tuneBook, tunes[i].intTuneId), abcOption);
+                tbkAbc += tuneAbc;
+                tbkAbc += "\n";	//empty line between tunes
+            }
+
 			return tbkAbc; 
 		}
-		
-		function getAbcHeader(tuneBookName, tuneBookVersion, tuneBookDescription, includeEtbkDirective){
+
+
+        function initializeAbcHeader(){
+            var tuneBookName = "My TuneBook";
+            var tuneBookDescription = "The tunes I play";
+            var date = moment(new Date());
+            var tuneBookVersion = date.format("YYYY-MM-DDTHH:mm");
+
+            // Construct Header
+            var tbkAbc = "%abc-";
+            tbkAbc += ABC_VERSION;
+            tbkAbc += "\n";
+            tbkAbc += "I:abc-creator eTuneBook-";
+            tbkAbc += eTBK_VERSION;
+            tbkAbc += "\n";
+            tbkAbc += "%%etbk:bname ";
+            tbkAbc += tuneBookName;
+            tbkAbc += "\n";
+            tbkAbc += "%%etbk:bvers ";
+            tbkAbc += tuneBookVersion;
+            tbkAbc += "\n";
+            tbkAbc += "%%etbk:bdesc ";
+            tbkAbc += tuneBookDescription;
+            tbkAbc += "\n";
+
+            return tbkAbc;
+        }
+
+
+        function writeAbcHeader(tuneBook, abcOption){
 			// Construct Header
 			var tbkAbc = "%abc-";
 			tbkAbc += ABC_VERSION;
@@ -1370,31 +1468,64 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 			tbkAbc += eTBK_VERSION;
 			tbkAbc += "\n";
 			
-			if (includeEtbkDirective) {
+			if (abcOption.includeAtLeastOneEtbkDirective()) {
 				tbkAbc += "%%etbk:bname ";
-				tbkAbc += tuneBookName;
+				tbkAbc += tuneBook.name;
 				tbkAbc += "\n";
 				tbkAbc += "%%etbk:bvers ";
-				tbkAbc += tuneBookVersion;
+				tbkAbc += tuneBook.version;
 				tbkAbc += "\n";
 				tbkAbc += "%%etbk:bdesc ";
-				tbkAbc += tuneBookDescription;
+				tbkAbc += tuneBook.description;
 				tbkAbc += "\n";
-			} 
+			}
+
+            if(abcOption.playlist){
+                for (var i = 0; i < tuneBook.playlists.length; i++) {
+                    //Playlist-Definition
+                    tbkAbc += "%%etbk:plldf id:";
+                    tbkAbc += tuneBook.playlists[i].id;
+                    tbkAbc += ",name:";
+                    tbkAbc += tuneBook.playlists[i].name;
+                    tbkAbc += ",evt:";
+                    tbkAbc += tuneBook.playlists[i].event;
+                    tbkAbc += ",band:";
+                    tbkAbc += tuneBook.playlists[i].band;
+                    tbkAbc += ",ant:";
+                    tbkAbc += tuneBook.playlists[i].annotation;
+                    tbkAbc += "\n";
+
+                    for (var z = 0; z < tuneBook.playlists[i].playlistPositions.length; z++) {
+                        //Playlist-Positions
+                        tbkAbc += "%%etbk:pllps id:";
+                        tbkAbc += tuneBook.playlists[i].id;
+                        tbkAbc += ",pos:";
+                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].position;
+                        tbkAbc += ",tnset:";
+                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].tuneSet.tuneSetId;
+                        tbkAbc += ",name:";
+                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].name;
+                        tbkAbc += ",ant:";
+                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].annotation;
+                        tbkAbc += "\n";
+                    }
+                }
+            }
+
 			tbkAbc += "\n";
 			return tbkAbc;
 		}
 		
-		function getTuneAbc(tune, tuneSetPositions, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl) {
+		function writeTuneAbc(tune, tuneSetPositions, abcOption) {
 			var tuneAbc = "";		
 			
-			if (!tuneSetAbcIncl && !playDateAbcIncl && !skillAbcIncl && !colorAbcIncl && !annotationAbcIncl && !siteAbcIncl && !tubeAbcIncl) {
+			if (!abcOption.tuneSet && !abcOption.playDate && !abcOption.skill && !abcOption.color && !abcOption.annotation && !abcOption.website && !abcOption.video) {
 				tuneAbc = tune.pure;
 			} else {
-				tuneAbc = getTuneAbcWithEtbkDirectives(tune, tuneSetPositions, "X:", tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl);
+				tuneAbc = writeTuneAbcWithEtbkDirectives(tune, tuneSetPositions, "X:", abcOption);
 			}
 					
-			if (!fingeringAbcIncl) {
+			if (!abcOption.fingering) {
 				tuneAbc = tuneAbc.replace(eTBK_PATTERN_FINGER, '');
 			}
 			
@@ -1961,7 +2092,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             tune = getTuneById(tuneBook, intTuneId);
             if (tune != null) {
                 //Todo: Don't add if source/code already exists.
-                video = newVideo(videoSource, videoCode, videoDescription);
+                video = createVideo(videoSource, videoCode, videoDescription);
                 tune.videos.push(video);
             }
             return video;
@@ -1972,7 +2103,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             tune = getTuneById(tuneBook, intTuneId);
             if (tune != null) {
                 //Todo: Don't add if url already exists.
-                wsite = newWebsite(url);
+                wsite = createWebsite(url);
                 tune.wsites.push(wsite);
             }
             return wsite;
@@ -2030,7 +2161,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             if (tuneBook != null) {
                 for (var i = 0; i < tuneBook.tuneSets.length; i++) {
                     for (var z = 0; z < tuneBook.tuneSets[i].tuneSetPositions.length; z++) {
-                        if (intTuneId == tuneBook.tuneSets[i].tuneSetPositions[z].intTuneId) {
+                        if (intTuneId == tuneBook.tuneSets[i].tuneSetPositions[z].tune.intTuneId) {
                             return tuneBook.tuneSets[i].tuneSetPositions[z].tune;
                         }
                     }
@@ -2044,6 +2175,18 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                 for (var i = 0; i < tuneBook.tuneSets.length; i++) {
                     if (tuneSetId == tuneBook.tuneSets[i].tuneSetId) {
                         return tuneBook.tuneSets[i];
+                    }
+                }
+            }
+            return null;
+        }
+
+
+        function getPlaylistById(tuneBook, playlistId){
+            if (tuneBook != null) {
+                for (var i = 0; i < tuneBook.playlists.length; i++) {
+                    if (playlistId == tuneBook.playlists[i].id) {
+                        return tuneBook.playlists[i];
                     }
                 }
             }
@@ -2073,6 +2216,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
             return tunes;
         }
+
+
 
         function extractTunesWithinPlayDatePeriod(tuneBook, playDateFilter){
             // Extract Tunes form TuneSets.
@@ -2259,6 +2404,25 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return tuneSets;
         }
 
+
+        function getTuneSetPositionsByIntTuneId(tuneBook, intTuneId){
+            var tuneSetPositions = [];
+
+            if (tuneBook != null){
+                for (var i = 0; i < tuneBook.tuneSets.length; i++) {
+                    for (var z = 0; z < tuneBook.tuneSets[i].tuneSetPositions.length; z++) {
+                        if(intTuneId == tuneBook.tuneSets[i].tuneSetPositions[z].tune.intTuneId){
+                            tuneSetPositions.push(tuneBook.tuneSets[i].tuneSetPositions[z]);
+                        }
+                    }
+                }
+            }
+
+            return tuneSetPositions;
+        }
+
+
+
         function getTuneSetsAsTuneSetPositions(tuneBook, intTuneId){
             // Extract TuneSetPositions from TuneSets.
             var tuneSetIds = [];
@@ -2298,26 +2462,72 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return tuneSetPositions;
         }
 
-        function filterTuneSets(tuneSets, filterOptions){
+        function eliminateThe(string) {
+            var theSplits = [];
+            if (string != 'undefined' && string != null){
+                theSplits = string.split(",");
+            }
+            return theSplits[0];
+        };
+
+
+        function getPlaylistPositionsByTuneSetId(tuneBook, tuneSetId){
+            var playlist, playlistPositions;
+            playlistPositions = [];
+
+            for (var i = 0; i < tuneBook.playlists.length; i++) {
+                playlist = tuneBook.playlists[i];
+
+                for (var z = 0; z < playlist.playlistPositions.length; z++) {
+                    if(playlist.playlistPositions[z].tuneSet.tuneSetId == tuneSetId){
+                        playlistPositions.push(playlist.playlistPositions[z]);
+                    }
+                }
+            }
+
+            return playlistPositions;
+        }
+
+        function getPlaylistsByTuneSetId(tuneBook, tuneSetId){
+            var playlist, playlists, playlistAdded;
+            playlists = [];
+
+            for (var i = 0; i < tuneBook.playlists.length; i++) {
+                playlist = tuneBook.playlists[i];
+                playlistAdded = false;
+
+                for (var z = 0; z < playlist.playlistPositions.length && !playlistAdded; z++) {
+                    if(playlist.playlistPositions[z].tuneSet.tuneSetId == tuneSetId){
+                        playlists.push(playlist);
+                        playlistAdded = true;
+                    }
+                }
+            }
+
+            return playlists;
+        }
+
+        function filterTuneSets(tuneBook, filterOptions){
             var keyMatch = false;
             var typeMatch = false;
             var colorMatch = false;
             var skillMatch = false;
-            var targetMatch = false;
-            var envMatch = false;
+            var eventMatch = false;
+            var bandMatch = false;
             var playMatch = false;
             var playMin, playMax, updateMin, updateMax;
             var freqMatch = false;
             var updateMatch = false;
             var tuneSetsFiltered = [];
+            var playlists;
 
-            for (var i = 0; i < tuneSets.length; i++) {
+            for (var i = 0; i < tuneBook.tuneSets.length; i++) {
                 keyMatch = false;
                 typeMatch = false;
                 colorMatch = false;
                 skillMatch = false;
-                targetMatch = false;
-                envMatch = false;
+                eventMatch = false;
+                bandMatch = false;
                 playMatch = false;
                 freqMatch = false;
                 updateMatch = false;
@@ -2359,40 +2569,54 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                     freqMatch = true;
                 }
 
-                if (filterOptions.target == ""
-                    || filterOptions.target == "All Targets"
-                    || filterOptions.target == null
-                    || filterOptions.target == tuneSets[i].tuneSetTarget) {
-                    targetMatch = true;
+                if (filterOptions.event == ""
+                    || filterOptions.event == "All Events"
+                    || filterOptions.event == null) {
+
+                    eventMatch = true;
                 }
 
-                if (filterOptions.env == ""
-                    || filterOptions.env == "All Environments"
-                    || filterOptions.env == null
-                    || filterOptions.env == tuneSets[i].tuneSetEnv) {
-                    envMatch = true;
+                if (filterOptions.band == ""
+                    || filterOptions.band == "All Bands"
+                    || filterOptions.band == null) {
+
+                    bandMatch = true;
+                }
+
+                if (!eventMatch || !bandMatch){
+                    playlists = getPlaylistsByTuneSetId(tuneBook, tuneBook.tuneSets[i].tuneSetId);
+
+                    for (var y = 0; y < playlists.length; y++) {
+                        if (filterOptions.event == playlists[y].event) {
+                            eventMatch = true;
+                        }
+
+                        if (filterOptions.band == playlists[y].band) {
+                            bandMatch = true;
+                        }
+                    }
                 }
 
                 if (!keyMatch || !typeMatch || !colorMatch || !skillMatch || !playMatch || !updateMatch || !freqMatch) {
-                    for (var z = 0; z < tuneSets[i].tuneSetPositions.length; z++) {
-                        if (!keyMatch && tuneSets[i].tuneSetPositions[z].tune.key == filterOptions.key) {
+                    for (var z = 0; z < tuneBook.tuneSets[i].tuneSetPositions.length; z++) {
+                        if (!keyMatch && tuneBook.tuneSets[i].tuneSetPositions[z].tune.key == filterOptions.key) {
                             keyMatch = true;
                         }
 
-                        if (!typeMatch && tuneSets[i].tuneSetPositions[z].tune.type == filterOptions.type) {
+                        if (!typeMatch && tuneBook.tuneSets[i].tuneSetPositions[z].tune.type == filterOptions.type) {
                             typeMatch = true;
                         }
 
-                        if (!colorMatch && tuneSets[i].tuneSetPositions[z].tune.color == filterOptions.color) {
+                        if (!colorMatch && tuneBook.tuneSets[i].tuneSetPositions[z].tune.color == filterOptions.color) {
                             colorMatch = true;
                         }
 
-                        if (!skillMatch && tuneSets[i].tuneSetPositions[z].tune.skill == filterOptions.skill) {
+                        if (!skillMatch && tuneBook.tuneSets[i].tuneSetPositions[z].tune.skill == filterOptions.skill) {
                             skillMatch = true;
                         }
 
-                        if (!playMatch && tuneSets[i].tuneSetPositions[z].tune.lastPlayed != null ) {
-                            var lastPlayed = moment(tuneSets[i].tuneSetPositions[z].tune.lastPlayed);
+                        if (!playMatch && tuneBook.tuneSets[i].tuneSetPositions[z].tune.lastPlayed != null ) {
+                            var lastPlayed = moment(tuneBook.tuneSets[i].tuneSetPositions[z].tune.lastPlayed);
                             if(!(lastPlayed.isBefore(playMin))
                                 && !(lastPlayed.isAfter(playMax))){
 
@@ -2400,8 +2624,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                             }
                         }
 
-                        if (!updateMatch && tuneSets[i].tuneSetPositions[z].tune.lastModified != null ) {
-                            var lastModified = moment(tuneSets[i].tuneSetPositions[z].tune.lastModified);
+                        if (!updateMatch && tuneBook.tuneSets[i].tuneSetPositions[z].tune.lastModified != null ) {
+                            var lastModified = moment(tuneBook.tuneSets[i].tuneSetPositions[z].tune.lastModified);
                             if(!(lastModified.isBefore(updateMin))
                                 && !(lastModified.isAfter(updateMax))){
 
@@ -2410,8 +2634,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                         }
 
                         if (!freqMatch) {
-                            if ((filterOptions.freqcomp == "LT" && parseInt(tuneSets[i].tuneSetPositions[z].tune.frequencyPlayed) < parseInt(filterOptions.freq))
-                                || (filterOptions.freqcomp == "GE" && parseInt(tuneSets[i].tuneSetPositions[z].tune.frequencyPlayed) >= parseInt(filterOptions.freq)) )  {
+                            if ((filterOptions.freqcomp == "LT" && parseInt(tuneBook.tuneSets[i].tuneSetPositions[z].tune.frequencyPlayed) < parseInt(filterOptions.freq))
+                                || (filterOptions.freqcomp == "GE" && parseInt(tuneBook.tuneSets[i].tuneSetPositions[z].tune.frequencyPlayed) >= parseInt(filterOptions.freq)) )  {
 
                                 freqMatch = true;
                             }
@@ -2419,8 +2643,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                     }
                 }
 
-                if (keyMatch && typeMatch && colorMatch && skillMatch && targetMatch && envMatch && playMatch && updateMatch && freqMatch){
-                    tuneSetsFiltered.push(tuneSets[i]);
+                if (keyMatch && typeMatch && colorMatch && skillMatch && eventMatch && bandMatch && playMatch && updateMatch && freqMatch){
+                    tuneSetsFiltered.push(tuneBook.tuneSets[i]);
                 }
             }
 
@@ -2549,8 +2773,16 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         eTBk.EXAMPLE_VERSION = eTBk_EXAMPLE_VERSION;
 
         // Public Methods
-        eTBk.getAbc = function (tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl) {
-            return getAbc(tuneSets, tuneBookName, tuneBookVersion, tuneBookDescription, tuneSetAbcIncl, playDateAbcIncl, skillAbcIncl, colorAbcIncl, annotationAbcIncl, siteAbcIncl, tubeAbcIncl, fingeringAbcIncl);
+        eTBk.writeAbc = function (abcOption) {
+            return writeAbc(currentTuneBook, abcOption);
+        };
+
+        eTBk.eliminateThe = function (string) {
+            return eliminateThe(string);
+        };
+
+        eTBk.createDefaultAbcOption = function () {
+            return createDefaultAbcOption();
         };
 		
 		eTBk.getSampleAbc = function (tune) {
@@ -2635,13 +2867,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
         eTBk.storeTuneBookAbc = function () {
             // Generate TuneBook Abc from the current TuneBook and store it in localStorage
-            localStorage.setItem(eTBK_STORAGE_ID_TUNEBOOK, JSON.stringify(getAbc(currentTuneBook.tuneSets, currentTuneBook.name, currentTuneBook.version, currentTuneBook.description, true, true, true, true, true, true, true, true)));
-        };
-
-
-		eTBk.storeAbc = function (tuneBook) {
-            // Generate eTuneBook Abc from the tuneBook-Model and store it in localStorage
-            localStorage.setItem(eTBK_STORAGE_ID_TUNEBOOK, JSON.stringify(getAbc(tuneBook.tuneSets, tuneBook.name, tuneBook.version, tuneBook.description, true, true, true, true, true, true, true, true)));
+            localStorage.setItem(eTBK_STORAGE_ID_TUNEBOOK, JSON.stringify(writeAbc(currentTuneBook, createDefaultAbcOption())));
         };
 		
 		eTBk.storeSettings = function (settings) {
@@ -2651,17 +2877,9 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 		
 		eTBk.initializeTuneBook = function () {
             //TODO: Angleichen mit eTBk.initializeTuneSet und eTBk.initializeTuneAndTuneSet
-            // Header
-            var tuneBookName = "My TuneBook";
-            var tuneBookVersion = "";
-            var tuneBookDescription = "The tunes I play";
-
-            var date = moment(new Date());
-            tuneBookVersion = date.format("YYYY-MM-DDTHH:mm");
-
             var abc = "";
             var includeEtbkDirective = true;
-            abc = getAbcHeader(tuneBookName, tuneBookVersion, tuneBookDescription, includeEtbkDirective);
+            abc = initializeAbcHeader();
             // First Tune
             abc += "X: 1";
             abc += "\n";
@@ -2681,18 +2899,37 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
             return    settings;
         };
-		
-		eTBk.newTuneSetPosition = function (iTuneSetId, iTuneSetTarget, iTuneSetEnv, iTuneSetName, iIntTuneId, iTune, iPosition, iRepeat, iAnnotation) {
-            return newTuneSetPosition(iTuneSetId, iTuneSetTarget, iTuneSetEnv, iTuneSetName, iIntTuneId, iTune, iPosition, iRepeat, iAnnotation);
-        };
 
         eTBk.moveTuneSetPosition = function (sourceTuneSetId, sourcePosition, targetTuneSetId, targetPosition, beforeOrAfter, moveOrCopy) {
             return moveTuneSetPosition(currentTuneBook, sourceTuneSetId, sourcePosition, targetTuneSetId, targetPosition, beforeOrAfter, moveOrCopy);
         };
 
+        eTBk.moveUpPlaylistPosition = function (playlistId, position) {
+            return moveUpPlaylistPosition(currentTuneBook, playlistId, position);
+        };
+
+        eTBk.moveDownPlaylistPosition = function (playlistId, position) {
+            return moveDownPlaylistPosition(currentTuneBook, playlistId, position);
+        };
+
+        eTBk.addEmptyPlaylistPosition = function (playlistId) {
+            return addEmptyPlaylistPosition(currentTuneBook, playlistId);
+        };
+
+        eTBk.addEmptyPlaylist = function () {
+            return addEmptyPlaylist(currentTuneBook);
+        };
 
         eTBk.deleteTuneSetPosition = function (iTuneSetId, iPosition) {
             return deleteTuneSetPosition(currentTuneBook, iTuneSetId, iPosition);
+        };
+
+        eTBk.deletePlaylistPosition = function (playlistId, position) {
+            deletePlaylistPosition(currentTuneBook, playlistId, position);
+        };
+
+        eTBk.deletePlaylist = function (playlistId) {
+            deletePlaylist(currentTuneBook, playlistId);
         };
 
         eTBk.getCurrentTuneBook = function () {
@@ -2734,10 +2971,18 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return extractTunes(eTBk.getCurrentTuneBook().tuneSets);
         };
 
+        eTBk.getPlaylists = function () {
+            return eTBk.getCurrentTuneBook().playlists;
+        };
+
+        eTBk.getPlaylist = function (playlistId) {
+            return getPlaylistById(currentTuneBook, playlistId);
+        };
+
         eTBk.getTunesFiltered = function (filterOptions) {
             // filterTuneSets bringt ganze TuneSets, auch wenn nur ein Tune matched.
             // Deshalb nachgelagert die nicht matchenden Tunes erneut rausfiltern.
-            return filterTunes(extractTunes(filterTuneSets(eTBk.getCurrentTuneBook().tuneSets, filterOptions)), filterOptions);
+            return filterTunes(extractTunes(filterTuneSets(currentTuneBook, filterOptions)), filterOptions);
         };
 
         eTBk.getFirstTuneSetPositions = function () {
@@ -2757,7 +3002,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         };
 
         eTBk.getTuneSetPositionsFiltered = function (filterOptions) {
-            return extractTuneSetPositions(filterTuneSets(eTBk.getCurrentTuneBook().tuneSets, filterOptions));
+            return extractTuneSetPositions(filterTuneSets(currentTuneBook, filterOptions));
         };
 
         eTBk.getTuneSetsAsTuneSetPositions = function (intTuneId) {
@@ -2814,6 +3059,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return skillTypes;
         };
 
+        /*
         eTBk.updateFirstTuneSetPosition = function (tuneSet) {
             // Uebertragen TuneSet-Infos auf erste TuneSetPosition
             for (var z = 0; z < tuneSet.tuneSetPositions.length; z++) {
@@ -2824,6 +3070,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                 }
             }
         };
+        */
 
         eTBk.getTuneBookFromLocalStorage = function () {
             // Retrieve eTuneBook Abc from localStorage
@@ -2869,7 +3116,6 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
              alert("Fehler beim Laden von Boxplayer.abc");
              });
              */
-            var tuneBook = [];
 
             var jqxhr = $.ajax({
                 url: eTBk.EXAMPLE_FILENAME,
@@ -2879,11 +3125,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             });
 
             jqxhr.success(function (data) {
-                // This will only be called once the remote content has been loaded in
-                // The data will then be stored in the data param and can be used within your site
                 currentTuneBook = new TuneBook(data);
-                //tuneBook.name = eTBk.EXAMPLE_FILENAME;
-                //tuneSets = tuneBook.tuneSets;
             });
 
             jqxhr.error(function (data) {

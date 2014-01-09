@@ -1,0 +1,79 @@
+
+<!--
+<h3>Playlists</h3>
+-->
+
+<button class="btn btn-md btn-default pull-left" ng-click="newPlaylist()">New</button>
+<ul class='playlistBox'>
+    <div class="playlistInfoLine">
+        <!--
+        <div class="playlistEvent">{{playlist.event}}</div>
+        <div class="playlistBand">{{playlist.band}}</div>
+        <div class="playlistName">{{playlist.name}}</div>
+        <button class="btn btn-xs btn-default pull-right" ng-click="newPlaylistPosition()">New</button>
+        -->
+    </div>
+    <div id="PlaylistEditor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    -->
+                    <h3>Edit Playlist {{playlistToBeEdited.id}}</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="inputName">Name</label>
+                            <div>
+                                <input type="text" class="form-control" id="inputName" ng-model="playlistToBeEdited.name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputEvent">Event</label>
+                            <div>
+                                <input type="text" class="form-control" id="inputEvent" ng-model="playlistToBeEdited.event">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputBand">Band</label>
+                            <div>
+                                <input type="text" class="form-control" id="inputBand" ng-model="playlistToBeEdited.band">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-default" ng-click="doneEditing(playlistToBeEdited)">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <li class="playlist" ng-repeat="playlist in playlists | orderBy: sortPlaylistIdAsNumber">
+        <div class="playlistFirstLine">
+            <div class="playlistNumber">{{playlist.id}}</div>
+            <div class="btn-group playlistName">
+                <a class="btn btn-default " ng-click="showPlaylist(playlist)" title="Show The Playlist"><strong>{{playlist.name}}</strong></a>
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                   <li><a ng-click="edit(playlist)">Edit</a></li>
+                    <li class="divider"></li>
+                    <li><a ng-click="delete(playlist)">Delete</a></li>
+                </ul>
+            </div>
+            <div class="playlistEvent pull-right">{{playlist.event}}</div>
+            <div class="playlistBand">{{playlist.band}}</div>
+        </div>
+
+    </li>
+</ul>
+
+
+
+

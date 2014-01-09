@@ -2,13 +2,14 @@
 <a class='btn btn-xs btn-default' id="saveTuneBookToGoogleDrive" ng-click="saveTuneBookToGoogleDrive()" href="" title="Export to Google Drive" >Export to Google Drive</a>
 
 
-<a class='btn btn-xs btn-default' ng-click="toggleTuneSetAbc()">TuneSets<i ng-show="tuneSetAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="togglePlayDateAbc()">Playdates<i ng-show="playDateAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="toggleSkillAbc()">Skills<i ng-show="skillAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="toggleColorAbc()">Colors<i ng-show="colorAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="toggleAnnotationAbc()">Comments<i ng-show="annotationAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="toggleSiteAbc()">Sites<i ng-show="siteAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="toggleTubeAbc()">Videos<i ng-show="tubeAbcIncl" class="glyphicon glyphicon-ok"></i></a>
-<a class='btn btn-xs btn-default' ng-click="toggleFingeringAbc()">Fingering<i ng-show="fingeringAbcIncl" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleTuneSetAbc()">TuneSets<i ng-show="abcOption.tuneSet" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="togglePlaylistAbc()">Playlists<i ng-show="abcOption.playlist" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="togglePlayDateAbc()">Playdates<i ng-show="abcOption.playDate" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleSkillAbc()">Skills<i ng-show="abcOption.skill" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleColorAbc()">Colors<i ng-show="abcOption.color" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleAnnotationAbc()">Comments<i ng-show="abcOption.annotation" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleSiteAbc()">Sites<i ng-show="abcOption.website" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleTubeAbc()">Videos<i ng-show="abcOption.video" class="glyphicon glyphicon-ok"></i></a>
+<a class='btn btn-xs btn-default' ng-click="toggleFingeringAbc()">Fingering<i ng-show="abcOption.fingering" class="glyphicon glyphicon-ok"></i></a>
 
 <pre id="tuneBookExported">{{exportedTuneBook}}</pre>

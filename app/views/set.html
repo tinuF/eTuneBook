@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-4">
-
+        <label>Next Set:</label>
         <div class="btn-group btn-default hidden-print">
             <button type="button" class="btn btn-default" ng-click="loadRandomTuneSet(playDateFilter)">
                 Random: {{playDateFilter}}
@@ -20,7 +20,7 @@
 
         <br>
 
-
+        <!--
         <div class="btn-group hidden-print">
             <button type="button" class="btn btn-default dropdown-toggle  active" data-toggle="dropdown">
                 <strong> {{ currentFirstTuneSetPosition.tune.title | eliminateThe }} </strong> <span class="caret"></span>
@@ -29,11 +29,12 @@
                 <li ng-repeat="firstTuneSetPosition in firstTuneSetPositions | orderBy:'tune.title'"><a href="#sets/{{firstTuneSetPosition.tuneSetId}}" >{{ firstTuneSetPosition.tune.title }}</a></li>
             </ul>
         </div>
+        -->
 
         <!--
         <select class="form-control" id="tuneSetSelector" ng-model="firstTuneSetPosition" ng-options="(firstTuneSetPosition.tune.title | eliminateThe) + ' (Set ' + firstTuneSetPosition.tuneSetId + ')'  for firstTuneSetPosition in firstTuneSetPositions | orderBy:'tune.title'">	</select>
         -->
-
+        <!--
         <div class="btn-group hidden-print">
             <button type="button" ng-click="justPlayedTheSet(tuneSet)" class="btn btn-default">
                 Just Played
@@ -42,8 +43,9 @@
             <button type="button" ng-click="editTuneSet(tuneSet)" class="btn btn-default">
                 Edit
             </button>
-        </div>
 
+        </div>
+        -->
 
 
 
@@ -71,11 +73,22 @@
 
         </div>
         -->
+
+        <h3>{{tuneSet.tuneSetName}}</h3>
+
+        <!--
+        <button class="btn btn-md btn-default pull-left" ng-click="newTuneSetPosition()">New</button>
+        -->
+        <br>
+        <button class="btn btn-md btn-default " ng-click="justPlayedTheSet(tuneSet)">Just Played</button>
         <ul class='tuneSetBox'>
             <div class="tuneSetInfoLine">
+                <!--
                 <div class="tuneSetTarget" ng-show="tuneSet.tuneSetTarget">{{tuneSet.tuneSetTarget}}</div>
                 <div class="tuneSetEnv" ng-show="tuneSet.tuneSetEnv">{{tuneSet.tuneSetEnv}}</div>
                 <div class="tuneSetName" ng-show="tuneSet.tuneSetName">{{tuneSet.tuneSetName}}</div>
+                -->
+
             </div>
 
             <div id="TuneSetEditor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

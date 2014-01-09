@@ -37,20 +37,20 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
     }
     setSelectedTuneSetSkillFilter(skill);
 
-    // Set which Target to Filter
-    var target = $stateParams['targ'];
-    if (target == "" || target == null) {
-        target = "All Targets";
+    // Set which Event to Filter
+    var event = $stateParams['evt'];
+    if (event == "" || event == null) {
+        event = "All Events";
     }
-    setSelectedTuneSetTargetFilter(target);
+    setSelectedTuneSetEventFilter(event);
 
-    // Set which Environment to Filter
-    var env = $stateParams['env'];
-    if (env == "" || env == null) {
-        env = "All Environments";
+    // Set which Band to Filter
+    var band = $stateParams['band'];
+    if (band == "" || band == null) {
+        band = "All Bands";
     }
 
-    setSelectedTuneSetEnvFilter(env);
+    setSelectedTuneSetBandFilter(band);
 
     // Set which Play Range to Filter
     // Default: Launch Date of eTuneBook till now
@@ -134,20 +134,20 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
 		}
 	}
 
-    function setSelectedTuneSetTargetFilter(target) {
-        for (var i = 0; i < $scope.tuneSetTargetsForFilter.length; i++) {
-            if ($scope.tuneSetTargetsForFilter[i].target == target){
+    function setSelectedTuneSetEventFilter(event) {
+        for (var i = 0; i < $scope.tuneSetEventsForFilter.length; i++) {
+            if ($scope.tuneSetEventsForFilter[i].event == event){
                 // Setzen neuer Filter
-                $scope.tuneSetTargetForFilter = $scope.tuneSetTargetsForFilter[i];
+                $scope.tuneSetEventForFilter = $scope.tuneSetEventsForFilter[i];
             }
         }
     }
 
-    function setSelectedTuneSetEnvFilter(env) {
-        for (var i = 0; i < $scope.tuneSetEnvsForFilter.length; i++) {
-            if ($scope.tuneSetEnvsForFilter[i].env == env){
+    function setSelectedTuneSetBandFilter(band) {
+        for (var i = 0; i < $scope.tuneSetBandsForFilter.length; i++) {
+            if ($scope.tuneSetBandsForFilter[i].band == band){
                 // Setzen neuer Filter
-                $scope.tuneSetEnvForFilter = $scope.tuneSetEnvsForFilter[i];
+                $scope.tuneSetBandForFilter = $scope.tuneSetBandsForFilter[i];
             }
         }
     }
@@ -234,69 +234,69 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
 		$scope.tuneSetKeysForFilter = tuneSetKeysForFilter;
 	}
 
-    function setTuneSetTargetsForFilter(){
-        //Extract TuneSetTargets for TargetFilter
-        var tuneSetTargetForFilter = {};
-        var tuneSetTargetsForFilter = [];
-        var addToTargetFilter = true;
-        var selectedTuneSetTargetForFilter = new Array ();
+    function setTuneSetEventsForFilter(){
+        //Extract TuneSetEvents for EventFilter
+        var tuneSetEventForFilter = {};
+        var tuneSetEventsForFilter = [];
+        var addToEventFilter = true;
+        var selectedTuneSetEventForFilter = new Array ();
 
         if ($scope.hasOwnProperty("tuneBook")) {
 
-            for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {
-                addToTargetFilter = true;
+            for (var i = 0; i < $scope.tuneBook.playlists.length; i++) {
+                addToEventFilter = true;
 
-                for (var z = 0; z < tuneSetTargetsForFilter.length; z++) {
-                    if (tuneSetTargetsForFilter[z].target == $scope.tuneBook.tuneSets[i].tuneSetTarget) {
-                        addToTargetFilter = false;
+                for (var z = 0; z < tuneSetEventsForFilter.length; z++) {
+                    if (tuneSetEventsForFilter[z].event == $scope.tuneBook.playlists[i].event) {
+                        addToEventFilter = false;
                     }
                 }
 
-                if ($scope.tuneBook.tuneSets[i].tuneSetTarget != 'undefined' && $scope.tuneBook.tuneSets[i].tuneSetTarget != '' && addToTargetFilter) {
-                    tuneSetTargetForFilter = {};
-                    tuneSetTargetForFilter.target = $scope.tuneBook.tuneSets[i].tuneSetTarget;
-                    tuneSetTargetsForFilter.push(tuneSetTargetForFilter);
+                if ($scope.tuneBook.playlists[i].event != 'undefined' && $scope.tuneBook.playlists[i].event != '' && addToEventFilter) {
+                    tuneSetEventForFilter = {};
+                    tuneSetEventForFilter.event = $scope.tuneBook.playlists[i].event;
+                    tuneSetEventsForFilter.push(tuneSetEventForFilter);
                 }
 
             }
         }
 
-        tuneSetTargetForFilter = {};
-        tuneSetTargetForFilter.target = "All Targets";
-        tuneSetTargetsForFilter.unshift(tuneSetTargetForFilter);
-        $scope.tuneSetTargetsForFilter = tuneSetTargetsForFilter;
+        tuneSetEventForFilter = {};
+        tuneSetEventForFilter.event = "All Events";
+        tuneSetEventsForFilter.unshift(tuneSetEventForFilter);
+        $scope.tuneSetEventsForFilter = tuneSetEventsForFilter;
     }
 
-    function setTuneSetEnvsForFilter(){
-        //Extract TuneSetEnvironments for EnvFilter
-        var tuneSetEnvForFilter = {};
-        var tuneSetEnvsForFilter = [];
-        var addToEnvFilter = true;
+    function setTuneSetBandsForFilter(){
+        //Extract TuneSetBands for BandFilter
+        var tuneSetBandForFilter = {};
+        var tuneSetBandsForFilter = [];
+        var addToBandFilter = true;
 
         if ($scope.hasOwnProperty("tuneBook")) {
 
-            for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {
-                addToEnvFilter = true;
+            for (var i = 0; i < $scope.tuneBook.playlists.length; i++) {
+                addToBandFilter = true;
 
-                for (var z = 0; z < tuneSetEnvsForFilter.length; z++) {
-                    if (tuneSetEnvsForFilter[z].env == $scope.tuneBook.tuneSets[i].tuneSetEnv) {
-                        addToEnvFilter = false;
+                for (var z = 0; z < tuneSetBandsForFilter.length; z++) {
+                    if (tuneSetBandsForFilter[z].band == $scope.tuneBook.playlists[i].band) {
+                        addToBandFilter = false;
                     }
                 }
 
-                if ($scope.tuneBook.tuneSets[i].tuneSetEnv != 'undefined' && $scope.tuneBook.tuneSets[i].tuneSetEnv != '' && addToEnvFilter) {
-                    tuneSetEnvForFilter = {};
-                    tuneSetEnvForFilter.env = $scope.tuneBook.tuneSets[i].tuneSetEnv;
-                    tuneSetEnvsForFilter.push(tuneSetEnvForFilter);
+                if ($scope.tuneBook.playlists[i].band != 'undefined' && $scope.tuneBook.playlists[i].band != '' && addToBandFilter) {
+                    tuneSetBandForFilter = {};
+                    tuneSetBandForFilter.band = $scope.tuneBook.playlists[i].band;
+                    tuneSetBandsForFilter.push(tuneSetBandForFilter);
                 }
 
             }
         }
 
-        tuneSetEnvForFilter = {};
-        tuneSetEnvForFilter.env = "All Environments";
-        tuneSetEnvsForFilter.unshift(tuneSetEnvForFilter);
-        $scope.tuneSetEnvsForFilter = tuneSetEnvsForFilter;
+        tuneSetBandForFilter = {};
+        tuneSetBandForFilter.band = "All Bands";
+        tuneSetBandsForFilter.unshift(tuneSetBandForFilter);
+        $scope.tuneSetBandsForFilter = tuneSetBandsForFilter;
     }
 	
 	function setTuneSetColorsForFilter(){
@@ -339,8 +339,8 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
 		setTuneSetKeysForFilter();
 		setTuneSetColorsForFilter();
         setSkillTypes();
-        setTuneSetTargetsForFilter();
-        setTuneSetEnvsForFilter();
+        setTuneSetEventsForFilter();
+        setTuneSetBandsForFilter();
 	}
 
     function setSkillTypes(){
@@ -359,14 +359,14 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
         angular.element("#SetFilter").modal("hide");
 
         $timeout(function(){
-            var key, type, color, skill, target, env, playmin, playmax, freqcomp, freq, updatemin, updatemax;
+            var key, type, color, skill, event, band, playmin, playmax, freqcomp, freq, updatemin, updatemax;
 
             type = $scope.tuneSetTypeForFilter.type;
             key = $scope.tuneSetKeyForFilter.key;
             color = $scope.tuneSetColorForFilter.color;
             skill = $scope.skillType.description;
-            target = $scope.tuneSetTargetForFilter.target;
-            env = $scope.tuneSetEnvForFilter.env;
+            event = $scope.tuneSetEventForFilter.event;
+            band = $scope.tuneSetBandForFilter.band;
             playmin = $scope.tuneSetPlayRangeFilter.startDate.format('DD.MM.YYYY');
             playmax = $scope.tuneSetPlayRangeFilter.endDate.format('DD.MM.YYYY');
             updatemin = $scope.tuneSetUpdateRangeFilter.startDate.format('DD.MM.YYYY');
@@ -386,11 +386,11 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
             if($scope.skillType.description == "All Skills"){
                 skill = "";
             }
-            if($scope.tuneSetTargetForFilter.target == "All Targets"){
-                target = "";
+            if($scope.tuneSetEventForFilter.event == "All Events"){
+                event = "";
             }
-            if($scope.tuneSetEnvForFilter.env == "All Environments"){
-                env = "";
+            if($scope.tuneSetBandForFilter.band == "All Bands"){
+                band = "";
             }
             if(playmin == "05.10.2012"){
                 playmin = "";
@@ -402,7 +402,7 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
                 updatemax = "";
             }
 
-            $state.transitionTo($state.current.name, {key: key, type: type, color: color, skill: skill, targ: target, env: env, plmin: playmin, plmax: playmax, freqcomp: freqcomp, freq: freq, updmin: updatemin, updmax: updatemax});
+            $state.transitionTo($state.current.name, {key: key, type: type, color: color, skill: skill, evt: event, band: band, plmin: playmin, plmax: playmax, freqcomp: freqcomp, freq: freq, updmin: updatemin, updmax: updatemax});
 
         },1000);
 

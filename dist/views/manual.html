@@ -2,32 +2,19 @@
         <div class="col-md-12 well">
             <h2>Manual</h2>
             <dl>
-                <dt><h3>Main Menu</h3></dt>
+                <dt><h3>Menu Buttons</h3></dt>
                 <dd>
                     <p><strong>Book</strong> <br>Load a TuneBook, Edit Title and Description, Export the current TuneBook to a File on your Device or to your Google Drive.</p>
-                    <p><strong>Sets</strong> <br>Search for Sets.</p>
-                    <p><strong>Tunes</strong> <br>Search for Tunes.</p>
+                    <p><strong>Playlists</strong> <br>Show all Playlists.</p>
+                    <p><strong>Sets</strong> <br>Show all Sets.</p>
+                    <p><strong>Tunes</strong> <br>Show all Tunes.</p>
                     <p><strong>Info</strong> <br>About eTuneBook.</p>
                 </dd>
                 <br>
                 <dt><h3>Load a TuneBook</h3></dt>
                 <dd>
-                    <p><strong>Book > Import</strong> <br>Import an Abc Tunebook from your local disc or from your Google Drive.</p>
+                    <p><strong>Book > Import TuneBook</strong> <br>Import an Abc Tunebook from your local disc or from your Google Drive.</p>
                     <p><strong>Book > {{exampleFileNameWithoutAbc}}</strong> <br>Load an example Tunebook from the server. Martin's Tunebook contains Irish Tunes with Fingering for Piano Accordion. For more information please visit <a href="http://www.boxplayer.ch/" target="_blank">Martin's BoxPlayer Talks</a> and <a href="http://www.youtube.com/user/pianoboxplayer" target="_blank">Martin's Irish Traditional Music YouTube Channel</a> </p>
-                </dd>
-                <br>
-                <dt><h3>Choose a Tune</h3></dt>
-                <dd>
-                    <p>Click on <strong>Tunes</strong> in the main Menue and then choose a tune from the list.</p>
-                    <p>Alternatively click on <strong>Sets</strong> in the main Menue, choose a set from the list, and then choose a tune from the set (by clicking the tune title).</p>
-                    <p>In both cases the <strong>Tune Editor</strong> opens.</p>
-                </dd>
-                <br>
-                <dt><h3>Choose a Set</h3></dt>
-                <dd>
-                    <p>Click on <strong>Sets</strong> in the main Menue and then choose a set from the list.</p>
-                    <p>Alternatively click on <strong>Tunes</strong>, choose a tune from the list, then choose a Set from the <strong>Sets</strong> of the tune.</p>
-                    <p>In both cases the <strong>Set Editor</strong> opens.</p>
                 </dd>
                 <br>
                 <dt><h3>Add Abc tunes</h3></dt>
@@ -41,25 +28,26 @@
                 <br>
                 <dt><h3>Export Abc tunes</h3></dt>
                 <dd>
-                    <p><strong>Book > Export</strong> <br>Displays the TuneBook in Abc-format.</p>
+                    <p><strong>Book > Export TuneBook</strong> <br>Displays the TuneBook in Abc-format.</p>
                     <p>The system automatically writes the TuneBook to a file on your device. The TuneBook is named 'MyTuneBook.txt' and gets placed in the Download Folder of your Browser. Rename the TuneBook and give it the file-extension .abc (otherwise you won't be able to re-import it to eTuneBook).</p>
-                    <p>By clicking <strong>save</strong> you can repeat the backup.</p>
+                    <p>By clicking <strong>Export to local Drive</strong> eTuneBook writes your TuneBook to a file on your device. The TuneBook is named 'MyTuneBook.txt' and gets placed in the Download Folder of your Browser. Rename the TuneBook and give it the file-extension .abc (otherwise you won't be able to re-import it to eTuneBook).</p>
+                    <p>By clicking <strong>Export to Google Drive</strong> you can upload your TuneBook to your Google Drive.</p>
                     <p>Choose which of the eTuneBook-specific fields should be exported by toggling the corresponding <strong>export selectors</strong>.</p>
                     <p>Attention: If you choose to export only standard Abc eTuneBook-specific fields will be lost after Re-Import.</p>
                 </dd>
                 <br>
                 <dt><h3>Edit or delete Abc tunes</h3></dt>
                 <dd>
-                    <p><strong>Choose a tune</strong> and then click <strong>Abc</strong>. Edit the tune whithin the Abc-Editor.</p>
+                    <p><strong>Choose a tune</strong> and then click <strong>Abc</strong>. Edit the tune whithin the Abc-Editor (Tune-Editor).</p>
                     <p>Your edits are saved as soon as you leave the Abc-Editor (by clicking somewhere else).</p>
                     <p>In case you want to get rid of the tune, just delete the whole Abc-Code of the tune.</p>
                     <p>In case you want to sort your tunes by modification date, you might consider to include a line starting with 'H:' and also contains 'Modified' followed by the modification date in form of 'yyyy-mm-dd'. Check Martin's Tunebook for examples.</p>
+                    <p>Choose <strong>Note Editor</strong> in order to change single notes by choosing form a a given selection of values. A click on a note will load the current values of that note into the Dropdown lists.</p>
                 </dd>
                 <br>
                 <dt><h3>Build Tune Sets</h3></dt>
                 <dd>
                     <p>In eTuneBook every tune belongs to one or more set. If you load an Abc-TuneBook that was generated by another program or by hand, eTuneBook puts every tune in a separate set. Also new tunes are first put into a new set. </p>
-                    <p>In order to build a new set yourself, <strong>choose a tune</strong>, click on <strong>Sets</strong> and then <strong>New</strong>.</p>
                     <p>In order to move or copy a tune from one set to another, <strong>choose a set</strong> and then choose <strong>Move</strong> from the Menu on the right side of the Tune title.</p>
                     <p>On the Move-Panel choose where to move: before or after another tune. Choose whether the Tune should be moved or copied.</p>
                     <p>After pressing 'Send' on the Move-Panel eTuneBook puts the tune at the chosen position in the target set and closes the Move-Panel.</p>
@@ -68,17 +56,8 @@
                     <p>In order to delete a tune from a set, <strong>choose a set</strong> and then choose <strong>Delete</strong> from the Menu on the right side of the Tune title.</p>
                     <p>If after Deleting from the set the tune gets set-less (no other sets), the system automatically generates a new set around the tune.</p>
                     <p>In case the original set gets empty after moving or deleting a tune, the empty set will be automatically removed.</p>
-                </dd>
-                <br>
-                <dt><h3>Edit TuneSet Info</h3></dt>
-                <dd>
-                    <p><strong>Choose a set</strong> and then click on <strong>TuneSet Nr</strong>.</p>
-                    <p>You might add the following informations to your TuneSet:</p>
-                    <ul>
-                        <li><strong>Target </strong> (Goal) of the TuneSet: Session or Ceili or Set-Dance or Concert or ....</li>
-                        <li><strong>Environment</strong> in which the TuneSet is played: Name of the Band or Name of the Pub or ....</li>
-                        <li><strong>Name</strong> of the TuneSet: Name of the first tune or Name of the Set-Dance-Set or ....</li>
-                    </ul>
+                    <p>In case a tune exists in more than one set, choosing <strong>sets</strong> in the tune view shows a list of all sets containing the tune, staying in the tune view. In order to build a new set click on <strong>New</strong>.</p>
+                    <p>In case a tune exists in only one set, choosing <strong>sets</strong> in the tune view changes to the set view. In order to build a new set here, move the tune (using the Move Panel as described above) to an undefined (empty) destination set.</p>
                 </dd>
                 <br>
                 <dt><h3>Edit TuneSet-Position Info</h3></dt>
@@ -91,34 +70,49 @@
                     </ul>
                 </dd>
                 <br>
+                <dt><h3>Build Playlists</h3></dt>
+                <dd>
+                    <p>Click on the button <strong>Playlists</strong></p>
+                    <p>Choose <strong>New</strong> above the list of all playlists.</p>
+                    <p>Add a new playlist:</p>
+                    <ul>
+                        <li><strong>Name</strong> (e.g. venue)</li>
+                        <li><strong>Event</strong> (e.g. concert or ceili or session)</li>
+                        <li><strong>Band</strong></li>
+                    </ul>
+                    <p>Choose a playlist and click <strong>New</strong> above the playlist positions.</p>
+                    <p>Add a new set:</p>
+                    <ul>
+                        <li><strong>Name</strong>: Sets carry by default the name of the first tune. You might give another name here (e.g. a Set-Dance-Set name).</li>
+                        <li><strong>Set</strong>: Choose the set here</li>
+                        <li><strong>Comment</strong>: Add a comment specific for the new playlist position</li>
+                    </ul>
+                    <p>Move a Set up/down in the playlist.</p>
+                </dd>
+                <br>
                 <dt><h3>Mark a Tune as 'Just Played'</h3></dt>
                 <dd>
-                    <p><strong>Choose a tune</strong> and click <strong>Played</strong> in the Tune Editor. This adds the current date and time to the tune.</p>
-                    <p>Alternatively you might <strong>choose a set</strong> and click <strong>Played</strong> on a TuneSet-Position in the Set-Editor. This adds the current date and time to the tune.</p>
-                    <p>In case you just played the whole set, click <strong>Just Played</strong> in the Set Editor. This adds the current date and time to all of the tunes in the set.</p>
+                    <p>Choose a tune and click <strong>Played</strong> in the Tune View. This adds the current date and time to the tune.</p>
+                    <p>Alternatively you might choose a set and click <strong>Played</strong> on a TuneSet-Position in the Set View. This adds the current date and time to the tune.</p>
+                    <p>In case you just played the whole set, click <strong>Just Played</strong> in the Set View or the Playlist View. This adds the current date and time to all of the tunes in the set.</p>
                     <p>eTuneBook calculates a playing frequency from all playing dates: Each play date gets points. For example: 1000 days ago: 0 Points, 999 days ago: 1 Point, 100 days ago: 900 points, 1 day ago: 999 Points. The playing frequency of the tune is the sum of the frequency scores of all playing dates.</p>
                 </dd>
                 <br>
                 <dt><h3>Colorize a Tune</h3></dt>
                 <dd>
-                    <p><strong>Choose a tune</strong> and click on the square on the right-side of <strong>color</strong> in the Tune Editor.</p>
+                    <p>Choose a tune and click on the square on the right-side of <strong>color</strong> in the Tune Editor.</p>
                     <p>Once chosen a color it gets added to the tune.</p>
                 </dd>
                 <br>
                 <dt><h3>Transpose a Tune</h3></dt>
                 <dd>
-                    <p><strong>Choose a tune</strong> and click on the arrows on the right-side of <strong>transpose</strong> in the Tune Editor.</p>
+                    <p>Choose a tune and click on the arrows on the right-side of <strong>transpose</strong> in the Tune Editor.</p>
                     <p>Transposition changes the Abc-Code of the tune. Changes are effective in the dots, and in case the Abc-Editor is open, in the Abc-Code.</p>
-                </dd>
-                <br>
-                <dt><h3>Play Tunes on a MIDI Instrument</h3></dt>
-                <dd>
-                    <p>MIDI Support will be re-introduced with the next Release of eTuneBook. Stay tuned.</p>
                 </dd>
                 <br>
                 <dt><h3>Edit Tune Info</h3></dt>
                 <dd>
-                    <p><strong>Choose a tune</strong> and click <strong>Info</strong> in the Tune Editor.</p>
+                    <p>Choose <strong>Info</strong> in the Tune View.</p>
                     <p>You might add the following informations to the chosen Tune:</p>
                     <ul>
                         <li><strong>Tune Sites</strong>: External web sites holding informations about the tune.</li>
@@ -135,7 +129,7 @@
                 </dd>
                 <br>
                 <dt><h3>Edit Tune Videos</h3></dt>
-                <p><strong>Choose a tune</strong> and click <strong>Videos</strong> in the Tune Editor.</p>
+                <p>Choose a tune and click <strong>Videos</strong> in the Tune View.</p>
                 <ul>
                     <li>Click <strong>New</strong> to add a new Tune Video.</li>
                     <li>Click into Code or Description in order to <strong>Edit</strong> the Tune Video.</li>
@@ -150,42 +144,34 @@
                     <p>Use the your Browser's printing functionality (ctrl p) in order to print the page your viewing.</p>
                 </dd>
                 <br>
-                <dt><h3>Search Tunes</h3></dt>
+                <dt><h3>Searching Sets and Tunes</h3></dt>
                 <dd>
-                    <p>Tunes can be filtered, sorted and grouped by:</p>
+                    <p>Tunes and Sets can be filtered by:</p>
                     <ul>
                         <li><p><strong>Tune Title</strong></p></li>
-                        <li><p><strong>Tune Type</strong></p></li>
-                        <li><p><strong>Tune Key</strong></p></li>
-                        <li><p><strong>Tune Last Played</strong></p></li>
-                        <li><p><strong>Tune Playing Frequency</strong></p></li>
-                        <li><p><strong>Tune Skill</strong></p></li>
-                        <li><p><strong>Tune Last Modified</strong></p></li>
-                    </ul>
-                    <p>Click on the <strong>column header</strong> in order to <strong>sort</strong> the column.</p>
-                    <p>Click on the <strong>blue arrow</strong> and:</p>
-                    <ul>
-                        <li><p>Enter a text for <strong>searching</strong> the tune list. The search text applies to all columns.</p></li>
-                        <li><p>Check or uncheck a column in order to <strong>show/hide</strong> the column.</p></li>
-                        <li><p>Click on the grouping symbol in order to <strong>group</strong> the tune list by the chosen column. </p></li>
-                    </ul>
-                </dd>
-                <br>
-                <dt><h3>Search Tune Sets</h3></dt>
-                <dd>
-                    <p>Tune Sets can be filtered by:</p>
-                    <ul>
+                        <li><p><strong>Tune Playing Range</strong></p></li>
+                        <li><p><strong>Tune Modification Range</strong></p></li>
+                        <li><p><strong>Tune Frequency Range</strong></p></li>
                         <li><p><strong>Tune Type</strong></p></li>
                         <li><p><strong>Tune Key</strong></p></li>
                         <li><p><strong>Tune Color</strong></p></li>
                         <li><p><strong>Tune Skill</strong></p></li>
-                        <li><p><strong>Tune Set Target</strong></p></li>
-                        <li><p><strong>Tune Set Environment</strong></p></li>
+                        <li><p><strong>Playlist Event</strong></p></li>
+                        <li><p><strong>Playlist Band</strong></p></li>
                     </ul>
-                    <p>Click on the <strong>filter icon</strong> in order to apply the Filters.</p>
+                    <p>Tunes can be sorted by:</p>
+                    <ul>
+                        <li><p><strong>Title</strong></p></li>
+                        <li><p><strong>Type</strong></p></li>
+                        <li><p><strong>Key</strong></p></li>
+                        <li><p><strong>Last Play Date</strong></p></li>
+                        <li><p><strong>Playing Frequency</strong></p></li>
+                        <li><p><strong>Skill</strong></p></li>
+                        <li><p><strong>Last Modification Date</strong></p></li>
+                    </ul>
+                    <p>Click on the <strong>column header</strong> in order to <strong>sort</strong> the column.</p>
                 </dd>
                 <br>
-
             </dl>
         </div>
 </div>

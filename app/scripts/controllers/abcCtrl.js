@@ -4,24 +4,14 @@
  * Controller for abc Template
  */
 angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $location, $timeout, $rootScope, $state, eTuneBookService, GAPI, Drive ) {
-    $scope.fingeringAbcIncl = true;
-    $scope.tuneSetAbcIncl = true;
-    $scope.playDateAbcIncl = true;
-    $scope.skillAbcIncl = true;
-    $scope.colorAbcIncl = true;
-    $scope.annotationAbcIncl = true;
-    $scope.siteAbcIncl = true;
-    $scope.tubeAbcIncl = true;
-
+    $scope.abcOption = eTuneBookService.createDefaultAbcOption();
     $scope.tuneBook = eTuneBookService.getCurrentTuneBook();
-
     exportTuneBook(false);
 
     function exportTuneBook(startDownload){
         var date = moment(new Date());
-        var tuneBookVersion = date.format("YYYY-MM-DDTHH:mm");
-
-        $scope.exportedTuneBook = eTuneBookService.getAbc($scope.tuneBook.tuneSets, $scope.tuneBook.name, tuneBookVersion, $scope.tuneBook.description, $scope.tuneSetAbcIncl, $scope.playDateAbcIncl, $scope.skillAbcIncl, $scope.colorAbcIncl, $scope.annotationAbcIncl, $scope.siteAbcIncl, $scope.tubeAbcIncl, $scope.fingeringAbcIncl);
+        $scope.tuneBook.version = date.format("YYYY-MM-DDTHH:mm");
+        $scope.exportedTuneBook = eTuneBookService.writeAbc($scope.abcOption);
 
         // Generieren Object URL zum exportierten Tunebook (fuer Backup des Abc-Codes in File)
         saveTuneBookAsFile($scope.exportedTuneBook, startDownload);
@@ -144,44 +134,49 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
     }
 
     $scope.toggleFingeringAbc = function() {
-        $scope.fingeringAbcIncl = !$scope.fingeringAbcIncl;
+        $scope.abcOption.fingering = !$scope.abcOption.fingering;
         exportTuneBook(false);
     };
 
     $scope.toggleTuneSetAbc = function() {
-        $scope.tuneSetAbcIncl = !$scope.tuneSetAbcIncl;
+        $scope.abcOption.tuneSet = !$scope.abcOption.tuneSet;
+        exportTuneBook(false);
+    };
+
+    $scope.togglePlaylistAbc = function() {
+        $scope.abcOption.playlist = !$scope.abcOption.playlist;
         exportTuneBook(false);
     };
 
     $scope.togglePlayDateAbc = function() {
-        $scope.playDateAbcIncl = !$scope.playDateAbcIncl;
+        $scope.abcOption.playDate = !$scope.abcOption.playDate;
         exportTuneBook(false);
     };
 
 
     $scope.toggleSkillAbc = function() {
-        $scope.skillAbcIncl = !$scope.skillAbcIncl;
+        $scope.abcOption.skill = !$scope.abcOption.skill;
         exportTuneBook(false);
     };
 
 
     $scope.toggleColorAbc = function() {
-        $scope.colorAbcIncl = !$scope.colorAbcIncl;
+        $scope.abcOption.color = !$scope.abcOption.color;
         exportTuneBook(false);
     };
 
     $scope.toggleAnnotationAbc = function() {
-        $scope.annotationAbcIncl = !$scope.annotationAbcIncl;
+        $scope.abcOption.annotation = !$scope.abcOption.annotation;
         exportTuneBook(false);
     };
 
     $scope.toggleSiteAbc = function() {
-        $scope.siteAbcIncl = !$scope.siteAbcIncl;
+        $scope.abcOption.website = !$scope.abcOption.website;
         exportTuneBook(false);
     };
 
     $scope.toggleTubeAbc = function() {
-        $scope.tubeAbcIncl = !$scope.tubeAbcIncl;
+        $scope.abcOption.video = !$scope.abcOption.video;
         exportTuneBook(false);
     }
 });

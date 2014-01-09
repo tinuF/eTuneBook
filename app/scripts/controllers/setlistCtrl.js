@@ -11,8 +11,8 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
     filterOptions.type = $stateParams['type'];
     filterOptions.color = $stateParams['color'];
     filterOptions.skill = $stateParams['skill'];
-    filterOptions.target = $stateParams['targ'];
-    filterOptions.env = $stateParams['env'];
+    filterOptions.event = $stateParams['evt'];
+    filterOptions.band = $stateParams['band'];
     filterOptions.plmin = $stateParams['plmin'];
     filterOptions.plmax = $stateParams['plmax'];
     filterOptions.freqcomp = $stateParams['freqcomp'];
@@ -38,6 +38,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
 
     if ($window.mobilecheck()){
         // Small Device -> Display Less Columns
+        /*
         columnDefs = [
             {field:'title',
                 displayName:'Tune',
@@ -53,6 +54,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
                 width:'30%'
             }
         ];
+        */
 
 
         columnDefs = [
@@ -84,7 +86,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
                 width:'60%',
                 sortable:false,
                 groupable:false,
-                cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
+                cellTemplate: '<a href="#/tunes/{{row.entity.tune.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
 
             },
             {field:'tune.lastPlayed',
@@ -132,7 +134,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
                 width:'50%',
                 sortable:false,
                 groupable:false,
-                cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
+                cellTemplate: '<a href="#/tunes/{{row.entity.tune.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
 
             },
             {field:'tune.type',
@@ -283,7 +285,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
     $scope.justPlayedTheSet = function( tuneSetId) {
         var now = new Date();
         eTuneBookService.addTuneSetPlayDate(eTuneBookService.getTuneSet(tuneSetId), now);
-        eTuneBookService.storeAbc($scope.tuneBook);
+        eTuneBookService.storeTuneBookAbc();
     };
 });
 

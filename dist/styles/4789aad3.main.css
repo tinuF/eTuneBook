@@ -69,13 +69,48 @@ div.colorPicker-swatch {
 
      .tuneSetBox {
 		list-style-type: none;
-        float: left;
-        margin: 0 10px 40px 0; /*Abstand zwischen den TuneSets*/
-		background: #eee; 
+        /*float: left;*/
+        margin: 0 10px 40px 0;
+        background: #c0e0f0;
 		padding: 5px;
-		width: 380px; 
+        /*padding-top: 40px;*/
+        width: 380px;
 		border-radius: 6px;	
 	}
+
+     .playlistBox {
+         list-style-type: none;
+         /*float: left;*/
+         margin: 0 10px 40px 0;
+         background: #c0e0f0;
+         padding: 5px;
+         padding-top: 40px;
+         border-radius: 6px;
+     }
+
+     .playlist {
+         list-style: none;
+         border: 1px solid #CCC;
+         background: #F5F5F5;
+         color: #1C94C4;
+         margin: 5px;
+         min-height: 80px;
+         padding: 5px 5px 0px;
+         border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(0,0,0,.25)
+     }
+
+     .playlistPosition {
+         list-style: none;
+         border: 1px solid #CCC;
+         background: #F5F5F5;
+         color: #1C94C4;
+         margin: 5px;
+         min-height: 80px;
+         padding: 5px 5px 0px;
+         border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(0,0,0,.25)
+     }
 
 	.tuneSetPosition {
 		list-style: none;
@@ -83,9 +118,7 @@ div.colorPicker-swatch {
 		background: #99EDEA;
 		color: #1C94C4;
 		margin: 5px;
-        /*height: 100%;*/	/*wird gebraucht, damit der Edit-Bereich (textarea) das li-Element vergr�ssert und nicht andere li-Elemente �berdeckt */
-		/*height: 22px;*/
-		min-height: 80px;		/*braucht es bei 0.9 sampledots scale */
+        min-height: 80px;		/*braucht es bei 0.9 sampledots scale */
 		width: 350px;
         padding: 5px 5px 0px;
         border-radius: 6px;
@@ -135,6 +168,47 @@ div.colorPicker-swatch {
 		*/
 	}
 
+     .playlistPositionFirstLine {
+         display: block;
+         border: none;
+         /*
+         border-bottom: 1px solid #999;
+         */
+     }
+
+     .playlistFirstLine {
+         display: block;
+         border: none;
+         /*
+         border-bottom: 1px solid #999;
+         */
+     }
+
+     .playlistPositionNumber {
+         margin: 10px;
+         padding: 10px;
+         /*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
+         min-width: 5px;
+         max-width: 5px;
+         display: inline-block;
+         color: black;
+         font-size: 1em;
+     }
+
+     .playlistNumber {
+         margin: 10px;
+         padding: 10px;
+         /*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
+         min-width: 5px;
+         max-width: 5px;
+         display: inline-block;
+         color: black;
+         font-size: 1em;
+     }
+
+
+
+
 	.tuneType {
 		margin: 5px; 
 		padding: 5px; 
@@ -155,6 +229,8 @@ div.colorPicker-swatch {
 		color: black;
 	}
 
+
+
 	.tuneSetPositionRepeat {
 		float: right;
 		margin: 5px; 
@@ -167,6 +243,111 @@ div.colorPicker-swatch {
 	}
 
      .tuneSetPositionAnnotation {
+         margin: 5px;
+         padding: 5px;
+         display: block;
+         color: black;
+         border-top: 1px solid #999;
+     }
+
+     .playlistName {
+         margin-left: 15px;
+         padding-left: 15px;
+         /*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
+         min-width: 40%;
+         max-width: 40%;
+         display: inline-block;
+         color: black;
+     }
+
+     .playlistEvent {
+         margin-left: 15px;
+         padding-left: 15px;
+         /*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
+         min-width: 20%;
+         max-width: 20%;
+         display: inline-block;
+         color: black;
+     }
+
+     .playlistBand {
+         margin-left: 15px;
+         padding-left: 15px;
+         /*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
+         min-width: 20%;
+         max-width: 20%;
+         display: inline-block;
+         color: black;
+     }
+
+
+     .playlistTuneTitle {
+         margin-left: 15px;
+         padding-left: 15px;
+         /*font-size: 10%;*/ /*Font-Size kann nicht eingestellt werden. Warum?*/
+         min-width: 30%;
+         max-width: 30%;
+         display: inline-block;
+         color: black;
+     }
+
+     .playlistTuneKey {
+         margin: 5px;
+         padding: 5px;
+         /*font-size: 1.2em;*/
+         min-width: 5%;
+         max-width: 5%;
+         display: inline-block;
+         color: black;
+     }
+
+     .playlistTuneSetPositionRepeat {
+         margin: 5px;
+         padding: 5px;
+         /*font-size: 1.2em;*/
+         min-width: 20%;
+         max-width: 20%;
+         display: inline-block;
+         color: black;
+     }
+
+     .playlistTunePlayDateInfo {
+         margin-left: 5px;
+         display: inline-block;
+         min-width: 35%;
+         max-width: 35%;
+
+         /*border: 1px solid #999;*/
+     }
+
+     .playlistJustPlayedTheTune {
+         /*no margin, padding -> button sticks to border-line of first line*/
+         min-width: 45px;
+         max-width: 45px;
+         display: inline-block;
+         color: black;
+     }
+
+     .playlistTuneLastPlayed {
+         margin-left: 5px; /*Abstand zum Button 'justPlayedTheTune'*/
+         /*font-size: 1.2em;*/
+         min-width: 50%;
+         max-width: 50%;
+         display: inline-block;
+         color: black;
+
+     }
+
+
+     .playlistTuneSetPositionAnnotation {
+         margin: 5px;
+         padding: 5px;
+         display: block;
+         color: black;
+         border-top: 1px solid #999;
+     }
+
+     .playlistPositionAnnotation {
          margin: 5px;
          padding: 5px;
          display: block;
@@ -205,6 +386,8 @@ div.colorPicker-swatch {
 		
 	}
 
+
+
 	.tuneColorizer {
         min-width: 100px;
 		max-width: 100px;
@@ -219,9 +402,6 @@ div.colorPicker-swatch {
           display: inline-block;
       }
 
-	.tuneSetBox {
-		background: #c0e0f0; 
-	}
 
 	.tuneSetPosition {
 		background: #e0f0f0;
@@ -302,6 +482,13 @@ div.colorPicker-swatch {
 		display: block;
 		border: none;
 	}
+
+     .playlistInfoLine {
+         margin: 0;
+         padding: 0;
+         display: block;
+         border: none;
+     }
 	
 	.tuneSetName {
 		font-size: 0.8em;
@@ -311,7 +498,7 @@ div.colorPicker-swatch {
 		display: inline-block;
 		color: black;
 	}
-	
+
 	.tuneSetEnv {
 		font-size: 0.8em;
         margin: 0 0 0 5px;
@@ -320,7 +507,7 @@ div.colorPicker-swatch {
 		display: inline-block;
 		color: black;
 	}
-	
+
 	.tuneSetTarget {
 		font-size: 0.8em;
         margin: 0 0 0 5px;
@@ -402,8 +589,46 @@ div.colorPicker-swatch {
          opacity: 1;
      }
 
+
+     .ngGrid {
+         background-color: #F5F5F5;
+         /*background-color: #eee;*/
+         /*background-color:#c0e0f0;*/
+     }
+
+     .ngRow.even {
+         /*background-color: rgb(255, 255, 255);*/
+         background-color: #F5F5F5;
+     }
+     .ngRow.odd {
+         /*background-color: rgb(255, 255, 255);*/
+         background-color: #F5F5F5;
+     }
+
+     .playlistPositionListGrid {
+         border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(0,0,0,.25);
+         /*width: 400px;
+         height: 300px;*/
+         /*width: 100%;*/
+         height: 450px;
+         position: fixed;
+     }
+
+     .playlistListGrid {
+         border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(0,0,0,.25);
+         /*width: 400px;
+         height: 300px;*/
+         /*width: 100%;*/
+         height: 450px;
+         position: fixed;
+     }
+
      .tuneListGrid {
-         border: 1px solid rgb(212,212,212);
+         /*border: 1px solid rgb(212,212,212);*/
+         border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(0,0,0,.25);
          /*width: 400px;
          height: 300px;*/
          /*width: 100%;*/
@@ -412,7 +637,9 @@ div.colorPicker-swatch {
      }
 
      .setListGrid {
-         border: 1px solid rgb(212,212,212);
+         /*border: 1px solid rgb(212,212,212);*/
+         border-radius: 6px;
+         box-shadow: 0 1px 3px rgba(0,0,0,.25);
          /*width: 400px;
          height: 300px;*/
          /*width: 100%;*/
@@ -420,8 +647,16 @@ div.colorPicker-swatch {
          position: fixed;
      }
 
+
      .bookTitle {
-         position: fixed;
+         /*position: fixed;*/
+     }
+
+
+     .playlistTitle {
+         margin: 20px;
+         padding: 20px;
+         font-size: 1.2em;
      }
 
      .tuneControlButtons {

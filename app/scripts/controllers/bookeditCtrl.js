@@ -18,7 +18,7 @@ angular.module('eTuneBookApp').controller( 'bookeditCtrl', function bookeditCtrl
         $scope.tuneBook.version = angular.copy($scope.tuneBookVersion);
         $scope.tuneBook.description = angular.copy($scope.tuneBookDescription);
         //Generate TuneBook-Abc and save it to localStorage
-        eTuneBookService.storeAbc($scope.tuneBook);
+        eTuneBookService.storeTuneBookAbc();
         $state.transitionTo('book', $stateParams);
     };
 

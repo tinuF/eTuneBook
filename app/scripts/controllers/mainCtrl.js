@@ -61,6 +61,12 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $windo
 		$state.transitionTo('book');
 	};
 
+    $scope.showPlaylists = function(  ) {
+        initActiveMenu();
+        $scope.playlistsMenuActive = true;
+        $state.transitionTo('playlistlist');
+    };
+
     $scope.showSets = function(  ) {
         initActiveMenu();
         $scope.setsMenuActive = true;
@@ -81,23 +87,15 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $windo
 
     function initActiveMenu(){
         $scope.bookMenuActive = false;
+        $scope.playlistsMenuActive = false;
         $scope.setsMenuActive = false;
         $scope.tunesMenuActive = false;
         $scope.infoMenuActive = false;
-        /*
-        $scope.introductionMenuActive = false;
-        $scope.getStartedMenuActive = false;
-        $scope.manualMenuActive = false;
-        $scope.releaseNotesMenuActive = false;
-        $scope.creditsMenuActive = false;
-        $scope.feedbackMenuActive = false;
-        */
     }
 
 
 	$scope.putTuneBookToLocalStorage = function() {
-		//eTuneBookService.putToLocalStorage($scope.tuneBook);
-		eTuneBookService.storeAbc($scope.tuneBook);
+		eTuneBookService.storeTuneBookAbc();
 	};
 
   
@@ -236,27 +234,14 @@ angular.module('eTuneBookApp').controller( 'mainCtrl', function ( $scope, $windo
             }
         } else if (beginOfPath == "book"){
             $scope.bookMenuActive = true;
+        } else if (beginOfPath == "play"){
+            if (pathSplits.length == 2){
+                $scope.playlistsMenuActive = true;
+            }
         } else if (beginOfPath == "abc"){
             $scope.bookMenuActive = true;
         } else if (beginOfPath == "info"){
             $scope.infoMenuActive = true;
-            // siehe info.html
-            /*
-            beginOfPath = pathSplits[2].substring(0,5);
-            if (beginOfPath == "intro"){
-                $scope.introductionMenuActive = true;
-            } else if (beginOfPath == "getst"){
-                $scope.getStartedMenuActive = true;
-            } else if (beginOfPath == "manua"){
-                $scope.manualMenuActive = true;
-            } else if (beginOfPath == "relea"){
-                $scope.releaseNotesMenuActive = true;
-            } else if (beginOfPath == "credi"){
-                $scope.creditsMenuActive = true;
-            } else if (beginOfPath == "feedb"){
-                $scope.feedbackMenuActive = true;
-            }
-            */
         }
     });
 

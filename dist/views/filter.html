@@ -67,16 +67,16 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="tuneSetTargetForFilterSelector">Target</label>
+                        <label class="control-label" for="tuneSetEventForFilterSelector">Event</label>
                         <div class="col-lg-5">
-                            <select class="form-control" id="tuneSetTargetForFilterSelector" ng-model="tuneSetTargetForFilter" ng-options="tuneSetTargetForFilter.target for tuneSetTargetForFilter in tuneSetTargetsForFilter | orderBy:'target'">	</select>
+                            <select class="form-control" id="tuneSetEventForFilterSelector" ng-model="tuneSetEventForFilter" ng-options="tuneSetEventForFilter.event for tuneSetEventForFilter in tuneSetEventsForFilter | orderBy:'event'">	</select>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label" for="tuneSetEnvForFilterSelector">Environment</label>
+                        <label class="control-label" for="tuneSetBandForFilterSelector">Band</label>
                         <div class="col-lg-5">
-                            <select class="form-control" id="tuneSetEnvForFilterSelector" ng-model="tuneSetEnvForFilter" ng-options="tuneSetEnvForFilter.env for tuneSetEnvForFilter in tuneSetEnvsForFilter">	</select>
+                            <select class="form-control" id="tuneSetBandForFilterSelector" ng-model="tuneSetBandForFilter" ng-options="tuneSetBandForFilter.band for tuneSetBandForFilter in tuneSetBandsForFilter">	</select>
                         </div>
                     </div>
                  </form>

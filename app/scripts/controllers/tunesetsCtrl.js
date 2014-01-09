@@ -134,7 +134,7 @@ angular.module('eTuneBookApp').controller( 'tunesetsCtrl', function ( $scope, $l
 
 	$scope.putTuneBookToLocalStorage = function() {
 		//tbkStorage.putToLocalStorage($scope.tuneBook);
-		eTuneBookService.storeAbc($scope.tuneBook);
+		eTuneBookService.storeTuneBookAbc();
 	};
   
 	$scope.removeTuneSetPosition = function( tuneSetPosition ) {
