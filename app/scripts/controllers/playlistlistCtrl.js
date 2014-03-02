@@ -27,6 +27,12 @@ angular.module('eTuneBookApp').controller( 'playlistlistCtrl', function playlist
         angular.element("#PlaylistEditor").modal("show");
     };
 
+    $scope.copy = function( playlist ) {
+        eTuneBookService.copyPlaylist(playlist.id);
+        eTuneBookService.storeTuneBookAbc();
+    };
+
+
     $scope.doneEditing = function(playlist) {
         eTuneBookService.storeTuneBookAbc();
         angular.element("#PlaylistEditor").modal("hide");

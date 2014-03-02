@@ -9,6 +9,8 @@ angular.module('eTuneBookApp').controller( 'playlistCtrl', function ( $scope, $l
     $scope.playlist =  eTuneBookService.getPlaylist($scope.playlistId);
     $scope.tuneBook = eTuneBookService.getCurrentTuneBook();
 
+    eTuneBookService.initializeTuneSetPositionPlayInfosForPlaylist($scope.playlistId);
+
     $scope.moveUp = function(playlistPosition) {
         $scope.playlist =  eTuneBookService.moveUpPlaylistPosition($scope.playlistId,playlistPosition.position);
         eTuneBookService.storeTuneBookAbc();
@@ -21,6 +23,10 @@ angular.module('eTuneBookApp').controller( 'playlistCtrl', function ( $scope, $l
 
     $scope.showSet = function(playlistPosition) {
         $state.transitionTo('set',{tuneSetId: playlistPosition.tuneSet.tuneSetId});
+    };
+
+    $scope.showTune = function(intTuneId) {
+        $state.transitionTo('tune', {intTuneId: intTuneId});
     };
 
     $scope.sortTuneSetPositionAsNumber = function(tuneSetPosition) {
@@ -39,15 +45,20 @@ angular.module('eTuneBookApp').controller( 'playlistCtrl', function ( $scope, $l
         return parseInt(playlistPosition.position);
     }
 
-    $scope.edit = function( playlistPosition ) {
+    $scope.editPlaylistPosition = function( playlistPosition ) {
         $scope.playlistPositionToBeEdited = playlistPosition;
         //Set current TuneSet for Selection
         $scope.tuneSet = playlistPosition.tuneSet;
         angular.element("#PlaylistPositionEditor").modal("show");
     };
 
-    $scope.doneEditing = function(playlistPosition) {
+    $scope.editPlaylistTuneSetPosition = function( playlistPosition, tuneSetPosition ) {
+        $scope.playlistTuneSetPositionToBeEdited = tuneSetPosition;
+        $scope.partPlayInfo = eTuneBookService.initializePartPlayInfo();
+        angular.element("#PlaylistTuneSetPositionEditor").modal("show");
+    };
 
+    $scope.doneEditingPlaylistPosition = function(playlistPosition) {
         if(playlistPosition.name == ""){
             playlistPosition.name = playlistPosition.tuneSet.tuneSetName;
 
@@ -62,19 +73,61 @@ angular.module('eTuneBookApp').controller( 'playlistCtrl', function ( $scope, $l
         }
 
         eTuneBookService.storeTuneBookAbc();
-
         angular.element("#PlaylistPositionEditor").modal("hide");
-
-
     };
 
-    $scope.delete = function( playlistPosition ) {
+
+    $scope.doneEditingPlaylistTuneSetPosition = function(tuneSetPosition) {
+        eTuneBookService.storeTuneBookAbc();
+        angular.element("#PlaylistTuneSetPositionEditor").modal("hide");
+
+        //todo: problem: partPlayInfo bleibt in Modal hängen. Wird Modal für ein anderes Tune aufgerufen, dann wird partPlayInfo vom vorherigen Tune editiert.
+    };
+
+    $scope.deletePlaylistPosition = function( playlistPosition ) {
         eTuneBookService.deletePlaylistPosition($scope.playlistId, playlistPosition.position);
         eTuneBookService.storeTuneBookAbc();
     };
 
+
+    $scope.addPartPlayInfo = function(tuneSetPositionPlayInfo, partPlayInfo) {
+        tuneSetPositionPlayInfo.addPartPlayInfo(partPlayInfo);
+        eTuneBookService.storeTuneBookAbc();
+        $scope.partPlayInfo = eTuneBookService.initializePartPlayInfo();
+    }
+
+    $scope.editPartPlayInfo = function(partPlayInfo) {
+        $scope.partPlayInfo = partPlayInfo;
+    }
+
+    $scope.deletePartPlayInfo = function(tuneSetPositionPlayInfo, partPlayInfo) {
+        tuneSetPositionPlayInfo.deletePartPlayInfo(partPlayInfo);
+        eTuneBookService.storeTuneBookAbc();
+    }
+
+    $scope.moveUpPartPlayInfo = function(tuneSetPositionPlayInfo, partPlayInfo) {
+        tuneSetPositionPlayInfo.moveUpPartPlayInfo(partPlayInfo);
+        eTuneBookService.storeTuneBookAbc();
+    }
+
+    $scope.moveDownPartPlayInfo = function(tuneSetPositionPlayInfo, partPlayInfo) {
+        tuneSetPositionPlayInfo.moveDownPartPlayInfo(partPlayInfo);
+        eTuneBookService.storeTuneBookAbc();
+    }
+
+    $scope.loadDefaulAnnotation = function(tuneSetPosition) {
+        tuneSetPosition.currentTuneSetPositionPlayInfo.annotation = tuneSetPosition.annotation;
+        eTuneBookService.storeTuneBookAbc();
+    }
+
+    $scope.loadDefaulRepeat = function(tuneSetPosition) {
+        tuneSetPosition.currentTuneSetPositionPlayInfo.repeat = tuneSetPosition.repeat;
+        eTuneBookService.storeTuneBookAbc();
+    }
+
     $scope.newPlaylistPosition = function() {
         $scope.playlistPositionToBeEdited = eTuneBookService.addEmptyPlaylistPosition($scope.playlistId);
+        //todo: add empty play info
         angular.element("#PlaylistPositionEditor").modal("show");
     };
 

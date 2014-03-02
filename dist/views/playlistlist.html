@@ -63,7 +63,12 @@
                 <ul class="dropdown-menu">
                    <li><a ng-click="edit(playlist)">Edit</a></li>
                     <li class="divider"></li>
+                    <li><a ng-click="copy(playlist)">Copy</a></li>
+                    <li class="divider"></li>
+                    <!--
                     <li><a ng-click="delete(playlist)">Delete</a></li>
+                    -->
+                    <li><a ng-really-message="Do you really want to delete the playlist?" ng-really-click="delete(playlist)">Delete</a></li>
                 </ul>
             </div>
             <div class="playlistEvent pull-right">{{playlist.event}}</div>

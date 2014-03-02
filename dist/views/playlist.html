@@ -44,7 +44,70 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn btn-default" ng-click="doneEditing(playlistPositionToBeEdited)">Done</button>
+                    <button class="btn btn-default" ng-click="doneEditingPlaylistPosition(playlistPositionToBeEdited)">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="PlaylistTuneSetPositionEditor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    -->
+                    <h3>Edit {{playlistTuneSetPositionToBeEdited.tune.title | eliminateThe}} in Playlist {{playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo.playlistId}}</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="inputPlaytime">Repeat</label>
+                            <div>
+                                <button class="btn btn-xs btn-default" ng-click="loadDefaulRepeat(playlistTuneSetPositionToBeEdited)" title="Load Default Annotation">Default</button>
+                                <input type="text" class="form-control" id="inputPlaytime" ng-model="playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo.repeat">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="inputAnnotationPlaylistTuneSetPosition">Comment</label>
+                            <div>
+                                <button class="btn btn-xs btn-default" ng-click="loadDefaulAnnotation(playlistTuneSetPositionToBeEdited)" title="Load Default Annotation">Default</button>
+                                <input type="text" class="form-control" id="inputAnnotationPlaylistTuneSetPosition" ng-model="playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo.annotation">
+                            </div>
+                        </div>
+
+                        <div class="partPlayInfoEditBox">
+                            <div class="form-group form-inline">
+                                <label class="control-label" for="inputPart">Part</label>
+                                <div>
+                                    <input type="text" class="form-control" id="inputPart" ng-model="partPlayInfo.part">
+                                </div>
+                                <label class="control-label" for="inputPlayInfo">Info</label>
+                                <div>
+                                    <input type="text" class="form-control" id="inputPlayInfo" ng-model="partPlayInfo.playInfo">
+                                </div>
+                                <button ng-click="addPartPlayInfo(playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo, partPlayInfo)">Add</button>
+                            </div>
+
+                            <ul>
+                                <li class="partPlayInfo" ng-repeat="partPlayInfo in playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo.partPlayInfos">
+
+                                    <div>
+                                        <button class="btn btn-xs btn-default" ng-click="editPartPlayInfo(partPlayInfo)" title="Edit"><i class="glyphicon glyphicon-edit"></i></button>
+                                        <button class="btn btn-xs btn-default" ng-click="moveUpPartPlayInfo(playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo, partPlayInfo)" title="Move Up"><i class="glyphicon glyphicon-arrow-up"></i></button>
+                                        <button class="btn btn-xs btn-default" ng-click="moveDownPartPlayInfo(playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo, partPlayInfo)" title="Move Down"><i class="glyphicon glyphicon-arrow-down"></i></button>
+                                        <button class="btn btn-xs btn-default" ng-really-message="Do you really want to delete the part play info?" ng-really-click="deletePartPlayInfo(playlistTuneSetPositionToBeEdited.currentTuneSetPositionPlayInfo, partPlayInfo)"><i class="glyphicon glyphicon-trash" title="Delete Part Play Info"></i></button>
+
+                                        {{partPlayInfo.part}} : {{partPlayInfo.playInfo}}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-default" ng-click="doneEditingPlaylistTuneSetPosition(playlistTuneSetPositionToBeEdited)">Done</button>
                 </div>
             </div>
         </div>
@@ -64,9 +127,13 @@
                     <li class="divider"></li>
                     <li><a ng-click="moveDown(playlistPosition)">Move down</a></li>
                     <li class="divider"></li>
-                    <li><a ng-click="edit(playlistPosition)">Edit</a></li>
+                    <li><a ng-click="editPlaylistPosition(playlistPosition)">Edit</a></li>
                     <li class="divider"></li>
-                    <li><a ng-click="delete(playlistPosition)">Delete</a></li>
+                    <!--
+                    <li><a ng-click="deletePlaylistPosition(playlistPosition)">Delete</a></li>
+                    -->
+                    <li><a ng-really-message="Do you really want to delete the playlist position?" ng-really-click="deletePlaylistPosition(playlistPosition)">Delete</a></li>
+
                 </ul>
             </div>
             <button type="button" ng-click="justPlayedTheSet(playlistPosition.tuneSet)" class="btn btn-default pull-right">
@@ -74,22 +141,40 @@
             </button>
         </div>
         <ul>
-            <li ng-repeat="tuneSetPosition in playlistPosition.tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber">
-                <div>
-                    <div class="playlistTuneTitle">
-                        <a href="#/tunes/{{tuneSetPosition.tune.intTuneId}}" title="Show The Tune">{{tuneSetPosition.tune.title | eliminateThe}}</a>
-                    </div>
-                    <div class="playlistTuneKey">{{tuneSetPosition.tune.key}}</div>
-                    <div class="playlistTuneSetPositionRepeat">{{tuneSetPosition.repeat}}</div>
-                    <div class="playlistTunePlayDateInfo">
-                        <a class="btn btn-xs btn-default playlistJustPlayedTheTune" ng-click="justPlayedTheTune(tuneSetPosition.tune)" title="Just Played The Tune">Played</a>
+            <li class="playlistTuneSetPosition" ng-repeat="tuneSetPosition in playlistPosition.tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber">
+                <div class="tuneSetPositionNumber">{{tuneSetPosition.position}}</div>
 
-                        <div class="playlistTuneLastPlayed">{{tuneSetPosition.tune.lastPlayed | fromNow}}</div>
-                    </div>
-                    <div class="playlistTuneSetPositionAnnotation" ng-show="tuneSetPosition.annotation != ''">{{tuneSetPosition.annotation}}</div>
+                <div class="btn-group playlistTuneTitle">
+                    <a class="btn btn-default tuneTitle" ng-click="showTune(tuneSetPosition.tune.intTuneId)" title="Show The Tune"><strong>{{tuneSetPosition.tune.title | eliminateThe}}</strong></a>
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="editPlaylistTuneSetPosition(playlistPosition,tuneSetPosition)">Edit</a></li>
+                    </ul>
                 </div>
-            </li>
 
+                <div class="playlistTuneKey">{{tuneSetPosition.tune.key}}</div>
+                <!--<div class="playlistTuneSetPositionRepeat">{{tuneSetPosition.repeat}}</div>-->
+                <div class="playlistTuneSetPositionRepeat">{{tuneSetPosition.currentTuneSetPositionPlayInfo.repeat}}</div>
+                <div class="playlistTunePlayDateInfo">
+                    <a class="btn btn-xs btn-default playlistJustPlayedTheTune" ng-click="justPlayedTheTune(tuneSetPosition.tune)" title="Just Played The Tune">Played</a>
+
+                    <div class="playlistTuneLastPlayed">{{tuneSetPosition.tune.lastPlayed | fromNow}}</div>
+                </div>
+
+                <ul>
+                   <li class="partPlayInfo" ng-repeat="partPlayInfo in tuneSetPosition.currentTuneSetPositionPlayInfo.partPlayInfos">
+                        <div ng-show="partPlayInfo.part">
+                            {{partPlayInfo.part}} : {{partPlayInfo.playInfo}}
+                        </div>
+                    </li>
+                </ul>
+                <!--
+                <div class="playlistTuneSetPositionAnnotation" ng-show="tuneSetPosition.annotation != ''">{{tuneSetPosition.annotation}}</div>
+                -->
+                <div class="playlistTuneSetPositionAnnotation" ng-show="tuneSetPosition.currentTuneSetPositionPlayInfo.annotation != ''">{{tuneSetPosition.currentTuneSetPositionPlayInfo.annotation}}</div>
+           </li>
         </ul>
         <div class="playlistPositionAnnotation" ng-show="playlistPosition.annotation != ''">{{playlistPosition.annotation}}</div>
     </li>

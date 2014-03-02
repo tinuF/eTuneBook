@@ -7,56 +7,69 @@
 angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
     //eTBk-Module
 
-    // eTuneBook Model					abc								description
+    // eTuneBook Model					abc								        description
     // tuneBook
-    //		name						%%etbk:bname					Book-Name (if directive is empty, name is taken from File-Name on load from local File System), set 'New TuneBook' when new
-    //		version						%%etbk:bvers					Book-Version
-    //		description					%%etbk:bdesc					Book-Description
-    //		header						-								ABCJS.TuneBook.header
+    //		name						%%etbk:bname					        Book-Name (if directive is empty, name is taken from File-Name on load from local File System), set 'New TuneBook' when new
+    //		version						%%etbk:bvers					        Book-Version
+    //		description					%%etbk:bdesc					        Book-Description
+    //		header						-								        ABCJS.TuneBook.header
     //		tuneSets
     //			tuneSetId				see %%etbk:tnset
-    //			tuneSetName				see %%etbk:tnset                name of first tune
+    //			tuneSetName				see %%etbk:tnset                        name of first tune
     //			tuneSetPositions
-    //				tune				-								ABCJS.TuneBook.tunes.tune[i]
-    //				    intTuneId 		-								internal key managed by TuneBookEditor (tuneId in abc can be screwed up by the user)
-    //					pure			'from X: to next X:'			ABCJS.TuneBook.tunes.tune[i].pure
-    //																	extracts from pure (for the view):
+    //				tune				-								        ABCJS.TuneBook.tunes.tune[i]
+    //				    intTuneId 		-								        internal key managed by TuneBookEditor (tuneId in abc can be screwed up by the user)
+    //					pure			'from X: to next X:'			        ABCJS.TuneBook.tunes.tune[i].pure
+    //																	        extracts from pure (for the view):
     //					id				X:
     //					title			T:
     //					type			R:
     //					key				K:
-    //																	eTuneBook-specific fields:
-    //					videos	    	%%etbk:video					src:<source>,cde:<code>,desc:<description>
+    //																	        eTuneBook-specific fields:
+    //					videos	    	%%etbk:video					        src:<source>,cde:<code>,desc:<description>
     //                     source
     //                     code
     //                     description
-    //					wsites	    	%%etbk:wsite					url:<url>
-    //					annotation		%%etbk:annot					comment
-    //					color			%%etbk:color					hex-color of the tune
-    //					skill			%%etbk:skill					for filtering, 1= hardly know the tunes --- 6 = absolute Master
-    //					lastModified	H: (Modified)					last modification date (Javascript Date Object)
-    //					lastPlayed		-								last played date (Javascript Date Object) of playDates
-    //			        frequencyPlayed	-								Score calculated on the basis of playDates
-    //					playDates		%%etbk:pldat					<YYYY-MM-DDTHH:mm>,<YYYY-MM-DDTHH:mm>,<YYYY-MM-DDTHH:mm>....
+    //					wsites	    	%%etbk:wsite					        url:<url>
+    //					annotation		%%etbk:annot					        comment
+    //					color			%%etbk:color					        hex-color of the tune
+    //					skill			%%etbk:skill					        for filtering, 1= hardly know the tunes --- 6 = absolute Master
+    //					lastModified	H: (Modified)					        last modification date (Javascript Date Object)
+    //					lastPlayed		-								        last played date (Javascript Date Object) of playDates
+    //			        frequencyPlayed	-								        Score calculated on the basis of playDates
+    //					playDates		%%etbk:pldat					        <YYYY-MM-DDTHH:mm>,<YYYY-MM-DDTHH:mm>,<YYYY-MM-DDTHH:mm>....
     //						playDate
-    //									%%etbk:tnset					id:<tuneSetId>,pos:<position>,rep:<repeat>,ant:<annotation>
+    //									%%etbk:tnset					        id:<tuneSetId>,pos:<position>,rep:<repeat>,ant:<annotation>
     //
-    //				tuneSetId											key of tuneSet
-    //				position 											position within the tuneSet. (index + 1)
-    //				repeat 												repetition within the tuneSet. (default: 3)
-    //              annotation                                          optional comment
+    //				tuneSetId											        key of tuneSet
+    //				position 											        position within the tuneSet. (index + 1)
+    //				repeat 												        repetition within the tuneSet. (default: 3)
+    //              annotation                                                  optional comment
     //
-    //          playlists               %%etbk:plldf                    Playlist Definition. Since 1.2.0. Im Header
-    //              playlist                                            id:<playListId>,name:<playListName>,evt:<playListEvent>,band:<playListBand>,vnue:<playListVenue>
+    //          playlists                                                       Playlist Definition. Since 1.2.0. Im Header
+    //              playlist            %%etbk:plldf                            id:<playListId>,name:<playListName>,evt:<playListEvent>,band:<playListBand>,vnue:<playListVenue>
     //			        id           		see %%etbk:plldf
-    //			        name               	see %%etbk:plldf            'Schmitte Steffisburg', 'Bären Biglen', 'Thunfest',...
-    //			        event           	see %%etbk:plldf            'Set-Dance', 'Ceili', 'Session', 'Concert', 'Wedding', 'Christmas Party', 'Birth Day Party'
-    //			        band        	  	see %%etbk:plldf            'Toe for Toe', 'Scealta', 'Hibernia', 'Solo', ...
-    //			        playlistPositions 	see %%etbk:pllps             Playlist Position. Since 1.2.0. Im Header
-    //                                                                   id:<playListId>,pos:<position>,tnset:<tuneSetId>,name:<name>,ant:<annotation>
-    //			            tuneSet 	 	see %%etbk:pllps
-    //			            position 	 	see %%etbk:pllps
-    //			            annotation 	 	see %%etbk:pllps
+    //			        name               	see %%etbk:plldf                    'Schmitte Steffisburg', 'Bären Biglen', 'Thunfest',...
+    //			        event           	see %%etbk:plldf                    'Set-Dance', 'Ceili', 'Session', 'Concert', 'Wedding', 'Christmas Party', 'Birth Day Party'
+    //			        band        	  	see %%etbk:plldf                    'Toe for Toe', 'Scealta', 'Hibernia', 'Solo', ...
+    //			        playlistPositions 	                                    Playlist Position. Since 1.2.0. Im Header
+    //                      playlistPosition    %%etbk:pllps                    id:<playListId>,pos:<position>,tnset:<tuneSetId>,name:<name>,ant:<annotation>
+    //			                playlistId 	 	see %%etbk:pllps
+    //			                tuneSet 	 	see %%etbk:pllps
+    //			                name 	 	    see %%etbk:pllps                rename TuneSet
+    //			                position 	 	see %%etbk:pllps
+    //			                annotation 	 	see %%etbk:pllps
+    //
+    //			 tunesetPositionPlayInfos 	                                    TunesetPosition Play Infos. Since 1.2.1. Im Header
+    //                                                                          Optional (not every TunesetPosition needs to have a tunePlayInfo)
+    //			    tunesetPositionPlayInfo                 %%etbk:plltp        pll:<playListId>,pllpos:<position>,tnset:<tuneSetId>,tnsetpos:<position>,rep:<repeat>,arr:{<part(n)>:<info(n)>,<part(n+1)>:<info(n+1)>;...},ant:<annotation>
+    //                  playlistPosition                    see %%etbk:plltp    (pll:<playListId>,pllpos:<position>)
+    //                  tuneSetPosition                     see %%etbk:plltp    (tnset:<tuneSetId>,tnsetpos:<position>)
+    //				    repeat 				                see %%etbk:plltp	overrides repeat of tunesetPosition
+    //                  partPlayInfos                       see %%etbk:plltp
+    //                      part                                                'Intro' oder '1A' or '1A1' , ...
+    //                      playInfo                                            'All' oder '+Gui' oder 'Acc + Fid', ....
+    //                  annotation                          see %%etbk:plltp    overrides annotation of tunesetPosition
 
 
     // Immediately invoked function expression in order to build the eTBk module
@@ -66,7 +79,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         //Private Variables
         var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
         var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-        var eTBK_VERSION = '1.2.0';
+        var eTBK_VERSION = '1.2.1';
         var ABC_VERSION = '2.1';
         //var eTBK_DEFAULT_COLOR = "#E0F0F0";
         var eTBK_DEFAULT_COLOR = "#F5F5F5";
@@ -74,7 +87,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         var eTBK_PATTERN_FINGER = /!\d!/g;		//matches !<number>! globally (every occurence)
         var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
         var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-        var eTBk_EXAMPLE_VERSION = '2014-01-08';
+        var eTBk_EXAMPLE_VERSION = '2014-03-02';
         var currentTuneBook;
 
         //Private Methods
@@ -103,12 +116,14 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             This.playlists = extractPlaylists(This);
 
             extractPlaylistPositions(This);
+
+            This.tuneSetPositionPlayInfos = extractTuneSetPositionPlayInfos(This);
         };
 
 
         function extractPlaylists(tuneBook){
             // Generate Playlists from the book.
-            var playlists, playlistDefinitionDirectives, playlistPositionDirectives;
+            var playlists, playlistDefinitionDirectives;
 
             playlists = [];
             playlistDefinitionDirectives = getAbcValues(tuneBook.header, "%%etbk:plldf ");
@@ -132,7 +147,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
         }
 
         function extractPlaylistPositions(tuneBook){
-            // Generate Playlists from the book.
+            // Generate PlaylistPositions from the book.
             var playlistPositionDirectives;
 
             playlistPositionDirectives = getAbcValues(tuneBook.header, "%%etbk:pllps ");
@@ -158,9 +173,68 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
                     // Add PlaylistPosition to Playlist
                     var playlist = getPlaylistById(tuneBook, playlistId);
-                    playlist.addPlaylistPostion(playlistPosition);
+                    playlist.addPlaylistPosition(playlistPosition);
                 }
             }
+        }
+
+        function extractTuneSetPositionPlayInfos(tuneBook){
+            // Generate TuneSetPositionPlayInfos from the book.
+            var tuneSetPositionPlayInfoDirectives, playlistId, playlistPositionNr, tuneSetId,
+                tuneSetPositionNr, repeat, partPlayInfoDirective, annotation, partPlayInfos,
+                tuneSetPositionPlayInfo, playlistPosition, tuneSetPosition,
+                tuneSetPositionPlayInfos;
+
+            tuneSetPositionPlayInfoDirectives = getAbcValues(tuneBook.header, "%%etbk:plltp ");
+
+            tuneSetPositionPlayInfos = [];
+
+            if (tuneSetPositionPlayInfoDirectives.length > 0){
+                for (var z = 0; z < tuneSetPositionPlayInfoDirectives.length; z++) {
+                    // Get TuneSetSetPositionPlayInfo
+                    playlistId = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "pll:", ",");
+                    playlistPositionNr = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "pllpos:", ",");
+                    tuneSetId = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "tnset:", ",");
+                    tuneSetPositionNr = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "tnsetpos:", ",");
+                    repeat = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "rep:", ",");
+                    partPlayInfoDirective = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "arr:{", "}");
+                    partPlayInfos = extractPartPlayInfos(partPlayInfoDirective);
+                    annotation = getSubDirective(tuneSetPositionPlayInfoDirectives[z], "ant:", ",");
+                    playlistPosition = getPlaylistPosition(tuneBook, playlistId, playlistPositionNr);
+                    tuneSetPosition = getTuneSetPositionByPosition(playlistPosition.tuneSet, tuneSetPositionNr);
+
+                    // Generate tuneSetPositionPlayInfo
+                    tuneSetPositionPlayInfo = createTuneSetPositionPlayInfo(playlistPosition, tuneSetPosition, repeat, partPlayInfos, annotation);
+                    tuneSetPositionPlayInfos.push(tuneSetPositionPlayInfo);
+                }
+            }
+
+            return tuneSetPositionPlayInfos;
+        }
+
+
+        function extractPartPlayInfos(partPlayInfoDirective){
+            var partPlayInfosSplits, partPlayInfoSplits, part, playInfo, partPlayInfos, partPlayInfo;
+
+            partPlayInfosSplits = partPlayInfoDirective.split(",");
+            partPlayInfos = [];
+
+            if (partPlayInfosSplits.length > 0){
+                for (var z = 0; z < partPlayInfosSplits.length; z++) {
+                    // Get PartPlayInfo
+                    partPlayInfoSplits = partPlayInfosSplits[z].split(":");
+
+                    if (partPlayInfoSplits.length == 2){
+                        part = partPlayInfoSplits[0];
+                        playInfo = partPlayInfoSplits[1];
+
+                        // Generate partPlayInfo
+                        partPlayInfo = createPartPlayInfo(part, playInfo);
+                        partPlayInfos.push(partPlayInfo);
+                    }
+                }
+            }
+            return partPlayInfos;
         }
 
 
@@ -425,6 +499,36 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 			return frequencyPlayed;
 		}
 
+        function getTuneSetPositionPlayInfosForPlaylistPosition(tuneBook, playlistPosition){
+            var tuneSetPositionPlayInfos, tuneSetPositionPlayInfo;
+
+            tuneSetPositionPlayInfos = [];
+
+            for (var z = 0; z < tuneBook.tuneSetPositionPlayInfos.length; z++) {
+                if (tuneBook.tuneSetPositionPlayInfos[z].playlistPosition == playlistPosition){
+                    tuneSetPositionPlayInfo = tuneBook.tuneSetPositionPlayInfos[z];
+                    tuneSetPositionPlayInfos.push(tuneSetPositionPlayInfo);
+                }
+            }
+
+            return tuneSetPositionPlayInfos;
+        }
+
+        function getTuneSetPositionPlayInfo(tuneBook, playlistPosition, tuneSetPosition){
+            var tuneSetPositionPlayInfo;
+
+            tuneSetPositionPlayInfo = undefined;
+
+            for (var z = 0; z < tuneBook.tuneSetPositionPlayInfos.length; z++) {
+                if (tuneBook.tuneSetPositionPlayInfos[z].playlistPosition == playlistPosition
+                    && tuneBook.tuneSetPositionPlayInfos[z].tuneSetPosition == tuneSetPosition){
+                    tuneSetPositionPlayInfo = tuneBook.tuneSetPositionPlayInfos[z];
+                }
+            }
+
+            return tuneSetPositionPlayInfo;
+        }
+
 
 
         //AbcOption-Factory
@@ -459,6 +563,66 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return createAbcOption(true, true, true, true, true, true, true, true, true);
         }
 
+
+        //TuneSetPositionPlayInfo-Factory
+        function createTuneSetPositionPlayInfo(playlistPosition, tuneSetPosition, repeat, partPlayInfos, annotation){
+            return {
+                playlistPosition: playlistPosition,
+                tuneSetPosition: tuneSetPosition,
+                repeat: repeat,
+                partPlayInfos: partPlayInfos,
+                annotation: annotation,
+
+                addPartPlayInfo: function(partPlayInfo){
+                    this.partPlayInfos.push(partPlayInfo);
+                },
+                deletePartPlayInfo: function(partPlayInfo){
+                    this.partPlayInfos.splice(this.partPlayInfos.indexOf(partPlayInfo), 1);
+                },
+                moveUpPartPlayInfo: function(partPlayInfo){
+                    var index = this.partPlayInfos.indexOf(partPlayInfo);
+                    if(index == 0){
+                        // First Position. Can't move up. Do nothing.
+                    } else {
+                        // Remove PartPlayInfo from old place
+                        this.partPlayInfos.splice(index, 1);
+                        // Insert PartPlayInfo into new place
+                        this.partPlayInfos.splice(index - 1, 0, partPlayInfo);
+                    }
+                },
+                moveDownPartPlayInfo: function(partPlayInfo){
+                    var index = this.partPlayInfos.indexOf(partPlayInfo);
+                    if(index == this.partPlayInfos.length){
+                        // Last Position. Can't move down. Do nothing.
+                    } else {
+                        // Remove PartPlayInfo from old place
+                        this.partPlayInfos.splice(index, 1);
+                        // Insert PartPlayInfo into new place
+                        this.partPlayInfos.splice(index + 1, 0, partPlayInfo);
+                    }
+                },
+                isDefault: function(){
+                    var isDefault = true;
+
+                    if(this.repeat != this.tuneSetPosition.repeat ||
+                        this.annotation != this.tuneSetPosition.annotation ||
+                        this.partPlayInfos.length > 0){
+                        isDefault = false;
+                    }
+                    return isDefault;
+                }
+            };
+        }
+
+        //PartPlayInfo-Factory
+        function createPartPlayInfo(part, playInfo){
+            return {
+                part: part,
+                playInfo: playInfo
+            };
+        }
+
+
         //Playlist-Factory
         function createPlaylist(playlistId, playlistName, playlistEvent, playlistBand){
             return {
@@ -468,8 +632,8 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                 band: playlistBand,
                 playlistPositions: [],
 
-                addPlaylistPostion: function(playlistPostion){
-                    this.playlistPositions.push(playlistPostion);
+                addPlaylistPosition: function(playlistPosition){
+                    this.playlistPositions.push(playlistPosition);
                 }
             };
         }
@@ -808,28 +972,28 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return playlist;
         }
 
-        function addEmptyPlaylistPosition(currentTuneBook, playlistId){
+        function addEmptyPlaylistPosition(tuneBook, playlistId){
             var playlist, emptyPlaylistPosition;
 
-            playlist = getPlaylistById(currentTuneBook,playlistId);
+            playlist = getPlaylistById(tuneBook,playlistId);
             emptyPlaylistPosition = createPlaylistPosition(playlist.id, playlist.playlistPositions.length + 1, null, "", "");
             playlist.playlistPositions.push(emptyPlaylistPosition);
 
             return emptyPlaylistPosition;
         }
 
-        function addEmptyPlaylist(currentTuneBook){
+        function addEmptyPlaylist(tuneBook){
             var playlistId, emptyPlaylist;
 
-            playlistId = currentTuneBook.playlists.length + 1
+            playlistId = tuneBook.playlists.length + 1
             emptyPlaylist = createPlaylist(playlistId,"","","");
-            currentTuneBook.playlists.push(emptyPlaylist);
+            tuneBook.playlists.push(emptyPlaylist);
 
             return emptyPlaylist;
         }
 
-        function deletePlaylistPosition(currentTuneBook, playlistId, position){
-            var playlist = getPlaylistById(currentTuneBook, playlistId);
+        function deletePlaylistPosition(tuneBook, playlistId, position){
+            var playlist = getPlaylistById(tuneBook, playlistId);
             var playlistPosition = null;
             var removedPosition = 0;
             removedPosition = parseInt(position);
@@ -839,6 +1003,9 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
                     playlistPosition = playlist.playlistPositions[z];
                     // Delete playlistPosition from playlist
                     playlist.playlistPositions.splice(z, 1);
+                    //Falls eine tuneSetPositionPlayInfo zur gelöschten playlistPosition vorhanden wäre_
+                    //Löschen nicht nötig, da bei writeAbcHeader die playlistPosition nicht mehr geschrieben wird,
+                    //und somit die tuneSetPositionPlayInfo auch nicht.
                 }
             }
 
@@ -862,18 +1029,85 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             }
         }
 
-        function deletePlaylist(currentTuneBook, playlistId){
-            var playlist = getPlaylistById(currentTuneBook, playlistId);
+        function deletePlaylist(tuneBook, playlistId){
+            var playlist = getPlaylistById(tuneBook, playlistId);
 
-            for (var z = 0; z < currentTuneBook.playlists.length; z++) {
-                if (currentTuneBook.playlists[z].id == playlistId){
+            for (var z = 0; z < tuneBook.playlists.length; z++) {
+                if (tuneBook.playlists[z].id == playlistId){
                     // Delete all playlistPositions
                     // nicht nötig, da beim Export die Playlist der Trigger ist
 
                     // Delete playlist
-                    currentTuneBook.playlists.splice(z, 1);
+                    tuneBook.playlists.splice(z, 1);
                 }
             }
+        }
+
+
+        function copyPlaylist(tuneBook, playlistId){
+            var playlistId, playlistName, playlistOriginal, playlistCopy;
+
+            playlistOriginal = getPlaylistById(tuneBook, playlistId);
+
+            playlistId = tuneBook.playlists.length + 1;
+            playlistName = 'Copy of ' + playlistOriginal.name;
+
+            playlistCopy = createPlaylist(playlistId, playlistName, playlistOriginal.event, playlistOriginal.band);
+            tuneBook.playlists.push(playlistCopy);
+
+            copyPlaylistPosition(tuneBook, playlistOriginal, playlistCopy);
+       }
+
+        function copyPlaylistPosition(tuneBook, playlistOriginal, playlistCopy){
+            var playlistPositionOriginal, playlistPositionCopy;
+
+            for (var y = 0; y < playlistOriginal.playlistPositions.length; y++) {
+                playlistPositionOriginal = playlistOriginal.playlistPositions[y];
+
+                // Generate PlaylistPosition
+                playlistPositionCopy = createPlaylistPosition(playlistCopy.id, playlistPositionOriginal.position, playlistPositionOriginal.tuneSet, playlistPositionOriginal.name, playlistPositionOriginal.annotation);
+
+                // Add PlaylistPosition to Playlist
+                playlistCopy.addPlaylistPosition(playlistPositionCopy);
+
+                // Copy TuneSetPositionPlayInfos
+                copyTuneSetPositionPlayInfos(tuneBook, playlistPositionOriginal, playlistPositionCopy);
+            }
+        }
+
+        function copyTuneSetPositionPlayInfos(tuneBook, playlistPositionOriginal, playlistPositionCopy){
+            var tuneSetPositionPlayInfosOriginal, tuneSetPositionPlayInfosCopy,
+                tuneSetPositionPlayInfoOriginal, tuneSetPositionPlayInfoCopy, partPlayInfosCopy;
+
+            tuneSetPositionPlayInfosOriginal = getTuneSetPositionPlayInfosForPlaylistPosition(tuneBook, playlistPositionOriginal);
+
+            for (var y = 0; y < tuneSetPositionPlayInfosOriginal.length; y++) {
+                tuneSetPositionPlayInfoOriginal = tuneSetPositionPlayInfosOriginal[y];
+
+                // Copy partPlayInfos
+                partPlayInfosCopy = copyPartPlayInfos(tuneSetPositionPlayInfoOriginal);
+
+                // Generate tuneSetPositionPlayInfo
+                tuneSetPositionPlayInfoCopy = createTuneSetPositionPlayInfo(playlistPositionCopy, tuneSetPositionPlayInfoOriginal.tuneSetPosition, tuneSetPositionPlayInfoOriginal.repeat, partPlayInfosCopy, tuneSetPositionPlayInfoOriginal.annotation);
+                tuneBook.tuneSetPositionPlayInfos.push(tuneSetPositionPlayInfoCopy);
+            }
+        }
+
+        function copyPartPlayInfos(tuneSetPositionPlayInfoOriginal){
+            var partPlayInfosOriginal, partPlayInfosCopy,
+                partPlayInfoOriginal, partPlayInfoCopy;
+
+            partPlayInfosCopy = [];
+
+            for (var y = 0; y < tuneSetPositionPlayInfoOriginal.partPlayInfos.length; y++) {
+                partPlayInfoOriginal = tuneSetPositionPlayInfoOriginal.partPlayInfos[y];
+
+                // Generate partPlayInfo
+                partPlayInfoCopy = createPartPlayInfo(partPlayInfoOriginal.part, partPlayInfoOriginal.playInfo);
+                partPlayInfosCopy.push(partPlayInfoCopy);
+            }
+
+            return partPlayInfosCopy;
         }
 
 
@@ -1461,7 +1695,9 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
         function writeAbcHeader(tuneBook, abcOption){
 			// Construct Header
-			var tbkAbc = "%abc-";
+            var tbkAbc, playlist, playlistPosition, tuneSetPositionPlayInfos, tuneSetPositionPlayInfo;
+
+            tbkAbc = "%abc-";
 			tbkAbc += ABC_VERSION;
 			tbkAbc += "\n";
 			tbkAbc += "I:abc-creator eTuneBook-";
@@ -1483,31 +1719,71 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             if(abcOption.playlist){
                 for (var i = 0; i < tuneBook.playlists.length; i++) {
                     //Playlist-Definition
+                    playlist = tuneBook.playlists[i]
                     tbkAbc += "%%etbk:plldf id:";
-                    tbkAbc += tuneBook.playlists[i].id;
+                    tbkAbc += playlist.id;
                     tbkAbc += ",name:";
-                    tbkAbc += tuneBook.playlists[i].name;
+                    tbkAbc += playlist.name;
                     tbkAbc += ",evt:";
-                    tbkAbc += tuneBook.playlists[i].event;
+                    tbkAbc += playlist.event;
                     tbkAbc += ",band:";
-                    tbkAbc += tuneBook.playlists[i].band;
+                    tbkAbc += playlist.band;
                     tbkAbc += ",ant:";
-                    tbkAbc += tuneBook.playlists[i].annotation;
+                    tbkAbc += playlist.annotation;
                     tbkAbc += "\n";
 
-                    for (var z = 0; z < tuneBook.playlists[i].playlistPositions.length; z++) {
+                    for (var z = 0; z < playlist.playlistPositions.length; z++) {
                         //Playlist-Positions
+                        playlistPosition = playlist.playlistPositions[z];
                         tbkAbc += "%%etbk:pllps id:";
-                        tbkAbc += tuneBook.playlists[i].id;
+                        tbkAbc += playlist.id;
                         tbkAbc += ",pos:";
-                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].position;
+                        tbkAbc += playlistPosition.position;
                         tbkAbc += ",tnset:";
-                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].tuneSet.tuneSetId;
+                        tbkAbc += playlistPosition.tuneSet.tuneSetId;
                         tbkAbc += ",name:";
-                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].name;
+                        tbkAbc += playlistPosition.name;
                         tbkAbc += ",ant:";
-                        tbkAbc += tuneBook.playlists[i].playlistPositions[z].annotation;
+                        tbkAbc += playlistPosition.annotation;
                         tbkAbc += "\n";
+
+                        tuneSetPositionPlayInfos = getTuneSetPositionPlayInfosForPlaylistPosition(tuneBook, tuneBook.playlists[i].playlistPositions[z]);
+
+                        for (var y = 0; y < tuneSetPositionPlayInfos.length; y++) {
+                            //TuneSetPositionPlayInfos
+                            tuneSetPositionPlayInfo = tuneSetPositionPlayInfos[y];
+
+                            if(!tuneSetPositionPlayInfo.isDefault()){
+                                tbkAbc += "%%etbk:plltp pll:";
+                                tbkAbc += tuneSetPositionPlayInfo.playlistPosition.playlistId;
+                                tbkAbc += ",pllpos:";
+                                tbkAbc += tuneSetPositionPlayInfo.playlistPosition.position;
+                                tbkAbc += ",tnset:";
+                                tbkAbc += tuneSetPositionPlayInfo.tuneSetPosition.tuneSetId;
+                                tbkAbc += ",tnsetpos:";
+                                tbkAbc += tuneSetPositionPlayInfo.tuneSetPosition.position;
+                                tbkAbc += ",rep:";
+                                tbkAbc += tuneSetPositionPlayInfo.repeat;
+                                tbkAbc += ",arr:{";
+
+                                var firstPart = true;
+                                for (var w = 0; w < tuneSetPositionPlayInfo.partPlayInfos.length; w++) {
+                                    //PartPlayInfos
+                                    if(firstPart){
+                                        firstPart = false;
+                                    } else {
+                                        tbkAbc += ",";
+                                    }
+                                    tbkAbc += tuneSetPositionPlayInfo.partPlayInfos[w].part;
+                                    tbkAbc += ":";
+                                    tbkAbc += tuneSetPositionPlayInfo.partPlayInfos[w].playInfo;
+                                }
+
+                                tbkAbc += "},ant:";
+                                tbkAbc += tuneSetPositionPlayInfo.annotation;
+                                tbkAbc += "\n";
+                            }
+                        }
                     }
                 }
             }
@@ -2387,6 +2663,16 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             }
         }
 
+        function getTuneSetPositionByPosition(tuneSet, position){
+            // Get TuneSetPosition from a TuneSet by position
+
+            for (var z = 0; z < tuneSet.tuneSetPositions.length; z++) {
+                if (tuneSet.tuneSetPositions[z].position == position){
+                    return tuneSet.tuneSetPositions[z];
+                }
+            }
+        }
+
 
         function getTuneSetsByIntTuneId(tuneBook, intTuneId){
             var tuneSets = [];
@@ -2486,6 +2772,20 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             }
 
             return playlistPositions;
+        }
+
+        function getPlaylistPosition(tuneBook, playlistId, playlistPositionNr){
+            var playlist, playlistPosition;
+
+            playlist = getPlaylistById(tuneBook, playlistId);
+
+            for (var z = 0; z < playlist.playlistPositions.length; z++) {
+                if(playlist.playlistPositions[z].position == playlistPositionNr){
+                    playlistPosition = playlist.playlistPositions[z];
+                }
+            }
+
+            return playlistPosition;
         }
 
         function getPlaylistsByTuneSetId(tuneBook, tuneSetId){
@@ -2761,6 +3061,33 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
             return tunesFiltered;
         }
+
+        function initializeTuneSetPositionPlayInfosForPlaylist(tuneBook, playlistId) {
+            var playlist, playlistPosition, tuneSet, tuneSetPosition, tuneSetPositionPlayInfo, partPlayInfos;
+
+            playlist = getPlaylistById(tuneBook, playlistId);
+
+            for (var i = 0; i < playlist.playlistPositions.length; i++) {
+
+                playlistPosition = playlist.playlistPositions[i];
+                tuneSet = playlistPosition.tuneSet;
+
+                for (var z = 0; z < tuneSet.tuneSetPositions.length; z++) {
+                    tuneSetPositionPlayInfo = undefined;
+                    tuneSetPosition = tuneSet.tuneSetPositions[z];
+                    tuneSetPositionPlayInfo = getTuneSetPositionPlayInfo(tuneBook, playlistPosition, tuneSetPosition);
+
+                    if(tuneSetPositionPlayInfo == undefined){
+                        partPlayInfos = [];
+                        tuneSetPositionPlayInfo = createTuneSetPositionPlayInfo(playlistPosition, tuneSetPosition, tuneSetPosition.repeat, partPlayInfos, tuneSetPosition.annotation);
+                        tuneBook.tuneSetPositionPlayInfos.push(tuneSetPositionPlayInfo);
+                    }
+
+                    // Setzen der aktuellen für die Playlist relevanten Play Infos (nötig für Bildschirm)
+                    tuneSetPosition.currentTuneSetPositionPlayInfo = tuneSetPositionPlayInfo;
+                }
+            }
+        }
 		
 		
 		// eTBk-API
@@ -2805,6 +3132,14 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             return initializeTuneSet(currentTuneBook.tuneSets, eTBk.getTune(intTuneId));
         };
 
+        eTBk.initializePartPlayInfo = function () {
+            return createPartPlayInfo("","");
+        };
+
+        eTBk.initializeTuneSetPositionPlayInfosForPlaylist = function (playlistId) {
+            initializeTuneSetPositionPlayInfosForPlaylist(currentTuneBook, playlistId);
+        };
+
         eTBk.initializeTuneAndTuneSet = function () {
             if (eTBk.getCurrentTuneBook == null) {
                 currentTuneBook = eTBk.initializeTuneBook();
@@ -2836,11 +3171,7 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
             var siteDirective = "%%etbk:" + siteType + " ";
             return getAbcValue(tune.pure, siteDirective, "");
         };
-		
-		eTBk.changePositionOnTuneSetDirective = function (tuneSetPosition) {
-            changePositionOnTuneSetDirective(tuneSetPosition);
-        };
-		
+
 		eTBk.addTunePlayDate = function (tune, newDate) {
             addTunePlayDate(tune, newDate);
         };
@@ -2930,6 +3261,10 @@ angular.module('eTuneBookApp').factory( 'eTuneBookService', function() {
 
         eTBk.deletePlaylist = function (playlistId) {
             deletePlaylist(currentTuneBook, playlistId);
+        };
+
+        eTBk.copyPlaylist = function (playlistId) {
+            copyPlaylist(currentTuneBook, playlistId);
         };
 
         eTBk.getCurrentTuneBook = function () {

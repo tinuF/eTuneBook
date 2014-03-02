@@ -219,7 +219,11 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a ng-click="moveTune(tuneSetPosition)">Move</a></li>
+                                <!--
                                 <li><a ng-click="deleteTuneSetPosition(tuneSetPosition)">Delete</a></li>
+                                -->
+                                <li><a ng-really-message="Do you really want to delete the tuneSet position (the tune itself will not be deleted)?" ng-really-click="deleteTuneSetPosition(tuneSetPosition)">Delete</a></li>
+
                                 <!--
                                 <li><a ng-click="moveTuneUp(tuneSetPosition)">Move up</a></li>
                                 <li><a ng-click="moveTuneDown(tuneSetPosition)">Move down</a></li>

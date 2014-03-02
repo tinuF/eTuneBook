@@ -177,19 +177,22 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
 		var addToTypeFilter = true;
 		
 		if ($scope.hasOwnProperty("tuneBook")) {
-			for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {	
-				addToTypeFilter = true;
-				
-				for (var z = 0; z < tuneSetTypesForFilter.length; z++) {	
-					if (tuneSetTypesForFilter[z].type == $scope.tuneBook.tuneSets[i].type) {
-						addToTypeFilter = false;
-					}
-				}
-				if (addToTypeFilter) {
-					tuneSetTypeForFilter = {};
-					tuneSetTypeForFilter.type = $scope.tuneBook.tuneSets[i].type;
-					tuneSetTypesForFilter.push(tuneSetTypeForFilter);
-				}
+			for (var i = 0; i < $scope.tuneBook.tuneSets.length; i++) {
+                for (var c = 0; c < $scope.tuneBook.tuneSets[i].tuneSetPositions.length; c++) {
+                    addToTypeFilter = true;
+
+                    for (var z = 0; z < tuneSetTypesForFilter.length; z++) {
+                        if (tuneSetTypesForFilter[z].type == $scope.tuneBook.tuneSets[i].tuneSetPositions[c].tune.type) {
+                            addToTypeFilter = false;
+                        }
+                    }
+
+                    if (addToTypeFilter) {
+                        tuneSetTypeForFilter = {};
+                        tuneSetTypeForFilter.type = $scope.tuneBook.tuneSets[i].tuneSetPositions[c].tune.type;
+                        tuneSetTypesForFilter.push(tuneSetTypeForFilter);
+                    }
+                }
 			}
 		}
 		
