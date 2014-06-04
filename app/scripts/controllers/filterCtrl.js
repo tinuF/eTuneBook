@@ -111,10 +111,71 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
     $scope.freqencyComparator = freqComp;
     $scope.tuneSetFrequencyForFilter = freq;
 
+    setCurrentFilter();
+
     $scope.editSetFilter = function( ) {
         angular.element("#SetFilter").modal("show");
     };
 
+
+    function setCurrentFilter() {
+        $scope.currentFilter = "";
+        $scope.filterActive = false;
+        if($scope.tuneSetTypeForFilter.type != "" && $scope.tuneSetTypeForFilter.type != "All Types"){
+            $scope.currentFilter = $scope.currentFilter + $scope.tuneSetTypeForFilter.type;
+        }
+        if($scope.tuneSetKeyForFilter.key != "" && $scope.tuneSetKeyForFilter.key != "All Keys"){
+            if($scope.currentFilter != ""){
+                $scope.currentFilter = $scope.currentFilter + ", ";
+            }
+            $scope.currentFilter = $scope.currentFilter + $scope.tuneSetKeyForFilter.key;
+        }
+
+        if($scope.tuneSetEventForFilter.event != "" && $scope.tuneSetEventForFilter.event != "All Events"){
+            if($scope.currentFilter != ""){
+                $scope.currentFilter = $scope.currentFilter + ", ";
+            }
+            $scope.currentFilter = $scope.currentFilter + $scope.tuneSetEventForFilter.event;
+        }
+
+        if($scope.tuneSetBandForFilter.band != "" && $scope.tuneSetBandForFilter.band != "All Bands"){
+            if($scope.currentFilter != ""){
+                $scope.currentFilter = $scope.currentFilter + ", ";
+            }
+            $scope.currentFilter = $scope.currentFilter + $scope.tuneSetBandForFilter.band;
+        }
+
+        if(playMin != null && playMin != ""){
+            if($scope.currentFilter != ""){
+                $scope.currentFilter = $scope.currentFilter + ", ";
+            }
+            $scope.currentFilter = $scope.currentFilter + "played ";
+
+            if(playMax != null && playMax != ""){
+
+            } else {
+                $scope.currentFilter = $scope.currentFilter + "from ";
+            }
+
+            $scope.currentFilter = $scope.currentFilter + playMin;
+        }
+
+        if(playMax != null && playMax != ""){
+            if(playMin != null && playMin != ""){
+                $scope.currentFilter = $scope.currentFilter + "-";
+            } else if($scope.currentFilter != ""){
+                $scope.currentFilter = $scope.currentFilter + ",played to ";
+            }
+            $scope.currentFilter = $scope.currentFilter + playMax;
+        }
+
+
+
+        if($scope.currentFilter != ""){
+            $scope.filterActive = true;
+        }
+
+    }
 
     function setSelectedTuneSetTypeFilter(type) {
 		for (var i = 0; i < $scope.tuneSetTypesForFilter.length; i++) {	
@@ -360,6 +421,20 @@ angular.module('eTuneBookApp').controller( 'filterCtrl', function ( $scope, $loc
     $scope.applySetFilter = function () {
 
         angular.element("#SetFilter").modal("hide");
+
+        /*
+        $scope.currentFilter = "";
+        if($scope.tuneSetTypeForFilter.type != ""){
+            $scope.currentFilter = $scope.currentFilter + $scope.tuneSetTypeForFilter.type;
+        }
+        if($scope.tuneSetKeyForFilter.key != ""){
+            if($scope.currentFilter != ""){
+                $scope.currentFilter = $scope.currentFilter + ", ";
+            }
+            $scope.currentFilter = $scope.currentFilter + $scope.tuneSetKeyForFilter.key;
+        }
+        */
+
 
         $timeout(function(){
             var key, type, color, skill, event, band, playmin, playmax, freqcomp, freq, updatemin, updatemax;

@@ -62,8 +62,10 @@ angular.module('eTuneBookApp').controller( 'setCtrl', function ( $scope, $locati
         tuneSetDeleted = eTuneBookService.moveTuneSetPosition(tuneSetPosition.tuneSetId, tuneSetPosition.position, targetTuneSetId, targetPosition, beforeOrAfter, moveOrCopy);
 		eTuneBookService.storeTuneBookAbc();
         if(tuneSetDeleted){
-            //Show Tune-Panel of Deleted Tune
-            $state.transitionTo('tune',{intTuneId: tuneSetPosition.tune.intTuneId});
+            $timeout(function(){
+                //Show Tune-Panel of Deleted Tune
+                $state.transitionTo('tune',{intTuneId: tuneSetPosition.tune.intTuneId});
+            },1000);
         }
 	};
 

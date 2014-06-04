@@ -120,6 +120,18 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
         $state.transitionTo('tuneabc', {intTuneId: $scope.tune.intTuneId})
     };
 
+    $scope.deleteTune = function(  ) {
+        // Delete all TuneSetPositions with that tune
+        eTuneBookService.deleteTuneSetPositionsAndTune($scope.tune.intTuneId);
+        $state.transitionTo('tunelist');
+        //Ein state zurück geht nur, wenn der Delete-Button im State 'tune' gedrückt wurde
+        //Der Delete-Button wird aber auch auf den Sub-States von tune angeboten
+        //$state.transitionTo($rootScope.$previousState, $rootScope.$previousStateParams);
+
+        // Put TuneBook to localStorage
+        eTuneBookService.storeTuneBookAbc();
+    };
+
     $scope.justPlayedTheTune = function( tune) {
         var now = new Date();
         eTuneBookService.addTunePlayDate(tune, now);

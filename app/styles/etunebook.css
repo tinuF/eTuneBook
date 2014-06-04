@@ -390,6 +390,12 @@
 		display: inline-block;
 	}
 
+     .tuneDeleteButton {
+         min-width: 100px;
+         max-width: 100px;
+         display: inline-block;
+     }
+
      .transposeButtons {
           min-width: 140px;
           max-width: 140px;
@@ -785,6 +791,11 @@
          margin: 0 5px 0 355px;
          min-width: 345px;
          max-width: 345px;
+         display: inline-block;
+     }
+
+     .currentFilter {
+         font-size: 0.9em;
          display: inline-block;
      }
  }

@@ -52,6 +52,12 @@ angular.module('eTuneBookApp').controller( 'playlistCtrl', function ( $scope, $l
         angular.element("#PlaylistPositionEditor").modal("show");
     };
 
+    $scope.copyPlaylistPosition = function( playlistPosition ) {
+        $scope.playlistPositionToBeCopied = playlistPosition;
+        $scope.targetPlaylists = eTuneBookService.getPlaylists();
+        angular.element("#PlaylistPositionCopier").modal("show");
+    };
+
     $scope.editPlaylistTuneSetPosition = function( playlistPosition, tuneSetPosition ) {
         $scope.playlistTuneSetPositionToBeEdited = tuneSetPosition;
         $scope.partPlayInfo = eTuneBookService.initializePartPlayInfo();
@@ -74,6 +80,17 @@ angular.module('eTuneBookApp').controller( 'playlistCtrl', function ( $scope, $l
 
         eTuneBookService.storeTuneBookAbc();
         angular.element("#PlaylistPositionEditor").modal("hide");
+    };
+
+    $scope.doneCopyingPlaylistPosition = function(playlistPositionToBeCopied, targetPlaylist) {
+        eTuneBookService.copyPlaylistPositionToOtherPlaylist(playlistPositionToBeCopied.playlistId, playlistPositionToBeCopied.position , targetPlaylist.id);
+        eTuneBookService.storeTuneBookAbc();
+
+        angular.element("#PlaylistPositionCopier").modal("hide");
+
+        $timeout(function(){
+            $state.transitionTo('playlist',{playlistId: targetPlaylist.id});
+        },1000);
     };
 
 

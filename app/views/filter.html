@@ -1,5 +1,14 @@
-<a class='btn btn-default' ng-click="editSetFilter()" title="Filter Options">Filter</a>
+<div class="tunePlayDateInfo">
+    <a class='btn btn-default' ng-class="{ active: filterActive }" ng-click="editSetFilter()" ng-style="{'background-color':tuneSetColorForFilter.color}" title="Filter Options">Filter</a>
 
+    <div class="currentFilter">{{currentFilter}}</div>
+</div>
+<!--
+<a class='btn btn-default' ng-click="editSetFilter()" title="Filter Options">Filter</a>
+-->
+<!--
+<a class='btn btn-default' ng-click="editSetFilter()" title="Filter Options">Filter <div class="currentFilter">{{currentFilter}}</div></a>
+-->
 <div id="SetFilter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

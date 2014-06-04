@@ -40,7 +40,9 @@ angular.module('eTuneBookApp').controller( 'tuneabcCtrl', function tuneabcCtrl( 
         if ( !tune.pure ) {
             // Delete all TuneSetPositions with that tune
             eTuneBookService.deleteTuneSetPositionsAndTune(tune.intTuneId);
-            $state.transitionTo('setlist');
+            $state.transitionTo('tunelist');
+            //Ein State zurück funktioniert hier nicht (tune ist nächst früherer state)
+            //$state.transitionTo($rootScope.$previousState, $rootScope.$previousStateParams);
 
         } else {
             // Sync Tune-Fields

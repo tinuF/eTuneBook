@@ -50,6 +50,34 @@
         </div>
     </div>
 
+    <div id="PlaylistPositionCopier" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    -->
+                    <h3>Copy {{playlistPositionToBeCopied.name}}</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form" role="form">
+                        <div class="form-group">
+                            <label class="control-label" for="playlistSelector">To Playlist</label>
+                            <div>
+                                <select class="form-control" id="playlistSelector" ng-model="targetPlaylist" ng-options="targetPlaylist.name for targetPlaylist in targetPlaylists | orderBy:'name'">	</select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button class="btn btn-default" ng-click="doneCopyingPlaylistPosition(playlistPositionToBeCopied, targetPlaylist)">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="PlaylistTuneSetPositionEditor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -128,6 +156,7 @@
                     <li><a ng-click="moveDown(playlistPosition)">Move down</a></li>
                     <li class="divider"></li>
                     <li><a ng-click="editPlaylistPosition(playlistPosition)">Edit</a></li>
+                    <li><a ng-click="copyPlaylistPosition(playlistPosition)">Copy</a></li>
                     <li class="divider"></li>
                     <!--
                     <li><a ng-click="deletePlaylistPosition(playlistPosition)">Delete</a></li>

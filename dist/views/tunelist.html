@@ -1,17 +1,30 @@
 <div class="row hidden-print">
+
+
     <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
         <input type="text" class="form-control" id="searchForTuneName" placeholder="Search..." ng-model="search">
     </div>
 
-    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+    <div class="col-xs-3 col-sm-2 col-md-6 col-lg-6" ui-view="filter"></div>
 
+    <!--
+    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
         <div ui-view="filter"></div>
     </div>
+    -->
+
+    <!--
+    <div class="currentFilter col-xs-3 col-sm-2 col-md-2 col-lg-2">
+        {{currentFilter}}
+    </div>
+    -->
+
 
     <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2 pull-right">
         <button class="btn btn-default" ng-click="newTune()" title="New Tune">New</button>
 
     </div>
+
 
 </div>
 

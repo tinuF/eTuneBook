@@ -777,6 +777,11 @@ angular.module('eTuneBookApp').controller('playlistCtrl', [
       $scope.tuneSet = playlistPosition.tuneSet;
       angular.element('#PlaylistPositionEditor').modal('show');
     };
+    $scope.copyPlaylistPosition = function (playlistPosition) {
+      $scope.playlistPositionToBeCopied = playlistPosition;
+      $scope.targetPlaylists = eTuneBookService.getPlaylists();
+      angular.element('#PlaylistPositionCopier').modal('show');
+    };
     $scope.editPlaylistTuneSetPosition = function (playlistPosition, tuneSetPosition) {
       $scope.playlistTuneSetPositionToBeEdited = tuneSetPosition;
       $scope.partPlayInfo = eTuneBookService.initializePartPlayInfo();
@@ -788,6 +793,14 @@ angular.module('eTuneBookApp').controller('playlistCtrl', [
       }
       eTuneBookService.storeTuneBookAbc();
       angular.element('#PlaylistPositionEditor').modal('hide');
+    };
+    $scope.doneCopyingPlaylistPosition = function (playlistPositionToBeCopied, targetPlaylist) {
+      eTuneBookService.copyPlaylistPositionToOtherPlaylist(playlistPositionToBeCopied.playlistId, playlistPositionToBeCopied.position, targetPlaylist.id);
+      eTuneBookService.storeTuneBookAbc();
+      angular.element('#PlaylistPositionCopier').modal('hide');
+      $timeout(function () {
+        $state.transitionTo('playlist', { playlistId: targetPlaylist.id });
+      }, 1000);
     };
     $scope.doneEditingPlaylistTuneSetPosition = function (tuneSetPosition) {
       eTuneBookService.storeTuneBookAbc();
@@ -1118,7 +1131,9 @@ angular.module('eTuneBookApp').controller('setCtrl', [
       tuneSetDeleted = eTuneBookService.moveTuneSetPosition(tuneSetPosition.tuneSetId, tuneSetPosition.position, targetTuneSetId, targetPosition, beforeOrAfter, moveOrCopy);
       eTuneBookService.storeTuneBookAbc();
       if (tuneSetDeleted) {
-        $state.transitionTo('tune', { intTuneId: tuneSetPosition.tune.intTuneId });
+        $timeout(function () {
+          $state.transitionTo('tune', { intTuneId: tuneSetPosition.tune.intTuneId });
+        }, 1000);
       }
     };
     $scope.deleteTuneSetPosition = function (tuneSetPosition) {
@@ -1244,6 +1259,11 @@ angular.module('eTuneBookApp').controller('tuneCtrl', [
     };
     $scope.editTune = function () {
       $state.transitionTo('tuneabc', { intTuneId: $scope.tune.intTuneId });
+    };
+    $scope.deleteTune = function () {
+      eTuneBookService.deleteTuneSetPositionsAndTune($scope.tune.intTuneId);
+      $state.transitionTo('tunelist');
+      eTuneBookService.storeTuneBookAbc();
     };
     $scope.justPlayedTheTune = function (tune) {
       var now = new Date();
@@ -1422,7 +1442,7 @@ angular.module('eTuneBookApp').controller('tuneabcCtrl', [
     $scope.doneEditing = function (tune) {
       if (!tune.pure) {
         eTuneBookService.deleteTuneSetPositionsAndTune(tune.intTuneId);
-        $state.transitionTo('setlist');
+        $state.transitionTo('tunelist');
       } else {
         tune.title = eTuneBookService.getTuneTitle(tune);
         tune.type = eTuneBookService.getTuneType(tune);
@@ -2657,9 +2677,57 @@ angular.module('eTuneBookApp').controller('filterCtrl', [
     }
     $scope.freqencyComparator = freqComp;
     $scope.tuneSetFrequencyForFilter = freq;
+    setCurrentFilter();
     $scope.editSetFilter = function () {
       angular.element('#SetFilter').modal('show');
     };
+    function setCurrentFilter() {
+      $scope.currentFilter = '';
+      $scope.filterActive = false;
+      if ($scope.tuneSetTypeForFilter.type != '' && $scope.tuneSetTypeForFilter.type != 'All Types') {
+        $scope.currentFilter = $scope.currentFilter + $scope.tuneSetTypeForFilter.type;
+      }
+      if ($scope.tuneSetKeyForFilter.key != '' && $scope.tuneSetKeyForFilter.key != 'All Keys') {
+        if ($scope.currentFilter != '') {
+          $scope.currentFilter = $scope.currentFilter + ', ';
+        }
+        $scope.currentFilter = $scope.currentFilter + $scope.tuneSetKeyForFilter.key;
+      }
+      if ($scope.tuneSetEventForFilter.event != '' && $scope.tuneSetEventForFilter.event != 'All Events') {
+        if ($scope.currentFilter != '') {
+          $scope.currentFilter = $scope.currentFilter + ', ';
+        }
+        $scope.currentFilter = $scope.currentFilter + $scope.tuneSetEventForFilter.event;
+      }
+      if ($scope.tuneSetBandForFilter.band != '' && $scope.tuneSetBandForFilter.band != 'All Bands') {
+        if ($scope.currentFilter != '') {
+          $scope.currentFilter = $scope.currentFilter + ', ';
+        }
+        $scope.currentFilter = $scope.currentFilter + $scope.tuneSetBandForFilter.band;
+      }
+      if (playMin != null && playMin != '') {
+        if ($scope.currentFilter != '') {
+          $scope.currentFilter = $scope.currentFilter + ', ';
+        }
+        $scope.currentFilter = $scope.currentFilter + 'played ';
+        if (playMax != null && playMax != '') {
+        } else {
+          $scope.currentFilter = $scope.currentFilter + 'from ';
+        }
+        $scope.currentFilter = $scope.currentFilter + playMin;
+      }
+      if (playMax != null && playMax != '') {
+        if (playMin != null && playMin != '') {
+          $scope.currentFilter = $scope.currentFilter + '-';
+        } else if ($scope.currentFilter != '') {
+          $scope.currentFilter = $scope.currentFilter + ',played to ';
+        }
+        $scope.currentFilter = $scope.currentFilter + playMax;
+      }
+      if ($scope.currentFilter != '') {
+        $scope.filterActive = true;
+      }
+    }
     function setSelectedTuneSetTypeFilter(type) {
       for (var i = 0; i < $scope.tuneSetTypesForFilter.length; i++) {
         if ($scope.tuneSetTypesForFilter[i].type == type) {
@@ -3035,14 +3103,14 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
   var eTBkModule = function (eTBk) {
       var eTBK_STORAGE_ID_TUNEBOOK = 'etbk-tuneBook';
       var eTBK_STORAGE_ID_SETTINGS = 'etbk-settings';
-      var eTBK_VERSION = '1.2.1';
+      var eTBK_VERSION = '1.2.2';
       var ABC_VERSION = '2.1';
       var eTBK_DEFAULT_COLOR = '#F5F5F5';
       var eTBK_DEFAULT_MODIFICATIONDATE_STRING = '1966-04-05T22:00';
       var eTBK_PATTERN_FINGER = /!\d!/g;
       var eTBk_EXAMPLE_FILENAME = 'Irish Tunes - Martin Fleischmann.abc';
       var eTBk_EXAMPLE_FILENAME_WITHOUTABC = 'Irish Tunes - Martin Fleischmann';
-      var eTBk_EXAMPLE_VERSION = '2014-03-02';
+      var eTBk_EXAMPLE_VERSION = '2014-05-06';
       var currentTuneBook;
       var TuneBook = function (abc) {
         var This = this;
@@ -3456,11 +3524,13 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
       function createPlayDate(iDate) {
         return { playDate: iDate };
       }
-      function deleteTuneSetPosition(currentTuneBook, tuneSetId, position) {
-        var tuneSet = getTuneSetById(currentTuneBook, tuneSetId);
-        var tuneSetPosition = null;
-        var tuneSetDeleted = false;
-        var removedPosition = 0;
+      function deleteTuneSetPosition(tuneBook, tuneSetId, position) {
+        var tuneSet, tuneSetPosition, playlistPositions, tuneSetPositionPlayInfo, tuneSetDeleted, removedPosition;
+        tuneSet = getTuneSetById(tuneBook, tuneSetId);
+        tuneSetPosition = null;
+        playlistPositions = [];
+        tuneSetDeleted = false;
+        removedPosition = 0;
         removedPosition = parseInt(position);
         for (var z = 0; z < tuneSet.tuneSetPositions.length; z++) {
           if (tuneSet.tuneSetPositions[z].position == position) {
@@ -3468,11 +3538,11 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
             tuneSet.tuneSetPositions.splice(z, 1);
           }
         }
-        if (getTuneSetsByIntTuneId(currentTuneBook, tuneSetPosition.tune.intTuneId).length == 0) {
-          initializeTuneSet(currentTuneBook.tuneSets, tuneSetPosition.tune);
+        if (getTuneSetsByIntTuneId(tuneBook, tuneSetPosition.tune.intTuneId).length == 0) {
+          initializeTuneSet(tuneBook.tuneSets, tuneSetPosition.tune);
         }
         if (tuneSet.tuneSetPositions.length == 0) {
-          currentTuneBook.tuneSets.splice(currentTuneBook.tuneSets.indexOf(tuneSet), 1);
+          tuneBook.tuneSets.splice(tuneBook.tuneSets.indexOf(tuneSet), 1);
           tuneSetDeleted = true;
         } else {
           var currentPosition = 0;
@@ -3482,6 +3552,14 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
               currentPosition--;
               tuneSet.tuneSetPositions[y].position = currentPosition.toString();
             }
+          }
+        }
+        playlistPositions = getPlaylistPositionsByTuneSetId(tuneBook, tuneSet.tuneSetId);
+        for (var w = 0; w < playlistPositions.length; w++) {
+          tuneSetPositionPlayInfo = getTuneSetPositionPlayInfo(tuneBook, playlistPositions[w], tuneSetPosition);
+          tuneBook.tuneSetPositionPlayInfos.splice(tuneBook.tuneSetPositionPlayInfos.indexOf(tuneSetPositionPlayInfo), 1);
+          if (tuneSetDeleted) {
+            deletePlaylistPosition(tuneBook, playlistPositions[w].playlistId, playlistPositions[w].position);
           }
         }
         return tuneSetDeleted;
@@ -3688,16 +3766,27 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
         playlistName = 'Copy of ' + playlistOriginal.name;
         playlistCopy = createPlaylist(playlistId, playlistName, playlistOriginal.event, playlistOriginal.band);
         tuneBook.playlists.push(playlistCopy);
-        copyPlaylistPosition(tuneBook, playlistOriginal, playlistCopy);
+        copyPlaylistPositions(tuneBook, playlistOriginal, playlistCopy);
       }
-      function copyPlaylistPosition(tuneBook, playlistOriginal, playlistCopy) {
+      function copyPlaylistPositionToOtherPlaylist(tuneBook, sourcePlaylistId, sourcePlaylistPositionNr, targetPlaylistId) {
+        var playlistPosition, targetPlaylist, targetPlaylistPositionNr;
+        playlistPosition = getPlaylistPosition(tuneBook, sourcePlaylistId, sourcePlaylistPositionNr);
+        targetPlaylist = getPlaylistById(tuneBook, targetPlaylistId);
+        targetPlaylistPositionNr = targetPlaylist.playlistPositions.length + 1;
+        copyPlaylistPositionAndTuneSetPlayInfos(tuneBook, playlistPosition, targetPlaylist, targetPlaylistPositionNr);
+      }
+      function copyPlaylistPositions(tuneBook, playlistOriginal, playlistCopy) {
         var playlistPositionOriginal, playlistPositionCopy;
         for (var y = 0; y < playlistOriginal.playlistPositions.length; y++) {
           playlistPositionOriginal = playlistOriginal.playlistPositions[y];
-          playlistPositionCopy = createPlaylistPosition(playlistCopy.id, playlistPositionOriginal.position, playlistPositionOriginal.tuneSet, playlistPositionOriginal.name, playlistPositionOriginal.annotation);
-          playlistCopy.addPlaylistPosition(playlistPositionCopy);
-          copyTuneSetPositionPlayInfos(tuneBook, playlistPositionOriginal, playlistPositionCopy);
+          copyPlaylistPositionAndTuneSetPlayInfos(tuneBook, playlistPositionOriginal, playlistCopy, playlistPositionOriginal.position);
         }
+      }
+      function copyPlaylistPositionAndTuneSetPlayInfos(tuneBook, playlistPositionOriginal, targetPlaylist, targetPlaylistPositionNr) {
+        var playlistPositionCopy;
+        playlistPositionCopy = createPlaylistPosition(targetPlaylist.id, targetPlaylistPositionNr, playlistPositionOriginal.tuneSet, playlistPositionOriginal.name, playlistPositionOriginal.annotation);
+        targetPlaylist.addPlaylistPosition(playlistPositionCopy);
+        copyTuneSetPositionPlayInfos(tuneBook, playlistPositionOriginal, playlistPositionCopy);
       }
       function copyTuneSetPositionPlayInfos(tuneBook, playlistPositionOriginal, playlistPositionCopy) {
         var tuneSetPositionPlayInfosOriginal, tuneSetPositionPlayInfosCopy, tuneSetPositionPlayInfoOriginal, tuneSetPositionPlayInfoCopy, partPlayInfosCopy;
@@ -5216,6 +5305,9 @@ angular.module('eTuneBookApp').factory('eTuneBookService', function () {
       };
       eTBk.copyPlaylist = function (playlistId) {
         copyPlaylist(currentTuneBook, playlistId);
+      };
+      eTBk.copyPlaylistPositionToOtherPlaylist = function (sourcePlaylistId, sourcePlaylistPositionNr, targetPlaylistId) {
+        copyPlaylistPositionToOtherPlaylist(currentTuneBook, sourcePlaylistId, sourcePlaylistPositionNr, targetPlaylistId);
       };
       eTBk.getCurrentTuneBook = function () {
         if (currentTuneBook == null) {

@@ -20,6 +20,19 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
     filterOptions.updmin = $stateParams['updmin'];
     filterOptions.updmax = $stateParams['updmax'];
 
+    /*
+    $scope.currentFilter = "";
+    if(filterOptions.type != ""){
+        $scope.currentFilter = $scope.currentFilter + filterOptions.type;
+    }
+    if(filterOptions.key != ""){
+        if($scope.currentFilter != ""){
+            $scope.currentFilter = $scope.currentFilter + ", ";
+        }
+        $scope.currentFilter = $scope.currentFilter + filterOptions.key;
+    }
+    */
+
     $scope.tunes = eTuneBookService.getTunesFiltered(filterOptions);
     $scope.tunesSelected = [];
 
