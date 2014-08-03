@@ -17,15 +17,10 @@
 
 <br>
 
-<div class="btn-group dotsViewerBtn">
-    <button type="button" class="btn btn-default dropdown-toggle active" data-toggle="dropdown" ng-style="{'background-color':tune.color}">
-        <strong> {{ tune.title | eliminateThe }}</strong> <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu" ng-style="{'background-color':tune.color}">
-        <li ng-repeat="tune in tunes | orderBy:'title'"><a href="#tunes/{{tune.intTuneId}}">{{ tune.title | eliminateThe }}</a></li>
-    </ul>
 
-</div>
+<h3>{{tune.title | eliminateThe}}</h3>
+
+<br>
 
 <div class="btn-group dotsViewerBtn">
     <button type="button" class="btn btn-default dropdown-toggle active" data-toggle="dropdown" ng-style="{'background-color':tune.color}">
@@ -34,6 +29,7 @@
     <ul class="dropdown-menu" role="menu" ng-style="{'background-color':tune.color}">
         <li><a href="#tunes/{{intTuneId}}">Dots</a></li>
         <li><a href="" ng-click="showTuneSets()">Sets</a></li>
+        <li><a href="" ng-click="showPlaylists()">Playlists</a></li>
         <li><a href="#tunes/{{intTuneId}}/videos">Videos</a></li>
         <li><a href="#tunes/{{intTuneId}}/abc">Abc</a></li>
         <li><a href="#tunes/{{intTuneId}}/practice">Practice</a></li>
@@ -41,7 +37,7 @@
     </ul>
 </div>
 
-<div ui-view=""></div>
+<div ui-view></div>
 
 <div id="dotsViewer" class="dotsViewer row" ng-style="{'background-color':tune.color}">
     <div class="tuneControlButtons">
@@ -49,7 +45,7 @@
             <a class="btn btn-xs btn-default justPlayedTheTune" ng-click="justPlayedTheTune(tune)" title="Just Played The Tune">Played </a>{{tune.lastPlayed | fromNow}}
         </div>
         <div class="tuneColorizer">
-            Color: <input type="text" name="{{tune.color}}" value="{{tune.color}}" title="Colorize" tbk-colorselect="">
+            Color: <input type="text" name="{{tune.color}}" value="{{tune.color}}" title="Colorize" tbk-colorselect>
         </div>
         <div class="tuneDeleteButton">
             <a class="btn btn-xs btn-default" ng-really-message="Do you really want to delete the tune?" ng-really-click="deleteTune()" title="Delete Tune"><i class="glyphicon glyphicon-trash"></i></a>

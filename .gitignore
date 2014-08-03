@@ -3,6 +3,7 @@ test
 .tmp
 .sass-cache
 app/components
+dist/components
 karma.conf.js
 karma-e2e.conf.js
 .jshintrc

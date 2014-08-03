@@ -109,7 +109,14 @@ angular.module('eTuneBookApp').controller( 'abcCtrl', function ( $scope, $locati
     }
 
     function saveTuneBookAsFile(exportedTuneBookAsText, startDownload){
-        var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], {type:'text/plain'});
+        //var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], {type:'text/plain'});
+        //var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], {type:'text/plain;charset=ISO-8859-1'});
+        //var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], {encoding:"UTF-8", type:'text/plain;charset=UTF-8'});
+        //var exportedTuneBookAsBlob = new Blob([exportedTuneBookAsText], {encoding:"ISO-8859-1", type:'text/plain;charset=ISO-8859-1'});
+        var BOM = "\uFEFF";
+        var data = BOM + exportedTuneBookAsText;
+        var exportedTuneBookAsBlob = new Blob([data], {type:'text/plain;charset=UTF-8'});
+
         var fileNameToSaveAs = "My TuneBook";
 
         var downloadLink = document.getElementById("saveTuneBookToFile");

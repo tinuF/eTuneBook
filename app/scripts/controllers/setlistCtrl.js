@@ -131,7 +131,7 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
             {field:'tune.title',
                 displayName:'Set',
                 cellFilter: 'eliminateThe',
-                width:'50%',
+                width:'40%',
                 sortable:false,
                 groupable:false,
                 cellTemplate: '<a href="#/tunes/{{row.entity.tune.intTuneId}}" title="Show The Tune" >{{row.entity.tune.title}}</a>'
@@ -139,40 +139,40 @@ angular.module('eTuneBookApp').controller( 'setlistCtrl', function setlistCtrl( 
             },
             {field:'tune.type',
                 displayName:'Type',
-                width:'8%',
+                width:'10%',
                 sortable:false,
                 groupable:false
             },
             {field:'tune.key',
                 displayName:'Key',
-                width:'7%',
+                width:'8%',
                 sortable:false,
                 groupable:false
             },
             {field:'tune.lastPlayed',
                 displayName:'Played',
                 cellFilter: 'fromNow',
-                width:'10%',
+                width:'15%',
                 sortable:false,
                 groupable:false
 
             },
             {field:'tune.frequencyPlayed',
                 displayName:'Frequency',
-                width:'7%',
-                sortable:false,
-                groupable:false
-            },
-            {field:'tune.skill',
-                displayName:'Skill',
                 width:'8%',
                 sortable:false,
                 groupable:false
             },
+            /*{field:'tune.skill',
+                displayName:'Skill',
+                width:'8%',
+                sortable:false,
+                groupable:false
+            },*/
             {field:'tune.lastModified',
                 displayName:'Modified',
                 cellFilter: 'fromNow',
-                width:'10%',
+                width:'15%',
                 sortable:false,
                 groupable:false
             }

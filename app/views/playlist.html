@@ -1,8 +1,18 @@
 
-    <h3>{{playlist.name}} - {{playlist.band}}</h3>
+<h3>{{playlist.name}} - {{playlist.band}}</h3>
+<div class="playlistPositionNavigator">
+    <a class='btn btn-default' ng-hide="currentFilter" ng-click="backward()" title="Previous"><i class='glyphicon glyphicon-arrow-up'></i></a>
+    <a class='btn btn-default' ng-hide="currentFilter" ng-class="{ active: playActive }" ng-click="play()" title="Play/Stop"><i class='glyphicon glyphicon-play'></i></a>
+    <a class='btn btn-default' ng-hide="currentFilter" ng-click="forward()" title="Next"><i class='glyphicon glyphicon-arrow-down'></i></a>
+    <a class='btn btn-default' ng-class="{ active: collapseActive }" ng-click="collapse()" title="Collapse/Expand"><i class='glyphicon glyphicon-resize-small'></i></a>
+</div>
+
+<a class='btn btn-default' ng-hide="!currentFilter" ng-click="removeFilter()" title="Remove Filter"><i class='glyphicon glyphicon-remove'></i><div class="currentFilter">{{currentFilter}}</div></a>
+<!--<div class="currentFilter">{{currentFilter}}</div>-->
 
 
-<button class="btn btn-md btn-default pull-left" ng-click="newPlaylistPosition()">New</button>
+
+<!--<button class="btn btn-md btn-default pull-left" ng-click="newPlaylistPosition()">New</button>-->
 <ul class='playlistBox'>
     <div class="playlistInfoLine">
         <!--
@@ -143,7 +153,7 @@
     </div>
 
 
-    <li class="playlistPosition" ng-repeat="playlistPosition in playlist.playlistPositions | orderBy: sortPlaylistPositionAsNumber">
+    <li id="{{playlistPosition.position}}" class="playlistPosition" ng-repeat="playlistPosition in playlist.playlistPositions | orderBy: sortPlaylistPositionAsNumber" ng-hide="hide(playlistPosition)" ng-style="{'background-color':getPlayColor(playlistPosition.position)}">
         <div class="playlistPositionFirstLine">
             <div class="playlistPositionNumber">{{playlistPosition.position}}</div>
             <div class="btn-group">
@@ -170,12 +180,12 @@
                 Just Played
             </button>
         </div>
-        <ul>
+        <ul ng-hide="collapseActive">
             <li class="playlistTuneSetPosition" ng-repeat="tuneSetPosition in playlistPosition.tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber">
                 <div class="tuneSetPositionNumber">{{tuneSetPosition.position}}</div>
 
                 <div class="btn-group playlistTuneTitle">
-                    <a class="btn btn-default tuneTitle" ng-click="showTune(tuneSetPosition.tune.intTuneId)" title="Show The Tune"><strong>{{tuneSetPosition.tune.title | eliminateThe}}</strong></a>
+                    <a ng-style="{'background-color':tuneSetPosition.tune.color}" class="btn btn-default tuneTitle" ng-click="showTune(tuneSetPosition.tune.intTuneId)" title="Show The Tune"><strong>{{tuneSetPosition.tune.title | eliminateThe}}</strong></a>
                     <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                     </button>
@@ -209,4 +219,6 @@
         <div class="playlistPositionAnnotation" ng-show="playlistPosition.annotation != ''">{{playlistPosition.annotation}}</div>
     </li>
 </ul>
+
+<div class="footer navbar-fixed-bottom"><button class="btn btn-md btn-default pull-left" ng-hide="currentFilter" ng-click="newPlaylistPosition()" title="New Playlist Position"><i class='glyphicon glyphicon-plus'></i></button></div>
 

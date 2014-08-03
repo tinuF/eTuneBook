@@ -28,6 +28,20 @@ angular.module('eTuneBookApp').controller( 'tuneCtrl', function ( $scope, $locat
 
     };
 
+    $scope.showPlaylists = function(  ) {
+        var playlists = eTuneBookService.getPlaylistsByIntTuneId($scope.intTuneId);
+
+        if (playlists.length == 0 || playlists.length > 1) {
+            initActiveMenu();
+            $scope.playlistsMenuActive = true;
+            $state.transitionTo('tuneplaylists', {intTuneId: $scope.intTuneId});
+        } else {
+            //Tune kommt nur in einer Playlist vor -> Playlist-View anzeigen
+            $state.transitionTo('playlist', {playlistId: playlists[0].id, tune:$scope.intTuneId});
+        }
+
+    };
+
     $scope.showTuneVideos = function(  ) {
         initActiveMenu();
         $scope.tuneVideosMenuActive = true;

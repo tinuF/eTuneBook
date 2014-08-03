@@ -2,16 +2,19 @@
 <h3>Playlists</h3>
 -->
 
-<button class="btn btn-md btn-default pull-left" ng-click="newPlaylist()">New</button>
+<!--<button class="btn btn-md btn-default pull-left" ng-click="newPlaylist()">New</button>-->
+        <br>
 <ul class="playlistBox">
+    <!--
     <div class="playlistInfoLine">
-        <!--
+
         <div class="playlistEvent">{{playlist.event}}</div>
         <div class="playlistBand">{{playlist.band}}</div>
         <div class="playlistName">{{playlist.name}}</div>
         <button class="btn btn-xs btn-default pull-right" ng-click="newPlaylistPosition()">New</button>
-        -->
+
     </div>
+    -->
     <div id="PlaylistEditor" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -77,3 +80,5 @@
 
     </li>
 </ul>
+
+<div class="footer navbar-fixed-bottom"><button class="btn btn-md btn-default pull-left" ng-click="newPlaylist()" title="New Playlist"><i class="glyphicon glyphicon-plus"></i></button></div>

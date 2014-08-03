@@ -6,11 +6,14 @@
  * @type {angular.Module}
  */
 
- 	
+
 //angular.module('eTuneBookApp', ['ui.state', 'ngGrid', 'ui.bootstrap']);
 //ACHTUNG: ui.bootsrap bricht importFile (File-Auswahl-Schirm kommt nicht mehr hoch)!
 
-angular.module('eTuneBookApp', ['ui.router', 'ngGrid', 'ngBootstrap', 'ngTouch', 'chieffancypants.loadingBar', 'ngAnimate', 'gapi']);
+//angular.module('eTuneBookApp', ['ui.router', 'ngGrid', 'ngBootstrap', 'ngTouch', 'angular-loading-bar', 'ngAnimate', 'gapi']);
+// TODO: Resolve Problems with angular-animate and anguluar-loading-bar
+// Achtung: ngBootstrap wird vom Date-Range-Picker gebraucht!
+angular.module('eTuneBookApp', ['ui.router', 'ngGrid', 'ngBootstrap', 'ngTouch', 'angular-loading-bar', 'gapi', 'duScroll']);
 
 angular.module('eTuneBookApp').config(function($locationProvider) {
 	$locationProvider.html5Mode(false);
@@ -88,11 +91,10 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
     var playlist = {
         name: 'playlist',
         parent: playlists,
-        url: '/{playlistId}',
+        url: '/{playlistId}?pos&tune',
         templateUrl: 'views/playlist.html',
         controller: 'playlistCtrl'
     };
-
 
     var sets = {
         name: 'sets',
@@ -182,6 +184,14 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
         url: '/sets',
         templateUrl: 'views/tunesets.html',
         controller: 'tunesetsCtrl'
+    };
+
+    var tuneplaylists = {
+        name: 'tuneplaylists',
+        parent: tune,
+        url: '/playlists',
+        templateUrl: 'views/tuneplaylists.html',
+        controller: 'tuneplaylistsCtrl'
     };
 
     var tunevideos = {
@@ -315,6 +325,7 @@ angular.module('eTuneBookApp').config(['$stateProvider', function ($stateProvide
         .state(tunelist)
         .state(tune)
         .state(tunesets)
+        .state(tuneplaylists)
         .state(tuneabc)
         .state(tuneinfo)
         .state(tunepractice)

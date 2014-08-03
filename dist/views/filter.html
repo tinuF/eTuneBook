@@ -1,5 +1,5 @@
 <div class="tunePlayDateInfo">
-    <a class="btn btn-default" ng-class="{ active: filterActive }" ng-click="editSetFilter()" ng-style="{'background-color':tuneSetColorForFilter.color}" title="Filter Options">Filter</a>
+    <a class="btn btn-default" ng-class="{ active: filterActive }" ng-click="editSetFilter()" ng-style="{'background-color':tuneSetColorForFilter.color}" title="Filter"><i class="glyphicon glyphicon-filter"></i></a>
 
     <div class="currentFilter">{{currentFilter}}</div>
 </div>
@@ -22,14 +22,14 @@
                     <div class="form-group">
                         <label class="control-label" for="inputPlayRange">Played</label>
                         <div class="col-lg-5">
-                            <input ng-daterange="" type="daterange" class="form-control" id="inputPlayRange" ng-model="tuneSetPlayRangeFilter" format="DD.MM.YYYY" ranges="ranges">
+                            <input ng-daterange type="daterange" class="form-control" id="inputPlayRange" ng-model="tuneSetPlayRangeFilter" format="DD.MM.YYYY" ranges="ranges">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="control-label" for="inputUpdateRange">Modified</label>
                         <div class="col-lg-5">
-                            <input ng-daterange="" type="daterange" class="form-control" id="inputUpdateRange" ng-model="tuneSetUpdateRangeFilter" format="DD.MM.YYYY" ranges="ranges">
+                            <input ng-daterange type="daterange" class="form-control" id="inputUpdateRange" ng-model="tuneSetUpdateRangeFilter" format="DD.MM.YYYY" ranges="ranges">
                         </div>
                     </div>
 

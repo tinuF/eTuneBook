@@ -11,7 +11,7 @@
 
 <div id="dotsViewer" class="dotsViewer row" ng-style="{'background-color':tune.color}">
     <form ng-show="tuneEditModus">
-        <textarea class="tuneAbcEditor" id="abcEditorFor{{tune.intTuneId}}" class="input-xlarge edit" ng-model="tune.pure" tbk-tune-blur="doneEditing(tune)" tbk-abc-element-select="" tbk-abc-element-change="" ng-readonly="noteEditModus"></textarea>
+        <textarea class="tuneAbcEditor" id="abcEditorFor{{tune.intTuneId}}" class="input-xlarge edit" ng-model="tune.pure" tbk-tune-blur="doneEditing(tune)" tbk-abc-element-select tbk-abc-element-change ng-readonly="noteEditModus"></textarea>
     </form>
 
     <form class="form-inline" role="form" ng-show="noteEditModus">

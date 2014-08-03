@@ -4,7 +4,7 @@
  * Controller for tunlist Template
  */
 angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl( $scope, $window, $location, $timeout, $rootScope, $state, $stateParams, eTuneBookService ) {
-    var filterOptions, columnDefs, rowTempl;
+    var filterOptions, columnDefs, rowTempl, footerTempl;
 
     filterOptions = {};
     filterOptions.key = $stateParams['key'];
@@ -41,6 +41,8 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
         'style="background-color:{{row.entity.color}}" ' +
         'class="ngCell {{col.cellClass}} {{col.colIndex()}}" ng-cell></div>';
 
+    //footerTempl = '<button class="btn btn-default" ng-click="newTune()" title="New Tune">New</button>';
+
     if ($window.mobilecheck()){
         // Small Device -> Display Less Columns
         columnDefs = [
@@ -74,23 +76,23 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
             {field:'title',
                 displayName:'Tune',
                 cellFilter: 'eliminateThe',
-                width:'50%',
+                width:'40%',
                 cellTemplate: '<a href="#/tunes/{{row.entity.intTuneId}}" title="Show The Tune" >{{row.entity.title}}</a>'
 
             },
             {field:'type', displayName:'Type', width:'10%'},
-            {field:'key', displayName:'Key', width:'5%'},
+            {field:'key', displayName:'Key', width:'8%'},
             {field:'lastPlayed',
                 displayName:'Played',
                 cellFilter: 'fromNow',
-                width:'10%'
+                width:'15%'
             },
-            {field:'frequencyPlayed', displayName:'Frequency', width:'7%'},
-            {field:'skill', displayName:'Skill', width:'8%'},
+            {field:'frequencyPlayed', displayName:'Frequency', width:'10%'},
+            //{field:'skill', displayName:'Skill', width:'8%'},
             {field:'lastModified',
                 displayName:'Modified',
                 cellFilter: 'fromNow',
-                width:'10%'
+                width:'15%'
             }
         ];
     }
@@ -105,6 +107,7 @@ angular.module('eTuneBookApp').controller( 'tunelistCtrl', function tunelistCtrl
         //showColumnMenu: true,
         /*rowHeight: 35,*/
         rowTemplate: rowTempl,
+        //footerTemplate: footerTempl,
         //showFooter: true,
         //afterSelectionChange: function () {
         //    $state.transitionTo('tune', {intTuneId: $scope.tunesSelected[0].intTuneId});

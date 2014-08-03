@@ -44,7 +44,7 @@ angular.module('eTuneBookApp').directive('tbkFileSelect', function() {
 				})(f);
 
 				// Read the File
-				reader.readAsText(f);
+				reader.readAsText(f, 'ISO-8859-1');
 			}  		
 		}
     });

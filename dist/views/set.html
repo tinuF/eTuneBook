@@ -1,6 +1,5 @@
 <div class="row">
     <div class="col-md-4">
-        <label>Next Set:</label>
         <div class="btn-group btn-default hidden-print">
             <button type="button" class="btn btn-default" ng-click="loadRandomTuneSet(playDateFilter)">
                 Random: {{playDateFilter}}
@@ -209,7 +208,7 @@
                 </div>
             </div>
 
-            <li class="tuneSetPosition" ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber" ng-style="{'background-color':tuneSetPosition.tune.color}" tbk-show-sample-abc="">
+            <li class="tuneSetPosition" ng-repeat="tuneSetPosition in tuneSet.tuneSetPositions | orderBy: sortTuneSetPositionAsNumber" ng-style="{'background-color':tuneSetPosition.tune.color}" tbk-show-sample-abc>
                 <div class="view">
                     <div class="tuneFirstLine">
                         <div class="btn-group">

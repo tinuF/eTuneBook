@@ -1,11 +1,11 @@
-<div class="row">
-    <!--<div class="setListGrid" ng-grid="setList" ng-style="style()" resize></div>-->
-    <div class="row hidden-print">
-        <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-            <input type="text" class="form-control" id="searchForTuneName" placeholder="Search..." ng-model="search">
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ui-view="filter"></div>
-    </div>
+<br>
 
-    <div class="setListGrid" ng-grid="setList"></div>
+<div class="row hidden-print">
+    <!--<div class="setListGrid" ng-grid="setList" ng-style="style()" resize></div>-->
+    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+        <input type="text" class="form-control" id="searchForTuneName" placeholder="Search..." ng-model="search">
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" ui-view="filter"></div>
 </div>
+
+<div class="setListGrid" ng-grid="setList"></div>
